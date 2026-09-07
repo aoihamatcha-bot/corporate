@@ -1,3 +1,4 @@
+import { RevealText } from "@/components/motion/reveal-text";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { publishedArticle } from "@/content/news";
@@ -15,12 +16,18 @@ export default async function Article({ params }: Props) {
   return (
     <article className="container news-article page-section">
       <time dateTime={article.publishedAt!}>
-        {article.publishedAt!.slice(0, 10).replaceAll("-", ".")}
+        <RevealText kind="label">
+          {article.publishedAt!.slice(0, 10).replaceAll("-", ".")}
+        </RevealText>
       </time>
-      <h1 tabIndex={-1}>{article.title}</h1>
+      <h1 tabIndex={-1}>
+        <RevealText kind="heading">{article.title}</RevealText>
+      </h1>
       <div className="prose">
         {article.body.map((p, i) => (
-          <p key={i}>{p}</p>
+          <p key={i}>
+            <RevealText kind="body">{p}</RevealText>
+          </p>
         ))}
       </div>
       <TextLink href="/news">お知らせ一覧へ</TextLink>

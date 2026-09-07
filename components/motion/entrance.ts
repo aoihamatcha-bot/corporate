@@ -10,7 +10,11 @@ export function motionAvailable() {
   );
 }
 
-export function observeEntrance(element: HTMLElement, play: () => () => void) {
+export function observeEntrance(
+  element: HTMLElement,
+  play: () => () => void,
+  utility = false,
+) {
   if (!window.IntersectionObserver || element.dataset.entered === "true")
     return () => {};
   let visible = false;
@@ -28,7 +32,7 @@ export function observeEntrance(element: HTMLElement, play: () => () => void) {
       if (visible) start();
       else settle();
     },
-    { threshold: 0.12, rootMargin: "-80px 0px -6% 0px" },
+    { threshold: 0.12, rootMargin: utility ? "0px" : "-80px 0px -6% 0px" },
   );
   const visibility = () => (document.hidden ? settle() : start());
   observer.observe(element);
@@ -42,5 +46,20 @@ export function observeEntrance(element: HTMLElement, play: () => () => void) {
   };
 }
 
-export const palettes = ["sky", "mint", "apricot", "iris"] as const;
+export const palettes = [
+  "sky",
+  "mint",
+  "apricot",
+  "iris",
+  "lagoon",
+  "rose",
+  "honey",
+  "twilight",
+] as const;
 export type Palette = (typeof palettes)[number];
+
+// Only called after hydration or on interaction. Server markup is deterministic.
+export function randomPalette(except?: Palette): Palette {
+  const choices = palettes.filter((palette) => palette !== except);
+  return choices[Math.floor(Math.random() * choices.length)];
+}

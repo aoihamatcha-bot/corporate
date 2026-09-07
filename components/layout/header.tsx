@@ -15,6 +15,9 @@ import { navigation } from "@/content/navigation";
 import { Arrow, Spark } from "@/components/icons";
 import { MotionControl } from "@/components/motion/motion-control";
 import { motionToken } from "@/components/motion/tokens";
+import { RevealText } from "@/components/motion/reveal-text";
+import { MenuInk } from "@/components/motion/menu-ink";
+import { randomPalette, type Palette } from "@/components/motion/entrance";
 
 const subscribeHydration = () => () => {};
 const clientReady = () => true;
@@ -55,9 +58,11 @@ export function Header() {
     (restore = true) => {
       if (closeTimer.current) clearTimeout(closeTimer.current);
       closeTimer.current = null;
+      // Restore document geometry before close() performs native focus return.
+      // WebKit can otherwise scroll against the body's still-fixed position.
+      unlock();
       dialog.current?.close();
       if (dialog.current) delete dialog.current.dataset.closing;
-      unlock();
       setOpen(false);
       if (restore) trigger.current?.focus({ preventScroll: true });
     },
@@ -95,6 +100,16 @@ export function Header() {
       overflow: "hidden",
     });
     try {
+      dialog.current
+        .querySelectorAll<HTMLElement>(".menu-ink")
+        .forEach((ink) => {
+          ink.dataset.palette = randomPalette(ink.dataset.palette as Palette);
+          const wipe = ink.querySelector<HTMLElement>(".menu-ink-wipe");
+          if (wipe)
+            wipe.dataset.palette = randomPalette(
+              ink.dataset.palette as Palette,
+            );
+        });
       dialog.current.showModal();
       setOpen(true);
     } catch {
@@ -157,13 +172,13 @@ export function Header() {
     <>
       <header className="site-header">
         <Link href="/" className="wordmark" aria-label="MYSTENA トップ">
-          MYSTENA
+          <RevealText kind="utility">MYSTENA</RevealText>
           <Spark />
         </Link>
         <span className="header-tagline">
-          ENTERTAINMENT
-          <br />
-          MEETS TECHNOLOGY.
+          <RevealText kind="utility">
+            {"ENTERTAINMENT\nMEETS TECHNOLOGY."}
+          </RevealText>
         </span>
         <div className="header-controls">
           <MotionControl />
@@ -177,7 +192,7 @@ export function Header() {
             disabled={!hydrated}
             onClick={openMenu}
           >
-            <span>MENU</span>
+            <RevealText kind="utility">MENU</RevealText>
             <span className="menu-lines" aria-hidden="true">
               <i />
               <i />
@@ -212,7 +227,7 @@ export function Header() {
             onClick={(e) => navigate(e, "/")}
             aria-label="MYSTENA トップ"
           >
-            MYSTENA
+            <MenuInk kind="utility">MYSTENA</MenuInk>
             <Spark />
           </Link>
           <button
@@ -221,7 +236,7 @@ export function Header() {
             onClick={closeMenu}
             aria-label="メニューを閉じる"
           >
-            <span>CLOSE</span>
+            <MenuInk kind="utility">CLOSE</MenuInk>
             <span className="close-icon" aria-hidden="true">
               ×
             </span>
@@ -234,29 +249,21 @@ export function Header() {
           <nav aria-label="メインナビゲーション">
             <ol>
               {navigation.map((item, i) => (
-                <li
-                  key={item.href}
-                  data-palette={
-                    (["sky", "iris", "mint", "apricot"] as const)[i % 4]
-                  }
-                  style={{ "--item-index": i } as React.CSSProperties}
-                >
+                <li key={item.href}>
                   <Link
                     href={item.href}
                     onClick={(e) => navigate(e, item.href)}
                     aria-current={path === item.href ? "page" : undefined}
                   >
-                    <span className="nav-number">0{i + 1}</span>
-                    <span className="nav-en">
-                      <span className="nav-en-base">{item.en}</span>
-                      <span
-                        className="nav-en-color"
-                        data-text={item.en}
-                        aria-hidden="true"
-                      />
-                      <i className="nav-en-wipe" aria-hidden="true" />
+                    <span className="nav-number">
+                      <MenuInk>{`0${i + 1}`}</MenuInk>
                     </span>
-                    <span className="nav-ja">{item.ja}</span>
+                    <MenuInk large kind="heading">
+                      {item.en}
+                    </MenuInk>
+                    <span className="nav-ja">
+                      <MenuInk kind="subtitle">{item.ja}</MenuInk>
+                    </span>
                     <Arrow diagonal />
                   </Link>
                 </li>
@@ -264,31 +271,31 @@ export function Header() {
             </ol>
           </nav>
           <aside className="nav-aside">
-            <span className="eyebrow">LET’S FIND WHAT’S NEXT.</span>
+            <span className="eyebrow">
+              <MenuInk>LET’S FIND WHAT’S NEXT.</MenuInk>
+            </span>
             <p>
-              心が動く。
-              <br />
-              世界がひらく。
+              <MenuInk kind="subtitle">{"心が動く。\n世界がひらく。"}</MenuInk>
             </p>
             <Link
               href="/contact"
               onClick={(e) => navigate(e, "/contact")}
               className="text-link"
             >
-              お問い合わせ
+              <MenuInk>お問い合わせ</MenuInk>
               <Arrow diagonal />
             </Link>
             <div className="nav-aux">
               <Link href="/privacy" onClick={(e) => navigate(e, "/privacy")}>
-                プライバシーポリシー
+                <MenuInk>プライバシーポリシー</MenuInk>
               </Link>
-              <MotionControl />
+              <MotionControl menu />
             </div>
           </aside>
         </div>
         <div className="nav-bottom">
-          <span>MYSTENA</span>
-          <span>BE CURIOUS. FIND YOUR NEXT.</span>
+          <MenuInk>MYSTENA</MenuInk>
+          <MenuInk>BE CURIOUS. FIND YOUR NEXT.</MenuInk>
         </div>
       </dialog>
     </>

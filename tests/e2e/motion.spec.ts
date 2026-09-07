@@ -34,12 +34,14 @@ test("text below the viewport keeps its entrance until visible, then settles to 
       .evaluate((el) =>
         el
           .getAnimations()
-          .some((animation) =>
-            animation.effect instanceof KeyframeEffect && animation.effect
-              .getKeyframes()
-              .some(
-                (frame) => frame.clipPath && frame.clipPath !== "inset(0px)",
-              ),
+          .some(
+            (animation) =>
+              animation.effect instanceof KeyframeEffect &&
+              animation.effect
+                .getKeyframes()
+                .some(
+                  (frame) => frame.clipPath && frame.clipPath !== "inset(0px)",
+                ),
           ),
       ),
   ).toBe(true);
@@ -112,7 +114,7 @@ test("opening the menu starts two color curtains and separate text wipes, then c
   }
 });
 
-test("image interactions show four distinct gradients for keyboard and retain the same image", async ({
+test("image interactions show eight distinct gradients for keyboard and retain the same image", async ({
   page,
   isMobile,
 }) => {
@@ -124,7 +126,7 @@ test("image interactions show four distinct gradients for keyboard and retain th
   await expect(image).toHaveAttribute("data-image-state", "settled");
   const source = await image.locator("img").getAttribute("src");
   const colors = [];
-  for (let i = 0; i < 4; i++) {
+  for (let i = 0; i < 8; i++) {
     await link.focus();
     await expect(image).toHaveAttribute("data-image-state", "hover");
     colors.push(
@@ -141,7 +143,7 @@ test("image interactions show four distinct gradients for keyboard and retain th
       )
       .toBe("0");
   }
-  expect(new Set(colors).size).toBe(4);
+  expect(new Set(colors).size).toBe(8);
   expect(await image.locator("img").getAttribute("src")).toBe(source);
   await expect(image.locator("i")).toHaveCount(3);
   if (!isMobile) {

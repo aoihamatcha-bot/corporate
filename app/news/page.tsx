@@ -1,3 +1,4 @@
+import { RevealText } from "@/components/motion/reveal-text";
 import type { Metadata } from "next";
 import Link from "@/components/site-link";
 import { PageIntro, TextLink } from "@/components/editorial";
@@ -23,9 +24,13 @@ export default function News() {
                 <li key={a.slug}>
                   <Link href={`/news/${a.slug}`}>
                     <time dateTime={a.publishedAt!}>
-                      {a.publishedAt!.slice(0, 10).replaceAll("-", ".")}
+                      <RevealText kind="label">
+                        {a.publishedAt!.slice(0, 10).replaceAll("-", ".")}
+                      </RevealText>
                     </time>
-                    <h2>{a.title}</h2>
+                    <h2>
+                      <RevealText kind="subtitle">{a.title}</RevealText>
+                    </h2>
                     <Arrow />
                   </Link>
                 </li>
@@ -34,9 +39,13 @@ export default function News() {
           ) : (
             <div className="empty-news">
               <Spark />
-              <h2>{pages.news.emptyTitle}</h2>
+              <h2>
+                <RevealText kind="subtitle">{pages.news.emptyTitle}</RevealText>
+              </h2>
               <p style={{ whiteSpace: "pre-line" }}>
-                {pages.news.emptyDescription}
+                <RevealText kind="body">
+                  {pages.news.emptyDescription}
+                </RevealText>
               </p>
               <TextLink href="/">トップへ戻る</TextLink>
             </div>

@@ -26,7 +26,10 @@ export default function About() {
             <div className="prose">
               {site.about.paragraphs.map((p, i) => (
                 <p key={p}>
-                  <RevealText palette={i === 0 ? "mint" : "apricot"}>
+                  <RevealText
+                    kind="body"
+                    palette={i === 0 ? "mint" : "apricot"}
+                  >
                     {p}
                   </RevealText>
                 </p>
@@ -47,7 +50,9 @@ export default function About() {
             <div className="prose">
               {copy.approach.paragraphs.map((p) => (
                 <p key={p}>
-                  <RevealText palette="iris">{p}</RevealText>
+                  <RevealText kind="body" palette="iris">
+                    {p}
+                  </RevealText>
                 </p>
               ))}
             </div>
@@ -58,14 +63,20 @@ export default function About() {
         <div className="container">
           <SectionLabel>OUR VALUES</SectionLabel>
           <h2 className="section-heading" style={{ marginTop: 28 }}>
-            私たちが、大切にすること。
+            <RevealText kind="heading">私たちが、大切にすること。</RevealText>
           </h2>
           <ol className="values-list">
             {copy.values.map((v, i) => (
               <li key={v.title}>
-                <span className="value-number">0{i + 1}</span>
-                <h3>{v.title}</h3>
-                <p>{v.description}</p>
+                <span className="value-number">
+                  <RevealText kind="label">{`0${i + 1}`}</RevealText>
+                </span>
+                <h3>
+                  <RevealText kind="subtitle">{v.title}</RevealText>
+                </h3>
+                <p>
+                  <RevealText kind="body">{v.description}</RevealText>
+                </p>
               </li>
             ))}
           </ol>

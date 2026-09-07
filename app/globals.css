@@ -440,7 +440,7 @@ main:focus {
   gap: 25px;
   align-items: center;
 }
-.scroll-link > span {
+.scroll-link > span[aria-hidden="true"] {
   font-size: 25px;
 }
 .hero-side-note {
@@ -1296,7 +1296,7 @@ main:focus {
   .scroll-link {
     gap: 16px;
   }
-  .scroll-link > span {
+  .scroll-link > span[aria-hidden="true"] {
     font-size: 20px;
   }
   .section-space {

@@ -171,6 +171,10 @@ test("cut-in ends in place across scrolling, touch has no pointer effect", async
   const line = page.locator(".wonder-type > span").first();
   await line.scrollIntoViewIfNeeded();
   await expect(page.locator(".wonder-section")).toHaveClass(/scene-entered/);
+  // Each line now has its own start delay. An initial transform:none can mean
+  // "waiting", so verify that the actual entrance has finished before scrolling.
+  await expect(line).toHaveAttribute("data-entered", "true");
+  await expect(line).toHaveAttribute("data-reveal-state", "settled");
   await expect
     .poll(() => line.evaluate((el) => getComputedStyle(el).transform))
     .toBe("none");

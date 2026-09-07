@@ -1,3 +1,4 @@
+import { RevealText } from "@/components/motion/reveal-text";
 import Link from "@/components/site-link";
 import { pages } from "@/content/pages";
 export function ContactForm() {
@@ -11,7 +12,10 @@ export function ContactForm() {
       <fieldset disabled aria-label="お問い合わせ内容（受付準備中）">
         <label className="form-field">
           <span>
-            お問い合わせの目的<small>必須</small>
+            <RevealText kind="label">お問い合わせの目的</RevealText>
+            <small>
+              <RevealText kind="label">必須</RevealText>
+            </small>
           </span>
           <select name="purpose" required defaultValue="">
             <option value="">選択してください</option>
@@ -22,19 +26,28 @@ export function ContactForm() {
         </label>
         <label className="form-field">
           <span>
-            会社名<small>任意</small>
+            <RevealText kind="label">会社名</RevealText>
+            <small>
+              <RevealText kind="label">任意</RevealText>
+            </small>
           </span>
           <input name="company" autoComplete="organization" maxLength={160} />
         </label>
         <label className="form-field">
           <span>
-            お名前<small>必須</small>
+            <RevealText kind="label">お名前</RevealText>
+            <small>
+              <RevealText kind="label">必須</RevealText>
+            </small>
           </span>
           <input name="name" autoComplete="name" required maxLength={100} />
         </label>
         <label className="form-field">
           <span>
-            メールアドレス<small>必須</small>
+            <RevealText kind="label">メールアドレス</RevealText>
+            <small>
+              <RevealText kind="label">必須</RevealText>
+            </small>
           </span>
           <input
             name="email"
@@ -46,20 +59,23 @@ export function ContactForm() {
         </label>
         <label className="form-field">
           <span>
-            お問い合わせ内容<small>必須</small>
+            <RevealText kind="label">お問い合わせ内容</RevealText>
+            <small>
+              <RevealText kind="label">必須</RevealText>
+            </small>
           </span>
           <textarea name="message" required maxLength={5000} rows={6} />
         </label>
       </fieldset>
       <p className="form-privacy">
-        個人情報の取り扱いについては、
+        <RevealText kind="body">個人情報の取り扱いについては、</RevealText>
         <Link className="inline-link" href="/privacy">
-          プライバシーポリシー
+          <RevealText kind="label">プライバシーポリシー</RevealText>
         </Link>
-        に掲載予定です。
+        <RevealText kind="body">に掲載予定です。</RevealText>
       </p>
       <button className="submit-button" type="submit" disabled>
-        お問い合わせ受付の準備中です
+        <RevealText kind="label">お問い合わせ受付の準備中です</RevealText>
       </button>
     </form>
   );

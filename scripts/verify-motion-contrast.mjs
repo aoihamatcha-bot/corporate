@@ -15,7 +15,9 @@ const foregrounds = [...css.matchAll(/--type-[123]:\s*(#[\da-f]{6})/gi)].map(
 );
 const backgrounds = Object.entries(root)
   .filter(([name]) =>
-    /^(sky|mint|apricot|iris)-[1-4]$|^menu-(color|echo)-\d$|^paper$/.test(name),
+    /^(sky|mint|apricot|iris|lagoon|rose|honey|twilight)-[1-4]$|^menu-(color|echo)-\d$|^paper$/.test(
+      name,
+    ),
   )
   .map(([, rgb]) => rgb);
 function luminance(rgb) {

@@ -23,7 +23,7 @@ export default function Home() {
         <div className="container hero-content">
           <p className="eyebrow">
             <span className="status-dot" />
-            ENTERTAINMENT × TECHNOLOGY
+            <RevealText kind="label">ENTERTAINMENT × TECHNOLOGY</RevealText>
           </p>
           <h1 id="hero-title" tabIndex={-1}>
             {site.hero.lines.map((line, i) => (
@@ -37,19 +37,24 @@ export default function Home() {
               </RevealText>
             ))}
           </h1>
-          <p className="hero-description">{site.hero.description}</p>
+          <p className="hero-description">
+            <RevealText kind="body">{site.hero.description}</RevealText>
+          </p>
           <TextLink href="/about">MYSTENAについて</TextLink>
         </div>
         <div className="container hero-bottom">
           <span>
-            BE CURIOUS.
-            <br />
-            FIND YOUR NEXT.
+            <RevealText kind="label">
+              {"BE CURIOUS.\nFIND YOUR NEXT."}
+            </RevealText>
           </span>
           <a href="#about" className="scroll-link">
-            SCROLL TO EXPLORE<span aria-hidden="true">↓</span>
+            <RevealText kind="label">SCROLL TO EXPLORE</RevealText>
+            <span aria-hidden="true">↓</span>
           </a>
-          <span className="hero-side-note">THE POSSIBILITIES AHEAD</span>
+          <span className="hero-side-note">
+            <RevealText kind="utility">THE POSSIBILITIES AHEAD</RevealText>
+          </span>
         </div>
       </section>
       <Scene id="about" className="about-section section-space" palette="mint">
@@ -57,7 +62,9 @@ export default function Home() {
           <SectionLabel number="01">ABOUT US</SectionLabel>
           <div>
             <p className="kicker">
-              <RevealText palette="mint">{site.about.kicker}</RevealText>
+              <RevealText kind="subtitle" palette="mint">
+                {site.about.kicker}
+              </RevealText>
             </p>
             <h2 className="section-heading">
               <RevealText palette="sky">{site.about.lines[0]}</RevealText>
@@ -68,7 +75,10 @@ export default function Home() {
             <div className="prose">
               {site.about.paragraphs.map((p, i) => (
                 <p key={p}>
-                  <RevealText palette={i === 0 ? "mint" : "apricot"}>
+                  <RevealText
+                    kind="body"
+                    palette={i === 0 ? "mint" : "apricot"}
+                  >
                     {p}
                   </RevealText>
                 </p>
@@ -76,14 +86,19 @@ export default function Home() {
             </div>
             <TextLink href="/about">私たちについて</TextLink>
             <p className="signoff">
-              <Spark />A LITTLE CURIOSITY. A NEW POSSIBILITY.
+              <Spark />
+              <RevealText kind="label">
+                A LITTLE CURIOSITY. A NEW POSSIBILITY.
+              </RevealText>
             </p>
           </div>
         </div>
       </Scene>
       <Scene className="wonder-section" palette="sky">
         <div className="container">
-          <p className="eyebrow">THE MYSTENA SPIRIT</p>
+          <p className="eyebrow">
+            <RevealText kind="label">THE MYSTENA SPIRIT</RevealText>
+          </p>
           <h2 className="wonder-type">
             <RevealText cut palette="sky">
               A LITTLE WONDER
@@ -92,7 +107,11 @@ export default function Home() {
               CHANGES EVERYTHING.
             </RevealText>
           </h2>
-          <p className="wonder-caption">小さなときめきが、世界を変えていく。</p>
+          <p className="wonder-caption">
+            <RevealText kind="subtitle">
+              小さなときめきが、世界を変えていく。
+            </RevealText>
+          </p>
         </div>
       </Scene>
       <Scene
@@ -111,7 +130,9 @@ export default function Home() {
                 <RevealText palette="mint">次のかたちへ。</RevealText>
               </h2>
               <p className="section-description">
-                MYSTENAが目指す、2つの領域。
+                <RevealText kind="subtitle">
+                  MYSTENAが目指す、2つの領域。
+                </RevealText>
               </p>
             </div>
           </div>
@@ -126,7 +147,7 @@ export default function Home() {
                   palette={i === 0 ? "sky" : "iris"}
                 />
                 <span className="business-index">
-                  {item.index} / {item.verb}
+                  <RevealText kind="label">{`${item.index} / ${item.verb}`}</RevealText>
                 </span>
                 <h3>
                   <RevealText palette={i === 0 ? "sky" : "iris"}>
@@ -134,7 +155,9 @@ export default function Home() {
                   </RevealText>
                 </h3>
                 <div>
-                  <span>{item.title}</span>
+                  <span>
+                    <RevealText kind="subtitle">{item.title}</RevealText>
+                  </span>
                   <Arrow diagonal />
                 </div>
               </Link>
@@ -146,7 +169,9 @@ export default function Home() {
         <div className="container editorial-grid">
           <div>
             <SectionLabel number="03">LATEST NEWS</SectionLabel>
-            <h2>お知らせ</h2>
+            <h2>
+              <RevealText kind="subtitle">お知らせ</RevealText>
+            </h2>
           </div>
           <div>
             {articles.length ? (
@@ -155,9 +180,15 @@ export default function Home() {
                   <li key={article.slug}>
                     <Link href={`/news/${article.slug}`}>
                       <time dateTime={article.publishedAt!}>
-                        {article.publishedAt!.slice(0, 10).replaceAll("-", ".")}
+                        <RevealText kind="label">
+                          {article
+                            .publishedAt!.slice(0, 10)
+                            .replaceAll("-", ".")}
+                        </RevealText>
                       </time>
-                      <h3>{article.title}</h3>
+                      <h3>
+                        <RevealText kind="subtitle">{article.title}</RevealText>
+                      </h3>
                       <Arrow />
                     </Link>
                   </li>
@@ -165,10 +196,18 @@ export default function Home() {
               </ul>
             ) : (
               <>
-                <p className="eyebrow muted">STAY CURIOUS.</p>
-                <p className="empty-title">新しい一歩を、ここから。</p>
+                <p className="eyebrow muted">
+                  <RevealText kind="label">STAY CURIOUS.</RevealText>
+                </p>
+                <p className="empty-title">
+                  <RevealText kind="subtitle">
+                    新しい一歩を、ここから。
+                  </RevealText>
+                </p>
                 <p className="muted">
-                  お知らせは、公開の準備が整い次第お届けします。
+                  <RevealText kind="body">
+                    お知らせは、公開の準備が整い次第お届けします。
+                  </RevealText>
                 </p>
               </>
             )}
@@ -180,9 +219,11 @@ export default function Home() {
         <div className="container">
           <SectionLabel number="04">COMPANY</SectionLabel>
           <Link href="/company" className="company-link">
-            <h2>私たちのこと。</h2>
+            <h2>
+              <RevealText kind="heading">私たちのこと。</RevealText>
+            </h2>
             <span>
-              会社情報
+              <RevealText kind="label">会社情報</RevealText>
               <Arrow diagonal />
             </span>
           </Link>

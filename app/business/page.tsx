@@ -37,22 +37,34 @@ export default function Business() {
                 </RevealText>
               </h2>
               <p className="business-subtitle">
-                <RevealText palette="mint" direction="right">
+                <RevealText kind="subtitle" palette="mint" direction="right">
                   {b.title}
                 </RevealText>
               </p>
               <div className="prose">
-                <p>{b.description}</p>
-                <p>{b.value}</p>
+                <p>
+                  <RevealText kind="body">{b.description}</RevealText>
+                </p>
+                <p>
+                  <RevealText kind="body">{b.value}</RevealText>
+                </p>
               </div>
               <div className="tags">
                 {b.tags.map((t) => (
-                  <span key={t}>{t}</span>
+                  <span key={t}>
+                    <RevealText kind="label">{t}</RevealText>
+                  </span>
                 ))}
               </div>
               <div className="business-direction">
-                <h3>一緒に、広げていきたいこと。</h3>
-                <p>{b.collaboration}</p>
+                <h3>
+                  <RevealText kind="subtitle">
+                    一緒に、広げていきたいこと。
+                  </RevealText>
+                </h3>
+                <p>
+                  <RevealText kind="body">{b.collaboration}</RevealText>
+                </p>
               </div>
             </div>
           </div>

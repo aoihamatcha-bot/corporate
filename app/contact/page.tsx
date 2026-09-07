@@ -1,3 +1,4 @@
+import { RevealText } from "@/components/motion/reveal-text";
 import type { Metadata } from "next";
 import { PageIntro } from "@/components/editorial";
 import { ContactForm } from "@/components/contact-form";
@@ -14,8 +15,12 @@ export default function Contact() {
       <section className="page-section">
         <div className="container" style={{ maxWidth: 780 }}>
           <div className="notice" id="contact-status">
-            <strong>{pages.contact.noticeTitle}</strong>
-            {pages.contact.notice}
+            <strong>
+              <RevealText kind="subtitle">
+                {pages.contact.noticeTitle}
+              </RevealText>
+            </strong>
+            <RevealText kind="body">{pages.contact.notice}</RevealText>
           </div>
           <ContactForm />
         </div>

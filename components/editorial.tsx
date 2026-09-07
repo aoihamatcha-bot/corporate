@@ -3,17 +3,18 @@ import { Arrow } from "./icons";
 import { Scene } from "./motion/scene";
 import { RevealText } from "./motion/reveal-text";
 import { site } from "@/content/site";
+import type { Palette } from "./motion/entrance";
 export function SectionLabel({
   number,
   children,
 }: {
   number?: string;
-  children: React.ReactNode;
+  children: string;
 }) {
   return (
     <p className="section-label">
-      {number && <span>{number}</span>}
-      {children}
+      {number && <RevealText kind="label">{number}</RevealText>}
+      <RevealText kind="label">{children}</RevealText>
     </p>
   );
 }
@@ -22,11 +23,11 @@ export function TextLink({
   children,
 }: {
   href: string;
-  children: React.ReactNode;
+  children: string;
 }) {
   return (
     <Link className="text-link" href={href}>
-      {children}
+      <RevealText kind="label">{children}</RevealText>
       <span className="arrow-circle">
         <Arrow />
       </span>
@@ -46,7 +47,9 @@ export function ContactBand() {
             </RevealText>
           </h2>
           <div>
-            <p>{site.contact.description}</p>
+            <p>
+              <RevealText kind="body">{site.contact.description}</RevealText>
+            </p>
             <TextLink href="/contact">お問い合わせ</TextLink>
           </div>
         </div>
@@ -63,25 +66,29 @@ export function PageIntro({
   en: string;
   ja: string;
   description?: string;
-  palette?: "sky" | "mint" | "apricot" | "iris";
+  palette?: Palette;
 }) {
   return (
     <Scene className="page-intro" palette={palette}>
       <div className="container">
         <p className="breadcrumb">
-          <Link href="/">TOP</Link>
-          <span>/</span>
-          {en.toUpperCase()}
+          <Link href="/">
+            <RevealText kind="label">TOP</RevealText>
+          </Link>
+          <RevealText kind="label">/</RevealText>
+          <RevealText kind="label">{en.toUpperCase()}</RevealText>
         </p>
         <p className="page-en" aria-hidden="true">
           <RevealText palette={palette}>{en + "."}</RevealText>
         </p>
         <h1 tabIndex={-1}>
-          <RevealText palette={palette}>{ja}</RevealText>
+          <RevealText kind="subtitle" palette={palette}>
+            {ja}
+          </RevealText>
         </h1>
         {description && (
           <p className="page-description">
-            <RevealText palette={palette} direction="right">
+            <RevealText kind="body" palette={palette} direction="right">
               {description}
             </RevealText>
           </p>

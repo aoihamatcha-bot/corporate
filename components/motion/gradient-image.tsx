@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useRef } from "react";
-import { useMotionPaused } from "./motion-control";
+import { useMotionPaused } from "./motion-preference";
 import {
   motionAvailable,
   observeEntrance,
@@ -51,7 +51,11 @@ export function GradientImage({
       cycle.current += 1;
       element!.dataset.imageState = hold ? "hover" : "entering";
       try {
-        const duration = motionToken("--image-color-ms", 1500);
+        const duration =
+          motionToken("--image-color-ms", 2650) + (cycle.current % 4) * 130;
+        const delay = hold
+          ? 0
+          : motionToken("--image-delay-ms", 210) + (cycle.current % 5) * 53;
         animations.push(
           wash.animate(
             hold
@@ -66,6 +70,7 @@ export function GradientImage({
                 ],
             {
               duration: hold ? motionToken("--image-hover-ms", 280) : duration,
+              delay,
               fill: hold ? "forwards" : "none",
               easing: "cubic-bezier(.22,.8,.3,1)",
             },
@@ -79,7 +84,7 @@ export function GradientImage({
                 { opacity: 0.45, transform: "translateX(0)", offset: 0.4 },
                 { opacity: 0, transform: "translateX(100%)" },
               ],
-              { duration, delay: 100, easing: "ease-out" },
+              { duration, delay: delay + 130, easing: "ease-out" },
             ),
           );
           animations.push(
@@ -90,7 +95,10 @@ export function GradientImage({
                 { clipPath: "inset(0 0 0 100%)" },
               ],
               {
-                duration: motionToken("--text-wipe-ms", 620),
+                duration:
+                  motionToken("--image-wipe-ms", 820) +
+                  (cycle.current % 3) * 70,
+                delay,
                 easing: "cubic-bezier(.65,0,.2,1)",
               },
             ),
@@ -103,7 +111,7 @@ export function GradientImage({
       return settle;
     }
     // Choose a first variant only on the client; subsequent interactions visit
-    // each of the four palettes exactly once before repeating.
+    // each of the eight palettes exactly once before repeating.
     cycle.current =
       (cycle.current + Math.floor(Math.random() * palettes.length)) %
       palettes.length;

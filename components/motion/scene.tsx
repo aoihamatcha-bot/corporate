@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useRef, type ReactNode } from "react";
-import { useMotionPaused } from "./motion-control";
+import { useMotionPaused } from "./motion-preference";
+import { randomPalette, type Palette } from "./entrance";
 
 // Content is visible in server HTML. Animation enhances an already readable page.
 export function Scene({
@@ -13,7 +14,7 @@ export function Scene({
 }: {
   children: ReactNode;
   className?: string;
-  palette?: "sky" | "mint" | "apricot" | "iris";
+  palette?: Palette;
   direction?: "left" | "right";
   id?: string;
 }) {
@@ -28,6 +29,7 @@ export function Scene({
         el.dataset.visible = String(entry.isIntersecting);
         if (entry.isIntersecting && !seen.current && !document.hidden) {
           seen.current = true;
+          el.dataset.palette = randomPalette();
           el.classList.add("scene-entered");
         }
       },

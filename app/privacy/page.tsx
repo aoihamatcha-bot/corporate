@@ -1,3 +1,4 @@
+import { RevealText } from "@/components/motion/reveal-text";
 import type { Metadata } from "next";
 import { PageIntro, TextLink } from "@/components/editorial";
 import { pages } from "@/content/pages";
@@ -18,10 +19,12 @@ export default function Privacy() {
               {pages.privacy.body.map((section) => (
                 <section key={section.heading} style={{ marginBottom: 36 }}>
                   <h2 style={{ fontSize: 22, marginBottom: 16 }}>
-                    {section.heading}
+                    <RevealText kind="subtitle">{section.heading}</RevealText>
                   </h2>
                   {section.paragraphs.map((paragraph, i) => (
-                    <p key={i}>{paragraph}</p>
+                    <p key={i}>
+                      <RevealText kind="body">{paragraph}</RevealText>
+                    </p>
                   ))}
                 </section>
               ))}
@@ -29,10 +32,14 @@ export default function Privacy() {
           ) : (
             <>
               <div className="notice">
-                <strong>掲載準備中</strong>
-                {pages.privacy.notice}
+                <strong>
+                  <RevealText kind="subtitle">掲載準備中</RevealText>
+                </strong>
+                <RevealText kind="body">{pages.privacy.notice}</RevealText>
               </div>
-              <p>{pages.privacy.explanation}</p>
+              <p>
+                <RevealText kind="body">{pages.privacy.explanation}</RevealText>
+              </p>
             </>
           )}
           <TextLink href="/contact">お問い合わせについて</TextLink>

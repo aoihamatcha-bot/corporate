@@ -1,3 +1,4 @@
+import { RevealText } from "@/components/motion/reveal-text";
 import Link from "@/components/site-link";
 import { navigation } from "@/content/navigation";
 import { Arrow, Spark } from "@/components/icons";
@@ -7,14 +8,14 @@ export function Footer() {
       <div className="container">
         <div className="footer-top">
           <p>
-            ENTERTAINMENT
-            <br />
-            MEETS TECHNOLOGY.
+            <RevealText kind="label">
+              {"ENTERTAINMENT\nMEETS TECHNOLOGY."}
+            </RevealText>
           </p>
           <nav aria-label="フッターナビゲーション">
             {navigation.slice(1).map((n) => (
               <Link key={n.href} href={n.href}>
-                {n.ja}
+                <RevealText kind="label">{n.ja}</RevealText>
               </Link>
             ))}
           </nav>
@@ -23,12 +24,14 @@ export function Footer() {
           </a>
         </div>
         <Link href="/" className="footer-wordmark" aria-label="MYSTENA トップ">
-          MYSTENA
+          <RevealText kind="heading">MYSTENA</RevealText>
           <Spark />
         </Link>
         <div className="footer-bottom">
-          <span>© MYSTENA</span>
-          <Link href="/privacy">プライバシーポリシー</Link>
+          <RevealText kind="label">© MYSTENA</RevealText>
+          <Link href="/privacy">
+            <RevealText kind="label">プライバシーポリシー</RevealText>
+          </Link>
         </div>
       </div>
     </footer>

@@ -1,3 +1,4 @@
+import { RevealText } from "@/components/motion/reveal-text";
 import type { Metadata, Viewport } from "next";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
@@ -17,7 +18,7 @@ export default function RootLayout({
     <html lang="ja" data-scroll-behavior="smooth">
       <body>
         <a className="skip-link" href="#main">
-          本文へスキップ
+          <RevealText kind="utility">本文へスキップ</RevealText>
         </a>
         <Header />
         <main id="main" tabIndex={-1}>
