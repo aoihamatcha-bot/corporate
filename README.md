@@ -31,7 +31,9 @@ npm run build
 npm run test:e2e
 ```
 
-E2Eは3017番のproduction serverを自動起動します。同じポートにdev serverがある場合は先に止めてください。実行結果はtest-results/（Git対象外）に保存します。画面・録画の再採取はproduction server起動後に `node scripts/capture-evidence.mjs` で行えます。
+E2Eは3017番のproduction serverを自動起動します。同じポートにdev serverがある場合は先に止めてください。実行結果はtest-results/（Git対象外）に保存します。
+
+今回の画面・録画の再採取はproduction server起動後に `node scripts/capture-motion-v2.mjs` で行えます。新しい日時付きの `.local/` ディレクトリへ保存し、既存の証跡を上書きしません。文字用グラデーションのコントラスト確認は `node scripts/verify-motion-contrast.mjs`。動きが停止中の場合はヘッダーの「動き」から再生できます。OSの動き抑制設定は優先されます。本文の入口演出は初回だけなので、見直すときはページを再読み込みしてください。
 
 ## ページと編集場所
 
@@ -39,10 +41,11 @@ E2Eは3017番のproduction serverを自動起動します。同じポートにde
 
 - 原稿と公開状態: [content/](content/)、[原稿差し替え表](docs/content-checklist.md)
 - 色と動き: [styles/tokens.css](styles/tokens.css)
-- 参考観察とデザイン判断: [reference-analysis.md](docs/reference-analysis.md)
-- 検証・証跡・限界: [verification.md](docs/verification.md)
+- 参考サイトの技術調査と今回の実装判断: [reference-technology-analysis.md](docs/reference-technology-analysis.md)
+- 今回の検証・証跡・限界: [verification-motion-v2.md](docs/verification-motion-v2.md)
+- 初回実装の記録: [reference-analysis.md](docs/reference-analysis.md) / [verification.md](docs/verification.md)
 - Vercel接続と正式公開の残作業: [operations.md](docs/operations.md)
 
 問い合わせは未接続です。入力欄・送信ボタンは無効、POST /api/contactも503を返し、本文を読み取り・保存・転送しません。公開前の検索除外をmeta、HTTP header、robots.txtで設定しています。canonical / sitemap / 法人構造化データは未設定です。
 
-元モックの生成画像を1枚利用しています。他社サイトの画像・文言・実装コード、および旧Sitesのホスティング設定は含めていません。
+元モックの生成画像を2枚利用しています。他社サイトの画像・文言・実装コード、および旧Sitesのホスティング設定は含めていません。

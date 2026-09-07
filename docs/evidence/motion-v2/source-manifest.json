@@ -1,0 +1,278 @@
+{
+  "applicationCommit": "c4d582b3fe9f13bc608ddf70a3c51f4f9dfe0056",
+  "startingCommit": "6cab3232799804bdb9181e634b478d792e30b58d",
+  "historicalFilesVerified": 23,
+  "historicalFilesChanged": 0,
+  "sourceFiles": [
+    {
+      "file": ".gitattributes",
+      "bytes": 60,
+      "sha256": "e052dc58c9418ee79fd6f0f45e448aa5ad53f7af7edf048b3acd615ed939ef75"
+    },
+    {
+      "file": ".gitignore",
+      "bytes": 110,
+      "sha256": "220c3b81322fa0de74b904070f9d23dd182e8bee2239932f602fcc30a13769a9"
+    },
+    {
+      "file": "AGENTS.md",
+      "bytes": 678,
+      "sha256": "63f2c50380ed6303237cce215ce27af1d620d094c215e28d1b1538a3c070e3bb"
+    },
+    {
+      "file": "CLAUDE.md",
+      "bytes": 11,
+      "sha256": "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49"
+    },
+    {
+      "file": "app/about/page.tsx",
+      "bytes": 2673,
+      "sha256": "ee2cc8a7ee107c3169fbca2bbc1fc3ae84059d9acf748e9fa064b1195006db49"
+    },
+    {
+      "file": "app/api/contact/route.ts",
+      "bytes": 449,
+      "sha256": "c85ebcf54a4c0059302da51da891eb9c3778f95d738f2b3bf7cf48ffd110e8c4"
+    },
+    {
+      "file": "app/business/page.tsx",
+      "bytes": 2224,
+      "sha256": "d53a9284b25a6dce667bf09ec2f8b8232b3b73225f7cbc81ef951be34c168c6d"
+    },
+    {
+      "file": "app/company/page.tsx",
+      "bytes": 1191,
+      "sha256": "7e18e95fd3c2e2073861781d3f0eb22a11dd85642d39b046ae567be029b2999b"
+    },
+    {
+      "file": "app/contact/page.tsx",
+      "bytes": 834,
+      "sha256": "fa57208047d5a7d4c6d314cd3aa7e855f4d07cfde20dbbe8be48fe10ff0fb330"
+    },
+    {
+      "file": "app/globals.css",
+      "bytes": 27852,
+      "sha256": "b78db48b20848aca2d0de12bb4a2c44cdb932b961f2feafce8e007040f8d4404"
+    },
+    {
+      "file": "app/icon.svg",
+      "bytes": 272,
+      "sha256": "93ba48b148a2e2b8903e8b7a002d3c66567390a8486f92d448ac4effea69232c"
+    },
+    {
+      "file": "app/layout.tsx",
+      "bytes": 909,
+      "sha256": "ead160f5d155bee379ff96aa286352ced250e637f6818628e8452629bb2cd3af"
+    },
+    {
+      "file": "app/news/[slug]/page.tsx",
+      "bytes": 1142,
+      "sha256": "d2c64c1989c30161009fe9b2e68306926aaedd899529040e774d630ec331e3b3"
+    },
+    {
+      "file": "app/news/page.tsx",
+      "bytes": 1608,
+      "sha256": "8fb8fdabb03ff1ea411be3f7c4cbb1088f66efbb6e457d260fe690deeb4d68b4"
+    },
+    {
+      "file": "app/not-found.tsx",
+      "bytes": 556,
+      "sha256": "2be669931f5cf63d624c99ea6271340b8ad27d0493bc0d56883d97aba72b6993"
+    },
+    {
+      "file": "app/page.tsx",
+      "bytes": 7037,
+      "sha256": "c6a69663f75def5ed5d07f838bd89037610574a3646be4861b0755798fa3b265"
+    },
+    {
+      "file": "app/privacy/page.tsx",
+      "bytes": 1520,
+      "sha256": "bb4d593b4a0512fe7bcf887e21cf2651c9e0ff0ed9431a24e870bdf0a3429ead"
+    },
+    {
+      "file": "app/robots.ts",
+      "bytes": 157,
+      "sha256": "e68ad5f5ac2d937a00a3767f2fc701f18037dc0b6627de898d34e4521ea19568"
+    },
+    {
+      "file": "components/contact-form.tsx",
+      "bytes": 2116,
+      "sha256": "5af973910bde3b06e0b55d377d8a4b3e1a9a3c470113aa35d449849a52831aac"
+    },
+    {
+      "file": "components/editorial.tsx",
+      "bytes": 2244,
+      "sha256": "e6804e4a5fae153263bbbe56b38f46886892726a4be3935320a8db34acad31ef"
+    },
+    {
+      "file": "components/icons.tsx",
+      "bytes": 685,
+      "sha256": "59a0a6c45280f4bb3c4c43f3ad315d65b801f9beb47e8fc33cf49a4cd4329aed"
+    },
+    {
+      "file": "components/layout/footer.tsx",
+      "bytes": 1101,
+      "sha256": "a2ee2ca5554fb16331f61d99cd0a8c7fec3a9dad7a61c74bb399b06d5a288e5f"
+    },
+    {
+      "file": "components/layout/header.tsx",
+      "bytes": 9088,
+      "sha256": "dcb8f0b88cbdccbecf78bdda4c979d506ec417b25ba9e4b46353900665ca8d22"
+    },
+    {
+      "file": "components/motion/entrance.ts",
+      "bytes": 1638,
+      "sha256": "c097218d153d395fed5e0a11761c9f55749b2ffc932a477aa42586fce65f9e7c"
+    },
+    {
+      "file": "components/motion/gradient-image.tsx",
+      "bytes": 5919,
+      "sha256": "f2ca3b524908374cced23465fc2510fe7296859b43257598201707f8e940cfcc"
+    },
+    {
+      "file": "components/motion/motion-control.tsx",
+      "bytes": 2163,
+      "sha256": "f2b4f9a81a9f318616d14b571e1ba1965d2540a2ef94ab4f41fddeb223213c33"
+    },
+    {
+      "file": "components/motion/reveal-text.tsx",
+      "bytes": 5562,
+      "sha256": "5e8b861717565e15c51a65adf846162e4ab7439ef0e23ab4ead29564d6893eef"
+    },
+    {
+      "file": "components/motion/scene.tsx",
+      "bytes": 3861,
+      "sha256": "744efc4933cd387b46f79a51ff5b3c35fb8d7ecec4ea38a7c3ab88f6680a216f"
+    },
+    {
+      "file": "components/motion/tokens.ts",
+      "bytes": 324,
+      "sha256": "128a51b0a925c0c80efcec13fc51aa3c2b09d365725ed727f5b6bc49ce16e097"
+    },
+    {
+      "file": "components/site-link.tsx",
+      "bytes": 391,
+      "sha256": "be2ad94fd19bdb3ac8f7724fb7514163b2be54dec9c91e2ca7a1a21689c7f720"
+    },
+    {
+      "file": "content/business.ts",
+      "bytes": 1989,
+      "sha256": "c66dff5ade405c5887ca22396a23364cabf84e727df320c52308d9b4a1208e4e"
+    },
+    {
+      "file": "content/company.ts",
+      "bytes": 1187,
+      "sha256": "636200eaf71cd28425bf8b2a0255893cfde3dda719f695ad7e418865574f6862"
+    },
+    {
+      "file": "content/navigation.ts",
+      "bytes": 387,
+      "sha256": "514e4f7da42f3593894566bce34667a8f4c2986187a9aca9f47dd51ae9048ebe"
+    },
+    {
+      "file": "content/news/index.ts",
+      "bytes": 1003,
+      "sha256": "746be8ec6df44e1b604f3e4d8f6c42ce7aeb8edc0d054c74547380e6f9f09437"
+    },
+    {
+      "file": "content/pages.ts",
+      "bytes": 3505,
+      "sha256": "1a7713cc5fdb984abaf00fb8728c0af927ce0740e6dbe370f21ea870dd64840d"
+    },
+    {
+      "file": "content/site.ts",
+      "bytes": 1182,
+      "sha256": "568dd62e3401893bbe85b1ee7b16026d992596c28d6eff6a72f74dfadc38ff66"
+    },
+    {
+      "file": "eslint.config.mjs",
+      "bytes": 367,
+      "sha256": "89ec7cea81b17eba12d58c6230ffeaf1f382cad7e28c6a238e8be19439df02df"
+    },
+    {
+      "file": "lib/contact-contract.ts",
+      "bytes": 507,
+      "sha256": "77a3bb508d5700a69e4a5f997c6d82dde8760c26092c022e3b83b4b0623bfe99"
+    },
+    {
+      "file": "next-env.d.ts",
+      "bytes": 288,
+      "sha256": "1862ac4bbbc5192d4bf562161df66ea547ed3e67173100656ab606ae9797db2b"
+    },
+    {
+      "file": "next.config.ts",
+      "bytes": 593,
+      "sha256": "e8043ad43cf181e42979350bb87dc75ba981856d50b4f6a92038af19f63e87fc"
+    },
+    {
+      "file": "package-lock.json",
+      "bytes": 232541,
+      "sha256": "d262dfb7b0a18982f2e6a5ac42b69db8538fa354a8494b799f5b14c7e26a23e5"
+    },
+    {
+      "file": "package.json",
+      "bytes": 835,
+      "sha256": "1c5bf60a51c3ed83f6688a1998130fff2db8cff852cf7e2c1ed064c272bd4160"
+    },
+    {
+      "file": "playwright.config.ts",
+      "bytes": 1008,
+      "sha256": "34133a3c8609f464c849ae78cc80079f245739818a4c40c5d1930ba944e2132a"
+    },
+    {
+      "file": "public/images/afterglow.webp",
+      "bytes": 114844,
+      "sha256": "dc47da1dce7721c06e24fbe7721b2ef3cc920cf052944ac32696d9b7ef96919d"
+    },
+    {
+      "file": "public/images/daylight.webp",
+      "bytes": 104550,
+      "sha256": "c8a7bace7f6d11cb0a999b8858060b2940c08d8f529f7672fe39d1906b4b5d93"
+    },
+    {
+      "file": "scripts/capture-evidence.mjs",
+      "bytes": 5771,
+      "sha256": "35498f391123a0a9916b0fb8e47733fabee2e5bffc13a984f1c1b2952f882d5b"
+    },
+    {
+      "file": "scripts/capture-motion-v2.mjs",
+      "bytes": 6007,
+      "sha256": "0a7ebf946129dd44dc3d83660e880b93cd432d32264c3bb10af25e36b2eedbb9"
+    },
+    {
+      "file": "scripts/verify-motion-contrast.mjs",
+      "bytes": 2607,
+      "sha256": "f0526de8612a96c635bad50f74fe73a90a8cb2a3df55e7f9670a4c67be27957d"
+    },
+    {
+      "file": "styles/motion.css",
+      "bytes": 6540,
+      "sha256": "0090c537316a1183c06fdc93d1eac2233fe44f75c40c9aa3d1e6e282d85b51af"
+    },
+    {
+      "file": "styles/tokens.css",
+      "bytes": 2477,
+      "sha256": "c19391ed06c977be4a6d8cf2fa2420a5a866ada6bf64d3905c80a2aa9a79b8c6"
+    },
+    {
+      "file": "tests/content.test.ts",
+      "bytes": 2390,
+      "sha256": "ef909ab5d176c56739019413a9f735f56d8d2ba74c18a0128dc4117d260cc489"
+    },
+    {
+      "file": "tests/e2e/motion.spec.ts",
+      "bytes": 8172,
+      "sha256": "6c617b2a27fe0c5ccd791defb1f3042669aed8073ff3eff2ab0001684a8b11ab"
+    },
+    {
+      "file": "tests/e2e/site.spec.ts",
+      "bytes": 9674,
+      "sha256": "846bb092a90437d4e9e96e5f51f32145619c396fb846ddba1dc37497f246a45e"
+    },
+    {
+      "file": "tsconfig.json",
+      "bytes": 614,
+      "sha256": "1e2f60e3da3dd14ae2c69a87035dc938f22f346d2fca1e6893509087f8208961"
+    }
+  ]
+}
