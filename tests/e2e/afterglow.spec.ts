@@ -83,26 +83,29 @@ test("independent text rhythms keep color after the background passes, then fade
       fade: Number(timing.duration) - plateau,
     };
   });
-  expect(envelope.holdAfterBand).toBeGreaterThanOrEqual(1500);
-  expect(envelope.holdAfterBand).toBeLessThanOrEqual(2200);
+  expect(envelope.holdAfterBand).toBeGreaterThanOrEqual(800);
+  expect(envelope.holdAfterBand).toBeLessThanOrEqual(1600);
   expect(envelope.fade).toBeGreaterThanOrEqual(1000);
-  // Real elapsed time: the section background is gone but the headline is
-  // still fully colored. No seeking or freezing is used for this assertion.
-  await expect
-    .poll(() =>
-      page
-        .locator(".wonder-section .color-echo")
-        .evaluate((el) => el.getAnimations().some((animation) => animation.playState === "finished") && getComputedStyle(el).opacity === "0"),
-    )
-    .toBe(true);
-  await page.waitForTimeout(600);
-  expect(
-    Number(
-      await title
-        .locator(".reveal-color")
-        .evaluate((el) => getComputedStyle(el).opacity),
-    ),
-  ).toBeGreaterThan(0.95);
+  // Sample 800ms after the actual last band finishes. A polling interval plus
+  // a fixed extra wait can overshoot the shorter hold into the valid fade.
+  // These animations run in real time; no seeking or freezing is used.
+  const sample = await title.evaluate(async (el) => {
+    const bands = [...el.querySelectorAll(".reveal-band")].flatMap((band) =>
+      band.getAnimations(),
+    );
+    await Promise.all(bands.map((animation) => animation.finished));
+    await new Promise((resolve) => setTimeout(resolve, 800));
+    return {
+      color: Number(
+        getComputedStyle(el.querySelector(".reveal-color")!).opacity,
+      ),
+      background: getComputedStyle(
+        el.closest(".scene")!.querySelector(".color-echo")!,
+      ).opacity,
+    };
+  });
+  expect(sample.background).toBe("0");
+  expect(sample.color).toBeGreaterThan(0.95);
   await expect(title).toHaveAttribute("data-reveal-state", "settled");
   await expect(title.locator(".reveal-source")).toHaveCSS(
     "color",

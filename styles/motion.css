@@ -70,12 +70,14 @@
   position: absolute;
   display: block;
   clip-path: inset(0 100% 0 0);
-  background: linear-gradient(
-    105deg,
-    var(--accent-1),
-    var(--accent-2),
-    var(--accent-3)
-  );
+  background:
+    linear-gradient(
+      112deg,
+      transparent 25%,
+      var(--glass-highlight) 52%,
+      transparent 74%
+    ),
+    linear-gradient(105deg, var(--accent-1), var(--accent-2), var(--accent-3));
 }
 .gradient-image {
   display: block;
@@ -125,6 +127,19 @@
 }
 .image-wipe {
   clip-path: inset(0 100% 0 0);
+  background-image:
+    linear-gradient(
+      112deg,
+      transparent 25%,
+      var(--glass-highlight) 52%,
+      transparent 74%
+    ),
+    linear-gradient(
+      105deg,
+      var(--accent-1),
+      var(--accent-2) 48%,
+      var(--accent-3)
+    );
 }
 .hero-art .image-wash {
   mix-blend-mode: color;
@@ -191,12 +206,14 @@
   user-select: none;
 }
 .menu-ink-wipe {
-  background: linear-gradient(
-    100deg,
-    var(--accent-3),
-    var(--accent-1),
-    var(--accent-2)
-  );
+  background:
+    linear-gradient(
+      112deg,
+      transparent 25%,
+      var(--glass-highlight) 52%,
+      transparent 74%
+    ),
+    linear-gradient(100deg, var(--accent-3), var(--accent-1), var(--accent-2));
   clip-path: inset(0 100% 0 0);
 }
 .fullscreen-nav[open] .menu-ink-wipe {
