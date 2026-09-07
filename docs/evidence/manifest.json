@@ -1,0 +1,364 @@
+{
+  "schema": 1,
+  "recordedAt": "2026-09-07T19:54:49.001Z",
+  "baseCommit": "32e51beba8c757af5abd02a1f206edb6d03265e6",
+  "branch": "feat/corporate-afterglow-v1",
+  "hashBasis": "Git index bytes; text normalized to LF by .gitattributes, media bytes unchanged. Manifest excludes itself.",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 60,
+      "sha256": "e052dc58c9418ee79fd6f0f45e448aa5ad53f7af7edf048b3acd615ed939ef75"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 110,
+      "sha256": "220c3b81322fa0de74b904070f9d23dd182e8bee2239932f602fcc30a13769a9"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 678,
+      "sha256": "63f2c50380ed6303237cce215ce27af1d620d094c215e28d1b1538a3c070e3bb"
+    },
+    {
+      "path": "CLAUDE.md",
+      "bytes": 11,
+      "sha256": "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2085,
+      "sha256": "7b02bc5d1113b759f6f2ce84fe2b93831b14a7a05bd13f8218e8029cf01d3571"
+    },
+    {
+      "path": "app/about/page.tsx",
+      "bytes": 2347,
+      "sha256": "93e51d97bd38c50ffe315e2cdedc429014a745fe9ce3bfecc9bf513768791e71"
+    },
+    {
+      "path": "app/api/contact/route.ts",
+      "bytes": 449,
+      "sha256": "c85ebcf54a4c0059302da51da891eb9c3778f95d738f2b3bf7cf48ffd110e8c4"
+    },
+    {
+      "path": "app/business/page.tsx",
+      "bytes": 1713,
+      "sha256": "c930b6684c24b1b0a7ea9e5ff43b916f572efe6b66ac3452e608631f69181ea7"
+    },
+    {
+      "path": "app/company/page.tsx",
+      "bytes": 1191,
+      "sha256": "7e18e95fd3c2e2073861781d3f0eb22a11dd85642d39b046ae567be029b2999b"
+    },
+    {
+      "path": "app/contact/page.tsx",
+      "bytes": 834,
+      "sha256": "fa57208047d5a7d4c6d314cd3aa7e855f4d07cfde20dbbe8be48fe10ff0fb330"
+    },
+    {
+      "path": "app/globals.css",
+      "bytes": 29835,
+      "sha256": "c832dfef482e51e519ee2639c17a1155d35de5854553de883adaa2eec815a8d0"
+    },
+    {
+      "path": "app/icon.svg",
+      "bytes": 272,
+      "sha256": "93ba48b148a2e2b8903e8b7a002d3c66567390a8486f92d448ac4effea69232c"
+    },
+    {
+      "path": "app/layout.tsx",
+      "bytes": 909,
+      "sha256": "ead160f5d155bee379ff96aa286352ced250e637f6818628e8452629bb2cd3af"
+    },
+    {
+      "path": "app/news/[slug]/page.tsx",
+      "bytes": 1142,
+      "sha256": "d2c64c1989c30161009fe9b2e68306926aaedd899529040e774d630ec331e3b3"
+    },
+    {
+      "path": "app/news/page.tsx",
+      "bytes": 1608,
+      "sha256": "8fb8fdabb03ff1ea411be3f7c4cbb1088f66efbb6e457d260fe690deeb4d68b4"
+    },
+    {
+      "path": "app/not-found.tsx",
+      "bytes": 556,
+      "sha256": "2be669931f5cf63d624c99ea6271340b8ad27d0493bc0d56883d97aba72b6993"
+    },
+    {
+      "path": "app/page.tsx",
+      "bytes": 6189,
+      "sha256": "ab426ae3886c2b239f4755f97f9d99ee2e31312d3990d7f0335db1abd60a63d3"
+    },
+    {
+      "path": "app/privacy/page.tsx",
+      "bytes": 1520,
+      "sha256": "bb4d593b4a0512fe7bcf887e21cf2651c9e0ff0ed9431a24e870bdf0a3429ead"
+    },
+    {
+      "path": "app/robots.ts",
+      "bytes": 157,
+      "sha256": "e68ad5f5ac2d937a00a3767f2fc701f18037dc0b6627de898d34e4521ea19568"
+    },
+    {
+      "path": "components/contact-form.tsx",
+      "bytes": 2116,
+      "sha256": "5af973910bde3b06e0b55d377d8a4b3e1a9a3c470113aa35d449849a52831aac"
+    },
+    {
+      "path": "components/editorial.tsx",
+      "bytes": 2024,
+      "sha256": "e613b5de30280f5f9aa9a05bf712c10c486709b1359ab67893d0d8f20b491388"
+    },
+    {
+      "path": "components/icons.tsx",
+      "bytes": 685,
+      "sha256": "59a0a6c45280f4bb3c4c43f3ad315d65b801f9beb47e8fc33cf49a4cd4329aed"
+    },
+    {
+      "path": "components/layout/footer.tsx",
+      "bytes": 1101,
+      "sha256": "a2ee2ca5554fb16331f61d99cd0a8c7fec3a9dad7a61c74bb399b06d5a288e5f"
+    },
+    {
+      "path": "components/layout/header.tsx",
+      "bytes": 8458,
+      "sha256": "16c52fb075b57dd8b7d0835f6df5f2a9803c8117a2fc7e4297ab3ab23ecd44ec"
+    },
+    {
+      "path": "components/motion/motion-control.tsx",
+      "bytes": 2163,
+      "sha256": "f2b4f9a81a9f318616d14b571e1ba1965d2540a2ef94ab4f41fddeb223213c33"
+    },
+    {
+      "path": "components/motion/scene.tsx",
+      "bytes": 5670,
+      "sha256": "572006f628ba1dc280b39ab517bdd3340b432daf2f65da851b34b7704a22fc5c"
+    },
+    {
+      "path": "components/motion/tokens.ts",
+      "bytes": 324,
+      "sha256": "128a51b0a925c0c80efcec13fc51aa3c2b09d365725ed727f5b6bc49ce16e097"
+    },
+    {
+      "path": "components/site-link.tsx",
+      "bytes": 391,
+      "sha256": "be2ad94fd19bdb3ac8f7724fb7514163b2be54dec9c91e2ca7a1a21689c7f720"
+    },
+    {
+      "path": "content/business.ts",
+      "bytes": 1858,
+      "sha256": "0ce1353d1dfed4cc356cea4beef505cfdf35439b022e8bf8ad8ab21948f89cf4"
+    },
+    {
+      "path": "content/company.ts",
+      "bytes": 1187,
+      "sha256": "636200eaf71cd28425bf8b2a0255893cfde3dda719f695ad7e418865574f6862"
+    },
+    {
+      "path": "content/navigation.ts",
+      "bytes": 387,
+      "sha256": "514e4f7da42f3593894566bce34667a8f4c2986187a9aca9f47dd51ae9048ebe"
+    },
+    {
+      "path": "content/news/index.ts",
+      "bytes": 1003,
+      "sha256": "746be8ec6df44e1b604f3e4d8f6c42ce7aeb8edc0d054c74547380e6f9f09437"
+    },
+    {
+      "path": "content/pages.ts",
+      "bytes": 3505,
+      "sha256": "1a7713cc5fdb984abaf00fb8728c0af927ce0740e6dbe370f21ea870dd64840d"
+    },
+    {
+      "path": "content/site.ts",
+      "bytes": 1182,
+      "sha256": "568dd62e3401893bbe85b1ee7b16026d992596c28d6eff6a72f74dfadc38ff66"
+    },
+    {
+      "path": "docs/content-checklist.md",
+      "bytes": 3213,
+      "sha256": "f08393788206167e9179b8dd14ff2fd826273f684a1912b982fe503331a008dd"
+    },
+    {
+      "path": "docs/evidence/about.png",
+      "bytes": 934839,
+      "sha256": "8e9cddd871114e0314d7ed097893d365526570889a29bf4d704faea593defe66"
+    },
+    {
+      "path": "docs/evidence/business.png",
+      "bytes": 752556,
+      "sha256": "ef79ac4f81ee9cd60af03131edd366fef22b05259e611f34b724831d28bcdc8f"
+    },
+    {
+      "path": "docs/evidence/company.png",
+      "bytes": 777535,
+      "sha256": "8d8321818efa005b0c99a6ce91d90a42a41ccc00c51e84e8b8940844a63bf67a"
+    },
+    {
+      "path": "docs/evidence/contact.png",
+      "bytes": 337789,
+      "sha256": "a0252c4db5b15596034c02a9e936c81ae96938f396e79ed192de6a7207225c5e"
+    },
+    {
+      "path": "docs/evidence/desktop-cut-in.png",
+      "bytes": 253895,
+      "sha256": "bc72f58a19322b353369b5b4553dcf1ce0b75abcf72cc11127a53339de05c1d2"
+    },
+    {
+      "path": "docs/evidence/desktop-hero.png",
+      "bytes": 911778,
+      "sha256": "11a5e355503058ce5e748f7823df630acfd541f481ba9745fd0a5b95ccc7507e"
+    },
+    {
+      "path": "docs/evidence/desktop-home.png",
+      "bytes": 1654232,
+      "sha256": "6d0bf792e2ef208e5c325133dfc76e0bc85bec4efb78cbe5c85109806964e9fc"
+    },
+    {
+      "path": "docs/evidence/desktop-menu.png",
+      "bytes": 726365,
+      "sha256": "8bbc3e57239c5efcc1ed6be60297efad66656b80824e12d84651634ce23131c9"
+    },
+    {
+      "path": "docs/evidence/desktop-motion.webm",
+      "bytes": 1223676,
+      "sha256": "65d199948c6c920cfb8b08afe508c9c8e923602bcd966ffeda36c6d80a3744fb"
+    },
+    {
+      "path": "docs/evidence/e2e-summary.json",
+      "bytes": 251,
+      "sha256": "03b2dfd7e3b7afb9efb723b4127d4d02ea430880beea743dd8bac49c97a37b5d"
+    },
+    {
+      "path": "docs/evidence/lab-measurements.json",
+      "bytes": 1163,
+      "sha256": "c04a99b8d5c2cdb80bb1d97c2996176eb4b0e4bbe211d4a5707ba83057578dd5"
+    },
+    {
+      "path": "docs/evidence/menu-effective-200-percent.png",
+      "bytes": 187108,
+      "sha256": "652e5e59bd2e0980653805d7eb4dd724dd8e593a1d0c09d8b144462ce0b9596d"
+    },
+    {
+      "path": "docs/evidence/mobile-cut-in.png",
+      "bytes": 99156,
+      "sha256": "3140d380bae8b7a787ec6f4c44001f5deebb6377d955b1d855759d28c0e12766"
+    },
+    {
+      "path": "docs/evidence/mobile-hero.png",
+      "bytes": 269540,
+      "sha256": "fcbc6d800c4df4a3d134289a275cf5dad476c6e4ba10df33ab92ba48f020daea"
+    },
+    {
+      "path": "docs/evidence/mobile-home.png",
+      "bytes": 578463,
+      "sha256": "0f06137d22de2016aa6035aedcd3f984c264a8d7d1e81e9a69e94d5ec0afcd6e"
+    },
+    {
+      "path": "docs/evidence/mobile-menu.png",
+      "bytes": 230467,
+      "sha256": "54bdad22ae2ae8c9e55849202df1b5d083b98909d56deab0730f028097309772"
+    },
+    {
+      "path": "docs/evidence/mobile-motion.webm",
+      "bytes": 973192,
+      "sha256": "90031eddc52c424555ea6b5a09f7875b4e9074803001cc8fd5fbf330fd71c798"
+    },
+    {
+      "path": "docs/evidence/motion-lifecycle.json",
+      "bytes": 571,
+      "sha256": "9dd7f24797b96b6de48373276e5f778e7dc10d286f8eee9d54d0a0762b1c4741"
+    },
+    {
+      "path": "docs/evidence/news.png",
+      "bytes": 283700,
+      "sha256": "0ab0bf1b0e69839a6f182eac03f071ffe303bbb0526956034f85feda5860004c"
+    },
+    {
+      "path": "docs/evidence/privacy.png",
+      "bytes": 267642,
+      "sha256": "506e00388b3ce5cd715255ae6fc420ea49da9ca6ca0a78d379d13d7c92b1000d"
+    },
+    {
+      "path": "docs/operations.md",
+      "bytes": 3174,
+      "sha256": "ec04f7311f09e744972e193ecad79f2c66965a251510e85557c0d99df82a2d73"
+    },
+    {
+      "path": "docs/reference-analysis.md",
+      "bytes": 5927,
+      "sha256": "6b37d1ad67834c4c120e896f9ef36fe079bfa9c7d6140ad83c9d5edfd62bf6c2"
+    },
+    {
+      "path": "docs/verification.md",
+      "bytes": 8091,
+      "sha256": "91bfc24eec57dee4bf731e9cd1392a94f7319eea368deb634a0128e4bfabdc8d"
+    },
+    {
+      "path": "eslint.config.mjs",
+      "bytes": 367,
+      "sha256": "89ec7cea81b17eba12d58c6230ffeaf1f382cad7e28c6a238e8be19439df02df"
+    },
+    {
+      "path": "lib/contact-contract.ts",
+      "bytes": 507,
+      "sha256": "77a3bb508d5700a69e4a5f997c6d82dde8760c26092c022e3b83b4b0623bfe99"
+    },
+    {
+      "path": "next-env.d.ts",
+      "bytes": 288,
+      "sha256": "1862ac4bbbc5192d4bf562161df66ea547ed3e67173100656ab606ae9797db2b"
+    },
+    {
+      "path": "next.config.ts",
+      "bytes": 593,
+      "sha256": "e8043ad43cf181e42979350bb87dc75ba981856d50b4f6a92038af19f63e87fc"
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 232541,
+      "sha256": "d262dfb7b0a18982f2e6a5ac42b69db8538fa354a8494b799f5b14c7e26a23e5"
+    },
+    {
+      "path": "package.json",
+      "bytes": 835,
+      "sha256": "1c5bf60a51c3ed83f6688a1998130fff2db8cff852cf7e2c1ed064c272bd4160"
+    },
+    {
+      "path": "playwright.config.ts",
+      "bytes": 1008,
+      "sha256": "34133a3c8609f464c849ae78cc80079f245739818a4c40c5d1930ba944e2132a"
+    },
+    {
+      "path": "public/images/afterglow.webp",
+      "bytes": 114844,
+      "sha256": "dc47da1dce7721c06e24fbe7721b2ef3cc920cf052944ac32696d9b7ef96919d"
+    },
+    {
+      "path": "scripts/capture-evidence.mjs",
+      "bytes": 5771,
+      "sha256": "35498f391123a0a9916b0fb8e47733fabee2e5bffc13a984f1c1b2952f882d5b"
+    },
+    {
+      "path": "styles/tokens.css",
+      "bytes": 1608,
+      "sha256": "69994d23f9fc39964ffbabbb63e44157629f324a88f33b0a4292b5ccfd61d8a2"
+    },
+    {
+      "path": "tests/content.test.ts",
+      "bytes": 2390,
+      "sha256": "ef909ab5d176c56739019413a9f735f56d8d2ba74c18a0128dc4117d260cc489"
+    },
+    {
+      "path": "tests/e2e/site.spec.ts",
+      "bytes": 9674,
+      "sha256": "846bb092a90437d4e9e96e5f51f32145619c396fb846ddba1dc37497f246a45e"
+    },
+    {
+      "path": "tsconfig.json",
+      "bytes": 614,
+      "sha256": "1e2f60e3da3dd14ae2c69a87035dc938f22f346d2fca1e6893509087f8208961"
+    }
+  ]
+}

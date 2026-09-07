@@ -1,0 +1,13 @@
+{
+  "startTime": "2026-09-07T19:47:42.786Z",
+  "durationMs": 63014.619,
+  "passed": 33,
+  "failed": 0,
+  "skipped": 0,
+  "flaky": 0,
+  "environments": [
+    "Chromium desktop 1440x900",
+    "Chromium mobile 390x844",
+    "WebKit mobile 390x844"
+  ]
+}
