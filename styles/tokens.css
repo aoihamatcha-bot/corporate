@@ -1,7 +1,7 @@
 :root {
   --paper: #fff;
   --sky-paper: #f4f9ff;
-  --ink: #152b42;
+  --ink: #14191f;
   --muted: #3e4d60;
   --deep-blue: #101f35;
   --purple: #7461c4;
@@ -32,40 +32,77 @@
   --content-width: 1280px;
   --gutter: clamp(24px, 5.55vw, 80px);
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
-  --menu-open-ms: 520;
-  --menu-close-ms: 320;
-  --menu-stagger-ms: 45;
-  --entry-ms: 780;
+  --menu-open-ms: 740;
+  --menu-close-ms: 360;
+  --menu-stagger-ms: 65;
+  --menu-echo-ms: 1040;
+  --text-wipe-ms: 620;
+  --text-color-ms: 1600;
+  --text-body-brightness: 0.82;
+  --image-color-ms: 1500;
+  --image-hover-ms: 280;
+  --entry-ms: 900;
   --cut-ms: 900;
   --lead-ms: 920;
   --echo-ms: 1200;
   --color-delay-ms: 120;
   --entry-distance: 56;
   --cut-distance: 90;
+  --menu-color-1: #86dcff;
+  --menu-color-2: #b5e4ed;
+  --menu-color-3: #c5b3fb;
+  --menu-color-4: #efd6f0;
+  --menu-echo-1: #bed6ff;
+  --menu-echo-2: #d1f0e4;
+  --menu-echo-3: #f7d9cf;
 }
 [data-palette="sky"] {
   --color-1: var(--sky-1);
   --color-2: var(--sky-2);
   --color-3: var(--sky-3);
   --color-4: var(--sky-4);
+  --accent-1: #1e54f5;
+  --accent-2: #29d9eb;
+  --accent-3: #ad8eff;
+  --type-1: #123ddb;
+  --type-2: #006778;
+  --type-3: #4c26b9;
 }
 [data-palette="mint"] {
   --color-1: var(--mint-1);
   --color-2: var(--mint-2);
   --color-3: var(--mint-3);
   --color-4: var(--mint-4);
+  --accent-1: #47dcba;
+  --accent-2: #a5eb69;
+  --accent-3: #46cef0;
+  --type-1: #00624e;
+  --type-2: #006875;
+  --type-3: #3450ae;
 }
 [data-palette="apricot"] {
   --color-1: var(--apricot-1);
   --color-2: var(--apricot-2);
   --color-3: var(--apricot-3);
   --color-4: var(--apricot-4);
+  --accent-1: #ffd463;
+  --accent-2: #ff9685;
+  --accent-3: #ee7cc7;
+  --type-1: #9e300c;
+  --type-2: #9b235f;
+  --type-3: #7634a8;
 }
 [data-palette="iris"] {
   --color-1: var(--iris-1);
   --color-2: var(--iris-2);
   --color-3: var(--iris-3);
   --color-4: var(--iris-4);
+  --accent-1: #ae87fb;
+  --accent-2: #ee80d5;
+  --accent-3: #89b5ff;
+  --type-1: #6530ca;
+  --type-2: #a31a80;
+  --type-3: #2a47b8;
 }
 @media (max-width: 600px) {
   :root {

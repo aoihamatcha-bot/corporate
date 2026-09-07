@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { PageIntro, SectionLabel, ContactBand } from "@/components/editorial";
 import { Scene } from "@/components/motion/scene";
+import { RevealText } from "@/components/motion/reveal-text";
 import { site } from "@/content/site";
 import { pages } from "@/content/pages";
 export const metadata: Metadata = {
@@ -16,14 +17,19 @@ export default function About() {
         <div className="container editorial-grid">
           <SectionLabel>OUR MISSION</SectionLabel>
           <div>
-            <h2 className="section-heading" data-reveal="left">
-              {site.about.lines[0]}
-              <br />
-              <span className="gradient-ink">{site.about.lines[1]}</span>
+            <h2 className="section-heading">
+              <RevealText palette="sky">{site.about.lines[0]}</RevealText>
+              <RevealText palette="iris" direction="right">
+                {site.about.lines[1]}
+              </RevealText>
             </h2>
-            <div className="prose" data-reveal="right">
-              {site.about.paragraphs.map((p) => (
-                <p key={p}>{p}</p>
+            <div className="prose">
+              {site.about.paragraphs.map((p, i) => (
+                <p key={p}>
+                  <RevealText palette={i === 0 ? "mint" : "apricot"}>
+                    {p}
+                  </RevealText>
+                </p>
               ))}
             </div>
           </div>
@@ -33,16 +39,16 @@ export default function About() {
         <div className="container editorial-grid">
           <SectionLabel>OUR APPROACH</SectionLabel>
           <div>
-            <h2
-              className="section-heading"
-              data-reveal="right"
-              style={{ whiteSpace: "pre-line" }}
-            >
-              {copy.approach.title}
+            <h2 className="section-heading" style={{ whiteSpace: "pre-line" }}>
+              <RevealText palette="sky" direction="right">
+                {copy.approach.title}
+              </RevealText>
             </h2>
             <div className="prose">
               {copy.approach.paragraphs.map((p) => (
-                <p key={p}>{p}</p>
+                <p key={p}>
+                  <RevealText palette="iris">{p}</RevealText>
+                </p>
               ))}
             </div>
           </div>

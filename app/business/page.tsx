@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { PageIntro, SectionLabel, ContactBand } from "@/components/editorial";
 import { Scene } from "@/components/motion/scene";
+import { RevealText } from "@/components/motion/reveal-text";
+import { GradientImage } from "@/components/motion/gradient-image";
 import { pages } from "@/content/pages";
 import { business } from "@/content/business";
 export const metadata: Metadata = {
@@ -22,13 +24,22 @@ export default function Business() {
           <div className="container editorial-grid">
             <SectionLabel number={b.index}>{b.verb}</SectionLabel>
             <div>
-              <h2 className="business-title" data-reveal="left">
-                {b.en[0]}
-                <br />
-                {b.en[1]}
+              <GradientImage
+                src={b.visual}
+                blend={b.visualBlend}
+                sizes="(max-width: 700px) 90vw, 60vw"
+                className="business-detail-visual"
+                palette={i === 0 ? "sky" : "iris"}
+              />
+              <h2 className="business-title">
+                <RevealText palette={i === 0 ? "sky" : "iris"}>
+                  {b.en.join("\n")}
+                </RevealText>
               </h2>
-              <p className="business-subtitle" data-reveal="right">
-                {b.title}
+              <p className="business-subtitle">
+                <RevealText palette="mint" direction="right">
+                  {b.title}
+                </RevealText>
               </p>
               <div className="prose">
                 <p>{b.description}</p>

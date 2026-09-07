@@ -201,6 +201,10 @@ export function Header() {
           setOpen(false);
         }}
       >
+        <div className="nav-curtains" aria-hidden="true">
+          <i className="nav-curtain-lead" />
+          <i className="nav-curtain-echo" />
+        </div>
         <div className="nav-top">
           <Link
             href="/"
@@ -232,6 +236,9 @@ export function Header() {
               {navigation.map((item, i) => (
                 <li
                   key={item.href}
+                  data-palette={
+                    (["sky", "iris", "mint", "apricot"] as const)[i % 4]
+                  }
                   style={{ "--item-index": i } as React.CSSProperties}
                 >
                   <Link
@@ -240,7 +247,15 @@ export function Header() {
                     aria-current={path === item.href ? "page" : undefined}
                   >
                     <span className="nav-number">0{i + 1}</span>
-                    <span className="nav-en">{item.en}</span>
+                    <span className="nav-en">
+                      <span className="nav-en-base">{item.en}</span>
+                      <span
+                        className="nav-en-color"
+                        data-text={item.en}
+                        aria-hidden="true"
+                      />
+                      <i className="nav-en-wipe" aria-hidden="true" />
+                    </span>
                     <span className="nav-ja">{item.ja}</span>
                     <Arrow diagonal />
                   </Link>

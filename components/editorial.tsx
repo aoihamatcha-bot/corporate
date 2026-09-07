@@ -1,6 +1,7 @@
 import Link from "@/components/site-link";
 import { Arrow } from "./icons";
 import { Scene } from "./motion/scene";
+import { RevealText } from "./motion/reveal-text";
 import { site } from "@/content/site";
 export function SectionLabel({
   number,
@@ -38,12 +39,13 @@ export function ContactBand() {
       <div className="container">
         <SectionLabel>GET IN TOUCH</SectionLabel>
         <div className="contact-band-inner">
-          <h2 data-reveal="left">
-            {site.contact.lines[0]}
-            <br />
-            {site.contact.lines[1]}
+          <h2>
+            <RevealText palette="apricot">{site.contact.lines[0]}</RevealText>
+            <RevealText palette="iris" direction="right">
+              {site.contact.lines[1]}
+            </RevealText>
           </h2>
-          <div data-reveal="right">
+          <div>
             <p>{site.contact.description}</p>
             <TextLink href="/contact">お問い合わせ</TextLink>
           </div>
@@ -71,16 +73,17 @@ export function PageIntro({
           <span>/</span>
           {en.toUpperCase()}
         </p>
-        <p className="page-en" aria-hidden="true" data-reveal="left">
-          {en}
-          <span>.</span>
+        <p className="page-en" aria-hidden="true">
+          <RevealText palette={palette}>{en + "."}</RevealText>
         </p>
-        <h1 tabIndex={-1} data-reveal="left">
-          {ja}
+        <h1 tabIndex={-1}>
+          <RevealText palette={palette}>{ja}</RevealText>
         </h1>
         {description && (
-          <p className="page-description" data-reveal="right">
-            {description}
+          <p className="page-description">
+            <RevealText palette={palette} direction="right">
+              {description}
+            </RevealText>
           </p>
         )}
       </div>

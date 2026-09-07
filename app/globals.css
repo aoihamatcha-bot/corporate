@@ -1,4 +1,5 @@
 @import "../styles/tokens.css";
+@import "../styles/motion.css";
 
 * {
   box-sizing: border-box;
@@ -219,10 +220,10 @@ main:focus {
   background: rgba(16, 31, 53, 0.3);
 }
 .fullscreen-nav[open] {
-  animation: nav-open calc(var(--menu-open-ms) * 1ms) var(--ease-out) both;
+  isolation: isolate;
 }
 .fullscreen-nav[data-closing="true"] {
-  animation: nav-close calc(var(--menu-close-ms) * 1ms) ease both;
+  animation: nav-dismiss calc(var(--menu-close-ms) * 1ms) ease both;
 }
 .nav-top {
   position: sticky;
@@ -244,6 +245,8 @@ main:focus {
   font-weight: 400;
 }
 .nav-layout {
+  position: relative;
+  z-index: 1;
   display: grid;
   grid-template-columns: 1.35fr 1fr;
   gap: 11vw;
@@ -275,34 +278,9 @@ main:focus {
   letter-spacing: -0.05em;
   font-weight: 600;
   line-height: 1.1;
-  background: linear-gradient(
-    100deg,
-    var(--ink) 15%,
-    var(--text-blue) 35%,
-    var(--text-purple) 50%,
-    var(--text-cyan) 65%,
-    var(--ink) 85%
-  );
-  background-size: 300% 100%;
   color: var(--ink);
-}
-@supports (background-clip: text) {
-  .nav-en {
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-}
-.fullscreen-nav[open] li {
-  animation: nav-item calc(var(--menu-open-ms) * 1ms) var(--ease-out) backwards;
-  animation-delay: calc(var(--item-index) * var(--menu-stagger-ms) * 1ms);
-}
-.fullscreen-nav[open] .nav-en {
-  animation: type-flow 1100ms ease backwards;
-  animation-delay: calc(var(--item-index) * var(--menu-stagger-ms) * 1ms);
-}
-.nav-layout a:hover .nav-en,
-.nav-layout a:focus-visible .nav-en {
-  animation: type-hover 700ms ease both;
+  position: relative;
+  display: block;
 }
 .nav-ja {
   justify-self: end;
@@ -346,6 +324,8 @@ main:focus {
   font-size: 13px;
 }
 .nav-bottom {
+  position: relative;
+  z-index: 1;
   padding: 20px var(--gutter) 30px;
   display: flex;
   justify-content: space-between;
@@ -353,6 +333,7 @@ main:focus {
   letter-spacing: 0.1em;
 }
 .hero {
+  overflow: clip;
   min-height: min(820px, calc(100svh - 96px));
   position: relative;
   display: flex;
@@ -505,21 +486,6 @@ main:focus {
   letter-spacing: -0.045em;
   font-weight: 700;
 }
-.gradient-ink {
-  background: linear-gradient(
-    100deg,
-    var(--text-blue),
-    var(--text-cyan) 40%,
-    var(--text-purple)
-  );
-  color: var(--text-blue);
-}
-@supports (background-clip: text) {
-  .gradient-ink {
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-}
 .prose {
   max-width: 640px;
   font-size: 16px;
@@ -561,16 +527,23 @@ main:focus {
 .color-lead,
 .color-echo {
   position: absolute;
-  inset: -20%;
+  inset: 22% -10% 24%;
   opacity: 0;
   background: linear-gradient(
-    95deg,
-    transparent 10%,
-    var(--color-2) 45%,
-    var(--color-4) 65%,
-    transparent 85%
+    110deg,
+    var(--color-2),
+    var(--color-3) 45%,
+    var(--color-4)
   );
-  filter: blur(40px);
+}
+.color-echo {
+  inset: 38% -10% 12%;
+  background: linear-gradient(
+    100deg,
+    var(--color-4),
+    var(--color-1),
+    var(--color-2)
+  );
 }
 .scene-entered .color-lead {
   animation: color-sweep calc(var(--lead-ms) * 1ms) var(--ease-out) both;
@@ -686,10 +659,6 @@ main:focus {
   line-height: 1.15;
   font-weight: 500;
   margin: 40px 0 30px;
-  transition: color 0.3s;
-}
-.business-preview > a:hover h3 {
-  color: var(--text-purple);
 }
 .business-preview > a > div {
   display: flex;
@@ -843,9 +812,6 @@ main:focus {
   line-height: 1.05;
   font-weight: 600;
   letter-spacing: -0.065em;
-}
-.page-en span {
-  color: var(--purple);
 }
 .page-intro h1 {
   font-size: 21px;
@@ -1113,46 +1079,6 @@ main:focus {
 }
 .not-found .text-link {
   margin-top: 30px;
-}
-@keyframes nav-open {
-  from {
-    transform: translateY(-22px);
-    opacity: 1;
-  }
-  to {
-    transform: none;
-    opacity: 1;
-  }
-}
-@keyframes nav-close {
-  to {
-    transform: translateY(-16px);
-    opacity: 1;
-  }
-}
-@keyframes nav-item {
-  from {
-    transform: translateX(-24px);
-  }
-  to {
-    transform: none;
-  }
-}
-@keyframes type-flow {
-  from {
-    background-position: 100% 50%;
-  }
-  to {
-    background-position: 0 50%;
-  }
-}
-@keyframes type-hover {
-  from {
-    background-position: 0 50%;
-  }
-  to {
-    background-position: 100% 50%;
-  }
 }
 @keyframes color-sweep {
   0% {
@@ -1593,28 +1519,6 @@ main:focus {
   background: linear-gradient(transparent, rgba(4, 18, 38, 0.78));
   z-index: -1;
   pointer-events: none;
-}
-.fullscreen-nav {
-  isolation: isolate;
-}
-.fullscreen-nav::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: -1;
-  background: linear-gradient(105deg, var(--sky-2), transparent 65%);
-}
-.fullscreen-nav[open]::before {
-  animation: nav-color calc(var(--menu-open-ms) * 1ms) var(--ease-out) both;
-}
-@keyframes nav-color {
-  from {
-    transform: translateX(-90%);
-  }
-  to {
-    transform: translateX(0);
-  }
 }
 @media (prefers-reduced-motion: reduce) {
   html {

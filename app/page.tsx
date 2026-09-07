@@ -1,6 +1,7 @@
-import Image from "next/image";
 import Link from "@/components/site-link";
 import { Scene } from "@/components/motion/scene";
+import { RevealText } from "@/components/motion/reveal-text";
+import { GradientImage } from "@/components/motion/gradient-image";
 import { SectionLabel, TextLink, ContactBand } from "@/components/editorial";
 import { Arrow, Spark } from "@/components/icons";
 import { site } from "@/content/site";
@@ -12,10 +13,8 @@ export default function Home() {
   return (
     <>
       <section className="hero" aria-labelledby="hero-title">
-        <Image
+        <GradientImage
           src="/images/afterglow.webp"
-          alt=""
-          fill
           sizes="100vw"
           preload
           className="hero-art"
@@ -27,8 +26,15 @@ export default function Home() {
             ENTERTAINMENT × TECHNOLOGY
           </p>
           <h1 id="hero-title" tabIndex={-1}>
-            {site.hero.lines.map((line) => (
-              <span key={line}>{line}</span>
+            {site.hero.lines.map((line, i) => (
+              <RevealText
+                key={line}
+                light
+                palette={i === 0 ? "sky" : "iris"}
+                direction={i === 0 ? "left" : "right"}
+              >
+                {line}
+              </RevealText>
             ))}
           </h1>
           <p className="hero-description">{site.hero.description}</p>
@@ -50,17 +56,22 @@ export default function Home() {
         <div className="container editorial-grid">
           <SectionLabel number="01">ABOUT US</SectionLabel>
           <div>
-            <p className="kicker" data-reveal="left">
-              {site.about.kicker}
+            <p className="kicker">
+              <RevealText palette="mint">{site.about.kicker}</RevealText>
             </p>
-            <h2 className="section-heading" data-reveal="left">
-              {site.about.lines[0]}
-              <br />
-              <span className="gradient-ink">{site.about.lines[1]}</span>
+            <h2 className="section-heading">
+              <RevealText palette="sky">{site.about.lines[0]}</RevealText>
+              <RevealText palette="iris" direction="right">
+                {site.about.lines[1]}
+              </RevealText>
             </h2>
-            <div className="prose" data-reveal="right">
-              {site.about.paragraphs.map((p) => (
-                <p key={p}>{p}</p>
+            <div className="prose">
+              {site.about.paragraphs.map((p, i) => (
+                <p key={p}>
+                  <RevealText palette={i === 0 ? "mint" : "apricot"}>
+                    {p}
+                  </RevealText>
+                </p>
               ))}
             </div>
             <TextLink href="/about">私たちについて</TextLink>
@@ -74,8 +85,12 @@ export default function Home() {
         <div className="container">
           <p className="eyebrow">THE MYSTENA SPIRIT</p>
           <h2 className="wonder-type">
-            <span data-reveal="cut-left">A LITTLE WONDER</span>
-            <span data-reveal="cut-right">CHANGES EVERYTHING.</span>
+            <RevealText cut palette="sky">
+              A LITTLE WONDER
+            </RevealText>
+            <RevealText cut palette="iris" direction="right">
+              CHANGES EVERYTHING.
+            </RevealText>
           </h2>
           <p className="wonder-caption">小さなときめきが、世界を変えていく。</p>
         </div>
@@ -89,10 +104,11 @@ export default function Home() {
           <div className="section-top">
             <SectionLabel number="02">OUR BUSINESS</SectionLabel>
             <div>
-              <h2 className="section-heading" data-reveal="right">
-                楽しさを、
-                <br />
-                <span className="gradient-ink">次のかたちへ。</span>
+              <h2 className="section-heading">
+                <RevealText palette="iris" direction="right">
+                  楽しさを、
+                </RevealText>
+                <RevealText palette="mint">次のかたちへ。</RevealText>
               </h2>
               <p className="section-description">
                 MYSTENAが目指す、2つの領域。
@@ -101,18 +117,21 @@ export default function Home() {
           </div>
           <div className="business-preview">
             {business.map((item, i) => (
-              <Link
-                key={item.id}
-                href={`/business#${item.id}`}
-                data-reveal={i === 0 ? "left" : "right"}
-              >
+              <Link key={item.id} href={`/business#${item.id}`}>
+                <GradientImage
+                  src={item.visual}
+                  blend={item.visualBlend}
+                  sizes="(max-width: 700px) 90vw, 44vw"
+                  className="business-visual"
+                  palette={i === 0 ? "sky" : "iris"}
+                />
                 <span className="business-index">
                   {item.index} / {item.verb}
                 </span>
                 <h3>
-                  {item.en[0]}
-                  <br />
-                  {item.en[1]}
+                  <RevealText palette={i === 0 ? "sky" : "iris"}>
+                    {item.en.join("\n")}
+                  </RevealText>
                 </h3>
                 <div>
                   <span>{item.title}</span>

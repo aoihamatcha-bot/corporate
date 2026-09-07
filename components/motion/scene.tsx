@@ -2,7 +2,6 @@
 
 import { useEffect, useRef, type ReactNode } from "react";
 import { useMotionPaused } from "./motion-control";
-import { motionToken } from "./tokens";
 
 // Content is visible in server HTML. Animation enhances an already readable page.
 export function Scene({
@@ -24,69 +23,24 @@ export function Scene({
   useEffect(() => {
     const el = ref.current;
     if (!el || paused || !window.IntersectionObserver) return;
-    const animations: Animation[] = [];
     const observer = new IntersectionObserver(
       ([entry]) => {
         el.dataset.visible = String(entry.isIntersecting);
         if (entry.isIntersecting && !seen.current && !document.hidden) {
           seen.current = true;
           el.classList.add("scene-entered");
-          if (typeof el.animate !== "function") return;
-          el.querySelectorAll<HTMLElement>("[data-reveal]").forEach(
-            (child, index) => {
-              const cut = child.dataset.reveal?.startsWith("cut");
-              const sign =
-                child.dataset.reveal === "cut-right" ||
-                (direction === "right" && !cut)
-                  ? 1
-                  : -1;
-              const distance = motionToken(
-                cut ? "--cut-distance" : "--entry-distance",
-                cut ? 90 : 24,
-              );
-              try {
-                animations.push(
-                  child.animate(
-                    [
-                      {
-                        transform: `translateX(${sign * distance}px)`,
-                        opacity: 1,
-                      },
-                      { transform: "translateX(0)", opacity: 1 },
-                    ],
-                    {
-                      duration: motionToken(
-                        cut ? "--cut-ms" : "--entry-ms",
-                        780,
-                      ),
-                      delay:
-                        motionToken("--color-delay-ms", 120) +
-                        Math.min(index, 4) * 60,
-                      easing: "cubic-bezier(.16,1,.3,1)",
-                      fill: "backwards",
-                    },
-                  ),
-                );
-              } catch {
-                /* Unsupported animation leaves the server-rendered content visible. */
-              }
-            },
-          );
         }
-        if (!entry.isIntersecting) animations.forEach((a) => a.finish());
       },
       { threshold: 0.08 },
     );
     const onVisibility = () => {
       el.dataset.hidden = String(document.hidden);
-      if (document.hidden) animations.forEach((a) => a.finish());
     };
     observer.observe(el);
     document.addEventListener("visibilitychange", onVisibility);
     return () => {
       observer.disconnect();
       document.removeEventListener("visibilitychange", onVisibility);
-      animations.forEach((a) => a.cancel());
     };
   }, [paused, direction]);
 
