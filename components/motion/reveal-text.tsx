@@ -65,7 +65,7 @@ export function RevealText({
             Number(computed.getPropertyValue(`--${kind}-${part}-ms`));
           const delay = token("delay") + beat * 37;
           const wipeMs = token("wipe") + beat * 19;
-          const holdMs = token("hold") + beat * 31;
+          const holdMs = token("hold") + beat * 20;
           const fadeMs = token("fade") + beat * 43;
           const lastBandDelay = Math.min(Math.max(lines.length - 1, 0), 4) * 65;
           const clearMs = wipeMs + lastBandDelay;

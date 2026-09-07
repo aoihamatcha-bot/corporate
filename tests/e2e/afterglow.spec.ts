@@ -83,25 +83,30 @@ test("independent text rhythms keep color after the background passes, then fade
       fade: Number(timing.duration) - plateau,
     };
   });
-  expect(envelope.holdAfterBand).toBeGreaterThanOrEqual(500);
-  expect(envelope.holdAfterBand).toBeLessThanOrEqual(800);
+  expect(envelope.holdAfterBand).toBeGreaterThanOrEqual(400);
+  expect(envelope.holdAfterBand).toBeLessThanOrEqual(600);
   expect(envelope.fade).toBeGreaterThanOrEqual(1000);
-  // Sample 500ms after the actual last band finishes. A polling interval plus
-  // a fixed extra wait can overshoot the shorter hold into the valid fade.
+  // Sample at least 400ms after the last band, once the scene echo finishes.
+  // Near-zero opacity in the echo's final frame is still an active animation.
   // These animations run in real time; no seeking or freezing is used.
   const sample = await title.evaluate(async (el) => {
+    const background = el.closest(".scene")!.querySelector(".color-echo")!;
+    const backgroundFinished = Promise.all(
+      background.getAnimations().map((animation) => animation.finished),
+    );
     const bands = [...el.querySelectorAll(".reveal-band")].flatMap((band) =>
       band.getAnimations(),
     );
     await Promise.all(bands.map((animation) => animation.finished));
-    await new Promise((resolve) => setTimeout(resolve, 500));
+    await Promise.all([
+      new Promise((resolve) => setTimeout(resolve, 400)),
+      backgroundFinished,
+    ]);
     return {
       color: Number(
         getComputedStyle(el.querySelector(".reveal-color")!).opacity,
       ),
-      background: getComputedStyle(
-        el.closest(".scene")!.querySelector(".color-echo")!,
-      ).opacity,
+      background: getComputedStyle(background).opacity,
     };
   });
   expect(sample.background).toBe("0");
