@@ -53,6 +53,26 @@ export function RevealText({
           (rect) => rect.width > 0 && rect.height > 0,
         );
         const wipeMs = motionToken("--text-wipe-ms", 620);
+        const hidden =
+          direction === "left" ? "inset(0 100% 0 0)" : "inset(0 0 0 100%)";
+        const mask = [
+          { clipPath: hidden },
+          { clipPath: hidden, offset: 0.35 },
+          { clipPath: "inset(0)" },
+        ];
+        // Reveal the glyphs behind the departing band, rather than displaying
+        // the complete colored sentence before the band arrives.
+        const focusedHeading = element.closest("h1")?.matches(":focus");
+        if (!focusedHeading) {
+          for (const target of [original, overlay]) {
+            animations.push(
+              target.animate(mask, {
+                duration: wipeMs,
+                easing: "cubic-bezier(.65,0,.2,1)",
+              }),
+            );
+          }
+        }
         lines.forEach((rect, index) => {
           const band = document.createElement("i");
           band.className = "reveal-band";

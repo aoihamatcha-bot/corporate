@@ -29,6 +29,21 @@ test("text below the viewport keeps its entrance until visible, then settles to 
   );
   expect(bands.length).toBeGreaterThan(1);
   expect(
+    await target
+      .locator(".reveal-source")
+      .evaluate((el) =>
+        el
+          .getAnimations()
+          .some((animation) =>
+            animation.effect instanceof KeyframeEffect && animation.effect
+              .getKeyframes()
+              .some(
+                (frame) => frame.clipPath && frame.clipPath !== "inset(0px)",
+              ),
+          ),
+      ),
+  ).toBe(true);
+  expect(
     bands.every(
       (band) =>
         band.width > 0 &&
