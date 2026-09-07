@@ -1,0 +1,10 @@
+{
+  "measuredAt": "2026-09-07T21:00:46.342Z",
+  "method": "sRGB text endpoint maximum; every backdrop endpoint pair at 1% intervals. Text color fades onto opaque black ink. Decorative wipes intentionally occlude part of a line briefly and are not text-color samples. Photo backgrounds, antialiasing and unmeasured display behavior excluded.",
+  "foregroundCount": 12,
+  "backgroundCount": 23,
+  "coloredBodyTextMinimum": 4.527845287145752,
+  "coloredLargeTextMinimum": 3.4646652981846464,
+  "blackTextMinimum": 9.435701197251001,
+  "mutedTextMinimum": 4.605259245070741
+}

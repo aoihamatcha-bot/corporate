@@ -1,0 +1,36 @@
+[
+  {
+    "file": "docs/evidence/motion-v4/desktop-motion.webm",
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "vp8",
+        "width": 1440,
+        "height": 900,
+        "r_frame_rate": "25/1"
+      }
+    ],
+    "format": {
+      "duration": "18.560000",
+      "size": "2026903"
+    }
+  },
+  {
+    "file": "docs/evidence/motion-v4/mobile-motion.webm",
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "vp8",
+        "width": 390,
+        "height": 844,
+        "r_frame_rate": "25/1"
+      }
+    ],
+    "format": {
+      "duration": "17.840000",
+      "size": "1240353"
+    }
+  }
+]

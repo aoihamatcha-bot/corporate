@@ -1,0 +1,52 @@
+{
+  "capturedAt": "2026-09-07T19:48:46.293Z",
+  "environment": "LOCAL production build, Chromium, Windows; emulated viewports; not field CWV",
+  "measurements": [
+    {
+      "name": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "metrics": {
+        "lcp": 216,
+        "cls": 0,
+        "longTasks": [
+          110
+        ],
+        "interactions": [
+          32,
+          32,
+          32,
+          32
+        ]
+      },
+      "errors": []
+    },
+    {
+      "name": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "metrics": {
+        "lcp": 124,
+        "cls": 0,
+        "longTasks": [],
+        "interactions": [
+          24,
+          24,
+          24,
+          16
+        ]
+      },
+      "errors": []
+    }
+  ],
+  "contrast": {
+    "method": "Conservative palette endpoint matrix. Text interpolation and alpha on white do not introduce a lighter foreground than these text endpoints. Photo pixels and antialiasing require visual review.",
+    "normalText": 7.93515422058126,
+    "mutedText": 4.7445929283551385,
+    "largeGradientText": 3.8061877456181836
+  }
+}

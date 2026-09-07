@@ -1,0 +1,22 @@
+{
+  "capturedAt": "2026-09-07T22:03:50.563Z",
+  "environment": "LOCAL production build; real elapsed-time capture; random palette selection unchanged",
+  "captures": [
+    {
+      "name": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "errors": []
+    },
+    {
+      "name": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "errors": []
+    }
+  ]
+}

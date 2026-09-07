@@ -1,0 +1,28 @@
+{
+  "environment": "LOCAL Chromium; requestAnimationFrame instrumentation; real tab activation attempted",
+  "settled": {
+    "scheduled": 130,
+    "executed": 130,
+    "pending": 0,
+    "visibility": "visible"
+  },
+  "still": {
+    "scheduled": 130,
+    "executed": 130,
+    "pending": 0,
+    "visibility": "visible"
+  },
+  "pointerOnLeave": "false",
+  "background": {
+    "scheduled": 130,
+    "executed": 130,
+    "pending": 0,
+    "visibility": "visible"
+  },
+  "interrupted": {
+    "path": "/about",
+    "locked": "",
+    "dialogOpen": false,
+    "focus": "H1"
+  }
+}

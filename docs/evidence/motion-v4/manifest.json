@@ -1,0 +1,131 @@
+{
+  "applicationCommit": "f4ce8c8fb8a8c507c062e0c2eef6fd22b9617117",
+  "capturedAt": "2026-09-07T22:04:59.081Z",
+  "files": [
+    {
+      "file": "capture.json",
+      "bytes": 432,
+      "sha256": "0c7fc83d820ea505337add461e7a738baf21a39db234d652b9dcd3024b9ca3c1"
+    },
+    {
+      "file": "contrast.json",
+      "bytes": 571,
+      "sha256": "4218758c8ed070c50da2f9ebc1429e0ac453756d8652be6e813e3516b059a84e"
+    },
+    {
+      "file": "desktop-hero-color.png",
+      "bytes": 943136,
+      "sha256": "f4496977c1fab80a3c1c0b07dbe8fd26386a41c910d63591c2f7a6824a3077f1"
+    },
+    {
+      "file": "desktop-image-color.png",
+      "bytes": 518702,
+      "sha256": "204661615d49ddd774462813ddd19b535b24e6d2371dae03e67de057c2b571d2"
+    },
+    {
+      "file": "desktop-menu-color.png",
+      "bytes": 411551,
+      "sha256": "4742a97a4b80370003c680e6b9f95880a8ec19428772ff429d4e17fd585e232e"
+    },
+    {
+      "file": "desktop-menu-settled.png",
+      "bytes": 386719,
+      "sha256": "1471b280cf7bf9a851b96c07d1f552b617c91ce943b4c41f03c60ed9a27795f2"
+    },
+    {
+      "file": "desktop-motion.webm",
+      "bytes": 2026903,
+      "sha256": "6b190f19fe8b499c5372e78aa231c749d1da196168c30c213470c749e9199dac"
+    },
+    {
+      "file": "desktop-small-copy-color.png",
+      "bytes": 358384,
+      "sha256": "bfadc194a35c1c47970990e6adabe51538f80f621dd913969b26aa3fd5554563"
+    },
+    {
+      "file": "desktop-small-copy-settled.png",
+      "bytes": 347915,
+      "sha256": "6c7cd55f6949aaecb6852fe655050d9b88f08014b5bd8b8007420d9a2268af2b"
+    },
+    {
+      "file": "desktop-text-color.png",
+      "bytes": 272229,
+      "sha256": "9cb35897522e8e12bcb894b9c0463fe20a450783716658521aa7eedd85e3ebca"
+    },
+    {
+      "file": "desktop-text-settled.png",
+      "bytes": 251189,
+      "sha256": "fe11e7cbc0d3f369dda151d793ccbb7f09cba4062c08b8b73855dbac5c43621d"
+    },
+    {
+      "file": "desktop-text-wipe.png",
+      "bytes": 246664,
+      "sha256": "270b2d240f7d8f1188915191a9d95280abafcbbe94afec6fd47907a68557d9a6"
+    },
+    {
+      "file": "e2e-summary.json",
+      "bytes": 12434,
+      "sha256": "199b6cae105ffa64a81a749ce68fbf4a9cf09517f6912228ab7eee3bb6cd30dc"
+    },
+    {
+      "file": "mobile-hero-color.png",
+      "bytes": 284650,
+      "sha256": "17435a8da2708d9a43003747650db3e6b7bcd23f2193fa9f5f4ee8744abc1124"
+    },
+    {
+      "file": "mobile-image-color.png",
+      "bytes": 115801,
+      "sha256": "cf3eaa91c095ac6f5fae5ef395dd727839b547714eb46f20712a4d7bcded8524"
+    },
+    {
+      "file": "mobile-menu-color.png",
+      "bytes": 144596,
+      "sha256": "4a377192d59f45e025a92bcced6bab3f1840d89b1027129b9bdfd2bfd820cbec"
+    },
+    {
+      "file": "mobile-menu-settled.png",
+      "bytes": 135889,
+      "sha256": "39847b25c6206ababf05aa91b70cc268292934ef85afed3cf91abd3619499566"
+    },
+    {
+      "file": "mobile-motion.webm",
+      "bytes": 1240353,
+      "sha256": "51f2f3abec03907c980c9a805576024910ef5f441a696ea6f6a5877b385298ee"
+    },
+    {
+      "file": "mobile-small-copy-color.png",
+      "bytes": 141042,
+      "sha256": "4ab5dd845b62643bcaf31ab35b1c1e05de7712ec28390139921b571233722bcd"
+    },
+    {
+      "file": "mobile-small-copy-settled.png",
+      "bytes": 135992,
+      "sha256": "44a3a052319693606598fc5eec7e7ebe04c4b12fe9f7545c2d8c4a56f33b9228"
+    },
+    {
+      "file": "mobile-text-color.png",
+      "bytes": 89295,
+      "sha256": "e76d80d0e4120b649801d6171437a2fac43d31ed3d35fde48a85e2fcbd04a0fe"
+    },
+    {
+      "file": "mobile-text-settled.png",
+      "bytes": 85482,
+      "sha256": "08dc726acefe1fc45a301dbad67fae3cce41546fcd0b4efbdc583690e4594f63"
+    },
+    {
+      "file": "mobile-text-wipe.png",
+      "bytes": 77614,
+      "sha256": "e2aea6940862e3a7319a8ec778d49c05eb46539552af981fe8865f4f5837206f"
+    },
+    {
+      "file": "source-manifest.json",
+      "bytes": 9605,
+      "sha256": "b883867fe4ff894e3c457e5216240dffe39cd1c3b007fc4cd13c8c95fb00c9df"
+    },
+    {
+      "file": "video-metadata.json",
+      "bytes": 672,
+      "sha256": "58e956824cc8f5dd4568128304934ff1592682ac1aca7266575dea4e9ee3ba5b"
+    }
+  ]
+}

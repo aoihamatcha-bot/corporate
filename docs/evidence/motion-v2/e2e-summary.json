@@ -1,0 +1,349 @@
+{
+  "applicationCommit": "c4d582b3fe9f13bc608ddf70a3c51f4f9dfe0056",
+  "stats": {
+    "startTime": "2026-09-07T20:56:16.341Z",
+    "duration": 107433.788,
+    "expected": 48,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "tests": [
+    {
+      "title": "text below the viewport keeps its entrance until visible, then settles to black once",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "durationMs": 2730,
+      "attempts": 1
+    },
+    {
+      "title": "opening the menu starts two color curtains and separate text wipes, then clears them",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "durationMs": 8013,
+      "attempts": 1
+    },
+    {
+      "title": "image interactions show four distinct gradients for keyboard and retain the same image",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "durationMs": 5145,
+      "attempts": 1
+    },
+    {
+      "title": "pausing during the entrance clears decorative bands and images without hiding copy",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "durationMs": 1235,
+      "attempts": 1
+    },
+    {
+      "title": "resize and a partially failing animation API cannot strand a colored cover",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "durationMs": 1015,
+      "attempts": 1
+    },
+    {
+      "title": "text below the viewport keeps its entrance until visible, then settles to black once",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "durationMs": 2715,
+      "attempts": 1
+    },
+    {
+      "title": "opening the menu starts two color curtains and separate text wipes, then clears them",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "durationMs": 9108,
+      "attempts": 1
+    },
+    {
+      "title": "image interactions show four distinct gradients for keyboard and retain the same image",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "durationMs": 4391,
+      "attempts": 1
+    },
+    {
+      "title": "pausing during the entrance clears decorative bands and images without hiding copy",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "durationMs": 1172,
+      "attempts": 1
+    },
+    {
+      "title": "resize and a partially failing animation API cannot strand a colored cover",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "durationMs": 1008,
+      "attempts": 1
+    },
+    {
+      "title": "text below the viewport keeps its entrance until visible, then settles to black once",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "durationMs": 4317,
+      "attempts": 1
+    },
+    {
+      "title": "opening the menu starts two color curtains and separate text wipes, then clears them",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "durationMs": 8969,
+      "attempts": 1
+    },
+    {
+      "title": "image interactions show four distinct gradients for keyboard and retain the same image",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "durationMs": 7619,
+      "attempts": 1
+    },
+    {
+      "title": "pausing during the entrance clears decorative bands and images without hiding copy",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "durationMs": 4668,
+      "attempts": 1
+    },
+    {
+      "title": "resize and a partially failing animation API cannot strand a colored cover",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "durationMs": 3095,
+      "attempts": 1
+    },
+    {
+      "title": "all real pages render, stay out of search and have no horizontal overflow",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "durationMs": 1267,
+      "attempts": 1
+    },
+    {
+      "title": "menu traps Tab and Shift+Tab, closes with Escape and restores scroll and focus",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "durationMs": 1787,
+      "attempts": 1
+    },
+    {
+      "title": "menu navigation focuses destination and Back leaves no lock",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "durationMs": 1491,
+      "attempts": 1
+    },
+    {
+      "title": "rapid close, reopen, resizing and short-height navigation remain usable",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "durationMs": 3983,
+      "attempts": 1
+    },
+    {
+      "title": "contact cannot collect or falsely report sending; unpublished articles return 404",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "durationMs": 1163,
+      "attempts": 1
+    },
+    {
+      "title": "pause preference persists; reduced-motion keeps content visible",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "durationMs": 1101,
+      "attempts": 1
+    },
+    {
+      "title": "cut-in ends in place across scrolling, touch has no pointer effect",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "durationMs": 2899,
+      "attempts": 1
+    },
+    {
+      "title": "360, 768, and effective 200% desktop zoom have no clipped controls",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "durationMs": 4175,
+      "attempts": 1
+    },
+    {
+      "title": "key pages and the full-screen menu pass axe WCAG 2.2 AA",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "durationMs": 4325,
+      "attempts": 1
+    },
+    {
+      "title": "without JavaScript all copy and footer routes remain available",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "durationMs": 561,
+      "attempts": 1
+    },
+    {
+      "title": "animation API failure leaves readable content and working navigation",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "durationMs": 841,
+      "attempts": 1
+    },
+    {
+      "title": "all real pages render, stay out of search and have no horizontal overflow",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "durationMs": 1299,
+      "attempts": 1
+    },
+    {
+      "title": "menu traps Tab and Shift+Tab, closes with Escape and restores scroll and focus",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "durationMs": 1798,
+      "attempts": 1
+    },
+    {
+      "title": "menu navigation focuses destination and Back leaves no lock",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "durationMs": 1841,
+      "attempts": 1
+    },
+    {
+      "title": "rapid close, reopen, resizing and short-height navigation remain usable",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "durationMs": 3760,
+      "attempts": 1
+    },
+    {
+      "title": "contact cannot collect or falsely report sending; unpublished articles return 404",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "durationMs": 1014,
+      "attempts": 1
+    },
+    {
+      "title": "pause preference persists; reduced-motion keeps content visible",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "durationMs": 969,
+      "attempts": 1
+    },
+    {
+      "title": "cut-in ends in place across scrolling, touch has no pointer effect",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "durationMs": 1911,
+      "attempts": 1
+    },
+    {
+      "title": "360, 768, and effective 200% desktop zoom have no clipped controls",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "durationMs": 6211,
+      "attempts": 1
+    },
+    {
+      "title": "key pages and the full-screen menu pass axe WCAG 2.2 AA",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "durationMs": 4700,
+      "attempts": 1
+    },
+    {
+      "title": "without JavaScript all copy and footer routes remain available",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "durationMs": 755,
+      "attempts": 1
+    },
+    {
+      "title": "animation API failure leaves readable content and working navigation",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "durationMs": 1166,
+      "attempts": 1
+    },
+    {
+      "title": "all real pages render, stay out of search and have no horizontal overflow",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "durationMs": 2168,
+      "attempts": 1
+    },
+    {
+      "title": "menu traps Tab and Shift+Tab, closes with Escape and restores scroll and focus",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "durationMs": 2330,
+      "attempts": 1
+    },
+    {
+      "title": "menu navigation focuses destination and Back leaves no lock",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "durationMs": 5078,
+      "attempts": 1
+    },
+    {
+      "title": "rapid close, reopen, resizing and short-height navigation remain usable",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "durationMs": 10470,
+      "attempts": 1
+    },
+    {
+      "title": "contact cannot collect or falsely report sending; unpublished articles return 404",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "durationMs": 1492,
+      "attempts": 1
+    },
+    {
+      "title": "pause preference persists; reduced-motion keeps content visible",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "durationMs": 2718,
+      "attempts": 1
+    },
+    {
+      "title": "cut-in ends in place across scrolling, touch has no pointer effect",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "durationMs": 4092,
+      "attempts": 1
+    },
+    {
+      "title": "360, 768, and effective 200% desktop zoom have no clipped controls",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "durationMs": 14375,
+      "attempts": 1
+    },
+    {
+      "title": "key pages and the full-screen menu pass axe WCAG 2.2 AA",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "durationMs": 7538,
+      "attempts": 1
+    },
+    {
+      "title": "without JavaScript all copy and footer routes remain available",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "durationMs": 837,
+      "attempts": 1
+    },
+    {
+      "title": "animation API failure leaves readable content and working navigation",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "durationMs": 2309,
+      "attempts": 1
+    }
+  ]
+}

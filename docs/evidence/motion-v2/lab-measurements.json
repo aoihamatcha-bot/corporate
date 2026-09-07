@@ -1,0 +1,60 @@
+{
+  "capturedAt": "2026-09-07T20:58:33.626Z",
+  "environment": "LOCAL production build, Windows, Chromium, emulated desktop/mobile; not Hosted or field CWV",
+  "captures": [
+    {
+      "name": "desktop",
+      "frame": "menu-opening",
+      "elapsedFromBeforeClickMs": 541.4000000059605
+    },
+    {
+      "name": "mobile",
+      "frame": "menu-opening",
+      "elapsedFromBeforeClickMs": 423.90000000596046
+    }
+  ],
+  "measurements": [
+    {
+      "name": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "metrics": {
+        "lcp": 248,
+        "cls": 0,
+        "longTasks": [],
+        "interactions": [
+          32,
+          32,
+          32,
+          24,
+          40
+        ]
+      },
+      "errors": []
+    },
+    {
+      "name": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "metrics": {
+        "lcp": 216,
+        "cls": 0,
+        "longTasks": [
+          104
+        ],
+        "interactions": [
+          24,
+          24,
+          24,
+          16,
+          16
+        ]
+      },
+      "errors": []
+    }
+  ]
+}
