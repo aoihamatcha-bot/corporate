@@ -1,0 +1,72 @@
+{
+  "capturedAt": "2026-09-07T21:42:37.417Z",
+  "environment": "LOCAL production build, Windows, Chromium, emulated desktop/mobile; not Hosted or field CWV",
+  "captures": [
+    {
+      "name": "desktop",
+      "frame": "menu-opening",
+      "elapsedFromBeforeClickMs": 600.5999999940395
+    },
+    {
+      "name": "mobile",
+      "frame": "menu-opening",
+      "elapsedFromBeforeClickMs": 370
+    }
+  ],
+  "measurements": [
+    {
+      "name": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "metrics": {
+        "lcp": 228,
+        "cls": 0,
+        "longTasks": [],
+        "interactions": [
+          48,
+          48,
+          48,
+          32,
+          32
+        ]
+      },
+      "errors": []
+    },
+    {
+      "name": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "metrics": {
+        "lcp": 192,
+        "cls": 0,
+        "longTasks": [
+          104
+        ],
+        "interactions": [
+          24,
+          24,
+          24
+        ]
+      },
+      "errors": []
+    }
+  ],
+  "reloadPalettes": [
+    [
+      "honey",
+      "twilight"
+    ],
+    [
+      "honey",
+      "iris"
+    ],
+    [
+      "apricot",
+      "iris"
+    ]
+  ]
+}
