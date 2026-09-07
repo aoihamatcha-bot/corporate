@@ -83,10 +83,10 @@ test("independent text rhythms keep color after the background passes, then fade
       fade: Number(timing.duration) - plateau,
     };
   });
-  expect(envelope.holdAfterBand).toBeGreaterThanOrEqual(800);
-  expect(envelope.holdAfterBand).toBeLessThanOrEqual(1600);
+  expect(envelope.holdAfterBand).toBeGreaterThanOrEqual(500);
+  expect(envelope.holdAfterBand).toBeLessThanOrEqual(800);
   expect(envelope.fade).toBeGreaterThanOrEqual(1000);
-  // Sample 800ms after the actual last band finishes. A polling interval plus
+  // Sample 500ms after the actual last band finishes. A polling interval plus
   // a fixed extra wait can overshoot the shorter hold into the valid fade.
   // These animations run in real time; no seeking or freezing is used.
   const sample = await title.evaluate(async (el) => {
@@ -94,7 +94,7 @@ test("independent text rhythms keep color after the background passes, then fade
       band.getAnimations(),
     );
     await Promise.all(bands.map((animation) => animation.finished));
-    await new Promise((resolve) => setTimeout(resolve, 800));
+    await new Promise((resolve) => setTimeout(resolve, 500));
     return {
       color: Number(
         getComputedStyle(el.querySelector(".reveal-color")!).opacity,
