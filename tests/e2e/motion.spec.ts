@@ -9,7 +9,10 @@ test("text below the viewport keeps its entrance until visible, then settles to 
   await page
     .locator("#about")
     .evaluate((el) =>
-      el.scrollIntoView({ block: "start", behavior: "instant" }),
+      window.scrollTo({
+        top: scrollY + el.getBoundingClientRect().top - (innerHeight - 100),
+        behavior: "instant",
+      }),
     );
   await expect(page.locator("#about")).toHaveClass(/scene-entered/);
   expect(

@@ -12,6 +12,14 @@ test("all authored visible text has a gradient layer, including small labels and
     "/contact",
     "/privacy",
     "/missing-page",
+    "/en",
+    "/en/about",
+    "/en/business",
+    "/en/company",
+    "/en/news",
+    "/en/contact",
+    "/en/privacy",
+    "/en/missing-page",
   ]) {
     await page.goto(route);
     const uncovered = await page.evaluate(() => {
@@ -41,6 +49,7 @@ test("all authored visible text has a gradient layer, including small labels and
     });
     expect(uncovered, route).toEqual([]);
   }
+  await page.goto("/");
   await page.getByRole("button", { name: "メニューを開く" }).click();
   const dialog = page.getByRole("dialog");
   await expect(dialog.locator(".nav-ja .menu-ink-color")).toHaveCount(6);

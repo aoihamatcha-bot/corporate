@@ -2,8 +2,10 @@ import Link from "@/components/site-link";
 import { Arrow } from "./icons";
 import { Scene } from "./motion/scene";
 import { RevealText } from "./motion/reveal-text";
-import { site } from "@/content/site";
+import { getDictionary } from "@/content/dictionaries";
+import { localizedPath, type Locale, type PageKey } from "@/content/i18n";
 import type { Palette } from "./motion/entrance";
+
 export function SectionLabel({
   number,
   children,
@@ -34,23 +36,38 @@ export function TextLink({
     </Link>
   );
 }
-export function ContactBand() {
+export function DraftBadge({ children }: { children: string }) {
+  return (
+    <span className="draft-badge">
+      <RevealText kind="label">{children}</RevealText>
+    </span>
+  );
+}
+export function ContactBand({ locale }: { locale: Locale }) {
+  const c = getDictionary(locale);
   return (
     <Scene className="contact-band" palette="apricot">
       <div className="container">
-        <SectionLabel>GET IN TOUCH</SectionLabel>
+        <SectionLabel>{c.pages.contact.title}</SectionLabel>
         <div className="contact-band-inner">
           <h2>
-            <RevealText palette="apricot">{site.contact.lines[0]}</RevealText>
-            <RevealText palette="iris" direction="right">
-              {site.contact.lines[1]}
-            </RevealText>
+            {c.contactBand.title.map((line, i) => (
+              <RevealText
+                key={line}
+                palette={i ? "iris" : "apricot"}
+                direction={i ? "right" : "left"}
+              >
+                {line}
+              </RevealText>
+            ))}
           </h2>
           <div>
             <p>
-              <RevealText kind="body">{site.contact.description}</RevealText>
+              <RevealText kind="body">{c.contactBand.description}</RevealText>
             </p>
-            <TextLink href="/contact">お問い合わせ</TextLink>
+            <TextLink href={localizedPath("/contact", locale)}>
+              {c.pages.contact.title}
+            </TextLink>
           </div>
         </div>
       </div>
@@ -58,41 +75,38 @@ export function ContactBand() {
   );
 }
 export function PageIntro({
-  en,
-  ja,
-  description,
+  locale,
+  page,
   palette = "sky",
 }: {
-  en: string;
-  ja: string;
-  description?: string;
+  locale: Locale;
+  page: Exclude<PageKey, "home">;
   palette?: Palette;
 }) {
+  const c = getDictionary(locale);
   return (
     <Scene className="page-intro" palette={palette}>
       <div className="container">
         <p className="breadcrumb">
-          <Link href="/">
-            <RevealText kind="label">TOP</RevealText>
+          <Link href={localizedPath("/", locale)}>
+            <RevealText kind="label">{c.common.home}</RevealText>
           </Link>
           <RevealText kind="label">/</RevealText>
-          <RevealText kind="label">{en.toUpperCase()}</RevealText>
+          <RevealText kind="label">{c.pages[page].title}</RevealText>
         </p>
-        <p className="page-en" aria-hidden="true">
-          <RevealText palette={palette}>{en + "."}</RevealText>
-        </p>
-        <h1 tabIndex={-1}>
-          <RevealText kind="subtitle" palette={palette}>
-            {ja}
-          </RevealText>
-        </h1>
-        {description && (
-          <p className="page-description">
-            <RevealText kind="body" palette={palette} direction="right">
-              {description}
-            </RevealText>
+        {locale === "ja" && (
+          <p className="page-kicker" lang="en">
+            <RevealText kind="label">{c.pages[page].short}</RevealText>
           </p>
         )}
+        <h1 className="page-title" tabIndex={-1}>
+          <RevealText palette={palette}>{c.pages[page].title}</RevealText>
+        </h1>
+        <p className="page-description">
+          <RevealText kind="body" palette={palette} direction="right">
+            {c.pages[page].description}
+          </RevealText>
+        </p>
       </div>
     </Scene>
   );

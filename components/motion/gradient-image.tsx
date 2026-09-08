@@ -13,6 +13,7 @@ import { motionToken } from "./tokens";
 
 export function GradientImage({
   src,
+  alt = "",
   sizes,
   preload = false,
   className = "",
@@ -20,6 +21,7 @@ export function GradientImage({
   blend = "screen",
 }: {
   src: string;
+  alt?: string;
   sizes: string;
   preload?: boolean;
   className?: string;
@@ -189,7 +191,7 @@ export function GradientImage({
       data-palette={palette}
       data-blend={blend}
     >
-      <Image src={src} alt="" fill sizes={sizes} preload={preload} />
+      <Image src={src} alt={alt} fill sizes={sizes} preload={preload} />
       <i className="image-wash" aria-hidden="true" />
       <i className="image-echo" aria-hidden="true" />
       <i className="image-wipe" aria-hidden="true" />

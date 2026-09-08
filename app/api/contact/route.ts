@@ -1,11 +1,17 @@
+import { getDictionary } from "@/content/dictionaries";
 // Fail closed until a real delivery adapter and approved privacy policy are connected.
-// Do not read, store, log or forward the submitted body in the unconfigured state.
-export async function POST() {
+// Read only the URL's locale selector. Never read, store, log or forward the submitted body.
+export async function POST(request: Request) {
+  const locale =
+    new URL(request.url).searchParams.get("lang") === "en" ? "en" : "ja";
   return Response.json(
     {
       error: "CONTACT_NOT_CONFIGURED",
-      message: "お問い合わせ窓口は準備中です。送信は行われていません。",
+      message: getDictionary(locale).contact.unconfigured,
     },
-    { status: 503, headers: { "Cache-Control": "no-store" } },
+    {
+      status: 503,
+      headers: { "Cache-Control": "no-store", "Content-Language": locale },
+    },
   );
 }
