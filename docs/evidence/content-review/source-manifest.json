@@ -1,0 +1,310 @@
+{
+  "codeCommit": "40ab8d96ef24029bc28b3df3e53ca9f615f8de43",
+  "scope": "App, content, styles, tests and build config matching the locally verified code commit",
+  "sources": [
+    {
+      "path": "app/(en)/en/[...missing]/page.tsx",
+      "sha256": "224657a9e8d28d7066589fdbd831ad20200a3715c406a802ae1e619b7e0616b3"
+    },
+    {
+      "path": "app/(en)/en/about/page.tsx",
+      "sha256": "ae29dece1d3862f4d9aad56590932c1ced2d81f73a6855639c4df851f7fee7b1"
+    },
+    {
+      "path": "app/(en)/en/business/page.tsx",
+      "sha256": "3d85608de965a47ace1b9c89928e8c77c4a44c0072a1ef4ef516bb909423a297"
+    },
+    {
+      "path": "app/(en)/en/company/page.tsx",
+      "sha256": "b45d37024305c8792737900b346d46410a9cd6f73e5553f056b5b2c63bd00bf7"
+    },
+    {
+      "path": "app/(en)/en/contact/page.tsx",
+      "sha256": "7b70cbe3128368384cb494e009b3da7d4bedc196c3a7ef05138612535c686908"
+    },
+    {
+      "path": "app/(en)/en/layout.tsx",
+      "sha256": "c6f7c2b0042d164d290031071c9bba0165bc1c0eeec9bdc3df8d4425cd43465f"
+    },
+    {
+      "path": "app/(en)/en/news/[slug]/page.tsx",
+      "sha256": "79830d4fdf3babbeb3f1ec44b23aaf18e6de0d1aad0d94faf50341b14972d633"
+    },
+    {
+      "path": "app/(en)/en/news/page.tsx",
+      "sha256": "eeb8de97b8485e4a21214f144fc6f011ebebc009857c4144ab90c14f8e143dca"
+    },
+    {
+      "path": "app/(en)/en/not-found.tsx",
+      "sha256": "02921958188bb11e2a595b5fc65f3f6a30baa2e38028a887d915606dad1a86ea"
+    },
+    {
+      "path": "app/(en)/en/page.tsx",
+      "sha256": "1d1d57bfc492e59c62910384b7ccedbf42f0913a7ebaf32d631db3f4334eded5"
+    },
+    {
+      "path": "app/(en)/en/privacy/page.tsx",
+      "sha256": "7c1cd163eab85c49adda5f1334c477683b5bd8d97503378feeacd870e98e01f0"
+    },
+    {
+      "path": "app/(ja)/[...missing]/page.tsx",
+      "sha256": "1fa179db40c70ed1ca92cb0ed597a52a668d9fd3e0e67330440c365865af904a"
+    },
+    {
+      "path": "app/(ja)/about/page.tsx",
+      "sha256": "cb42ced4d29c56441b63e1d975d4ac923706f228c239b3dc081da2b0d5a5d117"
+    },
+    {
+      "path": "app/(ja)/business/page.tsx",
+      "sha256": "706b293769110762b483219a783cc887c7ab4ca9022de793e83123231331681d"
+    },
+    {
+      "path": "app/(ja)/company/page.tsx",
+      "sha256": "cdabaff1cbfdf325c7029a474fd8ea835825a4b952ad91cf8b10f1701933f071"
+    },
+    {
+      "path": "app/(ja)/contact/page.tsx",
+      "sha256": "17d0c34afa7d9993af95dcf06d01e58dd88e22336ed71a0f9e8da0e577d5c03a"
+    },
+    {
+      "path": "app/(ja)/layout.tsx",
+      "sha256": "ca94c1cd43d599c8356d8fcd8086711a31ef7ffe0ad4173c13051172b465a45e"
+    },
+    {
+      "path": "app/(ja)/news/[slug]/page.tsx",
+      "sha256": "b98703f6e6655fbbaa175126c5ba7849a434f12c3fd9932009b4160e66c2878b"
+    },
+    {
+      "path": "app/(ja)/news/page.tsx",
+      "sha256": "67ded649c601512687ec15470bcf0bf0da102eb316f9be90d9ff021d915067b2"
+    },
+    {
+      "path": "app/(ja)/not-found.tsx",
+      "sha256": "dbc43bf227459ccbcc3ced1a14eaee9f8be8ebad27c461eec6f8bfef190f1387"
+    },
+    {
+      "path": "app/(ja)/page.tsx",
+      "sha256": "7a0bd6dcada0ebd1f68cda96e70a8a215fc6727614087405080fc78fc8125d7e"
+    },
+    {
+      "path": "app/(ja)/privacy/page.tsx",
+      "sha256": "5f404c4f7a064cb652acc630f60a816479dda811cdcc05246b472a490274b9af"
+    },
+    {
+      "path": "app/api/contact/route.ts",
+      "sha256": "d63f853c6b0d87ef96b048e0754f0fa54db612e847550753d6899e64b839d72a"
+    },
+    {
+      "path": "app/globals.css",
+      "sha256": "1683fa147c4876dcc64640d9803c1c4f851c045308aa406475d8dfa507bf5d56"
+    },
+    {
+      "path": "app/icon.svg",
+      "sha256": "93ba48b148a2e2b8903e8b7a002d3c66567390a8486f92d448ac4effea69232c"
+    },
+    {
+      "path": "app/robots.ts",
+      "sha256": "e68ad5f5ac2d937a00a3767f2fc701f18037dc0b6627de898d34e4521ea19568"
+    },
+    {
+      "path": "components/contact-form.tsx",
+      "sha256": "6e1240d56b1b21024992f9281dd91a8d0a2dcaf2ca7c3e6053200ce48b793fcd"
+    },
+    {
+      "path": "components/content-blocks.tsx",
+      "sha256": "44e6187ae8c600b626b83c0f9a7d63250ddf74b7d2c97b2442f8cc6f2572c472"
+    },
+    {
+      "path": "components/editorial.tsx",
+      "sha256": "b9416d4eb41c308dc043b226586d6b389b8cbe00419bec1a1787d2c1e81ea1d6"
+    },
+    {
+      "path": "components/icons.tsx",
+      "sha256": "59a0a6c45280f4bb3c4c43f3ad315d65b801f9beb47e8fc33cf49a4cd4329aed"
+    },
+    {
+      "path": "components/layout/footer.tsx",
+      "sha256": "7ce5e1996eab01cc22813897da94743d59cac1f58ce02abde1493be8c344066f"
+    },
+    {
+      "path": "components/layout/header.tsx",
+      "sha256": "daa2a1ff0c3c878c51f268637434755c35ef4cac919fb9accaa293162c747641"
+    },
+    {
+      "path": "components/layout/language-switcher.tsx",
+      "sha256": "126c70a45fe877df3db6abb6f4cb90668c3842347b1685fa192f69f0325ed6be"
+    },
+    {
+      "path": "components/layout/site-root.tsx",
+      "sha256": "6926fc391f2ad7719d55285190be67f93d44d0c4c1c04ed500db81f3ced22620"
+    },
+    {
+      "path": "components/motion/entrance.ts",
+      "sha256": "37f6a52134d04c1bf9f1d6e2a11e651dc087299800ec849eb0800026220c7548"
+    },
+    {
+      "path": "components/motion/gradient-image.tsx",
+      "sha256": "da074cb44cce88bfd39833845f6a6fa4bb7b530176bec0a12b1b2fed27e00c4b"
+    },
+    {
+      "path": "components/motion/menu-ink.tsx",
+      "sha256": "eeb72f615aa96e7635f64a07333db1d314d10ea86411edecb2d8d842d6226669"
+    },
+    {
+      "path": "components/motion/motion-control.tsx",
+      "sha256": "d33f7bd26c293829818b47e913407eece4161a92eee9a9b6084cc41d677e0eda"
+    },
+    {
+      "path": "components/motion/motion-preference.ts",
+      "sha256": "7a4d65ae916422a77b7a24bf66754d640f7cfe9ea2220b759d29c86e7dc8a917"
+    },
+    {
+      "path": "components/motion/reveal-text.tsx",
+      "sha256": "27d0a949873573eb0d34c80e4b73c0c45b92ae8889719ebb4e767d5ece915a49"
+    },
+    {
+      "path": "components/motion/scene.tsx",
+      "sha256": "fe3e05995c415f203c29bb6cbbf5dc0c3ecf05bf9c9e7faa60b4881d8476a1dc"
+    },
+    {
+      "path": "components/motion/text-rhythm.ts",
+      "sha256": "c09c48842f8c352ad793a7a47bc9c57e81af3f6c55e91c7876be0c568e32d8c4"
+    },
+    {
+      "path": "components/motion/tokens.ts",
+      "sha256": "128a51b0a925c0c80efcec13fc51aa3c2b09d365725ed727f5b6bc49ce16e097"
+    },
+    {
+      "path": "components/pages/about.tsx",
+      "sha256": "0eea48413cd57c371b831681ec9cb31fc619c29f578aa978b03160e79ea63e97"
+    },
+    {
+      "path": "components/pages/article.tsx",
+      "sha256": "120df13ae228392afc71819df79e94b92155cd9a7279e75e292d94d5cab8894b"
+    },
+    {
+      "path": "components/pages/business.tsx",
+      "sha256": "2372de1add0c18f5481fcb6566ab6081b232702691dafc46a4830409a3f04173"
+    },
+    {
+      "path": "components/pages/company.tsx",
+      "sha256": "20ea67e7c265e6ff22527fb72a1801934fc80d16c1b8f3db24848cbaba1f68cf"
+    },
+    {
+      "path": "components/pages/contact.tsx",
+      "sha256": "3f1b0106ad85c7e27e71b49bb0fd147a1da55787d343274021566cfa20a96a32"
+    },
+    {
+      "path": "components/pages/home.tsx",
+      "sha256": "069ac47c8f0abbe15608931afcac0d644b72d5379b5e2e698f9297a776096ac9"
+    },
+    {
+      "path": "components/pages/news.tsx",
+      "sha256": "c9f58bf27717f3d2d6065fa6d4e57164b133de323a3cd79102afa23c747dfee2"
+    },
+    {
+      "path": "components/pages/not-found.tsx",
+      "sha256": "c70c107dcff6008f761c5f6ba715cb15c41e87a94831537996d131962f0e4ada"
+    },
+    {
+      "path": "components/pages/privacy.tsx",
+      "sha256": "023b7a073096217ec9bf1cb2415f8dfb2531fb7408bb25cdf172e5b6742eb343"
+    },
+    {
+      "path": "components/site-link.tsx",
+      "sha256": "be2ad94fd19bdb3ac8f7724fb7514163b2be54dec9c91e2ca7a1a21689c7f720"
+    },
+    {
+      "path": "content/assets.ts",
+      "sha256": "83a24ad31771256b267693d7954c014a5611d649240c195105263d97502531eb"
+    },
+    {
+      "path": "content/business.ts",
+      "sha256": "0f29114efa6899f54d1ead4b42e65a69aecec1a7b70fa7672fbd2bccdc017094"
+    },
+    {
+      "path": "content/company.ts",
+      "sha256": "1f63d6a0f355424e9604e95dfd75ac419e359116d5d5a4a6c82454b3ccaee155"
+    },
+    {
+      "path": "content/dictionaries/en.ts",
+      "sha256": "d4fd56d5eccad35773420dd7bad8298bf4a52eebf0c0c5b63c9864d0f6faca46"
+    },
+    {
+      "path": "content/dictionaries/index.ts",
+      "sha256": "7e30d918e1131e74548f275168d1080571e4849b612f6f84132cd840bf50a129"
+    },
+    {
+      "path": "content/dictionaries/ja.ts",
+      "sha256": "01741d3e176ccaae51b82b0016f26375c799272bbf8c33964fac7b0c43fbca93"
+    },
+    {
+      "path": "content/editorial-review.ts",
+      "sha256": "35638e782e3119a0d8461a4af3df6194c5a8379f360b03604315217ab145e037"
+    },
+    {
+      "path": "content/i18n.ts",
+      "sha256": "9d80bf9c3194893596d720d1d6fe633e27bae083ae1210fb3adb1576eb978aec"
+    },
+    {
+      "path": "content/metadata.ts",
+      "sha256": "850affecc55aae36edf1b0f0296ff4c9e51419988c5df33d2588ac5441b88121"
+    },
+    {
+      "path": "content/navigation.ts",
+      "sha256": "8e2068b2eb6bbc601d376ca49792a2f7e5b3aa5dca46dd04e2986ef58f3f5df3"
+    },
+    {
+      "path": "content/news/index.ts",
+      "sha256": "ef35ee6e0088ca795f8d864a57ff20db39dabe93050d91732f4481d995e6ee10"
+    },
+    {
+      "path": "content/site.ts",
+      "sha256": "20e5ca1746c698ce28f933bfab807ba099cdf4588747f4b9405e0c8278ec3203"
+    },
+    {
+      "path": "next.config.ts",
+      "sha256": "e8043ad43cf181e42979350bb87dc75ba981856d50b4f6a92038af19f63e87fc"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "d262dfb7b0a18982f2e6a5ac42b69db8538fa354a8494b799f5b14c7e26a23e5"
+    },
+    {
+      "path": "package.json",
+      "sha256": "1c5bf60a51c3ed83f6688a1998130fff2db8cff852cf7e2c1ed064c272bd4160"
+    },
+    {
+      "path": "playwright.config.ts",
+      "sha256": "34133a3c8609f464c849ae78cc80079f245739818a4c40c5d1930ba944e2132a"
+    },
+    {
+      "path": "styles/motion.css",
+      "sha256": "e7596326797c06690855e94e85670467cf3883709f63f47f07631942ff0fc165"
+    },
+    {
+      "path": "styles/tokens.css",
+      "sha256": "9009f4d8846cb061b448eee11f06fe5c8cae9ee76562a08e437269eb01e505c9"
+    },
+    {
+      "path": "tests/content.test.ts",
+      "sha256": "881a9d9abcb515fe2036b9b9422e5e21710e2ae99661396b9b56ef4ee5af49ee"
+    },
+    {
+      "path": "tests/e2e/afterglow.spec.ts",
+      "sha256": "0bda5058c0cc7c659cd91d8fc8f7f8ed5f458c28af8b8f77df14c895b0077d27"
+    },
+    {
+      "path": "tests/e2e/i18n.spec.ts",
+      "sha256": "9344fede822b8add726fb354185073d0d66249a8cb63ffdc87302a9d86daed0e"
+    },
+    {
+      "path": "tests/e2e/motion.spec.ts",
+      "sha256": "4f75fd6d22b8750883d0a99e3259d1e36cfe61746168fdda102ce7bf77f96e6f"
+    },
+    {
+      "path": "tests/e2e/site.spec.ts",
+      "sha256": "1bec32d503092f5219ceb06d8560509ccf64bc1b476b6daaf7d4c1b439d7bba5"
+    }
+  ]
+}
