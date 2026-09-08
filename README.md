@@ -42,6 +42,7 @@ E2Eは3017番のproduction serverを自動起動します。同じポートに�
 
 - 最新の原稿・構成・未確定情報: [日英コンテンツの引き継ぎ](docs/content-review-ja-en-v1.md)
 - 最新の検証・画面: [日英コンテンツ検証](docs/verification-content-review.md)
+- 事業画像8枚とホバー動作: [画像制作・検証](docs/business-thumbnails-v1.md)
 - 日英辞書: [content/dictionaries/](content/dictionaries/)
 - 共通ページ: [components/pages/](components/pages/)
 - 会社の確定情報: [content/company.ts](content/company.ts)
@@ -53,6 +54,8 @@ E2Eは3017番のproduction serverを自動起動します。同じポートに�
 
 8系統から文字・帯・画像の色を選び、ページ更新で配色が入れ替わります。同じ色が選ばれる場合もあります。余韻は0.4〜0.6秒。本文の入口演出は初回だけなので、見直すときはページを再読み込みしてください。動きの停止操作とOSの動き抑制設定を利用できます。
 
+事業画像は、各領域に一覧用・詳細用の2枚を用意しています。サムネイルのグラデーションは画像部分へのカーソルのホバーで動作し、読み込み・スクロール・キーボードフォーカス・タップでは再生しません。
+
 ## 過去の記録
 
 以下は各実装時点の記録です。現在のGitHub / Vercel状態は、最新の検証資料を参照してください。
@@ -63,4 +66,4 @@ E2Eは3017番のproduction serverを自動起動します。同じポートに�
 - [検証 v2](docs/verification-motion-v2.md) / [v3](docs/verification-motion-v3.md) / [v4](docs/verification-motion-v4.md)
 - [初回運用引き継ぎ](docs/operations.md)
 
-元モックの抽象生成画像を2枚継続利用しています。他社サイトの画像・文言・実装コード、および旧Sitesのホスティング設定は含めていません。
+ヒーローでは元モックの抽象生成画像を継続利用し、4事業領域にはオリジナルの生成画像8枚を用意しています。他社サイトの画像・文言・実装コード、および旧Sitesのホスティング設定は含めていません。

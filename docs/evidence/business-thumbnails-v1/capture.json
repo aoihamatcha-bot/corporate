@@ -1,0 +1,12 @@
+{
+  "capturedAt": "2026-09-08T11:37:05.177Z",
+  "source": "LOCAL production server",
+  "staticScreens": "LOCAL layout crops; reduced-motion enabled; viewport height expanded to paint full sections; fixed header and skip link hidden only in section captures",
+  "hoverScreen": {
+    "trigger": "hover",
+    "state": "hover",
+    "palette": "honey",
+    "washOpacity": "0.9"
+  },
+  "errors": []
+}
