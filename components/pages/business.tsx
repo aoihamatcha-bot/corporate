@@ -30,16 +30,13 @@ export function BusinessPage({ locale }: { locale: Locale }) {
               <SectionLabel number={item.index}>{copy.role}</SectionLabel>
               <div>
                 <GradientImage
-                  src={item.visual}
-                  blend={item.visualBlend}
+                  src={item.detailVisual}
+                  blend={item.detailVisualBlend}
+                  trigger="hover"
                   sizes="(max-width: 700px) 90vw, 60vw"
                   className="business-detail-visual"
                   palette={i % 2 ? "iris" : "sky"}
-                  alt={
-                    item.visual.includes("afterglow")
-                      ? c.assets.afterglowAlt
-                      : c.assets.daylightAlt
-                  }
+                  alt={copy.detailVisualAlt}
                 />
                 <DraftBadge>{c.review.candidate}</DraftBadge>
                 <h2 className="business-title">

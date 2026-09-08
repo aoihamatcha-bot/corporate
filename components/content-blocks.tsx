@@ -23,14 +23,11 @@ export function BusinessCards({ locale }: { locale: Locale }) {
             <GradientImage
               src={item.visual}
               blend={item.visualBlend}
+              trigger="hover"
               sizes="(max-width: 700px) 90vw, 44vw"
               className="business-visual"
               palette={i % 2 ? "iris" : "sky"}
-              alt={
-                item.visual.includes("afterglow")
-                  ? c.assets.afterglowAlt
-                  : c.assets.daylightAlt
-              }
+              alt={copy.visualAlt}
             />
             <span className="business-index">
               <RevealText kind="label">{copy.role}</RevealText>

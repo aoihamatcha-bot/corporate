@@ -155,8 +155,8 @@
   aspect-ratio: 16 / 9;
   margin-bottom: 44px;
 }
-.business-visual img {
-  object-position: 85% center;
+:is(.business-visual, .business-detail-visual) img {
+  object-position: center;
 }
 .nav-curtains {
   position: fixed;

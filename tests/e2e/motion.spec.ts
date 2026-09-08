@@ -6,14 +6,12 @@ test("text below the viewport keeps its entrance until visible, then settles to 
   await page.setViewportSize({ width: 390, height: 420 });
   await page.goto("/");
   const target = page.locator("#about .prose p").last().locator(".reveal-text");
-  await page
-    .locator("#about")
-    .evaluate((el) =>
-      window.scrollTo({
-        top: scrollY + el.getBoundingClientRect().top - (innerHeight - 100),
-        behavior: "instant",
-      }),
-    );
+  await page.locator("#about").evaluate((el) =>
+    window.scrollTo({
+      top: scrollY + el.getBoundingClientRect().top - (innerHeight - 100),
+      behavior: "instant",
+    }),
+  );
   await expect(page.locator("#about")).toHaveClass(/scene-entered/);
   expect(
     await target.evaluate((el) => el.getBoundingClientRect().top > innerHeight),
@@ -117,52 +115,6 @@ test("opening the menu starts two color curtains and separate text wipes, then c
   }
 });
 
-test("image interactions show eight distinct gradients for keyboard and retain the same image", async ({
-  page,
-  isMobile,
-}) => {
-  await page.goto("/");
-  const link = page.locator(".business-preview > a").first();
-  const image = link.locator(".gradient-image");
-  await image.scrollIntoViewIfNeeded();
-  await expect(image).toHaveAttribute("data-entered", "true");
-  await expect(image).toHaveAttribute("data-image-state", "settled");
-  const source = await image.locator("img").getAttribute("src");
-  const colors = [];
-  for (let i = 0; i < 8; i++) {
-    await link.focus();
-    await expect(image).toHaveAttribute("data-image-state", "hover");
-    colors.push(
-      await image
-        .locator(".image-wash")
-        .evaluate((el) => getComputedStyle(el).backgroundImage),
-    );
-    await link.evaluate((el) => el.blur());
-    await expect
-      .poll(() =>
-        image
-          .locator(".image-wash")
-          .evaluate((el) => getComputedStyle(el).opacity),
-      )
-      .toBe("0");
-  }
-  expect(new Set(colors).size).toBe(8);
-  expect(await image.locator("img").getAttribute("src")).toBe(source);
-  await expect(image.locator("i")).toHaveCount(3);
-  if (!isMobile) {
-    await link.hover();
-    await expect(image).toHaveAttribute("data-image-state", "hover");
-    await page.mouse.move(5, 5);
-    await expect
-      .poll(() =>
-        image
-          .locator(".image-wash")
-          .evaluate((el) => getComputedStyle(el).opacity),
-      )
-      .toBe("0");
-  }
-});
-
 test("pausing during the entrance clears decorative bands and images without hiding copy", async ({
   page,
 }) => {
@@ -191,7 +143,7 @@ test("pausing during the entrance clears decorative bands and images without hid
   await page.getByRole("button", { name: /動きを再生する/ }).click();
   const image = page.locator(".business-visual").first();
   await image.scrollIntoViewIfNeeded();
-  await expect(image).toHaveAttribute("data-entered", "true");
+  await expect(image).not.toHaveAttribute("data-entered", "true");
   await page.emulateMedia({ reducedMotion: "reduce" });
   await expect
     .poll(() =>

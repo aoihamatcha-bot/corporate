@@ -1,5 +1,19 @@
 // No simulated product screens, offices or people are presented as real assets.
+import { business } from "./business";
+
 export const assets = [
+  ...business.flatMap((area) =>
+    (["card", "detail"] as const).map((placement) => ({
+      id: `${area.id}-${placement}-v1`,
+      path: placement === "card" ? area.visual : area.detailVisual,
+      kind: "generated" as const,
+      source: "Built-in image_gen; see docs/business-thumbnails-v1.json",
+      role: `symbolic business illustration (${placement})`,
+      altKey: `business.areas.${area.id}.${placement === "card" ? "visualAlt" : "detailVisualAlt"}`,
+      permission: "Created for this site at the Owner's request",
+      status: "created-for-review" as const,
+    })),
+  ),
   {
     id: "afterglow",
     path: "/images/afterglow.webp",

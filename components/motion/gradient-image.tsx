@@ -19,6 +19,7 @@ export function GradientImage({
   className = "",
   palette = "sky",
   blend = "screen",
+  trigger = "entrance",
 }: {
   src: string;
   alt?: string;
@@ -27,6 +28,7 @@ export function GradientImage({
   className?: string;
   palette?: Palette;
   blend?: "screen" | "multiply";
+  trigger?: "entrance" | "hover";
 }) {
   const root = useRef<HTMLSpanElement>(null);
   const cycle = useRef(palettes.indexOf(palette));
@@ -117,21 +119,23 @@ export function GradientImage({
     cycle.current =
       (cycle.current + Math.floor(Math.random() * palettes.length)) %
       palettes.length;
-    const disposeEntrance = observeEntrance(element, () => {
-      const image = element.querySelector("img")!;
-      const ready = () => play();
-      if (image.complete) return play();
-      image.addEventListener("load", ready, { once: true });
-      return () => {
-        image.removeEventListener("load", ready);
-        settle();
-      };
-    });
-    const link = element.closest("a");
+    const disposeEntrance =
+      trigger === "entrance"
+        ? observeEntrance(element, () => {
+            const image = element.querySelector("img")!;
+            const ready = () => play();
+            if (image.complete) return play();
+            image.addEventListener("load", ready, { once: true });
+            return () => {
+              image.removeEventListener("load", ready);
+              settle();
+            };
+          })
+        : undefined;
     function enter() {
       if (active) return;
       active = true;
-      if (link) play(true);
+      play(true);
     }
     function leave() {
       active = false;
@@ -159,7 +163,6 @@ export function GradientImage({
       if (pointer.matches && event.pointerType !== "touch") enter();
     }
     function onPointerLeave() {
-      if (link?.contains(document.activeElement)) return;
       leave();
     }
     const onVisibility = () => {
@@ -168,21 +171,21 @@ export function GradientImage({
         settle();
       }
     };
-    link?.addEventListener("pointerenter", onPointerEnter);
-    link?.addEventListener("pointerleave", onPointerLeave);
-    link?.addEventListener("focus", enter);
-    link?.addEventListener("blur", leave);
+    // Business visuals are cursor-only: image loading, viewport entry, keyboard
+    // focus and touch never start their decorative animation.
+    if (trigger === "hover") {
+      element.addEventListener("pointerenter", onPointerEnter);
+      element.addEventListener("pointerleave", onPointerLeave);
+    }
     document.addEventListener("visibilitychange", onVisibility);
     return () => {
-      disposeEntrance();
+      disposeEntrance?.();
       settle();
-      link?.removeEventListener("pointerenter", onPointerEnter);
-      link?.removeEventListener("pointerleave", onPointerLeave);
-      link?.removeEventListener("focus", enter);
-      link?.removeEventListener("blur", leave);
+      element.removeEventListener("pointerenter", onPointerEnter);
+      element.removeEventListener("pointerleave", onPointerLeave);
       document.removeEventListener("visibilitychange", onVisibility);
     };
-  }, [paused]);
+  }, [paused, trigger]);
 
   return (
     <span
@@ -190,6 +193,8 @@ export function GradientImage({
       className={`gradient-image ${className}`}
       data-palette={palette}
       data-blend={blend}
+      data-image-trigger={trigger}
+      data-image-state="settled"
     >
       <Image src={src} alt={alt} fill sizes={sizes} preload={preload} />
       <i className="image-wash" aria-hidden="true" />

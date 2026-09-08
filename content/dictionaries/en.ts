@@ -165,6 +165,10 @@ export const en: Dictionary = {
         description:
           "We plan, develop, and operate online sales services that make shopping more engaging. We explore experiences that make both discovering products and shopping enjoyable.",
         consultation: "Plan a more engaging online sales service",
+        visualAlt:
+          "Small glass forms and a luminous ribbon emerging from a blue presentation box",
+        detailVisualAlt:
+          "A blue ribbon connecting sculptural objects on transparent display plinths",
       },
       systems: {
         role: "Business area 02",
@@ -172,6 +176,9 @@ export const en: Dictionary = {
         description:
           "We develop services for businesses, sales and operations management systems, and web services. We turn business needs into systems that are easy to use.",
         consultation: "Develop a sales service or an operations system",
+        visualAlt: "Blue glass modules linked by luminous pathways",
+        detailVisualAlt:
+          "Transparent glass layers joined by orderly blue paths",
       },
       creative: {
         role: "Business area 03",
@@ -179,6 +186,10 @@ export const en: Dictionary = {
         description:
           "We produce in-service visual sequences, product introduction videos, advertising materials, and digital content. We develop creative approaches that communicate what makes a product or service appealing.",
         consultation: "Create a video introducing a product or service",
+        visualAlt:
+          "A blue ribbon passing through glass cinema frames beside an optical lens",
+        detailVisualAlt:
+          "A sequence of transparent frames tracing the movement of a blue ribbon",
       },
       marketing: {
         role: "Business area 04",
@@ -186,6 +197,9 @@ export const en: Dictionary = {
         description:
           "We plan sales promotions, social media initiatives, influencer partnerships, and joint projects with brands and creators. These can include product curation, limited-edition product development, video production, and sales campaigns.",
         consultation: "Co-create a product with a brand or creator",
+        visualAlt: "Blue glass ribbons interlocking around a luminous sphere",
+        detailVisualAlt:
+          "Blue ribbons connecting different glass forms and extending outward",
       },
     },
     consultationLabel: "Example inquiry",
