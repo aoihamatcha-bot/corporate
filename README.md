@@ -80,6 +80,6 @@ LINE Seed JP © LY Corporation / SIL Open Font License 1.1。詳細は [ライ�
 
 図版は構想、人物とオフィスはイラストであることを明記しています。動画本編・架空ニュース・実在ブランドのロゴは追加していません。正式な会社情報と窓口の確認状態、noindex、無効な問い合わせフォームは維持しています。
 
-OGPは日英で切り替わり、ニュースには共通表紙を使用します。画像URLの基準は設定済みの `site.canonicalOrigin`、Vercelが付与する `VERCEL_URL`、ローカル `http://127.0.0.1:3017` の順です。これだけではcanonicalタグや検索公開を有効にしません。
+OGPは日英で切り替わり、ニュースには共通表紙を使用します。画像URLの基準は設定済みの `site.canonicalOrigin` を優先し、未設定なら本番ではVercelの公開ドメイン `VERCEL_PROJECT_PRODUCTION_URL`、Previewでは `VERCEL_URL`、ローカルでは `http://127.0.0.1:3017` を使用します。これだけではcanonicalタグや検索公開を有効にしません。
 
 [採用・検証記録](docs/asset-adoption-v2.md) / [採用ファイルとSHA-256](docs/asset-adoption-v2.json)。以前のレビュー資料は各時点の記録として保存しています。他社サイトの画像・文言・実装コード、および旧Sitesのホスティング設定は含めていません。
