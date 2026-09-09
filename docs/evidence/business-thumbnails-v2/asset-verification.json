@@ -1,0 +1,45 @@
+{
+  "verifiedAt": "2026-09-09T10:59:12.027Z",
+  "checks": [
+    {
+      "id": "platform-a1-v2",
+      "sha256": "b6d5b9c6b50569848e77538c2efe28546c83652e02deb738cb530fdb61b7acd7",
+      "bytes": 170344,
+      "dimensions": [
+        1586,
+        992
+      ],
+      "opaque": true
+    },
+    {
+      "id": "systems-programming-v2",
+      "sha256": "c4a45d27a8608aab472651a8c412fb1cf3ad03a709c02a2418ade5591f7d7270",
+      "bytes": 200176,
+      "dimensions": [
+        1586,
+        992
+      ],
+      "opaque": true
+    },
+    {
+      "id": "creative-r2-v2",
+      "sha256": "1c5974f6fb8830b5ad53a9f79bb643b5dbaddf9af6a653e85fd720c913196f5c",
+      "bytes": 113540,
+      "dimensions": [
+        1586,
+        992
+      ],
+      "opaque": true
+    },
+    {
+      "id": "marketing-a1-v2",
+      "sha256": "8b157bacdd3c7f55b20cc9f4d7f535bced91531e77684c998c110427cf0f159c",
+      "bytes": 174054,
+      "dimensions": [
+        1586,
+        992
+      ],
+      "opaque": true
+    }
+  ]
+}

@@ -1,0 +1,604 @@
+{
+  "version": 2,
+  "date": "2026-09-09",
+  "status": "review-only",
+  "actualSiteModified": false,
+  "groups": 10,
+  "currentVariants": 17,
+  "comparisonFiles": 7,
+  "reviewVariants": 24,
+  "approvedUnchanged": [
+    "A03",
+    "A04",
+    "A08"
+  ],
+  "provisionalApproval": {
+    "id": "A05",
+    "variant": "v1-ja",
+    "sourceSha256": "c75c3d245da0d8f51457c83273c2afc86a17b425f546578a58a976b8db3f4b1b"
+  },
+  "revisedTargets": [
+    "A01",
+    "A02",
+    "A06",
+    "A07",
+    "A09",
+    "A10"
+  ],
+  "optionalCleanup": "A05 symbol-free JA/EN alternatives; original JA remains provisionally approved.",
+  "baselineHead": "092c3d99172acc903fb8e3a22766c3d53959c1d7",
+  "assets": [
+    {
+      "id": "A01",
+      "slug": "service-overview",
+      "title": "サービス全体の構想図",
+      "place": "トップ / 現在の取り組み / 開発画面01",
+      "kind": "既存の素材待ち枠",
+      "medium": "UI構想図",
+      "priority": true,
+      "description": "取扱カテゴリをトレーディングカード、ブランドファッション、精密機器へ変更。左側にはMYSTENAのミステリーボックスを置き、エンタメECの構想として整理しました。",
+      "note": "商品とUIは構想用です。実在ブランドのロゴ、取扱実績、鑑定評価や保証を示す表示は入れていません。",
+      "review": "商品のカテゴリーと見せ方に、MYSTENAらしさと信用感があるか。",
+      "alt": {
+        "ja": "ミステリーボックスと、保護ケース入りのトレーディングカード、上質なジャケット、精密カメラを並べたエンタメECの構想図",
+        "en": "An entertainment commerce concept featuring a mystery box, protected trading cards, a tailored jacket and a precision camera"
+      },
+      "variants": [
+        "ja",
+        "en"
+      ],
+      "format": "webp",
+      "adoption": "pending-owner-review",
+      "files": [
+        {
+          "variant": "ja",
+          "path": "assets/a01-service-overview-ja.webp",
+          "width": 1600,
+          "height": 1000,
+          "bytes": 74494,
+          "sha256": "92b8df70377d6d95eb94124f92fbee61ed6a9be3107d10d6ab44c1c4239b8d82",
+          "svg": "assets/a01-service-overview-ja.svg",
+          "editableSvg": "editable/a01-service-overview-ja.svg",
+          "label": "改訂 / 日本語",
+          "selectedByOwner": false
+        },
+        {
+          "variant": "en",
+          "path": "assets/a01-service-overview-en.webp",
+          "width": 1600,
+          "height": 1000,
+          "bytes": 79894,
+          "sha256": "acabc392775c070502653c6a86e010dd4b302edeebbe2cba7f615c79b613410d",
+          "svg": "assets/a01-service-overview-en.svg",
+          "editableSvg": "editable/a01-service-overview-en.svg",
+          "label": "改訂 / English",
+          "selectedByOwner": false
+        },
+        {
+          "variant": "previous",
+          "label": "v1 / 前回案",
+          "path": "previous/a01-service-overview-ja.webp",
+          "width": 1600,
+          "height": 1000,
+          "bytes": 58824,
+          "sha256": "5adeab19e0edb9ed475bbae126a61a39fa11d66dd5229be7038d34b544b9efd2",
+          "selectedByOwner": false,
+          "alt": "商品一覧と青いボトルを中心にしたオンライン販売サービスの構想図"
+        }
+      ],
+      "revisionNote": "商品カテゴリ・見せ方を変更",
+      "approval": "revised-awaiting-review",
+      "approvalLabel": "改訂案・再確認",
+      "defaultVariant": "ja"
+    },
+    {
+      "id": "A02",
+      "slug": "experience-flow",
+      "title": "利用体験の構想図",
+      "place": "トップ / 現在の取り組み / 開発画面02",
+      "kind": "既存の素材待ち枠",
+      "medium": "体験フロー",
+      "priority": true,
+      "description": "「商品情報・提供条件を確認 → 選んだボックスを開封 → 開封内容を見る」の3段階へ変更。開封結果の一例として、トレーディングカードを見せます。",
+      "note": "強い発光、当選演出、価格・利益の強調を使わず、商品の説明と落ち着いた開封を中心にしました。実際の仕様を確約する図ではありません。",
+      "review": "ミステリーボックスらしさと、情報を確認して進む落ち着いた印象が両立しているか。",
+      "alt": {
+        "ja": "商品情報を確認し、ミステリーボックスを開封して、カードの内容を確認する3段階の構想図",
+        "en": "A proposed three-step mystery box journey: review product details, open the box and explore the revealed trading card"
+      },
+      "variants": [
+        "ja",
+        "en"
+      ],
+      "format": "webp",
+      "adoption": "pending-owner-review",
+      "files": [
+        {
+          "variant": "ja",
+          "path": "assets/a02-experience-flow-ja.webp",
+          "width": 1600,
+          "height": 1000,
+          "bytes": 80406,
+          "sha256": "6f56190d5b83bc026261b476e103ca23d5bca09d572cb4a7de969ee192cefff1",
+          "svg": "assets/a02-experience-flow-ja.svg",
+          "editableSvg": "editable/a02-experience-flow-ja.svg",
+          "label": "改訂 / 日本語",
+          "selectedByOwner": false
+        },
+        {
+          "variant": "en",
+          "path": "assets/a02-experience-flow-en.webp",
+          "width": 1600,
+          "height": 1000,
+          "bytes": 82328,
+          "sha256": "3eef3ed94e224e8cab0ec1afb22dfb0ef6ac02b5661a141952a4fca3f41575f3",
+          "svg": "assets/a02-experience-flow-en.svg",
+          "editableSvg": "editable/a02-experience-flow-en.svg",
+          "label": "改訂 / English",
+          "selectedByOwner": false
+        },
+        {
+          "variant": "previous",
+          "label": "v1 / 前回案",
+          "path": "previous/a02-experience-flow-ja.webp",
+          "width": 1600,
+          "height": 1000,
+          "bytes": 65350,
+          "sha256": "db465833002bd4aa35fe881b259927b105818c417c22e2575bf80d8d1172524d",
+          "selectedByOwner": false,
+          "alt": "探す、知る、選ぶの3段階で示した買い物体験の構想図"
+        }
+      ],
+      "revisionNote": "ミステリーボックス開封の流れへ変更",
+      "approval": "revised-awaiting-review",
+      "approvalLabel": "改訂案・再確認",
+      "defaultVariant": "ja"
+    },
+    {
+      "id": "A03",
+      "slug": "company-workstyle",
+      "title": "一緒につくる、仕事の風景",
+      "place": "会社情報 / 会社写真の枠に対する代替案",
+      "kind": "既存枠への代替提案",
+      "medium": "生成イラスト",
+      "priority": true,
+      "description": "企画、画面づくり、商品表現を同じテーブルで考える3人。採用済みの2D事業画像と空気感を揃えています。",
+      "note": "架空の人物・仕事場を描いたイラストです。実際の社員・オフィスを紹介する写真としては使いません。",
+      "review": "採用済みとして記録しました。サイトへの反映は次の依頼で行います。",
+      "alt": {
+        "ja": "企画資料、UI画面、商品見本を囲んで共同制作する架空の3人を描いたイラスト",
+        "en": "An illustration of an imaginary team collaborating around UI designs, a storyboard and product samples"
+      },
+      "variants": [
+        "common"
+      ],
+      "format": "webp",
+      "adoption": "approved-not-integrated",
+      "files": [
+        {
+          "variant": "common",
+          "path": "assets/a03-company-workstyle.webp",
+          "width": 1586,
+          "height": 992,
+          "bytes": 242994,
+          "sha256": "e1b0a8857b0762fac29e47ca9adc18cfa3efb772943fb963eed1abaccdecfc17",
+          "label": "日英共通",
+          "selectedByOwner": true
+        }
+      ],
+      "approval": "approved",
+      "approvalLabel": "採用済み",
+      "revisionNote": "画像は前回から変更なし",
+      "defaultVariant": "common"
+    },
+    {
+      "id": "A04",
+      "slug": "about-workbench",
+      "title": "アイデアがかたちになる机",
+      "place": "私たちについて / 姿勢・考え方の説明の後",
+      "kind": "追加候補",
+      "medium": "生成イラスト",
+      "description": "ノート、開発画面、カメラ、発信画面をひとつの机に。企画・開発・表現・販売促進をつなぐ姿勢を伝えます。",
+      "note": "仕事の考え方を表す生成イラストです。机上の画面・資料は制作実績ではありません。",
+      "review": "採用済みとして記録しました。サイトへの反映は次の依頼で行います。",
+      "alt": {
+        "ja": "ノート、開発用PC、カメラ、商品見本、スマートフォンが並ぶ架空の制作机のイラスト",
+        "en": "An imaginary creative workbench with a notebook, development laptop, camera, product sample and phone"
+      },
+      "variants": [
+        "common"
+      ],
+      "format": "webp",
+      "adoption": "approved-not-integrated",
+      "files": [
+        {
+          "variant": "common",
+          "path": "assets/a04-about-workbench.webp",
+          "width": 1586,
+          "height": 992,
+          "bytes": 233222,
+          "sha256": "fef62a50861eb3b8743851b5634c0ee1ef440fc558b56bfc2b05678bef04e06f",
+          "label": "日英共通",
+          "selectedByOwner": true
+        }
+      ],
+      "approval": "approved",
+      "approvalLabel": "採用済み",
+      "revisionNote": "画像は前回から変更なし",
+      "defaultVariant": "common"
+    },
+    {
+      "id": "A05",
+      "slug": "social-share",
+      "title": "SNS・チャットの共有画像",
+      "place": "URLを共有したときのプレビュー",
+      "kind": "追加候補",
+      "medium": "OGP画像",
+      "priority": true,
+      "description": "前回の日本語版は一旦採用として保存しています。アスタリスク廃止の方針に合わせ、文字とコピーを保って装飾をカードへ変えた比較版を添えました。",
+      "note": "初期表示は一旦採用したv1日本語版です。「記号なし案」への変更は未採用で、今回の比較対象です。",
+      "review": "一旦採用したv1日本語版と、記号なしの比較版のどちらを使うか。英語版の採用は未確定です。",
+      "alt": {
+        "ja": "MYSTENAのコピーと青いカードを組み合わせた記号なしのSNS共有画像案",
+        "en": "A symbol-free MYSTENA sharing graphic with layered blue cards"
+      },
+      "variants": [
+        "ja",
+        "en"
+      ],
+      "format": "png",
+      "adoption": "v1-ja-approved-cleanup-unapproved",
+      "files": [
+        {
+          "variant": "ja",
+          "path": "assets/a05-social-share-ja.png",
+          "width": 1200,
+          "height": 630,
+          "bytes": 50580,
+          "sha256": "0634c26faf8572e0a9de9221b656a149d640649269ffc7a18fc77d998c55008b",
+          "svg": "assets/a05-social-share-ja.svg",
+          "editableSvg": "editable/a05-social-share-ja.svg",
+          "label": "記号なし案 / 日本語",
+          "selectedByOwner": false
+        },
+        {
+          "variant": "en",
+          "path": "assets/a05-social-share-en.png",
+          "width": 1200,
+          "height": 630,
+          "bytes": 57124,
+          "sha256": "c2fc0e128604583b297788a5394f3c97099a01f1ba71d866fb9aee4e1464ac7b",
+          "svg": "assets/a05-social-share-en.svg",
+          "editableSvg": "editable/a05-social-share-en.svg",
+          "label": "記号なし案 / English",
+          "selectedByOwner": false
+        },
+        {
+          "variant": "previous",
+          "label": "v1日本語 / 一旦採用",
+          "path": "previous/a05-social-share-ja.png",
+          "width": 1200,
+          "height": 630,
+          "bytes": 52986,
+          "sha256": "c75c3d245da0d8f51457c83273c2afc86a17b425f546578a58a976b8db3f4b1b",
+          "selectedByOwner": true,
+          "alt": "MYSTENA、楽しさをつくる。魅力を届ける。と記した白と青の共有画像"
+        }
+      ],
+      "approval": "provisionally-approved-v1-ja",
+      "approvalLabel": "v1日本語を一旦採用",
+      "revisionNote": "原案を保存・記号なし版を追加",
+      "defaultVariant": "previous"
+    },
+    {
+      "id": "A06",
+      "slug": "business-concept",
+      "title": "商品と人をつなぐ関係図",
+      "place": "トップ / 現在の取り組み、および事業紹介",
+      "kind": "既存のHTML図への追加案",
+      "medium": "事業の関係図",
+      "description": "抽象的な人型の記号を、保護ケース入りカードを手にして画面を見る人物へ変更。中央のMYSTENAは文字だけにしています。",
+      "note": "正式ロゴが届いたら差し替える前提の文字表記です。対象と価値の関係を説明する構想図として制作しています。",
+      "review": "利用者が何を楽しむのか、前回より具体的に伝わるか。",
+      "alt": {
+        "ja": "事業者、文字のみのMYSTENA、カードを手にして商品情報を見る人物をつないだ事業関係図",
+        "en": "A relationship diagram connecting businesses, the text-only MYSTENA name and a collector viewing product information"
+      },
+      "variants": [
+        "ja",
+        "en"
+      ],
+      "format": "webp",
+      "adoption": "pending-owner-review",
+      "files": [
+        {
+          "variant": "ja",
+          "path": "assets/a06-business-concept-ja.webp",
+          "width": 1600,
+          "height": 850,
+          "bytes": 61434,
+          "sha256": "b8e2fe9b30342d6087bf446a367c8a181ea2cd7660ed1bfdabfc5af41b2958d1",
+          "svg": "assets/a06-business-concept-ja.svg",
+          "editableSvg": "editable/a06-business-concept-ja.svg",
+          "label": "改訂 / 日本語",
+          "selectedByOwner": false
+        },
+        {
+          "variant": "en",
+          "path": "assets/a06-business-concept-en.webp",
+          "width": 1600,
+          "height": 850,
+          "bytes": 71490,
+          "sha256": "3f2c54cdb8a876c7684f61a23e3cd16316d34172c682606bd1e90cb2c1cd8eaa",
+          "svg": "assets/a06-business-concept-en.svg",
+          "editableSvg": "editable/a06-business-concept-en.svg",
+          "label": "改訂 / English",
+          "selectedByOwner": false
+        },
+        {
+          "variant": "previous",
+          "label": "v1 / 前回案",
+          "path": "previous/a06-business-concept-ja.webp",
+          "width": 1600,
+          "height": 850,
+          "bytes": 58350,
+          "sha256": "5e5d9d371c2245d760cfc24c003e7d3775e4daeb121c6f47793022fc64039bd4",
+          "selectedByOwner": false,
+          "alt": "商品を届ける事業者からMYSTENAのサービスを通じて、新しいものを探す人へつながる構想図"
+        }
+      ],
+      "revisionNote": "利用者を具体化・記号を削除",
+      "approval": "revised-awaiting-review",
+      "approvalLabel": "改訂案・再確認",
+      "defaultVariant": "ja"
+    },
+    {
+      "id": "A07",
+      "slug": "video-poster",
+      "title": "サービス紹介動画の表紙",
+      "place": "トップ / 将来のサービス紹介動画の開始前",
+      "kind": "資料で予定されていた素材",
+      "medium": "動画ポスター",
+      "description": "ミステリーボックスを手前に、トレーディングカード・ファッション・精密機器のラインナップを奥に配置。商品情報から開封体験までを伝える表紙です。",
+      "note": "動画本編は未制作です。カードや商品、ボックスは表紙の方向を確認するための構想イメージです。",
+      "review": "サービスの入口としてミステリーボックスとコレクティブな商品が伝わるか。",
+      "alt": {
+        "ja": "ミステリーボックス、トレーディングカード、ジャケット、精密カメラを並べた紹介動画の表紙案",
+        "en": "A video cover concept showing a mystery box with trading cards, a tailored jacket and a precision camera"
+      },
+      "variants": [
+        "ja",
+        "en"
+      ],
+      "format": "webp",
+      "adoption": "pending-owner-review",
+      "files": [
+        {
+          "variant": "ja",
+          "path": "assets/a07-video-poster-ja.webp",
+          "width": 1600,
+          "height": 900,
+          "bytes": 57250,
+          "sha256": "9f653ecb5302c53e1a81f70159c2f6c624ca934aedfd3c9f1989ad885261725d",
+          "svg": "assets/a07-video-poster-ja.svg",
+          "editableSvg": "editable/a07-video-poster-ja.svg",
+          "label": "改訂 / 日本語",
+          "selectedByOwner": false
+        },
+        {
+          "variant": "en",
+          "path": "assets/a07-video-poster-en.webp",
+          "width": 1600,
+          "height": 900,
+          "bytes": 63420,
+          "sha256": "21553b88020dfdcc2b81f8f9103c0d1565bdbb22647b6d0f83cecaf287e151ab",
+          "svg": "assets/a07-video-poster-en.svg",
+          "editableSvg": "editable/a07-video-poster-en.svg",
+          "label": "改訂 / English",
+          "selectedByOwner": false
+        },
+        {
+          "variant": "previous",
+          "label": "v1 / 前回案",
+          "path": "previous/a07-video-poster-ja.webp",
+          "width": 1600,
+          "height": 900,
+          "bytes": 40144,
+          "sha256": "6286045e5c3ab5d9c2671dd8240f66955dfb1f235c89d9427977e66c3160c327",
+          "selectedByOwner": false,
+          "alt": "青いボトルを扱うサービスの構想画面と、紹介動画の再生記号を配した表紙案"
+        }
+      ],
+      "revisionNote": "ボックスとコレクティブ商品を追加",
+      "approval": "revised-awaiting-review",
+      "approvalLabel": "改訂案・再確認",
+      "defaultVariant": "ja"
+    },
+    {
+      "id": "A08",
+      "slug": "brand-keyvisual",
+      "title": "新しい体験へ、窓をひらく",
+      "place": "トップ / ヒーロー静止画・将来のブランド動画の方向案",
+      "kind": "追加のブランド画像候補",
+      "medium": "生成イラスト",
+      "description": "青い窓の向こうへ、商品・UI・映像がつながるイメージ。左側には見出しを重ねられる余白を残しています。",
+      "note": "今回新しく描いたブランド静止画です。既存の別工程Previsや完成動画のフレームではありません。",
+      "review": "採用済みとして記録しました。サイトへの反映は次の依頼で行います。",
+      "alt": {
+        "ja": "青い窓と架空の水辺の街を背景に、商品、UI、映像のカードが光の線でつながるイラスト",
+        "en": "An imaginary waterfront seen through a blue portal, with product, interface and storyboard cards linked by light"
+      },
+      "variants": [
+        "common"
+      ],
+      "format": "webp",
+      "adoption": "approved-not-integrated",
+      "files": [
+        {
+          "variant": "common",
+          "path": "assets/a08-brand-keyvisual.webp",
+          "width": 1600,
+          "height": 900,
+          "bytes": 138810,
+          "sha256": "d0030153e3f10d9cd695ad1675075d4e28806d0957d86bbd90c518ccd2021af8",
+          "label": "日英共通",
+          "selectedByOwner": true
+        }
+      ],
+      "approval": "approved",
+      "approvalLabel": "採用済み",
+      "revisionNote": "画像は前回から変更なし",
+      "defaultVariant": "common"
+    },
+    {
+      "id": "A09",
+      "slug": "news-template",
+      "title": "ニュースの共通表紙",
+      "place": "ニュース一覧・記事詳細 / 記事を掲載するとき",
+      "kind": "将来の掲載用テンプレート",
+      "medium": "ニュース画像",
+      "description": "アスタリスクを廃止し、情報のカードが重なる新しいデザインに。白・青・シアンと大きなNEWSの文字で、お知らせとしての読みやすさを保っています。",
+      "note": "架空の記事や日付は追加していません。実際のニュースを掲載する際に使う共通表紙です。",
+      "review": "新しいカードのモチーフが、今後のお知らせに合うか。",
+      "alt": {
+        "ja": "NEWSとMYSTENAからのお知らせの文字に、青いカードの重なりを添えたニュース表紙",
+        "en": "A news cover with the words NEWS and Updates from MYSTENA beside layered blue editorial cards"
+      },
+      "variants": [
+        "ja",
+        "en"
+      ],
+      "format": "png",
+      "adoption": "pending-owner-review",
+      "files": [
+        {
+          "variant": "ja",
+          "path": "assets/a09-news-template-ja.png",
+          "width": 1200,
+          "height": 630,
+          "bytes": 41891,
+          "sha256": "5017fec711ea11849f823cf3946b75ae0a5e5f380de8a1a21f49f86d8ba9283f",
+          "svg": "assets/a09-news-template-ja.svg",
+          "editableSvg": "editable/a09-news-template-ja.svg",
+          "label": "改訂 / 日本語",
+          "selectedByOwner": false
+        },
+        {
+          "variant": "en",
+          "path": "assets/a09-news-template-en.png",
+          "width": 1200,
+          "height": 630,
+          "bytes": 41456,
+          "sha256": "f60db4643f0609ae63d89a88b04d49ebd4e216543bdb576ebfb1abc8788b2f9f",
+          "svg": "assets/a09-news-template-en.svg",
+          "editableSvg": "editable/a09-news-template-en.svg",
+          "label": "改訂 / English",
+          "selectedByOwner": false
+        },
+        {
+          "variant": "previous",
+          "label": "v1 / 前回案",
+          "path": "previous/a09-news-template-ja.png",
+          "width": 1200,
+          "height": 630,
+          "bytes": 40294,
+          "sha256": "58d66dfb55b60d54a820500bc7b47597f4a6654317d579a4e8577e68dc2361d2",
+          "selectedByOwner": false,
+          "alt": "NEWS、MYSTENAからのお知らせと記した青い共通表紙"
+        }
+      ],
+      "revisionNote": "星形を廃止・カードの構図へ変更",
+      "approval": "revised-awaiting-review",
+      "approvalLabel": "改訂案・再確認",
+      "defaultVariant": "ja"
+    },
+    {
+      "id": "A10",
+      "slug": "wordmark",
+      "title": "既存ワードマークの素材化",
+      "place": "ヘッダー・フッター・動画・外部資料",
+      "kind": "既存の文字と記号のデータ化案",
+      "medium": "ロゴ素材の試作",
+      "description": "星形の記号を外し、MYSTENAの文字だけにしました。明色背景用・濃色背景用とも背景透過のPNGとSVGです。",
+      "note": "正式ロゴのデータを受け取るまでの仮素材です。サイトに表示中のロゴ自体は変更していません。",
+      "review": "文字だけの素材として、余白とバランスに問題がないか。",
+      "alt": {
+        "ja": "記号を除いた文字だけのMYSTENAワードマーク",
+        "en": "The text-only MYSTENA wordmark without a symbol"
+      },
+      "variants": [
+        "light",
+        "dark"
+      ],
+      "format": "png",
+      "adoption": "pending-owner-review",
+      "files": [
+        {
+          "variant": "light",
+          "path": "assets/a10-wordmark-light.png",
+          "width": 1400,
+          "height": 360,
+          "bytes": 13662,
+          "sha256": "390679479598ed14a13abc26578a891ccd48f1bb9a32e946938d3a2b46a8b202",
+          "svg": "assets/a10-wordmark-light.svg",
+          "editableSvg": "editable/a10-wordmark-light.svg",
+          "label": "文字のみ / 明色用",
+          "selectedByOwner": false
+        },
+        {
+          "variant": "dark",
+          "path": "assets/a10-wordmark-dark.png",
+          "width": 1400,
+          "height": 360,
+          "bytes": 11308,
+          "sha256": "4495860bb996de604c4e4f2366e8b25489bf3f6668e86ae8ab1df414654cc02f",
+          "svg": "assets/a10-wordmark-dark.svg",
+          "editableSvg": "editable/a10-wordmark-dark.svg",
+          "label": "文字のみ / 濃色用",
+          "selectedByOwner": false
+        },
+        {
+          "variant": "previous",
+          "label": "v1 / 前回案",
+          "path": "previous/a10-wordmark-light.png",
+          "width": 1400,
+          "height": 470,
+          "bytes": 15013,
+          "sha256": "2d4bcbf4d33952ef0a5ad23155080cce654d3d7d73751464a30b5414c1b4292a",
+          "selectedByOwner": false,
+          "alt": "MYSTENAの既存ワードマークと8方向の星形を組み合わせた素材化案"
+        }
+      ],
+      "revisionNote": "文字だけに変更",
+      "approval": "revised-awaiting-review",
+      "approvalLabel": "改訂案・再確認",
+      "defaultVariant": "light"
+    }
+  ],
+  "generation": {
+    "newImageGeneration": false,
+    "method": "Existing editable SVG assets revised natively. Three approved image_gen illustrations copied without re-encoding."
+  },
+  "deferred": [
+    {
+      "item": "実際のサービス画面",
+      "reason": "公開可能な画面が未提供。今回はA01/A02の構想図を用意。"
+    },
+    {
+      "item": "実際の会社・代表者の写真",
+      "reason": "実素材が未提供。今回はA03の生成イラストを代替候補として用意。"
+    },
+    {
+      "item": "事業02・03・04の制作実績",
+      "reason": "実績として公開できる素材が未提供。採用済みの事業イメージと重複する架空実績は追加しない。"
+    },
+    {
+      "item": "サービス紹介・ブランド動画",
+      "reason": "今回は静止画A07/A08を制作。動画本編・字幕・スマホ専用構図・再生実装は別工程。"
+    },
+    {
+      "item": "提携先ロゴ・共同企画商品の実写真",
+      "reason": "実際の関係と掲載許可が未確認。架空の提携先ロゴは作成しない。"
+    }
+  ]
+}

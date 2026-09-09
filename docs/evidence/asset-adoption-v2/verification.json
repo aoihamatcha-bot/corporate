@@ -1,0 +1,37 @@
+{
+  "scope": "LOCAL production build",
+  "startingHead": "092c3d99172acc903fb8e3a22766c3d53959c1d7",
+  "build": "PASS",
+  "typecheck": "PASS",
+  "lint": "PASS",
+  "unit": {
+    "passed": 11,
+    "failed": 0
+  },
+  "e2e": {
+    "startTime": "2026-09-09T13:12:36.148Z",
+    "duration": 223537.03300000002,
+    "expected": 90,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "projects": [
+    "chromium-desktop",
+    "chromium-mobile",
+    "webkit-mobile"
+  ],
+  "assetIntegrity": {
+    "files": 19,
+    "bytes": 1409714,
+    "sha256": "PASS"
+  },
+  "visuals": "Japanese and English at 1440px and 390px; see visual-check.json",
+  "initialFailure": "See initial-menu-check.json. Hydration must finish before measuring the menu scroll baseline; the strict <0.5px assertion is retained.",
+  "finalNormalization": "After E2E, SVG line endings and their unused catalog byte counts/hashes were normalized for Git. Letterforms and rendering are unchanged. Final build and unit tests passed again.",
+  "reactReview": "Server image components, localized alt, responsive sizes, uncropped diagrams, no additional effects or requests; existing motion layer reused for wordmarks.",
+  "knownWarning": "Next.js has no LINE Seed JP fallback metrics. Build succeeds; CSS fallback fonts remain available.",
+  "hostedVisuals": "Not performed at this verification point",
+  "manualDeploy": false,
+  "environmentMutations": false
+}

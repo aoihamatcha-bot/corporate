@@ -1,0 +1,174 @@
+{
+  "url": "http://127.0.0.1:3017/",
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "samples": [
+    {
+      "selector": ".wordmark",
+      "text": "MYSTENA",
+      "family": "Arial, \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "size": "30px",
+      "weight": "800",
+      "spacing": "-2.25px",
+      "lineHeight": "30px",
+      "fonts": []
+    },
+    {
+      "selector": ".hero h1",
+      "text": "楽しさをつくる。魅力を届ける。",
+      "family": "Arial, \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "size": "79.2px",
+      "weight": "700",
+      "spacing": "-4.752px",
+      "lineHeight": "118.8px",
+      "fonts": []
+    },
+    {
+      "selector": ".hero-description",
+      "text": "MYSTENAは、エンターテインメントとテクノロジーを軸に、サービス開発、映像制作、マーケティングを手がける会社です。商品との出会いを楽しむオンラインサービスから、事業者を支えるシステム、ブランドやクリエイターとの共同企画まで。企画・開発・表現・販売促進をつなぎ、新しい体験を生み出します。",
+      "family": "Arial, \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "size": "15px",
+      "weight": "400",
+      "spacing": "0.225px",
+      "lineHeight": "31.5px",
+      "fonts": []
+    },
+    {
+      "selector": ".section-heading",
+      "text": "商品との出会いを、\nもっと楽しく。",
+      "family": "Arial, \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "size": "44.64px",
+      "weight": "700",
+      "spacing": "-2.0088px",
+      "lineHeight": "73.656px",
+      "fonts": []
+    },
+    {
+      "selector": ".business-preview h3",
+      "text": "エンターテインメントEC",
+      "family": "Arial, \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "size": "36px",
+      "weight": "600",
+      "spacing": "-1.62px",
+      "lineHeight": "55.8px",
+      "fonts": []
+    },
+    {
+      "selector": ".business-preview p",
+      "text": "楽しさを取り入れたオンライン販売サービスを企画・開発・運営します。商品との出会いや、買い物そのものを楽しめる体験を考えます。",
+      "family": "Arial, \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "size": "15px",
+      "weight": "400",
+      "spacing": "normal",
+      "lineHeight": "30px",
+      "fonts": []
+    },
+    {
+      "selector": ".business-preview .card-consultation",
+      "text": "楽しさのある販売サービスを企画したい",
+      "family": "Arial, \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "size": "13px",
+      "weight": "400",
+      "spacing": "normal",
+      "lineHeight": "23.4px",
+      "fonts": []
+    }
+  ],
+  "fontAssets": [],
+  "platformFontProbes": [
+    {
+      "selector": ".wordmark",
+      "leaf": {
+        "tag": "SPAN",
+        "class": "reveal-source",
+        "text": "MYSTENA"
+      },
+      "fonts": [
+        {
+          "familyName": "Arial Black",
+          "postScriptName": "Arial-Black",
+          "isCustomFont": false,
+          "glyphCount": 7
+        }
+      ]
+    },
+    {
+      "selector": ".hero h1",
+      "leaf": {
+        "tag": "SPAN",
+        "class": "reveal-source",
+        "text": "楽しさをつくる。"
+      },
+      "fonts": [
+        {
+          "familyName": "Noto Sans JP",
+          "postScriptName": "Noto-Sans-JP-Bold",
+          "isCustomFont": false,
+          "glyphCount": 8
+        }
+      ]
+    },
+    {
+      "selector": ".hero-description",
+      "leaf": {
+        "tag": "SPAN",
+        "class": "reveal-source",
+        "text": "MYSTENAは、エンターテインメントとテクノロジーを軸に、サービス開発、映像制作、マーケティングを手がける会社です。商品との出会いを楽しむオンラインサービスから、事業者を支えるシステム、ブランドやクリエイターとの共同企画まで。企画・開発・表現・販売促進をつなぎ、新しい体験を生み出します。"
+      },
+      "fonts": [
+        {
+          "familyName": "Arial",
+          "postScriptName": "ArialMT",
+          "isCustomFont": false,
+          "glyphCount": 7
+        },
+        {
+          "familyName": "Noto Sans JP",
+          "postScriptName": "Noto-Sans-JP",
+          "isCustomFont": false,
+          "glyphCount": 138
+        }
+      ]
+    },
+    {
+      "selector": ".business-preview h3",
+      "leaf": {
+        "tag": "SPAN",
+        "class": "reveal-source",
+        "text": "エンターテインメントEC"
+      },
+      "fonts": [
+        {
+          "familyName": "Noto Sans JP",
+          "postScriptName": "Noto-Sans-JP-Bold",
+          "isCustomFont": false,
+          "glyphCount": 10
+        },
+        {
+          "familyName": "Arial",
+          "postScriptName": "Arial-BoldMT",
+          "isCustomFont": false,
+          "glyphCount": 2
+        }
+      ]
+    },
+    {
+      "selector": ".business-preview p",
+      "leaf": {
+        "tag": "SPAN",
+        "class": "reveal-source",
+        "text": "楽しさを取り入れたオンライン販売サービスを企画・開発・運営します。商品との出会いや、買い物そのものを楽しめる体験を考えます。"
+      },
+      "fonts": [
+        {
+          "familyName": "Noto Sans JP",
+          "postScriptName": "Noto-Sans-JP",
+          "isCustomFont": false,
+          "glyphCount": 62
+        }
+      ]
+    }
+  ]
+}

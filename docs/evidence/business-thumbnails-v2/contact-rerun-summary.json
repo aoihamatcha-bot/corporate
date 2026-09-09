@@ -1,0 +1,13 @@
+{
+  "source": "LOCAL production server",
+  "command": "npx --no-install playwright test tests/e2e/i18n.spec.ts --project=webkit-mobile --grep 'English contact remains disabled' --repeat-each=3 --workers=1 --output=.local/business-thumbnails-v2/contact-rerun",
+  "stats": {
+    "startTime": "2026-09-09T10:57:40.943Z",
+    "duration": 3316.9579999999996,
+    "expected": 3,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "note": "Same test and assertion, no code changes; this isolated pass does not replace the original full-suite failure"
+}

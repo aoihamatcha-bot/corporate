@@ -1,0 +1,97 @@
+{
+  "capturedAt": "2026-09-09T10:55:49.318Z",
+  "source": "LOCAL production server only",
+  "captures": [
+    {
+      "file": "cards-ja-1440.png",
+      "route": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 1796
+      },
+      "scope": "Business grid crop; reduced motion; viewport expanded to include complete grid; no DOM/style changes"
+    },
+    {
+      "file": "detail-ja-platform-1440.png",
+      "route": "/business#platform",
+      "viewport": {
+        "width": 1440,
+        "height": 1381
+      },
+      "scope": "Business detail section crop; reduced motion; expanded viewport; no DOM/style changes"
+    },
+    {
+      "file": "detail-ja-systems-1440.png",
+      "route": "/business#systems",
+      "viewport": {
+        "width": 1440,
+        "height": 1382
+      },
+      "scope": "Business detail section crop; reduced motion; expanded viewport; no DOM/style changes"
+    },
+    {
+      "file": "detail-ja-creative-1440.png",
+      "route": "/business#creative",
+      "viewport": {
+        "width": 1440,
+        "height": 1382
+      },
+      "scope": "Business detail section crop; reduced motion; expanded viewport; no DOM/style changes"
+    },
+    {
+      "file": "detail-ja-marketing-1440.png",
+      "route": "/business#marketing",
+      "viewport": {
+        "width": 1440,
+        "height": 1490
+      },
+      "scope": "Business detail section crop; reduced motion; expanded viewport; no DOM/style changes"
+    },
+    {
+      "file": "cards-ja-390.png",
+      "route": "/",
+      "viewport": {
+        "width": 390,
+        "height": 2522
+      },
+      "scope": "Business grid crop; reduced motion; viewport expanded to include complete grid; no DOM/style changes"
+    },
+    {
+      "file": "detail-ja-systems-390.png",
+      "route": "/business#systems",
+      "viewport": {
+        "width": 390,
+        "height": 1105
+      },
+      "scope": "Business detail section crop; reduced motion; expanded viewport; no DOM/style changes"
+    },
+    {
+      "file": "detail-ja-creative-390.png",
+      "route": "/business#creative",
+      "viewport": {
+        "width": 390,
+        "height": 1075
+      },
+      "scope": "Business detail section crop; reduced motion; expanded viewport; no DOM/style changes"
+    },
+    {
+      "file": "cards-en-390.png",
+      "route": "/en/",
+      "viewport": {
+        "width": 390,
+        "height": 2672
+      },
+      "scope": "Business grid crop; reduced motion; viewport expanded to include complete grid; no DOM/style changes"
+    },
+    {
+      "file": "systems-hover-1440.png",
+      "route": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "scope": "Actual pointer hover with normal motion"
+    }
+  ],
+  "errors": []
+}

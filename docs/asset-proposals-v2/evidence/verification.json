@@ -1,0 +1,395 @@
+{
+  "time": "2026-09-09T12:52:16.652Z",
+  "scope": "Local review assets only. No site integration or hosted checks.",
+  "assetChecks": [
+    {
+      "id": "A01",
+      "variant": "ja",
+      "src": "assets/a01-service-overview-ja.webp",
+      "width": 1600,
+      "height": 1000,
+      "sha256": "PASS",
+      "downloads": "PASS"
+    },
+    {
+      "id": "A01",
+      "variant": "en",
+      "src": "assets/a01-service-overview-en.webp",
+      "width": 1600,
+      "height": 1000,
+      "sha256": "PASS",
+      "downloads": "PASS"
+    },
+    {
+      "id": "A01",
+      "variant": "previous",
+      "src": "previous/a01-service-overview-ja.webp",
+      "width": 1600,
+      "height": 1000,
+      "sha256": "PASS",
+      "downloads": "PASS"
+    },
+    {
+      "id": "A02",
+      "variant": "ja",
+      "src": "assets/a02-experience-flow-ja.webp",
+      "width": 1600,
+      "height": 1000,
+      "sha256": "PASS",
+      "downloads": "PASS"
+    },
+    {
+      "id": "A02",
+      "variant": "en",
+      "src": "assets/a02-experience-flow-en.webp",
+      "width": 1600,
+      "height": 1000,
+      "sha256": "PASS",
+      "downloads": "PASS"
+    },
+    {
+      "id": "A02",
+      "variant": "previous",
+      "src": "previous/a02-experience-flow-ja.webp",
+      "width": 1600,
+      "height": 1000,
+      "sha256": "PASS",
+      "downloads": "PASS"
+    },
+    {
+      "id": "A03",
+      "variant": "common",
+      "src": "assets/a03-company-workstyle.webp",
+      "width": 1586,
+      "height": 992,
+      "sha256": "PASS",
+      "downloads": "PASS"
+    },
+    {
+      "id": "A04",
+      "variant": "common",
+      "src": "assets/a04-about-workbench.webp",
+      "width": 1586,
+      "height": 992,
+      "sha256": "PASS",
+      "downloads": "PASS"
+    },
+    {
+      "id": "A05",
+      "variant": "ja",
+      "src": "assets/a05-social-share-ja.png",
+      "width": 1200,
+      "height": 630,
+      "sha256": "PASS",
+      "downloads": "PASS"
+    },
+    {
+      "id": "A05",
+      "variant": "en",
+      "src": "assets/a05-social-share-en.png",
+      "width": 1200,
+      "height": 630,
+      "sha256": "PASS",
+      "downloads": "PASS"
+    },
+    {
+      "id": "A05",
+      "variant": "previous",
+      "src": "previous/a05-social-share-ja.png",
+      "width": 1200,
+      "height": 630,
+      "sha256": "PASS",
+      "downloads": "PASS"
+    },
+    {
+      "id": "A06",
+      "variant": "ja",
+      "src": "assets/a06-business-concept-ja.webp",
+      "width": 1600,
+      "height": 850,
+      "sha256": "PASS",
+      "downloads": "PASS"
+    },
+    {
+      "id": "A06",
+      "variant": "en",
+      "src": "assets/a06-business-concept-en.webp",
+      "width": 1600,
+      "height": 850,
+      "sha256": "PASS",
+      "downloads": "PASS"
+    },
+    {
+      "id": "A06",
+      "variant": "previous",
+      "src": "previous/a06-business-concept-ja.webp",
+      "width": 1600,
+      "height": 850,
+      "sha256": "PASS",
+      "downloads": "PASS"
+    },
+    {
+      "id": "A07",
+      "variant": "ja",
+      "src": "assets/a07-video-poster-ja.webp",
+      "width": 1600,
+      "height": 900,
+      "sha256": "PASS",
+      "downloads": "PASS"
+    },
+    {
+      "id": "A07",
+      "variant": "en",
+      "src": "assets/a07-video-poster-en.webp",
+      "width": 1600,
+      "height": 900,
+      "sha256": "PASS",
+      "downloads": "PASS"
+    },
+    {
+      "id": "A07",
+      "variant": "previous",
+      "src": "previous/a07-video-poster-ja.webp",
+      "width": 1600,
+      "height": 900,
+      "sha256": "PASS",
+      "downloads": "PASS"
+    },
+    {
+      "id": "A08",
+      "variant": "common",
+      "src": "assets/a08-brand-keyvisual.webp",
+      "width": 1600,
+      "height": 900,
+      "sha256": "PASS",
+      "downloads": "PASS"
+    },
+    {
+      "id": "A09",
+      "variant": "ja",
+      "src": "assets/a09-news-template-ja.png",
+      "width": 1200,
+      "height": 630,
+      "sha256": "PASS",
+      "downloads": "PASS"
+    },
+    {
+      "id": "A09",
+      "variant": "en",
+      "src": "assets/a09-news-template-en.png",
+      "width": 1200,
+      "height": 630,
+      "sha256": "PASS",
+      "downloads": "PASS"
+    },
+    {
+      "id": "A09",
+      "variant": "previous",
+      "src": "previous/a09-news-template-ja.png",
+      "width": 1200,
+      "height": 630,
+      "sha256": "PASS",
+      "downloads": "PASS"
+    },
+    {
+      "id": "A10",
+      "variant": "light",
+      "src": "assets/a10-wordmark-light.png",
+      "width": 1400,
+      "height": 360,
+      "sha256": "PASS",
+      "downloads": "PASS"
+    },
+    {
+      "id": "A10",
+      "variant": "dark",
+      "src": "assets/a10-wordmark-dark.png",
+      "width": 1400,
+      "height": 360,
+      "sha256": "PASS",
+      "downloads": "PASS"
+    },
+    {
+      "id": "A10",
+      "variant": "previous",
+      "src": "previous/a10-wordmark-light.png",
+      "width": 1400,
+      "height": 470,
+      "sha256": "PASS",
+      "downloads": "PASS"
+    }
+  ],
+  "svgChecks": [
+    {
+      "file": "a01-service-overview-en.svg",
+      "textGroups": 20,
+      "overflow": [],
+      "sparkAbsent": true
+    },
+    {
+      "file": "a01-service-overview-ja.svg",
+      "textGroups": 20,
+      "overflow": [],
+      "sparkAbsent": true
+    },
+    {
+      "file": "a02-experience-flow-en.svg",
+      "textGroups": 21,
+      "overflow": [],
+      "sparkAbsent": true
+    },
+    {
+      "file": "a02-experience-flow-ja.svg",
+      "textGroups": 21,
+      "overflow": [],
+      "sparkAbsent": true
+    },
+    {
+      "file": "a05-social-share-en.svg",
+      "textGroups": 6,
+      "overflow": [],
+      "sparkAbsent": true
+    },
+    {
+      "file": "a05-social-share-ja.svg",
+      "textGroups": 5,
+      "overflow": [],
+      "sparkAbsent": true
+    },
+    {
+      "file": "a06-business-concept-en.svg",
+      "textGroups": 13,
+      "overflow": [],
+      "sparkAbsent": true
+    },
+    {
+      "file": "a06-business-concept-ja.svg",
+      "textGroups": 13,
+      "overflow": [],
+      "sparkAbsent": true
+    },
+    {
+      "file": "a07-video-poster-en.svg",
+      "textGroups": 9,
+      "overflow": [],
+      "sparkAbsent": true
+    },
+    {
+      "file": "a07-video-poster-ja.svg",
+      "textGroups": 9,
+      "overflow": [],
+      "sparkAbsent": true
+    },
+    {
+      "file": "a09-news-template-en.svg",
+      "textGroups": 4,
+      "overflow": [],
+      "sparkAbsent": true
+    },
+    {
+      "file": "a09-news-template-ja.svg",
+      "textGroups": 4,
+      "overflow": [],
+      "sparkAbsent": true
+    },
+    {
+      "file": "a10-wordmark-dark.svg",
+      "textGroups": 1,
+      "overflow": [],
+      "sparkAbsent": true
+    },
+    {
+      "file": "a10-wordmark-light.svg",
+      "textGroups": 1,
+      "overflow": [],
+      "sparkAbsent": true
+    }
+  ],
+  "viewChecks": [
+    {
+      "name": "gallery-desktop",
+      "w": 1440,
+      "h": 1050,
+      "overflow": {
+        "page": 0,
+        "elements": []
+      }
+    },
+    {
+      "name": "gallery-mobile",
+      "w": 390,
+      "h": 844,
+      "overflow": {
+        "page": 0,
+        "elements": []
+      }
+    },
+    {
+      "name": "gallery-mobile-320",
+      "w": 320,
+      "h": 740,
+      "overflow": {
+        "page": 0,
+        "elements": []
+      }
+    },
+    {
+      "name": "gallery-webkit-mobile",
+      "w": 390,
+      "h": 844,
+      "overflow": {
+        "page": 0,
+        "elements": []
+      }
+    }
+  ],
+  "interactions": [
+    {
+      "initialApprovals": "PASS",
+      "comparisonDoesNotChangeApproval": "PASS",
+      "comparisonReloadPreservesOriginalApproval": "PASS"
+    },
+    {
+      "selectionReload": "PASS",
+      "clipboard": "PASS",
+      "enlargeAndEscape": "PASS"
+    },
+    {
+      "mobileDialog": "PASS",
+      "mobileDialogOverflow": 0
+    },
+    {
+      "webkitDarkVariantAndDialog": "PASS"
+    }
+  ],
+  "errors": [],
+  "httpFailures": [],
+  "contentChecks": {
+    "legacyProductLabelsRemoved": true,
+    "mysteryBoxPresent": true,
+    "gamblingPromotionalCopyAbsent": true,
+    "textOnlyWordmark": true
+  },
+  "protectedFiles": {
+    "count": 159,
+    "differences": []
+  },
+  "acceptedImages": [
+    {
+      "id": "A03",
+      "unchanged": true,
+      "sha256": "e1b0a8857b0762fac29e47ca9adc18cfa3efb772943fb963eed1abaccdecfc17"
+    },
+    {
+      "id": "A04",
+      "unchanged": true,
+      "sha256": "fef62a50861eb3b8743851b5634c0ee1ef440fc558b56bfc2b05678bef04e06f"
+    },
+    {
+      "id": "A08",
+      "unchanged": true,
+      "sha256": "d0030153e3f10d9cd695ad1675075d4e28806d0957d86bbd90c518ccd2021af8"
+    }
+  ],
+  "status": "PASS"
+}

@@ -11,8 +11,16 @@ import {
   type MouseEvent,
   type KeyboardEvent,
 } from "react";
-import { navigation } from "@/content/navigation";
-import { Arrow, Spark } from "@/components/icons";
+import type { NavigationItem } from "@/content/navigation";
+import type { Dictionary } from "@/content/dictionaries";
+import {
+  localizedPath,
+  type Locale,
+  type TranslationAvailability,
+} from "@/content/i18n";
+import { LanguageSwitcher } from "./language-switcher";
+import { Arrow } from "@/components/icons";
+import { Wordmark } from "@/components/wordmark";
 import { MotionControl } from "@/components/motion/motion-control";
 import { motionToken } from "@/components/motion/tokens";
 import { RevealText } from "@/components/motion/reveal-text";
@@ -23,7 +31,22 @@ const subscribeHydration = () => () => {};
 const clientReady = () => true;
 const serverReady = () => false;
 
-export function Header() {
+export function Header({
+  locale,
+  labels,
+  navigation,
+  privacyLabel,
+  available,
+}: {
+  locale: Locale;
+  labels: Dictionary["common"];
+  navigation: NavigationItem[];
+  privacyLabel: string;
+  available: TranslationAvailability;
+}) {
+  const home = localizedPath("/", locale);
+  const contact = localizedPath("/contact", locale);
+  const privacy = localizedPath("/privacy", locale);
   const hydrated = useSyncExternalStore(
     subscribeHydration,
     clientReady,
@@ -58,13 +81,28 @@ export function Header() {
     (restore = true) => {
       if (closeTimer.current) clearTimeout(closeTimer.current);
       closeTimer.current = null;
+      const returnY = lock.current?.y;
       // Restore document geometry before close() performs native focus return.
       // WebKit can otherwise scroll against the body's still-fixed position.
       unlock();
       dialog.current?.close();
       if (dialog.current) delete dialog.current.dataset.closing;
       setOpen(false);
-      if (restore) trigger.current?.focus({ preventScroll: true });
+      if (restore) {
+        trigger.current?.focus({ preventScroll: true });
+        // WebKit can finish native dialog focus/scroll restoration on the next
+        // frame. Reapply the saved position once, only while focus is still on
+        // the trigger; never override a navigation, reopen or a new focus target.
+        requestAnimationFrame(() => {
+          if (
+            returnY !== undefined &&
+            !dialog.current?.open &&
+            !navigating.current &&
+            document.activeElement === trigger.current
+          )
+            window.scrollTo({ top: returnY, behavior: "instant" });
+        });
+      }
     },
     [unlock],
   );
@@ -171,28 +209,40 @@ export function Header() {
   return (
     <>
       <header className="site-header">
-        <Link href="/" className="wordmark" aria-label="MYSTENA トップ">
-          <RevealText kind="utility">MYSTENA</RevealText>
-          <Spark />
+        <Link href={home} className="wordmark" aria-label={labels.homeLink}>
+          <Wordmark />
         </Link>
-        <span className="header-tagline">
-          <RevealText kind="utility">
-            {"ENTERTAINMENT\nMEETS TECHNOLOGY."}
-          </RevealText>
-        </span>
+        <nav className="header-shortcuts" aria-label={labels.primaryNav}>
+          {navigation
+            .filter((item) =>
+              ["company", "contact"].some(
+                (key) => item.href === localizedPath("/" + key, locale),
+              ),
+            )
+            .map((item) => (
+              <Link key={item.href} href={item.href}>
+                <RevealText kind="utility">{item.label}</RevealText>
+              </Link>
+            ))}
+        </nav>
+        <LanguageSwitcher
+          locale={locale}
+          labels={labels}
+          available={available}
+        />
         <div className="header-controls">
-          <MotionControl />
+          <MotionControl labels={labels.motion} />
           <button
             ref={trigger}
             type="button"
             className="menu-trigger"
-            aria-label="メニューを開く"
+            aria-label={labels.menuOpen}
             aria-expanded={open}
             aria-controls="site-navigation"
             disabled={!hydrated}
             onClick={openMenu}
           >
-            <RevealText kind="utility">MENU</RevealText>
+            <RevealText kind="utility">{labels.menu}</RevealText>
             <span className="menu-lines" aria-hidden="true">
               <i />
               <i />
@@ -222,31 +272,30 @@ export function Header() {
         </div>
         <div className="nav-top">
           <Link
-            href="/"
+            href={home}
             className="wordmark"
-            onClick={(e) => navigate(e, "/")}
-            aria-label="MYSTENA トップ"
+            onClick={(e) => navigate(e, home)}
+            aria-label={labels.homeLink}
           >
-            <MenuInk kind="utility">MYSTENA</MenuInk>
-            <Spark />
+            <Wordmark menu />
           </Link>
           <button
             type="button"
             className="menu-trigger close-trigger"
             onClick={closeMenu}
-            aria-label="メニューを閉じる"
+            aria-label={labels.menuClose}
           >
-            <MenuInk kind="utility">CLOSE</MenuInk>
+            <MenuInk kind="utility">{labels.close}</MenuInk>
             <span className="close-icon" aria-hidden="true">
               ×
             </span>
           </button>
         </div>
         <h2 id="nav-title" className="sr-only">
-          サイトナビゲーション
+          {labels.siteNav}
         </h2>
         <div className="nav-layout">
-          <nav aria-label="メインナビゲーション">
+          <nav aria-label={labels.primaryNav}>
             <ol>
               {navigation.map((item, i) => (
                 <li key={item.href}>
@@ -258,12 +307,16 @@ export function Header() {
                     <span className="nav-number">
                       <MenuInk>{`0${i + 1}`}</MenuInk>
                     </span>
-                    <MenuInk large kind="heading">
-                      {item.en}
-                    </MenuInk>
-                    <span className="nav-ja">
-                      <MenuInk kind="subtitle">{item.ja}</MenuInk>
+                    <span lang="en">
+                      <MenuInk large kind="heading">
+                        {item.english}
+                      </MenuInk>
                     </span>
+                    {locale === "ja" && (
+                      <span className="nav-ja">
+                        <MenuInk kind="subtitle">{item.label}</MenuInk>
+                      </span>
+                    )}
                     <Arrow diagonal />
                   </Link>
                 </li>
@@ -271,31 +324,37 @@ export function Header() {
             </ol>
           </nav>
           <aside className="nav-aside">
-            <span className="eyebrow">
-              <MenuInk>LET’S FIND WHAT’S NEXT.</MenuInk>
-            </span>
+            <LanguageSwitcher
+              locale={locale}
+              labels={labels}
+              available={available}
+              menu
+              onNavigate={() => finishClose(false)}
+            />
             <p>
-              <MenuInk kind="subtitle">{"心が動く。\n世界がひらく。"}</MenuInk>
+              <MenuInk kind="subtitle">{labels.navMessage}</MenuInk>
             </p>
             <Link
-              href="/contact"
-              onClick={(e) => navigate(e, "/contact")}
+              href={contact}
+              onClick={(e) => navigate(e, contact)}
               className="text-link"
             >
-              <MenuInk>お問い合わせ</MenuInk>
+              <MenuInk>
+                {navigation.find((item) => item.href === contact)!.label}
+              </MenuInk>
               <Arrow diagonal />
             </Link>
             <div className="nav-aux">
-              <Link href="/privacy" onClick={(e) => navigate(e, "/privacy")}>
-                <MenuInk>プライバシーポリシー</MenuInk>
+              <Link href={privacy} onClick={(e) => navigate(e, privacy)}>
+                <MenuInk>{privacyLabel}</MenuInk>
               </Link>
-              <MotionControl menu />
+              <MotionControl labels={labels.motion} menu />
             </div>
           </aside>
         </div>
         <div className="nav-bottom">
           <MenuInk>MYSTENA</MenuInk>
-          <MenuInk>BE CURIOUS. FIND YOUR NEXT.</MenuInk>
+          <MenuInk>{labels.brandNote}</MenuInk>
         </div>
       </dialog>
     </>

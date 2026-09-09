@@ -1,0 +1,314 @@
+{
+  "verifiedAt": "2026-09-09T12:24:31.695Z",
+  "scope": "Local asset proposal gallery only; no hosted or production evidence.",
+  "assets": [
+    {
+      "id": "A01",
+      "variant": "ja",
+      "width": 1600,
+      "height": 1000,
+      "src": "assets/a01-service-overview-ja.webp",
+      "downloads": "PASS"
+    },
+    {
+      "id": "A01",
+      "variant": "en",
+      "width": 1600,
+      "height": 1000,
+      "src": "assets/a01-service-overview-en.webp",
+      "downloads": "PASS"
+    },
+    {
+      "id": "A02",
+      "variant": "ja",
+      "width": 1600,
+      "height": 1000,
+      "src": "assets/a02-experience-flow-ja.webp",
+      "downloads": "PASS"
+    },
+    {
+      "id": "A02",
+      "variant": "en",
+      "width": 1600,
+      "height": 1000,
+      "src": "assets/a02-experience-flow-en.webp",
+      "downloads": "PASS"
+    },
+    {
+      "id": "A03",
+      "variant": "common",
+      "width": 1586,
+      "height": 992,
+      "src": "assets/a03-company-workstyle.webp",
+      "downloads": "PASS"
+    },
+    {
+      "id": "A04",
+      "variant": "common",
+      "width": 1586,
+      "height": 992,
+      "src": "assets/a04-about-workbench.webp",
+      "downloads": "PASS"
+    },
+    {
+      "id": "A05",
+      "variant": "ja",
+      "width": 1200,
+      "height": 630,
+      "src": "assets/a05-social-share-ja.png",
+      "downloads": "PASS"
+    },
+    {
+      "id": "A05",
+      "variant": "en",
+      "width": 1200,
+      "height": 630,
+      "src": "assets/a05-social-share-en.png",
+      "downloads": "PASS"
+    },
+    {
+      "id": "A06",
+      "variant": "ja",
+      "width": 1600,
+      "height": 850,
+      "src": "assets/a06-business-concept-ja.webp",
+      "downloads": "PASS"
+    },
+    {
+      "id": "A06",
+      "variant": "en",
+      "width": 1600,
+      "height": 850,
+      "src": "assets/a06-business-concept-en.webp",
+      "downloads": "PASS"
+    },
+    {
+      "id": "A07",
+      "variant": "ja",
+      "width": 1600,
+      "height": 900,
+      "src": "assets/a07-video-poster-ja.webp",
+      "downloads": "PASS"
+    },
+    {
+      "id": "A07",
+      "variant": "en",
+      "width": 1600,
+      "height": 900,
+      "src": "assets/a07-video-poster-en.webp",
+      "downloads": "PASS"
+    },
+    {
+      "id": "A08",
+      "variant": "common",
+      "width": 1600,
+      "height": 900,
+      "src": "assets/a08-brand-keyvisual.webp",
+      "downloads": "PASS"
+    },
+    {
+      "id": "A09",
+      "variant": "ja",
+      "width": 1200,
+      "height": 630,
+      "src": "assets/a09-news-template-ja.png",
+      "downloads": "PASS"
+    },
+    {
+      "id": "A09",
+      "variant": "en",
+      "width": 1200,
+      "height": 630,
+      "src": "assets/a09-news-template-en.png",
+      "downloads": "PASS"
+    },
+    {
+      "id": "A10",
+      "variant": "light",
+      "width": 1400,
+      "height": 470,
+      "src": "assets/a10-wordmark-light.png",
+      "downloads": "PASS"
+    },
+    {
+      "id": "A10",
+      "variant": "dark",
+      "width": 1400,
+      "height": 470,
+      "src": "assets/a10-wordmark-dark.png",
+      "downloads": "PASS"
+    }
+  ],
+  "views": [
+    {
+      "name": "gallery-desktop",
+      "width": 1440,
+      "height": 1050,
+      "overflow": {
+        "page": 0,
+        "elements": []
+      }
+    },
+    {
+      "name": "gallery-mobile",
+      "width": 390,
+      "height": 844,
+      "overflow": {
+        "page": 0,
+        "elements": []
+      }
+    },
+    {
+      "name": "gallery-mobile-320",
+      "width": 320,
+      "height": 740,
+      "overflow": {
+        "page": 0,
+        "elements": []
+      }
+    },
+    {
+      "name": "gallery-webkit-mobile",
+      "width": 390,
+      "height": 844,
+      "overflow": {
+        "page": 0,
+        "elements": []
+      }
+    }
+  ],
+  "interactions": [
+    {
+      "selection": "PASS",
+      "localStorageReload": "PASS",
+      "export": "PASS",
+      "clipboard": "PASS"
+    },
+    {
+      "enlarge": "PASS",
+      "escapeCloses": "PASS"
+    },
+    {
+      "mobileEnlarge": "PASS",
+      "mobileDialogOverflow": 0
+    },
+    {
+      "webkitVariant": "PASS",
+      "webkitDialog": "PASS"
+    }
+  ],
+  "outlinedText": [
+    {
+      "file": "a01-service-overview-en.svg",
+      "textNodes": 16,
+      "canvasOverflow": []
+    },
+    {
+      "file": "a01-service-overview-ja.svg",
+      "textNodes": 16,
+      "canvasOverflow": []
+    },
+    {
+      "file": "a02-experience-flow-en.svg",
+      "textNodes": 18,
+      "canvasOverflow": []
+    },
+    {
+      "file": "a02-experience-flow-ja.svg",
+      "textNodes": 18,
+      "canvasOverflow": []
+    },
+    {
+      "file": "a05-social-share-en.svg",
+      "textNodes": 6,
+      "canvasOverflow": []
+    },
+    {
+      "file": "a05-social-share-ja.svg",
+      "textNodes": 5,
+      "canvasOverflow": []
+    },
+    {
+      "file": "a06-business-concept-en.svg",
+      "textNodes": 13,
+      "canvasOverflow": []
+    },
+    {
+      "file": "a06-business-concept-ja.svg",
+      "textNodes": 13,
+      "canvasOverflow": []
+    },
+    {
+      "file": "a07-video-poster-en.svg",
+      "textNodes": 7,
+      "canvasOverflow": []
+    },
+    {
+      "file": "a07-video-poster-ja.svg",
+      "textNodes": 7,
+      "canvasOverflow": []
+    },
+    {
+      "file": "a09-news-template-en.svg",
+      "textNodes": 4,
+      "canvasOverflow": []
+    },
+    {
+      "file": "a09-news-template-ja.svg",
+      "textNodes": 4,
+      "canvasOverflow": []
+    },
+    {
+      "file": "a10-wordmark-dark.svg",
+      "textNodes": 1,
+      "canvasOverflow": []
+    },
+    {
+      "file": "a10-wordmark-light.svg",
+      "textNodes": 1,
+      "canvasOverflow": []
+    }
+  ],
+  "runtimeErrors": [],
+  "httpFailures": [],
+  "fonts": [
+    {
+      "selector": "h1",
+      "fonts": [
+        {
+          "familyName": "LINE Seed JP",
+          "postScriptName": "LINESeedJP-Bold",
+          "isCustomFont": true,
+          "glyphCount": 14
+        }
+      ]
+    },
+    {
+      "selector": ".lead",
+      "fonts": [
+        {
+          "familyName": "LINE Seed JP",
+          "postScriptName": "LINESeedJP-Regular",
+          "isCustomFont": true,
+          "glyphCount": 42
+        }
+      ]
+    },
+    {
+      "selector": "#a03 .description",
+      "fonts": [
+        {
+          "familyName": "LINE Seed JP",
+          "postScriptName": "LINESeedJP-Regular",
+          "isCustomFont": true,
+          "glyphCount": 50
+        }
+      ]
+    }
+  ],
+  "applicationScope": {
+    "protectedFiles": 91,
+    "differences": []
+  },
+  "status": "PASS"
+}

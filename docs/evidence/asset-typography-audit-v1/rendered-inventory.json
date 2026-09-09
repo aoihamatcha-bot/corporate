@@ -1,0 +1,190 @@
+{
+  "observedAt": "2026-09-09T11:04:55.682Z",
+  "source": "LOCAL browser DOM",
+  "results": [
+    {
+      "route": "/",
+      "status": 200,
+      "title": "MYSTENA — 楽しさをつくる。魅力を届ける。",
+      "headings": [
+        "楽しさをつくる。魅力を届ける。",
+        "商品との出会いを、\nもっと楽しく。",
+        "エンターテインメントEC",
+        "サービス・システム開発",
+        "映像・コンテンツ制作",
+        "マーケティング・\nコラボレーション",
+        "現在の取り組み",
+        "エンターテインメントECの構想図",
+        "サービス全体が分かる画面",
+        "利用体験が伝わる画面",
+        "小さなときめきが、世界を変えていく。",
+        "商品やコンテンツの、\n新しい届け方を一緒に。",
+        "運営主体の基本情報をご案内します。",
+        "新しい可能性は、ひとつの会話から。"
+      ],
+      "imageCount": 5,
+      "videoCount": 0,
+      "materials": [
+        "開発画面 01サービス全体が分かる画面公開可能な実際の開発画面を確認後に掲載します。",
+        "開発画面 02利用体験が伝わる画面確認済みの機能・操作が分かる実画面を用意します。"
+      ],
+      "companyPhoto": [],
+      "openGraphImages": [],
+      "twitterImages": []
+    },
+    {
+      "route": "/about",
+      "status": 200,
+      "title": "私たちについて | MYSTENA",
+      "headings": [
+        "私たちについて",
+        "楽しさを考え、\n使いやすいかたちに。",
+        "私たちが大切にすること",
+        "好奇心を大切にする。",
+        "分かりやすく伝える。",
+        "信頼を積み重ねる。",
+        "新しい可能性は、ひとつの会話から。"
+      ],
+      "imageCount": 0,
+      "videoCount": 0,
+      "materials": [],
+      "companyPhoto": [],
+      "openGraphImages": [],
+      "twitterImages": []
+    },
+    {
+      "route": "/business",
+      "status": 200,
+      "title": "事業紹介 | MYSTENA",
+      "headings": [
+        "事業紹介",
+        "エンターテインメントEC",
+        "相談内容の例",
+        "サービス・システム開発",
+        "相談内容の例",
+        "映像・コンテンツ制作",
+        "相談内容の例",
+        "マーケティング・\nコラボレーション",
+        "相談内容の例",
+        "オンラインサービス構想の具体化に向けて",
+        "エンターテインメントECの構想図",
+        "商品やコンテンツの、\n新しい届け方を一緒に。",
+        "新しい可能性は、ひとつの会話から。"
+      ],
+      "imageCount": 4,
+      "videoCount": 0,
+      "materials": [],
+      "companyPhoto": [],
+      "openGraphImages": [],
+      "twitterImages": []
+    },
+    {
+      "route": "/company",
+      "status": 200,
+      "title": "会社概要 | MYSTENA",
+      "headings": [
+        "会社概要",
+        "運営主体が伝わる写真",
+        "新しい可能性は、ひとつの会話から。"
+      ],
+      "imageCount": 0,
+      "videoCount": 0,
+      "materials": [],
+      "companyPhoto": [
+        "運営主体が伝わる写真掲載可能な実際の会社・代表者の写真を確認後に追加します。"
+      ],
+      "openGraphImages": [],
+      "twitterImages": []
+    },
+    {
+      "route": "/news",
+      "status": 200,
+      "title": "お知らせ | MYSTENA",
+      "headings": [
+        "お知らせ"
+      ],
+      "imageCount": 0,
+      "videoCount": 0,
+      "materials": [],
+      "companyPhoto": [],
+      "openGraphImages": [],
+      "twitterImages": []
+    },
+    {
+      "route": "/contact",
+      "status": 200,
+      "title": "お問い合わせ | MYSTENA",
+      "headings": [
+        "お問い合わせ"
+      ],
+      "imageCount": 0,
+      "videoCount": 0,
+      "materials": [],
+      "companyPhoto": [],
+      "openGraphImages": [],
+      "twitterImages": []
+    },
+    {
+      "route": "/privacy",
+      "status": 200,
+      "title": "個人情報の取り扱い | MYSTENA",
+      "headings": [
+        "個人情報の取り扱い"
+      ],
+      "imageCount": 0,
+      "videoCount": 0,
+      "materials": [],
+      "companyPhoto": [],
+      "openGraphImages": [],
+      "twitterImages": []
+    },
+    {
+      "route": "/en",
+      "status": 200,
+      "title": "MYSTENA — Create engaging experiences. Bring their appeal to life.",
+      "headings": [
+        "Create engaging experiences.Bring their appeal to life.",
+        "Making product discovery\nmore engaging.",
+        "Entertainment\ncommerce",
+        "Service and system\ndevelopment",
+        "Video and content\nproduction",
+        "Marketing and\ncollaboration",
+        "What we are working on",
+        "Entertainment commerce concept",
+        "An overview of the service",
+        "A view of the user experience",
+        "A little wonderchanges everything.",
+        "Exploring new ways to bring\nproducts and content to people.",
+        "Learn about the organization behind MYSTENA.",
+        "New possibilities beginwith a conversation."
+      ],
+      "imageCount": 5,
+      "videoCount": 0,
+      "materials": [
+        "Development screen 01An overview of the serviceAn actual development screenshot will be added once it is approved for publication.",
+        "Development screen 02A view of the user experienceWe will use an actual screen showing a confirmed feature or interaction."
+      ],
+      "companyPhoto": [],
+      "openGraphImages": [],
+      "twitterImages": []
+    },
+    {
+      "route": "/en/company",
+      "status": 200,
+      "title": "Company information | MYSTENA",
+      "headings": [
+        "Company information",
+        "The people behind the company",
+        "New possibilities beginwith a conversation."
+      ],
+      "imageCount": 0,
+      "videoCount": 0,
+      "materials": [],
+      "companyPhoto": [
+        "The people behind the companyAn actual company or representative photograph will be added once approved for publication."
+      ],
+      "openGraphImages": [],
+      "twitterImages": []
+    }
+  ]
+}

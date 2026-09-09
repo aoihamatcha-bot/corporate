@@ -1,0 +1,29 @@
+{
+  "source": "LOCAL production server",
+  "command": "npm run test:e2e",
+  "stats": {
+    "startTime": "2026-09-09T10:54:30.551Z",
+    "duration": 129190.625,
+    "expected": 83,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  },
+  "failed": [
+    {
+      "title": "English contact remains disabled, reports no send, and protects unsent drafts before language navigation",
+      "project": "webkit-mobile",
+      "status": "unexpected",
+      "errors": [
+        {
+          "location": {
+            "file": "C:\\Users\\taisa\\Desktop\\corporate-content-ja-en-v1\\tests\\e2e\\i18n.spec.ts",
+            "column": 20,
+            "line": 171
+          },
+          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n  169 |     .getByRole(\"link\", { name: \"日本語\", exact: true })\n  170 |     .click();\n> 171 |   expect(prompted).toBe(true);\n      |                    ^\n  172 |   await expect(page).toHaveURL(/\\/en\\/contact$/);\n  173 |   expect(page.url()).not.toContain(\"SYNTHETIC\");\n  174 | });\n    at C:\\Users\\taisa\\Desktop\\corporate-content-ja-en-v1\\tests\\e2e\\i18n.spec.ts:171:20"
+        }
+      ]
+    }
+  ]
+}

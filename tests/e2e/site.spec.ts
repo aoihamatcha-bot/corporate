@@ -39,10 +39,13 @@ test("menu traps Tab and Shift+Tab, closes with Escape and restores scroll and f
   page,
 }) => {
   await page.goto("/");
+  const trigger = page.getByRole("button", { name: "メニューを開く" });
+  // Hydration can request more font glyphs. Wait for the actual menu to become
+  // interactive before settling fonts and measuring its saved scroll position.
+  await expect(trigger).toBeEnabled();
+  await page.evaluate(() => document.fonts.ready);
   await page.evaluate(() => window.scrollTo({ top: 650, behavior: "instant" }));
   const originalY = await page.evaluate(() => scrollY);
-  const trigger = page.getByRole("button", { name: "メニューを開く" });
-  await expect(trigger).toBeEnabled();
   await trigger.focus();
   await page.keyboard.press("Enter");
   const dialog = page.getByRole("dialog");
@@ -64,7 +67,9 @@ test("menu traps Tab and Shift+Tab, closes with Escape and restores scroll and f
   await expect(dialog).not.toBeVisible();
   await expect(trigger).toBeFocused();
   await expect(trigger).toHaveAttribute("aria-expanded", "false");
-  await expect.poll(() => page.evaluate(() => Math.abs(scrollY))).toBeCloseTo(originalY, 0);
+  await expect
+    .poll(() => page.evaluate(() => Math.abs(scrollY)))
+    .toBeCloseTo(originalY, 0);
   expect(await page.evaluate(() => document.body.style.position)).toBe("");
 });
 
@@ -258,9 +263,9 @@ test("without JavaScript all copy and footer routes remain available", async ({
   await expect(page.locator(".wonder-type")).toBeVisible();
   await page
     .getByRole("navigation", { name: "フッターナビゲーション" })
-    .getByRole("link", { name: "会社情報" })
+    .getByRole("link", { name: "会社概要" })
     .click();
-  await expect(page.locator("main h1")).toHaveText("会社情報");
+  await expect(page.locator("main h1")).toHaveText("会社概要");
   await context.close();
 });
 

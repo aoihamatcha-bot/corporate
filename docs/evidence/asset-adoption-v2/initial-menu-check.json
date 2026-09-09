@@ -1,0 +1,58 @@
+{
+  "initialRun": {
+    "passed": 89,
+    "failed": 1
+  },
+  "failure": "Expected scrollY 650, observed 638 after closing",
+  "observedEvidence": "Before opening the menu, hydration was still pending after the test measured 650. The first open-dialog snapshot already has body top -638px. Closing restores the same 638px.",
+  "change": "Wait for interactive menu hydration before fonts.ready and the scroll baseline. Keep the existing <0.5px assertion.",
+  "sample": [
+    {
+      "method": "evaluateExpression",
+      "expression": "() => document.fonts.ready",
+      "time": 165662.116,
+      "result": {
+        "value": {
+          "o": [],
+          "id": 1
+        }
+      }
+    },
+    {
+      "method": "evaluateExpression",
+      "expression": "() => scrollY",
+      "time": 165964.373,
+      "result": {
+        "value": {
+          "n": 650
+        }
+      }
+    },
+    {
+      "method": "evaluateExpression",
+      "expression": "() => Math.abs(scrollY)",
+      "time": 167990.406,
+      "result": {
+        "value": {
+          "n": 638
+        }
+      }
+    },
+    {
+      "method": "evaluateExpression",
+      "expression": "() => Math.abs(scrollY)",
+      "time": 168131.419,
+      "result": {
+        "value": {
+          "n": 638
+        }
+      }
+    }
+  ],
+  "locked": [
+    {
+      "time": 166364.594,
+      "lockedBodyTop": "-638px"
+    }
+  ]
+}

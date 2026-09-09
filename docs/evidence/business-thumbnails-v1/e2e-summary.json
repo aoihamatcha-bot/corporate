@@ -1,0 +1,1021 @@
+{
+  "source": "LOCAL production server",
+  "stats": {
+    "startTime": "2026-09-08T11:34:17.222Z",
+    "duration": 137596.635,
+    "expected": 84,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "tests": [
+    {
+      "file": "afterglow.spec.ts",
+      "title": "all authored visible text has a gradient layer, including small labels and menu copy",
+      "project": "chromium-desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1737
+        }
+      ]
+    },
+    {
+      "file": "afterglow.spec.ts",
+      "title": "independent text rhythms keep color after the background passes, then fade slowly to black",
+      "project": "chromium-desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3832
+        }
+      ]
+    },
+    {
+      "file": "afterglow.spec.ts",
+      "title": "reload can select a different headline palette without server hydration mismatch",
+      "project": "chromium-desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1234
+        }
+      ]
+    },
+    {
+      "file": "afterglow.spec.ts",
+      "title": "all authored visible text has a gradient layer, including small labels and menu copy",
+      "project": "chromium-mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2025
+        }
+      ]
+    },
+    {
+      "file": "afterglow.spec.ts",
+      "title": "independent text rhythms keep color after the background passes, then fade slowly to black",
+      "project": "chromium-mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 4088
+        }
+      ]
+    },
+    {
+      "file": "afterglow.spec.ts",
+      "title": "reload can select a different headline palette without server hydration mismatch",
+      "project": "chromium-mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 4061
+        }
+      ]
+    },
+    {
+      "file": "afterglow.spec.ts",
+      "title": "all authored visible text has a gradient layer, including small labels and menu copy",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3117
+        }
+      ]
+    },
+    {
+      "file": "afterglow.spec.ts",
+      "title": "independent text rhythms keep color after the background passes, then fade slowly to black",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 4654
+        }
+      ]
+    },
+    {
+      "file": "afterglow.spec.ts",
+      "title": "reload can select a different headline palette without server hydration mismatch",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3566
+        }
+      ]
+    },
+    {
+      "file": "i18n.spec.ts",
+      "title": "English pages have localized headings, metadata, controls and server HTML",
+      "project": "chromium-desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1236
+        }
+      ]
+    },
+    {
+      "file": "i18n.spec.ts",
+      "title": "language switching preserves each page and business anchors, including menu navigation and Back",
+      "project": "chromium-desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3632
+        }
+      ]
+    },
+    {
+      "file": "i18n.spec.ts",
+      "title": "unpublished English articles and missing routes return localized 404 with honest translation choices",
+      "project": "chromium-desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 739
+        }
+      ]
+    },
+    {
+      "file": "i18n.spec.ts",
+      "title": "English contact remains disabled, reports no send, and protects unsent drafts before language navigation",
+      "project": "chromium-desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 397
+        }
+      ]
+    },
+    {
+      "file": "i18n.spec.ts",
+      "title": "320px layouts keep both languages and menu controls within the screen",
+      "project": "chromium-desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1981
+        }
+      ]
+    },
+    {
+      "file": "i18n.spec.ts",
+      "title": "English pause survives language navigation and images are optional to understanding the company",
+      "project": "chromium-desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1049
+        }
+      ]
+    },
+    {
+      "file": "i18n.spec.ts",
+      "title": "English pages and menu pass WCAG 2.2 AA and work without JavaScript",
+      "project": "chromium-desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 4554
+        }
+      ]
+    },
+    {
+      "file": "i18n.spec.ts",
+      "title": "English pages have localized headings, metadata, controls and server HTML",
+      "project": "chromium-mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1333
+        }
+      ]
+    },
+    {
+      "file": "i18n.spec.ts",
+      "title": "language switching preserves each page and business anchors, including menu navigation and Back",
+      "project": "chromium-mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3895
+        }
+      ]
+    },
+    {
+      "file": "i18n.spec.ts",
+      "title": "unpublished English articles and missing routes return localized 404 with honest translation choices",
+      "project": "chromium-mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 861
+        }
+      ]
+    },
+    {
+      "file": "i18n.spec.ts",
+      "title": "English contact remains disabled, reports no send, and protects unsent drafts before language navigation",
+      "project": "chromium-mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 370
+        }
+      ]
+    },
+    {
+      "file": "i18n.spec.ts",
+      "title": "320px layouts keep both languages and menu controls within the screen",
+      "project": "chromium-mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2179
+        }
+      ]
+    },
+    {
+      "file": "i18n.spec.ts",
+      "title": "English pause survives language navigation and images are optional to understanding the company",
+      "project": "chromium-mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1229
+        }
+      ]
+    },
+    {
+      "file": "i18n.spec.ts",
+      "title": "English pages and menu pass WCAG 2.2 AA and work without JavaScript",
+      "project": "chromium-mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 8444
+        }
+      ]
+    },
+    {
+      "file": "i18n.spec.ts",
+      "title": "English pages have localized headings, metadata, controls and server HTML",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2172
+        }
+      ]
+    },
+    {
+      "file": "i18n.spec.ts",
+      "title": "language switching preserves each page and business anchors, including menu navigation and Back",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 9226
+        }
+      ]
+    },
+    {
+      "file": "i18n.spec.ts",
+      "title": "unpublished English articles and missing routes return localized 404 with honest translation choices",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1362
+        }
+      ]
+    },
+    {
+      "file": "i18n.spec.ts",
+      "title": "English contact remains disabled, reports no send, and protects unsent drafts before language navigation",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 737
+        }
+      ]
+    },
+    {
+      "file": "i18n.spec.ts",
+      "title": "320px layouts keep both languages and menu controls within the screen",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3438
+        }
+      ]
+    },
+    {
+      "file": "i18n.spec.ts",
+      "title": "English pause survives language navigation and images are optional to understanding the company",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2272
+        }
+      ]
+    },
+    {
+      "file": "i18n.spec.ts",
+      "title": "English pages and menu pass WCAG 2.2 AA and work without JavaScript",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 6544
+        }
+      ]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "text below the viewport keeps its entrance until visible, then settles to black once",
+      "project": "chromium-desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3965
+        }
+      ]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "opening the menu starts two color curtains and separate text wipes, then clears them",
+      "project": "chromium-desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 10416
+        }
+      ]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "pausing during the entrance clears decorative bands and images without hiding copy",
+      "project": "chromium-desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 970
+        }
+      ]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "resize and a partially failing animation API cannot strand a colored cover",
+      "project": "chromium-desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 892
+        }
+      ]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "text below the viewport keeps its entrance until visible, then settles to black once",
+      "project": "chromium-mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 4666
+        }
+      ]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "opening the menu starts two color curtains and separate text wipes, then clears them",
+      "project": "chromium-mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 11108
+        }
+      ]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "pausing during the entrance clears decorative bands and images without hiding copy",
+      "project": "chromium-mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 911
+        }
+      ]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "resize and a partially failing animation API cannot strand a colored cover",
+      "project": "chromium-mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 855
+        }
+      ]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "text below the viewport keeps its entrance until visible, then settles to black once",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 4526
+        }
+      ]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "opening the menu starts two color curtains and separate text wipes, then clears them",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 10517
+        }
+      ]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "pausing during the entrance clears decorative bands and images without hiding copy",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1820
+        }
+      ]
+    },
+    {
+      "file": "motion.spec.ts",
+      "title": "resize and a partially failing animation API cannot strand a colored cover",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1539
+        }
+      ]
+    },
+    {
+      "file": "site.spec.ts",
+      "title": "all real pages render, stay out of search and have no horizontal overflow",
+      "project": "chromium-desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1034
+        }
+      ]
+    },
+    {
+      "file": "site.spec.ts",
+      "title": "menu traps Tab and Shift+Tab, closes with Escape and restores scroll and focus",
+      "project": "chromium-desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1656
+        }
+      ]
+    },
+    {
+      "file": "site.spec.ts",
+      "title": "menu navigation focuses destination and Back leaves no lock",
+      "project": "chromium-desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1040
+        }
+      ]
+    },
+    {
+      "file": "site.spec.ts",
+      "title": "rapid close, reopen, resizing and short-height navigation remain usable",
+      "project": "chromium-desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3675
+        }
+      ]
+    },
+    {
+      "file": "site.spec.ts",
+      "title": "contact cannot collect or falsely report sending; unpublished articles return 404",
+      "project": "chromium-desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 767
+        }
+      ]
+    },
+    {
+      "file": "site.spec.ts",
+      "title": "pause preference persists; reduced-motion keeps content visible",
+      "project": "chromium-desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1011
+        }
+      ]
+    },
+    {
+      "file": "site.spec.ts",
+      "title": "cut-in ends in place across scrolling, touch has no pointer effect",
+      "project": "chromium-desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3638
+        }
+      ]
+    },
+    {
+      "file": "site.spec.ts",
+      "title": "360, 768, and effective 200% desktop zoom have no clipped controls",
+      "project": "chromium-desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3877
+        }
+      ]
+    },
+    {
+      "file": "site.spec.ts",
+      "title": "key pages and the full-screen menu pass axe WCAG 2.2 AA",
+      "project": "chromium-desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3595
+        }
+      ]
+    },
+    {
+      "file": "site.spec.ts",
+      "title": "without JavaScript all copy and footer routes remain available",
+      "project": "chromium-desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 400
+        }
+      ]
+    },
+    {
+      "file": "site.spec.ts",
+      "title": "animation API failure leaves readable content and working navigation",
+      "project": "chromium-desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 766
+        }
+      ]
+    },
+    {
+      "file": "site.spec.ts",
+      "title": "all real pages render, stay out of search and have no horizontal overflow",
+      "project": "chromium-mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1320
+        }
+      ]
+    },
+    {
+      "file": "site.spec.ts",
+      "title": "menu traps Tab and Shift+Tab, closes with Escape and restores scroll and focus",
+      "project": "chromium-mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1923
+        }
+      ]
+    },
+    {
+      "file": "site.spec.ts",
+      "title": "menu navigation focuses destination and Back leaves no lock",
+      "project": "chromium-mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1164
+        }
+      ]
+    },
+    {
+      "file": "site.spec.ts",
+      "title": "rapid close, reopen, resizing and short-height navigation remain usable",
+      "project": "chromium-mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3507
+        }
+      ]
+    },
+    {
+      "file": "site.spec.ts",
+      "title": "contact cannot collect or falsely report sending; unpublished articles return 404",
+      "project": "chromium-mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 807
+        }
+      ]
+    },
+    {
+      "file": "site.spec.ts",
+      "title": "pause preference persists; reduced-motion keeps content visible",
+      "project": "chromium-mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1100
+        }
+      ]
+    },
+    {
+      "file": "site.spec.ts",
+      "title": "cut-in ends in place across scrolling, touch has no pointer effect",
+      "project": "chromium-mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3823
+        }
+      ]
+    },
+    {
+      "file": "site.spec.ts",
+      "title": "360, 768, and effective 200% desktop zoom have no clipped controls",
+      "project": "chromium-mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 5153
+        }
+      ]
+    },
+    {
+      "file": "site.spec.ts",
+      "title": "key pages and the full-screen menu pass axe WCAG 2.2 AA",
+      "project": "chromium-mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3572
+        }
+      ]
+    },
+    {
+      "file": "site.spec.ts",
+      "title": "without JavaScript all copy and footer routes remain available",
+      "project": "chromium-mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 464
+        }
+      ]
+    },
+    {
+      "file": "site.spec.ts",
+      "title": "animation API failure leaves readable content and working navigation",
+      "project": "chromium-mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 851
+        }
+      ]
+    },
+    {
+      "file": "site.spec.ts",
+      "title": "all real pages render, stay out of search and have no horizontal overflow",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1483
+        }
+      ]
+    },
+    {
+      "file": "site.spec.ts",
+      "title": "menu traps Tab and Shift+Tab, closes with Escape and restores scroll and focus",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1794
+        }
+      ]
+    },
+    {
+      "file": "site.spec.ts",
+      "title": "menu navigation focuses destination and Back leaves no lock",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2491
+        }
+      ]
+    },
+    {
+      "file": "site.spec.ts",
+      "title": "rapid close, reopen, resizing and short-height navigation remain usable",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 6952
+        }
+      ]
+    },
+    {
+      "file": "site.spec.ts",
+      "title": "contact cannot collect or falsely report sending; unpublished articles return 404",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1382
+        }
+      ]
+    },
+    {
+      "file": "site.spec.ts",
+      "title": "pause preference persists; reduced-motion keeps content visible",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1649
+        }
+      ]
+    },
+    {
+      "file": "site.spec.ts",
+      "title": "cut-in ends in place across scrolling, touch has no pointer effect",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 4338
+        }
+      ]
+    },
+    {
+      "file": "site.spec.ts",
+      "title": "360, 768, and effective 200% desktop zoom have no clipped controls",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 9168
+        }
+      ]
+    },
+    {
+      "file": "site.spec.ts",
+      "title": "key pages and the full-screen menu pass axe WCAG 2.2 AA",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 4764
+        }
+      ]
+    },
+    {
+      "file": "site.spec.ts",
+      "title": "without JavaScript all copy and footer routes remain available",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 691
+        }
+      ]
+    },
+    {
+      "file": "site.spec.ts",
+      "title": "animation API failure leaves readable content and working navigation",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 1228
+        }
+      ]
+    },
+    {
+      "file": "thumbnails.spec.ts",
+      "title": "all eight business images load in both languages and stay static on scroll",
+      "project": "chromium-desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3865
+        }
+      ]
+    },
+    {
+      "file": "thumbnails.spec.ts",
+      "title": "only the thumbnail cursor hover cycles eight palettes; focus and touch remain static",
+      "project": "chromium-desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 7459
+        }
+      ]
+    },
+    {
+      "file": "thumbnails.spec.ts",
+      "title": "detail image hover honors motion pause and reduced motion without changing the hero entrance",
+      "project": "chromium-desktop",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2182
+        }
+      ]
+    },
+    {
+      "file": "thumbnails.spec.ts",
+      "title": "all eight business images load in both languages and stay static on scroll",
+      "project": "chromium-mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 3297
+        }
+      ]
+    },
+    {
+      "file": "thumbnails.spec.ts",
+      "title": "only the thumbnail cursor hover cycles eight palettes; focus and touch remain static",
+      "project": "chromium-mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 927
+        }
+      ]
+    },
+    {
+      "file": "thumbnails.spec.ts",
+      "title": "detail image hover honors motion pause and reduced motion without changing the hero entrance",
+      "project": "chromium-mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2052
+        }
+      ]
+    },
+    {
+      "file": "thumbnails.spec.ts",
+      "title": "all eight business images load in both languages and stay static on scroll",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 10451
+        }
+      ]
+    },
+    {
+      "file": "thumbnails.spec.ts",
+      "title": "only the thumbnail cursor hover cycles eight palettes; focus and touch remain static",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2323
+        }
+      ]
+    },
+    {
+      "file": "thumbnails.spec.ts",
+      "title": "detail image hover honors motion pause and reduced motion without changing the hero entrance",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        {
+          "status": "passed",
+          "duration": 2499
+        }
+      ]
+    }
+  ]
+}

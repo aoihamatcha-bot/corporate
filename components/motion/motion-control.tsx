@@ -1,9 +1,16 @@
 "use client";
 import { useEffect } from "react";
+import type { Dictionary } from "@/content/dictionaries";
 import { useMotionPaused, toggleMotion } from "./motion-preference";
 import { RevealText } from "./reveal-text";
 import { MenuInk } from "./menu-ink";
-export function MotionControl({ menu = false }: { menu?: boolean }) {
+export function MotionControl({
+  labels,
+  menu = false,
+}: {
+  labels: Dictionary["common"]["motion"];
+  menu?: boolean;
+}) {
   const paused = useMotionPaused();
   useEffect(() => {
     document.documentElement.dataset.motion = paused ? "paused" : "running";
@@ -14,10 +21,8 @@ export function MotionControl({ menu = false }: { menu?: boolean }) {
       className="motion-control"
       onClick={() => toggleMotion(paused)}
       aria-pressed={paused}
-      aria-label={
-        paused ? "動きを再生する（OSの動き抑制設定を優先）" : "動きを止める"
-      }
-      title={paused ? "動きを停止中。OSの設定が優先されます" : "動きを止める"}
+      aria-label={paused ? labels.play : labels.pause}
+      title={paused ? labels.pausedTitle : labels.pause}
     >
       <svg
         viewBox="0 0 20 20"
@@ -29,9 +34,9 @@ export function MotionControl({ menu = false }: { menu?: boolean }) {
         {paused ? <path d="m7 4 9 6-9 6Z" /> : <path d="M7 4v12M13 4v12" />}
       </svg>
       {menu ? (
-        <MenuInk kind="utility">{`動き ${paused ? "OFF" : "ON"}`}</MenuInk>
+        <MenuInk kind="utility">{`${labels.label} ${paused ? labels.off : labels.on}`}</MenuInk>
       ) : (
-        <RevealText kind="utility">{`動き ${paused ? "OFF" : "ON"}`}</RevealText>
+        <RevealText kind="utility">{`${labels.label} ${paused ? labels.off : labels.on}`}</RevealText>
       )}
     </button>
   );
