@@ -1,0 +1,131 @@
+{
+  "recordedAt": "2026-09-09T17:38:27.2220013Z",
+  "evidenceScope": "LOCAL production build only; implementation self-review",
+  "startingHead": "016105c648e7f20d10c674b3671d69d1a0ed486e",
+  "finalHead": "016105c648e7f20d10c674b3671d69d1a0ed486e",
+  "branch": "feat/corporate-motion-storyboard-v1",
+  "workingTree": "uncommitted implementation",
+  "build": "PASS; existing LINE Seed JP fallback metadata warning",
+  "typecheck": "PASS",
+  "lint": "PASS, 0 errors, 0 warnings",
+  "contentTests": {
+    "passed": 12,
+    "failed": 0
+  },
+  "e2e": {
+    "skipped": 0,
+    "failed": 0,
+    "durationMs": 305087.098,
+    "flaky": 0,
+    "projects": [
+      "chromium-desktop",
+      "chromium-mobile",
+      "webkit-mobile"
+    ],
+    "passed": 123
+  },
+  "visual": {
+    "viewports": [
+      "1440x900",
+      "390x844"
+    ],
+    "walkthroughs": 2,
+    "pageErrors": 0,
+    "horizontalOverflow": false,
+    "screenshots": 20,
+    "captureReport": "visual-check.json"
+  },
+  "preservedDesign": "9 baseline blobs verified equal in preserved-files.json, including core styles, text, image hover, counters and dependencies",
+  "sourceHashes": [
+    {
+      "file": "app/(en)/en/layout.tsx",
+      "sha256": "39ea43c4ef1436916295d4c8a014c24b012cff1ac4a48f98fd1098090ce91bab"
+    },
+    {
+      "file": "app/(ja)/layout.tsx",
+      "sha256": "da80eec1a1e3dc98e171a050ff550231bf7073dc083424851c77e87a1bd0fd04"
+    },
+    {
+      "file": "components/content-blocks.tsx",
+      "sha256": "4b913815a739a27449951a450f1419195f1220f5c7faa2b63702c4aa3b74d3dc"
+    },
+    {
+      "file": "components/editorial.tsx",
+      "sha256": "35c6a045751d146f7c154b61c731e4f3cfb75cdbeaea27168bd4fde4d776d6b6"
+    },
+    {
+      "file": "components/layout/site-root.tsx",
+      "sha256": "bc0213199cf7f63df5d8e6151b2ac452cc73dc4866eee7c28f363d06e882bc32"
+    },
+    {
+      "file": "components/motion/entrance.ts",
+      "sha256": "10d1cba02e49eef9cddd64bfdf8f64544279da3e5fac2e3b50b6758354a81af5"
+    },
+    {
+      "file": "components/motion/handwriting.ts",
+      "sha256": "e0ad11a1ea640f5da91571f51c0d4094ef2c71b3f7d31265887a5da1dd53aab6"
+    },
+    {
+      "file": "components/motion/hero-art.tsx",
+      "sha256": "6f7ac9e9763b5dbc7b31e550423da4d3a44d0d2ecbb53155f75c71fa4509e5ba"
+    },
+    {
+      "file": "components/motion/home-story.tsx",
+      "sha256": "607b9983f634d9277f5beab17b7d0c8766dcc8bd3738529e792319a2ac1a9218"
+    },
+    {
+      "file": "components/motion/opening-bootstrap.ts",
+      "sha256": "c5040baf72d81d19d78681c18bf324c5b31d8d46ccddfd30e23013c57069fede"
+    },
+    {
+      "file": "components/motion/scene.tsx",
+      "sha256": "89f387c0c716b7d268362642ce8926f2b6046761ff1118efb4529d68d57f1e07"
+    },
+    {
+      "file": "components/motion/site-opening.tsx",
+      "sha256": "128a9bf7012bebf6c8a95a270fdbf3ef6d33e866c68aa09eb7422fb8b2bc6640"
+    },
+    {
+      "file": "components/motion/story-accent.tsx",
+      "sha256": "a53545ed2eded14210b247cc7651afcf13fa518a607767dd89ccfffdca6cb3f1"
+    },
+    {
+      "file": "components/pages/home.tsx",
+      "sha256": "1394351f90a88b75bad031d482cef4f48244f540bb0f7840d4d4ff79ae146ee6"
+    },
+    {
+      "file": "content/hero-media.ts",
+      "sha256": "620762c98168728c07a05bb8ac95b2ab574cf8d03b44bf641e2a0cca7bca6757"
+    },
+    {
+      "file": "scripts/capture-storyboard.mjs",
+      "sha256": "9dae3bd1dca6ea6c63647ec73fd016cab7a47481a50b7454afa76d051e79d4c2"
+    },
+    {
+      "file": "styles/storyboard.css",
+      "sha256": "0b984aca95493e7dc7014a09f2449a2555b346c3f77ac4907c6288f8583132a2"
+    },
+    {
+      "file": "tests/e2e/site.spec.ts",
+      "sha256": "780c03bc4de07be696511be709d9e7ca358cd338e43dde58f8f4b8f05ec4abfd"
+    },
+    {
+      "file": "tests/e2e/storyboard.spec.ts",
+      "sha256": "e9fa12d24a7adedd65d1688aabc8926e5ee324989f7b76db274a87f823be0c02"
+    },
+    {
+      "file": "tests/e2e/thumbnails.spec.ts",
+      "sha256": "e5d0867c77ae4fa554d869cb0c16434259725ff1ae949224c0a19c73de842955"
+    }
+  ],
+  "finalHeroVideo": "Not supplied. heroVideo=null. Adopted A08 remains; supplied-video playback verification deferred until an approved asset exists.",
+  "runtimeDevStrictMode": "Effect replay was handled in implementation and self-reviewed; separate development-server runtime verification not performed.",
+  "commit": false,
+  "push": false,
+  "prCreated": false,
+  "hostedMutation": false,
+  "deploy": false,
+  "ready": false,
+  "merge": false,
+  "nextGate": "User review of local motion; final hero movie remains optional for this delivery."
+}

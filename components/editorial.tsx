@@ -46,7 +46,7 @@ export function DraftBadge({ children }: { children: string }) {
 export function ContactBand({ locale }: { locale: Locale }) {
   const c = getDictionary(locale);
   return (
-    <Scene className="contact-band" palette="apricot">
+    <Scene className="contact-band" palette="apricot" story="contact">
       <div className="container">
         <SectionLabel>{c.pages.contact.title}</SectionLabel>
         <div className="contact-band-inner">

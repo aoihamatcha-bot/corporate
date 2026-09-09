@@ -122,7 +122,7 @@ test("pausing during the entrance clears decorative bands and images without hid
   const target = page.locator(".wonder-type > .reveal-text").first();
   await target.scrollIntoViewIfNeeded();
   await expect(target).toHaveAttribute("data-reveal-state", "running");
-  await page.getByRole("button", { name: "動きを止める", exact: true }).click();
+  await page.emulateMedia({ reducedMotion: "reduce" });
   await expect(target).toHaveAttribute("data-reveal-state", "settled");
   await expect(target.locator(".reveal-band")).toHaveCount(0);
   expect(
@@ -140,7 +140,7 @@ test("pausing during the entrance clears decorative bands and images without hid
       .evaluate((el) => el.getAnimations({ subtree: true }).length),
   ).toBe(0);
   await page.keyboard.press("Escape");
-  await page.getByRole("button", { name: /動きを再生する/ }).click();
+  await page.emulateMedia({ reducedMotion: "no-preference" });
   const image = page.locator(".business-visual").first();
   await image.scrollIntoViewIfNeeded();
   await expect(image).not.toHaveAttribute("data-entered", "true");

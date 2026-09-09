@@ -1,0 +1,1853 @@
+{
+  "capturedAt": "2026-09-09T18:23:45.559Z",
+  "baseURL": "http://127.0.0.1:3017",
+  "evidence": "LOCAL production build. Real-time animation; capture intervals include before/after measurements.",
+  "records": [
+    {
+      "label": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "pageErrors": [],
+      "captures": [
+        {
+          "file": "desktop-01-logo.png",
+          "before": {
+            "scrollY": 0,
+            "timestamp": 701.5,
+            "intro": "running",
+            "thumbnails": [
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 1472.796875,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 1472.796875,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 2209.453125,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 2209.453125,
+                "entered": null
+              }
+            ]
+          },
+          "after": {
+            "scrollY": 0,
+            "timestamp": 785.6999999992549,
+            "intro": "running",
+            "thumbnails": [
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 1472.796875,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 1472.796875,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 2209.453125,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 2209.453125,
+                "entered": null
+              }
+            ]
+          }
+        },
+        {
+          "file": "desktop-02-early-ink.png",
+          "before": {
+            "scrollY": 0,
+            "timestamp": 1389.7999999970198,
+            "intro": "running",
+            "thumbnails": [
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 1472.796875,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 1472.796875,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 2209.453125,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 2209.453125,
+                "entered": null
+              }
+            ]
+          },
+          "after": {
+            "scrollY": 0,
+            "timestamp": 1450.699999999255,
+            "intro": "running",
+            "thumbnails": [
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 1472.796875,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 1472.796875,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 2209.453125,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 2209.453125,
+                "entered": null
+              }
+            ]
+          }
+        },
+        {
+          "file": "desktop-03-handwriting.png",
+          "before": {
+            "scrollY": 0,
+            "timestamp": 3525.5,
+            "intro": "running",
+            "thumbnails": [
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 1472.796875,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 1472.796875,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 2209.453125,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 2209.453125,
+                "entered": null
+              }
+            ]
+          },
+          "after": {
+            "scrollY": 0,
+            "timestamp": 3604.39999999851,
+            "intro": "running",
+            "thumbnails": [
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 1472.796875,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 1472.796875,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 2209.453125,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 2209.453125,
+                "entered": null
+              }
+            ]
+          }
+        },
+        {
+          "file": "desktop-04-hero.png",
+          "before": {
+            "scrollY": 0,
+            "timestamp": 6596.39999999851,
+            "intro": "done",
+            "thumbnails": [
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 1472.796875,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 1472.796875,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 2209.453125,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 2209.453125,
+                "entered": null
+              }
+            ]
+          },
+          "after": {
+            "scrollY": 0,
+            "timestamp": 7172.29999999702,
+            "intro": "done",
+            "thumbnails": [
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 1472.796875,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 1472.796875,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 2209.453125,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 2209.453125,
+                "entered": null
+              }
+            ]
+          }
+        },
+        {
+          "file": "desktop-05-thumbnail-waiting.png",
+          "before": {
+            "scrollY": 609,
+            "timestamp": 7505.699999999255,
+            "intro": "done",
+            "thumbnails": [
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 863.796875,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 863.796875,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 1600.453125,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 1600.453125,
+                "entered": null
+              }
+            ]
+          },
+          "after": {
+            "scrollY": 609,
+            "timestamp": 7763.79999999702,
+            "intro": "done",
+            "thumbnails": [
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 863.796875,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 863.796875,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 1600.453125,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 1600.453125,
+                "entered": null
+              }
+            ]
+          }
+        },
+        {
+          "file": "desktop-06-thumbnail-fading.png",
+          "before": {
+            "scrollY": 1016,
+            "timestamp": 7968.39999999851,
+            "intro": "done",
+            "thumbnails": [
+              {
+                "opacity": "0.0485589",
+                "transform": "matrix(0.921847, -0.0613222, 0.0613222, 0.921847, -22.8346, 72.3095)",
+                "top": 531.8314819335938,
+                "entered": "true"
+              },
+              {
+                "opacity": "0",
+                "transform": "matrix(0.917759, 0.064176, -0.064176, 0.917759, 24, 76)",
+                "top": 535.7716064453125,
+                "entered": "true"
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 1193.453125,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 1193.453125,
+                "entered": null
+              }
+            ]
+          },
+          "after": {
+            "scrollY": 1160,
+            "timestamp": 8219.599999997765,
+            "intro": "done",
+            "thumbnails": [
+              {
+                "opacity": "0.804991",
+                "transform": "matrix(0.984308, -0.0134014, 0.0134014, 0.984308, -4.68021, 14.8207)",
+                "top": 327.8355407714844,
+                "entered": "true"
+              },
+              {
+                "opacity": "0.55521",
+                "transform": "matrix(0.963952, 0.0299424, -0.0299424, 0.963952, 10.675, 33.804)",
+                "top": 347.3568115234375,
+                "entered": "true"
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 1049.453125,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 1049.453125,
+                "entered": null
+              }
+            ]
+          }
+        },
+        {
+          "file": "desktop-07-thumbnail-settled.png",
+          "before": {
+            "scrollY": 1160,
+            "timestamp": 9678.29999999702,
+            "intro": "done",
+            "thumbnails": [
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": 312.796875,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": 312.796875,
+                "entered": "true"
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 1049.453125,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 1049.453125,
+                "entered": null
+              }
+            ]
+          },
+          "after": {
+            "scrollY": 1160,
+            "timestamp": 9975.39999999851,
+            "intro": "done",
+            "thumbnails": [
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": 312.796875,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": 312.796875,
+                "entered": "true"
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 1049.453125,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 1049.453125,
+                "entered": null
+              }
+            ]
+          }
+        },
+        {
+          "file": "desktop-08-business-lower.png",
+          "before": {
+            "scrollY": 2084,
+            "timestamp": 11778.599999997765,
+            "intro": "done",
+            "thumbnails": [
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -611.203125,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -611.203125,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": 125.453125,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": 125.453125,
+                "entered": "true"
+              }
+            ]
+          },
+          "after": {
+            "scrollY": 2084,
+            "timestamp": 12032.5,
+            "intro": "done",
+            "thumbnails": [
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -611.203125,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -611.203125,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": 125.453125,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": 125.453125,
+                "entered": "true"
+              }
+            ]
+          }
+        },
+        {
+          "file": "desktop-09-assembly.png",
+          "before": {
+            "scrollY": 3424,
+            "timestamp": 13939.79999999702,
+            "intro": "done",
+            "thumbnails": [
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -1951.203125,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -1951.203125,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -1214.546875,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -1214.546875,
+                "entered": "true"
+              }
+            ]
+          },
+          "after": {
+            "scrollY": 3424,
+            "timestamp": 14191.79999999702,
+            "intro": "done",
+            "thumbnails": [
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -1951.203125,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -1951.203125,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -1214.546875,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -1214.546875,
+                "entered": "true"
+              }
+            ]
+          }
+        },
+        {
+          "file": "desktop-10-philosophy.png",
+          "before": {
+            "scrollY": 5834,
+            "timestamp": 16291.79999999702,
+            "intro": "done",
+            "thumbnails": [
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -4361.203125,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -4361.203125,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -3624.546875,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -3624.546875,
+                "entered": "true"
+              }
+            ]
+          },
+          "after": {
+            "scrollY": 5834,
+            "timestamp": 16815.099999997765,
+            "intro": "done",
+            "thumbnails": [
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -4361.203125,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -4361.203125,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -3624.546875,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -3624.546875,
+                "entered": "true"
+              }
+            ]
+          }
+        },
+        {
+          "file": "desktop-11-collaboration.png",
+          "before": {
+            "scrollY": 6870,
+            "timestamp": 18693.199999999255,
+            "intro": "done",
+            "thumbnails": [
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -5397.203125,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -5397.203125,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -4660.546875,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -4660.546875,
+                "entered": "true"
+              }
+            ]
+          },
+          "after": {
+            "scrollY": 6870,
+            "timestamp": 18883,
+            "intro": "done",
+            "thumbnails": [
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -5397.203125,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -5397.203125,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -4660.546875,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -4660.546875,
+                "entered": "true"
+              }
+            ]
+          }
+        },
+        {
+          "file": "desktop-12-news.png",
+          "before": {
+            "scrollY": 7874,
+            "timestamp": 20675.199999999255,
+            "intro": "done",
+            "thumbnails": [
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -6401.203125,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -6401.203125,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -5664.546875,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -5664.546875,
+                "entered": "true"
+              }
+            ]
+          },
+          "after": {
+            "scrollY": 7874,
+            "timestamp": 20849.699999999255,
+            "intro": "done",
+            "thumbnails": [
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -6401.203125,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -6401.203125,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -5664.546875,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -5664.546875,
+                "entered": "true"
+              }
+            ]
+          }
+        },
+        {
+          "file": "desktop-13-company.png",
+          "before": {
+            "scrollY": 8260,
+            "timestamp": 22448,
+            "intro": "done",
+            "thumbnails": [
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -6787.203125,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -6787.203125,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -6050.546875,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -6050.546875,
+                "entered": "true"
+              }
+            ]
+          },
+          "after": {
+            "scrollY": 8260,
+            "timestamp": 22674.79999999702,
+            "intro": "done",
+            "thumbnails": [
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -6787.203125,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -6787.203125,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -6050.546875,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -6050.546875,
+                "entered": "true"
+              }
+            ]
+          }
+        },
+        {
+          "file": "desktop-14-contact.png",
+          "before": {
+            "scrollY": 8490,
+            "timestamp": 24215.099999997765,
+            "intro": "done",
+            "thumbnails": [
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -7017.203125,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -7017.203125,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -6280.546875,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -6280.546875,
+                "entered": "true"
+              }
+            ]
+          },
+          "after": {
+            "scrollY": 8490,
+            "timestamp": 24503.099999997765,
+            "intro": "done",
+            "thumbnails": [
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -7017.203125,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -7017.203125,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -6280.546875,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -6280.546875,
+                "entered": "true"
+              }
+            ]
+          }
+        }
+      ],
+      "horizontalOverflow": false,
+      "removedControls": 0,
+      "video": "desktop-walkthrough.webm"
+    },
+    {
+      "label": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "pageErrors": [],
+      "captures": [
+        {
+          "file": "mobile-01-logo.png",
+          "before": {
+            "scrollY": 0,
+            "timestamp": 546.1000000014901,
+            "intro": "running",
+            "thumbnails": [
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 1414.46875,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 1964.09375,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 2513.71875,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 3063.34375,
+                "entered": null
+              }
+            ]
+          },
+          "after": {
+            "scrollY": 0,
+            "timestamp": 688.4000000022352,
+            "intro": "running",
+            "thumbnails": [
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 1414.46875,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 1964.09375,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 2513.71875,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 3063.34375,
+                "entered": null
+              }
+            ]
+          }
+        },
+        {
+          "file": "mobile-02-early-ink.png",
+          "before": {
+            "scrollY": 0,
+            "timestamp": 1215.5,
+            "intro": "running",
+            "thumbnails": [
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 1414.46875,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 1964.09375,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 2513.71875,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 3063.34375,
+                "entered": null
+              }
+            ]
+          },
+          "after": {
+            "scrollY": 0,
+            "timestamp": 1386.9000000022352,
+            "intro": "running",
+            "thumbnails": [
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 1414.46875,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 1964.09375,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 2513.71875,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 3063.34375,
+                "entered": null
+              }
+            ]
+          }
+        },
+        {
+          "file": "mobile-03-handwriting.png",
+          "before": {
+            "scrollY": 0,
+            "timestamp": 3365.2000000029802,
+            "intro": "running",
+            "thumbnails": [
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 1414.46875,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 1964.09375,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 2513.71875,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 3063.34375,
+                "entered": null
+              }
+            ]
+          },
+          "after": {
+            "scrollY": 0,
+            "timestamp": 3533.400000002235,
+            "intro": "running",
+            "thumbnails": [
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 1414.46875,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 1964.09375,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 2513.71875,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 3063.34375,
+                "entered": null
+              }
+            ]
+          }
+        },
+        {
+          "file": "mobile-04-hero.png",
+          "before": {
+            "scrollY": 0,
+            "timestamp": 6416.10000000149,
+            "intro": "done",
+            "thumbnails": [
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 1414.46875,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 1964.09375,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 2513.71875,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 3063.34375,
+                "entered": null
+              }
+            ]
+          },
+          "after": {
+            "scrollY": 0,
+            "timestamp": 7024.800000000745,
+            "intro": "done",
+            "thumbnails": [
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 1414.46875,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 1964.09375,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 2513.71875,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 3063.34375,
+                "entered": null
+              }
+            ]
+          }
+        },
+        {
+          "file": "mobile-05-thumbnail-waiting.png",
+          "before": {
+            "scrollY": 606,
+            "timestamp": 7341,
+            "intro": "done",
+            "thumbnails": [
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 808.46875,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 1358.09375,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 1907.71875,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 2457.34375,
+                "entered": null
+              }
+            ]
+          },
+          "after": {
+            "scrollY": 606,
+            "timestamp": 7626.20000000298,
+            "intro": "done",
+            "thumbnails": [
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 808.46875,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 1358.09375,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 1907.71875,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 2457.34375,
+                "entered": null
+              }
+            ]
+          }
+        },
+        {
+          "file": "mobile-06-thumbnail-fading.png",
+          "before": {
+            "scrollY": 841,
+            "timestamp": 7751.900000002235,
+            "intro": "done",
+            "thumbnails": [
+              {
+                "opacity": "0.0484654",
+                "transform": "matrix(0.923877, 0, 0, 0.923877, 0, 41.8675)",
+                "top": 627.0515747070312,
+                "entered": "true"
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 1123.09375,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 1672.71875,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 2222.34375,
+                "entered": null
+              }
+            ]
+          },
+          "after": {
+            "scrollY": 1035,
+            "timestamp": 8122.300000000745,
+            "intro": "done",
+            "thumbnails": [
+              {
+                "opacity": "0.89376",
+                "transform": "matrix(0.991501, 0, 0, 0.991501, 0, 4.67457)",
+                "top": 385.45135498046875,
+                "entered": "true"
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 929.09375,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 1478.71875,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 2028.34375,
+                "entered": null
+              }
+            ]
+          }
+        },
+        {
+          "file": "mobile-07-thumbnail-settled.png",
+          "before": {
+            "scrollY": 1038,
+            "timestamp": 9457.70000000298,
+            "intro": "done",
+            "thumbnails": [
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": 376.46875,
+                "entered": "true"
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 926.09375,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 1475.71875,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 2025.34375,
+                "entered": null
+              }
+            ]
+          },
+          "after": {
+            "scrollY": 1038,
+            "timestamp": 9829.70000000298,
+            "intro": "done",
+            "thumbnails": [
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": 376.46875,
+                "entered": "true"
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 926.09375,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 1475.71875,
+                "entered": null
+              },
+              {
+                "opacity": "0",
+                "transform": "none",
+                "top": 2025.34375,
+                "entered": null
+              }
+            ]
+          }
+        },
+        {
+          "file": "mobile-08-business-lower.png",
+          "before": {
+            "scrollY": 2938,
+            "timestamp": 11822.20000000298,
+            "intro": "done",
+            "thumbnails": [
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -1523.53125,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -973.90625,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -424.28125,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": 125.34375,
+                "entered": "true"
+              }
+            ]
+          },
+          "after": {
+            "scrollY": 2938,
+            "timestamp": 12085,
+            "intro": "done",
+            "thumbnails": [
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -1523.53125,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -973.90625,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -424.28125,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": 125.34375,
+                "entered": "true"
+              }
+            ]
+          }
+        },
+        {
+          "file": "mobile-09-assembly.png",
+          "before": {
+            "scrollY": 4057,
+            "timestamp": 13892,
+            "intro": "done",
+            "thumbnails": [
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -2642.53125,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -2092.90625,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -1543.28125,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -993.65625,
+                "entered": "true"
+              }
+            ]
+          },
+          "after": {
+            "scrollY": 4057,
+            "timestamp": 14134.900000002235,
+            "intro": "done",
+            "thumbnails": [
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -2642.53125,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -2092.90625,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -1543.28125,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -993.65625,
+                "entered": "true"
+              }
+            ]
+          }
+        },
+        {
+          "file": "mobile-10-philosophy.png",
+          "before": {
+            "scrollY": 6431,
+            "timestamp": 16192.300000000745,
+            "intro": "done",
+            "thumbnails": [
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -5016.53125,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -4466.90625,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -3917.28125,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -3367.65625,
+                "entered": "true"
+              }
+            ]
+          },
+          "after": {
+            "scrollY": 6431,
+            "timestamp": 17102.900000002235,
+            "intro": "done",
+            "thumbnails": [
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -5016.53125,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -4466.90625,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -3917.28125,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -3367.65625,
+                "entered": "true"
+              }
+            ]
+          }
+        },
+        {
+          "file": "mobile-11-collaboration.png",
+          "before": {
+            "scrollY": 7591,
+            "timestamp": 18958,
+            "intro": "done",
+            "thumbnails": [
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -6176.53125,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -5626.90625,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -5077.28125,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -4527.65625,
+                "entered": "true"
+              }
+            ]
+          },
+          "after": {
+            "scrollY": 7591,
+            "timestamp": 19192.900000002235,
+            "intro": "done",
+            "thumbnails": [
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -6176.53125,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -5626.90625,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -5077.28125,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -4527.65625,
+                "entered": "true"
+              }
+            ]
+          }
+        },
+        {
+          "file": "mobile-12-news.png",
+          "before": {
+            "scrollY": 8610,
+            "timestamp": 20971.70000000298,
+            "intro": "done",
+            "thumbnails": [
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -7195.53125,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -6645.90625,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -6096.28125,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -5546.65625,
+                "entered": "true"
+              }
+            ]
+          },
+          "after": {
+            "scrollY": 8610,
+            "timestamp": 21184.400000002235,
+            "intro": "done",
+            "thumbnails": [
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -7195.53125,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -6645.90625,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -6096.28125,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -5546.65625,
+                "entered": "true"
+              }
+            ]
+          }
+        },
+        {
+          "file": "mobile-13-company.png",
+          "before": {
+            "scrollY": 9037,
+            "timestamp": 22788.20000000298,
+            "intro": "done",
+            "thumbnails": [
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -7622.53125,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -7072.90625,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -6523.28125,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -5973.65625,
+                "entered": "true"
+              }
+            ]
+          },
+          "after": {
+            "scrollY": 9037,
+            "timestamp": 23151,
+            "intro": "done",
+            "thumbnails": [
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -7622.53125,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -7072.90625,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -6523.28125,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -5973.65625,
+                "entered": "true"
+              }
+            ]
+          }
+        },
+        {
+          "file": "mobile-14-contact.png",
+          "before": {
+            "scrollY": 9294,
+            "timestamp": 24693.300000000745,
+            "intro": "done",
+            "thumbnails": [
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -7879.53125,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -7329.90625,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -6780.28125,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -6230.65625,
+                "entered": "true"
+              }
+            ]
+          },
+          "after": {
+            "scrollY": 9294,
+            "timestamp": 25159.900000002235,
+            "intro": "done",
+            "thumbnails": [
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -7879.53125,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -7329.90625,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -6780.28125,
+                "entered": "true"
+              },
+              {
+                "opacity": "1",
+                "transform": "none",
+                "top": -6230.65625,
+                "entered": "true"
+              }
+            ]
+          }
+        }
+      ],
+      "horizontalOverflow": false,
+      "removedControls": 0,
+      "video": "mobile-walkthrough.webm"
+    }
+  ]
+}

@@ -72,7 +72,11 @@ test("only the thumbnail cursor hover cycles eight palettes; focus and touch rem
   isMobile,
 }) => {
   await page.goto("/");
-  await expect(page.getByRole("button", { name: "メニューを開く" })).toBeEnabled();
+  // Programmatic focus cannot enter content while the opening modal is active.
+  await expect(page.locator(".site-opening")).not.toBeVisible();
+  await expect(
+    page.getByRole("button", { name: "メニューを開く" }),
+  ).toBeEnabled();
   await page.evaluate(() => document.fonts.ready);
   const link = page.locator(".business-preview > a").first();
   const image = link.locator(".gradient-image");
@@ -117,7 +121,7 @@ test("only the thumbnail cursor hover cycles eight palettes; focus and touch rem
   }
 });
 
-test("detail image hover honors motion pause and reduced motion without changing the hero entrance", async ({
+test("detail image hover honors device reduced motion and resumes on preference change while the hero stays static", async ({
   page,
   isMobile,
 }) => {
@@ -126,7 +130,8 @@ test("detail image hover honors motion pause and reduced motion without changing
     "data-image-trigger",
     "entrance",
   );
-  await expect(page.locator(".hero-art")).toHaveAttribute(
+  await expect(page.locator(".site-opening")).not.toBeVisible();
+  await expect(page.locator(".hero-art")).not.toHaveAttribute(
     "data-entered",
     "true",
   );
@@ -144,13 +149,12 @@ test("detail image hover honors motion pause and reduced motion without changing
   await page.emulateMedia({ reducedMotion: "reduce" });
   await expectStatic(image);
   await expect(image.locator("img")).toBeVisible();
-  await page.emulateMedia({ reducedMotion: "no-preference" });
-  await page.getByRole("button", { name: "動きを止める", exact: true }).click();
+  await page.emulateMedia({ reducedMotion: "reduce" });
   await image.scrollIntoViewIfNeeded();
   if (!isMobile) await image.hover();
   else await image.tap();
   await expectStatic(image);
-  await page.getByRole("button", { name: /動きを再生する/ }).click();
+  await page.emulateMedia({ reducedMotion: "no-preference" });
   await image.scrollIntoViewIfNeeded();
   await expectStatic(image);
   if (!isMobile) {

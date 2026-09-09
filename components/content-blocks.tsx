@@ -6,9 +6,10 @@ import { RevealText } from "@/components/motion/reveal-text";
 import { GradientImage } from "@/components/motion/gradient-image";
 import { Scene } from "@/components/motion/scene";
 import { Arrow } from "@/components/icons";
-import { DraftBadge, SectionLabel, TextLink } from "@/components/editorial";
+import { SectionLabel } from "@/components/editorial";
 import Link from "@/components/site-link";
 import { CorporateImage } from "@/components/corporate-image";
+import { StoryAccent } from "@/components/motion/story-accent";
 
 export function BusinessCards({ locale }: { locale: Locale }) {
   const c = getDictionary(locale);
@@ -21,15 +22,19 @@ export function BusinessCards({ locale }: { locale: Locale }) {
             key={item.id}
             href={localizedPath("/business", locale) + "#" + item.id}
           >
-            <GradientImage
-              src={item.visual}
-              blend={item.visualBlend}
-              trigger="hover"
-              sizes="(max-width: 700px) 90vw, 44vw"
-              className="business-visual"
-              palette={i % 2 ? "iris" : "sky"}
-              alt={copy.visualAlt}
-            />
+            <div className="story-card-frame">
+              <div className="story-card-media">
+                <GradientImage
+                  src={item.visual}
+                  blend={item.visualBlend}
+                  trigger="hover"
+                  sizes="(max-width: 700px) 90vw, 44vw"
+                  className="business-visual"
+                  palette={i % 2 ? "iris" : "sky"}
+                  alt={copy.visualAlt}
+                />
+              </div>
+            </div>
             <span className="business-index">
               <RevealText kind="label">{copy.role}</RevealText>
             </span>
@@ -109,18 +114,19 @@ export function ServiceConcepts({ locale }: { locale: Locale }) {
           </figure>
         ))}
       </div>
-      <p className="editorial-note">
-        <RevealText kind="body">{c.assets.note}</RevealText>
-      </p>
     </div>
   );
 }
 export function Collaboration({ locale }: { locale: Locale }) {
   const c = getDictionary(locale);
   return (
-    <Scene className="collaboration-section section-space" palette="mint">
+    <Scene
+      className="collaboration-section section-space"
+      palette="mint"
+      story="collaboration"
+    >
       <div className="container editorial-grid">
-        <SectionLabel>{c.review.collaboration}</SectionLabel>
+        <SectionLabel>{c.collaboration.label}</SectionLabel>
         <div>
           <h2 className="section-heading">
             <RevealText>{c.collaboration.title}</RevealText>
@@ -145,12 +151,19 @@ export function Collaboration({ locale }: { locale: Locale }) {
               </li>
             ))}
           </ul>
-          <p className="editorial-note">
-            <RevealText kind="body">{c.collaboration.note}</RevealText>
-          </p>
-          <TextLink href={localizedPath("/contact", locale)}>
-            {c.collaboration.button}
-          </TextLink>
+          <Link
+            className="collaboration-cta"
+            href={localizedPath("/contact", locale)}
+          >
+            <span>
+              <RevealText kind="subtitle" light>
+                {c.collaboration.button}
+              </RevealText>
+            </span>
+            <span className="collaboration-cta-arrow" aria-hidden="true">
+              <Arrow diagonal />
+            </span>
+          </Link>
         </div>
       </div>
     </Scene>
@@ -159,23 +172,19 @@ export function Collaboration({ locale }: { locale: Locale }) {
 export function CurrentWork({ locale }: { locale: Locale }) {
   const c = getDictionary(locale);
   return (
-    <section className="current-work section-space" id="current-work">
+    <section
+      className="current-work section-space"
+      id="current-work"
+      data-story="assembly"
+    >
+      <StoryAccent beat="assembly" />
       <div className="container">
         <div className="editorial-grid">
           <SectionLabel number="02">{c.home.workingTitle}</SectionLabel>
           <div>
-            <DraftBadge>{c.review.stage}</DraftBadge>
             <h2 className="section-heading">
               <RevealText>{c.home.workingTitle}</RevealText>
             </h2>
-            <div className="prose">
-              <p>
-                <RevealText kind="body">{c.home.workingDescription}</RevealText>
-              </p>
-            </div>
-            <p className="editorial-note">
-              <RevealText kind="body">{c.home.workingNote}</RevealText>
-            </p>
           </div>
         </div>
         <ConceptDiagram locale={locale} />
@@ -187,9 +196,6 @@ export function CurrentWork({ locale }: { locale: Locale }) {
             <h3>
               <RevealText kind="subtitle">{c.assets.posterTitle}</RevealText>
             </h3>
-            <p>
-              <RevealText kind="body">{c.assets.posterNote}</RevealText>
-            </p>
           </figcaption>
         </figure>
       </div>

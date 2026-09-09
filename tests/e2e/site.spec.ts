@@ -39,6 +39,9 @@ test("menu traps Tab and Shift+Tab, closes with Escape and restores scroll and f
   page,
 }) => {
   await page.goto("/");
+  // The new opening is a modal. Establish background keyboard focus only
+  // after its handoff; all menu focus/scroll assertions below stay unchanged.
+  await expect(page.locator(".site-opening")).not.toBeVisible();
   const trigger = page.getByRole("button", { name: "メニューを開く" });
   // Hydration can request more font glyphs. Wait for the actual menu to become
   // interactive before settling fonts and measuring its saved scroll position.
@@ -148,14 +151,24 @@ test("contact cannot collect or falsely report sending; unpublished articles ret
   ).toBeVisible();
 });
 
-test("pause preference persists; reduced-motion keeps content visible", async ({
+test("device reduced-motion persists on reload and keeps content visible without site controls", async ({
   page,
 }) => {
   await page.goto("/");
-  await page.getByRole("button", { name: "動きを止める", exact: true }).click();
-  await expect(page.locator("html")).toHaveAttribute("data-motion", "paused");
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  await expect(page.locator(".motion-control")).toHaveCount(0);
+  expect(
+    await page.evaluate(
+      () => matchMedia("(prefers-reduced-motion: reduce)").matches,
+    ),
+  ).toBe(true);
   await page.reload();
-  await expect(page.locator("html")).toHaveAttribute("data-motion", "paused");
+  await expect(page.locator(".motion-control")).toHaveCount(0);
+  expect(
+    await page.evaluate(
+      () => matchMedia("(prefers-reduced-motion: reduce)").matches,
+    ),
+  ).toBe(true);
   await page.getByRole("button", { name: "メニューを開く" }).click();
   await expect(page.getByRole("dialog")).toBeVisible();
   await page.keyboard.press("Escape");
@@ -196,7 +209,10 @@ test("cut-in ends in place across scrolling, touch has no pointer effect", async
     "none",
   );
   if (isMobile) {
-    await page.locator(".wonder-section").tap();
+    // The section's center can be its /about link. Exercise touch on text so
+    // the target section remains on this page for the pointer assertion.
+    await page.locator(".wonder-type").tap();
+    await expect(page).toHaveURL(/\/$/);
     await expect(page.locator(".wonder-section")).not.toHaveAttribute(
       "data-pointer",
       "true",

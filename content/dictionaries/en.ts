@@ -27,14 +27,6 @@ export const en: Dictionary = {
     home: "Home",
     required: "Required",
     optional: "Optional",
-    motion: {
-      pause: "Pause animations",
-      play: "Play animations (respects reduced-motion settings)",
-      pausedTitle: "Animations paused. Your system preference takes priority.",
-      label: "Motion",
-      on: "ON",
-      off: "OFF",
-    },
   },
   review: {
     label: "Content review",
@@ -49,11 +41,11 @@ export const en: Dictionary = {
   },
   pages: {
     home: {
-      title: "Create engaging experiences. Bring their appeal to life.",
+      title: "Curiosity changes the world.",
       menu: "Home",
       short: "Top",
       description:
-        "Explore MYSTENA’s proposed business, approach, current initiatives and company information. This corporate site is a content review edition.",
+        "Explore MYSTENA’s business, approach, current initiatives and company information.",
     },
     about: {
       title: "About us",
@@ -67,7 +59,7 @@ export const en: Dictionary = {
       menu: "Our business",
       short: "Business",
       description:
-        "Explore MYSTENA’s four proposed business areas: entertainment commerce, service and system development, video and content production, and marketing and collaboration.",
+        "Explore MYSTENA’s four business areas: entertainment commerce, service and system development, video and content production, and marketing and collaboration.",
     },
     company: {
       title: "Company information",
@@ -98,22 +90,19 @@ export const en: Dictionary = {
     },
   },
   home: {
-    heroLines: ["Create engaging experiences.", "Bring their appeal to life."],
+    heroLines: ["Curiosity changes", "the world."],
     description:
       "MYSTENA brings entertainment and technology together through service development, video production, and marketing. From engaging online shopping experiences to business systems and projects with brands and creators, we connect planning, development, creative work, and promotion to create new experiences.",
     businessButton: "Explore our business",
     companyButton: "View company information",
     scroll: "Scroll to explore",
+    capabilities: ["Planning", "Development", "Creative", "Promotion"],
     businessTitle: "Making product discovery\nmore engaging.",
     businessDescription:
       "From creating products and services to communicating their appeal and encouraging people to use them, we bring four areas together to explore new experiences.",
     businessStructure:
       "Four areas connecting planning, development, creative work, and promotion.",
     workingTitle: "What we are working on",
-    workingDescription:
-      "We are developing an online service designed to help people discover products in new ways. We will share further details and availability when they are ready.",
-    workingNote:
-      "This proposed copy assumes development is in progress. The actual service status and scope of disclosure await confirmation.",
     philosophyLabel: "What matters to us",
     philosophyLines: ["A little wonder", "changes everything."],
     philosophyDescription:
@@ -155,11 +144,11 @@ export const en: Dictionary = {
     ],
   },
   business: {
-    factsTitle: "Defining the online service concept",
+    factsTitle: "About our online service",
     audienceLabel: "Who it is for",
     audience:
       "Businesses offering products or content, and people who enjoy discovering new products",
-    deliverableLabel: "What we plan to offer",
+    deliverableLabel: "What we offer",
     deliverable:
       "An online service and the presentation and user experience within it",
     stageLabel: "Service status",
@@ -216,9 +205,9 @@ export const en: Dictionary = {
     consultationLabel: "Example inquiry",
   },
   diagram: {
-    title: "Entertainment commerce concept",
+    title: "Connecting entertainment commerce",
     caption:
-      "A proposed overview of audiences and what the service could offer. The actual business scope awaits confirmation.",
+      "Connecting businesses offering products with people looking for something new.",
     nodes: [
       {
         title: "Businesses offering products",
@@ -235,11 +224,12 @@ export const en: Dictionary = {
     ],
   },
   collaboration: {
+    label: "PARTNERSHIPS",
     title: "Exploring new ways to bring\nproducts and content to people.",
     intro:
       "We bring together strengths in products, content, and technology to explore new experiences.",
     description:
-      "Co-create a product, develop a sales service, or produce an introduction video. These proposed inquiry topics connect planning, development, creative work, and promotion.",
+      "Co-create a product, develop a sales service, or produce an introduction video. Our collaboration topics connect planning, development, creative work, and promotion.",
     themes: [
       "Co-developing or curating products and limited editions",
       "Developing sales services and business systems",
@@ -297,12 +287,12 @@ export const en: Dictionary = {
   },
   contactBand: {
     title: ["New possibilities begin", "with a conversation."],
-    description: "Our contact channel is being prepared.",
+    description:
+      "Explore inquiries about planning, development, video production and collaboration.",
   },
   news: {
     emptyTitle: "There are no announcements at this time.",
-    emptyDescription:
-      "Confirmed announcements will appear here when they are ready.",
+    emptyDescription: "Find the latest announcements from MYSTENA here.",
     all: "View all news",
     back: "Back to news",
     home: "Back to home",
@@ -325,24 +315,22 @@ export const en: Dictionary = {
     expand: "Enlarge image (opens in a new tab)",
     aboutCaption:
       "A desk where ideas take shape. An illustration connecting planning, development and production.",
-    posterLabel: "Service introduction concept",
+    posterLabel: "Service introduction",
     posterTitle: "Discover a collection. Open a box.",
-    posterNote:
-      "A video cover concept introducing product discovery and the unboxing experience. Only this still image is available; the video is being prepared.",
     afterglowAlt: "An abstract brand visual with a loop of blue light",
     daylightAlt: "An abstract transparent form in soft overlapping light",
     slots: [
       {
         title: "A new way to discover collectibles.",
         description:
-          "Trading cards, brand fashion and precision devices. A service concept exploring the enjoyment of product discovery through mystery boxes.",
-        label: "Service concept 01",
+          "Trading cards, brand fashion and precision devices. Enjoy discovering products through mystery boxes.",
+        label: "Service overview 01",
       },
       {
         title: "Understand. Choose. Unbox.",
         description:
-          "Review product information and conditions, choose a box, open it, and learn about the product you will receive. A concept for an enjoyable experience built on clarity.",
-        label: "Experience concept 02",
+          "Review product information and conditions, choose a box, open it, and learn about the product you will receive. An enjoyable experience built on clarity.",
+        label: "Experience flow 02",
       },
     ],
     note: "These illustrations explain the service concept. Actual products, screens and service details will be announced once confirmed.",

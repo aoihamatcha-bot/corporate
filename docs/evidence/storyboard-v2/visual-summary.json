@@ -1,0 +1,68 @@
+[
+  {
+    "device": "desktop",
+    "frames": 14,
+    "pageErrors": [],
+    "horizontalOverflow": false,
+    "removedControls": 0,
+    "waiting": {
+      "opacity": "0",
+      "transform": "none",
+      "top": 863.796875,
+      "entered": null
+    },
+    "fading": {
+      "before": {
+        "opacity": "0.0485589",
+        "transform": "matrix(0.921847, -0.0613222, 0.0613222, 0.921847, -22.8346, 72.3095)",
+        "top": 531.8314819335938,
+        "entered": "true"
+      },
+      "after": {
+        "opacity": "0.804991",
+        "transform": "matrix(0.984308, -0.0134014, 0.0134014, 0.984308, -4.68021, 14.8207)",
+        "top": 327.8355407714844,
+        "entered": "true"
+      }
+    },
+    "settled": {
+      "opacity": "1",
+      "transform": "none",
+      "top": 312.796875,
+      "entered": "true"
+    }
+  },
+  {
+    "device": "mobile",
+    "frames": 14,
+    "pageErrors": [],
+    "horizontalOverflow": false,
+    "removedControls": 0,
+    "waiting": {
+      "opacity": "0",
+      "transform": "none",
+      "top": 808.46875,
+      "entered": null
+    },
+    "fading": {
+      "before": {
+        "opacity": "0.0484654",
+        "transform": "matrix(0.923877, 0, 0, 0.923877, 0, 41.8675)",
+        "top": 627.0515747070312,
+        "entered": "true"
+      },
+      "after": {
+        "opacity": "0.89376",
+        "transform": "matrix(0.991501, 0, 0, 0.991501, 0, 4.67457)",
+        "top": 385.45135498046875,
+        "entered": "true"
+      }
+    },
+    "settled": {
+      "opacity": "1",
+      "transform": "none",
+      "top": 376.46875,
+      "entered": "true"
+    }
+  }
+]

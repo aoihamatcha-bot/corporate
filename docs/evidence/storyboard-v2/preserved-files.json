@@ -1,0 +1,56 @@
+[
+  {
+    "file": "app/globals.css",
+    "baselineBlob": "817eb81b2b97fc2d18da8204e5ef72cb61718777",
+    "workingBlob": "817eb81b2b97fc2d18da8204e5ef72cb61718777",
+    "unchanged": true
+  },
+  {
+    "file": "styles/tokens.css",
+    "baselineBlob": "ced1881704a7657e156883b967debe943869da24",
+    "workingBlob": "ced1881704a7657e156883b967debe943869da24",
+    "unchanged": true
+  },
+  {
+    "file": "styles/motion.css",
+    "baselineBlob": "c547059de7583055e70aca6c781aedd51a402841",
+    "workingBlob": "c547059de7583055e70aca6c781aedd51a402841",
+    "unchanged": true
+  },
+  {
+    "file": "components/motion/reveal-text.tsx",
+    "baselineBlob": "086eed7334bf83ab9d7bd5bffaeade8ab12d05e0",
+    "workingBlob": "086eed7334bf83ab9d7bd5bffaeade8ab12d05e0",
+    "unchanged": true
+  },
+  {
+    "file": "components/motion/text-rhythm.ts",
+    "baselineBlob": "e40921d8568dbe3a43da5a32c3fb9b1eabdec1d3",
+    "workingBlob": "e40921d8568dbe3a43da5a32c3fb9b1eabdec1d3",
+    "unchanged": true
+  },
+  {
+    "file": "components/motion/gradient-image.tsx",
+    "baselineBlob": "2e37eec5ebabdd82b2bbdbb4681e1156b519a24b",
+    "workingBlob": "2e37eec5ebabdd82b2bbdbb4681e1156b519a24b",
+    "unchanged": true
+  },
+  {
+    "file": "components/motion/count-up.tsx",
+    "baselineBlob": "f3f851e0b20e98d929d2b5c59b147900ccf2b751",
+    "workingBlob": "f3f851e0b20e98d929d2b5c59b147900ccf2b751",
+    "unchanged": true
+  },
+  {
+    "file": "package.json",
+    "baselineBlob": "23c67834999706384c39377cddc5a494877bb9ea",
+    "workingBlob": "23c67834999706384c39377cddc5a494877bb9ea",
+    "unchanged": true
+  },
+  {
+    "file": "package-lock.json",
+    "baselineBlob": "0612a95456fa381f8b4e61675f379d0929bd843f",
+    "workingBlob": "0612a95456fa381f8b4e61675f379d0929bd843f",
+    "unchanged": true
+  }
+]

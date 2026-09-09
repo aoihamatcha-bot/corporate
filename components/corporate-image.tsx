@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { ImageEntrance } from "./motion/image-entrance";
 import {
   corporateAsset,
   type CorporateAssetId,
@@ -24,15 +25,17 @@ export function CorporateImage({
   const asset = corporateAsset(id, locale);
   const label = getDictionary(locale).assets.expand;
   const image = (
-    <Image
-      src={asset.path}
-      alt={asset.alt}
-      width={asset.width}
-      height={asset.height}
-      sizes={sizes}
-      className="corporate-image"
-      data-asset-id={id}
-    />
+    <ImageEntrance>
+      <Image
+        src={asset.path}
+        alt={asset.alt}
+        width={asset.width}
+        height={asset.height}
+        sizes={sizes}
+        className="corporate-image"
+        data-asset-id={id}
+      />
+    </ImageEntrance>
   );
   return expandable ? (
     <a

@@ -1,0 +1,989 @@
+{
+  "cueStarted": true,
+  "cueAfterOpening": false,
+  "frames": [
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    },
+    {
+      "font": "700 79.2px / 118.8px \"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "rect": "[79.921875,211.6875,1265.15625,237.59375]",
+      "color": "rgb(20, 25, 31)",
+      "animations": 0,
+      "businessTop": 1200
+    }
+  ],
+  "height": 1200,
+  "scroll": 0,
+  "fonts": "loaded"
+}

@@ -1,0 +1,694 @@
+diff --git a/.local/before-hero-v4/components/layout/site-root.tsx b/components/layout/site-root.tsx
+index f442e8e..5e7abb7 100644
+--- a/.local/before-hero-v4/components/layout/site-root.tsx
++++ b/components/layout/site-root.tsx
+@@ -7,7 +7,6 @@ import { getDictionary } from "@/content/dictionaries";
+ import { navigationFor } from "@/content/navigation";
+ import { articleLanguageAvailability } from "@/content/news";
+ import { HomeStory } from "@/components/motion/home-story";
+-import { CursorTrail } from "@/components/motion/cursor-trail";
+ import type { Locale } from "@/content/i18n";
+ import "@/app/globals.css";
+ import "@/styles/storyboard.css";
+@@ -51,7 +50,6 @@ export function SiteRoot({
+           <HomeStory>{children}</HomeStory>
+         </main>
+         <Footer locale={locale} />
+-        <CursorTrail />
+       </body>
+     </html>
+   );
+
+diff --git a/.local/before-hero-v4/components/motion/entrance.ts b/components/motion/entrance.ts
+index 9a3eb9d..72e0f7e 100644
+--- a/.local/before-hero-v4/components/motion/entrance.ts
++++ b/components/motion/entrance.ts
+@@ -10,12 +10,27 @@ export function motionAvailable() {
+   );
+ }
+ 
++// Anchor navigation and restored scroll positions also satisfy this gate.
++export function entranceReady(element: Element) {
++  return (
++    (!["pending", "running", "docking"].includes(
++      document.documentElement.dataset.intro ?? "",
++    ) ||
++      element.closest(".site-opening") !== null) &&
++    (!element.closest("[data-scroll-gated]") || window.scrollY > 8)
++  );
++}
++
+ export function observeEntrance(
+   element: HTMLElement,
+   play: () => () => void,
+   utility = false,
+ ) {
+-  if (!window.IntersectionObserver || element.dataset.entered === "true")
++  if (
++    !window.IntersectionObserver ||
++    element.dataset.entered === "true" ||
++    element.closest("[data-motion-static]")
++  )
+     return () => {};
+   let visible = false;
+   let disposed = false;
+@@ -29,10 +44,7 @@ export function observeEntrance(
+       !visible ||
+       element.dataset.entered === "true" ||
+       !motionAvailable() ||
+-      (["pending", "running", "docking"].includes(
+-        document.documentElement.dataset.intro ?? "",
+-      ) &&
+-        !element.closest(".site-opening"))
++      !entranceReady(element)
+     )
+       return;
+     element.dataset.entered = "true";
+@@ -58,6 +70,8 @@ export function observeEntrance(
+   }
+   document.addEventListener("visibilitychange", visibility);
+   window.addEventListener("mystena:intro-end", start);
++  const scrollGated = element.closest("[data-scroll-gated]");
++  if (scrollGated) window.addEventListener("scroll", start, { passive: true });
+   window.addEventListener("resize", settle, { passive: true });
+   return () => {
+     disposed = true;
+@@ -65,6 +79,7 @@ export function observeEntrance(
+     settle();
+     document.removeEventListener("visibilitychange", visibility);
+     window.removeEventListener("mystena:intro-end", start);
++    if (scrollGated) window.removeEventListener("scroll", start);
+     window.removeEventListener("resize", settle);
+   };
+ }
+
+diff --git a/.local/before-hero-v4/components/motion/hero-art.tsx b/components/motion/hero-art.tsx
+index b95bf17..be8a83c 100644
+--- a/.local/before-hero-v4/components/motion/hero-art.tsx
++++ b/components/motion/hero-art.tsx
+@@ -1,96 +1,10 @@
+-"use client";
++import type { ReactNode } from "react";
+ 
+-import { useEffect, useRef, type ReactNode } from "react";
+-import type { HeroVideo } from "@/content/hero-media";
+-import { useMotionPaused } from "./motion-preference";
+-import { motionAvailable } from "./entrance";
+-
+-export function HeroArt({
+-  children,
+-  video,
+-}: {
+-  children: ReactNode;
+-  video: HeroVideo | null;
+-}) {
+-  const ref = useRef<HTMLDivElement>(null);
+-  const player = useRef<HTMLVideoElement>(null);
+-  const paused = useMotionPaused();
+-  useEffect(() => {
+-    const el = ref.current;
+-    const clip = player.current;
+-    if (!el || !window.IntersectionObserver) return;
+-    let visible = false,
+-      disposed = false;
+-    const update = () => {
+-      const running =
+-        !paused &&
+-        visible &&
+-        motionAvailable() &&
+-        document.documentElement.dataset.intro === "done";
+-      el.dataset.heroActive = String(running);
+-      if (!clip) return;
+-      if (running) {
+-        void clip
+-          .play()
+-          .then(() => {
+-            if (!disposed && el.dataset.heroActive === "true")
+-              el.dataset.videoPlaying = "true";
+-            else clip.pause();
+-          })
+-          .catch(() => {
+-            el.dataset.videoPlaying = "false";
+-          });
+-      } else {
+-        clip.pause();
+-        el.dataset.videoPlaying = "false";
+-      }
+-    };
+-    const observer = new IntersectionObserver(([entry]) => {
+-      visible = entry.isIntersecting;
+-      update();
+-    });
+-    observer.observe(el);
+-    window.addEventListener("mystena:intro-end", update);
+-    document.addEventListener("visibilitychange", update);
+-    return () => {
+-      disposed = true;
+-      observer.disconnect();
+-      clip?.pause();
+-      el.dataset.heroActive = "false";
+-      el.dataset.videoPlaying = "false";
+-      window.removeEventListener("mystena:intro-end", update);
+-      document.removeEventListener("visibilitychange", update);
+-    };
+-  }, [paused, video]);
++// The adopted illustration stays still while the opening lands on the title.
++export function HeroArt({ children }: { children: ReactNode }) {
+   return (
+-    <div ref={ref} className="hero-motion-art">
++    <div className="hero-motion-art" data-hero-active="false">
+       <div className="hero-camera">{children}</div>
+-      {video ? (
+-        <video
+-          ref={player}
+-          className="hero-video"
+-          loop
+-          muted
+-          playsInline
+-          preload="none"
+-          aria-hidden="true"
+-          onError={() => {
+-            if (ref.current) ref.current.dataset.videoPlaying = "false";
+-          }}
+-        >
+-          <source src={video.src} type={video.type} />
+-        </video>
+-      ) : null}
+-      <svg
+-        className="hero-light"
+-        viewBox="0 0 1440 900"
+-        preserveAspectRatio="none"
+-        aria-hidden="true"
+-        fill="none"
+-      >
+-        <path d="M380 810 C240 650 900 710 1250 360 S780 100 890 280" />
+-        <path d="M560 880 C400 700 960 760 1320 410" />
+-      </svg>
+     </div>
+   );
+ }
+
+diff --git a/.local/before-hero-v4/components/motion/hero-headline.tsx b/components/motion/hero-headline.tsx
+index 39a013b..4e72e5c 100644
+--- a/.local/before-hero-v4/components/motion/hero-headline.tsx
++++ b/components/motion/hero-headline.tsx
+@@ -3,7 +3,6 @@
+ import { useEffect, useRef } from "react";
+ import { RevealText } from "./reveal-text";
+ import { useMotionPaused } from "./motion-preference";
+-import { randomPalette } from "./entrance";
+ 
+ export const openingHoldMs = 1000;
+ export const openingDockMs = 1200;
+@@ -22,25 +21,13 @@ export function HeroHeadline({ lines }: { lines: string[] }) {
+     const dock = () => {
+       heading.dataset.dockState = "running";
+       try {
+-        // The incoming SVG owns the entrance. Keep the adopted gradient layer,
+-        // but prevent a second text-band wipe from displacing the landing target.
++        // The incoming SVG owns the entrance. The final type is already laid
++        // out with loaded fonts; only opacity changes during the handoff.
+         heading
+           .querySelectorAll<HTMLElement>(".hero-dock-line")
+           .forEach((line) => {
+             line.dataset.entered = "true";
+-            line.dataset.palette = randomPalette();
+             line.dataset.revealState = "settled";
+-            const color = line.querySelector<HTMLElement>(".reveal-color")!;
+-            animations.push(
+-              color.animate(
+-                [
+-                  { opacity: 1, backgroundPosition: "0% 50%" },
+-                  { opacity: 1, backgroundPosition: "65% 50%", offset: 0.46 },
+-                  { opacity: 0, backgroundPosition: "100% 50%" },
+-                ],
+-                { duration: 2900, easing: "linear" },
+-              ),
+-            );
+           });
+         const fade = heading.animate([{ opacity: 0 }, { opacity: 1 }], {
+           duration: openingDockMs * 0.55,
+@@ -49,28 +36,25 @@ export function HeroHeadline({ lines }: { lines: string[] }) {
+           easing: "ease-in-out",
+         });
+         animations.push(fade);
+-        void Promise.all(
+-          animations.map((animation) => animation.finished),
+-        ).then(settle, () => {});
++        // Keep the fade until intro-end removes the CSS cover, avoiding a
++        // zero-opacity frame if the two animations finish separately.
++        void fade.finished.then(
++          () => {
++            heading.dataset.dockState = "settled";
++          },
++          () => {},
++        );
+       } catch {
+         settle();
+       }
+     };
+-    const introEnd = () => {
+-      // An interrupted flight must expose the normal headline immediately.
+-      if (
+-        document.querySelector<HTMLDialogElement>(".site-opening")?.dataset
+-          .phase !== "complete"
+-      )
+-        settle();
+-    };
+     window.addEventListener("mystena:hero-dock", dock);
+-    window.addEventListener("mystena:intro-end", introEnd);
++    window.addEventListener("mystena:intro-end", settle);
+     window.addEventListener("resize", settle);
+     return () => {
+       settle();
+       window.removeEventListener("mystena:hero-dock", dock);
+-      window.removeEventListener("mystena:intro-end", introEnd);
++      window.removeEventListener("mystena:intro-end", settle);
+       window.removeEventListener("resize", settle);
+     };
+   }, [paused, lines]);
+
+diff --git a/.local/before-hero-v4/components/motion/home-story.tsx b/components/motion/home-story.tsx
+index adaa86d..a476827 100644
+--- a/.local/before-hero-v4/components/motion/home-story.tsx
++++ b/components/motion/home-story.tsx
+@@ -2,7 +2,7 @@
+ 
+ import { useEffect, useRef, type ReactNode } from "react";
+ import { usePathname } from "next/navigation";
+-import { motionAvailable } from "./entrance";
++import { entranceReady, motionAvailable } from "./entrance";
+ import { useMotionPaused } from "./motion-preference";
+ 
+ export function HomeStory({ children }: { children: ReactNode }) {
+@@ -46,6 +46,7 @@ export function HomeStory({ children }: { children: ReactNode }) {
+       if (
+         el.dataset.storyEntered ||
+         !motionAvailable() ||
++        !entranceReady(el) ||
+         html.dataset.intro !== "done"
+       )
+         return;
+@@ -106,7 +107,7 @@ export function HomeStory({ children }: { children: ReactNode }) {
+           Math.max(0, (height - box.top) / (height + box.height)),
+         );
+         section.style.setProperty("--story-progress", progress.toFixed(4));
+-        if (html.dataset.intro === "done")
++        if (html.dataset.intro === "done" && entranceReady(section))
+           section.dataset.storyEntered = "true";
+       }
+       for (const target of visibleTargets) play(target);
+
+diff --git a/.local/before-hero-v4/components/motion/scene.tsx b/components/motion/scene.tsx
+index 990574e..81c242d 100644
+--- a/.local/before-hero-v4/components/motion/scene.tsx
++++ b/components/motion/scene.tsx
+@@ -2,7 +2,12 @@
+ 
+ import { useEffect, useRef, type ReactNode } from "react";
+ import { useMotionPaused } from "./motion-preference";
+-import { randomPalette, type Palette } from "./entrance";
++import {
++  entranceReady,
++  motionAvailable,
++  randomPalette,
++  type Palette,
++} from "./entrance";
+ import { StoryAccent, type StoryBeat } from "./story-accent";
+ 
+ // Content is visible in server HTML. Animation enhances an already readable page.
+@@ -13,6 +18,7 @@ export function Scene({
+   direction = "left",
+   id,
+   story,
++  deferUntilScroll = false,
+ }: {
+   children: ReactNode;
+   className?: string;
+@@ -20,6 +26,7 @@ export function Scene({
+   direction?: "left" | "right";
+   id?: string;
+   story?: StoryBeat;
++  deferUntilScroll?: boolean;
+ }) {
+   const ref = useRef<HTMLElement>(null);
+   const seen = useRef(false);
+@@ -27,27 +34,45 @@ export function Scene({
+   useEffect(() => {
+     const el = ref.current;
+     if (!el || paused || !window.IntersectionObserver) return;
++    let visible = false;
++    const start = () => {
++      if (!visible || seen.current || !motionAvailable() || !entranceReady(el))
++        return;
++      const title = el.querySelector(".section-top");
++      if (
++        deferUntilScroll &&
++        title &&
++        title.getBoundingClientRect().top > innerHeight * 0.88
++      )
++        return;
++      seen.current = true;
++      el.dataset.palette = randomPalette();
++      el.classList.add("scene-entered");
++    };
+     const observer = new IntersectionObserver(
+       ([entry]) => {
+-        el.dataset.visible = String(entry.isIntersecting);
+-        if (entry.isIntersecting && !seen.current && !document.hidden) {
+-          seen.current = true;
+-          el.dataset.palette = randomPalette();
+-          el.classList.add("scene-entered");
+-        }
++        visible = entry.isIntersecting;
++        el.dataset.visible = String(visible);
++        start();
+       },
+       { threshold: 0.08 },
+     );
+     const onVisibility = () => {
+       el.dataset.hidden = String(document.hidden);
++      start();
+     };
+     observer.observe(el);
+     document.addEventListener("visibilitychange", onVisibility);
++    window.addEventListener("mystena:intro-end", start);
++    if (deferUntilScroll)
++      window.addEventListener("scroll", start, { passive: true });
+     return () => {
+       observer.disconnect();
+       document.removeEventListener("visibilitychange", onVisibility);
++      window.removeEventListener("mystena:intro-end", start);
++      if (deferUntilScroll) window.removeEventListener("scroll", start);
+     };
+-  }, [paused, direction]);
++  }, [paused, direction, deferUntilScroll]);
+ 
+   useEffect(() => {
+     const el = ref.current;
+@@ -125,6 +150,7 @@ export function Scene({
+       data-palette={palette}
+       data-direction={direction}
+       data-story={story}
++      data-scroll-gated={deferUntilScroll || undefined}
+     >
+       <div className="scene-colors" aria-hidden="true">
+         <i className="color-lead" />
+
+diff --git a/.local/before-hero-v4/components/pages/home.tsx b/components/pages/home.tsx
+index 1795476..4871a64 100644
+--- a/.local/before-hero-v4/components/pages/home.tsx
++++ b/components/pages/home.tsx
+@@ -18,14 +18,14 @@ import { SiteOpening } from "@/components/motion/site-opening";
+ import { HeroHeadline } from "@/components/motion/hero-headline";
+ import { HeroArt } from "@/components/motion/hero-art";
+ import { StoryAccent } from "@/components/motion/story-accent";
+-import { heroVideo } from "@/content/hero-media";
++import { HeroScrollCue } from "@/components/motion/hero-scroll-cue";
+ export function HomePage({ locale }: { locale: Locale }) {
+   const c = getDictionary(locale);
+   return (
+     <>
+       <SiteOpening locale={locale} />
+-      <section className="hero" aria-labelledby="hero-title">
+-        <HeroArt video={heroVideo}>
++      <section className="hero" aria-labelledby="hero-title" data-motion-static>
++        <HeroArt>
+           <GradientImage
+             src={corporateAsset("A08", locale).path}
+             sizes="100vw"
+@@ -56,10 +56,17 @@ export function HomePage({ locale }: { locale: Locale }) {
+           <span>
+             <RevealText kind="label">{c.common.brandNote}</RevealText>
+           </span>
+-          <a href="#business" className="scroll-link">
+-            <RevealText kind="label">{c.home.scroll}</RevealText>
+-            <span aria-hidden="true">↓</span>
+-          </a>
++          <HeroScrollCue label={c.home.scroll} />
++        </div>
++        <div className="hero-capabilities">
++          <ol className="container" aria-label={c.home.businessStructure}>
++            {c.home.capabilities.map((capability) => (
++              <li key={capability}>
++                <span>{capability}</span>
++                <Arrow />
++              </li>
++            ))}
++          </ol>
+         </div>
+       </section>
+       <Scene
+@@ -68,6 +75,7 @@ export function HomePage({ locale }: { locale: Locale }) {
+         palette="iris"
+         direction="right"
+         story="business"
++        deferUntilScroll
+       >
+         <div className="container">
+           <div className="section-top">
+
+diff --git a/.local/before-hero-v4/content/dictionaries/ja.ts b/content/dictionaries/ja.ts
+index 84e993a..6250c1a 100644
+--- a/.local/before-hero-v4/content/dictionaries/ja.ts
++++ b/content/dictionaries/ja.ts
+@@ -93,6 +93,7 @@ export const ja = {
+     businessButton: "事業紹介を見る",
+     companyButton: "会社概要を見る",
+     scroll: "下へスクロール",
++    capabilities: ["企画", "開発", "表現", "販売促進"],
+     businessTitle: "商品との出会いを、\nもっと楽しく。",
+     businessDescription:
+       "商品やサービスをつくることから、魅力を伝え、利用につなげることまで。4つの領域を組み合わせ、新しい体験を考えます。",
+
+diff --git a/.local/before-hero-v4/content/dictionaries/en.ts b/content/dictionaries/en.ts
+index 07be574..27de8bc 100644
+--- a/.local/before-hero-v4/content/dictionaries/en.ts
++++ b/content/dictionaries/en.ts
+@@ -96,6 +96,7 @@ export const en: Dictionary = {
+     businessButton: "Explore our business",
+     companyButton: "View company information",
+     scroll: "Scroll to explore",
++    capabilities: ["Planning", "Development", "Creative", "Promotion"],
+     businessTitle: "Making product discovery\nmore engaging.",
+     businessDescription:
+       "From creating products and services to communicating their appeal and encouraging people to use them, we bring four areas together to explore new experiences.",
+
+diff --git a/.local/before-hero-v4/styles/storyboard.css b/styles/storyboard.css
+index 9391c60..4c6af30 100644
+--- a/.local/before-hero-v4/styles/storyboard.css
++++ b/styles/storyboard.css
+@@ -80,20 +80,64 @@ html:is([data-intro="pending"], [data-intro="running"], [data-intro="docking"])
+   .hero-headline {
+   opacity: 0;
+ }
+-.cursor-trail {
++.hero {
++  min-height: calc(100svh - 96px);
++}
++/* HERO has a single handoff. Other scenes keep the adopted color rhythms. */
++.hero[data-motion-static]
++  :is(.reveal-color, .reveal-bands, .image-wash, .image-echo, .image-wipe) {
+   display: none;
+-  position: fixed;
+-  inset: 0;
+-  width: 100%;
+-  height: 100%;
+-  pointer-events: none;
+-  z-index: 110;
+-  overflow: hidden;
+ }
+-@media (hover: hover) and (pointer: fine) and (min-width: 701px) {
+-  .cursor-trail[data-active="true"] {
+-    display: block;
+-  }
++.hero-capabilities {
++  border-top: 1px solid rgb(55 100 132 / 16%);
++  background: rgb(246 251 255 / 86%);
++}
++.hero-capabilities ol {
++  display: grid;
++  grid-template-columns: repeat(4, minmax(0, 1fr));
++  gap: 28px;
++  padding-block: 26px;
++  padding-inline: 0;
++  list-style: none;
++}
++.hero-capabilities li {
++  display: flex;
++  align-items: center;
++  justify-content: space-between;
++  gap: 12px;
++  font-size: 13px;
++  font-weight: 700;
++  letter-spacing: 0.1em;
++}
++.hero-capabilities svg {
++  flex: 0 0 22px;
++  width: 22px;
++  height: 22px;
++  color: #6594ae;
++}
++.hero-capabilities li:last-child svg {
++  visibility: hidden;
++}
++.hero-scroll-cue {
++  gap: 12px;
++}
++.hero-scroll-cue svg {
++  width: 80px;
++  height: 28px;
++  flex-shrink: 0;
++  stroke: #417e9a;
++  stroke-width: 1.5;
++  stroke-linecap: round;
++  stroke-linejoin: round;
++}
++.hero-scroll-cue path {
++  stroke-dasharray: 1;
++  stroke-dashoffset: 0;
++  opacity: 0.7;
++}
++html:is([data-intro="pending"], [data-intro="running"]) .hero-scroll-cue path {
++  stroke-dashoffset: 1;
++  opacity: 0;
+ }
+ .collaboration-cta {
+   display: flex;
+@@ -287,48 +331,6 @@ html[data-story-motion]
+ .hero-motion-art .hero-art {
+   z-index: 0;
+ }
+-.hero-light {
+-  display: none;
+-  position: absolute;
+-  inset: 0;
+-  width: 100%;
+-  height: 100%;
+-  stroke: #bdeefa;
+-  stroke-width: 1.5;
+-  opacity: 0.6;
+-  pointer-events: none;
+-}
+-.hero-light path {
+-  stroke-dasharray: 130 900;
+-  animation: hero-light-travel 18s linear infinite;
+-}
+-.hero-light path + path {
+-  animation-delay: -7s;
+-  opacity: 0.55;
+-}
+-.hero-motion-art[data-hero-active="true"] .hero-camera {
+-  animation: hero-camera-drift 18s ease-in-out infinite alternate;
+-}
+-.hero-motion-art[data-hero-active="true"] .hero-light {
+-  display: block;
+-}
+-.hero-video {
+-  position: absolute;
+-  inset: 0;
+-  width: 100%;
+-  height: 100%;
+-  object-fit: cover;
+-  object-position: 70% center;
+-  opacity: 0;
+-  transition: opacity 700ms;
+-  pointer-events: none;
+-}
+-.hero-motion-art[data-video-playing="true"] .hero-video {
+-  opacity: 1;
+-}
+-.hero-motion-art[data-video-playing="true"] .hero-camera {
+-  animation: none;
+-}
+ @media (hover: hover) and (pointer: fine) {
+   .home-story[data-story-active="true"] .story-card-media {
+     transition: translate 260ms var(--ease-out);
+@@ -378,23 +380,24 @@ html[data-story-motion]
+     stroke-dashoffset: 0;
+   }
+ }
+-@keyframes hero-camera-drift {
+-  from {
+-    transform: scale(1.018) translate3d(-0.35%, 0.2%, 0);
++@media (max-width: 700px) {
++  .hero {
++    min-height: calc(100svh - 110px);
+   }
+-  to {
+-    transform: scale(1.045) translate3d(0.4%, -0.4%, 0);
++  .hero-capabilities ol {
++    gap: 20px;
++    padding-block: 22px;
+   }
+-}
+-@keyframes hero-light-travel {
+-  from {
+-    stroke-dashoffset: 1030;
++  .hero-capabilities li {
++    font-size: 11px;
++    letter-spacing: 0.04em;
+   }
+-  to {
+-    stroke-dashoffset: -1030;
++  .hero-scroll-cue {
++    gap: 6px;
++  }
++  .hero-scroll-cue svg {
++    width: 48px;
+   }
+-}
+-@media (max-width: 700px) {
+   html[lang="ja"] .hero h1 {
+     font-size: clamp(32px, 7.7vw, 52px);
+   }
+@@ -420,23 +423,14 @@ html[data-story-motion]
+   .story-accent-company .story-parallax {
+     transform: none;
+   }
+-  .hero-light {
+-    opacity: 0.3;
+-  }
+-  .hero-motion-art[data-hero-active="true"] .hero-camera {
+-    animation-name: hero-camera-mobile;
+-  }
+ }
+-@keyframes hero-camera-mobile {
+-  from {
+-    transform: scale(1.01);
+-  }
+-  to {
+-    transform: scale(1.025);
++@media (max-width: 480px) {
++  .hero-capabilities ol {
++    grid-template-columns: repeat(2, minmax(0, 1fr));
++    gap: 16px 28px;
+   }
+ }
+-[data-motion="paused"]
+-  :is(.site-opening, .story-accent, .hero-light, .hero-video) {
++[data-motion="paused"] :is(.site-opening, .story-accent) {
+   display: none !important;
+ }
+ [data-motion="paused"] :is(.hero-camera, .story-card-media, .arrow-circle) {
+@@ -446,9 +440,6 @@ html[data-story-motion]
+   translate: none !important;
+ }
+ @media (prefers-reduced-motion: reduce), (forced-colors: active), print {
+-  .cursor-trail {
+-    display: none !important;
+-  }
+   .hero-headline {
+     opacity: 1 !important;
+   }
+@@ -467,9 +458,7 @@ html[data-story-motion]
+     opacity: 1 !important;
+   }
+   .site-opening,
+-  .story-accent,
+-  .hero-light,
+-  .hero-video {
++  .story-accent {
+     display: none !important;
+   }
+   .hero-camera,

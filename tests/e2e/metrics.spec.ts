@@ -39,16 +39,16 @@ test("the counter progresses once without shifting its width or announcing inter
   expect(await counter.evaluate(el => el.getAnimations({ subtree: true }).length)).toBe(0);
 });
 
-test("pausing an active counter shows its final value and stops the number and color animation", async ({ page }) => {
+test("enabling device reduced motion during an active counter shows its final value and stops the number and color animation", async ({ page }) => {
   await page.goto("/");
   const counter = page.locator('[data-metric="users"] .count-up');
   await counter.scrollIntoViewIfNeeded();
   await expect(counter).toHaveAttribute("data-counter-state", "running");
-  await page.getByRole("button", { name: "動きを止める", exact: true }).click();
+  await page.emulateMedia({ reducedMotion: "reduce" });
   await expect(counter).toHaveAttribute("data-counter-state", "settled");
   await expect(counter.locator(".count-up-digits")).toHaveText("1,000");
   expect(await counter.evaluate(el => el.getAnimations({ subtree: true }).length)).toBe(0);
-  await page.getByRole("button", { name: /動きを再生する/ }).click();
+  await page.emulateMedia({ reducedMotion: "no-preference" });
   await expect(counter).toHaveAttribute("data-counter-state", "settled");
   await expect(counter.locator(".count-up-digits")).toHaveText("1,000");
 });
