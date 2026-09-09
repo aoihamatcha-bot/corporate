@@ -39,10 +39,13 @@ test("menu traps Tab and Shift+Tab, closes with Escape and restores scroll and f
   page,
 }) => {
   await page.goto("/");
+  const trigger = page.getByRole("button", { name: "メニューを開く" });
+  // Hydration can request more font glyphs. Wait for the actual menu to become
+  // interactive before settling fonts and measuring its saved scroll position.
+  await expect(trigger).toBeEnabled();
+  await page.evaluate(() => document.fonts.ready);
   await page.evaluate(() => window.scrollTo({ top: 650, behavior: "instant" }));
   const originalY = await page.evaluate(() => scrollY);
-  const trigger = page.getByRole("button", { name: "メニューを開く" });
-  await expect(trigger).toBeEnabled();
   await trigger.focus();
   await page.keyboard.press("Enter");
   const dialog = page.getByRole("dialog");

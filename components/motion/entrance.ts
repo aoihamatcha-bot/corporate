@@ -18,10 +18,18 @@ export function observeEntrance(
   if (!window.IntersectionObserver || element.dataset.entered === "true")
     return () => {};
   let visible = false;
+  let disposed = false;
+  let fontsReady = !document.fonts || document.fonts.status === "loaded";
   let stop: (() => void) | undefined;
   const settle = () => stop?.();
   function start() {
-    if (!visible || element.dataset.entered === "true" || !motionAvailable())
+    if (
+      disposed ||
+      !fontsReady ||
+      !visible ||
+      element.dataset.entered === "true" ||
+      !motionAvailable()
+    )
       return;
     element.dataset.entered = "true";
     stop = play();
@@ -36,9 +44,18 @@ export function observeEntrance(
   );
   const visibility = () => (document.hidden ? settle() : start());
   observer.observe(element);
+  // Text bands measure real line boxes. Wait for web fonts before capturing
+  // them; failed font requests also settle ready, leaving readable fallbacks.
+  if (!fontsReady) {
+    void document.fonts.ready.then(() => {
+      fontsReady = true;
+      start();
+    });
+  }
   document.addEventListener("visibilitychange", visibility);
   window.addEventListener("resize", settle, { passive: true });
   return () => {
+    disposed = true;
     observer.disconnect();
     settle();
     document.removeEventListener("visibilitychange", visibility);

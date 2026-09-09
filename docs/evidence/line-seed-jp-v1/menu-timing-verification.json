@@ -1,0 +1,36 @@
+{
+  "initialFullRun": {
+    "expectedPosition": 650,
+    "lockedPosition": 649,
+    "restoredPosition": 649
+  },
+  "unchangedTargetedRerun": {
+    "stats": {
+      "startTime": "2026-09-09T11:40:30.608Z",
+      "duration": 17881.281,
+      "expected": 2,
+      "skipped": 0,
+      "unexpected": 1,
+      "flaky": 0
+    },
+    "failedCase": {
+      "expectedPosition": 650,
+      "lockedPosition": 631,
+      "restoredPosition": 631
+    }
+  },
+  "afterFontReadyWait": {
+    "stats": {
+      "startTime": "2026-09-09T11:41:54.620Z",
+      "duration": 7368.361000000001,
+      "expected": 3,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    }
+  },
+  "applicationMenuLogicChanged": false,
+  "scrollAssertionChanged": false,
+  "positionTolerancePixels": 0.5,
+  "change": "Await document.fonts.ready before positioning and measuring scroll in the menu restoration test."
+}

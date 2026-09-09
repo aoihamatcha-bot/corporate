@@ -1,0 +1,433 @@
+{
+  "version": 1,
+  "date": "2026-09-09",
+  "status": "review-only",
+  "actualSiteModified": false,
+  "groups": 10,
+  "variants": 17,
+  "generation": {
+    "raster": "Built-in image_gen: 3 independent calls; no CLI fallback.",
+    "diagrams": "Native SVG. LINE Seed JP 400/700. Outlined delivery files plus text-editable sources.",
+    "optimization": "WebP image conversion and native SVG raster export."
+  },
+  "baselineHead": "092c3d99172acc903fb8e3a22766c3d53959c1d7",
+  "assets": [
+    {
+      "id": "A01",
+      "slug": "service-overview",
+      "title": "サービス全体の構想図",
+      "place": "トップ / 現在の取り組み / 開発画面01",
+      "kind": "既存の素材待ち枠",
+      "medium": "UI構想図",
+      "priority": true,
+      "description": "商品を探す楽しさが見える、シンプルな商品一覧。青いボトル・ヘッドホン・バッグを共通モチーフにしました。",
+      "note": "実サービスの画面ではありません。採用時は「開発画面」から「サービスの構想図」へ、枠の表記も合わせます。",
+      "review": "構想図を先に見せる方向でよいか、商品一覧の印象が事業に合うか。",
+      "alt": {
+        "ja": "商品一覧と青いボトルを中心にしたオンライン販売サービスの構想図",
+        "en": "An illustrative online store concept featuring a product grid and a blue bottle"
+      },
+      "variants": [
+        "ja",
+        "en"
+      ],
+      "format": "webp",
+      "adoption": "pending-owner-review",
+      "files": [
+        {
+          "variant": "ja",
+          "path": "assets/a01-service-overview-ja.webp",
+          "width": 1600,
+          "height": 1000,
+          "bytes": 58824,
+          "sha256": "5adeab19e0edb9ed475bbae126a61a39fa11d66dd5229be7038d34b544b9efd2",
+          "svg": "assets/a01-service-overview-ja.svg",
+          "editableSvg": "editable/a01-service-overview-ja.svg"
+        },
+        {
+          "variant": "en",
+          "path": "assets/a01-service-overview-en.webp",
+          "width": 1600,
+          "height": 1000,
+          "bytes": 63514,
+          "sha256": "c08d599aaa9ddfad75a2607e23e67c1754123aed98562d8a2e0ea68813f2a4a8",
+          "svg": "assets/a01-service-overview-en.svg",
+          "editableSvg": "editable/a01-service-overview-en.svg"
+        }
+      ]
+    },
+    {
+      "id": "A02",
+      "slug": "experience-flow",
+      "title": "利用体験の構想図",
+      "place": "トップ / 現在の取り組み / 開発画面02",
+      "kind": "既存の素材待ち枠",
+      "medium": "体験フロー",
+      "priority": true,
+      "description": "「探す・知る・選ぶ」を3つの画面で表現。具体的な機能を決める前に、目指す体験を説明する案です。",
+      "note": "提供機能や画面遷移の確定図ではありません。公開できる実画面が揃った後に差し替え可能です。",
+      "review": "体験の説明として分かりやすいか、強調したい段階があるか。",
+      "alt": {
+        "ja": "探す、知る、選ぶの3段階で示した買い物体験の構想図",
+        "en": "A proposed shopping journey illustrated as discovering, learning about and choosing products"
+      },
+      "variants": [
+        "ja",
+        "en"
+      ],
+      "format": "webp",
+      "adoption": "pending-owner-review",
+      "files": [
+        {
+          "variant": "ja",
+          "path": "assets/a02-experience-flow-ja.webp",
+          "width": 1600,
+          "height": 1000,
+          "bytes": 65350,
+          "sha256": "db465833002bd4aa35fe881b259927b105818c417c22e2575bf80d8d1172524d",
+          "svg": "assets/a02-experience-flow-ja.svg",
+          "editableSvg": "editable/a02-experience-flow-ja.svg"
+        },
+        {
+          "variant": "en",
+          "path": "assets/a02-experience-flow-en.webp",
+          "width": 1600,
+          "height": 1000,
+          "bytes": 79348,
+          "sha256": "a8cfda25bcb940ee5f8b429069508e1c8c6700360b4b033f8a2f294cf381d378",
+          "svg": "assets/a02-experience-flow-en.svg",
+          "editableSvg": "editable/a02-experience-flow-en.svg"
+        }
+      ]
+    },
+    {
+      "id": "A03",
+      "slug": "company-workstyle",
+      "title": "一緒につくる、仕事の風景",
+      "place": "会社情報 / 会社写真の枠に対する代替案",
+      "kind": "既存枠への代替提案",
+      "medium": "生成イラスト",
+      "priority": true,
+      "description": "企画、画面づくり、商品表現を同じテーブルで考える3人。採用済みの2D事業画像と空気感を揃えています。",
+      "note": "架空の人物・仕事場を描いたイラストです。実際の社員・オフィスを紹介する写真としては使いません。",
+      "review": "会社紹介をイラストで表現する方向が合うか。実写真を使う場合は、この案をAboutへ回せます。",
+      "alt": {
+        "ja": "企画資料、UI画面、商品見本を囲んで共同制作する架空の3人を描いたイラスト",
+        "en": "An illustration of an imaginary team collaborating around UI designs, a storyboard and product samples"
+      },
+      "variants": [
+        "common"
+      ],
+      "format": "webp",
+      "adoption": "pending-owner-review",
+      "files": [
+        {
+          "variant": "common",
+          "path": "assets/a03-company-workstyle.webp",
+          "width": 1586,
+          "height": 992,
+          "bytes": 242994,
+          "sha256": "e1b0a8857b0762fac29e47ca9adc18cfa3efb772943fb963eed1abaccdecfc17"
+        }
+      ]
+    },
+    {
+      "id": "A04",
+      "slug": "about-workbench",
+      "title": "アイデアがかたちになる机",
+      "place": "私たちについて / 姿勢・考え方の説明の後",
+      "kind": "追加候補",
+      "medium": "生成イラスト",
+      "description": "ノート、開発画面、カメラ、発信画面をひとつの机に。企画・開発・表現・販売促進をつなぐ姿勢を伝えます。",
+      "note": "仕事の考え方を表す生成イラストです。机上の画面・資料は制作実績ではありません。",
+      "review": "人物を見せるA03と、道具で伝えるA04のどちらが会社らしいか。併用も可能です。",
+      "alt": {
+        "ja": "ノート、開発用PC、カメラ、商品見本、スマートフォンが並ぶ架空の制作机のイラスト",
+        "en": "An imaginary creative workbench with a notebook, development laptop, camera, product sample and phone"
+      },
+      "variants": [
+        "common"
+      ],
+      "format": "webp",
+      "adoption": "pending-owner-review",
+      "files": [
+        {
+          "variant": "common",
+          "path": "assets/a04-about-workbench.webp",
+          "width": 1586,
+          "height": 992,
+          "bytes": 233222,
+          "sha256": "fef62a50861eb3b8743851b5634c0ee1ef440fc558b56bfc2b05678bef04e06f"
+        }
+      ]
+    },
+    {
+      "id": "A05",
+      "slug": "social-share",
+      "title": "SNS・チャットの共有画像",
+      "place": "URLを共有したときのプレビュー",
+      "kind": "追加候補",
+      "medium": "OGP画像",
+      "priority": true,
+      "description": "MYSTENAの名前と「楽しさをつくる。魅力を届ける。」が、小さなプレビューでも伝わる文字主体の案です。",
+      "note": "日本語・英語それぞれ1200 × 630px。採用後にOGP・Twitter用のメタデータと結び付けます。",
+      "review": "文字を主役にした共有画像の方向でよいか。青・シアンと既存の星形を使っています。",
+      "alt": {
+        "ja": "MYSTENA、楽しさをつくる。魅力を届ける。と記した白と青の共有画像",
+        "en": "MYSTENA social sharing graphic: Create engaging experiences. Bring their appeal to life."
+      },
+      "variants": [
+        "ja",
+        "en"
+      ],
+      "format": "png",
+      "adoption": "pending-owner-review",
+      "files": [
+        {
+          "variant": "ja",
+          "path": "assets/a05-social-share-ja.png",
+          "width": 1200,
+          "height": 630,
+          "bytes": 52986,
+          "sha256": "c75c3d245da0d8f51457c83273c2afc86a17b425f546578a58a976b8db3f4b1b",
+          "svg": "assets/a05-social-share-ja.svg",
+          "editableSvg": "editable/a05-social-share-ja.svg"
+        },
+        {
+          "variant": "en",
+          "path": "assets/a05-social-share-en.png",
+          "width": 1200,
+          "height": 630,
+          "bytes": 58939,
+          "sha256": "fab6f552600ed50fbba443b0dbacbf222c27c80ebaf629c7231c08eede4ea79e",
+          "svg": "assets/a05-social-share-en.svg",
+          "editableSvg": "editable/a05-social-share-en.svg"
+        }
+      ]
+    },
+    {
+      "id": "A06",
+      "slug": "business-concept",
+      "title": "商品と人をつなぐ関係図",
+      "place": "トップ / 現在の取り組み、および事業紹介",
+      "kind": "既存のHTML図への追加案",
+      "medium": "事業の関係図",
+      "description": "事業者、MYSTENAのサービス、新しいものを探す人。その関係を一枚で読める図版に整理しました。",
+      "note": "現行の関係図を基にした構想案です。決済、配送、契約などの未確定の役割は追加していません。",
+      "review": "現行のHTML図から置き換える効果があるか。スマートフォンではHTMLのまま残す選択もできます。",
+      "alt": {
+        "ja": "商品を届ける事業者からMYSTENAのサービスを通じて、新しいものを探す人へつながる構想図",
+        "en": "A concept diagram connecting businesses offering products, MYSTENA’s service and people seeking something new"
+      },
+      "variants": [
+        "ja",
+        "en"
+      ],
+      "format": "webp",
+      "adoption": "pending-owner-review",
+      "files": [
+        {
+          "variant": "ja",
+          "path": "assets/a06-business-concept-ja.webp",
+          "width": 1600,
+          "height": 850,
+          "bytes": 58350,
+          "sha256": "5e5d9d371c2245d760cfc24c003e7d3775e4daeb121c6f47793022fc64039bd4",
+          "svg": "assets/a06-business-concept-ja.svg",
+          "editableSvg": "editable/a06-business-concept-ja.svg"
+        },
+        {
+          "variant": "en",
+          "path": "assets/a06-business-concept-en.webp",
+          "width": 1600,
+          "height": 850,
+          "bytes": 68674,
+          "sha256": "30e9268b8b1b2e61fc2583944d70b53c276e7a75b2f1384a6bf7c0bb1efc6c26",
+          "svg": "assets/a06-business-concept-en.svg",
+          "editableSvg": "editable/a06-business-concept-en.svg"
+        }
+      ]
+    },
+    {
+      "id": "A07",
+      "slug": "video-poster",
+      "title": "サービス紹介動画の表紙",
+      "place": "トップ / 将来のサービス紹介動画の開始前",
+      "kind": "資料で予定されていた素材",
+      "medium": "動画ポスター",
+      "description": "商品との出会いと画面の構想を一緒に見せる表紙案。動画の内容を決めるときの方向確認にも使えます。",
+      "note": "静止画のみの候補です。約20秒の紹介動画と動画プレイヤーは今回制作していません。",
+      "review": "動画を見る前の入り口として適しているか。実動画を制作する場合は、その内容に合わせて仕上げます。",
+      "alt": {
+        "ja": "青いボトルを扱うサービスの構想画面と、紹介動画の再生記号を配した表紙案",
+        "en": "A service video cover concept with an illustrative product interface and a play symbol"
+      },
+      "variants": [
+        "ja",
+        "en"
+      ],
+      "format": "webp",
+      "adoption": "pending-owner-review",
+      "files": [
+        {
+          "variant": "ja",
+          "path": "assets/a07-video-poster-ja.webp",
+          "width": 1600,
+          "height": 900,
+          "bytes": 40144,
+          "sha256": "6286045e5c3ab5d9c2671dd8240f66955dfb1f235c89d9427977e66c3160c327",
+          "svg": "assets/a07-video-poster-ja.svg",
+          "editableSvg": "editable/a07-video-poster-ja.svg"
+        },
+        {
+          "variant": "en",
+          "path": "assets/a07-video-poster-en.webp",
+          "width": 1600,
+          "height": 900,
+          "bytes": 45714,
+          "sha256": "4fe209f21d0af414da000f9a6f73db46f58f1aa0d592bb47dc36e358129a2478",
+          "svg": "assets/a07-video-poster-en.svg",
+          "editableSvg": "editable/a07-video-poster-en.svg"
+        }
+      ]
+    },
+    {
+      "id": "A08",
+      "slug": "brand-keyvisual",
+      "title": "新しい体験へ、窓をひらく",
+      "place": "トップ / ヒーロー静止画・将来のブランド動画の方向案",
+      "kind": "追加のブランド画像候補",
+      "medium": "生成イラスト",
+      "description": "青い窓の向こうへ、商品・UI・映像がつながるイメージ。左側には見出しを重ねられる余白を残しています。",
+      "note": "今回新しく描いたブランド静止画です。既存の別工程Previsや完成動画のフレームではありません。",
+      "review": "現行の抽象的なヒーローから、明るいアニメ調へ寄せる方向が合うか。",
+      "alt": {
+        "ja": "青い窓と架空の水辺の街を背景に、商品、UI、映像のカードが光の線でつながるイラスト",
+        "en": "An imaginary waterfront seen through a blue portal, with product, interface and storyboard cards linked by light"
+      },
+      "variants": [
+        "common"
+      ],
+      "format": "webp",
+      "adoption": "pending-owner-review",
+      "files": [
+        {
+          "variant": "common",
+          "path": "assets/a08-brand-keyvisual.webp",
+          "width": 1600,
+          "height": 900,
+          "bytes": 138810,
+          "sha256": "d0030153e3f10d9cd695ad1675075d4e28806d0957d86bbd90c518ccd2021af8"
+        }
+      ]
+    },
+    {
+      "id": "A09",
+      "slug": "news-template",
+      "title": "ニュースの共通表紙",
+      "place": "ニュース一覧・記事詳細 / 記事を掲載するとき",
+      "kind": "将来の掲載用テンプレート",
+      "medium": "ニュース画像",
+      "description": "記事固有の写真がない場合に使える、文字と星形の共通表紙。日付や架空の記事タイトルは入れていません。",
+      "note": "現在の記事数は0です。採用だけでニュースは増えず、記事画像のデータ項目と表示実装は掲載時に追加します。",
+      "review": "お知らせの共通表紙として使うか。実際の記事がある場合は専用の画像を優先できます。",
+      "alt": {
+        "ja": "NEWS、MYSTENAからのお知らせと記した青い共通表紙",
+        "en": "A blue news cover reading NEWS and Updates from MYSTENA"
+      },
+      "variants": [
+        "ja",
+        "en"
+      ],
+      "format": "png",
+      "adoption": "pending-owner-review",
+      "files": [
+        {
+          "variant": "ja",
+          "path": "assets/a09-news-template-ja.png",
+          "width": 1200,
+          "height": 630,
+          "bytes": 40294,
+          "sha256": "58d66dfb55b60d54a820500bc7b47597f4a6654317d579a4e8577e68dc2361d2",
+          "svg": "assets/a09-news-template-ja.svg",
+          "editableSvg": "editable/a09-news-template-ja.svg"
+        },
+        {
+          "variant": "en",
+          "path": "assets/a09-news-template-en.png",
+          "width": 1200,
+          "height": 630,
+          "bytes": 39839,
+          "sha256": "37294bfac24e66939e0881cd922932a24c134c5b70e06b8dfb3eb36cc3e3df13",
+          "svg": "assets/a09-news-template-en.svg",
+          "editableSvg": "editable/a09-news-template-en.svg"
+        }
+      ]
+    },
+    {
+      "id": "A10",
+      "slug": "wordmark",
+      "title": "既存ワードマークの素材化",
+      "place": "ヘッダー・フッター・動画・外部資料",
+      "kind": "既存の文字と記号のデータ化案",
+      "medium": "ロゴ素材の試作",
+      "description": "現在のMYSTENA文字と星形を、背景が透けるSVG・PNGにしました。明色用と濃色用を確認できます。",
+      "note": "正式なロゴ規定・商標の確定を意味しません。現在のHTMLロゴはそのままです。",
+      "review": "文字と記号の余白、明色・濃色での配色が今後の共通素材としてよいか。",
+      "alt": {
+        "ja": "MYSTENAの既存ワードマークと8方向の星形を組み合わせた素材化案",
+        "en": "A proposed asset export of the existing MYSTENA wordmark and eight-ray spark"
+      },
+      "variants": [
+        "light",
+        "dark"
+      ],
+      "format": "png",
+      "adoption": "pending-owner-review",
+      "files": [
+        {
+          "variant": "light",
+          "path": "assets/a10-wordmark-light.png",
+          "width": 1400,
+          "height": 470,
+          "bytes": 15013,
+          "sha256": "2d4bcbf4d33952ef0a5ad23155080cce654d3d7d73751464a30b5414c1b4292a",
+          "svg": "assets/a10-wordmark-light.svg",
+          "editableSvg": "editable/a10-wordmark-light.svg"
+        },
+        {
+          "variant": "dark",
+          "path": "assets/a10-wordmark-dark.png",
+          "width": 1400,
+          "height": 470,
+          "bytes": 12638,
+          "sha256": "e817ca017004824ab2140c65bdfbc497f709bffcf8e2601b63a58004e1d43c17",
+          "svg": "assets/a10-wordmark-dark.svg",
+          "editableSvg": "editable/a10-wordmark-dark.svg"
+        }
+      ]
+    }
+  ],
+  "deferred": [
+    {
+      "item": "実際のサービス画面",
+      "reason": "公開可能な画面が未提供。今回はA01/A02の構想図を用意。"
+    },
+    {
+      "item": "実際の会社・代表者の写真",
+      "reason": "実素材が未提供。今回はA03の生成イラストを代替候補として用意。"
+    },
+    {
+      "item": "事業02・03・04の制作実績",
+      "reason": "実績として公開できる素材が未提供。採用済みの事業イメージと重複する架空実績は追加しない。"
+    },
+    {
+      "item": "サービス紹介・ブランド動画",
+      "reason": "今回は静止画A07/A08を制作。動画本編・字幕・スマホ専用構図・再生実装は別工程。"
+    },
+    {
+      "item": "提携先ロゴ・共同企画商品の実写真",
+      "reason": "実際の関係と掲載許可が未確認。架空の提携先ロゴは作成しない。"
+    }
+  ]
+}

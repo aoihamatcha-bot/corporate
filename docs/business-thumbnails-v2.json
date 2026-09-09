@@ -1,0 +1,100 @@
+{
+  "createdAt": "2026-09-09T10:50:33.670Z",
+  "generator": "Built-in image_gen",
+  "assetType": "Business concept images of fictional people, workspaces, products and demonstration interfaces, not actual staff or facilities",
+  "optimization": {
+    "library": "sharp",
+    "format": "webp",
+    "quality": 84,
+    "effort": 6,
+    "maximumWidth": 1600,
+    "withoutEnlargement": true,
+    "artworkEditing": "Only built-in image_gen; format conversion uses sharp"
+  },
+  "assets": [
+    {
+      "area": "platform",
+      "id": "platform-a1-v2",
+      "proposal": "platform-a1",
+      "path": "/images/business/platform-a1-v2.webp",
+      "placements": [
+        "card",
+        "detail"
+      ],
+      "selection": "Owner-selected proposal",
+      "format": "webp",
+      "width": 1586,
+      "height": 992,
+      "bytes": 170344,
+      "opaque": true,
+      "sha256": "b6d5b9c6b50569848e77538c2efe28546c83652e02deb738cb530fdb61b7acd7",
+      "sourceFile": "exec-5313954e-1d20-41e1-8f45-5ccc4600d874.png",
+      "sourceSha256": "9049d18bb455f80d59d7e8ab920f8d215a69870b7be596bea67905259e85d6f0",
+      "originalBytes": 2211855,
+      "prompt": "Use case: illustration-story. Create ONE finished landscape 16:10 corporate business thumbnail, one coherent scene, not a contact sheet. Direction A1: sophisticated contemporary Japanese 2D animation background / editorial anime illustration for an adult business audience; clean precise linework, attractive cel shading, realistic adult proportions, carefully drawn props and perspective. Calm luminous daylight, pearl white, sky blue and cobalt accents, restrained lavender, natural skin and product colors. Match a clean blue-and-white MYSTENA corporate website. Business activity MUST be immediately understandable from recognizable objects and actions even at 350px wide; prioritize a large clear main subject and a few specific supporting props. All main objects and people inside central 85% so the artwork can crop between 16:10 and 16:9. FULLY OPAQUE edge-to-edge environment, no alpha or cutout, no abstract glass sculpture, no floating geometric symbols. No text, letters, numbers, titles, watermarks, recognizable brand logos or copyrighted characters. On screens, use large pictorial generic UI shapes and recognizable product images with NO readable text or fabricated statistics. This is an original concept illustration, not a factual depiction of the company's staff, office or launched product.\nScene: engaging online shopping. Three-quarter view of a bright home desk. A smiling Japanese adult customer in their late twenties selects a product on a clearly visible large open laptop. The laptop display is prominent, showing a clean shop product grid with unbranded headphones, a colorful insulated bottle and a canvas tote bag, and a simple shopping-bag/cart icon in the corner. On the real desk next to the laptop sit one open blue-and-white delivery box, the same headphones, tissue wrapping and the bottle. The customer's natural interaction, visible webshop and received products should tell the complete story instantly. Slight celebratory energy in expression, not confetti or a fantastical scene. No retail cash register, casino, coins or gaming cards."
+    },
+    {
+      "area": "systems",
+      "id": "systems-programming-v2",
+      "proposal": null,
+      "path": "/images/business/systems-programming-v2.webp",
+      "placements": [
+        "card",
+        "detail"
+      ],
+      "selection": "New 2D programming and UI development scene requested by Owner",
+      "format": "webp",
+      "width": 1586,
+      "height": 992,
+      "bytes": 200176,
+      "opaque": true,
+      "sha256": "c4a45d27a8608aab472651a8c412fb1cf3ad03a709c02a2418ade5591f7d7270",
+      "sourceFile": "exec-74bc1afd-e850-45fa-9768-f5bfc84cc26b.png",
+      "sourceSha256": "0bfd7e87043a224773db18c538a3cc8fed93d1a389cf3234ecad0048847459af",
+      "originalBytes": 2088816,
+      "prompt": "Use case: illustration-story.\nAsset type: ONE finished landscape 16:10 thumbnail for the MYSTENA corporate website, business area 02 Service and System Development. One coherent scene, not a collage.\nPrimary request: A clearly recognizable PROGRAMMING AND WEB UI DEVELOPMENT scene in sophisticated contemporary Japanese 2D anime/editorial illustration. The viewer must immediately understand that the people are writing code and building a user interface, even at 350px thumbnail width.\nScene and subject: In a bright small software studio, an adult developer sits at a white desk actively typing on a keyboard. Another adult UI developer collaborates beside them, naturally indicating the interface preview. The large desktop monitor is the main visual anchor, occupying much of the composition with its screen clearly visible. The display is divided into a dark navy code editor containing multiple indented lines of multicolored HTML/TypeScript-like source code with obvious angle brackets, braces, function declarations and component nesting, and a light live web application preview beside it. The preview shows a thoughtfully designed blue sidebar, navigation, a form with inputs and a primary blue button, and a few modular interface cards. A smaller tablet on the desk displays a mobile version of that same interface. Include a few paper wireframe sketches and a pen. Make the link between source code and the developed UI unmistakable. Do not show product inventory, online shopping screens, parcels, sales charts, floating holograms or abstract geometric sculptures.\nStyle and medium: refined hand-drawn 2D Japanese animation illustration, clean precise linework and cel shading, carefully drawn hands, believable adult proportions, polished anime character faces, coherent perspective, quietly focused working mood. Not 3D, not photorealistic. Match a cohesive corporate series with white rooms, daylight windows, blue garments, restrained lavender accents, and subtle green plants. White, sky blue and cobalt are the main palette, with natural skin and wood accents. Clear shapes and limited visual clutter.\nFraming: Landscape 16:10, prominent screen and developer hands kept within the central 85 percent for safe 16:9 crop. Slight three-quarter view so code screen, interface screen and developer activity are all legible as visual subjects. Avoid camera angles that hide the displays behind heads.\nConstraints: Fully opaque edge-to-edge scene with a complete pale studio background; no transparent areas. No title, caption, watermark, recognizable brand logos or copyrighted characters. Source code syntax on screens is permitted and needed, but no personal information, passwords or promotional claims. Fictional people, workspace and demonstration software; this is a business concept image, not an actual company office photograph."
+    },
+    {
+      "area": "creative",
+      "id": "creative-r2-v2",
+      "proposal": "creative-r2",
+      "path": "/images/business/creative-r2-v2.webp",
+      "placements": [
+        "card",
+        "detail"
+      ],
+      "selection": "Owner-selected proposal",
+      "format": "webp",
+      "width": 1586,
+      "height": 992,
+      "bytes": 113540,
+      "opaque": true,
+      "sha256": "1c5974f6fb8830b5ad53a9f79bb643b5dbaddf9af6a653e85fd720c913196f5c",
+      "sourceFile": "exec-e41eb68c-10e3-4341-a9d1-b57ef1638614.png",
+      "sourceSha256": "a2072b04a9234b671092fa9e592c46a366308ef7650b94f977f96e2ef5a5df6c",
+      "originalBytes": 1858400,
+      "prompt": "Use case: photorealistic-natural. Create ONE landscape 16:10 commercial editorial still photograph for a refined Japanese corporate website. Direction R2: concrete tools-and-products composition, tight art-directed documentary detail without a prominent face. Real materials, natural hands if needed, optically plausible equipment, polished but believable bright studio daylight. Dominant pearl white, ice blue and cobalt accents with natural colors and subtle lavender; clearly matches a calm blue-and-white technology/entertainment company. The job must be unmistakable at a small thumbnail: important props large, clutter removed, one clear story. Keep defining objects in central 85% to permit 16:9 cropping. FULL opaque full-bleed photographic environment, no alpha, no cutout, no abstract sculpture, no floating interfaces or infographic overlays. No text, lettering, numbers, brands, logos, watermarks or identifiable copyrighted products. Devices display generic pictorial demo layouts and original images with no legible writing or fabricated stats. The scene is an illustrative generated concept, not real company evidence.\nScene: close realistic product-video production workstation. A professional unbranded mirrorless camera and lens on a compact tripod dominate the foreground, visibly pointing toward a blue bottle on a small lit white tabletop stage. The camera's rear screen shows the same bottle. Immediately beside it, a clearly visible larger monitor displays that same shot in a video preview with colored editing timeline strips below. A rectangular softbox edge and a clean reflector give unmistakable production-set context. An adult operator's hand is lightly adjusting the lens; no face required. Realistic cable routing, plausible lens orientation, professional equipment textures and a tidy small studio. The scene must be readable as filming plus video editing rather than a generic photography equipment advertisement."
+    },
+    {
+      "area": "marketing",
+      "id": "marketing-a1-v2",
+      "proposal": "marketing-a1",
+      "path": "/images/business/marketing-a1-v2.webp",
+      "placements": [
+        "card",
+        "detail"
+      ],
+      "selection": "Owner-selected proposal",
+      "format": "webp",
+      "width": 1586,
+      "height": 992,
+      "bytes": 174054,
+      "opaque": true,
+      "sha256": "8b157bacdd3c7f55b20cc9f4d7f535bced91531e77684c998c110427cf0f159c",
+      "sourceFile": "exec-f37af2c5-813b-4f73-bdaf-f1c50d47b9e5.png",
+      "sourceSha256": "49fdad739161d6938db771dcea73a6c0ae58261e8426cfebde900bdb92715700",
+      "originalBytes": 2151891,
+      "prompt": "Use case: illustration-story. Create ONE finished landscape 16:10 corporate business thumbnail, one coherent scene, not a contact sheet. Direction A1: sophisticated contemporary Japanese 2D animation background / editorial anime illustration for an adult business audience; clean precise linework, attractive cel shading, realistic adult proportions, carefully drawn props and perspective. Calm luminous daylight, pearl white, sky blue and cobalt accents, restrained lavender, natural skin and product colors. Match a clean blue-and-white MYSTENA corporate website. Business activity MUST be immediately understandable from recognizable objects and actions even at 350px wide; prioritize a large clear main subject and a few specific supporting props. All main objects and people inside central 85% so the artwork can crop between 16:10 and 16:9. FULLY OPAQUE edge-to-edge environment, no alpha or cutout, no abstract glass sculpture, no floating geometric symbols. No text, letters, numbers, titles, watermarks, recognizable brand logos or copyrighted characters. On screens, use large pictorial generic UI shapes and recognizable product images with NO readable text or fabricated statistics. This is an original concept illustration, not a factual depiction of the company's staff, office or launched product.\nScene: influencer and brand collaboration on a product launch. In a bright small content studio, an adult Japanese creator in their late twenties demonstrates an unbranded sky-blue reusable bottle toward a smartphone mounted vertically on a tripod, framed by a restrained ring light. An adult brand collaborator beside them discusses a matching limited-edition box and a few blue packaging/color samples on the table. A laptop in the foreground displays a generic social campaign planning board of image tiles with the same bottle; no text, numbers or analytics. Main anchors are creator holding the product, smartphone production setup, and two people collaborating on branded product packaging. This must clearly say influencer collaboration and promotion, distinct from a camera-led film production scene. Professional and friendly, no glamor posing, no handshake, no advertising logos."
+    }
+  ]
+}

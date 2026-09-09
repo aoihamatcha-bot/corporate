@@ -19,7 +19,8 @@ import {
   type TranslationAvailability,
 } from "@/content/i18n";
 import { LanguageSwitcher } from "./language-switcher";
-import { Arrow, Spark } from "@/components/icons";
+import { Arrow } from "@/components/icons";
+import { Wordmark } from "@/components/wordmark";
 import { MotionControl } from "@/components/motion/motion-control";
 import { motionToken } from "@/components/motion/tokens";
 import { RevealText } from "@/components/motion/reveal-text";
@@ -209,8 +210,7 @@ export function Header({
     <>
       <header className="site-header">
         <Link href={home} className="wordmark" aria-label={labels.homeLink}>
-          <RevealText kind="utility">MYSTENA</RevealText>
-          <Spark />
+          <Wordmark />
         </Link>
         <nav className="header-shortcuts" aria-label={labels.primaryNav}>
           {navigation
@@ -277,8 +277,7 @@ export function Header({
             onClick={(e) => navigate(e, home)}
             aria-label={labels.homeLink}
           >
-            <MenuInk kind="utility">MYSTENA</MenuInk>
-            <Spark />
+            <Wordmark menu />
           </Link>
           <button
             type="button"

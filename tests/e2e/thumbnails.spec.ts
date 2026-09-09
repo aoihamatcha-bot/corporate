@@ -1,6 +1,11 @@
 import { test, expect, type Locator } from "@playwright/test";
 
-const areas = ["platform", "systems", "creative", "marketing"];
+const selectedAssets = [
+  "platform-a1-v2.webp",
+  "systems-programming-v2.webp",
+  "creative-r2-v2.webp",
+  "marketing-a1-v2.webp",
+];
 
 async function expectStatic(image: Locator) {
   await expect(image).toHaveAttribute("data-image-trigger", "hover");
@@ -14,7 +19,7 @@ async function expectStatic(image: Locator) {
   await expect(image.locator(".image-echo")).toHaveCSS("opacity", "0");
 }
 
-test("all eight business images load in both languages and stay static on scroll", async ({
+test("four selected assets load in all eight business placements in both languages and stay static on scroll", async ({
   page,
 }) => {
   const sources = new Set<string>();
@@ -29,7 +34,7 @@ test("all eight business images load in both languages and stay static on scroll
         detail ? ".business-detail-visual" : ".business-visual",
       );
       await expect(visuals).toHaveCount(4);
-      for (const [index, area] of areas.entries()) {
+      for (const [index, fileName] of selectedAssets.entries()) {
         const image = visuals.nth(index);
         await image.scrollIntoViewIfNeeded();
         const img = image.locator("img");
@@ -38,10 +43,7 @@ test("all eight business images load in both languages and stay static on scroll
           .toBeGreaterThan(0);
         await img.evaluate((el: HTMLImageElement) => el.decode());
         await expectStatic(image);
-        const asset =
-          "/images/business/" +
-          area +
-          (detail ? "-detail-v1.webp" : "-card-v1.webp");
+        const asset = "/images/business/" + fileName;
         const src = await img.getAttribute("src");
         expect(src).toContain(encodeURIComponent(asset));
         sources.add(asset);
@@ -58,7 +60,8 @@ test("all eight business images load in both languages and stay static on scroll
       await expectStatic(visuals.first());
     }
   }
-  expect(sources.size).toBe(8);
+  // One selected image per area is shared by its card and detail placement.
+  expect(sources.size).toBe(4);
   expect(new Set(alts.ja).size).toBe(8);
   expect(new Set(alts.en).size).toBe(8);
   expect(alts.en).not.toEqual(alts.ja);

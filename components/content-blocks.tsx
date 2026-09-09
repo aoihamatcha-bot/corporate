@@ -8,6 +8,7 @@ import { Scene } from "@/components/motion/scene";
 import { Arrow } from "@/components/icons";
 import { DraftBadge, SectionLabel, TextLink } from "@/components/editorial";
 import Link from "@/components/site-link";
+import { CorporateImage } from "@/components/corporate-image";
 
 export function BusinessCards({ locale }: { locale: Locale }) {
   const c = getDictionary(locale);
@@ -62,14 +63,10 @@ export function ConceptDiagram({ locale }: { locale: Locale }) {
           <RevealText kind="body">{c.diagram.caption}</RevealText>
         </p>
       </figcaption>
+      <CorporateImage id="A06" locale={locale} sizes="90vw" expandable />
       <ul className="concept-nodes">
         {c.diagram.nodes.map((node, i) => (
           <li key={node.title}>
-            <span className="concept-symbol" aria-hidden="true">
-              <i />
-              <i />
-              <i />
-            </span>
             <span className="concept-index">
               <RevealText kind="label">
                 {String(i + 1).padStart(2, "0")}
@@ -87,25 +84,29 @@ export function ConceptDiagram({ locale }: { locale: Locale }) {
     </figure>
   );
 }
-export function MaterialSlots({ locale }: { locale: Locale }) {
+export function ServiceConcepts({ locale }: { locale: Locale }) {
   const c = getDictionary(locale);
   return (
     <div className="material-section">
       <div className="material-slots">
-        {c.assets.slots.map((slot) => (
-          <div className="material-slot" key={slot.label}>
-            <SectionLabel>{slot.label}</SectionLabel>
-            <div className="material-symbol" aria-hidden="true">
-              <span />
-              <span />
-            </div>
-            <h3>
-              <RevealText kind="subtitle">{slot.title}</RevealText>
-            </h3>
-            <p>
-              <RevealText kind="body">{slot.description}</RevealText>
-            </p>
-          </div>
+        {c.assets.slots.map((slot, index) => (
+          <figure className="material-slot" key={slot.label}>
+            <CorporateImage
+              id={index === 0 ? "A01" : "A02"}
+              locale={locale}
+              sizes="(max-width: 700px) 90vw, 44vw"
+              expandable
+            />
+            <figcaption>
+              <SectionLabel>{slot.label}</SectionLabel>
+              <h3>
+                <RevealText kind="subtitle">{slot.title}</RevealText>
+              </h3>
+              <p>
+                <RevealText kind="body">{slot.description}</RevealText>
+              </p>
+            </figcaption>
+          </figure>
         ))}
       </div>
       <p className="editorial-note">
@@ -178,7 +179,19 @@ export function CurrentWork({ locale }: { locale: Locale }) {
           </div>
         </div>
         <ConceptDiagram locale={locale} />
-        <MaterialSlots locale={locale} />
+        <ServiceConcepts locale={locale} />
+        <figure className="service-poster">
+          <CorporateImage id="A07" locale={locale} expandable />
+          <figcaption>
+            <SectionLabel>{c.assets.posterLabel}</SectionLabel>
+            <h3>
+              <RevealText kind="subtitle">{c.assets.posterTitle}</RevealText>
+            </h3>
+            <p>
+              <RevealText kind="body">{c.assets.posterNote}</RevealText>
+            </p>
+          </figcaption>
+        </figure>
       </div>
     </section>
   );

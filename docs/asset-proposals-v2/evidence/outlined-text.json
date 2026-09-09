@@ -1,0 +1,835 @@
+[
+  {
+    "file": "docs/asset-proposals-v2/assets/a01-service-overview-en.svg",
+    "textCount": 20,
+    "missingGlyphs": [],
+    "text": [
+      {
+        "text": "01 / ENTERTAINMENT COMMERCE",
+        "width": 418.7,
+        "font": "700"
+      },
+      {
+        "text": "A new way to discover collectibles.",
+        "width": 965.8,
+        "font": "700"
+      },
+      {
+        "text": "An entertainment commerce concept built around mystery boxes.",
+        "width": 802.0,
+        "font": "400"
+      },
+      {
+        "text": "MYSTENA",
+        "width": 131.3,
+        "font": "logo"
+      },
+      {
+        "text": "Mystery boxes",
+        "width": 156.5,
+        "font": "700"
+      },
+      {
+        "text": "Product information",
+        "width": 183.5,
+        "font": "400"
+      },
+      {
+        "text": "Open a new collection.",
+        "width": 370.3,
+        "font": "700"
+      },
+      {
+        "text": "Start with categories and product details.",
+        "width": 424.0,
+        "font": "400"
+      },
+      {
+        "text": "Explore the box",
+        "width": 151.7,
+        "font": "700"
+      },
+      {
+        "text": "Trading cards",
+        "width": 173.8,
+        "font": "700"
+      },
+      {
+        "text": "",
+        "width": 0.0,
+        "font": "700"
+      },
+      {
+        "text": "Collectible discoveries",
+        "width": 178.1,
+        "font": "400"
+      },
+      {
+        "text": "Designer fashion",
+        "width": 206.9,
+        "font": "700"
+      },
+      {
+        "text": "",
+        "width": 0.0,
+        "font": "700"
+      },
+      {
+        "text": "A considered sense of style",
+        "width": 220.0,
+        "font": "400"
+      },
+      {
+        "text": "Precision devices",
+        "width": 211.7,
+        "font": "700"
+      },
+      {
+        "text": "",
+        "width": 0.0,
+        "font": "700"
+      },
+      {
+        "text": "Appreciate the details",
+        "width": 179.1,
+        "font": "400"
+      },
+      {
+        "text": "CONCEPT / Products and categories are illustrative. The actual offering will be published once confirmed.",
+        "width": 1078.0,
+        "font": "400"
+      },
+      {
+        "text": "MYSTENA",
+        "width": 106.0,
+        "font": "logo"
+      }
+    ]
+  },
+  {
+    "file": "docs/asset-proposals-v2/assets/a01-service-overview-ja.svg",
+    "textCount": 20,
+    "missingGlyphs": [],
+    "text": [
+      {
+        "text": "01 / ENTERTAINMENT COMMERCE",
+        "width": 418.7,
+        "font": "700"
+      },
+      {
+        "text": "コレクションとの、新しい出会い。",
+        "width": 816.0,
+        "font": "700"
+      },
+      {
+        "text": "ミステリーボックスを通じた、エンタメECの構想。",
+        "width": 563.1,
+        "font": "400"
+      },
+      {
+        "text": "MYSTENA",
+        "width": 131.3,
+        "font": "logo"
+      },
+      {
+        "text": "ミステリーボックス",
+        "width": 180.0,
+        "font": "700"
+      },
+      {
+        "text": "商品情報",
+        "width": 72.0,
+        "font": "400"
+      },
+      {
+        "text": "コレクションをひらく。",
+        "width": 330.0,
+        "font": "700"
+      },
+      {
+        "text": "カテゴリと商品情報から選ぶ。",
+        "width": 308.0,
+        "font": "400"
+      },
+      {
+        "text": "ボックスについて知る",
+        "width": 180.0,
+        "font": "700"
+      },
+      {
+        "text": "トレーディング",
+        "width": 168.0,
+        "font": "700"
+      },
+      {
+        "text": "カード",
+        "width": 72.0,
+        "font": "700"
+      },
+      {
+        "text": "コレクティブな出会い",
+        "width": 180.0,
+        "font": "400"
+      },
+      {
+        "text": "ブランド",
+        "width": 96.0,
+        "font": "700"
+      },
+      {
+        "text": "ファッション",
+        "width": 144.0,
+        "font": "700"
+      },
+      {
+        "text": "装いに、こだわりを",
+        "width": 162.0,
+        "font": "400"
+      },
+      {
+        "text": "精密機器",
+        "width": 96.0,
+        "font": "700"
+      },
+      {
+        "text": "",
+        "width": 0.0,
+        "font": "700"
+      },
+      {
+        "text": "ディテールを楽しむ",
+        "width": 162.0,
+        "font": "400"
+      },
+      {
+        "text": "構想図 / 商品・カテゴリは説明用のイメージです。実際の取扱商品・提供内容は確定後に掲載します。",
+        "width": 922.9,
+        "font": "400"
+      },
+      {
+        "text": "MYSTENA",
+        "width": 106.0,
+        "font": "logo"
+      }
+    ]
+  },
+  {
+    "file": "docs/asset-proposals-v2/assets/a02-experience-flow-en.svg",
+    "textCount": 21,
+    "missingGlyphs": [],
+    "text": [
+      {
+        "text": "02 / MYSTERY BOX EXPERIENCE",
+        "width": 392.6,
+        "font": "700"
+      },
+      {
+        "text": "Understand. Choose. Open.",
+        "width": 813.2,
+        "font": "700"
+      },
+      {
+        "text": "A considered introduction to the mystery box experience.",
+        "width": 754.1,
+        "font": "400"
+      },
+      {
+        "text": "01",
+        "width": 21.4,
+        "font": "700"
+      },
+      {
+        "text": "Review details",
+        "width": 239.7,
+        "font": "700"
+      },
+      {
+        "text": "Product details & terms",
+        "width": 242.5,
+        "font": "700"
+      },
+      {
+        "text": "Review the details",
+        "width": 147.4,
+        "font": "700"
+      },
+      {
+        "text": "Review the information",
+        "width": 314.3,
+        "font": "700"
+      },
+      {
+        "text": "Understand the category and terms",
+        "width": 346.8,
+        "font": "400"
+      },
+      {
+        "text": "02",
+        "width": 25.1,
+        "font": "700"
+      },
+      {
+        "text": "Open the box",
+        "width": 227.0,
+        "font": "700"
+      },
+      {
+        "text": "Opening concept",
+        "width": 147.9,
+        "font": "400"
+      },
+      {
+        "text": "Open the selected box",
+        "width": 303.3,
+        "font": "700"
+      },
+      {
+        "text": "A calm, simple reveal",
+        "width": 205.6,
+        "font": "400"
+      },
+      {
+        "text": "03",
+        "width": 25.1,
+        "font": "700"
+      },
+      {
+        "text": "View the item",
+        "width": 231.3,
+        "font": "700"
+      },
+      {
+        "text": "Example revealed item",
+        "width": 196.0,
+        "font": "400"
+      },
+      {
+        "text": "Explore the revealed item",
+        "width": 345.2,
+        "font": "700"
+      },
+      {
+        "text": "Learn about the item’s details",
+        "width": 289.7,
+        "font": "400"
+      },
+      {
+        "text": "CONCEPT / Illustrative products, screens and flow. Actual offerings and opening details are unconfirmed.",
+        "width": 1127.2,
+        "font": "400"
+      },
+      {
+        "text": "MYSTENA",
+        "width": 106.0,
+        "font": "logo"
+      }
+    ]
+  },
+  {
+    "file": "docs/asset-proposals-v2/assets/a02-experience-flow-ja.svg",
+    "textCount": 21,
+    "missingGlyphs": [],
+    "text": [
+      {
+        "text": "02 / MYSTERY BOX EXPERIENCE",
+        "width": 392.6,
+        "font": "700"
+      },
+      {
+        "text": "知って、選んで、ひらく。",
+        "width": 660.0,
+        "font": "700"
+      },
+      {
+        "text": "ミステリーボックスの開封体験を、丁寧に。",
+        "width": 520.0,
+        "font": "400"
+      },
+      {
+        "text": "01",
+        "width": 21.4,
+        "font": "700"
+      },
+      {
+        "text": "確認する",
+        "width": 136.0,
+        "font": "700"
+      },
+      {
+        "text": "商品情報・提供条件",
+        "width": 189.0,
+        "font": "700"
+      },
+      {
+        "text": "内容を確認する",
+        "width": 105.0,
+        "font": "700"
+      },
+      {
+        "text": "商品情報と条件を確認",
+        "width": 260.0,
+        "font": "700"
+      },
+      {
+        "text": "カテゴリ・内容・条件を知る",
+        "width": 273.0,
+        "font": "400"
+      },
+      {
+        "text": "02",
+        "width": 25.1,
+        "font": "700"
+      },
+      {
+        "text": "開封する",
+        "width": 136.0,
+        "font": "700"
+      },
+      {
+        "text": "開封のイメージ",
+        "width": 119.0,
+        "font": "400"
+      },
+      {
+        "text": "選んだボックスを開く",
+        "width": 260.0,
+        "font": "700"
+      },
+      {
+        "text": "落ち着いた開封の演出",
+        "width": 210.0,
+        "font": "400"
+      },
+      {
+        "text": "03",
+        "width": 25.1,
+        "font": "700"
+      },
+      {
+        "text": "内容を見る",
+        "width": 170.0,
+        "font": "700"
+      },
+      {
+        "text": "開封内容の例",
+        "width": 102.0,
+        "font": "400"
+      },
+      {
+        "text": "開封した商品の情報を見る",
+        "width": 312.0,
+        "font": "700"
+      },
+      {
+        "text": "商品の特徴を確認する",
+        "width": 210.0,
+        "font": "400"
+      },
+      {
+        "text": "構想図 / 商品・画面・手順は検討用です。実際の提供内容・開封仕様は確定後に反映します。",
+        "width": 885.0,
+        "font": "400"
+      },
+      {
+        "text": "MYSTENA",
+        "width": 106.0,
+        "font": "logo"
+      }
+    ]
+  },
+  {
+    "file": "docs/asset-proposals-v2/assets/a05-social-share-en.svg",
+    "textCount": 6,
+    "missingGlyphs": [],
+    "text": [
+      {
+        "text": "MYSTENA",
+        "width": 186.8,
+        "font": "logo"
+      },
+      {
+        "text": "Entertainment × Technology",
+        "width": 265.8,
+        "font": "400"
+      },
+      {
+        "text": "Create engaging",
+        "width": 499.1,
+        "font": "700"
+      },
+      {
+        "text": "experiences.",
+        "width": 365.1,
+        "font": "700"
+      },
+      {
+        "text": "Bring their appeal to life.",
+        "width": 538.4,
+        "font": "700"
+      },
+      {
+        "text": "Planning · Development · Creative · Promotion",
+        "width": 474.5,
+        "font": "400"
+      }
+    ]
+  },
+  {
+    "file": "docs/asset-proposals-v2/assets/a05-social-share-ja.svg",
+    "textCount": 5,
+    "missingGlyphs": [],
+    "text": [
+      {
+        "text": "MYSTENA",
+        "width": 186.8,
+        "font": "logo"
+      },
+      {
+        "text": "Entertainment × Technology",
+        "width": 265.8,
+        "font": "400"
+      },
+      {
+        "text": "楽しさをつくる。",
+        "width": 520.0,
+        "font": "700"
+      },
+      {
+        "text": "魅力を届ける。",
+        "width": 455.0,
+        "font": "700"
+      },
+      {
+        "text": "企画・開発・表現・販売促進",
+        "width": 312.0,
+        "font": "400"
+      }
+    ]
+  },
+  {
+    "file": "docs/asset-proposals-v2/assets/a06-business-concept-en.svg",
+    "textCount": 13,
+    "missingGlyphs": [],
+    "text": [
+      {
+        "text": "06 / BUSINESS CONCEPT",
+        "width": 302.7,
+        "font": "700"
+      },
+      {
+        "text": "Connect products and people through enjoyment.",
+        "width": 1105.9,
+        "font": "700"
+      },
+      {
+        "text": "Entertainment commerce concept",
+        "width": 433.0,
+        "font": "400"
+      },
+      {
+        "text": "MYSTENA",
+        "width": 277.7,
+        "font": "logo"
+      },
+      {
+        "text": "Entertainment",
+        "width": 186.1,
+        "font": "700"
+      },
+      {
+        "text": "× Technology",
+        "width": 182.7,
+        "font": "700"
+      },
+      {
+        "text": "Businesses with products",
+        "width": 338.6,
+        "font": "700"
+      },
+      {
+        "text": "The appeal of products and content",
+        "width": 349.9,
+        "font": "400"
+      },
+      {
+        "text": "MYSTENA’s service",
+        "width": 260.4,
+        "font": "700"
+      },
+      {
+        "text": "Designing discovery and the reveal",
+        "width": 336.2,
+        "font": "400"
+      },
+      {
+        "text": "People discovering collectibles",
+        "width": 411.7,
+        "font": "700"
+      },
+      {
+        "text": "Learn about products and enjoy opening",
+        "width": 394.0,
+        "font": "400"
+      },
+      {
+        "text": "CONCEPT / Proposed audiences and value; the actual business scope awaits confirmation.",
+        "width": 1020.1,
+        "font": "400"
+      }
+    ]
+  },
+  {
+    "file": "docs/asset-proposals-v2/assets/a06-business-concept-ja.svg",
+    "textCount": 13,
+    "missingGlyphs": [],
+    "text": [
+      {
+        "text": "06 / BUSINESS CONCEPT",
+        "width": 302.7,
+        "font": "700"
+      },
+      {
+        "text": "商品と人の間に、楽しさを。",
+        "width": 624.0,
+        "font": "700"
+      },
+      {
+        "text": "エンターテインメントECの関係図",
+        "width": 386.5,
+        "font": "400"
+      },
+      {
+        "text": "MYSTENA",
+        "width": 277.7,
+        "font": "logo"
+      },
+      {
+        "text": "Entertainment",
+        "width": 186.1,
+        "font": "700"
+      },
+      {
+        "text": "× Technology",
+        "width": 182.7,
+        "font": "700"
+      },
+      {
+        "text": "商品を届ける事業者",
+        "width": 261.0,
+        "font": "700"
+      },
+      {
+        "text": "商品・コンテンツの魅力",
+        "width": 242.0,
+        "font": "400"
+      },
+      {
+        "text": "MYSTENAのサービス",
+        "width": 304.0,
+        "font": "700"
+      },
+      {
+        "text": "出会いと開封体験を設計",
+        "width": 242.0,
+        "font": "400"
+      },
+      {
+        "text": "新しいものを探す人",
+        "width": 261.0,
+        "font": "700"
+      },
+      {
+        "text": "商品を知る・開封を楽しむ",
+        "width": 264.0,
+        "font": "400"
+      },
+      {
+        "text": "構想図 / 対象と価値の関係を示した案です。実際の事業範囲は確認中です。",
+        "width": 751.2,
+        "font": "400"
+      }
+    ]
+  },
+  {
+    "file": "docs/asset-proposals-v2/assets/a07-video-poster-en.svg",
+    "textCount": 9,
+    "missingGlyphs": [],
+    "text": [
+      {
+        "text": "MYSTENA",
+        "width": 217.1,
+        "font": "logo"
+      },
+      {
+        "text": "MYSTERY BOX / SERVICE CONCEPT",
+        "width": 437.2,
+        "font": "700"
+      },
+      {
+        "text": "Discover collectibles.",
+        "width": 621.3,
+        "font": "700"
+      },
+      {
+        "text": "Open a mystery box.",
+        "width": 629.8,
+        "font": "700"
+      },
+      {
+        "text": "From product details to the opening.",
+        "width": 503.4,
+        "font": "400"
+      },
+      {
+        "text": "Mystery box concept",
+        "width": 216.4,
+        "font": "700"
+      },
+      {
+        "text": "Service introduction · cover concept",
+        "width": 490.6,
+        "font": "700"
+      },
+      {
+        "text": "CONCEPT / Illustrative products and UI. The service video has not been produced.",
+        "width": 922.7,
+        "font": "400"
+      },
+      {
+        "text": "MYSTENA",
+        "width": 106.0,
+        "font": "logo"
+      }
+    ]
+  },
+  {
+    "file": "docs/asset-proposals-v2/assets/a07-video-poster-ja.svg",
+    "textCount": 9,
+    "missingGlyphs": [],
+    "text": [
+      {
+        "text": "MYSTENA",
+        "width": 217.1,
+        "font": "logo"
+      },
+      {
+        "text": "MYSTERY BOX / SERVICE CONCEPT",
+        "width": 437.2,
+        "font": "700"
+      },
+      {
+        "text": "コレクションに出会う。",
+        "width": 583.0,
+        "font": "700"
+      },
+      {
+        "text": "ボックスをひらく。",
+        "width": 495.0,
+        "font": "700"
+      },
+      {
+        "text": "商品情報から、開封体験まで。",
+        "width": 378.0,
+        "font": "400"
+      },
+      {
+        "text": "ミステリーボックスの構想",
+        "width": 228.0,
+        "font": "700"
+      },
+      {
+        "text": "サービス紹介・表紙案",
+        "width": 280.0,
+        "font": "700"
+      },
+      {
+        "text": "構想図 / 商品と画面はイメージです。動画本編は未制作です。",
+        "width": 619.2,
+        "font": "400"
+      },
+      {
+        "text": "MYSTENA",
+        "width": 106.0,
+        "font": "logo"
+      }
+    ]
+  },
+  {
+    "file": "docs/asset-proposals-v2/assets/a09-news-template-en.svg",
+    "textCount": 4,
+    "missingGlyphs": [],
+    "text": [
+      {
+        "text": "MYSTENA",
+        "width": 181.8,
+        "font": "logo"
+      },
+      {
+        "text": "NEWS",
+        "width": 451.6,
+        "font": "700"
+      },
+      {
+        "text": "Updates from MYSTENA",
+        "width": 490.6,
+        "font": "700"
+      },
+      {
+        "text": "Entertainment × Technology",
+        "width": 324.9,
+        "font": "400"
+      }
+    ]
+  },
+  {
+    "file": "docs/asset-proposals-v2/assets/a09-news-template-ja.svg",
+    "textCount": 4,
+    "missingGlyphs": [],
+    "text": [
+      {
+        "text": "MYSTENA",
+        "width": 181.8,
+        "font": "logo"
+      },
+      {
+        "text": "NEWS",
+        "width": 451.6,
+        "font": "700"
+      },
+      {
+        "text": "MYSTENAからのお知らせ",
+        "width": 461.9,
+        "font": "700"
+      },
+      {
+        "text": "Entertainment × Technology",
+        "width": 324.9,
+        "font": "400"
+      }
+    ]
+  },
+  {
+    "file": "docs/asset-proposals-v2/assets/a10-wordmark-dark.svg",
+    "textCount": 1,
+    "missingGlyphs": [],
+    "text": [
+      {
+        "text": "MYSTENA",
+        "width": 858.3,
+        "font": "logo"
+      }
+    ]
+  },
+  {
+    "file": "docs/asset-proposals-v2/assets/a10-wordmark-light.svg",
+    "textCount": 1,
+    "missingGlyphs": [],
+    "text": [
+      {
+        "text": "MYSTENA",
+        "width": 858.3,
+        "font": "logo"
+      }
+    ]
+  }
+]

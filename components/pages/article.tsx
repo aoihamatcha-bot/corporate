@@ -4,6 +4,7 @@ import { TextLink } from "@/components/editorial";
 import { publishedArticle } from "@/content/news";
 import { getDictionary } from "@/content/dictionaries";
 import { localizedPath, type Locale } from "@/content/i18n";
+import { CorporateImage } from "@/components/corporate-image";
 export function ArticlePage({
   locale,
   slug,
@@ -28,6 +29,7 @@ export function ArticlePage({
       <h1 tabIndex={-1}>
         <RevealText>{article.title}</RevealText>
       </h1>
+      <CorporateImage id="A09" locale={locale} className="news-cover" />
       <div className="prose">
         {article.body.map((p, i) => (
           <p key={i}>

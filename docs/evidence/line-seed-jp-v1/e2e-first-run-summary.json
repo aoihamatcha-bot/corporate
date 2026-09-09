@@ -1,0 +1,29 @@
+{
+  "stats": {
+    "startTime": "2026-09-09T11:36:13.202Z",
+    "duration": 167032.981,
+    "expected": 83,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  },
+  "failures": [
+    {
+      "title": "menu traps Tab and Shift+Tab, closes with Escape and restores scroll and focus",
+      "file": "site.spec.ts",
+      "line": 38,
+      "project": "webkit-mobile",
+      "status": "unexpected",
+      "errors": [
+        {
+          "location": {
+            "file": "C:\\Users\\taisa\\Desktop\\corporate-content-ja-en-v1\\tests\\e2e\\site.spec.ts",
+            "column": 6,
+            "line": 69
+          },
+          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeCloseTo\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m, \u001b[22mprecision\u001b[2m)\u001b[22m\n\nExpected: \u001b[32m650\u001b[39m\nReceived: \u001b[31m649\u001b[39m\n\nExpected precision:    0\nExpected difference: < \u001b[32m0.5\u001b[39m\nReceived difference:   \u001b[31m1\u001b[39m\n\nCall Log:\n- Timeout 10000ms exceeded while waiting on the predicate\n\n  67 |   await expect\n  68 |     .poll(() => page.evaluate(() => Math.abs(scrollY)))\n> 69 |     .toBeCloseTo(originalY, 0);\n     |      ^\n  70 |   expect(await page.evaluate(() => document.body.style.position)).toBe(\"\");\n  71 | });\n  72 |\n    at C:\\Users\\taisa\\Desktop\\corporate-content-ja-en-v1\\tests\\e2e\\site.spec.ts:69:6"
+        }
+      ]
+    }
+  ]
+}

@@ -17,13 +17,14 @@ import {
 import { Arrow } from "@/components/icons";
 import { getDictionary } from "@/content/dictionaries";
 import { localizedPath, type Locale } from "@/content/i18n";
+import { corporateAsset } from "@/content/corporate-assets";
 export function HomePage({ locale }: { locale: Locale }) {
   const c = getDictionary(locale);
   return (
     <>
       <section className="hero" aria-labelledby="hero-title">
         <GradientImage
-          src="/images/afterglow.webp"
+          src={corporateAsset("A08", locale).path}
           sizes="100vw"
           preload
           className="hero-art"
@@ -38,7 +39,6 @@ export function HomePage({ locale }: { locale: Locale }) {
             {c.home.heroLines.map((line, i) => (
               <RevealText
                 key={line}
-                light
                 palette={i ? "iris" : "sky"}
                 direction={i ? "right" : "left"}
               >

@@ -1,0 +1,10 @@
+Mode: built-in image_gen (one call for this asset). Style reference only; not an edit of the existing business thumbnail.
+
+Use case: illustration-story.
+Asset type: wide 16:10 editorial illustration for the About section of MYSTENA's corporate website, review candidate.
+Primary request: a carefully composed, sunlit creative workbench showing how a product idea moves between planning, interface development, filming and promotion. A coherent real-feeling tabletop scene, not a collage or four-panel infographic.
+Input image is STYLE REFERENCE ONLY: use its refined hand-drawn Japanese 2D anime style, softly painted materials, pleasant blue-white palette, natural light, polished but friendly feel. Make a completely different scene viewed obliquely from overhead, with no people.
+Subject: an open notebook with clean pencil storyboard drawings occupies the center; at the upper left a laptop shows an abstract code editor next to a simple product-page UI, using short unreadable line marks; at the right a compact mirrorless camera and its lens sit near a small unbranded blue bottle and plain white sample box; at the lower right a smartphone on the desk displays a simple composition featuring the same blue bottle, with a few minimal UI shapes but no numbers. A blue pencil connects the composition diagonally. One small plant at the edge.
+Composition: elegant airy tabletop still life with strong hierarchy and usable breathing space. Objects placed plausibly and not perfectly symmetrically; sun casts gentle tree-leaf shadows on warm off-white paper and pale wood. Avoid filling every gap. Everything within safe central crop with clean outer margins.
+Palette: white, pale sky blue, navy, bright cyan highlights, a touch of sage green and natural warm wood; minimal purple. Light but legible.
+Constraints: no readable words, no company or client logos, no sales dashboards, no statistics, no watermarks, no people or hands. This is a fictional work-process illustration, never actual client deliverables. Not photorealistic or 3D; no floating holograms.

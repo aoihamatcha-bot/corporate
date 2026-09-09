@@ -3,7 +3,8 @@ import Link from "@/components/site-link";
 import { navigationFor } from "@/content/navigation";
 import { getDictionary } from "@/content/dictionaries";
 import { localizedPath, type Locale } from "@/content/i18n";
-import { Arrow, Spark } from "@/components/icons";
+import { Arrow } from "@/components/icons";
+import { Wordmark } from "@/components/wordmark";
 export function Footer({ locale }: { locale: Locale }) {
   const c = getDictionary(locale);
   return (
@@ -31,8 +32,7 @@ export function Footer({ locale }: { locale: Locale }) {
           className="footer-wordmark"
           aria-label={c.common.homeLink}
         >
-          <RevealText kind="heading">MYSTENA</RevealText>
-          <Spark />
+          <Wordmark dark />
         </Link>
         <div className="footer-bottom">
           <RevealText kind="label">{c.common.copyright}</RevealText>

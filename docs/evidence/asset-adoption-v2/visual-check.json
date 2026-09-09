@@ -1,0 +1,25 @@
+{
+  "source": "LOCAL production build; reduced motion used for settled-state screenshots. Element-only screenshots hide the sticky header only during capture to avoid obscuring the cropped content. Full viewport screenshots retain the header.",
+  "results": [
+    {
+      "locale": "ja",
+      "width": 1440,
+      "pageErrors": []
+    },
+    {
+      "locale": "en",
+      "width": 1440,
+      "pageErrors": []
+    },
+    {
+      "locale": "ja",
+      "width": 390,
+      "pageErrors": []
+    },
+    {
+      "locale": "en",
+      "width": 390,
+      "pageErrors": []
+    }
+  ]
+}

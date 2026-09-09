@@ -3,6 +3,7 @@ import { Scene } from "@/components/motion/scene";
 import { RevealText } from "@/components/motion/reveal-text";
 import { getDictionary } from "@/content/dictionaries";
 import type { Locale } from "@/content/i18n";
+import { CorporateImage } from "@/components/corporate-image";
 export function AboutPage({ locale }: { locale: Locale }) {
   const c = getDictionary(locale);
   return (
@@ -22,6 +23,12 @@ export function AboutPage({ locale }: { locale: Locale }) {
                 </p>
               ))}
             </div>
+            <figure className="about-illustration">
+              <CorporateImage id="A04" locale={locale} />
+              <figcaption>
+                <RevealText kind="label">{c.assets.aboutCaption}</RevealText>
+              </figcaption>
+            </figure>
           </div>
         </div>
       </section>

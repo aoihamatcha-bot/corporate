@@ -1,0 +1,100 @@
+[
+  {
+    "path": "docs/asset-proposals-v2/assets/a01-service-overview-en.webp",
+    "width": 1600,
+    "height": 1000,
+    "bytes": 79894,
+    "source": "docs/asset-proposals-v2/assets/a01-service-overview-en.svg"
+  },
+  {
+    "path": "docs/asset-proposals-v2/assets/a01-service-overview-ja.webp",
+    "width": 1600,
+    "height": 1000,
+    "bytes": 74494,
+    "source": "docs/asset-proposals-v2/assets/a01-service-overview-ja.svg"
+  },
+  {
+    "path": "docs/asset-proposals-v2/assets/a02-experience-flow-en.webp",
+    "width": 1600,
+    "height": 1000,
+    "bytes": 82328,
+    "source": "docs/asset-proposals-v2/assets/a02-experience-flow-en.svg"
+  },
+  {
+    "path": "docs/asset-proposals-v2/assets/a02-experience-flow-ja.webp",
+    "width": 1600,
+    "height": 1000,
+    "bytes": 80406,
+    "source": "docs/asset-proposals-v2/assets/a02-experience-flow-ja.svg"
+  },
+  {
+    "path": "docs/asset-proposals-v2/assets/a05-social-share-en.png",
+    "width": 1200,
+    "height": 630,
+    "bytes": 57124,
+    "source": "docs/asset-proposals-v2/assets/a05-social-share-en.svg"
+  },
+  {
+    "path": "docs/asset-proposals-v2/assets/a05-social-share-ja.png",
+    "width": 1200,
+    "height": 630,
+    "bytes": 50580,
+    "source": "docs/asset-proposals-v2/assets/a05-social-share-ja.svg"
+  },
+  {
+    "path": "docs/asset-proposals-v2/assets/a06-business-concept-en.webp",
+    "width": 1600,
+    "height": 850,
+    "bytes": 71490,
+    "source": "docs/asset-proposals-v2/assets/a06-business-concept-en.svg"
+  },
+  {
+    "path": "docs/asset-proposals-v2/assets/a06-business-concept-ja.webp",
+    "width": 1600,
+    "height": 850,
+    "bytes": 61434,
+    "source": "docs/asset-proposals-v2/assets/a06-business-concept-ja.svg"
+  },
+  {
+    "path": "docs/asset-proposals-v2/assets/a07-video-poster-en.webp",
+    "width": 1600,
+    "height": 900,
+    "bytes": 63420,
+    "source": "docs/asset-proposals-v2/assets/a07-video-poster-en.svg"
+  },
+  {
+    "path": "docs/asset-proposals-v2/assets/a07-video-poster-ja.webp",
+    "width": 1600,
+    "height": 900,
+    "bytes": 57250,
+    "source": "docs/asset-proposals-v2/assets/a07-video-poster-ja.svg"
+  },
+  {
+    "path": "docs/asset-proposals-v2/assets/a09-news-template-en.png",
+    "width": 1200,
+    "height": 630,
+    "bytes": 41456,
+    "source": "docs/asset-proposals-v2/assets/a09-news-template-en.svg"
+  },
+  {
+    "path": "docs/asset-proposals-v2/assets/a09-news-template-ja.png",
+    "width": 1200,
+    "height": 630,
+    "bytes": 41891,
+    "source": "docs/asset-proposals-v2/assets/a09-news-template-ja.svg"
+  },
+  {
+    "path": "docs/asset-proposals-v2/assets/a10-wordmark-dark.png",
+    "width": 1400,
+    "height": 360,
+    "bytes": 11308,
+    "source": "docs/asset-proposals-v2/assets/a10-wordmark-dark.svg"
+  },
+  {
+    "path": "docs/asset-proposals-v2/assets/a10-wordmark-light.png",
+    "width": 1400,
+    "height": 360,
+    "bytes": 13662,
+    "source": "docs/asset-proposals-v2/assets/a10-wordmark-light.svg"
+  }
+]

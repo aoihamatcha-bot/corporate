@@ -4,6 +4,7 @@ import { localizedPath, pagePaths, type Locale, type PageKey } from "./i18n";
 import { site } from "./site";
 import { editorialReview } from "./editorial-review";
 import { articleLanguageAvailability, publishedArticle } from "./news";
+import { corporateAsset } from "./corporate-assets";
 export const reviewRobots = { index: false, follow: false, nocache: true };
 export function localizedAlternates(
   path: string,
@@ -44,6 +45,12 @@ function alternates(path: string, available: readonly Locale[]) {
 export function rootMetadata(locale: Locale): Metadata {
   const c = getDictionary(locale);
   return {
+    metadataBase: new URL(
+      site.canonicalOrigin ||
+        (process.env.VERCEL_URL
+          ? `https://${process.env.VERCEL_URL}`
+          : "http://127.0.0.1:3017"),
+    ),
     title: {
       default: `${site.brand} — ${c.pages.home.title}`,
       template: `%s | ${site.brand}`,
@@ -51,6 +58,7 @@ export function rootMetadata(locale: Locale): Metadata {
     description: c.pages.home.description,
     robots: reviewRobots,
     icons: { icon: "/icon.svg" },
+    ...socialMetadata(locale, c.pages.home.title, c.pages.home.description),
   };
 }
 export function pageMetadata(locale: Locale, key: PageKey): Metadata {
@@ -62,6 +70,7 @@ export function pageMetadata(locale: Locale, key: PageKey): Metadata {
         : page.title,
     description: page.description,
     alternates: alternates(localizedPath(pagePaths[key], locale), ["ja", "en"]),
+    ...socialMetadata(locale, page.title, page.description, key === "news"),
   };
 }
 export function articleMetadata(locale: Locale, slug: string): Metadata {
@@ -78,5 +87,34 @@ export function articleMetadata(locale: Locale, slug: string): Metadata {
       localizedPath(`/news/${slug}`, locale),
       articleLanguageAvailability()[slug],
     ),
+    ...socialMetadata(locale, article.title, article.summary, true),
+  };
+}
+
+function socialMetadata(
+  locale: Locale,
+  title: string,
+  description: string,
+  news = false,
+): Metadata {
+  const asset = corporateAsset(news ? "A09" : "A05", locale);
+  const images = [
+    {
+      url: asset.path,
+      width: asset.width,
+      height: asset.height,
+      alt: asset.alt,
+    },
+  ];
+  return {
+    openGraph: {
+      title,
+      description,
+      siteName: site.brand,
+      type: "website",
+      locale: locale === "ja" ? "ja_JP" : "en_US",
+      images,
+    },
+    twitter: { card: "summary_large_image", title, description, images },
   };
 }

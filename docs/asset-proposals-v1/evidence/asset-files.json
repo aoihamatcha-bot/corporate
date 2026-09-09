@@ -1,0 +1,175 @@
+[
+  {
+    "id": "a03-company-workstyle",
+    "source": "C:/Users/taisa/.codex/generated_images/01a07d44-4dd9-73b3-a992-a3622997afb1/exec-dd139c1d-959b-4e41-9d88-9a53618bd185.png",
+    "workspaceOriginal": ".local/asset-proposals-v1/originals/a03-company-workstyle.png",
+    "path": "docs/asset-proposals-v1/assets/a03-company-workstyle.webp",
+    "width": 1586,
+    "height": 992,
+    "bytes": 242994,
+    "mode": "built-in image_gen",
+    "postprocessing": "Resize if needed and WebP encoding only; no visual edits."
+  },
+  {
+    "id": "a04-about-workbench",
+    "source": "C:/Users/taisa/.codex/generated_images/01a07d44-4dd9-73b3-a992-a3622997afb1/exec-1ace973b-eb55-490d-8c8e-8185c92f20e3.png",
+    "workspaceOriginal": ".local/asset-proposals-v1/originals/a04-about-workbench.png",
+    "path": "docs/asset-proposals-v1/assets/a04-about-workbench.webp",
+    "width": 1586,
+    "height": 992,
+    "bytes": 233222,
+    "mode": "built-in image_gen",
+    "postprocessing": "Resize if needed and WebP encoding only; no visual edits."
+  },
+  {
+    "id": "a08-brand-keyvisual",
+    "source": "C:/Users/taisa/.codex/generated_images/01a07d44-4dd9-73b3-a992-a3622997afb1/exec-0b472f75-b88e-4f03-bd0d-881eab157d5a.png",
+    "workspaceOriginal": ".local/asset-proposals-v1/originals/a08-brand-keyvisual.png",
+    "path": "docs/asset-proposals-v1/assets/a08-brand-keyvisual.webp",
+    "width": 1600,
+    "height": 900,
+    "bytes": 138810,
+    "mode": "built-in image_gen",
+    "postprocessing": "Resize if needed and WebP encoding only; no visual edits."
+  },
+  {
+    "id": "a01-service-overview-en",
+    "path": "docs/asset-proposals-v1/assets/a01-service-overview-en.webp",
+    "source": "docs/asset-proposals-v1/assets/a01-service-overview-en.svg",
+    "width": 1600,
+    "height": 1000,
+    "bytes": 63514,
+    "mode": "Native SVG with outlined LINE Seed JP text",
+    "postprocessing": "Raster export; editable SVG source retained separately."
+  },
+  {
+    "id": "a01-service-overview-ja",
+    "path": "docs/asset-proposals-v1/assets/a01-service-overview-ja.webp",
+    "source": "docs/asset-proposals-v1/assets/a01-service-overview-ja.svg",
+    "width": 1600,
+    "height": 1000,
+    "bytes": 58824,
+    "mode": "Native SVG with outlined LINE Seed JP text",
+    "postprocessing": "Raster export; editable SVG source retained separately."
+  },
+  {
+    "id": "a02-experience-flow-en",
+    "path": "docs/asset-proposals-v1/assets/a02-experience-flow-en.webp",
+    "source": "docs/asset-proposals-v1/assets/a02-experience-flow-en.svg",
+    "width": 1600,
+    "height": 1000,
+    "bytes": 79348,
+    "mode": "Native SVG with outlined LINE Seed JP text",
+    "postprocessing": "Raster export; editable SVG source retained separately."
+  },
+  {
+    "id": "a02-experience-flow-ja",
+    "path": "docs/asset-proposals-v1/assets/a02-experience-flow-ja.webp",
+    "source": "docs/asset-proposals-v1/assets/a02-experience-flow-ja.svg",
+    "width": 1600,
+    "height": 1000,
+    "bytes": 65350,
+    "mode": "Native SVG with outlined LINE Seed JP text",
+    "postprocessing": "Raster export; editable SVG source retained separately."
+  },
+  {
+    "id": "a05-social-share-en",
+    "path": "docs/asset-proposals-v1/assets/a05-social-share-en.png",
+    "source": "docs/asset-proposals-v1/assets/a05-social-share-en.svg",
+    "width": 1200,
+    "height": 630,
+    "bytes": 58939,
+    "mode": "Native SVG with outlined LINE Seed JP text",
+    "postprocessing": "Raster export; editable SVG source retained separately."
+  },
+  {
+    "id": "a05-social-share-ja",
+    "path": "docs/asset-proposals-v1/assets/a05-social-share-ja.png",
+    "source": "docs/asset-proposals-v1/assets/a05-social-share-ja.svg",
+    "width": 1200,
+    "height": 630,
+    "bytes": 52986,
+    "mode": "Native SVG with outlined LINE Seed JP text",
+    "postprocessing": "Raster export; editable SVG source retained separately."
+  },
+  {
+    "id": "a06-business-concept-en",
+    "path": "docs/asset-proposals-v1/assets/a06-business-concept-en.webp",
+    "source": "docs/asset-proposals-v1/assets/a06-business-concept-en.svg",
+    "width": 1600,
+    "height": 850,
+    "bytes": 68674,
+    "mode": "Native SVG with outlined LINE Seed JP text",
+    "postprocessing": "Raster export; editable SVG source retained separately."
+  },
+  {
+    "id": "a06-business-concept-ja",
+    "path": "docs/asset-proposals-v1/assets/a06-business-concept-ja.webp",
+    "source": "docs/asset-proposals-v1/assets/a06-business-concept-ja.svg",
+    "width": 1600,
+    "height": 850,
+    "bytes": 58350,
+    "mode": "Native SVG with outlined LINE Seed JP text",
+    "postprocessing": "Raster export; editable SVG source retained separately."
+  },
+  {
+    "id": "a07-video-poster-en",
+    "path": "docs/asset-proposals-v1/assets/a07-video-poster-en.webp",
+    "source": "docs/asset-proposals-v1/assets/a07-video-poster-en.svg",
+    "width": 1600,
+    "height": 900,
+    "bytes": 45714,
+    "mode": "Native SVG with outlined LINE Seed JP text",
+    "postprocessing": "Raster export; editable SVG source retained separately."
+  },
+  {
+    "id": "a07-video-poster-ja",
+    "path": "docs/asset-proposals-v1/assets/a07-video-poster-ja.webp",
+    "source": "docs/asset-proposals-v1/assets/a07-video-poster-ja.svg",
+    "width": 1600,
+    "height": 900,
+    "bytes": 40144,
+    "mode": "Native SVG with outlined LINE Seed JP text",
+    "postprocessing": "Raster export; editable SVG source retained separately."
+  },
+  {
+    "id": "a09-news-template-en",
+    "path": "docs/asset-proposals-v1/assets/a09-news-template-en.png",
+    "source": "docs/asset-proposals-v1/assets/a09-news-template-en.svg",
+    "width": 1200,
+    "height": 630,
+    "bytes": 39839,
+    "mode": "Native SVG with outlined LINE Seed JP text",
+    "postprocessing": "Raster export; editable SVG source retained separately."
+  },
+  {
+    "id": "a09-news-template-ja",
+    "path": "docs/asset-proposals-v1/assets/a09-news-template-ja.png",
+    "source": "docs/asset-proposals-v1/assets/a09-news-template-ja.svg",
+    "width": 1200,
+    "height": 630,
+    "bytes": 40294,
+    "mode": "Native SVG with outlined LINE Seed JP text",
+    "postprocessing": "Raster export; editable SVG source retained separately."
+  },
+  {
+    "id": "a10-wordmark-dark",
+    "path": "docs/asset-proposals-v1/assets/a10-wordmark-dark.png",
+    "source": "docs/asset-proposals-v1/assets/a10-wordmark-dark.svg",
+    "width": 1400,
+    "height": 470,
+    "bytes": 12638,
+    "mode": "Native SVG with outlined LINE Seed JP text",
+    "postprocessing": "Raster export; editable SVG source retained separately."
+  },
+  {
+    "id": "a10-wordmark-light",
+    "path": "docs/asset-proposals-v1/assets/a10-wordmark-light.png",
+    "source": "docs/asset-proposals-v1/assets/a10-wordmark-light.svg",
+    "width": 1400,
+    "height": 470,
+    "bytes": 15013,
+    "mode": "Native SVG with outlined LINE Seed JP text",
+    "postprocessing": "Raster export; editable SVG source retained separately."
+  }
+]

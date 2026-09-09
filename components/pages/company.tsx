@@ -3,6 +3,7 @@ import { PageIntro, SectionLabel, ContactBand } from "@/components/editorial";
 import { getDictionary } from "@/content/dictionaries";
 import { company, publicCompanyRows } from "@/content/company";
 import type { Locale } from "@/content/i18n";
+import { CorporateImage } from "@/components/corporate-image";
 export function CompanyPage({ locale }: { locale: Locale }) {
   const c = getDictionary(locale);
   return (
@@ -31,14 +32,19 @@ export function CompanyPage({ locale }: { locale: Locale }) {
                 </div>
               ))}
             </dl>
-            <div className="company-photo-slot">
-              <h2>
-                <RevealText kind="subtitle">{c.company.photoTitle}</RevealText>
-              </h2>
-              <p>
-                <RevealText kind="body">{c.company.photoNote}</RevealText>
-              </p>
-            </div>
+            <figure className="company-illustration">
+              <CorporateImage id="A03" locale={locale} />
+              <figcaption>
+                <h2>
+                  <RevealText kind="subtitle">
+                    {c.company.photoTitle}
+                  </RevealText>
+                </h2>
+                <p>
+                  <RevealText kind="body">{c.company.photoNote}</RevealText>
+                </p>
+              </figcaption>
+            </figure>
           </div>
         </div>
       </section>

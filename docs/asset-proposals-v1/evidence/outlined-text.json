@@ -1,0 +1,745 @@
+[
+  {
+    "file": "docs/asset-proposals-v1/assets/a01-service-overview-en.svg",
+    "textCount": 16,
+    "missingGlyphs": [],
+    "text": [
+      {
+        "text": "01 / SERVICE OVERVIEW",
+        "width": 297.3,
+        "font": "700"
+      },
+      {
+        "text": "Make discovering products more enjoyable.",
+        "width": 1036.8,
+        "font": "700"
+      },
+      {
+        "text": "CONCEPT / Proposed layout; actual screens and features are unconfirmed.",
+        "width": 806.8,
+        "font": "400"
+      },
+      {
+        "text": "MYSTENA",
+        "width": 131.3,
+        "font": "logo"
+      },
+      {
+        "text": "Discover",
+        "width": 93.0,
+        "font": "700"
+      },
+      {
+        "text": "Product details",
+        "width": 153.1,
+        "font": "400"
+      },
+      {
+        "text": "Find your everyday favorites.",
+        "width": 394.7,
+        "font": "700"
+      },
+      {
+        "text": "An idea starts with discovery.",
+        "width": 300.2,
+        "font": "400"
+      },
+      {
+        "text": "Explore products",
+        "width": 164.8,
+        "font": "700"
+      },
+      {
+        "text": "Headphones",
+        "width": 154.0,
+        "font": "700"
+      },
+      {
+        "text": "Get to know the product",
+        "width": 201.1,
+        "font": "400"
+      },
+      {
+        "text": "Bottle",
+        "width": 74.9,
+        "font": "700"
+      },
+      {
+        "text": "Get to know the product",
+        "width": 201.1,
+        "font": "400"
+      },
+      {
+        "text": "Tote bag",
+        "width": 113.1,
+        "font": "700"
+      },
+      {
+        "text": "Get to know the product",
+        "width": 201.1,
+        "font": "400"
+      },
+      {
+        "text": "Illustrative UI and products only; not a live service or an actual product offering.",
+        "width": 773.4,
+        "font": "400"
+      }
+    ]
+  },
+  {
+    "file": "docs/asset-proposals-v1/assets/a01-service-overview-ja.svg",
+    "textCount": 16,
+    "missingGlyphs": [],
+    "text": [
+      {
+        "text": "01 / SERVICE OVERVIEW",
+        "width": 297.3,
+        "font": "700"
+      },
+      {
+        "text": "商品との出会いを、もっと楽しく。",
+        "width": 784.0,
+        "font": "700"
+      },
+      {
+        "text": "構想図 / 公開画面・提供機能は確定前です",
+        "width": 402.0,
+        "font": "400"
+      },
+      {
+        "text": "MYSTENA",
+        "width": 131.3,
+        "font": "logo"
+      },
+      {
+        "text": "見つける",
+        "width": 80.0,
+        "font": "700"
+      },
+      {
+        "text": "商品について",
+        "width": 120.0,
+        "font": "400"
+      },
+      {
+        "text": "毎日に、好きなものを。",
+        "width": 319.0,
+        "font": "700"
+      },
+      {
+        "text": "出会う楽しさから、考える。",
+        "width": 260.0,
+        "font": "400"
+      },
+      {
+        "text": "商品を見てみる",
+        "width": 126.0,
+        "font": "700"
+      },
+      {
+        "text": "ヘッドホン",
+        "width": 120.0,
+        "font": "700"
+      },
+      {
+        "text": "商品の魅力を知る",
+        "width": 144.0,
+        "font": "400"
+      },
+      {
+        "text": "ボトル",
+        "width": 72.0,
+        "font": "700"
+      },
+      {
+        "text": "商品の魅力を知る",
+        "width": 144.0,
+        "font": "400"
+      },
+      {
+        "text": "トートバッグ",
+        "width": 144.0,
+        "font": "700"
+      },
+      {
+        "text": "商品の魅力を知る",
+        "width": 144.0,
+        "font": "400"
+      },
+      {
+        "text": "UI・商品は説明用の仮デザインです。実サービスの画面・販売商品ではありません。",
+        "width": 723.0,
+        "font": "400"
+      }
+    ]
+  },
+  {
+    "file": "docs/asset-proposals-v1/assets/a02-experience-flow-en.svg",
+    "textCount": 18,
+    "missingGlyphs": [],
+    "text": [
+      {
+        "text": "02 / EXPERIENCE FLOW",
+        "width": 289.8,
+        "font": "700"
+      },
+      {
+        "text": "Discover. Get to know. Choose.",
+        "width": 931.7,
+        "font": "700"
+      },
+      {
+        "text": "Bring the enjoyment of shopping into one connected experience.",
+        "width": 816.9,
+        "font": "400"
+      },
+      {
+        "text": "01",
+        "width": 21.4,
+        "font": "700"
+      },
+      {
+        "text": "Discover",
+        "width": 162.7,
+        "font": "700"
+      },
+      {
+        "text": "Meet products that interest you",
+        "width": 345.5,
+        "font": "700"
+      },
+      {
+        "text": "A proposed discovery experience",
+        "width": 333.4,
+        "font": "400"
+      },
+      {
+        "text": "02",
+        "width": 25.1,
+        "font": "700"
+      },
+      {
+        "text": "Get to know",
+        "width": 234.3,
+        "font": "700"
+      },
+      {
+        "text": "Learn through visuals and stories",
+        "width": 359.8,
+        "font": "700"
+      },
+      {
+        "text": "A proposed content experience",
+        "width": 316.1,
+        "font": "400"
+      },
+      {
+        "text": "03",
+        "width": 25.1,
+        "font": "700"
+      },
+      {
+        "text": "Choose",
+        "width": 141.1,
+        "font": "700"
+      },
+      {
+        "text": "Find something you love",
+        "width": 275.6,
+        "font": "700"
+      },
+      {
+        "text": "Explore product details",
+        "width": 251.0,
+        "font": "700"
+      },
+      {
+        "text": "Find what feels right for you",
+        "width": 306.7,
+        "font": "700"
+      },
+      {
+        "text": "A proposed selection experience",
+        "width": 326.8,
+        "font": "400"
+      },
+      {
+        "text": "CONCEPT / An illustrative journey; actual features and screen transitions are unconfirmed.",
+        "width": 971.3,
+        "font": "400"
+      }
+    ]
+  },
+  {
+    "file": "docs/asset-proposals-v1/assets/a02-experience-flow-ja.svg",
+    "textCount": 18,
+    "missingGlyphs": [],
+    "text": [
+      {
+        "text": "02 / EXPERIENCE FLOW",
+        "width": 289.8,
+        "font": "700"
+      },
+      {
+        "text": "探す。知る。選ぶ。",
+        "width": 495.0,
+        "font": "700"
+      },
+      {
+        "text": "買い物の楽しさを、ひと続きの体験へ。",
+        "width": 450.0,
+        "font": "400"
+      },
+      {
+        "text": "01",
+        "width": 21.4,
+        "font": "700"
+      },
+      {
+        "text": "探す",
+        "width": 70.0,
+        "font": "700"
+      },
+      {
+        "text": "興味に合う商品との出会い",
+        "width": 300.0,
+        "font": "700"
+      },
+      {
+        "text": "商品一覧を中心にした構想",
+        "width": 240.0,
+        "font": "400"
+      },
+      {
+        "text": "02",
+        "width": 25.1,
+        "font": "700"
+      },
+      {
+        "text": "知る",
+        "width": 70.0,
+        "font": "700"
+      },
+      {
+        "text": "映像や説明で魅力を知る",
+        "width": 275.0,
+        "font": "700"
+      },
+      {
+        "text": "表現・コンテンツの構想",
+        "width": 220.0,
+        "font": "400"
+      },
+      {
+        "text": "03",
+        "width": 25.1,
+        "font": "700"
+      },
+      {
+        "text": "選ぶ",
+        "width": 70.0,
+        "font": "700"
+      },
+      {
+        "text": "お気に入りのひとつへ",
+        "width": 240.0,
+        "font": "700"
+      },
+      {
+        "text": "商品の詳細を見る",
+        "width": 160.0,
+        "font": "700"
+      },
+      {
+        "text": "自分に合うものを見つける",
+        "width": 300.0,
+        "font": "700"
+      },
+      {
+        "text": "商品選びを支える構想",
+        "width": 200.0,
+        "font": "400"
+      },
+      {
+        "text": "構想図 / 検討用の体験例です。実際の提供機能・画面遷移は未確定です。",
+        "width": 696.0,
+        "font": "400"
+      }
+    ]
+  },
+  {
+    "file": "docs/asset-proposals-v1/assets/a05-social-share-en.svg",
+    "textCount": 6,
+    "missingGlyphs": [],
+    "text": [
+      {
+        "text": "MYSTENA",
+        "width": 186.8,
+        "font": "logo"
+      },
+      {
+        "text": "Entertainment × Technology",
+        "width": 265.8,
+        "font": "400"
+      },
+      {
+        "text": "Create engaging",
+        "width": 499.1,
+        "font": "700"
+      },
+      {
+        "text": "experiences.",
+        "width": 365.1,
+        "font": "700"
+      },
+      {
+        "text": "Bring their appeal to life.",
+        "width": 538.4,
+        "font": "700"
+      },
+      {
+        "text": "Planning · Development · Creative · Promotion",
+        "width": 474.5,
+        "font": "400"
+      }
+    ]
+  },
+  {
+    "file": "docs/asset-proposals-v1/assets/a05-social-share-ja.svg",
+    "textCount": 5,
+    "missingGlyphs": [],
+    "text": [
+      {
+        "text": "MYSTENA",
+        "width": 186.8,
+        "font": "logo"
+      },
+      {
+        "text": "Entertainment × Technology",
+        "width": 265.8,
+        "font": "400"
+      },
+      {
+        "text": "楽しさをつくる。",
+        "width": 520.0,
+        "font": "700"
+      },
+      {
+        "text": "魅力を届ける。",
+        "width": 455.0,
+        "font": "700"
+      },
+      {
+        "text": "企画・開発・表現・販売促進",
+        "width": 312.0,
+        "font": "400"
+      }
+    ]
+  },
+  {
+    "file": "docs/asset-proposals-v1/assets/a06-business-concept-en.svg",
+    "textCount": 13,
+    "missingGlyphs": [],
+    "text": [
+      {
+        "text": "06 / BUSINESS CONCEPT",
+        "width": 302.7,
+        "font": "700"
+      },
+      {
+        "text": "Connect products and people through enjoyment.",
+        "width": 1105.9,
+        "font": "700"
+      },
+      {
+        "text": "Entertainment commerce concept",
+        "width": 433.0,
+        "font": "400"
+      },
+      {
+        "text": "MYSTENA",
+        "width": 267.6,
+        "font": "logo"
+      },
+      {
+        "text": "Entertainment",
+        "width": 178.3,
+        "font": "700"
+      },
+      {
+        "text": "× Technology",
+        "width": 175.1,
+        "font": "700"
+      },
+      {
+        "text": "Businesses with products",
+        "width": 338.6,
+        "font": "700"
+      },
+      {
+        "text": "The appeal of products and content",
+        "width": 368.3,
+        "font": "400"
+      },
+      {
+        "text": "MYSTENA’s service",
+        "width": 260.4,
+        "font": "700"
+      },
+      {
+        "text": "Designing discovery and the experience",
+        "width": 400.9,
+        "font": "400"
+      },
+      {
+        "text": "People seeking something new",
+        "width": 413.1,
+        "font": "700"
+      },
+      {
+        "text": "The enjoyment of discovery",
+        "width": 279.4,
+        "font": "400"
+      },
+      {
+        "text": "CONCEPT / Proposed audiences and value; the actual business scope awaits confirmation.",
+        "width": 1020.1,
+        "font": "400"
+      }
+    ]
+  },
+  {
+    "file": "docs/asset-proposals-v1/assets/a06-business-concept-ja.svg",
+    "textCount": 13,
+    "missingGlyphs": [],
+    "text": [
+      {
+        "text": "06 / BUSINESS CONCEPT",
+        "width": 302.7,
+        "font": "700"
+      },
+      {
+        "text": "商品と人の間に、楽しさを。",
+        "width": 611.0,
+        "font": "700"
+      },
+      {
+        "text": "エンターテインメントECの関係図",
+        "width": 386.5,
+        "font": "400"
+      },
+      {
+        "text": "MYSTENA",
+        "width": 267.6,
+        "font": "logo"
+      },
+      {
+        "text": "Entertainment",
+        "width": 178.3,
+        "font": "700"
+      },
+      {
+        "text": "× Technology",
+        "width": 175.1,
+        "font": "700"
+      },
+      {
+        "text": "商品を届ける事業者",
+        "width": 261.0,
+        "font": "700"
+      },
+      {
+        "text": "商品・コンテンツの魅力",
+        "width": 253.0,
+        "font": "400"
+      },
+      {
+        "text": "MYSTENAのサービス",
+        "width": 304.0,
+        "font": "700"
+      },
+      {
+        "text": "出会いと利用体験を設計",
+        "width": 253.0,
+        "font": "400"
+      },
+      {
+        "text": "新しいものを探す人",
+        "width": 261.0,
+        "font": "700"
+      },
+      {
+        "text": "見つける楽しさ",
+        "width": 161.0,
+        "font": "400"
+      },
+      {
+        "text": "構想図 / 対象と価値の関係を示した案です。実際の事業範囲は確認中です。",
+        "width": 751.2,
+        "font": "400"
+      }
+    ]
+  },
+  {
+    "file": "docs/asset-proposals-v1/assets/a07-video-poster-en.svg",
+    "textCount": 7,
+    "missingGlyphs": [],
+    "text": [
+      {
+        "text": "MYSTENA",
+        "width": 217.1,
+        "font": "logo"
+      },
+      {
+        "text": "SERVICE CONCEPT",
+        "width": 233.9,
+        "font": "700"
+      },
+      {
+        "text": "Make discovery",
+        "width": 542.4,
+        "font": "700"
+      },
+      {
+        "text": "more enjoyable.",
+        "width": 549.2,
+        "font": "700"
+      },
+      {
+        "text": "A first look at the service concept.",
+        "width": 470.7,
+        "font": "400"
+      },
+      {
+        "text": "Service introduction · cover concept",
+        "width": 490.6,
+        "font": "700"
+      },
+      {
+        "text": "CONCEPT / Illustrative UI; not a finished service video.",
+        "width": 610.5,
+        "font": "400"
+      }
+    ]
+  },
+  {
+    "file": "docs/asset-proposals-v1/assets/a07-video-poster-ja.svg",
+    "textCount": 7,
+    "missingGlyphs": [],
+    "text": [
+      {
+        "text": "MYSTENA",
+        "width": 217.1,
+        "font": "logo"
+      },
+      {
+        "text": "SERVICE CONCEPT",
+        "width": 233.9,
+        "font": "700"
+      },
+      {
+        "text": "商品との出会いを、",
+        "width": 540.0,
+        "font": "700"
+      },
+      {
+        "text": "もっと楽しく。",
+        "width": 420.0,
+        "font": "700"
+      },
+      {
+        "text": "サービスの構想を、ひと目で。",
+        "width": 378.0,
+        "font": "400"
+      },
+      {
+        "text": "サービス紹介・表紙案",
+        "width": 280.0,
+        "font": "700"
+      },
+      {
+        "text": "構想イメージ / 実サービス画面・動画は未制作",
+        "width": 465.2,
+        "font": "400"
+      }
+    ]
+  },
+  {
+    "file": "docs/asset-proposals-v1/assets/a09-news-template-en.svg",
+    "textCount": 4,
+    "missingGlyphs": [],
+    "text": [
+      {
+        "text": "MYSTENA",
+        "width": 181.8,
+        "font": "logo"
+      },
+      {
+        "text": "NEWS",
+        "width": 454.9,
+        "font": "700"
+      },
+      {
+        "text": "Updates from MYSTENA",
+        "width": 490.6,
+        "font": "700"
+      },
+      {
+        "text": "Entertainment × Technology",
+        "width": 324.9,
+        "font": "400"
+      }
+    ]
+  },
+  {
+    "file": "docs/asset-proposals-v1/assets/a09-news-template-ja.svg",
+    "textCount": 4,
+    "missingGlyphs": [],
+    "text": [
+      {
+        "text": "MYSTENA",
+        "width": 181.8,
+        "font": "logo"
+      },
+      {
+        "text": "NEWS",
+        "width": 454.9,
+        "font": "700"
+      },
+      {
+        "text": "MYSTENAからのお知らせ",
+        "width": 461.9,
+        "font": "700"
+      },
+      {
+        "text": "Entertainment × Technology",
+        "width": 324.9,
+        "font": "400"
+      }
+    ]
+  },
+  {
+    "file": "docs/asset-proposals-v1/assets/a10-wordmark-dark.svg",
+    "textCount": 1,
+    "missingGlyphs": [],
+    "text": [
+      {
+        "text": "MYSTENA",
+        "width": 838.1,
+        "font": "logo"
+      }
+    ]
+  },
+  {
+    "file": "docs/asset-proposals-v1/assets/a10-wordmark-light.svg",
+    "textCount": 1,
+    "missingGlyphs": [],
+    "text": [
+      {
+        "text": "MYSTENA",
+        "width": 838.1,
+        "font": "logo"
+      }
+    ]
+  }
+]

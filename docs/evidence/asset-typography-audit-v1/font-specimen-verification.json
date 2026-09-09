@@ -1,0 +1,98 @@
+{
+  "generatedAt": "2026-09-09T11:13:39.074Z",
+  "scope": "Static typography specimen only. No application files changed.",
+  "googleFontsTextSubset": true,
+  "variants": [
+    {
+      "id": "A",
+      "family": "LINE Seed JP",
+      "comment": "親しみ・楽しさを強める候補"
+    },
+    {
+      "id": "B",
+      "family": "Zen Kaku Gothic New",
+      "comment": "落ち着き・端正さを強める候補"
+    },
+    {
+      "id": "C",
+      "family": "Noto Sans JP",
+      "comment": "現在に近い印象で整える候補"
+    }
+  ],
+  "platformFontProofs": [
+    {
+      "family": "LINE Seed JP",
+      "role": "probe-heading",
+      "fonts": [
+        {
+          "familyName": "LINE Seed JP",
+          "postScriptName": "LINESeedJP-Bold",
+          "isCustomFont": true,
+          "glyphCount": 8
+        }
+      ]
+    },
+    {
+      "family": "LINE Seed JP",
+      "role": "body",
+      "fonts": [
+        {
+          "familyName": "LINE Seed JP",
+          "postScriptName": "LINESeedJP-Regular",
+          "isCustomFont": true,
+          "glyphCount": 62
+        }
+      ]
+    },
+    {
+      "family": "Zen Kaku Gothic New",
+      "role": "probe-heading",
+      "fonts": [
+        {
+          "familyName": "Zen Kaku Gothic New",
+          "postScriptName": "ZenKakuGothicNew-Bold",
+          "isCustomFont": true,
+          "glyphCount": 8
+        }
+      ]
+    },
+    {
+      "family": "Zen Kaku Gothic New",
+      "role": "body",
+      "fonts": [
+        {
+          "familyName": "Zen Kaku Gothic New",
+          "postScriptName": "ZenKakuGothicNew-Regular",
+          "isCustomFont": true,
+          "glyphCount": 62
+        }
+      ]
+    },
+    {
+      "family": "Noto Sans JP",
+      "role": "probe-heading",
+      "fonts": [
+        {
+          "familyName": "Noto Sans JP",
+          "postScriptName": "NotoSansJP-Bold",
+          "isCustomFont": true,
+          "glyphCount": 8
+        }
+      ]
+    },
+    {
+      "family": "Noto Sans JP",
+      "role": "body",
+      "fonts": [
+        {
+          "familyName": "Noto Sans JP",
+          "postScriptName": "NotoSansJP-Regular",
+          "isCustomFont": true,
+          "glyphCount": 62
+        }
+      ]
+    }
+  ],
+  "desktopOverflow": [],
+  "fontBytes": 305992
+}

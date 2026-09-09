@@ -1,0 +1,14 @@
+{
+  "startingHead": "092c3d99172acc903fb8e3a22766c3d53959c1d7",
+  "verifiedUnchanged": [
+    "content/assets.ts",
+    "content/business.ts",
+    "content/dictionaries/en.ts",
+    "content/dictionaries/ja.ts",
+    "tests/e2e/thumbnails.spec.ts",
+    "styles/motion.css",
+    "styles/tokens.css",
+    "components/motion/tokens.ts",
+    "components/motion/text-rhythm.ts"
+  ]
+}

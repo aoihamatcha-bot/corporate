@@ -166,9 +166,9 @@ export const en: Dictionary = {
           "We plan, develop, and operate online sales services that make shopping more engaging. We explore experiences that make both discovering products and shopping enjoyable.",
         consultation: "Plan a more engaging online sales service",
         visualAlt:
-          "Small glass forms and a luminous ribbon emerging from a blue presentation box",
+          "A 2D illustration of a woman choosing products in an online shop",
         detailVisualAlt:
-          "A blue ribbon connecting sculptural objects on transparent display plinths",
+          "A 2D illustration of a woman enjoying online shopping with a laptop product grid, headphones and a delivery box",
       },
       systems: {
         role: "Business area 02",
@@ -176,9 +176,10 @@ export const en: Dictionary = {
         description:
           "We develop services for businesses, sales and operations management systems, and web services. We turn business needs into systems that are easy to use.",
         consultation: "Develop a sales service or an operations system",
-        visualAlt: "Blue glass modules linked by luminous pathways",
+        visualAlt:
+          "A 2D illustration of two developers writing code and building a web interface",
         detailVisualAlt:
-          "Transparent glass layers joined by orderly blue paths",
+          "A 2D illustration of developers working with a code editor, a live UI preview, a mobile interface and wireframe sketches",
       },
       creative: {
         role: "Business area 03",
@@ -187,9 +188,9 @@ export const en: Dictionary = {
           "We produce in-service visual sequences, product introduction videos, advertising materials, and digital content. We develop creative approaches that communicate what makes a product or service appealing.",
         consultation: "Create a video introducing a product or service",
         visualAlt:
-          "A blue ribbon passing through glass cinema frames beside an optical lens",
+          "An AI-generated concept image of a product camera setup and video editing screen",
         detailVisualAlt:
-          "A sequence of transparent frames tracing the movement of a blue ribbon",
+          "An AI-generated concept image of a camera filming a lit blue bottle beside a video preview and editing timeline",
       },
       marketing: {
         role: "Business area 04",
@@ -197,9 +198,10 @@ export const en: Dictionary = {
         description:
           "We plan sales promotions, social media initiatives, influencer partnerships, and joint projects with brands and creators. These can include product curation, limited-edition product development, video production, and sales campaigns.",
         consultation: "Co-create a product with a brand or creator",
-        visualAlt: "Blue glass ribbons interlocking around a luminous sphere",
+        visualAlt:
+          "A 2D illustration of a creator collaboration promoting a product",
         detailVisualAlt:
-          "Blue ribbons connecting different glass forms and extending outward",
+          "A 2D illustration of a creator presenting a product to a smartphone while a collaborator reviews packaging and social media images",
       },
     },
     consultationLabel: "Example inquiry",
@@ -255,9 +257,9 @@ export const en: Dictionary = {
       email: "Contact",
       telephone: "Telephone",
     },
-    photoTitle: "The people behind the company",
+    photoTitle: "A picture of creating together.",
     photoNote:
-      "An actual company or representative photograph will be added once approved for publication.",
+      "An illustration of work connecting planning, development and creative expression. The people and office are imaginary.",
   },
   contact: {
     noticeTitle: "Our contact channel is being prepared.",
@@ -311,22 +313,29 @@ export const en: Dictionary = {
     back: "Back to home",
   },
   assets: {
+    expand: "Enlarge image (opens in a new tab)",
+    aboutCaption:
+      "A desk where ideas take shape. An illustration connecting planning, development and production.",
+    posterLabel: "Service introduction concept",
+    posterTitle: "Discover a collection. Open a box.",
+    posterNote:
+      "A video cover concept introducing product discovery and the unboxing experience. Only this still image is available; the video is being prepared.",
     afterglowAlt: "An abstract brand visual with a loop of blue light",
     daylightAlt: "An abstract transparent form in soft overlapping light",
     slots: [
       {
-        title: "An overview of the service",
+        title: "A new way to discover collectibles.",
         description:
-          "An actual development screenshot will be added once it is approved for publication.",
-        label: "Development screen 01",
+          "Trading cards, brand fashion and precision devices. A service concept exploring the enjoyment of product discovery through mystery boxes.",
+        label: "Service concept 01",
       },
       {
-        title: "A view of the user experience",
+        title: "Understand. Choose. Unbox.",
         description:
-          "We will use an actual screen showing a confirmed feature or interaction.",
-        label: "Development screen 02",
+          "Review product information and conditions, choose a box, open it, and learn about the product you will receive. A concept for an enjoyable experience built on clarity.",
+        label: "Experience concept 02",
       },
     ],
-    note: "Actual screens, photographs and videos will be added after their permissions and disclosure scope are confirmed.",
+    note: "These illustrations explain the service concept. Actual products, screens and service details will be announced once confirmed.",
   },
 };
