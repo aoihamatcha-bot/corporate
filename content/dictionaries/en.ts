@@ -121,6 +121,15 @@ export const en: Dictionary = {
     aboutButton: "Explore our approach",
     companyDescription: "Learn about the organization behind MYSTENA.",
   },
+  metrics: {
+    heading: "MYSTENA in numbers",
+    note: "Figures are illustrative placeholders for this layout, not actual business results.",
+    items: {
+      partners: { label: "Partners", unit: "companies" },
+      stores: { label: "Participating stores", unit: "stores" },
+      users: { label: "Registered users", unit: "people" },
+    },
+  },
   about: {
     heading: "Turning engaging ideas\ninto intuitive services.",
     paragraphs: [

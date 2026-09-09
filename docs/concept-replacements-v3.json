@@ -1,0 +1,80 @@
+{
+  "version": 3,
+  "status": "selected-for-site",
+  "startingHead": "ce1e24ca66832fe4ffa0d542f48e782e77d0e147",
+  "source": "Four Japanese PNGs supplied by the Owner in this conversation; matched by image content, not attachment order.",
+  "processing": {
+    "format": "webp",
+    "quality": 90,
+    "effort": 6,
+    "resize": false,
+    "crop": false
+  },
+  "assets": [
+    {
+      "id": "A01",
+      "variant": "ja",
+      "path": "/images/corporate/a01-service-overview-v3-ja.webp",
+      "width": 1586,
+      "height": 992,
+      "bytes": 125552,
+      "sha256": "5bca5314f5e5d44434fd4b621e2d5780ec11584ee1802a4c9d4b49be290a2bf5",
+      "sourceFile": "Codex 画像 2026年9月9日 23_08_17.png",
+      "sourceBytes": 1409012,
+      "sourceSha256": "936c83c6582bb89489ab4fa479e50b4f33ba488eebec0e74308ce01ca5bb4d7d",
+      "placement": "サービス構想 01：コレクションとの、新しい出会い。",
+      "routes": [
+        "/"
+      ]
+    },
+    {
+      "id": "A02",
+      "variant": "ja",
+      "path": "/images/corporate/a02-experience-flow-v3-ja.webp",
+      "width": 1586,
+      "height": 992,
+      "bytes": 130956,
+      "sha256": "5fd320db5b2035fdfa4d868b204582ac28e04f7c0ce4349bd4e45af6937ce1b8",
+      "sourceFile": "Codex 画像 2026年9月9日 23_08_04.png",
+      "sourceBytes": 1374280,
+      "sourceSha256": "e200589d032cbaeb5daec9d3f49c2c71bf4dbf71449a7bdc1d92fc89fab3ea2c",
+      "placement": "体験の構想 02：知って、選んで、ひらく。",
+      "routes": [
+        "/"
+      ]
+    },
+    {
+      "id": "A06",
+      "variant": "ja",
+      "path": "/images/corporate/a06-business-concept-v3-ja.webp",
+      "width": 1586,
+      "height": 992,
+      "bytes": 137954,
+      "sha256": "2a62ff1eb32ab73e0e8e8dbab6217a713c42537035a08e759fd4e926c7f26241",
+      "sourceFile": "Codex 画像 2026年9月9日 23_07_44.png",
+      "sourceBytes": 1425354,
+      "sourceSha256": "aa8929a486add2b3adba2c5693282e06a2a9548e2084305cca31b72d5391c8eb",
+      "placement": "エンターテインメントECの構想図",
+      "routes": [
+        "/",
+        "/business"
+      ]
+    },
+    {
+      "id": "A07",
+      "variant": "ja",
+      "path": "/images/corporate/a07-video-poster-v3-ja.webp",
+      "width": 1672,
+      "height": 941,
+      "bytes": 118506,
+      "sha256": "c790eadc85e201b96dfd98e261cd6b03889eb275153e897374bc43be01b56f82",
+      "sourceFile": "Codex 画像 2026年9月9日 23_08_13.png",
+      "sourceBytes": 1485340,
+      "sourceSha256": "ca42dbcb7114fc3e6e3a46210a9f37aec3784f74eac02b4f5b60f05c1c63445e",
+      "placement": "サービス紹介の構想：コレクションに出会う。ボックスをひらく。",
+      "routes": [
+        "/"
+      ]
+    }
+  ]
+}

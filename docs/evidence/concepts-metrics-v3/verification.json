@@ -1,0 +1,189 @@
+{
+  "checkedAt": "2026-09-09T14:32:38.758Z",
+  "target": "http://127.0.0.1:3017",
+  "evidence": "LOCAL production build.",
+  "screenshotMethod": "Reduced motion for settled-state captures. Cropped element captures hide the sticky header during capture only.",
+  "registryHashesVerified": 19,
+  "originalBytes": 5693986,
+  "optimizedBytes": 512968,
+  "files": [
+    {
+      "id": "A01",
+      "path": "/images/corporate/a01-service-overview-v3-ja.webp",
+      "status": 200,
+      "sha256": "5bca5314f5e5d44434fd4b621e2d5780ec11584ee1802a4c9d4b49be290a2bf5"
+    },
+    {
+      "id": "A02",
+      "path": "/images/corporate/a02-experience-flow-v3-ja.webp",
+      "status": 200,
+      "sha256": "5fd320db5b2035fdfa4d868b204582ac28e04f7c0ce4349bd4e45af6937ce1b8"
+    },
+    {
+      "id": "A06",
+      "path": "/images/corporate/a06-business-concept-v3-ja.webp",
+      "status": 200,
+      "sha256": "2a62ff1eb32ab73e0e8e8dbab6217a713c42537035a08e759fd4e926c7f26241"
+    },
+    {
+      "id": "A07",
+      "path": "/images/corporate/a07-video-poster-v3-ja.webp",
+      "status": 200,
+      "sha256": "c790eadc85e201b96dfd98e261cd6b03889eb275153e897374bc43be01b56f82"
+    }
+  ],
+  "pages": [
+    {
+      "locale": "ja",
+      "width": 1440,
+      "route": "/",
+      "images": [
+        {
+          "id": "A01",
+          "expected": "/images/corporate/a01-service-overview-v3-ja.webp",
+          "loaded": true
+        },
+        {
+          "id": "A02",
+          "expected": "/images/corporate/a02-experience-flow-v3-ja.webp",
+          "loaded": true
+        },
+        {
+          "id": "A06",
+          "expected": "/images/corporate/a06-business-concept-v3-ja.webp",
+          "loaded": true
+        },
+        {
+          "id": "A07",
+          "expected": "/images/corporate/a07-video-poster-v3-ja.webp",
+          "loaded": true
+        }
+      ],
+      "metrics": [
+        "2",
+        "10",
+        "1,000"
+      ],
+      "sampleNotice": true,
+      "horizontalOverflow": false,
+      "errors": []
+    },
+    {
+      "locale": "en",
+      "width": 1440,
+      "route": "/en/",
+      "images": [
+        {
+          "id": "A01",
+          "expected": "/images/corporate/a01-service-overview-en.webp",
+          "loaded": true
+        },
+        {
+          "id": "A02",
+          "expected": "/images/corporate/a02-experience-flow-en.webp",
+          "loaded": true
+        },
+        {
+          "id": "A06",
+          "expected": "/images/corporate/a06-business-concept-en.webp",
+          "loaded": true
+        },
+        {
+          "id": "A07",
+          "expected": "/images/corporate/a07-video-poster-en.webp",
+          "loaded": true
+        }
+      ],
+      "metrics": [
+        "2",
+        "10",
+        "1,000"
+      ],
+      "sampleNotice": true,
+      "horizontalOverflow": false,
+      "errors": []
+    },
+    {
+      "route": "/business",
+      "width": 1440,
+      "asset": "A06",
+      "loaded": true
+    },
+    {
+      "locale": "ja",
+      "width": 390,
+      "route": "/",
+      "images": [
+        {
+          "id": "A01",
+          "expected": "/images/corporate/a01-service-overview-v3-ja.webp",
+          "loaded": true
+        },
+        {
+          "id": "A02",
+          "expected": "/images/corporate/a02-experience-flow-v3-ja.webp",
+          "loaded": true
+        },
+        {
+          "id": "A06",
+          "expected": "/images/corporate/a06-business-concept-v3-ja.webp",
+          "loaded": true
+        },
+        {
+          "id": "A07",
+          "expected": "/images/corporate/a07-video-poster-v3-ja.webp",
+          "loaded": true
+        }
+      ],
+      "metrics": [
+        "2",
+        "10",
+        "1,000"
+      ],
+      "sampleNotice": true,
+      "horizontalOverflow": false,
+      "errors": []
+    },
+    {
+      "locale": "en",
+      "width": 390,
+      "route": "/en/",
+      "images": [
+        {
+          "id": "A01",
+          "expected": "/images/corporate/a01-service-overview-en.webp",
+          "loaded": true
+        },
+        {
+          "id": "A02",
+          "expected": "/images/corporate/a02-experience-flow-en.webp",
+          "loaded": true
+        },
+        {
+          "id": "A06",
+          "expected": "/images/corporate/a06-business-concept-en.webp",
+          "loaded": true
+        },
+        {
+          "id": "A07",
+          "expected": "/images/corporate/a07-video-poster-en.webp",
+          "loaded": true
+        }
+      ],
+      "metrics": [
+        "2",
+        "10",
+        "1,000"
+      ],
+      "sampleNotice": true,
+      "horizontalOverflow": false,
+      "errors": []
+    },
+    {
+      "route": "/business",
+      "width": 390,
+      "asset": "A06",
+      "loaded": true
+    }
+  ]
+}

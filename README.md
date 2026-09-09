@@ -83,3 +83,7 @@ LINE Seed JP © LY Corporation / SIL Open Font License 1.1。詳細は [ライ�
 OGPは日英で切り替わり、ニュースには共通表紙を使用します。画像URLの基準は設定済みの `site.canonicalOrigin` を優先し、未設定なら本番ではVercelの公開ドメイン `VERCEL_PROJECT_PRODUCTION_URL`、Previewでは `VERCEL_URL`、ローカルでは `http://127.0.0.1:3017` を使用します。これだけではcanonicalタグや検索公開を有効にしません。
 
 [採用・検証記録](docs/asset-adoption-v2.md) / [採用ファイルとSHA-256](docs/asset-adoption-v2.json)。以前のレビュー資料は各時点の記録として保存しています。他社サイトの画像・文言・実装コード、および旧Sitesのホスティング設定は含めていません。
+
+日本語のA01・A02・A06・A07は、その後Ownerから提供されたPNG4枚をWebPへ最適化して差し替えました。元の画像比率と全内容を保ち、英語素材は既存のものを使用します。[対応表・ハッシュ](docs/concept-replacements-v3.json) / [変更・検証記録](docs/concepts-and-metrics-v3.md)。
+
+トップの「03 私たちが大切にすること」末尾には、提携者数・出店者数・登録ユーザー数を表示します。`content/metrics.ts` の2社・10店・1,000人はOwner指定の仮置き値であり、日英とも表示イメージであることを明記しています。正式な実績として公開するには、数値・集計時点の確認と注記の更新が必要です。数字は画面に入った際に一度だけカウントアップし、停止設定・動きの抑制・JavaScript無効時は最終値を表示します。

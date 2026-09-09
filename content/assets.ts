@@ -18,8 +18,10 @@ export const assets = [
   ...corporateAssets.map((asset) => ({
     ...asset,
     kind: "approved-concept-asset" as const,
-    source: "docs/asset-adoption-v2.json",
-    permission: "All v2 assets approved by Owner for site integration",
+    source: asset.path.includes("-v3-ja.")
+      ? "docs/concept-replacements-v3.json"
+      : "docs/asset-adoption-v2.json",
+    permission: "Approved or supplied by Owner for site integration",
     status: "selected-for-site" as const,
   })),
   {

@@ -1,0 +1,46 @@
+{
+  "evidence": "LOCAL browser checks; recorded animation runs at normal speed.",
+  "layouts": [
+    {
+      "width": 320,
+      "route": "/",
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "route": "/en",
+      "overflow": false
+    },
+    {
+      "width": 701,
+      "route": "/",
+      "overflow": false
+    },
+    {
+      "width": 701,
+      "route": "/en",
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "route": "/",
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "route": "/en",
+      "overflow": false
+    },
+    {
+      "width": 1024,
+      "route": "/",
+      "overflow": false
+    },
+    {
+      "width": 1024,
+      "route": "/en",
+      "overflow": false
+    }
+  ],
+  "video": "metrics-animation.webm"
+}

@@ -44,9 +44,11 @@ test("menu traps Tab and Shift+Tab, closes with Escape and restores scroll and f
   // interactive before settling fonts and measuring its saved scroll position.
   await expect(trigger).toBeEnabled();
   await page.evaluate(() => document.fonts.ready);
+  // Focus can scroll in WebKit. Establish keyboard focus before positioning
+  // the page so the baseline describes the moment immediately before opening.
+  await trigger.focus();
   await page.evaluate(() => window.scrollTo({ top: 650, behavior: "instant" }));
   const originalY = await page.evaluate(() => scrollY);
-  await trigger.focus();
   await page.keyboard.press("Enter");
   const dialog = page.getByRole("dialog");
   await expect(dialog).toBeVisible();

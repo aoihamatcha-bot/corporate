@@ -117,6 +117,15 @@ export const ja = {
     aboutButton: "私たちの考え方を見る",
     companyDescription: "運営主体の基本情報をご案内します。",
   },
+  metrics: {
+    heading: "数字で見るMYSTENA",
+    note: "※ 数値は表示イメージのための仮置きです。実際の実績を示すものではありません。",
+    items: {
+      partners: { label: "提携者数", unit: "社" },
+      stores: { label: "出店者数", unit: "店" },
+      users: { label: "登録ユーザー数", unit: "人" },
+    },
+  },
   about: {
     heading: "楽しさを考え、\n使いやすいかたちに。",
     paragraphs: [

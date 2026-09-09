@@ -3,16 +3,17 @@ import type { Locale } from "./i18n";
 export type CorporateAssetId =
   "A01" | "A02" | "A03" | "A04" | "A05" | "A06" | "A07" | "A08" | "A09" | "A10";
 
-// Approved v2 assets. Review history and source hashes: docs/asset-adoption-v2.json.
+// Approved v2 assets plus Owner-supplied Japanese replacements.
+// Source hashes: docs/asset-adoption-v2.json and docs/concept-replacements-v3.json.
 export const corporateAssets = [
   {
     id: "A01",
     variant: "ja",
-    path: "/images/corporate/a01-service-overview-ja.webp",
-    width: 1600,
-    height: 1000,
-    bytes: 74494,
-    sha256: "92b8df70377d6d95eb94124f92fbee61ed6a9be3107d10d6ab44c1c4239b8d82",
+    path: "/images/corporate/a01-service-overview-v3-ja.webp",
+    width: 1586,
+    height: 992,
+    bytes: 125552,
+    sha256: "5bca5314f5e5d44434fd4b621e2d5780ec11584ee1802a4c9d4b49be290a2bf5",
     alt: {
       ja: "ミステリーボックスと、保護ケース入りのトレーディングカード、上質なジャケット、精密カメラを並べたエンタメECの構想図",
       en: "An entertainment commerce concept featuring a mystery box, protected trading cards, a tailored jacket and a precision camera",
@@ -34,11 +35,11 @@ export const corporateAssets = [
   {
     id: "A02",
     variant: "ja",
-    path: "/images/corporate/a02-experience-flow-ja.webp",
-    width: 1600,
-    height: 1000,
-    bytes: 80406,
-    sha256: "6f56190d5b83bc026261b476e103ca23d5bca09d572cb4a7de969ee192cefff1",
+    path: "/images/corporate/a02-experience-flow-v3-ja.webp",
+    width: 1586,
+    height: 992,
+    bytes: 130956,
+    sha256: "5fd320db5b2035fdfa4d868b204582ac28e04f7c0ce4349bd4e45af6937ce1b8",
     alt: {
       ja: "商品情報を確認し、ミステリーボックスを開封して、カードの内容を確認する3段階の構想図",
       en: "A proposed three-step mystery box journey: review product details, open the box and explore the revealed trading card",
@@ -112,14 +113,14 @@ export const corporateAssets = [
   {
     id: "A06",
     variant: "ja",
-    path: "/images/corporate/a06-business-concept-ja.webp",
-    width: 1600,
-    height: 850,
-    bytes: 61434,
-    sha256: "b8e2fe9b30342d6087bf446a367c8a181ea2cd7660ed1bfdabfc5af41b2958d1",
+    path: "/images/corporate/a06-business-concept-v3-ja.webp",
+    width: 1586,
+    height: 992,
+    bytes: 137954,
+    sha256: "2a62ff1eb32ab73e0e8e8dbab6217a713c42537035a08e759fd4e926c7f26241",
     alt: {
-      ja: "事業者、文字のみのMYSTENA、カードを手にして商品情報を見る人物をつないだ事業関係図",
-      en: "A relationship diagram connecting businesses, the text-only MYSTENA name and a collector viewing product information",
+      ja: "商品を届ける事業者、MYSTENAのボックス開封サービス、タブレットで商品を探す人をつないだ事業の構想図",
+      en: "A business concept connecting product sellers, MYSTENA's box-opening service and a person discovering products on a tablet",
     },
   },
   {
@@ -138,11 +139,11 @@ export const corporateAssets = [
   {
     id: "A07",
     variant: "ja",
-    path: "/images/corporate/a07-video-poster-ja.webp",
-    width: 1600,
-    height: 900,
-    bytes: 57250,
-    sha256: "9f653ecb5302c53e1a81f70159c2f6c624ca934aedfd3c9f1989ad885261725d",
+    path: "/images/corporate/a07-video-poster-v3-ja.webp",
+    width: 1672,
+    height: 941,
+    bytes: 118506,
+    sha256: "c790eadc85e201b96dfd98e261cd6b03889eb275153e897374bc43be01b56f82",
     alt: {
       ja: "ミステリーボックス、トレーディングカード、ジャケット、精密カメラを並べた紹介動画の表紙案",
       en: "A video cover concept showing a mystery box with trading cards, a tailored jacket and a precision camera",
