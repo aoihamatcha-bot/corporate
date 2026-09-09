@@ -1,0 +1,83 @@
+{
+  "environment": "LOCAL production build, Chromium",
+  "records": [
+    {
+      "name": "desktop",
+      "pageErrors": [],
+      "captures": [
+        {
+          "file": "desktop-01-completed-handwriting.png",
+          "state": {
+            "time": 4880.79999999702,
+            "phase": "hold",
+            "intro": "running",
+            "width": 1440,
+            "scrollWidth": 1425,
+            "scrollY": 0
+          }
+        },
+        {
+          "file": "desktop-02-handoff.png",
+          "state": {
+            "time": 6644.5999999940395,
+            "phase": "docking",
+            "intro": "docking",
+            "width": 1440,
+            "scrollWidth": 1425,
+            "scrollY": 0
+          }
+        },
+        {
+          "file": "desktop-03-hero.png",
+          "state": {
+            "time": 9327.39999999851,
+            "phase": "complete",
+            "intro": "done",
+            "width": 1440,
+            "scrollWidth": 1425,
+            "scrollY": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "mobile",
+      "pageErrors": [],
+      "captures": [
+        {
+          "file": "mobile-01-completed-handwriting.png",
+          "state": {
+            "time": 4816.10000000149,
+            "phase": "hold",
+            "intro": "running",
+            "width": 390,
+            "scrollWidth": 390,
+            "scrollY": 0
+          }
+        },
+        {
+          "file": "mobile-02-handoff.png",
+          "state": {
+            "time": 6653.10000000149,
+            "phase": "docking",
+            "intro": "docking",
+            "width": 390,
+            "scrollWidth": 390,
+            "scrollY": 0
+          }
+        },
+        {
+          "file": "mobile-03-hero.png",
+          "state": {
+            "time": 9143.30000000447,
+            "phase": "complete",
+            "intro": "done",
+            "width": 390,
+            "scrollWidth": 390,
+            "scrollY": 0
+          }
+        }
+      ]
+    }
+  ]
+}

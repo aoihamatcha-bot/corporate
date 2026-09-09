@@ -1,0 +1,18 @@
+[
+  {
+    "mobile": false,
+    "title": "Curiosity changesthe world.",
+    "phase": "complete",
+    "overflow": false,
+    "modal": false,
+    "errors": []
+  },
+  {
+    "mobile": true,
+    "title": "Curiosity changesthe world.",
+    "phase": "complete",
+    "overflow": false,
+    "modal": false,
+    "errors": []
+  }
+]

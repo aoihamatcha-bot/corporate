@@ -1,11 +1,7 @@
-import {
-  PageIntro,
-  SectionLabel,
-  ContactBand,
-  DraftBadge,
-} from "@/components/editorial";
+import { PageIntro, SectionLabel, ContactBand } from "@/components/editorial";
 import { Scene } from "@/components/motion/scene";
 import { RevealText } from "@/components/motion/reveal-text";
+import { ImageEntrance } from "@/components/motion/image-entrance";
 import { GradientImage } from "@/components/motion/gradient-image";
 import { ConceptDiagram, Collaboration } from "@/components/content-blocks";
 import { getDictionary } from "@/content/dictionaries";
@@ -29,16 +25,17 @@ export function BusinessPage({ locale }: { locale: Locale }) {
             <div className="container editorial-grid">
               <SectionLabel number={item.index}>{copy.role}</SectionLabel>
               <div>
-                <GradientImage
-                  src={item.detailVisual}
-                  blend={item.detailVisualBlend}
-                  trigger="hover"
-                  sizes="(max-width: 700px) 90vw, 60vw"
-                  className="business-detail-visual"
-                  palette={i % 2 ? "iris" : "sky"}
-                  alt={copy.detailVisualAlt}
-                />
-                <DraftBadge>{c.review.candidate}</DraftBadge>
+                <ImageEntrance className="business-detail-frame">
+                  <GradientImage
+                    src={item.detailVisual}
+                    blend={item.detailVisualBlend}
+                    trigger="hover"
+                    sizes="(max-width: 700px) 90vw, 60vw"
+                    className="business-detail-visual"
+                    palette={i % 2 ? "iris" : "sky"}
+                    alt={copy.detailVisualAlt}
+                  />
+                </ImageEntrance>
                 <h2 className="business-title">
                   <RevealText>{copy.title}</RevealText>
                 </h2>
@@ -71,8 +68,6 @@ export function BusinessPage({ locale }: { locale: Locale }) {
             {[
               [c.business.audienceLabel, c.business.audience],
               [c.business.deliverableLabel, c.business.deliverable],
-              [c.business.stageLabel, c.business.stage],
-              [c.business.revenueLabel, c.business.revenue],
             ].map(([label, value]) => (
               <div key={label}>
                 <dt>

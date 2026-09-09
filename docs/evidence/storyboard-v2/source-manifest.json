@@ -1,0 +1,143 @@
+{
+  "createdAt": "2026-09-09T18:30:27.058Z",
+  "branch": "feat/corporate-motion-storyboard-v1",
+  "startingHead": "016105c648e7f20d10c674b3671d69d1a0ed486e",
+  "finalHead": "016105c648e7f20d10c674b3671d69d1a0ed486e",
+  "files": [
+    {
+      "file": "app/(en)/en/layout.tsx",
+      "sha256": "39ea43c4ef1436916295d4c8a014c24b012cff1ac4a48f98fd1098090ce91bab"
+    },
+    {
+      "file": "app/(ja)/layout.tsx",
+      "sha256": "da80eec1a1e3dc98e171a050ff550231bf7073dc083424851c77e87a1bd0fd04"
+    },
+    {
+      "file": "components/content-blocks.tsx",
+      "sha256": "7066262de0d0fcc801e6dd7ee47f30d28bc09dcfa55838d84c08a57abfd00923"
+    },
+    {
+      "file": "components/editorial.tsx",
+      "sha256": "35c6a045751d146f7c154b61c731e4f3cfb75cdbeaea27168bd4fde4d776d6b6"
+    },
+    {
+      "file": "components/layout/header.tsx",
+      "sha256": "90e757bcb101e1990e837d9711f0e96bb70acb23cfa6786beab3be29e1de2116"
+    },
+    {
+      "file": "components/layout/site-root.tsx",
+      "sha256": "bc0213199cf7f63df5d8e6151b2ac452cc73dc4866eee7c28f363d06e882bc32"
+    },
+    {
+      "file": "components/motion/entrance.ts",
+      "sha256": "10d1cba02e49eef9cddd64bfdf8f64544279da3e5fac2e3b50b6758354a81af5"
+    },
+    {
+      "file": "components/motion/motion-preference.ts",
+      "sha256": "c569b444caf14db96142477568696493e91b5aea944f9cad293487364a237934"
+    },
+    {
+      "file": "components/motion/scene.tsx",
+      "sha256": "89f387c0c716b7d268362642ce8926f2b6046761ff1118efb4529d68d57f1e07"
+    },
+    {
+      "file": "components/pages/home.tsx",
+      "sha256": "1394351f90a88b75bad031d482cef4f48244f540bb0f7840d4d4ff79ae146ee6"
+    },
+    {
+      "file": "content/dictionaries/en.ts",
+      "sha256": "f9031607f6857a58bf5eca566cbd3205f11632c000085e4e2a1f9ed5c642c9f5"
+    },
+    {
+      "file": "content/dictionaries/ja.ts",
+      "sha256": "9143310636731d2d1a32700608b2efefc1662f216c854e0480bbc52d21e0091d"
+    },
+    {
+      "file": "tests/e2e/afterglow.spec.ts",
+      "sha256": "5bf76b2b430c9cb8045b90c996e1ae332af5caf59073b8087b4b4831756313c6"
+    },
+    {
+      "file": "tests/e2e/i18n.spec.ts",
+      "sha256": "078fb2e170e77d6c1d42e3db4ef064c05ed26de000e696a41ebe5605e0e577e2"
+    },
+    {
+      "file": "tests/e2e/metrics.spec.ts",
+      "sha256": "7c1c2bb8ca64db38821dee622b7392b4d5caca6de16b920be0fd429bf561dc32"
+    },
+    {
+      "file": "tests/e2e/motion.spec.ts",
+      "sha256": "2baca0d7bcc1b29d7f065416941c1a0c945e18b6b4ce43a654d1894952df273a"
+    },
+    {
+      "file": "tests/e2e/site.spec.ts",
+      "sha256": "f282b4af011c7eeb9b3f80af4917681e303004232326e162733a76a0ff1a1606"
+    },
+    {
+      "file": "tests/e2e/thumbnails.spec.ts",
+      "sha256": "1cf26acb2559e19e3672ee5867d4e6adf40cdbaa5fef3c0137ab0f8b2b8ec089"
+    },
+    {
+      "file": "components/motion/handwriting-ink.ts",
+      "sha256": "2fcb1d07c51529178e3b8fe0a9295996f3cd1c27958b9e2ff950360c9698e5dc"
+    },
+    {
+      "file": "components/motion/handwriting.ts",
+      "sha256": "38abaa6fbb2f9fab7dd1884343128116b146b85c9209fdc04172aca97351b902"
+    },
+    {
+      "file": "components/motion/hero-art.tsx",
+      "sha256": "6f7ac9e9763b5dbc7b31e550423da4d3a44d0d2ecbb53155f75c71fa4509e5ba"
+    },
+    {
+      "file": "components/motion/home-story.tsx",
+      "sha256": "ed23d71a07755bccc14a051be5ccc9e7fd39dcb480ef1fbfd4583491f126d073"
+    },
+    {
+      "file": "components/motion/opening-bootstrap.ts",
+      "sha256": "4ba82169c051ed5ba78555583f58cd1845a020d5a3cf59ce60ff6e333bf96ee4"
+    },
+    {
+      "file": "components/motion/site-opening.tsx",
+      "sha256": "e95c7d1c6e66ede872890dba14905492beda986e93291aac79d7de41f015445a"
+    },
+    {
+      "file": "components/motion/story-accent.tsx",
+      "sha256": "a53545ed2eded14210b247cc7651afcf13fa518a607767dd89ccfffdca6cb3f1"
+    },
+    {
+      "file": "content/hero-media.ts",
+      "sha256": "620762c98168728c07a05bb8ac95b2ab574cf8d03b44bf641e2a0cca7bca6757"
+    },
+    {
+      "file": "docs/motion-storyboard-v1.md",
+      "sha256": "21aab46717fc7bdc4e11d93613e07529411617e070958bf5039f1fe6c5de5dc3"
+    },
+    {
+      "file": "docs/motion-storyboard-v2.md",
+      "sha256": "17bbd82e6de7a781a8ea72c49db1317ccbf7608b53310c27418d704c0a7a0584"
+    },
+    {
+      "file": "scripts/build-handwriting.ts",
+      "sha256": "2bfcd0cc76f948ef4b11174c2cd235bce0a5b591231348d9fa0863c7db261a86"
+    },
+    {
+      "file": "scripts/capture-storyboard-v2.mjs",
+      "sha256": "b5f48fba36b8342e19bc85fd67ccb4d6bdb8513a575777fefd22f1d46c58ccf3"
+    },
+    {
+      "file": "scripts/capture-storyboard.mjs",
+      "sha256": "9dae3bd1dca6ea6c63647ec73fd016cab7a47481a50b7454afa76d051e79d4c2"
+    },
+    {
+      "file": "styles/storyboard.css",
+      "sha256": "0480a11e9d7c0a0c93f4480e75928cd43db67e29212b5580f03294785a055377"
+    },
+    {
+      "file": "tests/e2e/storyboard.spec.ts",
+      "sha256": "3bbbcf3b85284c06a4ae426247587ed42e3bd0ac9138e2e2d2e2821992e9c6ed"
+    }
+  ],
+  "deleted": [
+    "components/motion/motion-control.tsx"
+  ]
+}

@@ -1,0 +1,74 @@
+
+> mystena-corporate@1.0.0 test
+> tsx --test tests/content.test.ts
+
+TAP version 13
+# Subtest: production social images use a public domain while previews retain their own deployment
+ok 1 - production social images use a public domain while previews retain their own deployment
+  ---
+  duration_ms: 0.7108
+  ...
+# Subtest: draft, missing/invalid/future date, unsafe slug and empty copy are never public
+ok 2 - draft, missing/invalid/future date, unsafe slug and empty copy are never public
+  ---
+  duration_ms: 0.7389
+  ...
+# Subtest: approved articles appear at the publication boundary in descending date order
+ok 3 - approved articles appear at the publication boundary in descending date order
+  ---
+  duration_ms: 0.741
+  ...
+# Subtest: each translation has its own publication boundary, with no Japanese fallback
+ok 4 - each translation has its own publication boundary, with no Japanese fallback
+  ---
+  duration_ms: 0.1346
+  ...
+# Subtest: unknown company facts stay null and unpublished values are omitted
+ok 5 - unknown company facts stay null and unpublished values are omitted
+  ---
+  duration_ms: 0.4177
+  ...
+# Subtest: confirmed company values are localized without inventing English names or optional fields
+ok 6 - confirmed company values are localized without inventing English names or optional fields
+  ---
+  duration_ms: 0.1556
+  ...
+# Subtest: dates, currency and identifiers retain the same facts in both locales
+ok 7 - dates, currency and identifiers retain the same facts in both locales
+  ---
+  duration_ms: 15.7958
+  ...
+# Subtest: initial collections contain no invented announcements or operational facts
+ok 8 - initial collections contain no invented announcements or operational facts
+  ---
+  duration_ms: 0.1911
+  ...
+# Subtest: all public pages retain the same destination when changing language
+ok 9 - all public pages retain the same destination when changing language
+  ---
+  duration_ms: 0.3633
+  ...
+# Subtest: unavailable translations link only to the target-language news index
+ok 10 - unavailable translations link only to the target-language news index
+  ---
+  duration_ms: 0.3009
+  ...
+# Subtest: dictionaries have matching nonempty leaves, business areas and metadata
+ok 11 - dictionaries have matching nonempty leaves, business areas and metadata
+  ---
+  duration_ms: 1.5221
+  ...
+# Subtest: publication alternates use each language's own URL and only available translations
+ok 12 - publication alternates use each language's own URL and only available translations
+  ---
+  duration_ms: 0.2191
+  ...
+1..12
+# tests 12
+# suites 0
+# pass 12
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 275.1849

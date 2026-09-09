@@ -1,0 +1,1155 @@
+{
+  "environment": "LOCAL production build on http://127.0.0.1:3017, Chromium desktop/mobile and WebKit mobile",
+  "recordedAt": "2026-09-09T19:51:30.740Z",
+  "startingHead": "016105c648e7f20d10c674b3671d69d1a0ed486e",
+  "finalHead": "016105c648e7f20d10c674b3671d69d1a0ed486e",
+  "branch": "feat/corporate-motion-storyboard-v1",
+  "delivery": {
+    "commit": false,
+    "push": false,
+    "newPR": false,
+    "ready": false,
+    "merge": false,
+    "hostedMutation": false,
+    "deploy": false
+  },
+  "checks": {
+    "build": "PASS",
+    "lint": "PASS",
+    "typecheck": "PASS (also included in final build)",
+    "contentTests": {
+      "passed": 12,
+      "failed": 0
+    },
+    "diffCheck": "PASS",
+    "adoptedCoreFilesUnchanged": true,
+    "companyFactsUnchanged": true,
+    "assetManifest": {
+      "checked": 8,
+      "allHashesAndBytesMatch": true
+    },
+    "suppliedHandwriting": {
+      "filesByteIdentical": true,
+      "inkPaths": 53,
+      "allRegenerateExactly": true
+    }
+  },
+  "runs": [
+    {
+      "file": "first-full-run.json",
+      "stats": {
+        "startTime": "2026-09-09T19:34:56.632Z",
+        "duration": 471761.972,
+        "expected": 142,
+        "skipped": 0,
+        "unexpected": 5,
+        "flaky": 0
+      }
+    },
+    {
+      "file": "focused-63-pass.json",
+      "stats": {
+        "startTime": "2026-09-09T19:44:03.461Z",
+        "duration": 177700.106,
+        "expected": 63,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    },
+    {
+      "file": "opening-final-24-pass.json",
+      "stats": {
+        "startTime": "2026-09-09T19:49:03.758Z",
+        "duration": 57890.809,
+        "expected": 24,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    }
+  ],
+  "latestResults": {
+    "uniqueCases": 150,
+    "passed": 150,
+    "failed": 0,
+    "note": "Latest result per file/title/browser, combining the full regression run and focused correction runs; not one monolithic 150-case run."
+  },
+  "findingsResolved": [
+    {
+      "issue": "New hero handoff must retain random palette selection",
+      "change": "Use the existing randomPalette selector for both landing lines."
+    },
+    {
+      "issue": "Three prior assertions expected a hero wipe band and two mobile assertions expected a missing path attribute",
+      "change": "Assert incoming handoff plus gradient, preserve independent band-color assertion on unchanged philosophy heading, and assert an empty invisible mobile trail. No test skips or threshold relaxation."
+    },
+    {
+      "issue": "Deferred font readiness could restart docking after OS reduced-motion had dismissed the effect",
+      "reproduction": "LOCAL browser fault injection: defer document.fonts.ready, change reduced motion, release font promise; observed intro states done -> docking before fix.",
+      "change": "Ignore pending promises from disposed opening effects.",
+      "verification": "New regression passed in all three browser projects; ordinary opening and dismissal scenarios rechecked."
+    }
+  ],
+  "scopeNotes": [
+    "Company information and illustrative metrics notices retained.",
+    "Unconfigured contact submission and unpublished privacy policy remain truthful.",
+    "No completed hero video available; adopted animated key visual retained.",
+    "No Hosted visual verification performed."
+  ],
+  "warnings": [
+    "Existing Next build warning: missing LINE Seed JP fallback font metadata."
+  ],
+  "cases": [
+    {
+      "title": "all authored visible text has a gradient layer, including small labels and menu copy",
+      "file": "afterglow.spec.ts",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "run": "focused-63-pass.json"
+    },
+    {
+      "title": "independent text rhythms keep color after the background passes, then fade slowly to black",
+      "file": "afterglow.spec.ts",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "run": "focused-63-pass.json"
+    },
+    {
+      "title": "reload can select a different headline palette without server hydration mismatch",
+      "file": "afterglow.spec.ts",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "run": "focused-63-pass.json"
+    },
+    {
+      "title": "all authored visible text has a gradient layer, including small labels and menu copy",
+      "file": "afterglow.spec.ts",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "run": "focused-63-pass.json"
+    },
+    {
+      "title": "independent text rhythms keep color after the background passes, then fade slowly to black",
+      "file": "afterglow.spec.ts",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "run": "focused-63-pass.json"
+    },
+    {
+      "title": "reload can select a different headline palette without server hydration mismatch",
+      "file": "afterglow.spec.ts",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "run": "focused-63-pass.json"
+    },
+    {
+      "title": "all authored visible text has a gradient layer, including small labels and menu copy",
+      "file": "afterglow.spec.ts",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "run": "focused-63-pass.json"
+    },
+    {
+      "title": "independent text rhythms keep color after the background passes, then fade slowly to black",
+      "file": "afterglow.spec.ts",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "run": "focused-63-pass.json"
+    },
+    {
+      "title": "reload can select a different headline palette without server hydration mismatch",
+      "file": "afterglow.spec.ts",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "run": "focused-63-pass.json"
+    },
+    {
+      "title": "adopted concepts and illustrations load in both languages without implying real screens or a playable video",
+      "file": "corporate-assets.spec.ts",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "run": "focused-63-pass.json"
+    },
+    {
+      "title": "social cards use the correct language, full image URLs and a news-specific cover",
+      "file": "corporate-assets.spec.ts",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "run": "focused-63-pass.json"
+    },
+    {
+      "title": "adopted concepts and illustrations load in both languages without implying real screens or a playable video",
+      "file": "corporate-assets.spec.ts",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "run": "focused-63-pass.json"
+    },
+    {
+      "title": "social cards use the correct language, full image URLs and a news-specific cover",
+      "file": "corporate-assets.spec.ts",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "run": "focused-63-pass.json"
+    },
+    {
+      "title": "adopted concepts and illustrations load in both languages without implying real screens or a playable video",
+      "file": "corporate-assets.spec.ts",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "run": "focused-63-pass.json"
+    },
+    {
+      "title": "social cards use the correct language, full image URLs and a news-specific cover",
+      "file": "corporate-assets.spec.ts",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "run": "focused-63-pass.json"
+    },
+    {
+      "title": "English pages have localized headings, metadata, controls and server HTML",
+      "file": "i18n.spec.ts",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "language switching preserves each page and business anchors, including menu navigation and Back",
+      "file": "i18n.spec.ts",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "unpublished English articles and missing routes return localized 404 with honest translation choices",
+      "file": "i18n.spec.ts",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "English contact remains disabled, reports no send, and protects unsent drafts before language navigation",
+      "file": "i18n.spec.ts",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "320px layouts keep both languages and menu controls within the screen",
+      "file": "i18n.spec.ts",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "Device reduced motion survives language navigation without site controls and images are optional to understanding the company",
+      "file": "i18n.spec.ts",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "English pages and menu pass WCAG 2.2 AA and work without JavaScript",
+      "file": "i18n.spec.ts",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "English pages have localized headings, metadata, controls and server HTML",
+      "file": "i18n.spec.ts",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "language switching preserves each page and business anchors, including menu navigation and Back",
+      "file": "i18n.spec.ts",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "unpublished English articles and missing routes return localized 404 with honest translation choices",
+      "file": "i18n.spec.ts",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "English contact remains disabled, reports no send, and protects unsent drafts before language navigation",
+      "file": "i18n.spec.ts",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "320px layouts keep both languages and menu controls within the screen",
+      "file": "i18n.spec.ts",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "Device reduced motion survives language navigation without site controls and images are optional to understanding the company",
+      "file": "i18n.spec.ts",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "English pages and menu pass WCAG 2.2 AA and work without JavaScript",
+      "file": "i18n.spec.ts",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "English pages have localized headings, metadata, controls and server HTML",
+      "file": "i18n.spec.ts",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "language switching preserves each page and business anchors, including menu navigation and Back",
+      "file": "i18n.spec.ts",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "unpublished English articles and missing routes return localized 404 with honest translation choices",
+      "file": "i18n.spec.ts",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "English contact remains disabled, reports no send, and protects unsent drafts before language navigation",
+      "file": "i18n.spec.ts",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "320px layouts keep both languages and menu controls within the screen",
+      "file": "i18n.spec.ts",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "Device reduced motion survives language navigation without site controls and images are optional to understanding the company",
+      "file": "i18n.spec.ts",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "English pages and menu pass WCAG 2.2 AA and work without JavaScript",
+      "file": "i18n.spec.ts",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "the counter progresses once without shifting its width or announcing intermediate numbers",
+      "file": "metrics.spec.ts",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "enabling device reduced motion during an active counter shows its final value and stops the number and color animation",
+      "file": "metrics.spec.ts",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "both languages label the example figures and preserve readable values without motion or JavaScript",
+      "file": "metrics.spec.ts",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "the counter progresses once without shifting its width or announcing intermediate numbers",
+      "file": "metrics.spec.ts",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "enabling device reduced motion during an active counter shows its final value and stops the number and color animation",
+      "file": "metrics.spec.ts",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "both languages label the example figures and preserve readable values without motion or JavaScript",
+      "file": "metrics.spec.ts",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "the counter progresses once without shifting its width or announcing intermediate numbers",
+      "file": "metrics.spec.ts",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "enabling device reduced motion during an active counter shows its final value and stops the number and color animation",
+      "file": "metrics.spec.ts",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "both languages label the example figures and preserve readable values without motion or JavaScript",
+      "file": "metrics.spec.ts",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "text below the viewport keeps its entrance until visible, then settles to black once",
+      "file": "motion.spec.ts",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "opening the menu starts two color curtains and separate text wipes, then clears them",
+      "file": "motion.spec.ts",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "pausing during the entrance clears decorative bands and images without hiding copy",
+      "file": "motion.spec.ts",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "resize and a partially failing animation API cannot strand a colored cover",
+      "file": "motion.spec.ts",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "text below the viewport keeps its entrance until visible, then settles to black once",
+      "file": "motion.spec.ts",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "opening the menu starts two color curtains and separate text wipes, then clears them",
+      "file": "motion.spec.ts",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "pausing during the entrance clears decorative bands and images without hiding copy",
+      "file": "motion.spec.ts",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "resize and a partially failing animation API cannot strand a colored cover",
+      "file": "motion.spec.ts",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "text below the viewport keeps its entrance until visible, then settles to black once",
+      "file": "motion.spec.ts",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "opening the menu starts two color curtains and separate text wipes, then clears them",
+      "file": "motion.spec.ts",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "pausing during the entrance clears decorative bands and images without hiding copy",
+      "file": "motion.spec.ts",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "resize and a partially failing animation API cannot strand a colored cover",
+      "file": "motion.spec.ts",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "completed handwriting holds for a second then lands on the hero line boxes",
+      "file": "revision-v3.spec.ts",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "run": "opening-final-24-pass.json"
+    },
+    {
+      "title": "company thumbnails in both languages wait offscreen and fade with travel",
+      "file": "revision-v3.spec.ts",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "run": "focused-63-pass.json"
+    },
+    {
+      "title": "business thumbnails in both languages wait offscreen and fade with travel",
+      "file": "revision-v3.spec.ts",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "run": "focused-63-pass.json"
+    },
+    {
+      "title": "about thumbnails in both languages wait offscreen and fade with travel",
+      "file": "revision-v3.spec.ts",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "run": "focused-63-pass.json"
+    },
+    {
+      "title": "production copy has a prominent localized collaboration CTA and no draft notices",
+      "file": "revision-v3.spec.ts",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "run": "focused-63-pass.json"
+    },
+    {
+      "title": "desktop ink trails follow movement and change color; touch and reduced motion have no trail",
+      "file": "revision-v3.spec.ts",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "run": "focused-63-pass.json"
+    },
+    {
+      "title": "completed handwriting holds for a second then lands on the hero line boxes",
+      "file": "revision-v3.spec.ts",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "run": "opening-final-24-pass.json"
+    },
+    {
+      "title": "company thumbnails in both languages wait offscreen and fade with travel",
+      "file": "revision-v3.spec.ts",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "run": "focused-63-pass.json"
+    },
+    {
+      "title": "business thumbnails in both languages wait offscreen and fade with travel",
+      "file": "revision-v3.spec.ts",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "run": "focused-63-pass.json"
+    },
+    {
+      "title": "about thumbnails in both languages wait offscreen and fade with travel",
+      "file": "revision-v3.spec.ts",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "run": "focused-63-pass.json"
+    },
+    {
+      "title": "production copy has a prominent localized collaboration CTA and no draft notices",
+      "file": "revision-v3.spec.ts",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "run": "focused-63-pass.json"
+    },
+    {
+      "title": "desktop ink trails follow movement and change color; touch and reduced motion have no trail",
+      "file": "revision-v3.spec.ts",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "run": "focused-63-pass.json"
+    },
+    {
+      "title": "completed handwriting holds for a second then lands on the hero line boxes",
+      "file": "revision-v3.spec.ts",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "run": "opening-final-24-pass.json"
+    },
+    {
+      "title": "company thumbnails in both languages wait offscreen and fade with travel",
+      "file": "revision-v3.spec.ts",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "run": "focused-63-pass.json"
+    },
+    {
+      "title": "business thumbnails in both languages wait offscreen and fade with travel",
+      "file": "revision-v3.spec.ts",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "run": "focused-63-pass.json"
+    },
+    {
+      "title": "about thumbnails in both languages wait offscreen and fade with travel",
+      "file": "revision-v3.spec.ts",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "run": "focused-63-pass.json"
+    },
+    {
+      "title": "production copy has a prominent localized collaboration CTA and no draft notices",
+      "file": "revision-v3.spec.ts",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "run": "focused-63-pass.json"
+    },
+    {
+      "title": "desktop ink trails follow movement and change color; touch and reduced motion have no trail",
+      "file": "revision-v3.spec.ts",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "run": "focused-63-pass.json"
+    },
+    {
+      "title": "all real pages render, stay out of search and have no horizontal overflow",
+      "file": "site.spec.ts",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "menu traps Tab and Shift+Tab, closes with Escape and restores scroll and focus",
+      "file": "site.spec.ts",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "menu navigation focuses destination and Back leaves no lock",
+      "file": "site.spec.ts",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "rapid close, reopen, resizing and short-height navigation remain usable",
+      "file": "site.spec.ts",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "contact cannot collect or falsely report sending; unpublished articles return 404",
+      "file": "site.spec.ts",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "device reduced-motion persists on reload and keeps content visible without site controls",
+      "file": "site.spec.ts",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "cut-in ends in place across scrolling, touch has no pointer effect",
+      "file": "site.spec.ts",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "360, 768, and effective 200% desktop zoom have no clipped controls",
+      "file": "site.spec.ts",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "key pages and the full-screen menu pass axe WCAG 2.2 AA",
+      "file": "site.spec.ts",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "without JavaScript all copy and footer routes remain available",
+      "file": "site.spec.ts",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "animation API failure leaves readable content and working navigation",
+      "file": "site.spec.ts",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "all real pages render, stay out of search and have no horizontal overflow",
+      "file": "site.spec.ts",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "menu traps Tab and Shift+Tab, closes with Escape and restores scroll and focus",
+      "file": "site.spec.ts",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "menu navigation focuses destination and Back leaves no lock",
+      "file": "site.spec.ts",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "rapid close, reopen, resizing and short-height navigation remain usable",
+      "file": "site.spec.ts",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "contact cannot collect or falsely report sending; unpublished articles return 404",
+      "file": "site.spec.ts",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "device reduced-motion persists on reload and keeps content visible without site controls",
+      "file": "site.spec.ts",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "cut-in ends in place across scrolling, touch has no pointer effect",
+      "file": "site.spec.ts",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "360, 768, and effective 200% desktop zoom have no clipped controls",
+      "file": "site.spec.ts",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "key pages and the full-screen menu pass axe WCAG 2.2 AA",
+      "file": "site.spec.ts",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "without JavaScript all copy and footer routes remain available",
+      "file": "site.spec.ts",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "animation API failure leaves readable content and working navigation",
+      "file": "site.spec.ts",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "all real pages render, stay out of search and have no horizontal overflow",
+      "file": "site.spec.ts",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "menu traps Tab and Shift+Tab, closes with Escape and restores scroll and focus",
+      "file": "site.spec.ts",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "menu navigation focuses destination and Back leaves no lock",
+      "file": "site.spec.ts",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "rapid close, reopen, resizing and short-height navigation remain usable",
+      "file": "site.spec.ts",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "contact cannot collect or falsely report sending; unpublished articles return 404",
+      "file": "site.spec.ts",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "device reduced-motion persists on reload and keeps content visible without site controls",
+      "file": "site.spec.ts",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "cut-in ends in place across scrolling, touch has no pointer effect",
+      "file": "site.spec.ts",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "360, 768, and effective 200% desktop zoom have no clipped controls",
+      "file": "site.spec.ts",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "key pages and the full-screen menu pass axe WCAG 2.2 AA",
+      "file": "site.spec.ts",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "without JavaScript all copy and footer routes remain available",
+      "file": "site.spec.ts",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "animation API failure leaves readable content and working navigation",
+      "file": "site.spec.ts",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "opening writes the exact phrase with no ink dots before each pen stroke",
+      "file": "storyboard.spec.ts",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "run": "opening-final-24-pass.json"
+    },
+    {
+      "title": "opening has no skip UI and releases focus on Tab",
+      "file": "storyboard.spec.ts",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "run": "opening-final-24-pass.json"
+    },
+    {
+      "title": "opening has no skip UI and releases focus on Escape",
+      "file": "storyboard.spec.ts",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "run": "opening-final-24-pass.json"
+    },
+    {
+      "title": "opening has no skip UI and releases focus on scroll",
+      "file": "storyboard.spec.ts",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "run": "opening-final-24-pass.json"
+    },
+    {
+      "title": "opening replays on reload and full home navigation in both languages",
+      "file": "storyboard.spec.ts",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "run": "opening-final-24-pass.json"
+    },
+    {
+      "title": "device preferences and direct anchors work; the removed saved toggle has no effect",
+      "file": "storyboard.spec.ts",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "run": "focused-63-pass.json"
+    },
+    {
+      "title": "changing reduced motion during the opening releases the native modal",
+      "file": "storyboard.spec.ts",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "run": "opening-final-24-pass.json"
+    },
+    {
+      "title": "thumbnails wait transparent offscreen, fade and travel on entry, then stay settled",
+      "file": "storyboard.spec.ts",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "run": "focused-63-pass.json"
+    },
+    {
+      "title": "an active image fade settles on OS change and a focused waiting card is immediately readable",
+      "file": "storyboard.spec.ts",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "run": "focused-63-pass.json"
+    },
+    {
+      "title": "no JavaScript, forced colors and failed image animation all expose readable thumbnails",
+      "file": "storyboard.spec.ts",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "run": "focused-63-pass.json"
+    },
+    {
+      "title": "opening writes the exact phrase with no ink dots before each pen stroke",
+      "file": "storyboard.spec.ts",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "run": "opening-final-24-pass.json"
+    },
+    {
+      "title": "opening has no skip UI and releases focus on Tab",
+      "file": "storyboard.spec.ts",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "run": "opening-final-24-pass.json"
+    },
+    {
+      "title": "opening has no skip UI and releases focus on Escape",
+      "file": "storyboard.spec.ts",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "run": "opening-final-24-pass.json"
+    },
+    {
+      "title": "opening has no skip UI and releases focus on scroll",
+      "file": "storyboard.spec.ts",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "run": "opening-final-24-pass.json"
+    },
+    {
+      "title": "opening replays on reload and full home navigation in both languages",
+      "file": "storyboard.spec.ts",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "run": "opening-final-24-pass.json"
+    },
+    {
+      "title": "device preferences and direct anchors work; the removed saved toggle has no effect",
+      "file": "storyboard.spec.ts",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "run": "focused-63-pass.json"
+    },
+    {
+      "title": "changing reduced motion during the opening releases the native modal",
+      "file": "storyboard.spec.ts",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "run": "opening-final-24-pass.json"
+    },
+    {
+      "title": "thumbnails wait transparent offscreen, fade and travel on entry, then stay settled",
+      "file": "storyboard.spec.ts",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "run": "focused-63-pass.json"
+    },
+    {
+      "title": "an active image fade settles on OS change and a focused waiting card is immediately readable",
+      "file": "storyboard.spec.ts",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "run": "focused-63-pass.json"
+    },
+    {
+      "title": "no JavaScript, forced colors and failed image animation all expose readable thumbnails",
+      "file": "storyboard.spec.ts",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "run": "focused-63-pass.json"
+    },
+    {
+      "title": "opening writes the exact phrase with no ink dots before each pen stroke",
+      "file": "storyboard.spec.ts",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "run": "opening-final-24-pass.json"
+    },
+    {
+      "title": "opening has no skip UI and releases focus on Tab",
+      "file": "storyboard.spec.ts",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "run": "opening-final-24-pass.json"
+    },
+    {
+      "title": "opening has no skip UI and releases focus on Escape",
+      "file": "storyboard.spec.ts",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "run": "opening-final-24-pass.json"
+    },
+    {
+      "title": "opening has no skip UI and releases focus on scroll",
+      "file": "storyboard.spec.ts",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "run": "opening-final-24-pass.json"
+    },
+    {
+      "title": "opening replays on reload and full home navigation in both languages",
+      "file": "storyboard.spec.ts",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "run": "opening-final-24-pass.json"
+    },
+    {
+      "title": "device preferences and direct anchors work; the removed saved toggle has no effect",
+      "file": "storyboard.spec.ts",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "run": "focused-63-pass.json"
+    },
+    {
+      "title": "changing reduced motion during the opening releases the native modal",
+      "file": "storyboard.spec.ts",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "run": "opening-final-24-pass.json"
+    },
+    {
+      "title": "thumbnails wait transparent offscreen, fade and travel on entry, then stay settled",
+      "file": "storyboard.spec.ts",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "run": "focused-63-pass.json"
+    },
+    {
+      "title": "an active image fade settles on OS change and a focused waiting card is immediately readable",
+      "file": "storyboard.spec.ts",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "run": "focused-63-pass.json"
+    },
+    {
+      "title": "no JavaScript, forced colors and failed image animation all expose readable thumbnails",
+      "file": "storyboard.spec.ts",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "run": "focused-63-pass.json"
+    },
+    {
+      "title": "four selected assets load in all eight business placements in both languages and stay static on scroll",
+      "file": "thumbnails.spec.ts",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "only the thumbnail cursor hover cycles eight palettes; focus and touch remain static",
+      "file": "thumbnails.spec.ts",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "detail image hover honors device reduced motion and resumes on preference change without changing the hero entrance",
+      "file": "thumbnails.spec.ts",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "four selected assets load in all eight business placements in both languages and stay static on scroll",
+      "file": "thumbnails.spec.ts",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "only the thumbnail cursor hover cycles eight palettes; focus and touch remain static",
+      "file": "thumbnails.spec.ts",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "detail image hover honors device reduced motion and resumes on preference change without changing the hero entrance",
+      "file": "thumbnails.spec.ts",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "four selected assets load in all eight business placements in both languages and stay static on scroll",
+      "file": "thumbnails.spec.ts",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "only the thumbnail cursor hover cycles eight palettes; focus and touch remain static",
+      "file": "thumbnails.spec.ts",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "detail image hover honors device reduced motion and resumes on preference change without changing the hero entrance",
+      "file": "thumbnails.spec.ts",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "run": "first-full-run.json"
+    },
+    {
+      "title": "late font readiness cannot restart a dismissed opening after a device preference change",
+      "file": "opening-lifecycle.spec.ts",
+      "project": "chromium-desktop",
+      "status": "passed",
+      "run": "opening-final-24-pass.json"
+    },
+    {
+      "title": "late font readiness cannot restart a dismissed opening after a device preference change",
+      "file": "opening-lifecycle.spec.ts",
+      "project": "chromium-mobile",
+      "status": "passed",
+      "run": "opening-final-24-pass.json"
+    },
+    {
+      "title": "late font readiness cannot restart a dismissed opening after a device preference change",
+      "file": "opening-lifecycle.spec.ts",
+      "project": "webkit-mobile",
+      "status": "passed",
+      "run": "opening-final-24-pass.json"
+    }
+  ]
+}

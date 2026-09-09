@@ -1,0 +1,90 @@
+
+Running 25 tests using 2 workers
+
+(node:20752) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:23220) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:20752) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:23220) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x   2 [chromium-desktop] › tests\e2e\afterglow.spec.ts:3:5 › all authored visible text has a gradient layer, including small labels and menu copy (687ms)
+(node:5452) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:5452) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  3 [chromium-desktop] › tests\e2e\afterglow.spec.ts:68:5 › independent text rhythms keep color after the background passes, then fade slowly to black (4.0s)
+  ok  1 [chromium-desktop] › tests\e2e\hero-v4.spec.ts:4:7 › / lands once, stays still and saves business effects for scrolling (13.0s)
+  ok  4 [chromium-desktop] › tests\e2e\afterglow.spec.ts:147:5 › scrolled headings vary palettes without hydration mismatch while the hero stays still (15.6s)
+  ok  5 [chromium-desktop] › tests\e2e\hero-v4.spec.ts:4:7 › /en lands once, stays still and saves business effects for scrolling (13.6s)
+  ok  6 [chromium-desktop] › tests\e2e\revision-v3.spec.ts:4:5 › completed handwriting holds for a second then lands on the hero line boxes (7.3s)
+  ok  7 [chromium-desktop] › tests\e2e\hero-v4.spec.ts:79:5 › viewport-sized hero and static business band fit short, tall and narrow screens (2.1s)
+  ok  8 [chromium-desktop] › tests\e2e\revision-v3.spec.ts:75:7 › company thumbnails in both languages wait offscreen and fade with travel (3.6s)
+  ok 10 [chromium-desktop] › tests\e2e\revision-v3.spec.ts:75:7 › business thumbnails in both languages wait offscreen and fade with travel (3.7s)
+  ok  9 [chromium-desktop] › tests\e2e\storyboard.spec.ts:3:5 › opening writes the exact phrase with no ink dots before each pen stroke (7.3s)
+  ok 12 [chromium-desktop] › tests\e2e\storyboard.spec.ts:62:7 › opening has no skip UI and releases focus on Tab (796ms)
+  ok 13 [chromium-desktop] › tests\e2e\storyboard.spec.ts:62:7 › opening has no skip UI and releases focus on Escape (842ms)
+  ok 14 [chromium-desktop] › tests\e2e\storyboard.spec.ts:62:7 › opening has no skip UI and releases focus on scroll (933ms)
+  ok 11 [chromium-desktop] › tests\e2e\revision-v3.spec.ts:75:7 › about thumbnails in both languages wait offscreen and fade with travel (3.6s)
+  ok 15 [chromium-desktop] › tests\e2e\storyboard.spec.ts:86:5 › opening replays on reload and full home navigation in both languages (1.6s)
+  ok 16 [chromium-desktop] › tests\e2e\revision-v3.spec.ts:124:5 › production copy has a prominent localized collaboration CTA and no draft notices (1.2s)
+  ok 17 [chromium-desktop] › tests\e2e\storyboard.spec.ts:112:5 › device preferences and direct anchors work; the removed saved toggle has no effect (1.1s)
+  ok 18 [chromium-desktop] › tests\e2e\revision-v3.spec.ts:147:5 › cursor trails remain removed on mouse, touch and reduced motion (1.2s)
+  ok 19 [chromium-desktop] › tests\e2e\storyboard.spec.ts:139:5 › changing reduced motion during the opening releases the native modal (812ms)
+  ok 20 [chromium-desktop] › tests\e2e\thumbnails.spec.ts:22:5 › four selected assets load in all eight business placements in both languages and stay static on scroll (6.8s)
+  ok 21 [chromium-desktop] › tests\e2e\storyboard.spec.ts:155:5 › thumbnails wait transparent offscreen, fade and travel on entry, then stay settled (8.8s)
+  ok 23 [chromium-desktop] › tests\e2e\storyboard.spec.ts:218:5 › an active image fade settles on OS change and a focused waiting card is immediately readable (7.5s)
+  ok 24 [chromium-desktop] › tests\e2e\storyboard.spec.ts:246:5 › no JavaScript, forced colors and failed image animation all expose readable thumbnails (3.0s)
+  ok 22 [chromium-desktop] › tests\e2e\thumbnails.spec.ts:70:5 › only the thumbnail cursor hover cycles eight palettes; focus and touch remain static (14.8s)
+  ok 25 [chromium-desktop] › tests\e2e\thumbnails.spec.ts:124:5 › detail image hover honors device reduced motion and resumes on preference change while the hero stays static (10.4s)
+
+
+  1) [chromium-desktop] › tests\e2e\afterglow.spec.ts:3:5 › all authored visible text has a gradient layer, including small labels and menu copy 
+
+    Error: /
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 7
+
+    - Array []
+    + Array [
+    +   "下へスクロール",
+    +   "企画",
+    +   "開発",
+    +   "表現",
+    +   "販売促進",
+    + ]
+
+      48 |       return missing;
+      49 |     });
+    > 50 |     expect(uncovered, route).toEqual([]);
+         |                              ^
+      51 |   }
+      52 |   await page.goto("/");
+      53 |   await page.getByRole("button", { name: "メニューを開く" }).click();
+        at C:\Users\taisa\Desktop\corporate-motion-storyboard-v1\tests\e2e\afterglow.spec.ts:50:30
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\afterglow-all-authored-vis-b0e66--small-labels-and-menu-copy-chromium-desktop\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\afterglow-all-authored-vis-b0e66--small-labels-and-menu-copy-chromium-desktop\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\afterglow-all-authored-vis-b0e66--small-labels-and-menu-copy-chromium-desktop\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\afterglow-all-authored-vis-b0e66--small-labels-and-menu-copy-chromium-desktop\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\afterglow-all-authored-vis-b0e66--small-labels-and-menu-copy-chromium-desktop\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [chromium-desktop] › tests\e2e\afterglow.spec.ts:3:5 › all authored visible text has a gradient layer, including small labels and menu copy 
+  24 passed (1.2m)

@@ -2,3 +2,5 @@
 *.png binary
 *.webp binary
 *.webm binary
+# Captured evidence retains its original bytes, including log line endings.
+docs/evidence/** -text

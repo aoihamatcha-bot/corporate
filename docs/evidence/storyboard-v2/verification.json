@@ -1,0 +1,1155 @@
+{
+  "verifiedAt": "2026-09-09T18:30:26.164Z",
+  "evidenceScope": "LOCAL production build only",
+  "startingHead": "016105c648e7f20d10c674b3671d69d1a0ed486e",
+  "finalHead": "016105c648e7f20d10c674b3671d69d1a0ed486e",
+  "branch": "feat/corporate-motion-storyboard-v1",
+  "build": "PASS; existing LINE Seed JP fallback metadata warning",
+  "typecheck": "PASS",
+  "lint": "PASS",
+  "contentTests": {
+    "passed": 12,
+    "failed": 0
+  },
+  "e2e": {
+    "fullRun": {
+      "file": "full-before-pseudo-text-test-fix.json",
+      "startTime": "2026-09-09T18:22:56.027Z",
+      "duration": 333448.06799999997,
+      "expected": 126,
+      "skipped": 0,
+      "unexpected": 3,
+      "flaky": 0
+    },
+    "focusedRerun": {
+      "file": "focused-final.json",
+      "startTime": "2026-09-09T18:28:48.533Z",
+      "duration": 13414.123000000001,
+      "expected": 3,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "assessment": "All 129 distinct cases have a final passing result across the full run and targeted rerun. Reports remain separate.",
+    "finalCases": [
+      {
+        "key": "afterglow.spec.ts::all authored visible text has a gradient layer, including small labels and menu copy::chromium-desktop",
+        "title": "all authored visible text has a gradient layer, including small labels and menu copy",
+        "project": "chromium-desktop",
+        "status": "passed",
+        "retry": 0,
+        "source": "focused-final.json"
+      },
+      {
+        "key": "afterglow.spec.ts::independent text rhythms keep color after the background passes, then fade slowly to black::chromium-desktop",
+        "title": "independent text rhythms keep color after the background passes, then fade slowly to black",
+        "project": "chromium-desktop",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "afterglow.spec.ts::reload can select a different headline palette without server hydration mismatch::chromium-desktop",
+        "title": "reload can select a different headline palette without server hydration mismatch",
+        "project": "chromium-desktop",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "afterglow.spec.ts::all authored visible text has a gradient layer, including small labels and menu copy::chromium-mobile",
+        "title": "all authored visible text has a gradient layer, including small labels and menu copy",
+        "project": "chromium-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "focused-final.json"
+      },
+      {
+        "key": "afterglow.spec.ts::independent text rhythms keep color after the background passes, then fade slowly to black::chromium-mobile",
+        "title": "independent text rhythms keep color after the background passes, then fade slowly to black",
+        "project": "chromium-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "afterglow.spec.ts::reload can select a different headline palette without server hydration mismatch::chromium-mobile",
+        "title": "reload can select a different headline palette without server hydration mismatch",
+        "project": "chromium-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "afterglow.spec.ts::all authored visible text has a gradient layer, including small labels and menu copy::webkit-mobile",
+        "title": "all authored visible text has a gradient layer, including small labels and menu copy",
+        "project": "webkit-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "focused-final.json"
+      },
+      {
+        "key": "afterglow.spec.ts::independent text rhythms keep color after the background passes, then fade slowly to black::webkit-mobile",
+        "title": "independent text rhythms keep color after the background passes, then fade slowly to black",
+        "project": "webkit-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "afterglow.spec.ts::reload can select a different headline palette without server hydration mismatch::webkit-mobile",
+        "title": "reload can select a different headline palette without server hydration mismatch",
+        "project": "webkit-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "corporate-assets.spec.ts::adopted concepts and illustrations load in both languages without implying real screens or a playable video::chromium-desktop",
+        "title": "adopted concepts and illustrations load in both languages without implying real screens or a playable video",
+        "project": "chromium-desktop",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "corporate-assets.spec.ts::social cards use the correct language, full image URLs and a news-specific cover::chromium-desktop",
+        "title": "social cards use the correct language, full image URLs and a news-specific cover",
+        "project": "chromium-desktop",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "corporate-assets.spec.ts::adopted concepts and illustrations load in both languages without implying real screens or a playable video::chromium-mobile",
+        "title": "adopted concepts and illustrations load in both languages without implying real screens or a playable video",
+        "project": "chromium-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "corporate-assets.spec.ts::social cards use the correct language, full image URLs and a news-specific cover::chromium-mobile",
+        "title": "social cards use the correct language, full image URLs and a news-specific cover",
+        "project": "chromium-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "corporate-assets.spec.ts::adopted concepts and illustrations load in both languages without implying real screens or a playable video::webkit-mobile",
+        "title": "adopted concepts and illustrations load in both languages without implying real screens or a playable video",
+        "project": "webkit-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "corporate-assets.spec.ts::social cards use the correct language, full image URLs and a news-specific cover::webkit-mobile",
+        "title": "social cards use the correct language, full image URLs and a news-specific cover",
+        "project": "webkit-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "i18n.spec.ts::English pages have localized headings, metadata, controls and server HTML::chromium-desktop",
+        "title": "English pages have localized headings, metadata, controls and server HTML",
+        "project": "chromium-desktop",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "i18n.spec.ts::language switching preserves each page and business anchors, including menu navigation and Back::chromium-desktop",
+        "title": "language switching preserves each page and business anchors, including menu navigation and Back",
+        "project": "chromium-desktop",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "i18n.spec.ts::unpublished English articles and missing routes return localized 404 with honest translation choices::chromium-desktop",
+        "title": "unpublished English articles and missing routes return localized 404 with honest translation choices",
+        "project": "chromium-desktop",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "i18n.spec.ts::English contact remains disabled, reports no send, and protects unsent drafts before language navigation::chromium-desktop",
+        "title": "English contact remains disabled, reports no send, and protects unsent drafts before language navigation",
+        "project": "chromium-desktop",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "i18n.spec.ts::320px layouts keep both languages and menu controls within the screen::chromium-desktop",
+        "title": "320px layouts keep both languages and menu controls within the screen",
+        "project": "chromium-desktop",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "i18n.spec.ts::Device reduced motion survives language navigation without site controls and images are optional to understanding the company::chromium-desktop",
+        "title": "Device reduced motion survives language navigation without site controls and images are optional to understanding the company",
+        "project": "chromium-desktop",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "i18n.spec.ts::English pages and menu pass WCAG 2.2 AA and work without JavaScript::chromium-desktop",
+        "title": "English pages and menu pass WCAG 2.2 AA and work without JavaScript",
+        "project": "chromium-desktop",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "i18n.spec.ts::English pages have localized headings, metadata, controls and server HTML::chromium-mobile",
+        "title": "English pages have localized headings, metadata, controls and server HTML",
+        "project": "chromium-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "i18n.spec.ts::language switching preserves each page and business anchors, including menu navigation and Back::chromium-mobile",
+        "title": "language switching preserves each page and business anchors, including menu navigation and Back",
+        "project": "chromium-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "i18n.spec.ts::unpublished English articles and missing routes return localized 404 with honest translation choices::chromium-mobile",
+        "title": "unpublished English articles and missing routes return localized 404 with honest translation choices",
+        "project": "chromium-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "i18n.spec.ts::English contact remains disabled, reports no send, and protects unsent drafts before language navigation::chromium-mobile",
+        "title": "English contact remains disabled, reports no send, and protects unsent drafts before language navigation",
+        "project": "chromium-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "i18n.spec.ts::320px layouts keep both languages and menu controls within the screen::chromium-mobile",
+        "title": "320px layouts keep both languages and menu controls within the screen",
+        "project": "chromium-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "i18n.spec.ts::Device reduced motion survives language navigation without site controls and images are optional to understanding the company::chromium-mobile",
+        "title": "Device reduced motion survives language navigation without site controls and images are optional to understanding the company",
+        "project": "chromium-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "i18n.spec.ts::English pages and menu pass WCAG 2.2 AA and work without JavaScript::chromium-mobile",
+        "title": "English pages and menu pass WCAG 2.2 AA and work without JavaScript",
+        "project": "chromium-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "i18n.spec.ts::English pages have localized headings, metadata, controls and server HTML::webkit-mobile",
+        "title": "English pages have localized headings, metadata, controls and server HTML",
+        "project": "webkit-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "i18n.spec.ts::language switching preserves each page and business anchors, including menu navigation and Back::webkit-mobile",
+        "title": "language switching preserves each page and business anchors, including menu navigation and Back",
+        "project": "webkit-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "i18n.spec.ts::unpublished English articles and missing routes return localized 404 with honest translation choices::webkit-mobile",
+        "title": "unpublished English articles and missing routes return localized 404 with honest translation choices",
+        "project": "webkit-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "i18n.spec.ts::English contact remains disabled, reports no send, and protects unsent drafts before language navigation::webkit-mobile",
+        "title": "English contact remains disabled, reports no send, and protects unsent drafts before language navigation",
+        "project": "webkit-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "i18n.spec.ts::320px layouts keep both languages and menu controls within the screen::webkit-mobile",
+        "title": "320px layouts keep both languages and menu controls within the screen",
+        "project": "webkit-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "i18n.spec.ts::Device reduced motion survives language navigation without site controls and images are optional to understanding the company::webkit-mobile",
+        "title": "Device reduced motion survives language navigation without site controls and images are optional to understanding the company",
+        "project": "webkit-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "i18n.spec.ts::English pages and menu pass WCAG 2.2 AA and work without JavaScript::webkit-mobile",
+        "title": "English pages and menu pass WCAG 2.2 AA and work without JavaScript",
+        "project": "webkit-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "metrics.spec.ts::the counter progresses once without shifting its width or announcing intermediate numbers::chromium-desktop",
+        "title": "the counter progresses once without shifting its width or announcing intermediate numbers",
+        "project": "chromium-desktop",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "metrics.spec.ts::enabling device reduced motion during an active counter shows its final value and stops the number and color animation::chromium-desktop",
+        "title": "enabling device reduced motion during an active counter shows its final value and stops the number and color animation",
+        "project": "chromium-desktop",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "metrics.spec.ts::both languages label the example figures and preserve readable values without motion or JavaScript::chromium-desktop",
+        "title": "both languages label the example figures and preserve readable values without motion or JavaScript",
+        "project": "chromium-desktop",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "metrics.spec.ts::the counter progresses once without shifting its width or announcing intermediate numbers::chromium-mobile",
+        "title": "the counter progresses once without shifting its width or announcing intermediate numbers",
+        "project": "chromium-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "metrics.spec.ts::enabling device reduced motion during an active counter shows its final value and stops the number and color animation::chromium-mobile",
+        "title": "enabling device reduced motion during an active counter shows its final value and stops the number and color animation",
+        "project": "chromium-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "metrics.spec.ts::both languages label the example figures and preserve readable values without motion or JavaScript::chromium-mobile",
+        "title": "both languages label the example figures and preserve readable values without motion or JavaScript",
+        "project": "chromium-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "metrics.spec.ts::the counter progresses once without shifting its width or announcing intermediate numbers::webkit-mobile",
+        "title": "the counter progresses once without shifting its width or announcing intermediate numbers",
+        "project": "webkit-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "metrics.spec.ts::enabling device reduced motion during an active counter shows its final value and stops the number and color animation::webkit-mobile",
+        "title": "enabling device reduced motion during an active counter shows its final value and stops the number and color animation",
+        "project": "webkit-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "metrics.spec.ts::both languages label the example figures and preserve readable values without motion or JavaScript::webkit-mobile",
+        "title": "both languages label the example figures and preserve readable values without motion or JavaScript",
+        "project": "webkit-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "motion.spec.ts::text below the viewport keeps its entrance until visible, then settles to black once::chromium-desktop",
+        "title": "text below the viewport keeps its entrance until visible, then settles to black once",
+        "project": "chromium-desktop",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "motion.spec.ts::opening the menu starts two color curtains and separate text wipes, then clears them::chromium-desktop",
+        "title": "opening the menu starts two color curtains and separate text wipes, then clears them",
+        "project": "chromium-desktop",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "motion.spec.ts::pausing during the entrance clears decorative bands and images without hiding copy::chromium-desktop",
+        "title": "pausing during the entrance clears decorative bands and images without hiding copy",
+        "project": "chromium-desktop",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "motion.spec.ts::resize and a partially failing animation API cannot strand a colored cover::chromium-desktop",
+        "title": "resize and a partially failing animation API cannot strand a colored cover",
+        "project": "chromium-desktop",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "motion.spec.ts::text below the viewport keeps its entrance until visible, then settles to black once::chromium-mobile",
+        "title": "text below the viewport keeps its entrance until visible, then settles to black once",
+        "project": "chromium-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "motion.spec.ts::opening the menu starts two color curtains and separate text wipes, then clears them::chromium-mobile",
+        "title": "opening the menu starts two color curtains and separate text wipes, then clears them",
+        "project": "chromium-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "motion.spec.ts::pausing during the entrance clears decorative bands and images without hiding copy::chromium-mobile",
+        "title": "pausing during the entrance clears decorative bands and images without hiding copy",
+        "project": "chromium-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "motion.spec.ts::resize and a partially failing animation API cannot strand a colored cover::chromium-mobile",
+        "title": "resize and a partially failing animation API cannot strand a colored cover",
+        "project": "chromium-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "motion.spec.ts::text below the viewport keeps its entrance until visible, then settles to black once::webkit-mobile",
+        "title": "text below the viewport keeps its entrance until visible, then settles to black once",
+        "project": "webkit-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "motion.spec.ts::opening the menu starts two color curtains and separate text wipes, then clears them::webkit-mobile",
+        "title": "opening the menu starts two color curtains and separate text wipes, then clears them",
+        "project": "webkit-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "motion.spec.ts::pausing during the entrance clears decorative bands and images without hiding copy::webkit-mobile",
+        "title": "pausing during the entrance clears decorative bands and images without hiding copy",
+        "project": "webkit-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "motion.spec.ts::resize and a partially failing animation API cannot strand a colored cover::webkit-mobile",
+        "title": "resize and a partially failing animation API cannot strand a colored cover",
+        "project": "webkit-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "site.spec.ts::all real pages render, stay out of search and have no horizontal overflow::chromium-desktop",
+        "title": "all real pages render, stay out of search and have no horizontal overflow",
+        "project": "chromium-desktop",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "site.spec.ts::menu traps Tab and Shift+Tab, closes with Escape and restores scroll and focus::chromium-desktop",
+        "title": "menu traps Tab and Shift+Tab, closes with Escape and restores scroll and focus",
+        "project": "chromium-desktop",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "site.spec.ts::menu navigation focuses destination and Back leaves no lock::chromium-desktop",
+        "title": "menu navigation focuses destination and Back leaves no lock",
+        "project": "chromium-desktop",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "site.spec.ts::rapid close, reopen, resizing and short-height navigation remain usable::chromium-desktop",
+        "title": "rapid close, reopen, resizing and short-height navigation remain usable",
+        "project": "chromium-desktop",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "site.spec.ts::contact cannot collect or falsely report sending; unpublished articles return 404::chromium-desktop",
+        "title": "contact cannot collect or falsely report sending; unpublished articles return 404",
+        "project": "chromium-desktop",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "site.spec.ts::device reduced-motion persists on reload and keeps content visible without site controls::chromium-desktop",
+        "title": "device reduced-motion persists on reload and keeps content visible without site controls",
+        "project": "chromium-desktop",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "site.spec.ts::cut-in ends in place across scrolling, touch has no pointer effect::chromium-desktop",
+        "title": "cut-in ends in place across scrolling, touch has no pointer effect",
+        "project": "chromium-desktop",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "site.spec.ts::360, 768, and effective 200% desktop zoom have no clipped controls::chromium-desktop",
+        "title": "360, 768, and effective 200% desktop zoom have no clipped controls",
+        "project": "chromium-desktop",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "site.spec.ts::key pages and the full-screen menu pass axe WCAG 2.2 AA::chromium-desktop",
+        "title": "key pages and the full-screen menu pass axe WCAG 2.2 AA",
+        "project": "chromium-desktop",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "site.spec.ts::without JavaScript all copy and footer routes remain available::chromium-desktop",
+        "title": "without JavaScript all copy and footer routes remain available",
+        "project": "chromium-desktop",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "site.spec.ts::animation API failure leaves readable content and working navigation::chromium-desktop",
+        "title": "animation API failure leaves readable content and working navigation",
+        "project": "chromium-desktop",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "site.spec.ts::all real pages render, stay out of search and have no horizontal overflow::chromium-mobile",
+        "title": "all real pages render, stay out of search and have no horizontal overflow",
+        "project": "chromium-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "site.spec.ts::menu traps Tab and Shift+Tab, closes with Escape and restores scroll and focus::chromium-mobile",
+        "title": "menu traps Tab and Shift+Tab, closes with Escape and restores scroll and focus",
+        "project": "chromium-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "site.spec.ts::menu navigation focuses destination and Back leaves no lock::chromium-mobile",
+        "title": "menu navigation focuses destination and Back leaves no lock",
+        "project": "chromium-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "site.spec.ts::rapid close, reopen, resizing and short-height navigation remain usable::chromium-mobile",
+        "title": "rapid close, reopen, resizing and short-height navigation remain usable",
+        "project": "chromium-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "site.spec.ts::contact cannot collect or falsely report sending; unpublished articles return 404::chromium-mobile",
+        "title": "contact cannot collect or falsely report sending; unpublished articles return 404",
+        "project": "chromium-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "site.spec.ts::device reduced-motion persists on reload and keeps content visible without site controls::chromium-mobile",
+        "title": "device reduced-motion persists on reload and keeps content visible without site controls",
+        "project": "chromium-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "site.spec.ts::cut-in ends in place across scrolling, touch has no pointer effect::chromium-mobile",
+        "title": "cut-in ends in place across scrolling, touch has no pointer effect",
+        "project": "chromium-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "site.spec.ts::360, 768, and effective 200% desktop zoom have no clipped controls::chromium-mobile",
+        "title": "360, 768, and effective 200% desktop zoom have no clipped controls",
+        "project": "chromium-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "site.spec.ts::key pages and the full-screen menu pass axe WCAG 2.2 AA::chromium-mobile",
+        "title": "key pages and the full-screen menu pass axe WCAG 2.2 AA",
+        "project": "chromium-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "site.spec.ts::without JavaScript all copy and footer routes remain available::chromium-mobile",
+        "title": "without JavaScript all copy and footer routes remain available",
+        "project": "chromium-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "site.spec.ts::animation API failure leaves readable content and working navigation::chromium-mobile",
+        "title": "animation API failure leaves readable content and working navigation",
+        "project": "chromium-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "site.spec.ts::all real pages render, stay out of search and have no horizontal overflow::webkit-mobile",
+        "title": "all real pages render, stay out of search and have no horizontal overflow",
+        "project": "webkit-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "site.spec.ts::menu traps Tab and Shift+Tab, closes with Escape and restores scroll and focus::webkit-mobile",
+        "title": "menu traps Tab and Shift+Tab, closes with Escape and restores scroll and focus",
+        "project": "webkit-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "site.spec.ts::menu navigation focuses destination and Back leaves no lock::webkit-mobile",
+        "title": "menu navigation focuses destination and Back leaves no lock",
+        "project": "webkit-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "site.spec.ts::rapid close, reopen, resizing and short-height navigation remain usable::webkit-mobile",
+        "title": "rapid close, reopen, resizing and short-height navigation remain usable",
+        "project": "webkit-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "site.spec.ts::contact cannot collect or falsely report sending; unpublished articles return 404::webkit-mobile",
+        "title": "contact cannot collect or falsely report sending; unpublished articles return 404",
+        "project": "webkit-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "site.spec.ts::device reduced-motion persists on reload and keeps content visible without site controls::webkit-mobile",
+        "title": "device reduced-motion persists on reload and keeps content visible without site controls",
+        "project": "webkit-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "site.spec.ts::cut-in ends in place across scrolling, touch has no pointer effect::webkit-mobile",
+        "title": "cut-in ends in place across scrolling, touch has no pointer effect",
+        "project": "webkit-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "site.spec.ts::360, 768, and effective 200% desktop zoom have no clipped controls::webkit-mobile",
+        "title": "360, 768, and effective 200% desktop zoom have no clipped controls",
+        "project": "webkit-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "site.spec.ts::key pages and the full-screen menu pass axe WCAG 2.2 AA::webkit-mobile",
+        "title": "key pages and the full-screen menu pass axe WCAG 2.2 AA",
+        "project": "webkit-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "site.spec.ts::without JavaScript all copy and footer routes remain available::webkit-mobile",
+        "title": "without JavaScript all copy and footer routes remain available",
+        "project": "webkit-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "site.spec.ts::animation API failure leaves readable content and working navigation::webkit-mobile",
+        "title": "animation API failure leaves readable content and working navigation",
+        "project": "webkit-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "storyboard.spec.ts::opening writes the exact phrase with no ink dots before each pen stroke::chromium-desktop",
+        "title": "opening writes the exact phrase with no ink dots before each pen stroke",
+        "project": "chromium-desktop",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "storyboard.spec.ts::opening has no skip UI and releases focus on Tab::chromium-desktop",
+        "title": "opening has no skip UI and releases focus on Tab",
+        "project": "chromium-desktop",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "storyboard.spec.ts::opening has no skip UI and releases focus on Escape::chromium-desktop",
+        "title": "opening has no skip UI and releases focus on Escape",
+        "project": "chromium-desktop",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "storyboard.spec.ts::opening has no skip UI and releases focus on scroll::chromium-desktop",
+        "title": "opening has no skip UI and releases focus on scroll",
+        "project": "chromium-desktop",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "storyboard.spec.ts::opening stays dismissed on reload, navigation and language change::chromium-desktop",
+        "title": "opening stays dismissed on reload, navigation and language change",
+        "project": "chromium-desktop",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "storyboard.spec.ts::device preferences and direct anchors work; the removed saved toggle has no effect::chromium-desktop",
+        "title": "device preferences and direct anchors work; the removed saved toggle has no effect",
+        "project": "chromium-desktop",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "storyboard.spec.ts::changing reduced motion during the opening releases the native modal::chromium-desktop",
+        "title": "changing reduced motion during the opening releases the native modal",
+        "project": "chromium-desktop",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "storyboard.spec.ts::thumbnails wait transparent offscreen, fade and travel on entry, then stay settled::chromium-desktop",
+        "title": "thumbnails wait transparent offscreen, fade and travel on entry, then stay settled",
+        "project": "chromium-desktop",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "storyboard.spec.ts::an active image fade settles on OS change and a focused waiting card is immediately readable::chromium-desktop",
+        "title": "an active image fade settles on OS change and a focused waiting card is immediately readable",
+        "project": "chromium-desktop",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "storyboard.spec.ts::no JavaScript, forced colors and failed image animation all expose readable thumbnails::chromium-desktop",
+        "title": "no JavaScript, forced colors and failed image animation all expose readable thumbnails",
+        "project": "chromium-desktop",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "storyboard.spec.ts::opening writes the exact phrase with no ink dots before each pen stroke::chromium-mobile",
+        "title": "opening writes the exact phrase with no ink dots before each pen stroke",
+        "project": "chromium-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "storyboard.spec.ts::opening has no skip UI and releases focus on Tab::chromium-mobile",
+        "title": "opening has no skip UI and releases focus on Tab",
+        "project": "chromium-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "storyboard.spec.ts::opening has no skip UI and releases focus on Escape::chromium-mobile",
+        "title": "opening has no skip UI and releases focus on Escape",
+        "project": "chromium-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "storyboard.spec.ts::opening has no skip UI and releases focus on scroll::chromium-mobile",
+        "title": "opening has no skip UI and releases focus on scroll",
+        "project": "chromium-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "storyboard.spec.ts::opening stays dismissed on reload, navigation and language change::chromium-mobile",
+        "title": "opening stays dismissed on reload, navigation and language change",
+        "project": "chromium-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "storyboard.spec.ts::device preferences and direct anchors work; the removed saved toggle has no effect::chromium-mobile",
+        "title": "device preferences and direct anchors work; the removed saved toggle has no effect",
+        "project": "chromium-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "storyboard.spec.ts::changing reduced motion during the opening releases the native modal::chromium-mobile",
+        "title": "changing reduced motion during the opening releases the native modal",
+        "project": "chromium-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "storyboard.spec.ts::thumbnails wait transparent offscreen, fade and travel on entry, then stay settled::chromium-mobile",
+        "title": "thumbnails wait transparent offscreen, fade and travel on entry, then stay settled",
+        "project": "chromium-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "storyboard.spec.ts::an active image fade settles on OS change and a focused waiting card is immediately readable::chromium-mobile",
+        "title": "an active image fade settles on OS change and a focused waiting card is immediately readable",
+        "project": "chromium-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "storyboard.spec.ts::no JavaScript, forced colors and failed image animation all expose readable thumbnails::chromium-mobile",
+        "title": "no JavaScript, forced colors and failed image animation all expose readable thumbnails",
+        "project": "chromium-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "storyboard.spec.ts::opening writes the exact phrase with no ink dots before each pen stroke::webkit-mobile",
+        "title": "opening writes the exact phrase with no ink dots before each pen stroke",
+        "project": "webkit-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "storyboard.spec.ts::opening has no skip UI and releases focus on Tab::webkit-mobile",
+        "title": "opening has no skip UI and releases focus on Tab",
+        "project": "webkit-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "storyboard.spec.ts::opening has no skip UI and releases focus on Escape::webkit-mobile",
+        "title": "opening has no skip UI and releases focus on Escape",
+        "project": "webkit-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "storyboard.spec.ts::opening has no skip UI and releases focus on scroll::webkit-mobile",
+        "title": "opening has no skip UI and releases focus on scroll",
+        "project": "webkit-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "storyboard.spec.ts::opening stays dismissed on reload, navigation and language change::webkit-mobile",
+        "title": "opening stays dismissed on reload, navigation and language change",
+        "project": "webkit-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "storyboard.spec.ts::device preferences and direct anchors work; the removed saved toggle has no effect::webkit-mobile",
+        "title": "device preferences and direct anchors work; the removed saved toggle has no effect",
+        "project": "webkit-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "storyboard.spec.ts::changing reduced motion during the opening releases the native modal::webkit-mobile",
+        "title": "changing reduced motion during the opening releases the native modal",
+        "project": "webkit-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "storyboard.spec.ts::thumbnails wait transparent offscreen, fade and travel on entry, then stay settled::webkit-mobile",
+        "title": "thumbnails wait transparent offscreen, fade and travel on entry, then stay settled",
+        "project": "webkit-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "storyboard.spec.ts::an active image fade settles on OS change and a focused waiting card is immediately readable::webkit-mobile",
+        "title": "an active image fade settles on OS change and a focused waiting card is immediately readable",
+        "project": "webkit-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "storyboard.spec.ts::no JavaScript, forced colors and failed image animation all expose readable thumbnails::webkit-mobile",
+        "title": "no JavaScript, forced colors and failed image animation all expose readable thumbnails",
+        "project": "webkit-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "thumbnails.spec.ts::four selected assets load in all eight business placements in both languages and stay static on scroll::chromium-desktop",
+        "title": "four selected assets load in all eight business placements in both languages and stay static on scroll",
+        "project": "chromium-desktop",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "thumbnails.spec.ts::only the thumbnail cursor hover cycles eight palettes; focus and touch remain static::chromium-desktop",
+        "title": "only the thumbnail cursor hover cycles eight palettes; focus and touch remain static",
+        "project": "chromium-desktop",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "thumbnails.spec.ts::detail image hover honors device reduced motion and resumes on preference change without changing the hero entrance::chromium-desktop",
+        "title": "detail image hover honors device reduced motion and resumes on preference change without changing the hero entrance",
+        "project": "chromium-desktop",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "thumbnails.spec.ts::four selected assets load in all eight business placements in both languages and stay static on scroll::chromium-mobile",
+        "title": "four selected assets load in all eight business placements in both languages and stay static on scroll",
+        "project": "chromium-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "thumbnails.spec.ts::only the thumbnail cursor hover cycles eight palettes; focus and touch remain static::chromium-mobile",
+        "title": "only the thumbnail cursor hover cycles eight palettes; focus and touch remain static",
+        "project": "chromium-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "thumbnails.spec.ts::detail image hover honors device reduced motion and resumes on preference change without changing the hero entrance::chromium-mobile",
+        "title": "detail image hover honors device reduced motion and resumes on preference change without changing the hero entrance",
+        "project": "chromium-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "thumbnails.spec.ts::four selected assets load in all eight business placements in both languages and stay static on scroll::webkit-mobile",
+        "title": "four selected assets load in all eight business placements in both languages and stay static on scroll",
+        "project": "webkit-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "thumbnails.spec.ts::only the thumbnail cursor hover cycles eight palettes; focus and touch remain static::webkit-mobile",
+        "title": "only the thumbnail cursor hover cycles eight palettes; focus and touch remain static",
+        "project": "webkit-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      },
+      {
+        "key": "thumbnails.spec.ts::detail image hover honors device reduced motion and resumes on preference change without changing the hero entrance::webkit-mobile",
+        "title": "detail image hover honors device reduced motion and resumes on preference change without changing the hero entrance",
+        "project": "webkit-mobile",
+        "status": "passed",
+        "retry": 0,
+        "source": "full-before-pseudo-text-test-fix.json"
+      }
+    ]
+  },
+  "visuals": [
+    {
+      "device": "desktop",
+      "frames": 14,
+      "pageErrors": [],
+      "horizontalOverflow": false,
+      "removedControls": 0,
+      "waiting": {
+        "opacity": "0",
+        "transform": "none",
+        "top": 863.796875,
+        "entered": null
+      },
+      "fading": {
+        "before": {
+          "opacity": "0.0485589",
+          "transform": "matrix(0.921847, -0.0613222, 0.0613222, 0.921847, -22.8346, 72.3095)",
+          "top": 531.8314819335938,
+          "entered": "true"
+        },
+        "after": {
+          "opacity": "0.804991",
+          "transform": "matrix(0.984308, -0.0134014, 0.0134014, 0.984308, -4.68021, 14.8207)",
+          "top": 327.8355407714844,
+          "entered": "true"
+        }
+      },
+      "settled": {
+        "opacity": "1",
+        "transform": "none",
+        "top": 312.796875,
+        "entered": "true"
+      }
+    },
+    {
+      "device": "mobile",
+      "frames": 14,
+      "pageErrors": [],
+      "horizontalOverflow": false,
+      "removedControls": 0,
+      "waiting": {
+        "opacity": "0",
+        "transform": "none",
+        "top": 808.46875,
+        "entered": null
+      },
+      "fading": {
+        "before": {
+          "opacity": "0.0484654",
+          "transform": "matrix(0.923877, 0, 0, 0.923877, 0, 41.8675)",
+          "top": 627.0515747070312,
+          "entered": "true"
+        },
+        "after": {
+          "opacity": "0.89376",
+          "transform": "matrix(0.991501, 0, 0, 0.991501, 0, 4.67457)",
+          "top": 385.45135498046875,
+          "entered": "true"
+        }
+      },
+      "settled": {
+        "opacity": "1",
+        "transform": "none",
+        "top": 376.46875,
+        "entered": "true"
+      }
+    }
+  ],
+  "preservedFiles": "preserved-files.json",
+  "sourceManifest": "source-manifest.json",
+  "reviewFindingsResolved": [
+    "Rounded stroke caps visible before pen-down: transparent masks until stroke start",
+    "Transform-only entrance: add zero-to-one opacity on viewport entry",
+    "Animated media overlapping copy: clip within stationary reserved frame",
+    "Removed control count in test: verify remaining privacy link and absent toggle",
+    "Mobile section-center tap navigated to /about: tap non-link heading, retain pointer assertion",
+    "Decorative menu text comes from data-text/pseudo-element: check attribute and readable base text"
+  ],
+  "commit": false,
+  "push": false,
+  "prCreated": false,
+  "ready": false,
+  "merge": false,
+  "hostedMutation": false,
+  "deploy": false,
+  "nextStep": "User visual review of local implementation"
+}

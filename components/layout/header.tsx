@@ -21,7 +21,6 @@ import {
 import { LanguageSwitcher } from "./language-switcher";
 import { Arrow } from "@/components/icons";
 import { Wordmark } from "@/components/wordmark";
-import { MotionControl } from "@/components/motion/motion-control";
 import { motionToken } from "@/components/motion/tokens";
 import { RevealText } from "@/components/motion/reveal-text";
 import { MenuInk } from "@/components/motion/menu-ink";
@@ -231,7 +230,6 @@ export function Header({
           available={available}
         />
         <div className="header-controls">
-          <MotionControl labels={labels.motion} />
           <button
             ref={trigger}
             type="button"
@@ -348,7 +346,6 @@ export function Header({
               <Link href={privacy} onClick={(e) => navigate(e, privacy)}>
                 <MenuInk>{privacyLabel}</MenuInk>
               </Link>
-              <MotionControl labels={labels.motion} menu />
             </div>
           </aside>
         </div>

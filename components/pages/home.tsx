@@ -2,12 +2,7 @@ import Link from "@/components/site-link";
 import { Scene } from "@/components/motion/scene";
 import { RevealText } from "@/components/motion/reveal-text";
 import { GradientImage } from "@/components/motion/gradient-image";
-import {
-  SectionLabel,
-  TextLink,
-  ContactBand,
-  DraftBadge,
-} from "@/components/editorial";
+import { SectionLabel, TextLink, ContactBand } from "@/components/editorial";
 import {
   BusinessCards,
   CurrentWork,
@@ -19,34 +14,32 @@ import { getDictionary } from "@/content/dictionaries";
 import { localizedPath, type Locale } from "@/content/i18n";
 import { corporateAsset } from "@/content/corporate-assets";
 import { CompanyMetrics } from "@/components/company-metrics";
+import { SiteOpening } from "@/components/motion/site-opening";
+import { HeroHeadline } from "@/components/motion/hero-headline";
+import { HeroArt } from "@/components/motion/hero-art";
+import { StoryAccent } from "@/components/motion/story-accent";
+import { HeroScrollCue } from "@/components/motion/hero-scroll-cue";
 export function HomePage({ locale }: { locale: Locale }) {
   const c = getDictionary(locale);
   return (
     <>
-      <section className="hero" aria-labelledby="hero-title">
-        <GradientImage
-          src={corporateAsset("A08", locale).path}
-          sizes="100vw"
-          preload
-          className="hero-art"
-        />
+      <SiteOpening locale={locale} />
+      <section className="hero" aria-labelledby="hero-title" data-motion-static>
+        <HeroArt>
+          <GradientImage
+            src={corporateAsset("A08", locale).path}
+            sizes="100vw"
+            preload
+            className="hero-art"
+          />
+        </HeroArt>
         <div className="hero-shade" aria-hidden="true" />
         <div className="container hero-content">
           <p className="eyebrow">
             <span className="status-dot" />
             <RevealText kind="label">{c.common.tagline}</RevealText>
           </p>
-          <h1 id="hero-title" tabIndex={-1}>
-            {c.home.heroLines.map((line, i) => (
-              <RevealText
-                key={line}
-                palette={i ? "iris" : "sky"}
-                direction={i ? "right" : "left"}
-              >
-                {line}
-              </RevealText>
-            ))}
-          </h1>
+          <HeroHeadline lines={c.home.heroLines} />
           <p className="hero-description">
             <RevealText kind="body">{c.home.description}</RevealText>
           </p>
@@ -63,10 +56,17 @@ export function HomePage({ locale }: { locale: Locale }) {
           <span>
             <RevealText kind="label">{c.common.brandNote}</RevealText>
           </span>
-          <a href="#business" className="scroll-link">
-            <RevealText kind="label">{c.home.scroll}</RevealText>
-            <span aria-hidden="true">↓</span>
-          </a>
+          <HeroScrollCue label={c.home.scroll} />
+        </div>
+        <div className="hero-capabilities">
+          <ol className="container" aria-label={c.home.businessStructure}>
+            {c.home.capabilities.map((capability) => (
+              <li key={capability}>
+                <span>{capability}</span>
+                <Arrow />
+              </li>
+            ))}
+          </ol>
         </div>
       </section>
       <Scene
@@ -74,12 +74,13 @@ export function HomePage({ locale }: { locale: Locale }) {
         className="section-space business-section"
         palette="iris"
         direction="right"
+        story="business"
+        deferUntilScroll
       >
         <div className="container">
           <div className="section-top">
             <SectionLabel number="01">{c.pages.business.title}</SectionLabel>
             <div>
-              <DraftBadge>{c.review.candidate}</DraftBadge>
               <h2 className="section-heading">
                 <RevealText palette="iris" direction="right">
                   {c.home.businessTitle}
@@ -101,7 +102,12 @@ export function HomePage({ locale }: { locale: Locale }) {
         </div>
       </Scene>
       <CurrentWork locale={locale} />
-      <Scene id="about" className="wonder-section about-section" palette="sky">
+      <Scene
+        id="about"
+        className="wonder-section about-section"
+        palette="sky"
+        story="philosophy"
+      >
         <div className="container">
           <SectionLabel number="03">{c.home.philosophyLabel}</SectionLabel>
           <h2 className="wonder-type">
@@ -132,7 +138,8 @@ export function HomePage({ locale }: { locale: Locale }) {
         </div>
       </Scene>
       <Collaboration locale={locale} />
-      <section className="home-news">
+      <section className="home-news" data-story="news">
+        <StoryAccent beat="news" />
         <div className="container editorial-grid">
           <SectionLabel number="05">{c.pages.news.title}</SectionLabel>
           <div>
@@ -143,7 +150,7 @@ export function HomePage({ locale }: { locale: Locale }) {
           </div>
         </div>
       </section>
-      <Scene className="home-company" palette="sky">
+      <Scene className="home-company" palette="sky" story="company">
         <div className="container">
           <SectionLabel number="06">{c.pages.company.title}</SectionLabel>
           <Link

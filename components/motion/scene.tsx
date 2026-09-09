@@ -2,7 +2,13 @@
 
 import { useEffect, useRef, type ReactNode } from "react";
 import { useMotionPaused } from "./motion-preference";
-import { randomPalette, type Palette } from "./entrance";
+import {
+  entranceReady,
+  motionAvailable,
+  randomPalette,
+  type Palette,
+} from "./entrance";
+import { StoryAccent, type StoryBeat } from "./story-accent";
 
 // Content is visible in server HTML. Animation enhances an already readable page.
 export function Scene({
@@ -11,12 +17,16 @@ export function Scene({
   palette = "sky",
   direction = "left",
   id,
+  story,
+  deferUntilScroll = false,
 }: {
   children: ReactNode;
   className?: string;
   palette?: Palette;
   direction?: "left" | "right";
   id?: string;
+  story?: StoryBeat;
+  deferUntilScroll?: boolean;
 }) {
   const ref = useRef<HTMLElement>(null);
   const seen = useRef(false);
@@ -24,27 +34,45 @@ export function Scene({
   useEffect(() => {
     const el = ref.current;
     if (!el || paused || !window.IntersectionObserver) return;
+    let visible = false;
+    const start = () => {
+      if (!visible || seen.current || !motionAvailable() || !entranceReady(el))
+        return;
+      const title = el.querySelector(".section-top");
+      if (
+        deferUntilScroll &&
+        title &&
+        title.getBoundingClientRect().top > innerHeight * 0.88
+      )
+        return;
+      seen.current = true;
+      el.dataset.palette = randomPalette();
+      el.classList.add("scene-entered");
+    };
     const observer = new IntersectionObserver(
       ([entry]) => {
-        el.dataset.visible = String(entry.isIntersecting);
-        if (entry.isIntersecting && !seen.current && !document.hidden) {
-          seen.current = true;
-          el.dataset.palette = randomPalette();
-          el.classList.add("scene-entered");
-        }
+        visible = entry.isIntersecting;
+        el.dataset.visible = String(visible);
+        start();
       },
       { threshold: 0.08 },
     );
     const onVisibility = () => {
       el.dataset.hidden = String(document.hidden);
+      start();
     };
     observer.observe(el);
     document.addEventListener("visibilitychange", onVisibility);
+    window.addEventListener("mystena:intro-end", start);
+    if (deferUntilScroll)
+      window.addEventListener("scroll", start, { passive: true });
     return () => {
       observer.disconnect();
       document.removeEventListener("visibilitychange", onVisibility);
+      window.removeEventListener("mystena:intro-end", start);
+      if (deferUntilScroll) window.removeEventListener("scroll", start);
     };
-  }, [paused, direction]);
+  }, [paused, direction, deferUntilScroll]);
 
   useEffect(() => {
     const el = ref.current;
@@ -121,6 +149,8 @@ export function Scene({
       className={`scene ${className}`}
       data-palette={palette}
       data-direction={direction}
+      data-story={story}
+      data-scroll-gated={deferUntilScroll || undefined}
     >
       <div className="scene-colors" aria-hidden="true">
         <i className="color-lead" />
@@ -128,6 +158,7 @@ export function Scene({
         <i className="pointer-light" />
         <i className="pointer-echo" />
       </div>
+      {story ? <StoryAccent beat={story} /> : null}
       {children}
     </section>
   );

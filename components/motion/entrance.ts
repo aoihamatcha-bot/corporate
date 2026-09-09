@@ -10,12 +10,27 @@ export function motionAvailable() {
   );
 }
 
+// Anchor navigation and restored scroll positions also satisfy this gate.
+export function entranceReady(element: Element) {
+  return (
+    (!["pending", "running", "docking"].includes(
+      document.documentElement.dataset.intro ?? "",
+    ) ||
+      element.closest(".site-opening") !== null) &&
+    (!element.closest("[data-scroll-gated]") || window.scrollY > 8)
+  );
+}
+
 export function observeEntrance(
   element: HTMLElement,
   play: () => () => void,
   utility = false,
 ) {
-  if (!window.IntersectionObserver || element.dataset.entered === "true")
+  if (
+    !window.IntersectionObserver ||
+    element.dataset.entered === "true" ||
+    element.closest("[data-motion-static]")
+  )
     return () => {};
   let visible = false;
   let disposed = false;
@@ -28,7 +43,8 @@ export function observeEntrance(
       !fontsReady ||
       !visible ||
       element.dataset.entered === "true" ||
-      !motionAvailable()
+      !motionAvailable() ||
+      !entranceReady(element)
     )
       return;
     element.dataset.entered = "true";
@@ -53,12 +69,17 @@ export function observeEntrance(
     });
   }
   document.addEventListener("visibilitychange", visibility);
+  window.addEventListener("mystena:intro-end", start);
+  const scrollGated = element.closest("[data-scroll-gated]");
+  if (scrollGated) window.addEventListener("scroll", start, { passive: true });
   window.addEventListener("resize", settle, { passive: true });
   return () => {
     disposed = true;
     observer.disconnect();
     settle();
     document.removeEventListener("visibilitychange", visibility);
+    window.removeEventListener("mystena:intro-end", start);
+    if (scrollGated) window.removeEventListener("scroll", start);
     window.removeEventListener("resize", settle);
   };
 }

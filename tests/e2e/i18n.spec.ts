@@ -214,7 +214,7 @@ test("320px layouts keep both languages and menu controls within the screen", as
   }
 });
 
-test("English pause survives language navigation and images are optional to understanding the company", async ({
+test("Device reduced motion survives language navigation without site controls and images are optional to understanding the company", async ({
   page,
 }) => {
   await page.route("**/_next/image**", (route) => route.abort());
@@ -224,15 +224,23 @@ test("English pause survives language navigation and images are optional to unde
   );
   await expect(page.locator(".business-preview > a")).toHaveCount(4);
   await expect(page.locator(".concept-nodes > li")).toHaveCount(3);
-  await page
-    .getByRole("button", { name: "Pause animations", exact: true })
-    .click();
-  await expect(page.locator("html")).toHaveAttribute("data-motion", "paused");
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  await expect(page.locator(".motion-control")).toHaveCount(0);
+  expect(
+    await page.evaluate(
+      () => matchMedia("(prefers-reduced-motion: reduce)").matches,
+    ),
+  ).toBe(true);
   await page
     .locator(".site-header .language-switcher")
     .getByRole("link", { name: "日本語", exact: true })
     .click();
-  await expect(page.locator("html")).toHaveAttribute("data-motion", "paused");
+  await expect(page.locator(".motion-control")).toHaveCount(0);
+  expect(
+    await page.evaluate(
+      () => matchMedia("(prefers-reduced-motion: reduce)").matches,
+    ),
+  ).toBe(true);
   for (const target of [".hero h1", ".wonder-type", ".business-preview h3"]) {
     for (const element of await page.locator(target).all()) {
       await element.scrollIntoViewIfNeeded();

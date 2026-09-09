@@ -1,0 +1,111 @@
+{
+  "capturedAt": "2026-09-09T17:37:57.207Z",
+  "baseURL": "http://127.0.0.1:3017",
+  "evidence": "LOCAL production build, real-time animations",
+  "records": [
+    {
+      "label": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "pageErrors": [],
+      "captures": [
+        {
+          "file": "desktop-01-logo.png",
+          "scrollY": 0
+        },
+        {
+          "file": "desktop-02-handwriting.png",
+          "scrollY": 0
+        },
+        {
+          "file": "desktop-03-hero.png",
+          "scrollY": 0
+        },
+        {
+          "file": "desktop-04-business.png",
+          "scrollY": 1348
+        },
+        {
+          "file": "desktop-05-assembly.png",
+          "scrollY": 3424
+        },
+        {
+          "file": "desktop-06-philosophy.png",
+          "scrollY": 5834
+        },
+        {
+          "file": "desktop-07-collaboration.png",
+          "scrollY": 6870
+        },
+        {
+          "file": "desktop-08-news.png",
+          "scrollY": 7874
+        },
+        {
+          "file": "desktop-09-company.png",
+          "scrollY": 8260
+        },
+        {
+          "file": "desktop-10-contact.png",
+          "scrollY": 8490
+        }
+      ],
+      "horizontalOverflow": false,
+      "video": "desktop-walkthrough.webm"
+    },
+    {
+      "label": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "pageErrors": [],
+      "captures": [
+        {
+          "file": "mobile-01-logo.png",
+          "scrollY": 0
+        },
+        {
+          "file": "mobile-02-handwriting.png",
+          "scrollY": 0
+        },
+        {
+          "file": "mobile-03-hero.png",
+          "scrollY": 0
+        },
+        {
+          "file": "mobile-04-business.png",
+          "scrollY": 1289
+        },
+        {
+          "file": "mobile-05-assembly.png",
+          "scrollY": 4057
+        },
+        {
+          "file": "mobile-06-philosophy.png",
+          "scrollY": 6431
+        },
+        {
+          "file": "mobile-07-collaboration.png",
+          "scrollY": 7591
+        },
+        {
+          "file": "mobile-08-news.png",
+          "scrollY": 8610
+        },
+        {
+          "file": "mobile-09-company.png",
+          "scrollY": 9037
+        },
+        {
+          "file": "mobile-10-contact.png",
+          "scrollY": 9294
+        }
+      ],
+      "horizontalOverflow": false,
+      "video": "mobile-walkthrough.webm"
+    }
+  ]
+}

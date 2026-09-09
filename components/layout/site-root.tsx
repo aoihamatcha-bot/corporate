@@ -6,9 +6,10 @@ import { RevealText } from "@/components/motion/reveal-text";
 import { getDictionary } from "@/content/dictionaries";
 import { navigationFor } from "@/content/navigation";
 import { articleLanguageAvailability } from "@/content/news";
-import { editorialReview } from "@/content/editorial-review";
+import { HomeStory } from "@/components/motion/home-story";
 import type { Locale } from "@/content/i18n";
 import "@/app/globals.css";
+import "@/styles/storyboard.css";
 
 const lineSeed = LINE_Seed_JP({
   weight: ["400", "700"],
@@ -32,6 +33,7 @@ export function SiteRoot({
       lang={locale}
       className={lineSeed.variable}
       data-scroll-behavior="smooth"
+      suppressHydrationWarning
     >
       <body>
         <a className="skip-link" href="#main">
@@ -44,18 +46,8 @@ export function SiteRoot({
           privacyLabel={c.pages.privacy.menu}
           available={articleLanguageAvailability()}
         />
-        {editorialReview.status === "review" && (
-          <aside className="review-notice">
-            <div className="container">
-              <strong>
-                <RevealText kind="utility">{c.review.label}</RevealText>
-              </strong>
-              <RevealText kind="utility">{c.review.notice}</RevealText>
-            </div>
-          </aside>
-        )}
         <main id="main" tabIndex={-1}>
-          {children}
+          <HomeStory>{children}</HomeStory>
         </main>
         <Footer locale={locale} />
       </body>

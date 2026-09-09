@@ -1,0 +1,42 @@
+[
+  {
+    "name": "desktop-ja",
+    "initial": {
+      "businessTop": 900,
+      "viewport": 900,
+      "animations": 0
+    },
+    "errors": [],
+    "url": "http://127.0.0.1:3017/#business"
+  },
+  {
+    "name": "desktop-en",
+    "initial": {
+      "businessTop": 900,
+      "viewport": 900,
+      "animations": 0
+    },
+    "errors": [],
+    "url": "http://127.0.0.1:3017/en#business"
+  },
+  {
+    "name": "mobile-ja",
+    "initial": {
+      "businessTop": 844,
+      "viewport": 844,
+      "animations": 0
+    },
+    "errors": [],
+    "url": "http://127.0.0.1:3017/#business"
+  },
+  {
+    "name": "mobile-en",
+    "initial": {
+      "businessTop": 844,
+      "viewport": 844,
+      "animations": 0
+    },
+    "errors": [],
+    "url": "http://127.0.0.1:3017/en#business"
+  }
+]

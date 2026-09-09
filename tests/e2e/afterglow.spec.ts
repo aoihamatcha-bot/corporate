@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test";
 
-test("all authored visible text has a gradient layer, including small labels and menu copy", async ({
+test("authored text retains gradients except the intentionally static hero band and scroll cue", async ({
   page,
 }) => {
   for (const route of [
@@ -32,11 +32,11 @@ test("all authored visible text has a gradient layer, including small labels and
         const node = walker.currentNode;
         if (!node.textContent?.trim()) continue;
         const parent = node.parentElement!;
-        // Native select choices and assistive-only/icon text are deliberately
-        // left native. The rest includes notices, table values and form labels.
+        // The HERO band and cue are intentionally static in v4. All other
+        // authored copy retains the original gradient-layer coverage.
         if (
           parent.closest(
-            ".reveal-source, .menu-ink-base, script, style, option, .sr-only, [aria-hidden='true'], nextjs-portal",
+            ".reveal-source, .menu-ink-base, script, style, option, .sr-only, [aria-hidden='true'], nextjs-portal, .hero[data-motion-static] .hero-capabilities, .hero[data-motion-static] .hero-scroll-cue",
           )
         )
           continue;
@@ -54,7 +54,15 @@ test("all authored visible text has a gradient layer, including small labels and
   const dialog = page.getByRole("dialog");
   await expect(dialog.locator(".nav-ja .menu-ink-color")).toHaveCount(6);
   await expect(dialog.locator(".nav-number .menu-ink-color")).toHaveCount(6);
-  await expect(dialog.locator(".nav-aux .menu-ink-color")).toHaveCount(2);
+  // The requested removal of the motion toggle leaves the privacy link.
+  await expect(dialog.locator(".nav-aux .menu-ink-color")).toHaveCount(1);
+  await expect(
+    dialog.locator('.nav-aux a[href="/privacy"] .menu-ink-color'),
+  ).toHaveAttribute("data-text", "プライバシーポリシー");
+  await expect(
+    dialog.locator('.nav-aux a[href="/privacy"] .menu-ink-base'),
+  ).toHaveText("プライバシーポリシー");
+  await expect(dialog.locator(".motion-control")).toHaveCount(0);
 });
 
 test("independent text rhythms keep color after the background passes, then fade slowly to black", async ({
@@ -136,7 +144,7 @@ test("independent text rhythms keep color after the background passes, then fade
   expect(new Set(menu.map((m) => m.duration)).size).toBeGreaterThanOrEqual(4);
 });
 
-test("reload can select a different headline palette without server hydration mismatch", async ({
+test("scrolled headings vary palettes without hydration mismatch while the hero stays still", async ({
   browser,
 }) => {
   const colors: string[] = [];
@@ -155,12 +163,21 @@ test("reload can select a different headline palette without server hydration mi
     await page.goto("http://127.0.0.1:3017/");
     const title = page.locator(".hero h1 .reveal-text").first();
     await expect(title).toHaveAttribute("data-entered", "true");
-    colors.push((await title.getAttribute("data-palette"))!);
-    const bandPalette = await title
+    await expect(page.locator(".site-opening")).not.toBeVisible();
+    expect(
+      await title.evaluate((el) => el.getAnimations({ subtree: true }).length),
+    ).toBe(0);
+    await expect(title.locator(".reveal-band")).toHaveCount(0);
+    await expect(title).toHaveAttribute("data-palette", "sky");
+    const philosophy = page.locator(".wonder-type > .reveal-text").first();
+    await philosophy.scrollIntoViewIfNeeded();
+    await expect(philosophy).toHaveAttribute("data-entered", "true");
+    colors.push((await philosophy.getAttribute("data-palette"))!);
+    const bandPalette = await philosophy
       .locator(".reveal-band")
       .first()
       .getAttribute("data-palette");
-    expect(bandPalette).not.toBe(colors.at(-1));
+    expect(bandPalette).not.toBe(await philosophy.getAttribute("data-palette"));
     expect(errors).toEqual([]);
     await context.close();
   }

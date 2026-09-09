@@ -1,0 +1,228 @@
+{
+  "recordedAt": "2026-09-09T20:53:41.435Z",
+  "environment": "LOCAL Next.js production build; automated Chromium desktop/mobile and WebKit mobile, no physical device or hosted execution",
+  "startingHead": "016105c648e7f20d10c674b3671d69d1a0ed486e",
+  "finalHead": "016105c648e7f20d10c674b3671d69d1a0ed486e",
+  "branch": "feat/corporate-motion-storyboard-v1",
+  "git": {
+    "originMain": "016105c648e7f20d10c674b3671d69d1a0ed486e",
+    "remoteFeatureBranch": "absent when queried",
+    "pr": "not retrieved; gh is not authenticated",
+    "commit": false,
+    "push": false,
+    "hostedMutation": false,
+    "deploy": false,
+    "ready": false,
+    "merge": false
+  },
+  "tests": {
+    "full": {
+      "startTime": "2026-09-09T20:45:12.940Z",
+      "duration": 458381.961,
+      "expected": 159,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "projects": {
+      "chromium-desktop": 53,
+      "chromium-mobile": 53,
+      "webkit-mobile": 53
+    },
+    "content": {
+      "passed": 12,
+      "failed": 0
+    },
+    "build": "PASS",
+    "typecheck": "PASS",
+    "lint": "PASS",
+    "format": "PASS",
+    "diffCheck": "PASS",
+    "focusedInitial": {
+      "passed": 24,
+      "failed": 1,
+      "reason": "Old all-text-gradient contract detected the new static HERO band and cue. Explicit HERO exceptions documented; all other text-layer assertions kept, with new real-time HERO stability tests."
+    }
+  },
+  "measurements": [
+    {
+      "project": "chromium-desktop",
+      "language": "ja",
+      "samples": 140,
+      "fonts": "loaded",
+      "uniqueFonts": 1,
+      "uniqueBoxes": 1,
+      "uniqueColors": 1,
+      "maxActiveHeroAnimations": 0,
+      "minBusinessTop": 1200,
+      "viewport": 1200,
+      "cueStartedDuringDock": true,
+      "cueAfterOpening": false
+    },
+    {
+      "project": "chromium-desktop",
+      "language": "en",
+      "samples": 140,
+      "fonts": "loaded",
+      "uniqueFonts": 1,
+      "uniqueBoxes": 1,
+      "uniqueColors": 1,
+      "maxActiveHeroAnimations": 0,
+      "minBusinessTop": 1200,
+      "viewport": 1200,
+      "cueStartedDuringDock": true,
+      "cueAfterOpening": false
+    },
+    {
+      "project": "chromium-mobile",
+      "language": "ja",
+      "samples": 140,
+      "fonts": "loaded",
+      "uniqueFonts": 1,
+      "uniqueBoxes": 1,
+      "uniqueColors": 1,
+      "maxActiveHeroAnimations": 0,
+      "minBusinessTop": 844,
+      "viewport": 844,
+      "cueStartedDuringDock": true,
+      "cueAfterOpening": false
+    },
+    {
+      "project": "chromium-mobile",
+      "language": "en",
+      "samples": 140,
+      "fonts": "loaded",
+      "uniqueFonts": 1,
+      "uniqueBoxes": 1,
+      "uniqueColors": 1,
+      "maxActiveHeroAnimations": 0,
+      "minBusinessTop": 844,
+      "viewport": 844,
+      "cueStartedDuringDock": true,
+      "cueAfterOpening": false
+    },
+    {
+      "project": "webkit-mobile",
+      "language": "ja",
+      "samples": 38,
+      "fonts": "loaded",
+      "uniqueFonts": 1,
+      "uniqueBoxes": 1,
+      "uniqueColors": 1,
+      "maxActiveHeroAnimations": 0,
+      "minBusinessTop": 844,
+      "viewport": 844,
+      "cueStartedDuringDock": true,
+      "cueAfterOpening": false
+    },
+    {
+      "project": "webkit-mobile",
+      "language": "en",
+      "samples": 39,
+      "fonts": "loaded",
+      "uniqueFonts": 1,
+      "uniqueBoxes": 1,
+      "uniqueColors": 1,
+      "maxActiveHeroAnimations": 0,
+      "minBusinessTop": 844,
+      "viewport": 844,
+      "cueStartedDuringDock": true,
+      "cueAfterOpening": false
+    }
+  ],
+  "heroLinks": {
+    "records": [
+      {
+        "locale": "ja",
+        "destination": "business",
+        "url": "http://127.0.0.1:3017/business",
+        "title": "事業紹介 | MYSTENA"
+      },
+      {
+        "locale": "ja",
+        "destination": "company",
+        "url": "http://127.0.0.1:3017/company",
+        "title": "会社概要 | MYSTENA"
+      },
+      {
+        "locale": "en",
+        "destination": "business",
+        "url": "http://127.0.0.1:3017/en/business",
+        "title": "Our business | MYSTENA"
+      },
+      {
+        "locale": "en",
+        "destination": "company",
+        "url": "http://127.0.0.1:3017/en/company",
+        "title": "Company information | MYSTENA"
+      }
+    ],
+    "errors": []
+  },
+  "visuals": [
+    {
+      "name": "desktop-ja",
+      "initial": {
+        "businessTop": 900,
+        "viewport": 900,
+        "animations": 0
+      },
+      "errors": [],
+      "url": "http://127.0.0.1:3017/#business"
+    },
+    {
+      "name": "desktop-en",
+      "initial": {
+        "businessTop": 900,
+        "viewport": 900,
+        "animations": 0
+      },
+      "errors": [],
+      "url": "http://127.0.0.1:3017/en#business"
+    },
+    {
+      "name": "mobile-ja",
+      "initial": {
+        "businessTop": 844,
+        "viewport": 844,
+        "animations": 0
+      },
+      "errors": [],
+      "url": "http://127.0.0.1:3017/#business"
+    },
+    {
+      "name": "mobile-en",
+      "initial": {
+        "businessTop": 844,
+        "viewport": 844,
+        "animations": 0
+      },
+      "errors": [],
+      "url": "http://127.0.0.1:3017/en#business"
+    }
+  ],
+  "notes": [
+    "Supplied v3 handwriting geometry and existing opening lifecycle remain unchanged.",
+    "Existing LINE Seed JP fallback metadata build warning remains; late font switching was not reproduced in the browser samples.",
+    "agent-browser verified homepage load, screenshot, content and no error overlay. Its click / URL wait did not complete (Windows socket timeout), so CTA navigation was independently verified in Playwright.",
+    "Exploratory navigation script initially used the standalone 5s expect default, shorter than the authored opening. It was corrected to await intro completion; no product change or acceptance threshold was changed.",
+    "A reserved-video explanatory comment was updated after the build; executable output is unchanged."
+  ],
+  "sourceSha256": {
+    "components/layout/site-root.tsx": "1b6b8b2aa05d2a8a619519eedfff5f0084d7c862206a34b58d3256b6cedf79bf",
+    "components/motion/entrance.ts": "0a0e06de5bab7411fba063301fadeeb3da9ab72be54f63bfbeba1e8222d92948",
+    "components/motion/hero-art.tsx": "96aff5790dfc99979f9f649b83984ca02dbbb73cb44539c87bb0e700b5e019ae",
+    "components/motion/hero-headline.tsx": "c050a15b403ce67e4210dda707d865a58fceb34a05ec85c7f46bfb7ec177a0d2",
+    "components/motion/hero-scroll-cue.tsx": "bb9bfbace6e58ae618b4f9d2cc12b91f2d52ff2fa12035466241f2397102a771",
+    "components/motion/home-story.tsx": "492a9a76af38192b6e078d4efea45df7e4229410df487d9b7ba3eba6a99d2a2a",
+    "components/motion/scene.tsx": "a84cea42dd533103e131adf8795f61a0cabfe4c2a8bb4628bdcb196c7e6622d4",
+    "components/pages/home.tsx": "5f0c9004272fc9f18856e52896b4742287b168a06cd84e295306610b1a0aa703",
+    "content/dictionaries/en.ts": "56241a02ce6918e366048492d92ce325e6dcde7890f94fb1b57e28d7b1a4f9b0",
+    "content/dictionaries/ja.ts": "c4f381e5067b02201067b9c2cf912ea4b2b4ce1ccdf1ecbdd128bf741af363ea",
+    "content/hero-media.ts": "1e540d2fda8dc1a067319f98e8de573db0fbb4f2a1b25743fb2e3a3c8405eb3f",
+    "styles/storyboard.css": "60a0081831b050cee64ed88ab42e83062358b2e30ce2a226e227da4ed008d857",
+    "components/motion/handwriting.ts": "3a9dda4ff29797b984ff4fec70f54f7f802e3506d938ddbfcefdce816af30be8",
+    "components/motion/handwriting-ink.ts": "bf0dc5ee89be60d62b765a25d9e4816ef297493cbd6b74b5f08ea4392349e27b",
+    "components/motion/site-opening.tsx": "ea3298abe3e74340a498bb11a910447e782211a57a196de6aa301bea1ec65caa"
+  }
+}

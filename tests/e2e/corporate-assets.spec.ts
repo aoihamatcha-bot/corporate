@@ -46,12 +46,24 @@ test("adopted concepts and illustrations load in both languages without implying
           "src",
           /a08-brand-keyvisual/,
         );
-        await expect(page.locator(".material-section")).toContainText(
-          c.assets.note,
+        await expect(
+          page.locator(".material-section .editorial-note"),
+        ).toHaveCount(0);
+        await expect(page.locator(".review-notice, .draft-badge")).toHaveCount(
+          0,
         );
         await expect(page.locator(".service-poster")).toContainText(
-          c.assets.posterNote,
+          c.assets.posterTitle,
         );
+        for (const id of ["A01", "A02", "A06", "A07"]) {
+          expect(
+            decodeURIComponent(
+              (await page
+                .locator(`img[data-asset-id="${id}"]`)
+                .getAttribute("src"))!,
+            ),
+          ).toContain(`-v4-${locale}.webp`);
+        }
         await expect(
           page.locator(".service-poster button, .service-poster video"),
         ).toHaveCount(0);
