@@ -72,10 +72,14 @@ test("only the thumbnail cursor hover cycles eight palettes; focus and touch rem
   isMobile,
 }) => {
   await page.goto("/");
+  await expect(page.getByRole("button", { name: "メニューを開く" })).toBeEnabled();
+  await page.evaluate(() => document.fonts.ready);
   const link = page.locator(".business-preview > a").first();
   const image = link.locator(".gradient-image");
-  await image.scrollIntoViewIfNeeded();
+  // Set focus before scrolling; browser focus scrolling must not move the
+  // thumbnail out from under the cursor while its hover animation is awaited.
   await link.focus();
+  await image.scrollIntoViewIfNeeded();
   await expect(link).toBeFocused();
   await expectStatic(image);
   const source = await image.locator("img").getAttribute("src");

@@ -18,6 +18,7 @@ import { Arrow } from "@/components/icons";
 import { getDictionary } from "@/content/dictionaries";
 import { localizedPath, type Locale } from "@/content/i18n";
 import { corporateAsset } from "@/content/corporate-assets";
+import { CompanyMetrics } from "@/components/company-metrics";
 export function HomePage({ locale }: { locale: Locale }) {
   const c = getDictionary(locale);
   return (
@@ -127,6 +128,7 @@ export function HomePage({ locale }: { locale: Locale }) {
               {c.home.aboutButton}
             </TextLink>
           </div>
+          <CompanyMetrics locale={locale} />
         </div>
       </Scene>
       <Collaboration locale={locale} />
