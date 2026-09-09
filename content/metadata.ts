@@ -6,6 +6,19 @@ import { editorialReview } from "./editorial-review";
 import { articleLanguageAvailability, publishedArticle } from "./news";
 import { corporateAsset } from "./corporate-assets";
 export const reviewRobots = { index: false, follow: false, nocache: true };
+export function socialImageOrigin(
+  canonicalOrigin: string | null,
+  environment: Record<string, string | undefined>,
+) {
+  // Unique deployment URLs can require SSO even when the production alias is public.
+  const host =
+    environment.VERCEL_ENV === "production"
+      ? environment.VERCEL_PROJECT_PRODUCTION_URL || environment.VERCEL_URL
+      : environment.VERCEL_URL;
+  return new URL(
+    canonicalOrigin || (host ? `https://${host}` : "http://127.0.0.1:3017"),
+  );
+}
 export function localizedAlternates(
   path: string,
   available: readonly Locale[],
@@ -45,12 +58,7 @@ function alternates(path: string, available: readonly Locale[]) {
 export function rootMetadata(locale: Locale): Metadata {
   const c = getDictionary(locale);
   return {
-    metadataBase: new URL(
-      site.canonicalOrigin ||
-        (process.env.VERCEL_URL
-          ? `https://${process.env.VERCEL_URL}`
-          : "http://127.0.0.1:3017"),
-    ),
+    metadataBase: socialImageOrigin(site.canonicalOrigin, process.env),
     title: {
       default: `${site.brand} — ${c.pages.home.title}`,
       template: `%s | ${site.brand}`,

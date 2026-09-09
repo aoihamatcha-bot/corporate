@@ -15,11 +15,36 @@ import {
   localizedPath,
   languageDestination,
 } from "../content/i18n";
-import { localizedAlternates, pageMetadata } from "../content/metadata";
+import {
+  localizedAlternates,
+  pageMetadata,
+  socialImageOrigin,
+} from "../content/metadata";
 import { editorialReview } from "../content/editorial-review";
 import { business } from "../content/business";
 
 const now = new Date("2026-09-08T00:00:00Z");
+
+test("production social images use a public domain while previews retain their own deployment", () => {
+  const environment = {
+    VERCEL_ENV: "production",
+    VERCEL_URL: "protected-deployment.example.test",
+    VERCEL_PROJECT_PRODUCTION_URL: "public.example.test",
+  };
+  assert.equal(
+    socialImageOrigin(null, environment).origin,
+    "https://public.example.test",
+  );
+  assert.equal(
+    socialImageOrigin(null, { ...environment, VERCEL_ENV: "preview" }).origin,
+    "https://protected-deployment.example.test",
+  );
+  assert.equal(
+    socialImageOrigin("https://approved.example.test", environment).origin,
+    "https://approved.example.test",
+  );
+  assert.equal(socialImageOrigin(null, {}).origin, "http://127.0.0.1:3017");
+});
 const translation = (
   changes: Partial<NewsTranslation> = {},
 ): NewsTranslation => ({
