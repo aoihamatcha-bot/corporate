@@ -13,12 +13,12 @@ test("body text is readable without masks before entering the viewport and after
     await target.evaluate((el) => el.getBoundingClientRect().top > innerHeight),
   ).toBe(true);
   const assertReadableBody = async () => {
-    await expect(target).toHaveAttribute("data-text-motion", "static");
-    await expect(target).not.toHaveAttribute("data-entered");
-    await expect(target).not.toHaveAttribute("data-reveal-state");
+    await expect(target).toHaveAttribute("data-text-motion", "color");
     await expect(
-      target.locator(".reveal-band, .reveal-bands, .reveal-color"),
+      target.locator(".reveal-band, .reveal-bands"),
     ).toHaveCount(0);
+    await expect(target.locator(".reveal-color")).toHaveCount(1);
+    await expect(target.locator(".reveal-color")).toHaveAttribute("aria-hidden", "true");
     await expect(target.locator(".reveal-source")).toBeVisible();
     const state = await target.evaluate((el) => {
       const source = el.querySelector(".reveal-source")!;
@@ -37,7 +37,7 @@ test("body text is readable without masks before entering the viewport and after
         opacity: style.opacity,
         clipPath: style.clipPath,
         mask: style.maskImage,
-        animations: el.getAnimations({ subtree: true }).length,
+        animations: el.getAnimations().length + source.getAnimations().length,
         hiddenAncestors,
       };
     });
@@ -50,12 +50,43 @@ test("body text is readable without masks before entering the viewport and after
     });
   };
   await assertReadableBody();
+  await expect(target).not.toHaveAttribute("data-entered");
   await target.scrollIntoViewIfNeeded();
   await expect(target).toBeInViewport();
+  await expect(target).toHaveAttribute("data-reveal-state", "running");
   await assertReadableBody();
+  const color = await target.evaluate((el) => {
+    const overlay = el.querySelector(".reveal-color")!;
+    const animation = overlay.getAnimations()[0];
+    const effect = animation.effect as KeyframeEffect;
+    const timing = effect.getTiming();
+    const frames = effect.getKeyframes();
+    // Sample the real effect in its full-color plateau, without sleeping.
+    animation.pause();
+    animation.currentTime = Number(timing.delay) +
+      (frames[1].computedOffset! + frames[2].computedOffset!) / 2 * Number(timing.duration);
+    const result = {
+      opacity: getComputedStyle(overlay).opacity,
+      gradient: getComputedStyle(overlay, "::before").backgroundImage,
+      duration: Number(timing.duration),
+      iterations: timing.iterations,
+      sourceTransform: getComputedStyle(el.querySelector(".reveal-source")!).transform,
+    };
+    animation.play();
+    return result;
+  });
+  expect(color.opacity).toBe("1");
+  expect(color.gradient).toContain("linear-gradient");
+  expect(color.duration).toBeGreaterThanOrEqual(2000);
+  expect(color.duration).toBeLessThanOrEqual(3500);
+  expect(color.iterations).toBe(1);
+  expect(color.sourceTransform).toBe("none");
+  await expect(target).toHaveAttribute("data-reveal-state", "settled");
+  await expect(target.locator(".reveal-color")).toHaveCSS("opacity", "0");
   await page.evaluate(() => window.scrollTo({ top: 0, behavior: "instant" }));
   await target.scrollIntoViewIfNeeded();
   await assertReadableBody();
+  expect(await target.evaluate((el) => el.getAnimations({ subtree: true }).length)).toBe(0);
 });
 
 test("menu curtains animate behind immediately readable navigation text on each opening", async ({
@@ -77,7 +108,7 @@ test("menu curtains animate behind immediately readable navigation text on each 
       ),
     ).toHaveLength(2);
     await expect(
-      dialog.locator(".menu-ink-color, .nav-en-color, .menu-ink-band"),
+      dialog.locator(".menu-ink-band"),
     ).toHaveCount(0);
     const labels = await dialog.locator(".menu-ink").evaluateAll((elements) =>
       elements
@@ -92,7 +123,8 @@ test("menu curtains animate behind immediately readable navigation text on each 
             clipPath: style.clipPath,
             mask: style.maskImage,
             visibility: style.visibility,
-            animations: el.getAnimations({ subtree: true }).length,
+            animations: el.getAnimations().length + source.getAnimations().length,
+            colorLayers: el.querySelectorAll('.menu-ink-color[aria-hidden="true"]').length,
           };
         }),
     );
@@ -100,12 +132,13 @@ test("menu curtains animate behind immediately readable navigation text on each 
     for (const label of labels) {
       expect(label.text).toBeTruthy();
       expect(label).toMatchObject({
-        motion: "static",
+        motion: "color",
         opacity: "1",
         clipPath: "none",
         mask: "none",
         visibility: "visible",
         animations: 0,
+        colorLayers: 1,
       });
     }
     await expect(dialog.locator(".nav-en-base")).toHaveCount(6);

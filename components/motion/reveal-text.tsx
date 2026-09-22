@@ -4,7 +4,12 @@ import { useEffect, useRef } from "react";
 import { useMotionPaused } from "./motion-preference";
 import { observeEntrance, type Palette } from "./entrance";
 import { motionToken } from "./tokens";
-import { textRhythm, type TextKind } from "./text-rhythm";
+import {
+  textColorHoldExtensionMs,
+  textColorRiseMs,
+  textRhythm,
+  type TextKind,
+} from "./text-rhythm";
 
 type RevealTextProps = {
   children: string;
@@ -17,19 +22,93 @@ type RevealTextProps = {
 };
 
 export function RevealText({ kind = "heading", ...props }: RevealTextProps) {
-  // Reading and navigation do not mount animation hooks or register listeners.
-  // Only headings opt into the once-only viewport entrance below.
-  if (kind !== "heading")
-    return (
-      <span
-        className={`reveal-text ${props.className ?? ""}`}
-        data-motion-kind={kind}
-        data-text-motion="static"
-      >
-        <span className="reveal-source">{props.children}</span>
-      </span>
-    );
+  // Reading and navigation keep a stationary, unmasked source. Their color
+  // layer shares the once-only viewport gate without the heading entrance.
+  if (kind !== "heading") return <ColorText {...props} kind={kind} />;
   return <AnimatedHeading {...props} kind={kind} />;
+}
+
+function ColorText({
+  children,
+  palette = "sky",
+  light = false,
+  className = "",
+  kind = "body",
+}: RevealTextProps) {
+  const root = useRef<HTMLSpanElement>(null);
+  const color = useRef<HTMLSpanElement>(null);
+  const paused = useMotionPaused();
+
+  useEffect(() => {
+    const element = root.current;
+    if (!element || paused) return;
+    return observeEntrance(
+      element,
+      () => {
+        let glow: Animation | undefined;
+        const stop = () => {
+          glow?.cancel();
+          element.dataset.revealState = "settled";
+        };
+        element.dataset.revealState = "running";
+        try {
+          const computed = getComputedStyle(element);
+          const beat = Number(computed.getPropertyValue("--ink-beat"));
+          const token = (part: string) =>
+            Number(computed.getPropertyValue(`--${kind}-${part}-ms`));
+          const delay = token("delay") + beat * 37;
+          const holdMs = token("hold") + beat * 20 + textColorHoldExtensionMs;
+          const fadeMs = token("fade") + beat * 43;
+          const colorMs = textColorRiseMs + holdMs + fadeMs;
+          glow = color.current!.animate(
+            [
+              { opacity: 0, backgroundPosition: "0% 50%", easing: "ease-out" },
+              {
+                opacity: 1,
+                backgroundPosition: "10% 50%",
+                offset: textColorRiseMs / colorMs,
+              },
+              {
+                opacity: 1,
+                backgroundPosition: "65% 50%",
+                offset: (textColorRiseMs + holdMs) / colorMs,
+                easing: "ease-in-out",
+              },
+              { opacity: 0, backgroundPosition: "100% 50%" },
+            ],
+            { duration: colorMs, delay, easing: "linear" },
+          );
+          glow.onfinish = stop;
+        } catch {
+          // The readable source is never an animation target, including when
+          // the browser cannot create or complete the decorative animation.
+          stop();
+        }
+        return stop;
+      },
+      kind === "utility",
+    );
+  }, [paused, children, palette, kind]);
+
+  return (
+    <span
+      ref={root}
+      className={`reveal-text ${className}`}
+      data-palette={palette}
+      data-tone={light ? "light" : "dark"}
+      data-motion-kind={kind}
+      data-text-motion="color"
+      style={textRhythm(children, kind)}
+    >
+      <span className="reveal-source">{children}</span>
+      <span
+        ref={color}
+        className="reveal-color"
+        data-text={children}
+        aria-hidden="true"
+      />
+    </span>
+  );
 }
 
 function AnimatedHeading({

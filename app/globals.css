@@ -535,6 +535,7 @@ main:focus {
   position: absolute;
   inset: 22% -10% 24%;
   opacity: 0;
+  mask-image: linear-gradient(180deg, transparent, #000 28%, #000 72%, transparent);
   background: linear-gradient(
     110deg,
     var(--color-2),
@@ -605,8 +606,8 @@ main:focus {
   align-items: center;
   padding-block: 100px;
   background:
-    radial-gradient(ellipse at 8% 90%, var(--sky-2), transparent 65%),
-    radial-gradient(ellipse at 95% 10%, var(--iris-2), transparent 60%), #e8f7ff;
+    radial-gradient(ellipse at 8% 90%, color-mix(in srgb, var(--sky-2) var(--surface-tint), transparent), transparent 65%),
+    radial-gradient(ellipse at 95% 10%, color-mix(in srgb, var(--iris-2) 22%, transparent), transparent 60%), var(--sky-paper);
 }
 .wonder-section .eyebrow {
   margin-bottom: 35px;
@@ -724,8 +725,8 @@ main:focus {
 .contact-band {
   padding-block: 90px;
   background:
-    radial-gradient(ellipse at 0 70%, var(--apricot-2), transparent 70%),
-    radial-gradient(ellipse at 100% 0, var(--sky-2), transparent 80%), #f5f3fb;
+    radial-gradient(ellipse at 0 70%, color-mix(in srgb, var(--apricot-2) 30%, transparent), transparent 70%),
+    radial-gradient(ellipse at 100% 0, color-mix(in srgb, var(--sky-2) var(--surface-tint), transparent), transparent 80%), var(--sky-paper);
 }
 .contact-band-inner {
   display: flex;
@@ -804,7 +805,7 @@ main:focus {
 }
 .page-intro {
   padding-block: 28px 48px;
-  background: radial-gradient(ellipse at 95% 20%, var(--color-2), transparent 60%), var(--sky-paper);
+  background: radial-gradient(ellipse at 95% 20%, color-mix(in srgb, var(--color-2) var(--surface-tint), transparent), transparent 60%), var(--sky-paper);
 }
 .breadcrumb {
   display: flex;
@@ -1095,7 +1096,7 @@ main:focus {
     opacity: 0;
   }
   25% {
-    opacity: 0.7;
+    opacity: var(--scene-wash-opacity);
   }
   100% {
     transform: translateX(85%);
@@ -1108,7 +1109,7 @@ main:focus {
     opacity: 0;
   }
   25% {
-    opacity: 0.7;
+    opacity: var(--scene-wash-opacity);
   }
   100% {
     transform: translateX(-85%);
@@ -1411,14 +1412,6 @@ main:focus {
   .form-field textarea {
     padding: 13px;
   }
-}
-.hero::after {
-  content: "";
-  position: absolute;
-  inset: 65% 0 0;
-  background: linear-gradient(transparent, rgba(246, 251, 255, 0.92));
-  z-index: -1;
-  pointer-events: none;
 }
 @media (prefers-reduced-motion: reduce) {
   html {

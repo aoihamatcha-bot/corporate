@@ -62,7 +62,7 @@ export function HomePage({ locale }: { locale: Locale }) {
           <ol className="container" aria-label={c.home.businessStructure}>
             {c.home.capabilities.map((capability) => (
               <li key={capability}>
-                <span>{capability}</span>
+                <RevealText kind="label">{capability}</RevealText>
                 <Arrow />
               </li>
             ))}

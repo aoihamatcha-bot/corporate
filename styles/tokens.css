@@ -59,6 +59,8 @@
   --utility-fade-ms: 1000;
   --text-body-brightness: 0.82;
   --glass-highlight: rgb(255 255 255 / 14%);
+  --scene-wash-opacity: 0.28;
+  --surface-tint: 32%;
   --image-color-ms: 2650;
   --image-delay-ms: 210;
   --image-wipe-ms: 820;

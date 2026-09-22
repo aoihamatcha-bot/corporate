@@ -12,6 +12,7 @@
   display: block;
 }
 .reveal-color,
+.menu-ink-color,
 .reveal-bands {
   position: absolute;
   inset: 0;
@@ -19,12 +20,14 @@
   user-select: none;
 }
 .reveal-color,
+.menu-ink-color,
 .count-up-color {
   opacity: 0;
   background-position: 0% 50%;
   background-size: 180% 100%;
 }
 .reveal-color::before,
+.menu-ink-color::before,
 .count-up-color::before {
   content: attr(data-text);
   display: block;
@@ -48,7 +51,8 @@
   user-select: none;
 }
 :is(.hero, .site-footer) .reveal-color::before,
-.reveal-text[data-tone="light"] .reveal-color::before {
+.reveal-text[data-tone="light"] .reveal-color::before,
+.menu-ink[data-tone="light"] .menu-ink-color::before {
   background-image: linear-gradient(
     100deg,
     var(--color-1),
@@ -56,7 +60,8 @@
     var(--color-4)
   );
 }
-.reveal-color::before {
+.reveal-color::before,
+.menu-ink:not(.nav-en) .menu-ink-color::before {
   filter: brightness(var(--text-body-brightness));
 }
 :is(
@@ -69,7 +74,8 @@
   )
   .reveal-color::before,
 :is(.hero, .site-footer) .reveal-color::before,
-.reveal-text[data-tone="light"] .reveal-color::before {
+.reveal-text[data-tone="light"] .reveal-color::before,
+.menu-ink[data-tone="light"] .menu-ink-color::before {
   filter: none;
 }
 .reveal-band {
@@ -204,8 +210,36 @@
 .menu-ink-base {
   display: block;
 }
+.fullscreen-nav[open] .menu-ink-color {
+  animation:
+    ink-color-appear calc(var(--ink-color-rise) * 1ms) ease-out both,
+    ink-color-fade calc(var(--ink-fade) * 1ms) ease-in-out forwards;
+  animation-delay:
+    calc(var(--ink-delay) * 1ms),
+    calc((var(--ink-delay) + var(--ink-color-rise) + var(--ink-color-hold)) * 1ms);
+}
 .fullscreen-nav[data-closing="true"] .nav-curtains {
   display: none;
+}
+@keyframes ink-color-appear {
+  from {
+    opacity: 0;
+    background-position: 0% 50%;
+  }
+  to {
+    opacity: 1;
+    background-position: 65% 50%;
+  }
+}
+@keyframes ink-color-fade {
+  from {
+    opacity: 1;
+    background-position: 65% 50%;
+  }
+  to {
+    opacity: 0;
+    background-position: 100% 50%;
+  }
 }
 @keyframes curtain-pass {
   0% {
@@ -230,6 +264,7 @@
 [data-motion="paused"]
   :is(
     .reveal-color,
+    .menu-ink-color,
     .count-up-color,
     .reveal-bands,
     .image-wash,
@@ -241,6 +276,7 @@
 }
 @media (prefers-reduced-motion: reduce), (forced-colors: active) {
   .reveal-color,
+  .menu-ink-color,
   .count-up-color,
   .reveal-bands,
   .image-wash,
@@ -252,6 +288,7 @@
 }
 @media print {
   .reveal-color,
+  .menu-ink-color,
   .count-up-color,
   .reveal-bands,
   .image-wash,

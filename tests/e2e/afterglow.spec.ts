@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test";
 
-test("body, labels and navigation use readable static text across both languages", async ({
+test("all authored text has a decorative color layer with readable sources in both languages", async ({
   page,
 }) => {
   for (const route of [
@@ -38,11 +38,11 @@ test("body, labels and navigation use readable static text across both languages
         const node = walker.currentNode;
         if (!node.textContent?.trim()) continue;
         const parent = node.parentElement!;
-        // Retain coverage of authored copy. RevealText sources now include
-        // static body/labels as well as the separate animated heading sources.
+        // Hero copy, its capabilities and its cue use the same authored-text
+        // wrappers. Native input content and inaccessible decoration stay exempt.
         if (
           parent.closest(
-            ".reveal-source, .menu-ink-base, script, style, option, .sr-only, [aria-hidden='true'], nextjs-portal, .hero[data-motion-static] .hero-capabilities, .hero[data-motion-static] .hero-scroll-cue",
+            ".reveal-source, .menu-ink-base, script, style, input, textarea, option, .sr-only, [aria-hidden='true'], nextjs-portal",
           )
         )
           continue;
@@ -54,14 +54,16 @@ test("body, labels and navigation use readable static text across both languages
       return missing;
     });
     expect(uncovered, route).toEqual([]);
-    const staticText = await page
+    const colorText = await page
       .locator('.reveal-text:not([data-motion-kind="heading"])')
       .evaluateAll((elements) =>
         elements
           .filter((el) => !el.closest('[aria-hidden="true"], dialog:not([open])'))
           .map((el) => {
             const source = el.querySelector(".reveal-source")!;
+            const overlay = el.querySelector(".reveal-color")!;
             const style = getComputedStyle(source);
+            const rootStyle = getComputedStyle(el);
             return {
               text: source.textContent?.trim(),
               kind: el.getAttribute("data-motion-kind"),
@@ -70,57 +72,197 @@ test("body, labels and navigation use readable static text across both languages
               visibility: style.visibility,
               clipPath: style.clipPath,
               mask: style.maskImage,
-              decorations: el.querySelectorAll(
-                ".reveal-color, .reveal-bands, .reveal-band",
-              ).length,
-              animations: el.getAnimations({ subtree: true }).length,
+              transform: style.transform,
+              rootClipPath: rootStyle.clipPath,
+              rootMask: rootStyle.maskImage,
+              rootTransform: rootStyle.transform,
+              rootAnimations: el.getAnimations().length,
+              sourceAnimations: source.getAnimations().length,
+              overlays: el.querySelectorAll(".reveal-color").length,
+              overlayHidden: overlay.getAttribute("aria-hidden"),
+              overlayText: overlay.getAttribute("data-text"),
+              gradient: getComputedStyle(overlay, "::before").backgroundImage,
+              bands: el.querySelectorAll(".reveal-bands, .reveal-band").length,
+              animations: overlay.getAnimations().map((animation) => {
+                const timing = animation.effect!.getComputedTiming();
+                const frames = (animation.effect as KeyframeEffect).getKeyframes();
+                return {
+                  finite: Number.isFinite(Number(timing.endTime)),
+                  iterations: timing.iterations,
+                  duration: Number(timing.duration),
+                  colorOnly: frames.every((frame) =>
+                    !["clipPath", "maskImage", "transform", "translate"].some(
+                      (property) => property in frame,
+                    ),
+                  ),
+                };
+              }),
             };
           }),
       );
-    expect(staticText.length, route).toBeGreaterThan(0);
-    expect(staticText.some((entry) => entry.kind === "body"), route).toBe(true);
-    for (const entry of staticText) {
+    expect(colorText.length, route).toBeGreaterThan(0);
+    expect(colorText.some((entry) => entry.kind === "body"), route).toBe(true);
+    for (const entry of colorText) {
       expect(entry.text, route).toBeTruthy();
       expect(entry, `${route}: ${entry.text}`).toMatchObject({
-        motion: "static",
+        motion: "color",
         opacity: "1",
         visibility: "visible",
         clipPath: "none",
         mask: "none",
-        decorations: 0,
-        animations: 0,
+        transform: "none",
+        rootClipPath: "none",
+        rootMask: "none",
+        rootTransform: "none",
+        rootAnimations: 0,
+        sourceAnimations: 0,
+        overlays: 1,
+        overlayHidden: "true",
+        overlayText: entry.text,
+        bands: 0,
       });
+      expect(entry.gradient, `${route}: ${entry.text}`).toContain("linear-gradient");
+      for (const animation of entry.animations) {
+        expect(animation).toMatchObject({ finite: true, iterations: 1, colorOnly: true });
+        expect(animation.duration).toBeGreaterThan(0);
+      }
     }
   }
-  await page.goto("/");
-  await page.getByRole("button", { name: "メニューを開く" }).click();
-  const dialog = page.getByRole("dialog");
-  await expect(
-    dialog.locator(".menu-ink-color, .nav-en-color, .menu-ink-band"),
-  ).toHaveCount(0);
-  await expect(
-    dialog.locator('.nav-ja .menu-ink[data-text-motion="static"]'),
-  ).toHaveCount(6);
-  await expect(
-    dialog.locator('.nav-number .menu-ink[data-text-motion="static"]'),
-  ).toHaveCount(6);
-  await expect(
-    dialog.locator('.nav-en[data-text-motion="static"]'),
-  ).toHaveCount(6);
-  // The requested removal of the motion toggle leaves the privacy link.
-  await expect(
-    dialog.locator('.nav-aux .menu-ink[data-text-motion="static"]'),
-  ).toHaveCount(1);
-  await expect(
-    dialog.locator('.nav-aux a[href="/privacy"]'),
-  ).toHaveAccessibleName("プライバシーポリシー");
-  await expect(
-    dialog.locator('.nav-aux a[href="/privacy"] .menu-ink-base'),
-  ).toHaveText("プライバシーポリシー");
-  await expect(dialog.locator(".motion-control")).toHaveCount(0);
 });
 
-test("heading color outlasts its decorative band and fades while menu labels stay static", async ({
+test("body color appears and finishes while its source stays readable and stationary", async ({ page }) => {
+  await page.goto("/about");
+  const body = page.locator('.page-description [data-motion-kind="body"]');
+  await body.scrollIntoViewIfNeeded();
+  await expect(body).toHaveAttribute("data-reveal-state", "running");
+  const result = await body.evaluate(async (el) => {
+    const source = el.querySelector(".reveal-source")!;
+    const overlay = el.querySelector(".reveal-color")!;
+    const animations = overlay.getAnimations();
+    const animation = animations[0];
+    const timing = animation.effect!.getComputedTiming();
+    const frames = (animation.effect as KeyframeEffect).getKeyframes();
+    const initial = source.getBoundingClientRect();
+    const failures: string[] = [];
+    let samples = 0;
+    let maxColorOpacity = 0;
+    let raf = 0;
+    const sample = () => {
+      samples++;
+      const style = getComputedStyle(source);
+      const bounds = source.getBoundingClientRect();
+      if (style.opacity !== "1" || style.visibility !== "visible") failures.push("hidden source");
+      if (style.clipPath !== "none" || style.maskImage !== "none") failures.push("masked source");
+      if (source.getAnimations().length || el.getAnimations().length) failures.push("animated source or root");
+      if (Math.abs(bounds.x - initial.x) > 0.5 || Math.abs(bounds.y - initial.y) > 0.5) failures.push("moving source");
+      maxColorOpacity = Math.max(maxColorOpacity, Number(getComputedStyle(overlay).opacity));
+      raf = requestAnimationFrame(sample);
+    };
+    sample();
+    await animation.finished;
+    cancelAnimationFrame(raf);
+    return {
+      animations: animations.length,
+      finite: Number.isFinite(Number(timing.endTime)),
+      iterations: timing.iterations,
+      opacityFrames: frames.map((frame) => Number(frame.opacity)),
+      samples,
+      maxColorOpacity,
+      failures,
+    };
+  });
+  expect(result).toMatchObject({ animations: 1, finite: true, iterations: 1, failures: [] });
+  expect(result.opacityFrames).toEqual([0, 1, 1, 0]);
+  expect(result.samples).toBeGreaterThan(1);
+  expect(result.maxColorOpacity).toBeGreaterThan(0.95);
+  await expect(body).toHaveAttribute("data-reveal-state", "settled");
+  await expect(body.locator(".reveal-color")).toHaveCSS("opacity", "0");
+  await expect(body.locator(".reveal-source")).toBeVisible();
+});
+
+test("all menu text receives finite color effects that restart without masking navigation", async ({ page }) => {
+  for (const prefix of ["", "/en"]) {
+    await page.goto(`${prefix}/about`);
+    const open = page.getByRole("button", { name: prefix ? "Open menu" : "メニューを開く" });
+    await open.click();
+    const dialog = page.getByRole("dialog");
+    await expect(dialog.locator('.nav-en[data-text-motion="color"]')).toHaveCount(6);
+    await expect(dialog.locator('.nav-number .menu-ink[data-text-motion="color"]')).toHaveCount(6);
+    await expect(dialog.locator('.nav-ja .menu-ink[data-text-motion="color"]')).toHaveCount(prefix ? 0 : 6);
+    await expect(dialog.locator('.close-trigger .menu-ink[data-text-motion="color"]')).toHaveCount(1);
+    await expect(dialog.locator('.language-options .menu-ink[data-text-motion="color"]')).toHaveCount(2);
+    await expect(dialog.locator('.nav-aux .menu-ink[data-text-motion="color"]')).toHaveCount(1);
+    await expect(dialog.locator('.nav-bottom .menu-ink[data-text-motion="color"]')).toHaveCount(2);
+    await expect(dialog.locator(".menu-ink-wipe, .menu-ink-band, .motion-control")).toHaveCount(0);
+    await expect(dialog.locator(`.nav-aux a[href="${prefix}/privacy"]`)).toHaveAccessibleName(prefix ? "Privacy policy" : "プライバシーポリシー");
+    const menu = await dialog.locator(".menu-ink").evaluateAll((elements) =>
+      elements.map((el) => {
+        const source = el.querySelector(".menu-ink-base")!;
+        const overlay = el.querySelector(".menu-ink-color")!;
+        const style = getComputedStyle(source);
+        return {
+          visible: source.getClientRects().length > 0,
+          motion: el.getAttribute("data-text-motion"),
+          text: source.textContent,
+          overlayText: overlay.getAttribute("data-text"),
+          overlays: el.querySelectorAll(".menu-ink-color").length,
+          overlayHidden: overlay.getAttribute("aria-hidden"),
+          gradient: getComputedStyle(overlay, "::before").backgroundImage,
+          opacity: style.opacity,
+          visibility: style.visibility,
+          clipPath: style.clipPath,
+          mask: style.maskImage,
+          transform: style.transform,
+          rootAnimations: el.getAnimations().length,
+          sourceAnimations: source.getAnimations().length,
+          animations: overlay.getAnimations().map((animation) => {
+            const timing = animation.effect!.getComputedTiming();
+            return {
+              finite: Number.isFinite(Number(timing.endTime)),
+              iterations: timing.iterations,
+              duration: Number(timing.duration),
+            };
+          }),
+        };
+      }),
+    );
+    for (const entry of menu) {
+      expect(entry).toMatchObject({ motion: "color", overlays: 1, overlayHidden: "true", overlayText: entry.text, opacity: "1", visibility: "visible", clipPath: "none", mask: "none", transform: "none", rootAnimations: 0, sourceAnimations: 0 });
+      expect(entry.gradient).toContain("linear-gradient");
+      if (entry.visible) expect(entry.animations).toHaveLength(2);
+      for (const animation of entry.animations) {
+        expect(animation).toMatchObject({ finite: true, iterations: 1 });
+        expect(animation.duration).toBeGreaterThan(0);
+      }
+    }
+    const closeColor = dialog.locator(".close-trigger .menu-ink-color");
+    const previous = await closeColor.evaluateHandle((el) => el.getAnimations()[0]);
+    await page.keyboard.press("Escape");
+    await expect(dialog).not.toBeVisible();
+    await open.click();
+    const restart = await closeColor.evaluate((el, old) => {
+      const animations = el.getAnimations();
+      return {
+        count: animations.length,
+        renewed: animations.every((animation) => animation !== old),
+        running: animations.some((animation) => animation.playState === "running"),
+      };
+    }, previous);
+    expect(restart).toEqual({ count: 2, renewed: true, running: true });
+    await previous.dispose();
+    // Filled CSS effects remain after completion; completion is finite even
+    // though getAnimations() retains these finished objects.
+    await closeColor.evaluate(async (el) => {
+      await Promise.all(el.getAnimations().map((animation) => animation.finished));
+    });
+    await expect(closeColor).toHaveCSS("opacity", "0");
+    await expect(dialog.locator(".close-trigger .menu-ink-base")).toBeVisible();
+    await page.keyboard.press("Escape");
+    await expect(dialog).not.toBeVisible();
+  }
+});
+
+test("heading color outlasts its decorative band and then fades", async ({
   page,
 }) => {
   await page.goto("/");
@@ -187,23 +329,14 @@ test("heading color outlasts its decorative band and fades while menu labels sta
     "color",
     "rgb(20, 25, 31)",
   );
-  await page.getByRole("button", { name: "メニューを開く" }).click();
-  const menu = await page.getByRole("dialog").locator(".nav-en").evaluateAll((elements) =>
-    elements.map((el) => {
-      const style = getComputedStyle(el.querySelector(".nav-en-base")!);
-      return { motion: el.getAttribute("data-text-motion"), opacity: style.opacity, clipPath: style.clipPath, animations: el.getAnimations({ subtree: true }).length };
-    }),
-  );
-  expect(menu).toHaveLength(6);
-  expect(menu).toEqual(Array.from({ length: 6 }, () => ({ motion: "static", opacity: "1", clipPath: "none", animations: 0 })));
 });
 
 test("heading and band palettes stay fixed across random seeds while the hero stays still", async ({
   browser,
 }) => {
   const colors: string[] = [];
-  // Scene and image effects may still choose palettes randomly. Headings and
-  // their bands must keep their authored palettes at either end of that range.
+  // Image effects may choose palettes randomly. Text and section backgrounds
+  // retain their authored palettes at either end of that range.
   for (const seed of [0.01, 0.99]) {
     const context = await browser.newContext({
       viewport: { width: 1440, height: 900 },
@@ -226,11 +359,26 @@ test("heading and band palettes stay fixed across random seeds while the hero st
     await expect(heroLines.locator(".reveal-band")).toHaveCount(0);
     await expect(heroLines.nth(0)).toHaveAttribute("data-palette", "sky");
     await expect(heroLines.nth(1)).toHaveAttribute("data-palette", "iris");
+    const heroSources = await page.locator(".hero .reveal-source").evaluateAll((elements) =>
+      elements.map((el) => ({
+        gradient: getComputedStyle(el).backgroundImage,
+        clipPath: getComputedStyle(el).clipPath,
+        animations: el.getAnimations().length,
+      })),
+    );
+    expect(heroSources.length).toBeGreaterThan(2);
+    for (const source of heroSources) {
+      expect(source.gradient).toContain("linear-gradient");
+      expect(source.clipPath).toBe("none");
+      expect(source.animations).toBe(0);
+    }
     const philosophy = page.locator("#about .wonder-type > .reveal-text");
     await expect(philosophy).toHaveCount(1);
     await philosophy.scrollIntoViewIfNeeded();
     await expect(philosophy).toHaveAttribute("data-entered", "true");
     await expect(philosophy).toHaveAttribute("data-reveal-state", "running");
+    await expect(page.locator("#about")).toHaveAttribute("data-palette", "sky");
+    await expect(page.locator("#business")).toHaveAttribute("data-palette", "iris");
     colors.push((await philosophy.getAttribute("data-palette"))!);
     const bandPalettes = await philosophy.locator(".reveal-band").evaluateAll((elements) => elements.map((el) => el.getAttribute("data-palette")));
     expect(bandPalettes.length).toBeGreaterThan(0);
