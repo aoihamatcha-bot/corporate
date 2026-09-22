@@ -214,7 +214,7 @@ export const en: Dictionary = {
     consultationLabel: "Example inquiry",
   },
   diagram: {
-    title: "Businesses, MYSTENA and users",
+    title: "Businesses and users",
     caption:
       "The people involved in an online sales service and the role we envisage for MYSTENA.",
     relationshipLabel: "What this diagram shows",

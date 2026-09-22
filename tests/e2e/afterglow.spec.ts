@@ -22,6 +22,12 @@ test("body, labels and navigation use readable static text across both languages
     "/en/missing-page",
   ]) {
     await page.goto(route);
+    if (route === "/" || route === "/en") {
+      // Opening deliberately conceals page content while its modal is active.
+      // Check normal reading only after that retained lifecycle has completed.
+      await expect(page.locator("html")).toHaveAttribute("data-intro", "done");
+      await expect(page.locator(".site-opening")).not.toBeVisible();
+    }
     const uncovered = await page.evaluate(() => {
       const walker = document.createTreeWalker(
         document.body,

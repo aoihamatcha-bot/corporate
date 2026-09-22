@@ -203,7 +203,7 @@ export const ja = {
     consultationLabel: "相談内容の例",
   },
   diagram: {
-    title: "事業者・MYSTENA・利用者の関係",
+    title: "事業者と利用者の関係",
     caption: "オンライン販売サービスに関わる人と、MYSTENAが考えるサービスの役割です。",
     relationshipLabel: "この図が示すこと",
     relationshipDescription: "商品の紹介方法と、商品を探し、選ぶときの使いやすさを考えるための関係図です。",
