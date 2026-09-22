@@ -1,0 +1,64 @@
+
+Running 8 tests using 2 workers
+
+(node:7320) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:24808) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:7320) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:24808) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 2 [chromium-desktop] › tests\e2e\readability.spec.ts:7:7 › readable page structure fits 320px in both languages (2.8s)
+  ok 1 [chromium-desktop] › tests\e2e\corporate-assets.spec.ts:4:5 › adopted concepts and illustrations load in both languages without implying real screens or a playable video (4.1s)
+  ok 3 [chromium-desktop] › tests\e2e\readability.spec.ts:7:7 › readable page structure fits 390px in both languages (2.3s)
+  ok 4 [chromium-desktop] › tests\e2e\corporate-assets.spec.ts:96:5 › social cards use the correct language, full image URLs and a news-specific cover (1.3s)
+  ok 5 [chromium-desktop] › tests\e2e\readability.spec.ts:7:7 › readable page structure fits 768px in both languages (1.9s)
+  ok 6 [chromium-desktop] › tests\e2e\readability.spec.ts:7:7 › readable page structure fits 1440px in both languages (1.9s)
+  x  7 [chromium-desktop] › tests\e2e\readability.spec.ts:29:5 › 200 percent text enlargement keeps all pages readable and the menu usable (962ms)
+(node:38816) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:38816) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 8 [chromium-desktop] › tests\e2e\readability.spec.ts:57:5 › home summaries lead to additional detail and contact availability is clear before navigation (1.3s)
+
+
+  1) [chromium-desktop] › tests\e2e\readability.spec.ts:29:5 › 200 percent text enlargement keeps all pages readable and the menu usable 
+
+    Error: /
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      46 |         }
+      47 |       });
+    > 48 |       expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), url).toBe(true);
+         |                                                                                                  ^
+      49 |       await page.getByRole("button", { name: prefix ? "Open menu" : "メニューを開く" }).click();
+      50 |       await expect(page.getByRole("dialog")).toBeVisible();
+      51 |       await page.keyboard.press("Escape");
+        at C:\Users\taisa\Desktop\corporate-readability-20260922\tests\e2e\readability.spec.ts:48:98
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\readability-200-percent-te-95349-eadable-and-the-menu-usable-chromium-desktop\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\readability-200-percent-te-95349-eadable-and-the-menu-usable-chromium-desktop\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\readability-200-percent-te-95349-eadable-and-the-menu-usable-chromium-desktop\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\readability-200-percent-te-95349-eadable-and-the-menu-usable-chromium-desktop\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\readability-200-percent-te-95349-eadable-and-the-menu-usable-chromium-desktop\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [chromium-desktop] › tests\e2e\readability.spec.ts:29:5 › 200 percent text enlargement keeps all pages readable and the menu usable 
+  7 passed (12.8s)
