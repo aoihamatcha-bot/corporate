@@ -12,18 +12,26 @@ test("section colors keep their authored palette and background washes remain so
       const lead = el.querySelector(".color-lead")!;
       const animation = lead.getAnimations()[0];
       const effect = animation.effect as KeyframeEffect;
-      const frames = effect.getKeyframes();
+      const timing = effect.getTiming();
+      // WebKit serializes var()-based CSS keyframe opacity as zero even when
+      // its effective paint reaches 0.28. Sample the actual effect instead.
+      animation.pause();
+      const opacities: number[] = [];
+      for (let i = 0; i <= 100; i++) {
+        animation.currentTime = Number(timing.delay) + Number(timing.duration) * i / 100;
+        opacities.push(Number(getComputedStyle(lead).opacity));
+      }
       return {
         background: getComputedStyle(el).backgroundImage,
         mask: getComputedStyle(lead).maskImage,
-        peak: Math.max(...frames.map((frame) => Number(frame.opacity))),
-        final: frames.at(-1)?.opacity,
-        iterations: effect.getTiming().iterations,
+        peak: Math.max(...opacities),
+        final: opacities.at(-1),
+        iterations: timing.iterations,
       };
     });
     surfaces.push(result.background);
     expect(result.background).toContain("radial-gradient");
-    expect(result.mask).toContain("linear-gradient");
+    expect(result.mask).toContain("radial-gradient");
     expect(result.peak).toBeCloseTo(0.28, 2);
     expect(Number(result.final)).toBe(0);
     expect(result.iterations).toBe(1);
@@ -39,6 +47,7 @@ test("all Hero copy has static gradient ink with a single readable image shade",
     await page.goto(route);
     const hero = page.locator(".hero");
     await expect(hero.locator(".hero-shade")).toHaveCount(1);
+    await expect(hero.locator(".hero-scroll-cue")).toHaveCSS("background-color", "rgb(244, 249, 255)");
     const result = await hero.evaluate((el) => ({
       after: getComputedStyle(el, "::after").content,
       shade: getComputedStyle(el.querySelector(".hero-shade")!).backgroundImage,

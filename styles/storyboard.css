@@ -132,6 +132,9 @@ html:is([data-intro="pending"], [data-intro="running"], [data-intro="docking"])
 }
 .hero-scroll-cue {
   gap: 12px;
+  padding-inline: 16px;
+  border-radius: 999px;
+  background: var(--sky-paper);
 }
 .hero-scroll-cue svg {
   width: 80px;

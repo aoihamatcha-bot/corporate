@@ -65,7 +65,7 @@ test("all authored text has a decorative color layer with readable sources in bo
             const style = getComputedStyle(source);
             const rootStyle = getComputedStyle(el);
             return {
-              text: source.textContent?.trim(),
+              text: source.textContent,
               kind: el.getAttribute("data-motion-kind"),
               motion: el.getAttribute("data-text-motion"),
               opacity: style.opacity,
@@ -91,7 +91,7 @@ test("all authored text has a decorative color layer with readable sources in bo
                   iterations: timing.iterations,
                   duration: Number(timing.duration),
                   colorOnly: frames.every((frame) =>
-                    !["clipPath", "maskImage", "transform", "translate"].some(
+                    !["clipPath", "maskImage", "transform", "translate", "backgroundPosition"].some(
                       (property) => property in frame,
                     ),
                   ),
@@ -221,6 +221,7 @@ test("all menu text receives finite color effects that restart without masking n
               finite: Number.isFinite(Number(timing.endTime)),
               iterations: timing.iterations,
               duration: Number(timing.duration),
+              backgroundMotion: (animation.effect as KeyframeEffect).getKeyframes().some((frame) => "backgroundPosition" in frame),
             };
           }),
         };
@@ -231,7 +232,7 @@ test("all menu text receives finite color effects that restart without masking n
       expect(entry.gradient).toContain("linear-gradient");
       if (entry.visible) expect(entry.animations).toHaveLength(2);
       for (const animation of entry.animations) {
-        expect(animation).toMatchObject({ finite: true, iterations: 1 });
+        expect(animation).toMatchObject({ finite: true, iterations: 1, backgroundMotion: false });
         expect(animation.duration).toBeGreaterThan(0);
       }
     }

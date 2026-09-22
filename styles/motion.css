@@ -44,6 +44,11 @@
   color: transparent;
   -webkit-text-fill-color: transparent;
 }
+.reveal-text[data-text-motion="color"] > .reveal-color,
+.menu-ink-color {
+  /* Fit the complete palette into the text; only opacity animates. */
+  background-size: 100% 100%;
+}
 .count-up-color {
   position: absolute;
   inset: 0;
@@ -224,21 +229,17 @@
 @keyframes ink-color-appear {
   from {
     opacity: 0;
-    background-position: 0% 50%;
   }
   to {
     opacity: 1;
-    background-position: 65% 50%;
   }
 }
 @keyframes ink-color-fade {
   from {
     opacity: 1;
-    background-position: 65% 50%;
   }
   to {
     opacity: 0;
-    background-position: 100% 50%;
   }
 }
 @keyframes curtain-pass {

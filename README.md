@@ -46,7 +46,7 @@ E2Eは3017番のproduction serverを自動起動します。同じポートに�
 - 以前の日英原稿採用記録: [日英コンテンツの引き継ぎ](docs/content-review-ja-en-v1.md)
 - 選定した事業画像4枚とホバー動作: [画像制作・検証 v2](docs/business-thumbnails-v2.md)
 - 手書きオープニング・日英素材・CTA: [モーション／コンテンツ v3](docs/motion-storyboard-v3.md)
-- 現在のHERO・スクロール演出と159件の回帰検証: [HERO v4](docs/hero-v4.md)
+- HERO静止化の採用記録（当時159件の回帰検証）: [HERO v4](docs/hero-v4.md)
 - 日英辞書: [content/dictionaries/](content/dictionaries/)
 - 共通ページ: [components/pages/](components/pages/)
 - 会社の確定情報: [content/company.ts](content/company.ts)

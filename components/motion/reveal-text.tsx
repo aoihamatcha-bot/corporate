@@ -60,21 +60,21 @@ function ColorText({
           const holdMs = token("hold") + beat * 20 + textColorHoldExtensionMs;
           const fadeMs = token("fade") + beat * 43;
           const colorMs = textColorRiseMs + holdMs + fadeMs;
+          // Opacity alone preserves the gradient without repainting a moving
+          // background in the sticky header (costly on mobile WebKit).
           glow = color.current!.animate(
             [
-              { opacity: 0, backgroundPosition: "0% 50%", easing: "ease-out" },
+              { opacity: 0, easing: "ease-out" },
               {
                 opacity: 1,
-                backgroundPosition: "10% 50%",
                 offset: textColorRiseMs / colorMs,
               },
               {
                 opacity: 1,
-                backgroundPosition: "65% 50%",
                 offset: (textColorRiseMs + holdMs) / colorMs,
                 easing: "ease-in-out",
               },
-              { opacity: 0, backgroundPosition: "100% 50%" },
+              { opacity: 0 },
             ],
             { duration: colorMs, delay, easing: "linear" },
           );
