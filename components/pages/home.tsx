@@ -62,7 +62,7 @@ export function HomePage({ locale }: { locale: Locale }) {
           <ol className="container" aria-label={c.home.businessStructure}>
             {c.home.capabilities.map((capability) => (
               <li key={capability}>
-                <span>{capability}</span>
+                <RevealText kind="label">{capability}</RevealText>
                 <Arrow />
               </li>
             ))}
@@ -86,11 +86,6 @@ export function HomePage({ locale }: { locale: Locale }) {
                   {c.home.businessTitle}
                 </RevealText>
               </h2>
-              <p className="section-description">
-                <RevealText kind="subtitle">
-                  {c.home.businessStructure}
-                </RevealText>
-              </p>
               <p className="section-description">
                 <RevealText kind="body">
                   {c.home.businessDescription}
@@ -137,7 +132,7 @@ export function HomePage({ locale }: { locale: Locale }) {
           <CompanyMetrics locale={locale} />
         </div>
       </Scene>
-      <Collaboration locale={locale} />
+      <Collaboration locale={locale} number="04" />
       <section className="home-news" data-story="news">
         <StoryAccent beat="news" />
         <div className="container editorial-grid">

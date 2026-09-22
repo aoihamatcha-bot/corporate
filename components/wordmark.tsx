@@ -1,10 +1,7 @@
 import Image from "next/image";
-import { RevealText } from "./motion/reveal-text";
-import { MenuInk } from "./motion/menu-ink";
 
 export function Wordmark({
   dark = false,
-  menu = false,
 }: {
   dark?: boolean;
   menu?: boolean;
@@ -18,13 +15,6 @@ export function Wordmark({
         alt="MYSTENA"
         unoptimized
       />
-      <span className="brand-wordmark-motion" aria-hidden="true">
-        {menu ? (
-          <MenuInk kind="utility">MYSTENA</MenuInk>
-        ) : (
-          <RevealText kind="utility">MYSTENA</RevealText>
-        )}
-      </span>
     </span>
   );
 }

@@ -3,7 +3,7 @@ import { Scene } from "@/components/motion/scene";
 import { RevealText } from "@/components/motion/reveal-text";
 import { ImageEntrance } from "@/components/motion/image-entrance";
 import { GradientImage } from "@/components/motion/gradient-image";
-import { ConceptDiagram, Collaboration } from "@/components/content-blocks";
+import { ConceptDiagram, Collaboration, ServiceConcepts, ServicePoster } from "@/components/content-blocks";
 import { getDictionary } from "@/content/dictionaries";
 import type { Locale } from "@/content/i18n";
 import { business } from "@/content/business";
@@ -23,7 +23,7 @@ export function BusinessPage({ locale }: { locale: Locale }) {
             direction={i % 2 ? "right" : "left"}
           >
             <div className="container editorial-grid">
-              <SectionLabel number={item.index}>{copy.role}</SectionLabel>
+              <SectionLabel>{copy.role}</SectionLabel>
               <div>
                 <ImageEntrance className="business-detail-frame">
                   <GradientImage
@@ -59,7 +59,7 @@ export function BusinessPage({ locale }: { locale: Locale }) {
           </Scene>
         );
       })}
-      <section className="page-section">
+      <section className="page-section" id="approach">
         <div className="container">
           <h2 className="section-heading">
             <RevealText>{c.business.factsTitle}</RevealText>
@@ -79,7 +79,9 @@ export function BusinessPage({ locale }: { locale: Locale }) {
               </div>
             ))}
           </dl>
-          <ConceptDiagram locale={locale} />
+          <ConceptDiagram locale={locale} illustration />
+          <ServiceConcepts locale={locale} />
+          <ServicePoster locale={locale} />
         </div>
       </section>
       <Collaboration locale={locale} />

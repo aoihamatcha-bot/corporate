@@ -1,0 +1,250 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\taisa\\Desktop\\corporate-readability-20260922\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/e2e/hero-v4.spec.ts",
+      "--project=webkit-mobile",
+      "--grep",
+      "lands once"
+    ],
+    "configFile": "C:\\Users\\taisa\\Desktop\\corporate-readability-20260922\\playwright.config.ts",
+    "rootDir": "C:/Users/taisa/Desktop/corporate-readability-20260922/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/taisa/Desktop/corporate-readability-20260922/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium-desktop",
+        "name": "chromium-desktop",
+        "testDir": "C:/Users/taisa/Desktop/corporate-readability-20260922/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 45000
+      },
+      {
+        "outputDir": "C:/Users/taisa/Desktop/corporate-readability-20260922/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium-mobile",
+        "name": "chromium-mobile",
+        "testDir": "C:/Users/taisa/Desktop/corporate-readability-20260922/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 45000
+      },
+      {
+        "outputDir": "C:/Users/taisa/Desktop/corporate-readability-20260922/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit-mobile",
+        "name": "webkit-mobile",
+        "testDir": "C:/Users/taisa/Desktop/corporate-readability-20260922/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 45000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 2,
+    "webServer": {
+      "command": "npm run start",
+      "url": "http://127.0.0.1:3017",
+      "reuseExistingServer": true,
+      "timeout": 60000
+    }
+  },
+  "suites": [
+    {
+      "title": "hero-v4.spec.ts",
+      "file": "hero-v4.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "/ lands once, stays still and saves business effects for scrolling",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-mobile",
+              "projectName": "webkit-mobile",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 14709,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-22T09:38:34.164Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "landing-samples",
+                      "contentType": "application/json",
+                      "body": "eyJjdWVTdGFydGVkIjp0cnVlLCJjdWVBZnRlck9wZW5pbmciOmZhbHNlLCJmcmFtZXMiOlt7ImZvbnQiOiI3MDAgMzJweCAvIDUyLjc5OTk5OXB4IExJTkUgU2VlZCBKUCwgTm90byBTYW5zIEpQLCBZdSBHb3RoaWMsIEhpcmFnaW5vIEtha3UgR290aGljIFByb04sIE1laXJ5bywgc2Fucy1zZXJpZiIsInJlY3QiOiJbMjQsMTU0LjA5Mzc1LDM0MiwxMDUuNTkzNzVdIiwiY29sb3IiOiJyZ2JhKDAsIDAsIDAsIDApIiwiYW5pbWF0aW9ucyI6MCwiYnVzaW5lc3NUb3AiOjg0NH0seyJmb250IjoiNzAwIDMycHggLyA1Mi43OTk5OTlweCBMSU5FIFNlZWQgSlAsIE5vdG8gU2FucyBKUCwgWXUgR290aGljLCBIaXJhZ2lubyBLYWt1IEdvdGhpYyBQcm9OLCBNZWlyeW8sIHNhbnMtc2VyaWYiLCJyZWN0IjoiWzI0LDE1NC4wOTM3NSwzNDIsMTA1LjU5Mzc1XSIsImNvbG9yIjoicmdiYSgwLCAwLCAwLCAwKSIsImFuaW1hdGlvbnMiOjAsImJ1c2luZXNzVG9wIjo4NDR9LHsiZm9udCI6IjcwMCAzMnB4IC8gNTIuNzk5OTk5cHggTElORSBTZWVkIEpQLCBOb3RvIFNhbnMgSlAsIFl1IEdvdGhpYywgSGlyYWdpbm8gS2FrdSBHb3RoaWMgUHJvTiwgTWVpcnlvLCBzYW5zLXNlcmlmIiwicmVjdCI6IlsyNCwxNTQuMDkzNzUsMzQyLDEwNS41OTM3NV0iLCJjb2xvciI6InJnYmEoMCwgMCwgMCwgMCkiLCJhbmltYXRpb25zIjowLCJidXNpbmVzc1RvcCI6ODQ0fSx7ImZvbnQiOiI3MDAgMzJweCAvIDUyLjc5OTk5OXB4IExJTkUgU2VlZCBKUCwgTm90byBTYW5zIEpQLCBZdSBHb3RoaWMsIEhpcmFnaW5vIEtha3UgR290aGljIFByb04sIE1laXJ5bywgc2Fucy1zZXJpZiIsInJlY3QiOiJbMjQsMTU0LjA5Mzc1LDM0MiwxMDUuNTkzNzVdIiwiY29sb3IiOiJyZ2JhKDAsIDAsIDAsIDApIiwiYW5pbWF0aW9ucyI6MCwiYnVzaW5lc3NUb3AiOjg0NH0seyJmb250IjoiNzAwIDMycHggLyA1Mi43OTk5OTlweCBMSU5FIFNlZWQgSlAsIE5vdG8gU2FucyBKUCwgWXUgR290aGljLCBIaXJhZ2lubyBLYWt1IEdvdGhpYyBQcm9OLCBNZWlyeW8sIHNhbnMtc2VyaWYiLCJyZWN0IjoiWzI0LDE1NC4wOTM3NSwzNDIsMTA1LjU5Mzc1XSIsImNvbG9yIjoicmdiYSgwLCAwLCAwLCAwKSIsImFuaW1hdGlvbnMiOjAsImJ1c2luZXNzVG9wIjo4NDR9LHsiZm9udCI6IjcwMCAzMnB4IC8gNTIuNzk5OTk5cHggTElORSBTZWVkIEpQLCBOb3RvIFNhbnMgSlAsIFl1IEdvdGhpYywgSGlyYWdpbm8gS2FrdSBHb3RoaWMgUHJvTiwgTWVpcnlvLCBzYW5zLXNlcmlmIiwicmVjdCI6IlsyNCwxNTQuMDkzNzUsMzQyLDEwNS41OTM3NV0iLCJjb2xvciI6InJnYmEoMCwgMCwgMCwgMCkiLCJhbmltYXRpb25zIjowLCJidXNpbmVzc1RvcCI6ODQ0fSx7ImZvbnQiOiI3MDAgMzJweCAvIDUyLjc5OTk5OXB4IExJTkUgU2VlZCBKUCwgTm90byBTYW5zIEpQLCBZdSBHb3RoaWMsIEhpcmFnaW5vIEtha3UgR290aGljIFByb04sIE1laXJ5bywgc2Fucy1zZXJpZiIsInJlY3QiOiJbMjQsMTU0LjA5Mzc1LDM0MiwxMDUuNTkzNzVdIiwiY29sb3IiOiJyZ2JhKDAsIDAsIDAsIDApIiwiYW5pbWF0aW9ucyI6MCwiYnVzaW5lc3NUb3AiOjg0NH0seyJmb250IjoiNzAwIDMycHggLyA1Mi43OTk5OTlweCBMSU5FIFNlZWQgSlAsIE5vdG8gU2FucyBKUCwgWXUgR290aGljLCBIaXJhZ2lubyBLYWt1IEdvdGhpYyBQcm9OLCBNZWlyeW8sIHNhbnMtc2VyaWYiLCJyZWN0IjoiWzI0LDE1NC4wOTM3NSwzNDIsMTA1LjU5Mzc1XSIsImNvbG9yIjoicmdiYSgwLCAwLCAwLCAwKSIsImFuaW1hdGlvbnMiOjAsImJ1c2luZXNzVG9wIjo4NDR9LHsiZm9udCI6IjcwMCAzMnB4IC8gNTIuNzk5OTk5cHggTElORSBTZWVkIEpQLCBOb3RvIFNhbnMgSlAsIFl1IEdvdGhpYywgSGlyYWdpbm8gS2FrdSBHb3RoaWMgUHJvTiwgTWVpcnlvLCBzYW5zLXNlcmlmIiwicmVjdCI6IlsyNCwxNTQuMDkzNzUsMzQyLDEwNS41OTM3NV0iLCJjb2xvciI6InJnYmEoMCwgMCwgMCwgMCkiLCJhbmltYXRpb25zIjowLCJidXNpbmVzc1RvcCI6ODQ0fSx7ImZvbnQiOiI3MDAgMzJweCAvIDUyLjc5OTk5OXB4IExJTkUgU2VlZCBKUCwgTm90byBTYW5zIEpQLCBZdSBHb3RoaWMsIEhpcmFnaW5vIEtha3UgR290aGljIFByb04sIE1laXJ5bywgc2Fucy1zZXJpZiIsInJlY3QiOiJbMjQsMTU0LjA5Mzc1LDM0MiwxMDUuNTkzNzVdIiwiY29sb3IiOiJyZ2JhKDAsIDAsIDAsIDApIiwiYW5pbWF0aW9ucyI6MCwiYnVzaW5lc3NUb3AiOjg0NH0seyJmb250IjoiNzAwIDMycHggLyA1Mi43OTk5OTlweCBMSU5FIFNlZWQgSlAsIE5vdG8gU2FucyBKUCwgWXUgR290aGljLCBIaXJhZ2lubyBLYWt1IEdvdGhpYyBQcm9OLCBNZWlyeW8sIHNhbnMtc2VyaWYiLCJyZWN0IjoiWzI0LDE1NC4wOTM3NSwzNDIsMTA1LjU5Mzc1XSIsImNvbG9yIjoicmdiYSgwLCAwLCAwLCAwKSIsImFuaW1hdGlvbnMiOjAsImJ1c2luZXNzVG9wIjo4NDR9LHsiZm9udCI6IjcwMCAzMnB4IC8gNTIuNzk5OTk5cHggTElORSBTZWVkIEpQLCBOb3RvIFNhbnMgSlAsIFl1IEdvdGhpYywgSGlyYWdpbm8gS2FrdSBHb3RoaWMgUHJvTiwgTWVpcnlvLCBzYW5zLXNlcmlmIiwicmVjdCI6IlsyNCwxNTQuMDkzNzUsMzQyLDEwNS41OTM3NV0iLCJjb2xvciI6InJnYmEoMCwgMCwgMCwgMCkiLCJhbmltYXRpb25zIjowLCJidXNpbmVzc1RvcCI6ODQ0fSx7ImZvbnQiOiI3MDAgMzJweCAvIDUyLjc5OTk5OXB4IExJTkUgU2VlZCBKUCwgTm90byBTYW5zIEpQLCBZdSBHb3RoaWMsIEhpcmFnaW5vIEtha3UgR290aGljIFByb04sIE1laXJ5bywgc2Fucy1zZXJpZiIsInJlY3QiOiJbMjQsMTU0LjA5Mzc1LDM0MiwxMDUuNTkzNzVdIiwiY29sb3IiOiJyZ2JhKDAsIDAsIDAsIDApIiwiYW5pbWF0aW9ucyI6MCwiYnVzaW5lc3NUb3AiOjg0NH0seyJmb250IjoiNzAwIDMycHggLyA1Mi43OTk5OTlweCBMSU5FIFNlZWQgSlAsIE5vdG8gU2FucyBKUCwgWXUgR290aGljLCBIaXJhZ2lubyBLYWt1IEdvdGhpYyBQcm9OLCBNZWlyeW8sIHNhbnMtc2VyaWYiLCJyZWN0IjoiWzI0LDE1NC4wOTM3NSwzNDIsMTA1LjU5Mzc1XSIsImNvbG9yIjoicmdiYSgwLCAwLCAwLCAwKSIsImFuaW1hdGlvbnMiOjAsImJ1c2luZXNzVG9wIjo4NDR9LHsiZm9udCI6IjcwMCAzMnB4IC8gNTIuNzk5OTk5cHggTElORSBTZWVkIEpQLCBOb3RvIFNhbnMgSlAsIFl1IEdvdGhpYywgSGlyYWdpbm8gS2FrdSBHb3RoaWMgUHJvTiwgTWVpcnlvLCBzYW5zLXNlcmlmIiwicmVjdCI6IlsyNCwxNTQuMDkzNzUsMzQyLDEwNS41OTM3NV0iLCJjb2xvciI6InJnYmEoMCwgMCwgMCwgMCkiLCJhbmltYXRpb25zIjowLCJidXNpbmVzc1RvcCI6ODQ0fSx7ImZvbnQiOiI3MDAgMzJweCAvIDUyLjc5OTk5OXB4IExJTkUgU2VlZCBKUCwgTm90byBTYW5zIEpQLCBZdSBHb3RoaWMsIEhpcmFnaW5vIEtha3UgR290aGljIFByb04sIE1laXJ5bywgc2Fucy1zZXJpZiIsInJlY3QiOiJbMjQsMTU0LjA5Mzc1LDM0MiwxMDUuNTkzNzVdIiwiY29sb3IiOiJyZ2JhKDAsIDAsIDAsIDApIiwiYW5pbWF0aW9ucyI6MCwiYnVzaW5lc3NUb3AiOjg0NH0seyJmb250IjoiNzAwIDMycHggLyA1Mi43OTk5OTlweCBMSU5FIFNlZWQgSlAsIE5vdG8gU2FucyBKUCwgWXUgR290aGljLCBIaXJhZ2lubyBLYWt1IEdvdGhpYyBQcm9OLCBNZWlyeW8sIHNhbnMtc2VyaWYiLCJyZWN0IjoiWzI0LDE1NC4wOTM3NSwzNDIsMTA1LjU5Mzc1XSIsImNvbG9yIjoicmdiYSgwLCAwLCAwLCAwKSIsImFuaW1hdGlvbnMiOjAsImJ1c2luZXNzVG9wIjo4NDR9LHsiZm9udCI6IjcwMCAzMnB4IC8gNTIuNzk5OTk5cHggTElORSBTZWVkIEpQLCBOb3RvIFNhbnMgSlAsIFl1IEdvdGhpYywgSGlyYWdpbm8gS2FrdSBHb3RoaWMgUHJvTiwgTWVpcnlvLCBzYW5zLXNlcmlmIiwicmVjdCI6IlsyNCwxNTQuMDkzNzUsMzQyLDEwNS41OTM3NV0iLCJjb2xvciI6InJnYmEoMCwgMCwgMCwgMCkiLCJhbmltYXRpb25zIjowLCJidXNpbmVzc1RvcCI6ODQ0fSx7ImZvbnQiOiI3MDAgMzJweCAvIDUyLjc5OTk5OXB4IExJTkUgU2VlZCBKUCwgTm90byBTYW5zIEpQLCBZdSBHb3RoaWMsIEhpcmFnaW5vIEtha3UgR290aGljIFByb04sIE1laXJ5bywgc2Fucy1zZXJpZiIsInJlY3QiOiJbMjQsMTU0LjA5Mzc1LDM0MiwxMDUuNTkzNzVdIiwiY29sb3IiOiJyZ2JhKDAsIDAsIDAsIDApIiwiYW5pbWF0aW9ucyI6MCwiYnVzaW5lc3NUb3AiOjg0NH0seyJmb250IjoiNzAwIDMycHggLyA1Mi43OTk5OTlweCBMSU5FIFNlZWQgSlAsIE5vdG8gU2FucyBKUCwgWXUgR290aGljLCBIaXJhZ2lubyBLYWt1IEdvdGhpYyBQcm9OLCBNZWlyeW8sIHNhbnMtc2VyaWYiLCJyZWN0IjoiWzI0LDE1NC4wOTM3NSwzNDIsMTA1LjU5Mzc1XSIsImNvbG9yIjoicmdiYSgwLCAwLCAwLCAwKSIsImFuaW1hdGlvbnMiOjAsImJ1c2luZXNzVG9wIjo4NDR9LHsiZm9udCI6IjcwMCAzMnB4IC8gNTIuNzk5OTk5cHggTElORSBTZWVkIEpQLCBOb3RvIFNhbnMgSlAsIFl1IEdvdGhpYywgSGlyYWdpbm8gS2FrdSBHb3RoaWMgUHJvTiwgTWVpcnlvLCBzYW5zLXNlcmlmIiwicmVjdCI6IlsyNCwxNTQuMDkzNzUsMzQyLDEwNS41OTM3NV0iLCJjb2xvciI6InJnYmEoMCwgMCwgMCwgMCkiLCJhbmltYXRpb25zIjowLCJidXNpbmVzc1RvcCI6ODQ0fV0sImhlaWdodCI6ODQ0LCJzY3JvbGwiOjAsImZvbnRzIjoibG9hZGVkIn0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b2f955157c35a95682e3-b2b6ee1610bfc6d47ecb",
+          "file": "hero-v4.spec.ts",
+          "line": 4,
+          "column": 7
+        },
+        {
+          "title": "/en lands once, stays still and saves business effects for scrolling",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-mobile",
+              "projectName": "webkit-mobile",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 10599,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m20\u001b[39m\nReceived:   \u001b[31m19\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m20\u001b[39m\nReceived:   \u001b[31m19\u001b[39m\n    at C:\\Users\\taisa\\Desktop\\corporate-readability-20260922\\tests\\e2e\\hero-v4.spec.ts:82:36",
+                    "location": {
+                      "file": "C:\\Users\\taisa\\Desktop\\corporate-readability-20260922\\tests\\e2e\\hero-v4.spec.ts",
+                      "column": 36,
+                      "line": 82
+                    },
+                    "snippet": "  80 |     expect(evidence.fonts).toBe(\"loaded\");\n  81 |     expect(evidence.scroll).toBe(0);\n> 82 |     expect(evidence.frames.length).toBeGreaterThan(20);\n     |                                    ^\n  83 |     expect(new Set(evidence.frames.map((frame) => frame.font)).size).toBe(1);\n  84 |     expect(new Set(evidence.frames.map((frame) => frame.rect)).size).toBe(1);\n  85 |     expect(new Set(evidence.frames.map((frame) => frame.color)).size).toBe(1);"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\taisa\\Desktop\\corporate-readability-20260922\\tests\\e2e\\hero-v4.spec.ts",
+                        "column": 36,
+                        "line": 82
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m20\u001b[39m\nReceived:   \u001b[31m19\u001b[39m\n\n  80 |     expect(evidence.fonts).toBe(\"loaded\");\n  81 |     expect(evidence.scroll).toBe(0);\n> 82 |     expect(evidence.frames.length).toBeGreaterThan(20);\n     |                                    ^\n  83 |     expect(new Set(evidence.frames.map((frame) => frame.font)).size).toBe(1);\n  84 |     expect(new Set(evidence.frames.map((frame) => frame.rect)).size).toBe(1);\n  85 |     expect(new Set(evidence.frames.map((frame) => frame.color)).size).toBe(1);\n    at C:\\Users\\taisa\\Desktop\\corporate-readability-20260922\\tests\\e2e\\hero-v4.spec.ts:82:36"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-22T09:38:48.953Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "landing-samples",
+                      "contentType": "application/json",
+                      "body": "eyJjdWVTdGFydGVkIjp0cnVlLCJjdWVBZnRlck9wZW5pbmciOmZhbHNlLCJmcmFtZXMiOlt7ImZvbnQiOiI3MDAgMzMuNTQwMDAxcHggLyAzOS41NzcxOThweCBMSU5FIFNlZWQgSlAsIE5vdG8gU2FucyBKUCwgWXUgR290aGljLCBIaXJhZ2lubyBLYWt1IEdvdGhpYyBQcm9OLCBNZWlyeW8sIHNhbnMtc2VyaWYiLCJyZWN0IjoiWzI0LDE1NC4wOTM3NSwzNDIsOTQuMTI1XSIsImNvbG9yIjoicmdiYSgwLCAwLCAwLCAwKSIsImFuaW1hdGlvbnMiOjAsImJ1c2luZXNzVG9wIjo4NjYuOTY4NzV9LHsiZm9udCI6IjcwMCAzMy41NDAwMDFweCAvIDM5LjU3NzE5OHB4IExJTkUgU2VlZCBKUCwgTm90byBTYW5zIEpQLCBZdSBHb3RoaWMsIEhpcmFnaW5vIEtha3UgR290aGljIFByb04sIE1laXJ5bywgc2Fucy1zZXJpZiIsInJlY3QiOiJbMjQsMTU0LjA5Mzc1LDM0Miw5NC4xMjVdIiwiY29sb3IiOiJyZ2JhKDAsIDAsIDAsIDApIiwiYW5pbWF0aW9ucyI6MCwiYnVzaW5lc3NUb3AiOjg2Ni45Njg3NX0seyJmb250IjoiNzAwIDMzLjU0MDAwMXB4IC8gMzkuNTc3MTk4cHggTElORSBTZWVkIEpQLCBOb3RvIFNhbnMgSlAsIFl1IEdvdGhpYywgSGlyYWdpbm8gS2FrdSBHb3RoaWMgUHJvTiwgTWVpcnlvLCBzYW5zLXNlcmlmIiwicmVjdCI6IlsyNCwxNTQuMDkzNzUsMzQyLDk0LjEyNV0iLCJjb2xvciI6InJnYmEoMCwgMCwgMCwgMCkiLCJhbmltYXRpb25zIjowLCJidXNpbmVzc1RvcCI6ODY2Ljk2ODc1fSx7ImZvbnQiOiI3MDAgMzMuNTQwMDAxcHggLyAzOS41NzcxOThweCBMSU5FIFNlZWQgSlAsIE5vdG8gU2FucyBKUCwgWXUgR290aGljLCBIaXJhZ2lubyBLYWt1IEdvdGhpYyBQcm9OLCBNZWlyeW8sIHNhbnMtc2VyaWYiLCJyZWN0IjoiWzI0LDE1NC4wOTM3NSwzNDIsOTQuMTI1XSIsImNvbG9yIjoicmdiYSgwLCAwLCAwLCAwKSIsImFuaW1hdGlvbnMiOjAsImJ1c2luZXNzVG9wIjo4NjYuOTY4NzV9LHsiZm9udCI6IjcwMCAzMy41NDAwMDFweCAvIDM5LjU3NzE5OHB4IExJTkUgU2VlZCBKUCwgTm90byBTYW5zIEpQLCBZdSBHb3RoaWMsIEhpcmFnaW5vIEtha3UgR290aGljIFByb04sIE1laXJ5bywgc2Fucy1zZXJpZiIsInJlY3QiOiJbMjQsMTU0LjA5Mzc1LDM0Miw5NC4xMjVdIiwiY29sb3IiOiJyZ2JhKDAsIDAsIDAsIDApIiwiYW5pbWF0aW9ucyI6MCwiYnVzaW5lc3NUb3AiOjg2Ni45Njg3NX0seyJmb250IjoiNzAwIDMzLjU0MDAwMXB4IC8gMzkuNTc3MTk4cHggTElORSBTZWVkIEpQLCBOb3RvIFNhbnMgSlAsIFl1IEdvdGhpYywgSGlyYWdpbm8gS2FrdSBHb3RoaWMgUHJvTiwgTWVpcnlvLCBzYW5zLXNlcmlmIiwicmVjdCI6IlsyNCwxNTQuMDkzNzUsMzQyLDk0LjEyNV0iLCJjb2xvciI6InJnYmEoMCwgMCwgMCwgMCkiLCJhbmltYXRpb25zIjowLCJidXNpbmVzc1RvcCI6ODY2Ljk2ODc1fSx7ImZvbnQiOiI3MDAgMzMuNTQwMDAxcHggLyAzOS41NzcxOThweCBMSU5FIFNlZWQgSlAsIE5vdG8gU2FucyBKUCwgWXUgR290aGljLCBIaXJhZ2lubyBLYWt1IEdvdGhpYyBQcm9OLCBNZWlyeW8sIHNhbnMtc2VyaWYiLCJyZWN0IjoiWzI0LDE1NC4wOTM3NSwzNDIsOTQuMTI1XSIsImNvbG9yIjoicmdiYSgwLCAwLCAwLCAwKSIsImFuaW1hdGlvbnMiOjAsImJ1c2luZXNzVG9wIjo4NjYuOTY4NzV9LHsiZm9udCI6IjcwMCAzMy41NDAwMDFweCAvIDM5LjU3NzE5OHB4IExJTkUgU2VlZCBKUCwgTm90byBTYW5zIEpQLCBZdSBHb3RoaWMsIEhpcmFnaW5vIEtha3UgR290aGljIFByb04sIE1laXJ5bywgc2Fucy1zZXJpZiIsInJlY3QiOiJbMjQsMTU0LjA5Mzc1LDM0Miw5NC4xMjVdIiwiY29sb3IiOiJyZ2JhKDAsIDAsIDAsIDApIiwiYW5pbWF0aW9ucyI6MCwiYnVzaW5lc3NUb3AiOjg2Ni45Njg3NX0seyJmb250IjoiNzAwIDMzLjU0MDAwMXB4IC8gMzkuNTc3MTk4cHggTElORSBTZWVkIEpQLCBOb3RvIFNhbnMgSlAsIFl1IEdvdGhpYywgSGlyYWdpbm8gS2FrdSBHb3RoaWMgUHJvTiwgTWVpcnlvLCBzYW5zLXNlcmlmIiwicmVjdCI6IlsyNCwxNTQuMDkzNzUsMzQyLDk0LjEyNV0iLCJjb2xvciI6InJnYmEoMCwgMCwgMCwgMCkiLCJhbmltYXRpb25zIjowLCJidXNpbmVzc1RvcCI6ODY2Ljk2ODc1fSx7ImZvbnQiOiI3MDAgMzMuNTQwMDAxcHggLyAzOS41NzcxOThweCBMSU5FIFNlZWQgSlAsIE5vdG8gU2FucyBKUCwgWXUgR290aGljLCBIaXJhZ2lubyBLYWt1IEdvdGhpYyBQcm9OLCBNZWlyeW8sIHNhbnMtc2VyaWYiLCJyZWN0IjoiWzI0LDE1NC4wOTM3NSwzNDIsOTQuMTI1XSIsImNvbG9yIjoicmdiYSgwLCAwLCAwLCAwKSIsImFuaW1hdGlvbnMiOjAsImJ1c2luZXNzVG9wIjo4NjYuOTY4NzV9LHsiZm9udCI6IjcwMCAzMy41NDAwMDFweCAvIDM5LjU3NzE5OHB4IExJTkUgU2VlZCBKUCwgTm90byBTYW5zIEpQLCBZdSBHb3RoaWMsIEhpcmFnaW5vIEtha3UgR290aGljIFByb04sIE1laXJ5bywgc2Fucy1zZXJpZiIsInJlY3QiOiJbMjQsMTU0LjA5Mzc1LDM0Miw5NC4xMjVdIiwiY29sb3IiOiJyZ2JhKDAsIDAsIDAsIDApIiwiYW5pbWF0aW9ucyI6MCwiYnVzaW5lc3NUb3AiOjg2Ni45Njg3NX0seyJmb250IjoiNzAwIDMzLjU0MDAwMXB4IC8gMzkuNTc3MTk4cHggTElORSBTZWVkIEpQLCBOb3RvIFNhbnMgSlAsIFl1IEdvdGhpYywgSGlyYWdpbm8gS2FrdSBHb3RoaWMgUHJvTiwgTWVpcnlvLCBzYW5zLXNlcmlmIiwicmVjdCI6IlsyNCwxNTQuMDkzNzUsMzQyLDk0LjEyNV0iLCJjb2xvciI6InJnYmEoMCwgMCwgMCwgMCkiLCJhbmltYXRpb25zIjowLCJidXNpbmVzc1RvcCI6ODY2Ljk2ODc1fSx7ImZvbnQiOiI3MDAgMzMuNTQwMDAxcHggLyAzOS41NzcxOThweCBMSU5FIFNlZWQgSlAsIE5vdG8gU2FucyBKUCwgWXUgR290aGljLCBIaXJhZ2lubyBLYWt1IEdvdGhpYyBQcm9OLCBNZWlyeW8sIHNhbnMtc2VyaWYiLCJyZWN0IjoiWzI0LDE1NC4wOTM3NSwzNDIsOTQuMTI1XSIsImNvbG9yIjoicmdiYSgwLCAwLCAwLCAwKSIsImFuaW1hdGlvbnMiOjAsImJ1c2luZXNzVG9wIjo4NjYuOTY4NzV9LHsiZm9udCI6IjcwMCAzMy41NDAwMDFweCAvIDM5LjU3NzE5OHB4IExJTkUgU2VlZCBKUCwgTm90byBTYW5zIEpQLCBZdSBHb3RoaWMsIEhpcmFnaW5vIEtha3UgR290aGljIFByb04sIE1laXJ5bywgc2Fucy1zZXJpZiIsInJlY3QiOiJbMjQsMTU0LjA5Mzc1LDM0Miw5NC4xMjVdIiwiY29sb3IiOiJyZ2JhKDAsIDAsIDAsIDApIiwiYW5pbWF0aW9ucyI6MCwiYnVzaW5lc3NUb3AiOjg2Ni45Njg3NX0seyJmb250IjoiNzAwIDMzLjU0MDAwMXB4IC8gMzkuNTc3MTk4cHggTElORSBTZWVkIEpQLCBOb3RvIFNhbnMgSlAsIFl1IEdvdGhpYywgSGlyYWdpbm8gS2FrdSBHb3RoaWMgUHJvTiwgTWVpcnlvLCBzYW5zLXNlcmlmIiwicmVjdCI6IlsyNCwxNTQuMDkzNzUsMzQyLDk0LjEyNV0iLCJjb2xvciI6InJnYmEoMCwgMCwgMCwgMCkiLCJhbmltYXRpb25zIjowLCJidXNpbmVzc1RvcCI6ODY2Ljk2ODc1fSx7ImZvbnQiOiI3MDAgMzMuNTQwMDAxcHggLyAzOS41NzcxOThweCBMSU5FIFNlZWQgSlAsIE5vdG8gU2FucyBKUCwgWXUgR290aGljLCBIaXJhZ2lubyBLYWt1IEdvdGhpYyBQcm9OLCBNZWlyeW8sIHNhbnMtc2VyaWYiLCJyZWN0IjoiWzI0LDE1NC4wOTM3NSwzNDIsOTQuMTI1XSIsImNvbG9yIjoicmdiYSgwLCAwLCAwLCAwKSIsImFuaW1hdGlvbnMiOjAsImJ1c2luZXNzVG9wIjo4NjYuOTY4NzV9LHsiZm9udCI6IjcwMCAzMy41NDAwMDFweCAvIDM5LjU3NzE5OHB4IExJTkUgU2VlZCBKUCwgTm90byBTYW5zIEpQLCBZdSBHb3RoaWMsIEhpcmFnaW5vIEtha3UgR290aGljIFByb04sIE1laXJ5bywgc2Fucy1zZXJpZiIsInJlY3QiOiJbMjQsMTU0LjA5Mzc1LDM0Miw5NC4xMjVdIiwiY29sb3IiOiJyZ2JhKDAsIDAsIDAsIDApIiwiYW5pbWF0aW9ucyI6MCwiYnVzaW5lc3NUb3AiOjg2Ni45Njg3NX0seyJmb250IjoiNzAwIDMzLjU0MDAwMXB4IC8gMzkuNTc3MTk4cHggTElORSBTZWVkIEpQLCBOb3RvIFNhbnMgSlAsIFl1IEdvdGhpYywgSGlyYWdpbm8gS2FrdSBHb3RoaWMgUHJvTiwgTWVpcnlvLCBzYW5zLXNlcmlmIiwicmVjdCI6IlsyNCwxNTQuMDkzNzUsMzQyLDk0LjEyNV0iLCJjb2xvciI6InJnYmEoMCwgMCwgMCwgMCkiLCJhbmltYXRpb25zIjowLCJidXNpbmVzc1RvcCI6ODY2Ljk2ODc1fSx7ImZvbnQiOiI3MDAgMzMuNTQwMDAxcHggLyAzOS41NzcxOThweCBMSU5FIFNlZWQgSlAsIE5vdG8gU2FucyBKUCwgWXUgR290aGljLCBIaXJhZ2lubyBLYWt1IEdvdGhpYyBQcm9OLCBNZWlyeW8sIHNhbnMtc2VyaWYiLCJyZWN0IjoiWzI0LDE1NC4wOTM3NSwzNDIsOTQuMTI1XSIsImNvbG9yIjoicmdiYSgwLCAwLCAwLCAwKSIsImFuaW1hdGlvbnMiOjAsImJ1c2luZXNzVG9wIjo4NjYuOTY4NzV9XSwiaGVpZ2h0Ijo4NDQsInNjcm9sbCI6MCwiZm9udHMiOiJsb2FkZWQifQ=="
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\taisa\\Desktop\\corporate-readability-20260922\\test-results\\hero-v4--en-lands-once-sta-9697a-iness-effects-for-scrolling-webkit-mobile\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\taisa\\Desktop\\corporate-readability-20260922\\test-results\\hero-v4--en-lands-once-sta-9697a-iness-effects-for-scrolling-webkit-mobile\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\taisa\\Desktop\\corporate-readability-20260922\\test-results\\hero-v4--en-lands-once-sta-9697a-iness-effects-for-scrolling-webkit-mobile\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\taisa\\Desktop\\corporate-readability-20260922\\test-results\\hero-v4--en-lands-once-sta-9697a-iness-effects-for-scrolling-webkit-mobile\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\taisa\\Desktop\\corporate-readability-20260922\\tests\\e2e\\hero-v4.spec.ts",
+                    "column": 36,
+                    "line": 82
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "b2f955157c35a95682e3-c6e20ba50397f203979d",
+          "file": "hero-v4.spec.ts",
+          "line": 4,
+          "column": 7
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-22T09:38:33.629Z",
+    "duration": 26332.880999999998,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

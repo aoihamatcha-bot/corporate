@@ -1,0 +1,138 @@
+{
+  "recordedAt": "2026-09-22T09:59:43.260Z",
+  "baseline": "fa9a7b4738395b2f4e205d410e7837ac0f5c1e64",
+  "sourceHead": "a58d9d7ef97fa218506a4feb5e364cd11d31d424",
+  "branch": "feat/corporate-readability-20260922",
+  "sourceFiles": 133,
+  "sourceDigestSha256": "3b4b9891385eac5f5609e6501e81e55d62f1084755ffd9b6cc70d3b82493efc5",
+  "sourceDigestScope": "Sorted tracked app/components/content/styles/public/package.json/package-lock.json/next.config.ts paths + NUL + bytes + NUL; no tests/docs",
+  "nextBuildId": "Wdc_zTNX4t7zHF0FLGcpR",
+  "runtimeDigestSha256": "304d4550fb7817c812a498bc25dedc4f7bb9e6e9572ac347e3e8ce8b99b2ac9c",
+  "sourceAndRuntimeUnchangedDuringCapture": true,
+  "sourceTestScriptTrees": {
+    "app": "e9fde25354dad3bc73f17e660e270d916adc9791",
+    "components": "afdf0541afcce067e5a358f67735ba08831f5c61",
+    "content": "cd9eb568f91b4dbc619641c3ff4581fc9a1d1050",
+    "styles": "ca7df920df41ecf196301e87fa3fb18af3d94555",
+    "public": "4f853e10a81a47eed8635640e6789ba3daca9c8e",
+    "package.json": "23c67834999706384c39377cddc5a494877bb9ea",
+    "package-lock.json": "0612a95456fa381f8b4e61675f379d0929bd843f",
+    "next.config.ts": "42cc84bebbfb3f191c22f0c796982ddd3c2b67c4",
+    "tests": "7e882ece382ab8fc9edc23f45d06ca6e0c47b9ac",
+    "scripts": "8e20bfa57a5da95ac60e486b38e40eafab04a5f6",
+    "playwright.config.ts": "5474f23596dc1fb4dc150acddf7c80c144be1339"
+  },
+  "preservedPaths": [
+    "content",
+    "public",
+    "app/api",
+    "components/contact-form.tsx",
+    "components/motion/site-opening.tsx",
+    "components/motion/handwriting.ts",
+    "components/motion/handwriting-ink.ts",
+    "components/motion/opening-bootstrap.ts",
+    "components/motion/hero-headline.tsx",
+    "components/motion/hero-art.tsx",
+    "components/motion/gradient-image.tsx",
+    "package.json",
+    "package-lock.json"
+  ],
+  "preservedPathsDiffAgainstBaseline": "",
+  "independentReadOnlyReviews": [
+    {
+      "range": "fa9a7b4738395b2f4e205d410e7837ac0f5c1e64..4af58a7d7ff7320f3bd6f7568c1b3b1d7042cdbd",
+      "importantFindings": 0
+    },
+    {
+      "range": "4af58a7d7ff7320f3bd6f7568c1b3b1d7042cdbd..a58d9d7ef97fa218506a4feb5e364cd11d31d424",
+      "importantFindings": 0
+    }
+  ],
+  "independentReviewLimit": "Source review only, not browser, real-device or hosted acceptance",
+  "localChecks": {
+    "build": "PASS",
+    "lint": "PASS",
+    "typecheck": "PASS",
+    "contentTests": {
+      "pass": 12,
+      "fail": 0,
+      "skip": 0
+    },
+    "reports": {
+      "e2e-full-first": {
+        "startTime": "2026-09-22T09:27:29.907Z",
+        "duration": 649801.2729999999,
+        "expected": 189,
+        "skipped": 0,
+        "unexpected": 6,
+        "flaky": 0
+      },
+      "hero-source-unchanged": {
+        "startTime": "2026-09-22T09:38:33.629Z",
+        "duration": 26332.880999999998,
+        "expected": 1,
+        "skipped": 0,
+        "unexpected": 1,
+        "flaky": 0
+      },
+      "hero-final": {
+        "startTime": "2026-09-22T09:51:56.641Z",
+        "duration": 57118.505,
+        "expected": 6,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "hero-viewport-final": {
+        "startTime": "2026-09-22T09:53:21.809Z",
+        "duration": 2692.0989999999997,
+        "expected": 1,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "focused-final": {
+        "startTime": "2026-09-22T09:53:41.234Z",
+        "duration": 154878.856,
+        "expected": 54,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    },
+    "remediationFirst": {
+      "pass": 2,
+      "fail": 0,
+      "flaky": 0,
+      "skip": 0,
+      "evidence": "checks/remediation-first.log",
+      "json": "NOT RETAINED before next run cleared test-results"
+    },
+    "finalFocusedTotal": {
+      "pass": 63,
+      "fail": 0,
+      "flaky": 0,
+      "skip": 0,
+      "automaticRetries": 0
+    },
+    "history": "Initial 189 PASS / 6 FAIL kept. Source-unchanged JA manual retry recovery is FLAKY, EN remained FAIL. Final focused results do not replace that history or claim a 195-case rerun."
+  },
+  "finalCapture": {
+    "images": 14,
+    "videos": 2,
+    "servedFiles": 13,
+    "contexts": 6,
+    "pageErrors": 0,
+    "consoleMessages": 0,
+    "failedRequests": 0,
+    "httpErrors": 0
+  },
+  "deliveryBoundary": "Only docs/Evidence may follow this source commit; verify source/test/script tree equality at delivery HEAD.",
+  "hostedRead": "NOT RUN",
+  "hostedMutation": "NOT RUN",
+  "directDeploy": "NOT RUN",
+  "ready": "NOT RUN",
+  "merge": "NOT RUN",
+  "ciResults": "NOT OBSERVED",
+  "gitTriggeredPreview": "NOT OBSERVED"
+}

@@ -1,0 +1,83 @@
+
+Running 54 tests using 2 workers
+
+(node:6828) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:12732) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:6828) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:12732) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [chromium-desktop] › tests\e2e\gradient-surfaces.spec.ts:3:5 › section colors keep their authored palette and background washes remain soft (856ms)
+  ok  3 [chromium-desktop] › tests\e2e\gradient-surfaces.spec.ts:44:5 › all Hero copy has static gradient ink with a single readable image shade (1.0s)
+  ok  4 [chromium-desktop] › tests\e2e\gradient-surfaces.spec.ts:80:5 › body color cancels safely on reduced motion and animation API failure (689ms)
+  ok  5 [chromium-desktop] › tests\e2e\motion.spec.ts:3:5 › body text is readable without masks before entering the viewport and after scrolling (3.2s)
+  ok  6 [chromium-desktop] › tests\e2e\motion.spec.ts:92:5 › menu curtains animate behind immediately readable navigation text on each opening (9.7s)
+  ok  2 [chromium-desktop] › tests\e2e\afterglow.spec.ts:3:5 › all authored text has a decorative color layer with readable sources in both languages (16.4s)
+  ok  7 [chromium-desktop] › tests\e2e\motion.spec.ts:153:5 › pausing during the entrance clears decorative bands and images without hiding copy (1.2s)
+  ok  9 [chromium-desktop] › tests\e2e\motion.spec.ts:192:5 › resize and a partially failing animation API cannot strand a colored cover (1.0s)
+  ok  8 [chromium-desktop] › tests\e2e\afterglow.spec.ts:133:5 › body color appears and finishes while its source stays readable and stationary (3.3s)
+  ok 10 [chromium-desktop] › tests\e2e\readability.spec.ts:7:7 › readable page structure fits 320px in both languages (2.0s)
+  ok 12 [chromium-desktop] › tests\e2e\readability.spec.ts:7:7 › readable page structure fits 390px in both languages (2.1s)
+  ok 13 [chromium-desktop] › tests\e2e\readability.spec.ts:7:7 › readable page structure fits 768px in both languages (2.0s)
+  ok 14 [chromium-desktop] › tests\e2e\readability.spec.ts:7:7 › readable page structure fits 1440px in both languages (2.3s)
+  ok 11 [chromium-desktop] › tests\e2e\afterglow.spec.ts:183:5 › all menu text receives finite color effects that restart without masking navigation (10.1s)
+  ok 15 [chromium-desktop] › tests\e2e\readability.spec.ts:29:5 › 200 percent text enlargement keeps all pages readable and the menu usable (3.6s)
+  ok 17 [chromium-desktop] › tests\e2e\readability.spec.ts:60:5 › home summaries lead to additional detail and contact availability is clear before navigation (1.4s)
+(node:17908) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:17908) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 16 [chromium-desktop] › tests\e2e\afterglow.spec.ts:266:5 › heading color outlasts its decorative band and then fades (3.5s)
+  ok 18 [chromium-mobile] › tests\e2e\afterglow.spec.ts:3:5 › all authored text has a decorative color layer with readable sources in both languages (15.8s)
+  ok 20 [chromium-mobile] › tests\e2e\afterglow.spec.ts:133:5 › body color appears and finishes while its source stays readable and stationary (3.3s)
+  ok 19 [chromium-desktop] › tests\e2e\afterglow.spec.ts:335:5 › heading and band palettes stay fixed across random seeds while the hero stays still (21.3s)
+(node:17948) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:17948) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 22 [chromium-mobile] › tests\e2e\gradient-surfaces.spec.ts:3:5 › section colors keep their authored palette and background washes remain soft (814ms)
+  ok 23 [chromium-mobile] › tests\e2e\gradient-surfaces.spec.ts:44:5 › all Hero copy has static gradient ink with a single readable image shade (1.2s)
+  ok 24 [chromium-mobile] › tests\e2e\gradient-surfaces.spec.ts:80:5 › body color cancels safely on reduced motion and animation API failure (744ms)
+  ok 21 [chromium-mobile] › tests\e2e\afterglow.spec.ts:183:5 › all menu text receives finite color effects that restart without masking navigation (10.1s)
+  ok 25 [chromium-mobile] › tests\e2e\motion.spec.ts:3:5 › body text is readable without masks before entering the viewport and after scrolling (3.4s)
+  ok 26 [chromium-mobile] › tests\e2e\afterglow.spec.ts:266:5 › heading color outlasts its decorative band and then fades (3.7s)
+  ok 27 [chromium-mobile] › tests\e2e\motion.spec.ts:92:5 › menu curtains animate behind immediately readable navigation text on each opening (9.8s)
+  ok 29 [chromium-mobile] › tests\e2e\motion.spec.ts:153:5 › pausing during the entrance clears decorative bands and images without hiding copy (1.2s)
+  ok 30 [chromium-mobile] › tests\e2e\motion.spec.ts:192:5 › resize and a partially failing animation API cannot strand a colored cover (1.4s)
+  ok 31 [chromium-mobile] › tests\e2e\readability.spec.ts:7:7 › readable page structure fits 320px in both languages (2.5s)
+  ok 32 [chromium-mobile] › tests\e2e\readability.spec.ts:7:7 › readable page structure fits 390px in both languages (2.7s)
+  ok 33 [chromium-mobile] › tests\e2e\readability.spec.ts:7:7 › readable page structure fits 768px in both languages (2.6s)
+  ok 34 [chromium-mobile] › tests\e2e\readability.spec.ts:7:7 › readable page structure fits 1440px in both languages (2.8s)
+  ok 28 [chromium-mobile] › tests\e2e\afterglow.spec.ts:335:5 › heading and band palettes stay fixed across random seeds while the hero stays still (23.3s)
+(node:39860) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:39860) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 35 [chromium-mobile] › tests\e2e\readability.spec.ts:29:5 › 200 percent text enlargement keeps all pages readable and the menu usable (4.4s)
+  ok 36 [chromium-mobile] › tests\e2e\readability.spec.ts:60:5 › home summaries lead to additional detail and contact availability is clear before navigation (1.5s)
+(node:35240) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:35240) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 38 [webkit-mobile] › tests\e2e\gradient-surfaces.spec.ts:3:5 › section colors keep their authored palette and background washes remain soft (1.4s)
+  ok 39 [webkit-mobile] › tests\e2e\gradient-surfaces.spec.ts:44:5 › all Hero copy has static gradient ink with a single readable image shade (1.8s)
+  ok 40 [webkit-mobile] › tests\e2e\gradient-surfaces.spec.ts:80:5 › body color cancels safely on reduced motion and animation API failure (1.2s)
+  ok 41 [webkit-mobile] › tests\e2e\motion.spec.ts:3:5 › body text is readable without masks before entering the viewport and after scrolling (3.9s)
+  ok 37 [webkit-mobile] › tests\e2e\afterglow.spec.ts:3:5 › all authored text has a decorative color layer with readable sources in both languages (18.4s)
+  ok 42 [webkit-mobile] › tests\e2e\motion.spec.ts:92:5 › menu curtains animate behind immediately readable navigation text on each opening (9.5s)
+  ok 43 [webkit-mobile] › tests\e2e\afterglow.spec.ts:133:5 › body color appears and finishes while its source stays readable and stationary (3.6s)
+  ok 44 [webkit-mobile] › tests\e2e\motion.spec.ts:153:5 › pausing during the entrance clears decorative bands and images without hiding copy (2.4s)
+  ok 46 [webkit-mobile] › tests\e2e\motion.spec.ts:192:5 › resize and a partially failing animation API cannot strand a colored cover (2.1s)
+  ok 47 [webkit-mobile] › tests\e2e\readability.spec.ts:7:7 › readable page structure fits 320px in both languages (3.6s)
+  ok 48 [webkit-mobile] › tests\e2e\readability.spec.ts:7:7 › readable page structure fits 390px in both languages (3.9s)
+  ok 45 [webkit-mobile] › tests\e2e\afterglow.spec.ts:183:5 › all menu text receives finite color effects that restart without masking navigation (10.8s)
+  ok 50 [webkit-mobile] › tests\e2e\afterglow.spec.ts:266:5 › heading color outlasts its decorative band and then fades (4.2s)
+  ok 49 [webkit-mobile] › tests\e2e\readability.spec.ts:7:7 › readable page structure fits 768px in both languages (5.9s)
+  ok 52 [webkit-mobile] › tests\e2e\readability.spec.ts:7:7 › readable page structure fits 1440px in both languages (8.4s)
+  ok 53 [webkit-mobile] › tests\e2e\readability.spec.ts:29:5 › 200 percent text enlargement keeps all pages readable and the menu usable (14.9s)
+  ok 54 [webkit-mobile] › tests\e2e\readability.spec.ts:60:5 › home summaries lead to additional detail and contact availability is clear before navigation (2.8s)
+  ok 51 [webkit-mobile] › tests\e2e\afterglow.spec.ts:335:5 › heading and band palettes stay fixed across random seeds while the hero stays still (27.8s)
+
+  54 passed (2.6m)

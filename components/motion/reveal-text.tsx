@@ -2,19 +2,16 @@
 
 import { useEffect, useRef } from "react";
 import { useMotionPaused } from "./motion-preference";
-import { observeEntrance, randomPalette, type Palette } from "./entrance";
+import { observeEntrance, type Palette } from "./entrance";
 import { motionToken } from "./tokens";
-import { textRhythm, type TextKind } from "./text-rhythm";
+import {
+  textColorHoldExtensionMs,
+  textColorRiseMs,
+  textRhythm,
+  type TextKind,
+} from "./text-rhythm";
 
-export function RevealText({
-  children,
-  palette = "sky",
-  direction = "left",
-  cut = false,
-  light = false,
-  className = "",
-  kind = "heading",
-}: {
+type RevealTextProps = {
   children: string;
   palette?: Palette;
   direction?: "left" | "right";
@@ -22,7 +19,107 @@ export function RevealText({
   light?: boolean;
   className?: string;
   kind?: TextKind;
-}) {
+};
+
+export function RevealText({ kind = "heading", ...props }: RevealTextProps) {
+  // Reading and navigation keep a stationary, unmasked source. Their color
+  // layer shares the once-only viewport gate without the heading entrance.
+  if (kind !== "heading") return <ColorText {...props} kind={kind} />;
+  return <AnimatedHeading {...props} kind={kind} />;
+}
+
+function ColorText({
+  children,
+  palette = "sky",
+  light = false,
+  className = "",
+  kind = "body",
+}: RevealTextProps) {
+  const root = useRef<HTMLSpanElement>(null);
+  const color = useRef<HTMLSpanElement>(null);
+  const paused = useMotionPaused();
+
+  useEffect(() => {
+    const element = root.current;
+    if (!element || paused) return;
+    return observeEntrance(
+      element,
+      () => {
+        let glow: Animation | undefined;
+        const stop = () => {
+          glow?.cancel();
+          element.dataset.revealState = "settled";
+        };
+        element.dataset.revealState = "running";
+        try {
+          const computed = getComputedStyle(element);
+          const beat = Number(computed.getPropertyValue("--ink-beat"));
+          const token = (part: string) =>
+            Number(computed.getPropertyValue(`--${kind}-${part}-ms`));
+          const delay = token("delay") + beat * 37;
+          const holdMs = token("hold") + beat * 20 + textColorHoldExtensionMs;
+          const fadeMs = token("fade") + beat * 43;
+          const colorMs = textColorRiseMs + holdMs + fadeMs;
+          // Opacity alone preserves the gradient without repainting a moving
+          // background in the sticky header (costly on mobile WebKit).
+          glow = color.current!.animate(
+            [
+              { opacity: 0, easing: "ease-out" },
+              {
+                opacity: 1,
+                offset: textColorRiseMs / colorMs,
+              },
+              {
+                opacity: 1,
+                offset: (textColorRiseMs + holdMs) / colorMs,
+                easing: "ease-in-out",
+              },
+              { opacity: 0 },
+            ],
+            { duration: colorMs, delay, easing: "linear" },
+          );
+          glow.onfinish = stop;
+        } catch {
+          // The readable source is never an animation target, including when
+          // the browser cannot create or complete the decorative animation.
+          stop();
+        }
+        return stop;
+      },
+      kind === "utility",
+    );
+  }, [paused, children, palette, kind]);
+
+  return (
+    <span
+      ref={root}
+      className={`reveal-text ${className}`}
+      data-palette={palette}
+      data-tone={light ? "light" : "dark"}
+      data-motion-kind={kind}
+      data-text-motion="color"
+      style={textRhythm(children, kind)}
+    >
+      <span className="reveal-source">{children}</span>
+      <span
+        ref={color}
+        className="reveal-color"
+        data-text={children}
+        aria-hidden="true"
+      />
+    </span>
+  );
+}
+
+function AnimatedHeading({
+  children,
+  palette = "sky",
+  direction = "left",
+  cut = false,
+  light = false,
+  className = "",
+  kind = "heading",
+}: RevealTextProps) {
   const root = useRef<HTMLSpanElement>(null);
   const source = useRef<HTMLSpanElement>(null);
   const color = useRef<HTMLSpanElement>(null);
@@ -57,7 +154,7 @@ export function RevealText({
           const lines = Array.from(range.getClientRects()).filter(
             (rect) => rect.width > 0 && rect.height > 0,
           );
-          const colors = randomPalette();
+          const colors = palette;
           element.dataset.palette = colors;
           const computed = getComputedStyle(element);
           const beat = Number(computed.getPropertyValue("--ink-beat"));
@@ -96,8 +193,8 @@ export function RevealText({
             lines.forEach((rect, index) => {
               const band = document.createElement("i");
               band.className = "reveal-band";
-              // Each line has a related but separate hue from the text overlay.
-              band.dataset.palette = randomPalette(colors);
+              // The requested palette stays stable across visits and lines.
+              band.dataset.palette = colors;
               Object.assign(band.style, {
                 left: `${rect.left - bounds.left}px`,
                 top: `${rect.top - bounds.top}px`,

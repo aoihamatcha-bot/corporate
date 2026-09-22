@@ -1,0 +1,51 @@
+{
+  "baseline": "fa9a7b4738395b2f4e205d410e7837ac0f5c1e64",
+  "sourceHead": "4af58a7d7ff7320f3bd6f7568c1b3b1d7042cdbd",
+  "sourceFiles": 133,
+  "sourceDigestSha256": "6d52c7c31bc1ea0ccafec2e377fe89548a6707a8d34a28cea1a877f5f1056474",
+  "sourceDigestScope": "Sorted tracked app/components/content/styles/public/package.json/package-lock.json/next.config.ts paths + NUL + bytes + NUL",
+  "nextBuildId": "D2vAG0ZJlMvj2UBuAZMt_",
+  "preservedPaths": [
+    "content",
+    "public",
+    "app/api",
+    "components/contact-form.tsx",
+    "components/motion/site-opening.tsx",
+    "components/motion/handwriting.ts",
+    "components/motion/handwriting-ink.ts",
+    "components/motion/opening-bootstrap.ts",
+    "components/motion/hero-headline.tsx",
+    "components/motion/hero-art.tsx",
+    "components/motion/gradient-image.tsx",
+    "package.json",
+    "package-lock.json"
+  ],
+  "preservedPathsDiffAgainstBaseline": "",
+  "independentReadOnlyReview": {
+    "range": "fa9a7b4738395b2f4e205d410e7837ac0f5c1e64..4af58a7d7ff7320f3bd6f7568c1b3b1d7042cdbd",
+    "importantFindings": 0,
+    "limitations": "Source review only; final browser and hosted acceptance are not inferred"
+  },
+  "localChecks": {
+    "build": "PASS",
+    "lint": "PASS",
+    "typecheck": "PASS",
+    "contentTests": {
+      "pass": 12,
+      "fail": 0,
+      "skip": 0
+    },
+    "initialFocused": {
+      "pass": 7,
+      "fail": 0,
+      "flaky": 0,
+      "skip": 0
+    }
+  },
+  "hostedRead": "NOT RUN",
+  "hostedMutation": "NOT RUN",
+  "directDeploy": "NOT RUN",
+  "ready": "NOT RUN",
+  "merge": "NOT RUN",
+  "ciResults": "NOT OBSERVED"
+}

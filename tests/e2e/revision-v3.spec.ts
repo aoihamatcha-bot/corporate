@@ -75,10 +75,25 @@ for (const route of ["company", "business", "about"]) {
   test(`${route} thumbnails in both languages wait offscreen and fade with travel`, async ({
     page,
   }) => {
+    // A compact page can place its image inside a tall initial viewport. This
+    // case explicitly tests offscreen entry, preserving each device's width.
+    const viewport = page.viewportSize()!;
+    await page.setViewportSize({
+      width: viewport.width,
+      height: Math.min(viewport.height, 600),
+    });
     for (const prefix of ["", "/en"]) {
       await page.goto(`${prefix}/${route}`);
+      await page.evaluate(() => document.fonts.ready);
       const images = page.locator(".story-card-media");
       const last = images.last();
+      const geometry = await last.evaluate((el) => ({
+        frameTop: el.parentElement!.getBoundingClientRect().top,
+        viewportHeight: innerHeight,
+        scrollY,
+      }));
+      expect(geometry.scrollY).toBe(0);
+      expect(geometry.frameTop).toBeGreaterThanOrEqual(geometry.viewportHeight);
       await expect(last).toHaveCSS("opacity", "0");
       await expect(last).not.toHaveAttribute("data-story-entered", "true");
       const samples = await last.evaluate(async (el) => {
@@ -120,6 +135,38 @@ for (const route of ["company", "business", "about"]) {
     }
   });
 }
+
+test("an About image inside the initial viewport enters and settles without scrolling", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 1440, height: 900 });
+  await page.goto("/en/about");
+  await page.evaluate(() => document.fonts.ready);
+  const image = page.locator(".about-illustration .story-card-media");
+  await expect(image).toHaveCount(1);
+  const geometry = await image.evaluate((el) => {
+    // The stationary frame gives the layout position during child travel.
+    const frame = el.parentElement!.getBoundingClientRect();
+    return {
+      frameTop: frame.top,
+      frameBottom: frame.bottom,
+      entryLine: frame.top + Math.min(frame.height * 0.12, 48),
+      entryThreshold: innerHeight * 0.92,
+      viewportHeight: innerHeight,
+      scrollY,
+    };
+  });
+  expect(geometry.scrollY).toBe(0);
+  expect(geometry.frameTop).toBeLessThan(geometry.viewportHeight);
+  expect(geometry.frameBottom).toBeGreaterThan(0);
+  expect(geometry.entryLine).toBeLessThanOrEqual(geometry.entryThreshold);
+  await expect(image).toHaveAttribute("data-story-entered", "true");
+  await expect(image).toHaveCSS("opacity", "1");
+  await expect(image).toHaveCSS("transform", "none");
+  expect(await image.evaluate((el) => el.getAnimations().length)).toBe(0);
+  await expect(image.locator("img")).toBeVisible();
+  expect(await page.evaluate(() => scrollY)).toBe(0);
+});
 
 test("production copy has a prominent localized collaboration CTA and no draft notices", async ({
   page,

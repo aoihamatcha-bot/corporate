@@ -59,6 +59,8 @@
   --utility-fade-ms: 1000;
   --text-body-brightness: 0.82;
   --glass-highlight: rgb(255 255 255 / 14%);
+  --scene-wash-opacity: 0.28;
+  --surface-tint: 32%;
   --image-color-ms: 2650;
   --image-delay-ms: 210;
   --image-wipe-ms: 820;
@@ -68,8 +70,8 @@
   --lead-ms: 920;
   --echo-ms: 1200;
   --color-delay-ms: 120;
-  --entry-distance: 56;
-  --cut-distance: 90;
+  --entry-distance: 20;
+  --cut-distance: 28;
   --menu-color-1: #8addff;
   --menu-color-2: #b6e7f0;
   --menu-color-3: #c7b4fe;
@@ -93,6 +95,12 @@
   --twilight-2: #d5d9f1;
   --twilight-3: #ebd8e8;
   --twilight-4: #fbe1d2;
+  --text-body: 16px;
+  --text-note: 13px;
+  --text-control: 14px;
+  --leading-body: 1.8;
+  --section-space: 96px;
+  --header-height: 88px;
 }
 [data-palette="sky"] {
   --color-1: var(--sky-1);
@@ -190,8 +198,9 @@
   --type-2: #7c4172;
   --type-3: #8e4830;
 }
-@media (max-width: 600px) {
-  :root {
-    --entry-distance: 24;
-  }
+@media (max-width: 700px) {
+:root {
+    --section-space: 64px;
+    --header-height: 64px;
+}
 }

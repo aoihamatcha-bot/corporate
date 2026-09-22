@@ -27,7 +27,7 @@ export function HomeStory({ children }: { children: ReactNode }) {
     );
     const targets = Array.from(
       root.querySelectorAll<HTMLElement>(
-        ".story-card-media, .collaboration-themes > li, .home-news .news-list > li, .home-news .news-empty-copy",
+        ".story-card-media",
       ),
     );
     const visible = new Set<HTMLElement>();

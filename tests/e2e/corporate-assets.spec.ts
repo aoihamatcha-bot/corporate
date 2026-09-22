@@ -10,8 +10,8 @@ test("adopted concepts and illustrations load in both languages without implying
     const prefix = locale === "en" ? "/en" : "";
     const c = getDictionary(locale);
     for (const [path, ids] of [
-      ["/", ["A01", "A02", "A06", "A07"]],
-      ["/business", ["A06"]],
+      ["/", []],
+      ["/business", ["A01", "A02", "A06", "A07"]],
       ["/company", ["A03"]],
       ["/about", ["A04"]],
       ["/news", ["A09"]],
@@ -52,6 +52,11 @@ test("adopted concepts and illustrations load in both languages without implying
         await expect(page.locator(".review-notice, .draft-badge")).toHaveCount(
           0,
         );
+        await expect(page.locator(".concept-nodes > li")).toHaveCount(3);
+        await expect(page.locator(".material-section, .service-poster")).toHaveCount(0);
+      }
+      if (path === "/business") {
+        await expect(page.locator(".material-section .editorial-note")).toHaveText(c.assets.note);
         await expect(page.locator(".service-poster")).toContainText(
           c.assets.posterTitle,
         );

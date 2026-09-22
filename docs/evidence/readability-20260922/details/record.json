@@ -1,0 +1,263 @@
+{
+  "browser": "153.0.8010.12",
+  "reducedMotion": "reduce",
+  "deviceScaleFactor": 1,
+  "captures": [
+    {
+      "phase": "before",
+      "head": "7ebe25888dec5f2f1e97da6cf5001e81bcdef55c",
+      "locale": "ja",
+      "width": 390,
+      "route": "business",
+      "file": "before-ja-390-business.png",
+      "clip": {
+        "x": 0,
+        "y": 1185.890625,
+        "width": 375,
+        "height": 767.96875
+      },
+      "fontStatus": "loaded",
+      "errors": []
+    },
+    {
+      "phase": "before",
+      "head": "7ebe25888dec5f2f1e97da6cf5001e81bcdef55c",
+      "locale": "ja",
+      "width": 390,
+      "route": "contact",
+      "file": "before-ja-390-contact.png",
+      "clip": {
+        "x": 24,
+        "y": 452.921875,
+        "width": 327,
+        "height": 1026
+      },
+      "fontStatus": "loaded",
+      "errors": []
+    },
+    {
+      "phase": "before",
+      "head": "7ebe25888dec5f2f1e97da6cf5001e81bcdef55c",
+      "locale": "ja",
+      "width": 1440,
+      "route": "business",
+      "file": "before-ja-1440-business.png",
+      "clip": {
+        "x": 0,
+        "y": 1548.59375,
+        "width": 1425,
+        "height": 1044.59375
+      },
+      "fontStatus": "loaded",
+      "errors": []
+    },
+    {
+      "phase": "before",
+      "head": "7ebe25888dec5f2f1e97da6cf5001e81bcdef55c",
+      "locale": "ja",
+      "width": 1440,
+      "route": "contact",
+      "file": "before-ja-1440-contact.png",
+      "clip": {
+        "x": 322.5,
+        "y": 561,
+        "width": 780,
+        "height": 1036.171875
+      },
+      "fontStatus": "loaded",
+      "errors": []
+    },
+    {
+      "phase": "before",
+      "head": "7ebe25888dec5f2f1e97da6cf5001e81bcdef55c",
+      "locale": "en",
+      "width": 390,
+      "route": "business",
+      "file": "before-en-390-business.png",
+      "clip": {
+        "x": 0,
+        "y": 1225.15625,
+        "width": 375,
+        "height": 803.234375
+      },
+      "fontStatus": "loaded",
+      "errors": []
+    },
+    {
+      "phase": "before",
+      "head": "7ebe25888dec5f2f1e97da6cf5001e81bcdef55c",
+      "locale": "en",
+      "width": 390,
+      "route": "contact",
+      "file": "before-en-390-contact.png",
+      "clip": {
+        "x": 24,
+        "y": 426.921875,
+        "width": 327,
+        "height": 1082.5
+      },
+      "fontStatus": "loaded",
+      "errors": []
+    },
+    {
+      "phase": "before",
+      "head": "7ebe25888dec5f2f1e97da6cf5001e81bcdef55c",
+      "locale": "en",
+      "width": 1440,
+      "route": "business",
+      "file": "before-en-1440-business.png",
+      "clip": {
+        "x": 0,
+        "y": 1576.953125,
+        "width": 1425,
+        "height": 1105.953125
+      },
+      "fontStatus": "loaded",
+      "errors": []
+    },
+    {
+      "phase": "before",
+      "head": "7ebe25888dec5f2f1e97da6cf5001e81bcdef55c",
+      "locale": "en",
+      "width": 1440,
+      "route": "contact",
+      "file": "before-en-1440-contact.png",
+      "clip": {
+        "x": 322.5,
+        "y": 528,
+        "width": 780,
+        "height": 1036.171875
+      },
+      "fontStatus": "loaded",
+      "errors": []
+    },
+    {
+      "phase": "after",
+      "head": "95187af52e92934b8df85059f4f820989be226c4",
+      "locale": "ja",
+      "width": 390,
+      "route": "business",
+      "file": "after-ja-390-business.png",
+      "clip": {
+        "x": 0,
+        "y": 1166.890625,
+        "width": 375,
+        "height": 755.390625
+      },
+      "fontStatus": "loaded",
+      "errors": []
+    },
+    {
+      "phase": "after",
+      "head": "95187af52e92934b8df85059f4f820989be226c4",
+      "locale": "ja",
+      "width": 390,
+      "route": "contact",
+      "file": "after-ja-390-contact.png",
+      "clip": {
+        "x": 24,
+        "y": 414.90625,
+        "width": 327,
+        "height": 1087.109375
+      },
+      "fontStatus": "loaded",
+      "errors": []
+    },
+    {
+      "phase": "after",
+      "head": "95187af52e92934b8df85059f4f820989be226c4",
+      "locale": "ja",
+      "width": 1440,
+      "route": "business",
+      "file": "after-ja-1440-business.png",
+      "clip": {
+        "x": 0,
+        "y": 1502.375,
+        "width": 1425,
+        "height": 1035.390625
+      },
+      "fontStatus": "loaded",
+      "errors": []
+    },
+    {
+      "phase": "after",
+      "head": "95187af52e92934b8df85059f4f820989be226c4",
+      "locale": "ja",
+      "width": 1440,
+      "route": "contact",
+      "file": "after-ja-1440-contact.png",
+      "clip": {
+        "x": 322.5,
+        "y": 527.1875,
+        "width": 780,
+        "height": 1099.15625
+      },
+      "fontStatus": "loaded",
+      "errors": []
+    },
+    {
+      "phase": "after",
+      "head": "95187af52e92934b8df85059f4f820989be226c4",
+      "locale": "en",
+      "width": 390,
+      "route": "business",
+      "file": "after-en-390-business.png",
+      "clip": {
+        "x": 0,
+        "y": 1211.15625,
+        "width": 375,
+        "height": 808.25
+      },
+      "fontStatus": "loaded",
+      "errors": []
+    },
+    {
+      "phase": "after",
+      "head": "95187af52e92934b8df85059f4f820989be226c4",
+      "locale": "en",
+      "width": 390,
+      "route": "contact",
+      "file": "after-en-390-contact.png",
+      "clip": {
+        "x": 24,
+        "y": 377.515625,
+        "width": 327,
+        "height": 1140.796875
+      },
+      "fontStatus": "loaded",
+      "errors": []
+    },
+    {
+      "phase": "after",
+      "head": "95187af52e92934b8df85059f4f820989be226c4",
+      "locale": "en",
+      "width": 1440,
+      "route": "business",
+      "file": "after-en-1440-business.png",
+      "clip": {
+        "x": 0,
+        "y": 1560.359375,
+        "width": 1425,
+        "height": 1107.96875
+      },
+      "fontStatus": "loaded",
+      "errors": []
+    },
+    {
+      "phase": "after",
+      "head": "95187af52e92934b8df85059f4f820989be226c4",
+      "locale": "en",
+      "width": 1440,
+      "route": "contact",
+      "file": "after-en-1440-contact.png",
+      "clip": {
+        "x": 322.5,
+        "y": 483.796875,
+        "width": 780,
+        "height": 1099.15625
+      },
+      "fontStatus": "loaded",
+      "errors": []
+    }
+  ]
+}

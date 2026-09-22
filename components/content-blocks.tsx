@@ -6,7 +6,7 @@ import { RevealText } from "@/components/motion/reveal-text";
 import { GradientImage } from "@/components/motion/gradient-image";
 import { Scene } from "@/components/motion/scene";
 import { Arrow } from "@/components/icons";
-import { SectionLabel } from "@/components/editorial";
+import { SectionLabel, TextLink } from "@/components/editorial";
 import Link from "@/components/site-link";
 import { CorporateImage } from "@/components/corporate-image";
 import { StoryAccent } from "@/components/motion/story-accent";
@@ -42,11 +42,11 @@ export function BusinessCards({ locale }: { locale: Locale }) {
               <RevealText kind="heading">{copy.title}</RevealText>
             </h3>
             <p>
-              <RevealText kind="body">{copy.description}</RevealText>
+              <RevealText kind="body">{copy.summary}</RevealText>
             </p>
             <div className="card-consultation">
               <span>
-                <RevealText kind="label">{copy.consultation}</RevealText>
+                <RevealText kind="label">{c.common.businessDetails}</RevealText>
               </span>
               <Arrow diagonal />
             </div>
@@ -56,7 +56,13 @@ export function BusinessCards({ locale }: { locale: Locale }) {
     </div>
   );
 }
-export function ConceptDiagram({ locale }: { locale: Locale }) {
+export function ConceptDiagram({
+  locale,
+  illustration = false,
+}: {
+  locale: Locale;
+  illustration?: boolean;
+}) {
   const c = getDictionary(locale);
   return (
     <figure className="concept-diagram">
@@ -68,7 +74,10 @@ export function ConceptDiagram({ locale }: { locale: Locale }) {
           <RevealText kind="body">{c.diagram.caption}</RevealText>
         </p>
       </figcaption>
-      <CorporateImage id="A06" locale={locale} sizes="90vw" expandable />
+      <div className="concept-relationship">
+        <strong><RevealText kind="subtitle">{c.diagram.relationshipLabel}</RevealText></strong>
+        <p><RevealText kind="body">{c.diagram.relationshipDescription}</RevealText></p>
+      </div>
       <ul className="concept-nodes">
         {c.diagram.nodes.map((node, i) => (
           <li key={node.title}>
@@ -86,6 +95,9 @@ export function ConceptDiagram({ locale }: { locale: Locale }) {
           </li>
         ))}
       </ul>
+      {illustration && (
+        <CorporateImage id="A06" locale={locale} sizes="90vw" expandable />
+      )}
     </figure>
   );
 }
@@ -93,6 +105,7 @@ export function ServiceConcepts({ locale }: { locale: Locale }) {
   const c = getDictionary(locale);
   return (
     <div className="material-section">
+      <p className="editorial-note"><RevealText kind="body">{c.assets.note}</RevealText></p>
       <div className="material-slots">
         {c.assets.slots.map((slot, index) => (
           <figure className="material-slot" key={slot.label}>
@@ -117,7 +130,7 @@ export function ServiceConcepts({ locale }: { locale: Locale }) {
     </div>
   );
 }
-export function Collaboration({ locale }: { locale: Locale }) {
+export function Collaboration({ locale, number }: { locale: Locale; number?: string }) {
   const c = getDictionary(locale);
   return (
     <Scene
@@ -126,7 +139,7 @@ export function Collaboration({ locale }: { locale: Locale }) {
       story="collaboration"
     >
       <div className="container editorial-grid">
-        <SectionLabel>{c.collaboration.label}</SectionLabel>
+        <SectionLabel number={number}>{c.collaboration.label}</SectionLabel>
         <div>
           <h2 className="section-heading">
             <RevealText>{c.collaboration.title}</RevealText>
@@ -151,6 +164,7 @@ export function Collaboration({ locale }: { locale: Locale }) {
               </li>
             ))}
           </ul>
+          <p className="contact-availability"><RevealText kind="body">{c.collaboration.contactStatus}</RevealText></p>
           <Link
             className="collaboration-cta"
             href={localizedPath("/contact", locale)}
@@ -180,26 +194,32 @@ export function CurrentWork({ locale }: { locale: Locale }) {
       <StoryAccent beat="assembly" />
       <div className="container">
         <div className="editorial-grid">
-          <SectionLabel number="02">{c.home.workingTitle}</SectionLabel>
+          <SectionLabel number="02">{c.home.workingLabel}</SectionLabel>
           <div>
             <h2 className="section-heading">
               <RevealText>{c.home.workingTitle}</RevealText>
             </h2>
+            <p className="section-description"><RevealText kind="body">{c.home.workingDescription}</RevealText></p>
           </div>
         </div>
         <ConceptDiagram locale={locale} />
-        <ServiceConcepts locale={locale} />
-        <figure className="service-poster">
-          <CorporateImage id="A07" locale={locale} expandable />
-          <figcaption>
-            <SectionLabel>{c.assets.posterLabel}</SectionLabel>
-            <h3>
-              <RevealText kind="subtitle">{c.assets.posterTitle}</RevealText>
-            </h3>
-          </figcaption>
-        </figure>
+        <TextLink href={localizedPath("/business", locale) + "#approach"}>
+          {c.home.workingButton}
+        </TextLink>
       </div>
     </section>
+  );
+}
+export function ServicePoster({ locale }: { locale: Locale }) {
+  const c = getDictionary(locale);
+  return (
+    <figure className="service-poster">
+      <CorporateImage id="A07" locale={locale} expandable />
+      <figcaption>
+        <SectionLabel>{c.assets.posterLabel}</SectionLabel>
+        <h3><RevealText kind="subtitle">{c.assets.posterTitle}</RevealText></h3>
+      </figcaption>
+    </figure>
   );
 }
 export function NewsListing({
