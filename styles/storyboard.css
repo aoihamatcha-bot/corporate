@@ -1,5 +1,4 @@
-/* Additive motion only: adopted tokens, text bands, palettes, afterglow,
-   typography and scene-colors remain defined by their original styles. */
+/* The opening handoff is unchanged. Reading content is static; image entrances and scene decoration remain optional enhancements. */
 .site-opening {
   --opening-lettering-width: min(640px, 88vw, 125vh);
   --opening-logo-rise: calc(var(--opening-lettering-width) * 0.205 + 28px);
@@ -80,9 +79,6 @@ html:is([data-intro="pending"], [data-intro="running"], [data-intro="docking"])
   .hero-headline {
   opacity: 0;
 }
-.hero {
-  min-height: calc(100svh - 96px);
-}
 /* HERO has a single handoff. Other scenes keep the adopted color rhythms. */
 .hero[data-motion-static]
   :is(.reveal-color, .reveal-bands, .image-wash, .image-echo, .image-wipe) {
@@ -105,7 +101,7 @@ html:is([data-intro="pending"], [data-intro="running"], [data-intro="docking"])
   align-items: center;
   justify-content: space-between;
   gap: 12px;
-  font-size: 13px;
+  font-size: var(--text-note);
   font-weight: 700;
   letter-spacing: 0.1em;
 }
@@ -191,16 +187,10 @@ html:is([data-intro="pending"], [data-intro="running"]) .hero-scroll-cue path {
 .home-story {
   display: flow-root;
 }
-/* Layout is reserved. Only enhanced page imagery/rows wait invisibly;
-   the adopted text gradients and color bands keep their existing lifecycle. */
+/* Only optional image entrances wait invisibly. Body copy and navigation remain readable from their first paint. */
 html[data-story-motion]
   .home-story
-  :is(
-    .story-card-media,
-    .collaboration-themes > li,
-    .home-news .news-list > li,
-    .home-news .news-empty-copy
-  ):not([data-story-entered="true"]) {
+  .story-card-media:not([data-story-entered="true"]) {
   opacity: 0;
 }
 .home-story [data-story] {
@@ -307,7 +297,7 @@ html[data-story-motion]
   overflow: clip;
 }
 .business-preview .story-card-frame {
-  margin-bottom: 28px;
+  margin-bottom: 20px;
 }
 .business-detail-frame {
   margin-bottom: 44px;
@@ -381,15 +371,12 @@ html[data-story-motion]
   }
 }
 @media (max-width: 700px) {
-  .hero {
-    min-height: calc(100svh - 110px);
-  }
   .hero-capabilities ol {
     gap: 20px;
     padding-block: 22px;
   }
   .hero-capabilities li {
-    font-size: 11px;
+    font-size: var(--text-note);
     letter-spacing: 0.04em;
   }
   .hero-scroll-cue {
@@ -397,12 +384,6 @@ html[data-story-motion]
   }
   .hero-scroll-cue svg {
     width: 48px;
-  }
-  html[lang="ja"] .hero h1 {
-    font-size: clamp(32px, 7.7vw, 52px);
-  }
-  html[lang="en"] .hero h1 {
-    font-size: clamp(30px, 7.8vw, 52px);
   }
   .site-opening {
     --opening-lettering-width: min(94vw, 110svh);
@@ -449,12 +430,7 @@ html[data-story-motion]
   }
   html[data-story-motion]
     .home-story
-    :is(
-      .story-card-media,
-      .collaboration-themes > li,
-      .home-news .news-list > li,
-      .home-news .news-empty-copy
-    ) {
+    .story-card-media {
     opacity: 1 !important;
   }
   .site-opening,

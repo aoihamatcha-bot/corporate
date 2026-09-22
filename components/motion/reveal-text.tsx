@@ -2,19 +2,11 @@
 
 import { useEffect, useRef } from "react";
 import { useMotionPaused } from "./motion-preference";
-import { observeEntrance, randomPalette, type Palette } from "./entrance";
+import { observeEntrance, type Palette } from "./entrance";
 import { motionToken } from "./tokens";
 import { textRhythm, type TextKind } from "./text-rhythm";
 
-export function RevealText({
-  children,
-  palette = "sky",
-  direction = "left",
-  cut = false,
-  light = false,
-  className = "",
-  kind = "heading",
-}: {
+type RevealTextProps = {
   children: string;
   palette?: Palette;
   direction?: "left" | "right";
@@ -22,7 +14,33 @@ export function RevealText({
   light?: boolean;
   className?: string;
   kind?: TextKind;
-}) {
+};
+
+export function RevealText({ kind = "heading", ...props }: RevealTextProps) {
+  // Reading and navigation do not mount animation hooks or register listeners.
+  // Only headings opt into the once-only viewport entrance below.
+  if (kind !== "heading")
+    return (
+      <span
+        className={`reveal-text ${props.className ?? ""}`}
+        data-motion-kind={kind}
+        data-text-motion="static"
+      >
+        <span className="reveal-source">{props.children}</span>
+      </span>
+    );
+  return <AnimatedHeading {...props} kind={kind} />;
+}
+
+function AnimatedHeading({
+  children,
+  palette = "sky",
+  direction = "left",
+  cut = false,
+  light = false,
+  className = "",
+  kind = "heading",
+}: RevealTextProps) {
   const root = useRef<HTMLSpanElement>(null);
   const source = useRef<HTMLSpanElement>(null);
   const color = useRef<HTMLSpanElement>(null);
@@ -57,7 +75,7 @@ export function RevealText({
           const lines = Array.from(range.getClientRects()).filter(
             (rect) => rect.width > 0 && rect.height > 0,
           );
-          const colors = randomPalette();
+          const colors = palette;
           element.dataset.palette = colors;
           const computed = getComputedStyle(element);
           const beat = Number(computed.getPropertyValue("--ink-beat"));
@@ -96,8 +114,8 @@ export function RevealText({
             lines.forEach((rect, index) => {
               const band = document.createElement("i");
               band.className = "reveal-band";
-              // Each line has a related but separate hue from the text overlay.
-              band.dataset.palette = randomPalette(colors);
+              // The requested palette stays stable across visits and lines.
+              band.dataset.palette = colors;
               Object.assign(band.style, {
                 left: `${rect.left - bounds.left}px`,
                 top: `${rect.top - bounds.top}px`,

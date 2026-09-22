@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test";
 
-test("authored text retains gradients except the intentionally static hero band and scroll cue", async ({
+test("body, labels and navigation use readable static text across both languages", async ({
   page,
 }) => {
   for (const route of [
@@ -32,8 +32,8 @@ test("authored text retains gradients except the intentionally static hero band 
         const node = walker.currentNode;
         if (!node.textContent?.trim()) continue;
         const parent = node.parentElement!;
-        // The HERO band and cue are intentionally static in v4. All other
-        // authored copy retains the original gradient-layer coverage.
+        // Retain coverage of authored copy. RevealText sources now include
+        // static body/labels as well as the separate animated heading sources.
         if (
           parent.closest(
             ".reveal-source, .menu-ink-base, script, style, option, .sr-only, [aria-hidden='true'], nextjs-portal, .hero[data-motion-static] .hero-capabilities, .hero[data-motion-static] .hero-scroll-cue",
@@ -48,28 +48,78 @@ test("authored text retains gradients except the intentionally static hero band 
       return missing;
     });
     expect(uncovered, route).toEqual([]);
+    const staticText = await page
+      .locator('.reveal-text:not([data-motion-kind="heading"])')
+      .evaluateAll((elements) =>
+        elements
+          .filter((el) => !el.closest('[aria-hidden="true"], dialog:not([open])'))
+          .map((el) => {
+            const source = el.querySelector(".reveal-source")!;
+            const style = getComputedStyle(source);
+            return {
+              text: source.textContent?.trim(),
+              kind: el.getAttribute("data-motion-kind"),
+              motion: el.getAttribute("data-text-motion"),
+              opacity: style.opacity,
+              visibility: style.visibility,
+              clipPath: style.clipPath,
+              mask: style.maskImage,
+              decorations: el.querySelectorAll(
+                ".reveal-color, .reveal-bands, .reveal-band",
+              ).length,
+              animations: el.getAnimations({ subtree: true }).length,
+            };
+          }),
+      );
+    expect(staticText.length, route).toBeGreaterThan(0);
+    expect(staticText.some((entry) => entry.kind === "body"), route).toBe(true);
+    for (const entry of staticText) {
+      expect(entry.text, route).toBeTruthy();
+      expect(entry, `${route}: ${entry.text}`).toMatchObject({
+        motion: "static",
+        opacity: "1",
+        visibility: "visible",
+        clipPath: "none",
+        mask: "none",
+        decorations: 0,
+        animations: 0,
+      });
+    }
   }
   await page.goto("/");
   await page.getByRole("button", { name: "メニューを開く" }).click();
   const dialog = page.getByRole("dialog");
-  await expect(dialog.locator(".nav-ja .menu-ink-color")).toHaveCount(6);
-  await expect(dialog.locator(".nav-number .menu-ink-color")).toHaveCount(6);
-  // The requested removal of the motion toggle leaves the privacy link.
-  await expect(dialog.locator(".nav-aux .menu-ink-color")).toHaveCount(1);
   await expect(
-    dialog.locator('.nav-aux a[href="/privacy"] .menu-ink-color'),
-  ).toHaveAttribute("data-text", "プライバシーポリシー");
+    dialog.locator(".menu-ink-color, .nav-en-color, .menu-ink-band"),
+  ).toHaveCount(0);
+  await expect(
+    dialog.locator('.nav-ja .menu-ink[data-text-motion="static"]'),
+  ).toHaveCount(6);
+  await expect(
+    dialog.locator('.nav-number .menu-ink[data-text-motion="static"]'),
+  ).toHaveCount(6);
+  await expect(
+    dialog.locator('.nav-en[data-text-motion="static"]'),
+  ).toHaveCount(6);
+  // The requested removal of the motion toggle leaves the privacy link.
+  await expect(
+    dialog.locator('.nav-aux .menu-ink[data-text-motion="static"]'),
+  ).toHaveCount(1);
+  await expect(
+    dialog.locator('.nav-aux a[href="/privacy"]'),
+  ).toHaveAccessibleName("プライバシーポリシー");
   await expect(
     dialog.locator('.nav-aux a[href="/privacy"] .menu-ink-base'),
   ).toHaveText("プライバシーポリシー");
   await expect(dialog.locator(".motion-control")).toHaveCount(0);
 });
 
-test("independent text rhythms keep color after the background passes, then fade slowly to black", async ({
+test("heading color outlasts its decorative band and fades while menu labels stay static", async ({
   page,
 }) => {
   await page.goto("/");
-  const title = page.locator(".wonder-type > .reveal-text").first();
+  const title = page.locator("#about .wonder-type > .reveal-text");
+  await expect(title).toHaveCount(1);
   await title.scrollIntoViewIfNeeded();
   await expect(title).toHaveAttribute("data-reveal-state", "running");
   const envelope = await title.evaluate((el) => {
@@ -103,9 +153,8 @@ test("independent text rhythms keep color after the background passes, then fade
   expect(envelope.holdAfterBand).toBeGreaterThanOrEqual(400);
   expect(envelope.holdAfterBand).toBeLessThanOrEqual(600);
   expect(envelope.fade).toBeGreaterThanOrEqual(1000);
-  // Sample at least 400ms after the last band, once the scene echo finishes.
-  // Near-zero opacity in the echo's final frame is still an active animation.
-  // These animations run in real time; no seeking or freezing is used.
+  // The timing envelope above proves the hold is 400–600ms. Sample after both
+  // decorative layers finish, using their actual completion instead of a sleep.
   const sample = await title.evaluate(async (el) => {
     const background = el.closest(".scene")!.querySelector(".color-echo")!;
     const backgroundFinished = Promise.all(
@@ -114,9 +163,8 @@ test("independent text rhythms keep color after the background passes, then fade
     const bands = [...el.querySelectorAll(".reveal-band")].flatMap((band) =>
       band.getAnimations(),
     );
-    await Promise.all(bands.map((animation) => animation.finished));
     await Promise.all([
-      new Promise((resolve) => setTimeout(resolve, 400)),
+      ...bands.map((animation) => animation.finished),
       backgroundFinished,
     ]);
     return {
@@ -134,22 +182,22 @@ test("independent text rhythms keep color after the background passes, then fade
     "rgb(20, 25, 31)",
   );
   await page.getByRole("button", { name: "メニューを開く" }).click();
-  const menu = await page.locator(".nav-en-color").evaluateAll((elements) =>
+  const menu = await page.getByRole("dialog").locator(".nav-en").evaluateAll((elements) =>
     elements.map((el) => {
-      const style = getComputedStyle(el);
-      return { duration: style.animationDuration, delay: style.animationDelay };
+      const style = getComputedStyle(el.querySelector(".nav-en-base")!);
+      return { motion: el.getAttribute("data-text-motion"), opacity: style.opacity, clipPath: style.clipPath, animations: el.getAnimations({ subtree: true }).length };
     }),
   );
-  expect(new Set(menu.map((m) => m.delay)).size).toBeGreaterThanOrEqual(4);
-  expect(new Set(menu.map((m) => m.duration)).size).toBeGreaterThanOrEqual(4);
+  expect(menu).toHaveLength(6);
+  expect(menu).toEqual(Array.from({ length: 6 }, () => ({ motion: "static", opacity: "1", clipPath: "none", animations: 0 })));
 });
 
-test("scrolled headings vary palettes without hydration mismatch while the hero stays still", async ({
+test("heading and band palettes stay fixed across random seeds while the hero stays still", async ({
   browser,
 }) => {
   const colors: string[] = [];
-  // Exercise both ends of the random selector deterministically. This verifies
-  // selection behavior without making a flaky claim that random draws differ.
+  // Scene and image effects may still choose palettes randomly. Headings and
+  // their bands must keep their authored palettes at either end of that range.
   for (const seed of [0.01, 0.99]) {
     const context = await browser.newContext({
       viewport: { width: 1440, height: 900 },
@@ -161,25 +209,31 @@ test("scrolled headings vary palettes without hydration mismatch while the hero 
     const errors: string[] = [];
     page.on("pageerror", (error) => errors.push(error.message));
     await page.goto("http://127.0.0.1:3017/");
-    const title = page.locator(".hero h1 .reveal-text").first();
-    await expect(title).toHaveAttribute("data-entered", "true");
+    const heroLines = page.locator(".hero h1 .reveal-text");
+    await expect(heroLines).toHaveCount(2);
+    await expect(heroLines.nth(0)).toHaveAttribute("data-entered", "true");
+    await expect(heroLines.nth(1)).toHaveAttribute("data-entered", "true");
     await expect(page.locator(".site-opening")).not.toBeVisible();
     expect(
-      await title.evaluate((el) => el.getAnimations({ subtree: true }).length),
-    ).toBe(0);
-    await expect(title.locator(".reveal-band")).toHaveCount(0);
-    await expect(title).toHaveAttribute("data-palette", "sky");
-    const philosophy = page.locator(".wonder-type > .reveal-text").first();
+      await heroLines.evaluateAll((elements) => elements.map((el) => el.getAnimations({ subtree: true }).length)),
+    ).toEqual([0, 0]);
+    await expect(heroLines.locator(".reveal-band")).toHaveCount(0);
+    await expect(heroLines.nth(0)).toHaveAttribute("data-palette", "sky");
+    await expect(heroLines.nth(1)).toHaveAttribute("data-palette", "iris");
+    const philosophy = page.locator("#about .wonder-type > .reveal-text");
+    await expect(philosophy).toHaveCount(1);
     await philosophy.scrollIntoViewIfNeeded();
     await expect(philosophy).toHaveAttribute("data-entered", "true");
+    await expect(philosophy).toHaveAttribute("data-reveal-state", "running");
     colors.push((await philosophy.getAttribute("data-palette"))!);
-    const bandPalette = await philosophy
-      .locator(".reveal-band")
-      .first()
-      .getAttribute("data-palette");
-    expect(bandPalette).not.toBe(await philosophy.getAttribute("data-palette"));
+    const bandPalettes = await philosophy.locator(".reveal-band").evaluateAll((elements) => elements.map((el) => el.getAttribute("data-palette")));
+    expect(bandPalettes.length).toBeGreaterThan(0);
+    expect(bandPalettes.every((palette) => palette === "sky")).toBe(true);
+    await expect(philosophy).toHaveAttribute("data-reveal-state", "settled");
+    await expect(philosophy.locator(".reveal-band")).toHaveCount(0);
+    await expect(philosophy.locator(".reveal-source")).toBeVisible();
     expect(errors).toEqual([]);
     await context.close();
   }
-  expect(new Set(colors).size).toBe(2);
+  expect(colors).toEqual(["sky", "sky"]);
 });

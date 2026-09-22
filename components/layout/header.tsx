@@ -24,7 +24,6 @@ import { Wordmark } from "@/components/wordmark";
 import { motionToken } from "@/components/motion/tokens";
 import { RevealText } from "@/components/motion/reveal-text";
 import { MenuInk } from "@/components/motion/menu-ink";
-import { randomPalette, type Palette } from "@/components/motion/entrance";
 
 const subscribeHydration = () => () => {};
 const clientReady = () => true;
@@ -137,16 +136,6 @@ export function Header({
       overflow: "hidden",
     });
     try {
-      dialog.current
-        .querySelectorAll<HTMLElement>(".menu-ink")
-        .forEach((ink) => {
-          ink.dataset.palette = randomPalette(ink.dataset.palette as Palette);
-          const wipe = ink.querySelector<HTMLElement>(".menu-ink-wipe");
-          if (wipe)
-            wipe.dataset.palette = randomPalette(
-              ink.dataset.palette as Palette,
-            );
-        });
       dialog.current.showModal();
       setOpen(true);
     } catch {
@@ -212,17 +201,20 @@ export function Header({
           <Wordmark />
         </Link>
         <nav className="header-shortcuts" aria-label={labels.primaryNav}>
-          {navigation
-            .filter((item) =>
-              ["company", "contact"].some(
-                (key) => item.href === localizedPath("/" + key, locale),
-              ),
-            )
-            .map((item) => (
-              <Link key={item.href} href={item.href}>
+          {["business", "about", "company"].map((key) => {
+            const item = navigation.find(
+              (entry) => entry.href === localizedPath("/" + key, locale),
+            )!;
+            return (
+              <Link
+                key={item.href}
+                href={item.href}
+                aria-current={path === item.href ? "page" : undefined}
+              >
                 <RevealText kind="utility">{item.label}</RevealText>
               </Link>
-            ))}
+            );
+          })}
         </nav>
         <LanguageSwitcher
           locale={locale}
