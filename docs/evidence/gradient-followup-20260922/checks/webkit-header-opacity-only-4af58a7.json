@@ -1,0 +1,5137 @@
+{
+  "source": "4af58a7d7ff7320f3bd6f7568c1b3b1d7042cdbd",
+  "recordedAt": "2026-09-22T09:45:47.300Z",
+  "runtime": "http://127.0.0.1:3017",
+  "browser": "WebKit iPhone 13 390x844 DPR3",
+  "fontDelayMs": 800,
+  "result": {
+    "name": "header-waapi-opacity-only",
+    "diagnosticOnly": true,
+    "override": "Element.animate header reveal-color: remove backgroundPosition from every keyframe; retain opacity/offset/easing/timing",
+    "recordVideo": true,
+    "frameCount": 36,
+    "elapsedMs": 2322,
+    "meanFrameIntervalMs": 66.31428571428572,
+    "maxFrameIntervalMs": 89,
+    "positionCount": 1,
+    "heroActiveMax": 0,
+    "frames": [
+      {
+        "elapsed": 1,
+        "rect": [
+          24,
+          154.09375,
+          342,
+          94.125
+        ],
+        "heroActive": 0,
+        "headerActive": 3,
+        "headerOverlays": [
+          {
+            "text": "Our business",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "About us",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "Company information",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "日本語",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.063441712926249,
+                  "computedOffset": 0.063441712926249,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.535289452815226,
+                  "computedOffset": 0.535289452815226,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "English",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.06858122588941278,
+                  "computedOffset": 0.06858122588941278,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5529361337333905,
+                  "computedOffset": 0.5529361337333905,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "Menu",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.0667779632721202,
+                  "computedOffset": 0.0667779632721202,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5467445742904842,
+                  "computedOffset": 0.5467445742904842,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "elapsed": 64,
+        "rect": [
+          24,
+          154.09375,
+          342,
+          94.125
+        ],
+        "heroActive": 0,
+        "headerActive": 3,
+        "headerOverlays": [
+          {
+            "text": "Our business",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "About us",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "Company information",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "日本語",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.063441712926249,
+                  "computedOffset": 0.063441712926249,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.535289452815226,
+                  "computedOffset": 0.535289452815226,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "English",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.06858122588941278,
+                  "computedOffset": 0.06858122588941278,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5529361337333905,
+                  "computedOffset": 0.5529361337333905,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "Menu",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.0667779632721202,
+                  "computedOffset": 0.0667779632721202,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5467445742904842,
+                  "computedOffset": 0.5467445742904842,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "elapsed": 124,
+        "rect": [
+          24,
+          154.09375,
+          342,
+          94.125
+        ],
+        "heroActive": 0,
+        "headerActive": 3,
+        "headerOverlays": [
+          {
+            "text": "Our business",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "About us",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "Company information",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "日本語",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.063441712926249,
+                  "computedOffset": 0.063441712926249,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.535289452815226,
+                  "computedOffset": 0.535289452815226,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "English",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.06858122588941278,
+                  "computedOffset": 0.06858122588941278,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5529361337333905,
+                  "computedOffset": 0.5529361337333905,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "Menu",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.0667779632721202,
+                  "computedOffset": 0.0667779632721202,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5467445742904842,
+                  "computedOffset": 0.5467445742904842,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "elapsed": 185,
+        "rect": [
+          24,
+          154.09375,
+          342,
+          94.125
+        ],
+        "heroActive": 0,
+        "headerActive": 3,
+        "headerOverlays": [
+          {
+            "text": "Our business",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "About us",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "Company information",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "日本語",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.063441712926249,
+                  "computedOffset": 0.063441712926249,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.535289452815226,
+                  "computedOffset": 0.535289452815226,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "English",
+            "opacity": "0.509462",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.06858122588941278,
+                  "computedOffset": 0.06858122588941278,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5529361337333905,
+                  "computedOffset": 0.5529361337333905,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "Menu",
+            "opacity": "0.189146",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.0667779632721202,
+                  "computedOffset": 0.0667779632721202,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5467445742904842,
+                  "computedOffset": 0.5467445742904842,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "elapsed": 246,
+        "rect": [
+          24,
+          154.09375,
+          342,
+          94.125
+        ],
+        "heroActive": 0,
+        "headerActive": 3,
+        "headerOverlays": [
+          {
+            "text": "Our business",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "About us",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "Company information",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "日本語",
+            "opacity": "0.062123",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.063441712926249,
+                  "computedOffset": 0.063441712926249,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.535289452815226,
+                  "computedOffset": 0.535289452815226,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "English",
+            "opacity": "0.893545",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.06858122588941278,
+                  "computedOffset": 0.06858122588941278,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5529361337333905,
+                  "computedOffset": 0.5529361337333905,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "Menu",
+            "opacity": "0.684643",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.0667779632721202,
+                  "computedOffset": 0.0667779632721202,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5467445742904842,
+                  "computedOffset": 0.5467445742904842,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "elapsed": 306,
+        "rect": [
+          24,
+          154.09375,
+          342,
+          94.125
+        ],
+        "heroActive": 0,
+        "headerActive": 3,
+        "headerOverlays": [
+          {
+            "text": "Our business",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "About us",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "Company information",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "日本語",
+            "opacity": "0.585775",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.063441712926249,
+                  "computedOffset": 0.063441712926249,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.535289452815226,
+                  "computedOffset": 0.535289452815226,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "English",
+            "opacity": "1",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.06858122588941278,
+                  "computedOffset": 0.06858122588941278,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5529361337333905,
+                  "computedOffset": 0.5529361337333905,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "Menu",
+            "opacity": "0.974015",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.0667779632721202,
+                  "computedOffset": 0.0667779632721202,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5467445742904842,
+                  "computedOffset": 0.5467445742904842,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "elapsed": 368,
+        "rect": [
+          24,
+          154.09375,
+          342,
+          94.125
+        ],
+        "heroActive": 0,
+        "headerActive": 3,
+        "headerOverlays": [
+          {
+            "text": "Our business",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "About us",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "Company information",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "日本語",
+            "opacity": "0.941243",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.063441712926249,
+                  "computedOffset": 0.063441712926249,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.535289452815226,
+                  "computedOffset": 0.535289452815226,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "English",
+            "opacity": "1",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.06858122588941278,
+                  "computedOffset": 0.06858122588941278,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5529361337333905,
+                  "computedOffset": 0.5529361337333905,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "Menu",
+            "opacity": "1",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.0667779632721202,
+                  "computedOffset": 0.0667779632721202,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5467445742904842,
+                  "computedOffset": 0.5467445742904842,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "elapsed": 431,
+        "rect": [
+          24,
+          154.09375,
+          342,
+          94.125
+        ],
+        "heroActive": 0,
+        "headerActive": 3,
+        "headerOverlays": [
+          {
+            "text": "Our business",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "About us",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "Company information",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "日本語",
+            "opacity": "1",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.063441712926249,
+                  "computedOffset": 0.063441712926249,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.535289452815226,
+                  "computedOffset": 0.535289452815226,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "English",
+            "opacity": "1",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.06858122588941278,
+                  "computedOffset": 0.06858122588941278,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5529361337333905,
+                  "computedOffset": 0.5529361337333905,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "Menu",
+            "opacity": "1",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.0667779632721202,
+                  "computedOffset": 0.0667779632721202,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5467445742904842,
+                  "computedOffset": 0.5467445742904842,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "elapsed": 494,
+        "rect": [
+          24,
+          154.09375,
+          342,
+          94.125
+        ],
+        "heroActive": 0,
+        "headerActive": 3,
+        "headerOverlays": [
+          {
+            "text": "Our business",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "About us",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "Company information",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "日本語",
+            "opacity": "1",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.063441712926249,
+                  "computedOffset": 0.063441712926249,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.535289452815226,
+                  "computedOffset": 0.535289452815226,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "English",
+            "opacity": "1",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.06858122588941278,
+                  "computedOffset": 0.06858122588941278,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5529361337333905,
+                  "computedOffset": 0.5529361337333905,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "Menu",
+            "opacity": "1",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.0667779632721202,
+                  "computedOffset": 0.0667779632721202,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5467445742904842,
+                  "computedOffset": 0.5467445742904842,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "elapsed": 560,
+        "rect": [
+          24,
+          154.09375,
+          342,
+          94.125
+        ],
+        "heroActive": 0,
+        "headerActive": 3,
+        "headerOverlays": [
+          {
+            "text": "Our business",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "About us",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "Company information",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "日本語",
+            "opacity": "1",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.063441712926249,
+                  "computedOffset": 0.063441712926249,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.535289452815226,
+                  "computedOffset": 0.535289452815226,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "English",
+            "opacity": "1",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.06858122588941278,
+                  "computedOffset": 0.06858122588941278,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5529361337333905,
+                  "computedOffset": 0.5529361337333905,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "Menu",
+            "opacity": "1",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.0667779632721202,
+                  "computedOffset": 0.0667779632721202,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5467445742904842,
+                  "computedOffset": 0.5467445742904842,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "elapsed": 629,
+        "rect": [
+          24,
+          154.09375,
+          342,
+          94.125
+        ],
+        "heroActive": 0,
+        "headerActive": 3,
+        "headerOverlays": [
+          {
+            "text": "Our business",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "About us",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "Company information",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "日本語",
+            "opacity": "1",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.063441712926249,
+                  "computedOffset": 0.063441712926249,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.535289452815226,
+                  "computedOffset": 0.535289452815226,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "English",
+            "opacity": "1",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.06858122588941278,
+                  "computedOffset": 0.06858122588941278,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5529361337333905,
+                  "computedOffset": 0.5529361337333905,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "Menu",
+            "opacity": "1",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.0667779632721202,
+                  "computedOffset": 0.0667779632721202,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5467445742904842,
+                  "computedOffset": 0.5467445742904842,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "elapsed": 702,
+        "rect": [
+          24,
+          154.09375,
+          342,
+          94.125
+        ],
+        "heroActive": 0,
+        "headerActive": 3,
+        "headerOverlays": [
+          {
+            "text": "Our business",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "About us",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "Company information",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "日本語",
+            "opacity": "1",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.063441712926249,
+                  "computedOffset": 0.063441712926249,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.535289452815226,
+                  "computedOffset": 0.535289452815226,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "English",
+            "opacity": "1",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.06858122588941278,
+                  "computedOffset": 0.06858122588941278,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5529361337333905,
+                  "computedOffset": 0.5529361337333905,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "Menu",
+            "opacity": "1",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.0667779632721202,
+                  "computedOffset": 0.0667779632721202,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5467445742904842,
+                  "computedOffset": 0.5467445742904842,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "elapsed": 774,
+        "rect": [
+          24,
+          154.09375,
+          342,
+          94.125
+        ],
+        "heroActive": 0,
+        "headerActive": 3,
+        "headerOverlays": [
+          {
+            "text": "Our business",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "About us",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "Company information",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "日本語",
+            "opacity": "1",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.063441712926249,
+                  "computedOffset": 0.063441712926249,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.535289452815226,
+                  "computedOffset": 0.535289452815226,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "English",
+            "opacity": "1",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.06858122588941278,
+                  "computedOffset": 0.06858122588941278,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5529361337333905,
+                  "computedOffset": 0.5529361337333905,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "Menu",
+            "opacity": "1",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.0667779632721202,
+                  "computedOffset": 0.0667779632721202,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5467445742904842,
+                  "computedOffset": 0.5467445742904842,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "elapsed": 854,
+        "rect": [
+          24,
+          154.09375,
+          342,
+          94.125
+        ],
+        "heroActive": 0,
+        "headerActive": 3,
+        "headerOverlays": [
+          {
+            "text": "Our business",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "About us",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "Company information",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "日本語",
+            "opacity": "1",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.063441712926249,
+                  "computedOffset": 0.063441712926249,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.535289452815226,
+                  "computedOffset": 0.535289452815226,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "English",
+            "opacity": "1",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.06858122588941278,
+                  "computedOffset": 0.06858122588941278,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5529361337333905,
+                  "computedOffset": 0.5529361337333905,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "Menu",
+            "opacity": "1",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.0667779632721202,
+                  "computedOffset": 0.0667779632721202,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5467445742904842,
+                  "computedOffset": 0.5467445742904842,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "elapsed": 925,
+        "rect": [
+          24,
+          154.09375,
+          342,
+          94.125
+        ],
+        "heroActive": 0,
+        "headerActive": 3,
+        "headerOverlays": [
+          {
+            "text": "Our business",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "About us",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "Company information",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "日本語",
+            "opacity": "1",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.063441712926249,
+                  "computedOffset": 0.063441712926249,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.535289452815226,
+                  "computedOffset": 0.535289452815226,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "English",
+            "opacity": "1",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.06858122588941278,
+                  "computedOffset": 0.06858122588941278,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5529361337333905,
+                  "computedOffset": 0.5529361337333905,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "Menu",
+            "opacity": "1",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.0667779632721202,
+                  "computedOffset": 0.0667779632721202,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5467445742904842,
+                  "computedOffset": 0.5467445742904842,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "elapsed": 988,
+        "rect": [
+          24,
+          154.09375,
+          342,
+          94.125
+        ],
+        "heroActive": 0,
+        "headerActive": 3,
+        "headerOverlays": [
+          {
+            "text": "Our business",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "About us",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "Company information",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "日本語",
+            "opacity": "1",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.063441712926249,
+                  "computedOffset": 0.063441712926249,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.535289452815226,
+                  "computedOffset": 0.535289452815226,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "English",
+            "opacity": "1",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.06858122588941278,
+                  "computedOffset": 0.06858122588941278,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5529361337333905,
+                  "computedOffset": 0.5529361337333905,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "Menu",
+            "opacity": "1",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.0667779632721202,
+                  "computedOffset": 0.0667779632721202,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5467445742904842,
+                  "computedOffset": 0.5467445742904842,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "elapsed": 1049,
+        "rect": [
+          24,
+          154.09375,
+          342,
+          94.125
+        ],
+        "heroActive": 0,
+        "headerActive": 3,
+        "headerOverlays": [
+          {
+            "text": "Our business",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "About us",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "Company information",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "日本語",
+            "opacity": "1",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.063441712926249,
+                  "computedOffset": 0.063441712926249,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.535289452815226,
+                  "computedOffset": 0.535289452815226,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "English",
+            "opacity": "1",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.06858122588941278,
+                  "computedOffset": 0.06858122588941278,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5529361337333905,
+                  "computedOffset": 0.5529361337333905,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "Menu",
+            "opacity": "1",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.0667779632721202,
+                  "computedOffset": 0.0667779632721202,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5467445742904842,
+                  "computedOffset": 0.5467445742904842,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "elapsed": 1111,
+        "rect": [
+          24,
+          154.09375,
+          342,
+          94.125
+        ],
+        "heroActive": 0,
+        "headerActive": 3,
+        "headerOverlays": [
+          {
+            "text": "Our business",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "About us",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "Company information",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "日本語",
+            "opacity": "1",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.063441712926249,
+                  "computedOffset": 0.063441712926249,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.535289452815226,
+                  "computedOffset": 0.535289452815226,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "English",
+            "opacity": "1",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.06858122588941278,
+                  "computedOffset": 0.06858122588941278,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5529361337333905,
+                  "computedOffset": 0.5529361337333905,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "Menu",
+            "opacity": "1",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.0667779632721202,
+                  "computedOffset": 0.0667779632721202,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5467445742904842,
+                  "computedOffset": 0.5467445742904842,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "elapsed": 1179,
+        "rect": [
+          24,
+          154.09375,
+          342,
+          94.125
+        ],
+        "heroActive": 0,
+        "headerActive": 3,
+        "headerOverlays": [
+          {
+            "text": "Our business",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "About us",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "Company information",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "日本語",
+            "opacity": "1",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.063441712926249,
+                  "computedOffset": 0.063441712926249,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.535289452815226,
+                  "computedOffset": 0.535289452815226,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "English",
+            "opacity": "1",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.06858122588941278,
+                  "computedOffset": 0.06858122588941278,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5529361337333905,
+                  "computedOffset": 0.5529361337333905,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "Menu",
+            "opacity": "1",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.0667779632721202,
+                  "computedOffset": 0.0667779632721202,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5467445742904842,
+                  "computedOffset": 0.5467445742904842,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "elapsed": 1250,
+        "rect": [
+          24,
+          154.09375,
+          342,
+          94.125
+        ],
+        "heroActive": 0,
+        "headerActive": 3,
+        "headerOverlays": [
+          {
+            "text": "Our business",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "About us",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "Company information",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "日本語",
+            "opacity": "1",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.063441712926249,
+                  "computedOffset": 0.063441712926249,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.535289452815226,
+                  "computedOffset": 0.535289452815226,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "English",
+            "opacity": "1",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.06858122588941278,
+                  "computedOffset": 0.06858122588941278,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5529361337333905,
+                  "computedOffset": 0.5529361337333905,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "Menu",
+            "opacity": "1",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.0667779632721202,
+                  "computedOffset": 0.0667779632721202,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5467445742904842,
+                  "computedOffset": 0.5467445742904842,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "elapsed": 1318,
+        "rect": [
+          24,
+          154.09375,
+          342,
+          94.125
+        ],
+        "heroActive": 0,
+        "headerActive": 3,
+        "headerOverlays": [
+          {
+            "text": "Our business",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "About us",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "Company information",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "日本語",
+            "opacity": "1",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.063441712926249,
+                  "computedOffset": 0.063441712926249,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.535289452815226,
+                  "computedOffset": 0.535289452815226,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "English",
+            "opacity": "1",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.06858122588941278,
+                  "computedOffset": 0.06858122588941278,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5529361337333905,
+                  "computedOffset": 0.5529361337333905,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "Menu",
+            "opacity": "1",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.0667779632721202,
+                  "computedOffset": 0.0667779632721202,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5467445742904842,
+                  "computedOffset": 0.5467445742904842,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "elapsed": 1387,
+        "rect": [
+          24,
+          154.09375,
+          342,
+          94.125
+        ],
+        "heroActive": 0,
+        "headerActive": 3,
+        "headerOverlays": [
+          {
+            "text": "Our business",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "About us",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "Company information",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "日本語",
+            "opacity": "1",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.063441712926249,
+                  "computedOffset": 0.063441712926249,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.535289452815226,
+                  "computedOffset": 0.535289452815226,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "English",
+            "opacity": "1",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.06858122588941278,
+                  "computedOffset": 0.06858122588941278,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5529361337333905,
+                  "computedOffset": 0.5529361337333905,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "Menu",
+            "opacity": "1",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.0667779632721202,
+                  "computedOffset": 0.0667779632721202,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5467445742904842,
+                  "computedOffset": 0.5467445742904842,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "elapsed": 1450,
+        "rect": [
+          24,
+          154.09375,
+          342,
+          94.125
+        ],
+        "heroActive": 0,
+        "headerActive": 3,
+        "headerOverlays": [
+          {
+            "text": "Our business",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "About us",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "Company information",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "日本語",
+            "opacity": "1",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.063441712926249,
+                  "computedOffset": 0.063441712926249,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.535289452815226,
+                  "computedOffset": 0.535289452815226,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "English",
+            "opacity": "0.998308",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.06858122588941278,
+                  "computedOffset": 0.06858122588941278,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5529361337333905,
+                  "computedOffset": 0.5529361337333905,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "Menu",
+            "opacity": "1",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.0667779632721202,
+                  "computedOffset": 0.0667779632721202,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5467445742904842,
+                  "computedOffset": 0.5467445742904842,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "elapsed": 1511,
+        "rect": [
+          24,
+          154.09375,
+          342,
+          94.125
+        ],
+        "heroActive": 0,
+        "headerActive": 3,
+        "headerOverlays": [
+          {
+            "text": "Our business",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "About us",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "Company information",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "日本語",
+            "opacity": "1",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.063441712926249,
+                  "computedOffset": 0.063441712926249,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.535289452815226,
+                  "computedOffset": 0.535289452815226,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "English",
+            "opacity": "0.984387",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.06858122588941278,
+                  "computedOffset": 0.06858122588941278,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5529361337333905,
+                  "computedOffset": 0.5529361337333905,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "Menu",
+            "opacity": "0.997893",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.0667779632721202,
+                  "computedOffset": 0.0667779632721202,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5467445742904842,
+                  "computedOffset": 0.5467445742904842,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "elapsed": 1572,
+        "rect": [
+          24,
+          154.09375,
+          342,
+          94.125
+        ],
+        "heroActive": 0,
+        "headerActive": 3,
+        "headerOverlays": [
+          {
+            "text": "Our business",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "About us",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "Company information",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "日本語",
+            "opacity": "1",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.063441712926249,
+                  "computedOffset": 0.063441712926249,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.535289452815226,
+                  "computedOffset": 0.535289452815226,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "English",
+            "opacity": "0.956812",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.06858122588941278,
+                  "computedOffset": 0.06858122588941278,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5529361337333905,
+                  "computedOffset": 0.5529361337333905,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "Menu",
+            "opacity": "0.98466",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.0667779632721202,
+                  "computedOffset": 0.0667779632721202,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5467445742904842,
+                  "computedOffset": 0.5467445742904842,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "elapsed": 1633,
+        "rect": [
+          24,
+          154.09375,
+          342,
+          94.125
+        ],
+        "heroActive": 0,
+        "headerActive": 3,
+        "headerOverlays": [
+          {
+            "text": "Our business",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "About us",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "Company information",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "日本語",
+            "opacity": "0.997292",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.063441712926249,
+                  "computedOffset": 0.063441712926249,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.535289452815226,
+                  "computedOffset": 0.535289452815226,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "English",
+            "opacity": "0.913104",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.06858122588941278,
+                  "computedOffset": 0.06858122588941278,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5529361337333905,
+                  "computedOffset": 0.5529361337333905,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "Menu",
+            "opacity": "0.957536",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.0667779632721202,
+                  "computedOffset": 0.0667779632721202,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5467445742904842,
+                  "computedOffset": 0.5467445742904842,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "elapsed": 1696,
+        "rect": [
+          24,
+          154.09375,
+          342,
+          94.125
+        ],
+        "heroActive": 0,
+        "headerActive": 3,
+        "headerOverlays": [
+          {
+            "text": "Our business",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "About us",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "Company information",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "日本語",
+            "opacity": "0.983618",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.063441712926249,
+                  "computedOffset": 0.063441712926249,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.535289452815226,
+                  "computedOffset": 0.535289452815226,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "English",
+            "opacity": "0.852733",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.06858122588941278,
+                  "computedOffset": 0.06858122588941278,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5529361337333905,
+                  "computedOffset": 0.5529361337333905,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "Menu",
+            "opacity": "0.915374",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.0667779632721202,
+                  "computedOffset": 0.0667779632721202,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5467445742904842,
+                  "computedOffset": 0.5467445742904842,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "elapsed": 1760,
+        "rect": [
+          24,
+          154.09375,
+          342,
+          94.125
+        ],
+        "heroActive": 0,
+        "headerActive": 3,
+        "headerOverlays": [
+          {
+            "text": "Our business",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "About us",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "Company information",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "日本語",
+            "opacity": "0.957286",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.063441712926249,
+                  "computedOffset": 0.063441712926249,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.535289452815226,
+                  "computedOffset": 0.535289452815226,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "English",
+            "opacity": "0.775742",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.06858122588941278,
+                  "computedOffset": 0.06858122588941278,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5529361337333905,
+                  "computedOffset": 0.5529361337333905,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "Menu",
+            "opacity": "0.857339",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.0667779632721202,
+                  "computedOffset": 0.0667779632721202,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5467445742904842,
+                  "computedOffset": 0.5467445742904842,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "elapsed": 1823,
+        "rect": [
+          24,
+          154.09375,
+          342,
+          94.125
+        ],
+        "heroActive": 0,
+        "headerActive": 3,
+        "headerOverlays": [
+          {
+            "text": "Our business",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "About us",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "Company information",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "日本語",
+            "opacity": "0.918626",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.063441712926249,
+                  "computedOffset": 0.063441712926249,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.535289452815226,
+                  "computedOffset": 0.535289452815226,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "English",
+            "opacity": "0.686626",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.06858122588941278,
+                  "computedOffset": 0.06858122588941278,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5529361337333905,
+                  "computedOffset": 0.5529361337333905,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "Menu",
+            "opacity": "0.785886",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.0667779632721202,
+                  "computedOffset": 0.0667779632721202,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5467445742904842,
+                  "computedOffset": 0.5467445742904842,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "elapsed": 1888,
+        "rect": [
+          24,
+          154.09375,
+          342,
+          94.125
+        ],
+        "heroActive": 0,
+        "headerActive": 3,
+        "headerOverlays": [
+          {
+            "text": "Our business",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "About us",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "Company information",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "日本語",
+            "opacity": "0.865359",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.063441712926249,
+                  "computedOffset": 0.063441712926249,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.535289452815226,
+                  "computedOffset": 0.535289452815226,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "English",
+            "opacity": "0.584606",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.06858122588941278,
+                  "computedOffset": 0.06858122588941278,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5529361337333905,
+                  "computedOffset": 0.5529361337333905,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "Menu",
+            "opacity": "0.699089",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.0667779632721202,
+                  "computedOffset": 0.0667779632721202,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5467445742904842,
+                  "computedOffset": 0.5467445742904842,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "elapsed": 1955,
+        "rect": [
+          24,
+          154.09375,
+          342,
+          94.125
+        ],
+        "heroActive": 0,
+        "headerActive": 3,
+        "headerOverlays": [
+          {
+            "text": "Our business",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "About us",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "Company information",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "日本語",
+            "opacity": "0.796738",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.063441712926249,
+                  "computedOffset": 0.063441712926249,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.535289452815226,
+                  "computedOffset": 0.535289452815226,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "English",
+            "opacity": "0.474392",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.06858122588941278,
+                  "computedOffset": 0.06858122588941278,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5529361337333905,
+                  "computedOffset": 0.5529361337333905,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "Menu",
+            "opacity": "0.599167",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.0667779632721202,
+                  "computedOffset": 0.0667779632721202,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5467445742904842,
+                  "computedOffset": 0.5467445742904842,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "elapsed": 2019,
+        "rect": [
+          24,
+          154.09375,
+          342,
+          94.125
+        ],
+        "heroActive": 0,
+        "headerActive": 3,
+        "headerOverlays": [
+          {
+            "text": "Our business",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "About us",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "Company information",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "日本語",
+            "opacity": "0.719532",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.063441712926249,
+                  "computedOffset": 0.063441712926249,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.535289452815226,
+                  "computedOffset": 0.535289452815226,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "English",
+            "opacity": "0.370504",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.06858122588941278,
+                  "computedOffset": 0.06858122588941278,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5529361337333905,
+                  "computedOffset": 0.5529361337333905,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "Menu",
+            "opacity": "0.498412",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.0667779632721202,
+                  "computedOffset": 0.0667779632721202,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5467445742904842,
+                  "computedOffset": 0.5467445742904842,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "elapsed": 2080,
+        "rect": [
+          24,
+          154.09375,
+          342,
+          94.125
+        ],
+        "heroActive": 0,
+        "headerActive": 3,
+        "headerOverlays": [
+          {
+            "text": "Our business",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "About us",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "Company information",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "日本語",
+            "opacity": "0.637448",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.063441712926249,
+                  "computedOffset": 0.063441712926249,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.535289452815226,
+                  "computedOffset": 0.535289452815226,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "English",
+            "opacity": "0.27806",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.06858122588941278,
+                  "computedOffset": 0.06858122588941278,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5529361337333905,
+                  "computedOffset": 0.5529361337333905,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "Menu",
+            "opacity": "0.402381",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.0667779632721202,
+                  "computedOffset": 0.0667779632721202,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5467445742904842,
+                  "computedOffset": 0.5467445742904842,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "elapsed": 2152,
+        "rect": [
+          24,
+          154.09375,
+          342,
+          94.125
+        ],
+        "heroActive": 0,
+        "headerActive": 3,
+        "headerOverlays": [
+          {
+            "text": "Our business",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "About us",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "Company information",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "日本語",
+            "opacity": "0.535269",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.063441712926249,
+                  "computedOffset": 0.063441712926249,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.535289452815226,
+                  "computedOffset": 0.535289452815226,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "English",
+            "opacity": "0.183888",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.06858122588941278,
+                  "computedOffset": 0.06858122588941278,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5529361337333905,
+                  "computedOffset": 0.5529361337333905,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "Menu",
+            "opacity": "0.296654",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.0667779632721202,
+                  "computedOffset": 0.0667779632721202,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5467445742904842,
+                  "computedOffset": 0.5467445742904842,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "elapsed": 2241,
+        "rect": [
+          24,
+          154.09375,
+          342,
+          94.125
+        ],
+        "heroActive": 0,
+        "headerActive": 3,
+        "headerOverlays": [
+          {
+            "text": "Our business",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "About us",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "Company information",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "日本語",
+            "opacity": "0.403687",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.063441712926249,
+                  "computedOffset": 0.063441712926249,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.535289452815226,
+                  "computedOffset": 0.535289452815226,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "English",
+            "opacity": "0.091104",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.06858122588941278,
+                  "computedOffset": 0.06858122588941278,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5529361337333905,
+                  "computedOffset": 0.5529361337333905,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "Menu",
+            "opacity": "0.180685",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.0667779632721202,
+                  "computedOffset": 0.0667779632721202,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5467445742904842,
+                  "computedOffset": 0.5467445742904842,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "elapsed": 2322,
+        "rect": [
+          24,
+          154.09375,
+          342,
+          94.125
+        ],
+        "heroActive": 0,
+        "headerActive": 3,
+        "headerOverlays": [
+          {
+            "text": "Our business",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "About us",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "Company information",
+            "opacity": "0",
+            "backgroundPosition": "0% 50%",
+            "effects": []
+          },
+          {
+            "text": "日本語",
+            "opacity": "0.293424",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.063441712926249,
+                  "computedOffset": 0.063441712926249,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.535289452815226,
+                  "computedOffset": 0.535289452815226,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "English",
+            "opacity": "0.036",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.06858122588941278,
+                  "computedOffset": 0.06858122588941278,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5529361337333905,
+                  "computedOffset": 0.5529361337333905,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          },
+          {
+            "text": "Menu",
+            "opacity": "0.100267",
+            "backgroundPosition": "0% 50%",
+            "effects": [
+              [
+                {
+                  "composite": "auto",
+                  "easing": "ease-out",
+                  "offset": null,
+                  "computedOffset": 0,
+                  "opacity": "0"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": 0.0667779632721202,
+                  "computedOffset": 0.0667779632721202,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "ease-in-out",
+                  "offset": 0.5467445742904842,
+                  "computedOffset": 0.5467445742904842,
+                  "opacity": "1"
+                },
+                {
+                  "composite": "auto",
+                  "easing": "linear",
+                  "offset": null,
+                  "computedOffset": 1,
+                  "opacity": "0"
+                }
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "fonts": "loaded",
+    "scrollY": 0,
+    "wrappedCalls": 3,
+    "video": "C:\\Users\\taisa\\Desktop\\corporate-readability-20260922\\.local\\gradient-paint-diagnostics\\page@e5dcff0f8eefb42a4ba2bb2101580cb4.webm"
+  }
+}

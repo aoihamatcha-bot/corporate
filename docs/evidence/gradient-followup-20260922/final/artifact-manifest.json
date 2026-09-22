@@ -1,0 +1,86 @@
+{
+  "sourceHead": "a58d9d7ef97fa218506a4feb5e364cd11d31d424",
+  "buildId": "Wdc_zTNX4t7zHF0FLGcpR",
+  "files": [
+    {
+      "name": "en-1440-about-intro.png",
+      "bytes": 456814,
+      "sha256": "d945bbb454342c23d37794ae6c413ba08bdc652fe1dbd0caf134ba6666284a2d"
+    },
+    {
+      "name": "en-1440-hero.png",
+      "bytes": 1141245,
+      "sha256": "c7d61e187444525711412db2e9b09b2bfb331a2c5b7953e930d8a0540c57deba"
+    },
+    {
+      "name": "en-390-about-intro.png",
+      "bytes": 75644,
+      "sha256": "5a50bd196fc080ecb2a4eedafd242d6599f3ebf0e2dd89e382723e54da68b7e5"
+    },
+    {
+      "name": "en-390-hero.png",
+      "bytes": 205922,
+      "sha256": "7dbcd80182e23b7509d1e31367d7ac46c7b6b9771debd975fd084f6967468c6d"
+    },
+    {
+      "name": "ja-1440-about-intro-active-diagnostic.png",
+      "bytes": 467284,
+      "sha256": "3bbbb4bb71863ed06a686a782e08ad90b00b7a472c4102caa9d0b39e3578730c"
+    },
+    {
+      "name": "ja-1440-about-intro.png",
+      "bytes": 460700,
+      "sha256": "cf63fc61002b0f856d0020bdadcf27f8f5eb3fa82ce4f07ddc61313a8595c4dc"
+    },
+    {
+      "name": "ja-1440-body-color-plateau-diagnostic.png",
+      "bytes": 461993,
+      "sha256": "74378795a1d95c6a1f0b6f242c32ca2330f9d59265e0d66d82d4aa1516ab98ee"
+    },
+    {
+      "name": "ja-1440-hero.png",
+      "bytes": 1133407,
+      "sha256": "28cf6cfd3f9cba214e5760066ba1cd5bc1c5b75a6fa544c5fd5fdc2e68579557"
+    },
+    {
+      "name": "ja-1440-home-about-active-diagnostic.png",
+      "bytes": 808471,
+      "sha256": "3b2f6b9cbb3dfff29043f5d0e02511d9858717d69296e1946c9c154dbc52580a"
+    },
+    {
+      "name": "ja-1440-menu-label-color-plateau-diagnostic.png",
+      "bytes": 460523,
+      "sha256": "53f87006494a4126aec4e3a88d1963fe53d773f1b04579b1d98fb347f1349913"
+    },
+    {
+      "name": "ja-390-about-intro.png",
+      "bytes": 86272,
+      "sha256": "85fe9e237cade162e4bd6970a24a7867b0cfdcbd7a43fbbdcaf5091bdaea94b5"
+    },
+    {
+      "name": "ja-390-body-color-plateau-diagnostic.png",
+      "bytes": 87133,
+      "sha256": "8fd9d4d195d55076d306e1e60705e2a6a992ee67e50e47bda3e6e3f500cf8f55"
+    },
+    {
+      "name": "ja-390-body-natural.webm",
+      "bytes": 334876,
+      "sha256": "194d672c98054d0ed0d916bbe0e6ef2b361898c15de45a74c21e841771e2e7a2"
+    },
+    {
+      "name": "ja-390-hero.png",
+      "bytes": 199473,
+      "sha256": "9cbe9287660e78d00c4dcdefd26602a0d5af451f2a2deee108d91545896f8b5b"
+    },
+    {
+      "name": "ja-390-menu-label-color-plateau-diagnostic.png",
+      "bytes": 151618,
+      "sha256": "2a920beacd63e25dcea116a6dd866411d79954ec39ab02b8a9cb77e64dced129"
+    },
+    {
+      "name": "ja-390-menu-natural.webm",
+      "bytes": 802948,
+      "sha256": "1fcd12fd2b9b7b2dac8a76d5bb5e1e74da08ae85b837b62eb3c32345a15a7d26"
+    }
+  ]
+}

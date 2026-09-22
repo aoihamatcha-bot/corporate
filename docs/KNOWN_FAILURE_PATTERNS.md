@@ -35,3 +35,26 @@ This registry records reproduced Corporate implementation failures. It does not 
 - Correction: keep the authored Scene palette, soften finite background washes, and keep text/image decorations independent from the resting surface. Review siblings that combine fixed gradients with inherited palette variables.
 - Separate composition issue: Hero's full shade and bottom pseudo-element compounded to roughly 97% white at the mobile bottom edge. Keep the full reading shade and remove the redundant bottom layer; do not reduce text contrast to expose the picture.
 - Regression: `gradient-surfaces.spec.ts` verifies stable backgrounds at both ends of the random range, finite feathered washes, one Hero shade, and static gradient text with Forced Colors fallback. Before runtime binding and computed backgrounds are retained under `evidence/gradient-followup-20260922/before/`.
+
+## CORP-005 — WebKit keyframe serialization can differ from effective paint
+
+- Confirmed on source `4af58a7` with Playwright WebKit: a CSS opacity keyframe using `var(--scene-wash-opacity)` was returned as `"0"` by `KeyframeEffect.getKeyframes()`, while seeking the same effect and reading computed opacity produced the intended maximum of `0.28`.
+- Evidence: `evidence/gradient-followup-20260922/checks/webkit-wash-diagnostic.json` records both the serialized frames and the effective samples on the unchanged runtime.
+- Correction: preserve the actual maximum-opacity assertion, seek the finite effect at 1% intervals, and inspect the browser's effective computed style. Do not alter the visual requirement to match incomplete inspection metadata.
+- Related tests: avoid assuming every browser serializes CSS custom-property keyframes identically.
+
+### Independent harness correction — symmetric whitespace comparison
+
+- The initial `4af58a7` run also failed the all-authored-text audit in three browser configurations on `/en/contact`. The audit trimmed the source text but compared it with the raw overlay text. The trailing space before the inline Privacy link is required sentence spacing; the implementation preserved the same string in both layers.
+- Correction: compare raw source text with raw overlay text. Do not remove the content's space or normalize only one side. This harness defect is separate from WebKit keyframe serialization and CORP-006's rendering diagnosis.
+- Initial evidence: `evidence/gradient-followup-20260922/checks/e2e-full-first.json` and `failure-summary.json`. Preserve the original failures after correcting the assertion.
+
+## CORP-006 — Moving text gradients in the sticky header reduce WebKit frame sampling
+
+- Confirmed in local diagnostics on source `4af58a7d7ff7320f3bd6f7568c1b3b1d7042cdbd`, using Playwright WebKit with iPhone 13 emulation (390×844, DPR 3), an 800ms font delay and video recording. Hero itself had no active animation and retained one measured position, but the sticky header's color overlays were still animating their gradient background positions.
+- Root cause: the header's moving text-gradient backgrounds introduced rendering work that reduced animation-frame sampling in this harness. The original video run collected 19 rAF samples in 2318ms; hiding the header color overlays collected 101 in 2308ms. Removing the pseudo-element filter, adding `will-change: opacity`, or making the header background opaque did not materially improve the original result.
+- The decisive override removed `backgroundPosition` from the actual `Element.animate` keyframes while preserving opacity, offsets, easing and timing. With the color overlays retained, it collected 36 samples in 2322ms. A CSS background-position override alone did not establish that the running WAAPI effect had changed; inspect the actual effect keyframes.
+- Correction: keep the complete static palette at 100% background width and animate only opacity in non-heading `ColorText` and `MenuInk`. Preserve finite color appearance, hold and fade, always-visible source text, menu replay and accessibility fallbacks. The shared correction includes header, body, utility and menu uses; heading band motion remains separate.
+- Evidence: `evidence/gradient-followup-20260922/checks/webkit-header-color-video-ab-4af58a7.json`, `webkit-header-compositing-ab-4af58a7.json`, and `webkit-header-opacity-only-4af58a7.json`. These are diagnostic interventions on the recorded source, not acceptance results for the final implementation, real-device performance measurements, field performance or INP evidence.
+- Failure history: the initial full run recorded 189 PASS / 6 FAIL out of 195. Two failures were WebKit Hero sampling checks. The source-unchanged Hero reproduction recorded 1 PASS / 1 FAIL: JA recovered on manual retry and is FLAKY; EN still failed. The other four initial failures were the independent harness issues recorded under CORP-005. Do not relabel the manual recovery as an initial PASS, weaken the sampling assertion, or replace this history with later results.
+- Regression: retain the original Hero stability and sampling checks, verify finite opacity-only decoration keyframes for both text implementations, and exercise the existing Reduced Motion/API-failure fallbacks. Final implementation results belong in the follow-up evidence with their own source binding.
