@@ -1,0 +1,473 @@
+{
+  "stage": "before",
+  "builtSource": "12fbd2811749d1d4d26290efcc10252fa10a379e",
+  "startedAt": "2026-09-30T00:43:52.622Z",
+  "gitHead": "12fbd2811749d1d4d26290efcc10252fa10a379e",
+  "sourceChanges": "components/motion/count-up.tsx\ncomponents/motion/entrance.ts\ncomponents/motion/hero-headline.tsx\ncomponents/motion/menu-ink.tsx\ncomponents/motion/reveal-text.tsx\ncomponents/motion/text-rhythm.ts\nstyles/motion.css\nstyles/storyboard.css\ntests/e2e/afterglow.spec.ts\ntests/e2e/gradient-surfaces.spec.ts\ntests/e2e/hero-v4.spec.ts\ntests/e2e/motion.spec.ts\ntests/e2e/revision-v3.spec.ts",
+  "runtimeBefore": {
+    "buildId": "Wdc_zTNX4t7zHF0FLGcpR",
+    "sha256": "304d4550fb7817c812a498bc25dedc4f7bb9e6e9572ac347e3e8ce8b99b2ac9c",
+    "scope": "Sorted .next/static, .next/server, BUILD_ID paths + NUL + bytes + NUL"
+  },
+  "conditions": "LOCAL Chromium, normal motion, 1440x1000 / 390x844, scale1. Entry PNGs seek only decorative band/color effects; settled Hero is natural. Videos use natural timing without overrides. No performance claim.",
+  "screenshots": [
+    {
+      "filename": "ja-1440-body-entry-diagnostic.png",
+      "state": {
+        "bandCount": 0,
+        "bands": [],
+        "sources": [
+          {
+            "text": "MYSTENAがサービスづくりで大切にする考え方をご紹介します。",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          }
+        ]
+      }
+    },
+    {
+      "filename": "en-1440-body-entry-diagnostic.png",
+      "state": {
+        "bandCount": 0,
+        "bands": [],
+        "sources": [
+          {
+            "text": "Discover the principles that guide how MYSTENA plans and builds services.",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          }
+        ]
+      }
+    },
+    {
+      "filename": "ja-1440-menu-entry-diagnostic.png",
+      "state": {
+        "bandCount": 0,
+        "bands": [],
+        "sources": [
+          {
+            "text": "閉じる",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "01",
+            "opacity": "1",
+            "color": "rgb(62, 77, 96)",
+            "clip": "none"
+          },
+          {
+            "text": "Home",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "トップ",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "02",
+            "opacity": "1",
+            "color": "rgb(88, 68, 141)",
+            "clip": "none"
+          },
+          {
+            "text": "About",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "私たちについて",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "03",
+            "opacity": "1",
+            "color": "rgb(62, 77, 96)",
+            "clip": "none"
+          },
+          {
+            "text": "Business",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "事業紹介",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "04",
+            "opacity": "1",
+            "color": "rgb(62, 77, 96)",
+            "clip": "none"
+          },
+          {
+            "text": "News",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "お知らせ",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "05",
+            "opacity": "1",
+            "color": "rgb(62, 77, 96)",
+            "clip": "none"
+          },
+          {
+            "text": "Company",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "会社概要",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "06",
+            "opacity": "1",
+            "color": "rgb(62, 77, 96)",
+            "clip": "none"
+          },
+          {
+            "text": "Contact",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "お問い合わせ",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "日本語",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "English",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "MYSTENAの事業と会社情報",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "お問い合わせ",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "プライバシーポリシー",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "MYSTENA",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "MYSTENAの事業をご紹介します。",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          }
+        ]
+      }
+    },
+    {
+      "filename": "ja-1440-hero-settled.png"
+    },
+    {
+      "filename": "ja-390-body-entry-diagnostic.png",
+      "state": {
+        "bandCount": 0,
+        "bands": [],
+        "sources": [
+          {
+            "text": "MYSTENAがサービスづくりで大切にする考え方をご紹介します。",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          }
+        ]
+      }
+    },
+    {
+      "filename": "en-390-body-entry-diagnostic.png",
+      "state": {
+        "bandCount": 0,
+        "bands": [],
+        "sources": [
+          {
+            "text": "Discover the principles that guide how MYSTENA plans and builds services.",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          }
+        ]
+      }
+    },
+    {
+      "filename": "ja-390-menu-entry-diagnostic.png",
+      "state": {
+        "bandCount": 0,
+        "bands": [],
+        "sources": [
+          {
+            "text": "閉じる",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "01",
+            "opacity": "1",
+            "color": "rgb(62, 77, 96)",
+            "clip": "none"
+          },
+          {
+            "text": "Home",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "トップ",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "02",
+            "opacity": "1",
+            "color": "rgb(88, 68, 141)",
+            "clip": "none"
+          },
+          {
+            "text": "About",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "私たちについて",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "03",
+            "opacity": "1",
+            "color": "rgb(62, 77, 96)",
+            "clip": "none"
+          },
+          {
+            "text": "Business",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "事業紹介",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "04",
+            "opacity": "1",
+            "color": "rgb(62, 77, 96)",
+            "clip": "none"
+          },
+          {
+            "text": "News",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "お知らせ",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "05",
+            "opacity": "1",
+            "color": "rgb(62, 77, 96)",
+            "clip": "none"
+          },
+          {
+            "text": "Company",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "会社概要",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "06",
+            "opacity": "1",
+            "color": "rgb(62, 77, 96)",
+            "clip": "none"
+          },
+          {
+            "text": "Contact",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "お問い合わせ",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "日本語",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "English",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "MYSTENAの事業と会社情報",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "お問い合わせ",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "プライバシーポリシー",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "MYSTENA",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "MYSTENAの事業をご紹介します。",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          }
+        ]
+      }
+    },
+    {
+      "filename": "ja-390-hero-settled.png"
+    }
+  ],
+  "videos": [],
+  "errors": [],
+  "servedFiles": {
+    "/_next/static/chunks/0jyuogcdqgccv.css": {
+      "sha256": "fbb36bb7cbe30c5778efce7f1edf2549e1664f75c691be489be9156851733453",
+      "matches": true
+    },
+    "/_next/static/chunks/1z-xggtq725gx.css": {
+      "sha256": "0d2597cce400a5f641ce221ba7618823b6335a4980515d35283e1c3c0c1506f1",
+      "matches": true
+    },
+    "/_next/static/chunks/0jvhpaew_uadu.js": {
+      "sha256": "a10568306b34908511b49eb596785512026fba4f2d605bd6406696b9fd767c74",
+      "matches": true
+    },
+    "/_next/static/chunks/turbopack-2toht04gw2bph.js": {
+      "sha256": "e8464806f4b3b5956c9f6771aa9d488ac2e7d3fe56ebee214d665362273d0fed",
+      "matches": true
+    },
+    "/_next/static/chunks/19mx3mg6lkumu.js": {
+      "sha256": "170f3982866674a829571beec30cc23c69fcd36196739ff34b9d586b3ad73cd7",
+      "matches": true
+    },
+    "/_next/static/chunks/2h4jg48zseajw.js": {
+      "sha256": "e235492b54ecda67a6b3e900ce6031006c733c38baab57550126d6348584fae5",
+      "matches": true
+    },
+    "/_next/static/chunks/3h9c8d-4nkjm4.js": {
+      "sha256": "a0894781d11b5c67c3e357e3e1e8efe7f20894d14126e818d4311e13a2367833",
+      "matches": true
+    },
+    "/_next/static/chunks/3dt_d0co70off.js": {
+      "sha256": "1a00c71e77fd371e681cf61d8ef32ba116e56c461a936a58119076ec4d082db1",
+      "matches": true
+    },
+    "/_next/static/chunks/2-rtuqsgzmno4.js": {
+      "sha256": "4d2bfb13eedd0cf43d07810d7790ce423e01097d1406ef604e7c4f3ab4db8d79",
+      "matches": true
+    },
+    "/_next/static/chunks/33wmmxu2kkyqh.js": {
+      "sha256": "a219d0227602b75258231a8d809f59c513f70d96179eb2513acd84ca6e0fb43a",
+      "matches": true
+    },
+    "/_next/static/chunks/3fntmmi971322.js": {
+      "sha256": "34ed6abf4c6d0d1bb3dc56d3f133d2a5dbc3a3c89c791deab314e27143ac14ce",
+      "matches": true
+    },
+    "/_next/static/chunks/32ld4kdw1jln4.js": {
+      "sha256": "b427a94f2cfcd0b067e158c6690d358abaaeb7a293dcf6c1b914c55f4f3b77c9",
+      "matches": true
+    },
+    "/_next/static/chunks/39qnnkulbpfzj.js": {
+      "sha256": "76944c13ae4886b6f211a4d16d3fd81ee54cb85cfc199383def8bbcdbdc00f7b",
+      "matches": true
+    }
+  },
+  "runtimeAfter": {
+    "buildId": "Wdc_zTNX4t7zHF0FLGcpR",
+    "sha256": "304d4550fb7817c812a498bc25dedc4f7bb9e6e9572ac347e3e8ce8b99b2ac9c",
+    "scope": "Sorted .next/static, .next/server, BUILD_ID paths + NUL + bytes + NUL"
+  },
+  "finishedAt": "2026-09-30T00:44:09.576Z"
+}

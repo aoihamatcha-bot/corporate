@@ -1,0 +1,475 @@
+{
+  "source": "31be953093a1c769b84825c866e89d35d57a4352",
+  "build": "Gov2FtiCaMIShrbgyWBXK",
+  "recordedAt": "2026-09-30T01:18:24.065Z",
+  "conditions": "Diagnostic overrides only; no product acceptance. Sequential WebKit iPhone 13 390x844 DPR3, 800ms real font-response delay, default Playwright video capture, natural opening and 2300ms rAF sample window. Same conditions across cases.",
+  "cases": [
+    {
+      "name": "promote-reading-roots",
+      "css": ".reveal-text[data-text-motion=\"band-color\"] { will-change:opacity; }",
+      "frameCount": 15,
+      "duration": 2304,
+      "positions": 1,
+      "frames": [
+        {
+          "time": 0,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 24
+        },
+        {
+          "time": 131,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 24
+        },
+        {
+          "time": 312,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 24
+        },
+        {
+          "time": 498,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 24
+        },
+        {
+          "time": 683,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 23
+        },
+        {
+          "time": 858,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 15
+        },
+        {
+          "time": 1043,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 12
+        },
+        {
+          "time": 1182,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        },
+        {
+          "time": 1319,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        },
+        {
+          "time": 1467,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        },
+        {
+          "time": 1635,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        },
+        {
+          "time": 1834,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        },
+        {
+          "time": 2006,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        },
+        {
+          "time": 2148,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        },
+        {
+          "time": 2304,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        }
+      ]
+    },
+    {
+      "name": "contain-color-paint",
+      "css": ".reveal-color { contain:paint; }",
+      "frameCount": 15,
+      "duration": 2379,
+      "positions": 1,
+      "frames": [
+        {
+          "time": 0,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 24
+        },
+        {
+          "time": 120,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 24
+        },
+        {
+          "time": 238,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 24
+        },
+        {
+          "time": 400,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 24
+        },
+        {
+          "time": 586,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 24
+        },
+        {
+          "time": 775,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 20
+        },
+        {
+          "time": 963,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 13
+        },
+        {
+          "time": 1106,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        },
+        {
+          "time": 1258,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        },
+        {
+          "time": 1442,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        },
+        {
+          "time": 1635,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        },
+        {
+          "time": 1827,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        },
+        {
+          "time": 2008,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        },
+        {
+          "time": 2195,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        },
+        {
+          "time": 2379,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        }
+      ]
+    },
+    {
+      "name": "direct-gradient-text",
+      "css": "",
+      "frameCount": 14,
+      "duration": 2353,
+      "positions": 1,
+      "frames": [
+        {
+          "time": 1,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 24
+        },
+        {
+          "time": 123,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 24
+        },
+        {
+          "time": 316,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 24
+        },
+        {
+          "time": 494,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 23
+        },
+        {
+          "time": 656,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 15
+        },
+        {
+          "time": 848,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 12
+        },
+        {
+          "time": 1043,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        },
+        {
+          "time": 1229,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        },
+        {
+          "time": 1414,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        },
+        {
+          "time": 1602,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        },
+        {
+          "time": 1791,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        },
+        {
+          "time": 1979,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        },
+        {
+          "time": 2169,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        },
+        {
+          "time": 2353,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        }
+      ]
+    }
+  ]
+}

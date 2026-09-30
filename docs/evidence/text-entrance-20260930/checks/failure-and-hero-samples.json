@@ -1,0 +1,120 @@
+[
+  {
+    "run": "e2e-full-first",
+    "project": "chromium-desktop",
+    "test": "/ lands without movement, finishes its text color and saves business effects for scrolling",
+    "status": "passed",
+    "retry": 0,
+    "frames": 106,
+    "positions": 1,
+    "errors": []
+  },
+  {
+    "run": "e2e-full-first",
+    "project": "chromium-desktop",
+    "test": "/en lands without movement, finishes its text color and saves business effects for scrolling",
+    "status": "passed",
+    "retry": 0,
+    "frames": 108,
+    "positions": 1,
+    "errors": []
+  },
+  {
+    "run": "e2e-full-first",
+    "project": "chromium-mobile",
+    "test": "/ lands without movement, finishes its text color and saves business effects for scrolling",
+    "status": "passed",
+    "retry": 0,
+    "frames": 141,
+    "positions": 1,
+    "errors": []
+  },
+  {
+    "run": "e2e-full-first",
+    "project": "chromium-mobile",
+    "test": "/en lands without movement, finishes its text color and saves business effects for scrolling",
+    "status": "passed",
+    "retry": 0,
+    "frames": 141,
+    "positions": 1,
+    "errors": []
+  },
+  {
+    "run": "e2e-full-first",
+    "project": "webkit-mobile",
+    "test": "/ lands without movement, finishes its text color and saves business effects for scrolling",
+    "status": "failed",
+    "retry": 0,
+    "frames": 19,
+    "positions": 1,
+    "errors": [
+      "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m20\u001b[39m\nReceived:   \u001b[31m19\u001b[39m\n\n  80 |     expect(evidence.fonts).toBe(\"loaded\");\n  81 |     expect(evidence.scroll).toBe(0);\n> 82 |     expect(evidence.frames.length).toBeGreaterThan(20);\n     |                                    ^\n  83 |     expect(new Set(evidence.frames.map((frame) => frame.font)).size).toBe(1);\n  84 |     expect(new Set(evidence.frames.map((frame) => frame.rect)).size).toBe(1);\n  85 |     expect(new Set(evidence.frames.map((frame) => frame.color)).size).toBe(1);\n    at C:\\Users\\taisa\\Desktop\\corporate-readability-20260922\\tests\\e2e\\hero-v4.spec.ts:82:36"
+    ]
+  },
+  {
+    "run": "e2e-full-first",
+    "project": "webkit-mobile",
+    "test": "/en lands without movement, finishes its text color and saves business effects for scrolling",
+    "status": "passed",
+    "retry": 0,
+    "frames": 21,
+    "positions": 1,
+    "errors": []
+  },
+  {
+    "run": "e2e-full-first",
+    "project": "chromium-desktop",
+    "test": "opening has no skip UI and releases focus on Tab",
+    "status": "failed",
+    "retry": 0,
+    "frames": 0,
+    "positions": 0,
+    "errors": [
+      "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeFocused\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('#main')\nExpected: focused\nReceived: inactive\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeFocused\" locator('#main') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('#main')\u001b[22m\n\u001b[2m    23 × locator resolved to <main id=\"main\" tabindex=\"-1\">…</main>\u001b[22m\n\u001b[2m       - unexpected value \"inactive\"\u001b[22m\n\n\n  72 |     await expect(page.locator(\"html\")).toHaveAttribute(\"data-intro\", \"done\");\n  73 |     await expect(page.locator(\".site-opening\")).not.toBeVisible();\n> 74 |     await expect(page.locator(\"#main\")).toBeFocused();\n     |                                         ^\n  75 |     expect(\n  76 |       await page.evaluate(() => document.querySelector(\":modal\")),\n  77 |     ).toBeNull();\n    at C:\\Users\\taisa\\Desktop\\corporate-readability-20260922\\tests\\e2e\\storyboard.spec.ts:74:41"
+    ]
+  },
+  {
+    "run": "hero-source-unchanged",
+    "project": "webkit-mobile",
+    "test": "/ lands without movement, finishes its text color and saves business effects for scrolling",
+    "status": "failed",
+    "retry": 0,
+    "frames": 16,
+    "positions": 1,
+    "errors": [
+      "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m20\u001b[39m\nReceived:   \u001b[31m16\u001b[39m\n\n  80 |     expect(evidence.fonts).toBe(\"loaded\");\n  81 |     expect(evidence.scroll).toBe(0);\n> 82 |     expect(evidence.frames.length).toBeGreaterThan(20);\n     |                                    ^\n  83 |     expect(new Set(evidence.frames.map((frame) => frame.font)).size).toBe(1);\n  84 |     expect(new Set(evidence.frames.map((frame) => frame.rect)).size).toBe(1);\n  85 |     expect(new Set(evidence.frames.map((frame) => frame.color)).size).toBe(1);\n    at C:\\Users\\taisa\\Desktop\\corporate-readability-20260922\\tests\\e2e\\hero-v4.spec.ts:82:36"
+    ]
+  },
+  {
+    "run": "hero-source-unchanged",
+    "project": "webkit-mobile",
+    "test": "/en lands without movement, finishes its text color and saves business effects for scrolling",
+    "status": "failed",
+    "retry": 0,
+    "frames": 15,
+    "positions": 1,
+    "errors": [
+      "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m20\u001b[39m\nReceived:   \u001b[31m15\u001b[39m\n\n  80 |     expect(evidence.fonts).toBe(\"loaded\");\n  81 |     expect(evidence.scroll).toBe(0);\n> 82 |     expect(evidence.frames.length).toBeGreaterThan(20);\n     |                                    ^\n  83 |     expect(new Set(evidence.frames.map((frame) => frame.font)).size).toBe(1);\n  84 |     expect(new Set(evidence.frames.map((frame) => frame.rect)).size).toBe(1);\n  85 |     expect(new Set(evidence.frames.map((frame) => frame.color)).size).toBe(1);\n    at C:\\Users\\taisa\\Desktop\\corporate-readability-20260922\\tests\\e2e\\hero-v4.spec.ts:82:36"
+    ]
+  },
+  {
+    "run": "hold-remediation-first",
+    "project": "webkit-mobile",
+    "test": "/ lands without movement, finishes its text color and saves business effects for scrolling",
+    "status": "passed",
+    "retry": 0,
+    "frames": 51,
+    "positions": 1,
+    "errors": []
+  },
+  {
+    "run": "hold-remediation-first",
+    "project": "webkit-mobile",
+    "test": "/en lands without movement, finishes its text color and saves business effects for scrolling",
+    "status": "passed",
+    "retry": 0,
+    "frames": 42,
+    "positions": 1,
+    "errors": []
+  }
+]

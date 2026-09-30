@@ -1,0 +1,832 @@
+{
+  "stage": "final",
+  "builtSource": "6ced095e453ef9a6633979591211e1d347de2081",
+  "startedAt": "2026-09-30T01:29:27.320Z",
+  "gitHead": "6ced095e453ef9a6633979591211e1d347de2081",
+  "sourceChanges": "docs/text-entrance-20260930.md",
+  "runtimeBefore": {
+    "buildId": "0kzQ47Q7Ci4cZtUSZq538",
+    "sha256": "99671dcb5070b7f62f19f2353be4040bd511bb88dc5dca1f853d30dfecb24480",
+    "scope": "Sorted .next/static, .next/server, BUILD_ID paths + NUL + bytes + NUL"
+  },
+  "conditions": "LOCAL Chromium, normal motion, 1440x1000 / 390x844, scale1. Entry PNGs seek only decorative band/color effects; settled Hero is natural. Videos use natural timing without overrides. No performance claim.",
+  "screenshots": [
+    {
+      "filename": "ja-1440-body-entry-diagnostic.png",
+      "state": {
+        "bandCount": 1,
+        "bands": [
+          {
+            "opacity": "0.0519727",
+            "gradient": "linear-gradient(105deg, rgb(185, 241, 223), rgb(192, 236, 254) 48%, rgb(222, 218, 255))"
+          }
+        ],
+        "sources": [
+          {
+            "text": "MYSTENAがサービスづくりで大切にする考え方をご紹介します。",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          }
+        ]
+      }
+    },
+    {
+      "filename": "en-1440-body-entry-diagnostic.png",
+      "state": {
+        "bandCount": 1,
+        "bands": [
+          {
+            "opacity": "0.0519727",
+            "gradient": "linear-gradient(105deg, rgb(185, 241, 223), rgb(192, 236, 254) 48%, rgb(222, 218, 255))"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Discover the principles that guide how MYSTENA plans and builds services.",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          }
+        ]
+      }
+    },
+    {
+      "filename": "ja-1440-menu-entry-diagnostic.png",
+      "state": {
+        "bandCount": 26,
+        "bands": [
+          {
+            "opacity": "0.5",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "opacity": "0.5",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "opacity": "0.5",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "opacity": "0.5",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "opacity": "0.5",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "opacity": "0.5",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "opacity": "0.5",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "opacity": "0.5",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "opacity": "0.5",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "opacity": "0.5",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "opacity": "0.5",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "opacity": "0.5",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "opacity": "0.5",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "opacity": "0.5",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "opacity": "0.5",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "opacity": "0.5",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "opacity": "0.5",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "opacity": "0.5",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "opacity": "0.5",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "opacity": "0.5",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "opacity": "0.5",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "opacity": "0.5",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "opacity": "0.5",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "opacity": "0.5",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "opacity": "0.5",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "opacity": "0.5",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          }
+        ],
+        "sources": [
+          {
+            "text": "閉じる",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "01",
+            "opacity": "1",
+            "color": "rgb(62, 77, 96)",
+            "clip": "none"
+          },
+          {
+            "text": "Home",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "トップ",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "02",
+            "opacity": "1",
+            "color": "rgb(88, 68, 141)",
+            "clip": "none"
+          },
+          {
+            "text": "About",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "私たちについて",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "03",
+            "opacity": "1",
+            "color": "rgb(62, 77, 96)",
+            "clip": "none"
+          },
+          {
+            "text": "Business",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "事業紹介",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "04",
+            "opacity": "1",
+            "color": "rgb(62, 77, 96)",
+            "clip": "none"
+          },
+          {
+            "text": "News",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "お知らせ",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "05",
+            "opacity": "1",
+            "color": "rgb(62, 77, 96)",
+            "clip": "none"
+          },
+          {
+            "text": "Company",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "会社概要",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "06",
+            "opacity": "1",
+            "color": "rgb(62, 77, 96)",
+            "clip": "none"
+          },
+          {
+            "text": "Contact",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "お問い合わせ",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "日本語",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "English",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "MYSTENAの事業と会社情報",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "お問い合わせ",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "プライバシーポリシー",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "MYSTENA",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "MYSTENAの事業をご紹介します。",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          }
+        ]
+      }
+    },
+    {
+      "filename": "ja-1440-hero-settled.png"
+    },
+    {
+      "filename": "ja-1440-footer-entry-diagnostic.png",
+      "state": {
+        "bandCount": 0,
+        "bands": [],
+        "sources": [
+          {
+            "text": "エンターテインメント × テクノロジー",
+            "opacity": "1",
+            "color": "rgb(237, 245, 255)",
+            "clip": "none"
+          },
+          {
+            "text": "私たちについて",
+            "opacity": "1",
+            "color": "rgb(237, 245, 255)",
+            "clip": "none"
+          },
+          {
+            "text": "事業紹介",
+            "opacity": "1",
+            "color": "rgb(237, 245, 255)",
+            "clip": "none"
+          },
+          {
+            "text": "お知らせ",
+            "opacity": "1",
+            "color": "rgb(237, 245, 255)",
+            "clip": "none"
+          },
+          {
+            "text": "会社概要",
+            "opacity": "1",
+            "color": "rgb(237, 245, 255)",
+            "clip": "none"
+          },
+          {
+            "text": "お問い合わせ",
+            "opacity": "1",
+            "color": "rgb(237, 245, 255)",
+            "clip": "none"
+          },
+          {
+            "text": "© MYSTENA",
+            "opacity": "1",
+            "color": "rgb(200, 213, 229)",
+            "clip": "none"
+          },
+          {
+            "text": "プライバシーポリシー",
+            "opacity": "1",
+            "color": "rgb(200, 213, 229)",
+            "clip": "none"
+          }
+        ]
+      }
+    },
+    {
+      "filename": "ja-390-body-entry-diagnostic.png",
+      "state": {
+        "bandCount": 2,
+        "bands": [
+          {
+            "opacity": "0.0519727",
+            "gradient": "linear-gradient(105deg, rgb(185, 241, 223), rgb(192, 236, 254) 48%, rgb(222, 218, 255))"
+          },
+          {
+            "opacity": "0.0519727",
+            "gradient": "linear-gradient(105deg, rgb(185, 241, 223), rgb(192, 236, 254) 48%, rgb(222, 218, 255))"
+          }
+        ],
+        "sources": [
+          {
+            "text": "MYSTENAがサービスづくりで大切にする考え方をご紹介します。",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          }
+        ]
+      }
+    },
+    {
+      "filename": "en-390-body-entry-diagnostic.png",
+      "state": {
+        "bandCount": 2,
+        "bands": [
+          {
+            "opacity": "0.0519727",
+            "gradient": "linear-gradient(105deg, rgb(185, 241, 223), rgb(192, 236, 254) 48%, rgb(222, 218, 255))"
+          },
+          {
+            "opacity": "0.0519727",
+            "gradient": "linear-gradient(105deg, rgb(185, 241, 223), rgb(192, 236, 254) 48%, rgb(222, 218, 255))"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Discover the principles that guide how MYSTENA plans and builds services.",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          }
+        ]
+      }
+    },
+    {
+      "filename": "ja-390-menu-entry-diagnostic.png",
+      "state": {
+        "bandCount": 26,
+        "bands": [
+          {
+            "opacity": "0.5",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "opacity": "0.5",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "opacity": "0.5",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "opacity": "0.5",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "opacity": "0.5",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "opacity": "0.5",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "opacity": "0.5",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "opacity": "0.5",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "opacity": "0.5",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "opacity": "0.5",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "opacity": "0.5",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "opacity": "0.5",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "opacity": "0.5",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "opacity": "0.5",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "opacity": "0.5",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "opacity": "0.5",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "opacity": "0.5",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "opacity": "0.5",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "opacity": "0.5",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "opacity": "0.5",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "opacity": "0.5",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "opacity": "0",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "opacity": "0",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "opacity": "0.5",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "opacity": "0.5",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "opacity": "0.5",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          }
+        ],
+        "sources": [
+          {
+            "text": "閉じる",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "01",
+            "opacity": "1",
+            "color": "rgb(62, 77, 96)",
+            "clip": "none"
+          },
+          {
+            "text": "Home",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "トップ",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "02",
+            "opacity": "1",
+            "color": "rgb(88, 68, 141)",
+            "clip": "none"
+          },
+          {
+            "text": "About",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "私たちについて",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "03",
+            "opacity": "1",
+            "color": "rgb(62, 77, 96)",
+            "clip": "none"
+          },
+          {
+            "text": "Business",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "事業紹介",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "04",
+            "opacity": "1",
+            "color": "rgb(62, 77, 96)",
+            "clip": "none"
+          },
+          {
+            "text": "News",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "お知らせ",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "05",
+            "opacity": "1",
+            "color": "rgb(62, 77, 96)",
+            "clip": "none"
+          },
+          {
+            "text": "Company",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "会社概要",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "06",
+            "opacity": "1",
+            "color": "rgb(62, 77, 96)",
+            "clip": "none"
+          },
+          {
+            "text": "Contact",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "お問い合わせ",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "日本語",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "English",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "MYSTENAの事業と会社情報",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "お問い合わせ",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "プライバシーポリシー",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "MYSTENA",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "MYSTENAの事業をご紹介します。",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          }
+        ]
+      }
+    },
+    {
+      "filename": "ja-390-hero-settled.png"
+    },
+    {
+      "filename": "ja-390-footer-entry-diagnostic.png",
+      "state": {
+        "bandCount": 0,
+        "bands": [],
+        "sources": [
+          {
+            "text": "エンターテインメント × テクノロジー",
+            "opacity": "1",
+            "color": "rgb(237, 245, 255)",
+            "clip": "none"
+          },
+          {
+            "text": "私たちについて",
+            "opacity": "1",
+            "color": "rgb(237, 245, 255)",
+            "clip": "none"
+          },
+          {
+            "text": "事業紹介",
+            "opacity": "1",
+            "color": "rgb(237, 245, 255)",
+            "clip": "none"
+          },
+          {
+            "text": "お知らせ",
+            "opacity": "1",
+            "color": "rgb(237, 245, 255)",
+            "clip": "none"
+          },
+          {
+            "text": "会社概要",
+            "opacity": "1",
+            "color": "rgb(237, 245, 255)",
+            "clip": "none"
+          },
+          {
+            "text": "お問い合わせ",
+            "opacity": "1",
+            "color": "rgb(237, 245, 255)",
+            "clip": "none"
+          },
+          {
+            "text": "© MYSTENA",
+            "opacity": "1",
+            "color": "rgb(200, 213, 229)",
+            "clip": "none"
+          },
+          {
+            "text": "プライバシーポリシー",
+            "opacity": "1",
+            "color": "rgb(200, 213, 229)",
+            "clip": "none"
+          }
+        ]
+      }
+    }
+  ],
+  "videos": [
+    {
+      "filename": "ja-1440-body-menu-natural.webm"
+    },
+    {
+      "filename": "ja-390-body-menu-natural.webm"
+    }
+  ],
+  "errors": [],
+  "servedFiles": {
+    "/_next/static/chunks/0jvhpaew_uadu.js": {
+      "sha256": "a10568306b34908511b49eb596785512026fba4f2d605bd6406696b9fd767c74",
+      "matches": true
+    },
+    "/_next/static/chunks/19mx3mg6lkumu.js": {
+      "sha256": "170f3982866674a829571beec30cc23c69fcd36196739ff34b9d586b3ad73cd7",
+      "matches": true
+    },
+    "/_next/static/chunks/03h5lg362da40.css": {
+      "sha256": "d400f6e9917450a6a584198e575190a64d2a0559b272b4a81964c40c9e336e18",
+      "matches": true
+    },
+    "/_next/static/chunks/turbopack-2toht04gw2bph.js": {
+      "sha256": "e8464806f4b3b5956c9f6771aa9d488ac2e7d3fe56ebee214d665362273d0fed",
+      "matches": true
+    },
+    "/_next/static/chunks/3fntmmi971322.js": {
+      "sha256": "34ed6abf4c6d0d1bb3dc56d3f133d2a5dbc3a3c89c791deab314e27143ac14ce",
+      "matches": true
+    },
+    "/_next/static/chunks/1d2e760aeo3-e.js": {
+      "sha256": "af427eddd39f0216543afa35e9fdad402a1acea8720ef1cf783f82489f7dc6a2",
+      "matches": true
+    },
+    "/_next/static/chunks/2-rtuqsgzmno4.js": {
+      "sha256": "4d2bfb13eedd0cf43d07810d7790ce423e01097d1406ef604e7c4f3ab4db8d79",
+      "matches": true
+    },
+    "/_next/static/chunks/2h4jg48zseajw.js": {
+      "sha256": "e235492b54ecda67a6b3e900ce6031006c733c38baab57550126d6348584fae5",
+      "matches": true
+    },
+    "/_next/static/chunks/08_3ad8r2_nqy.js": {
+      "sha256": "cf8c5efb620e3daa184c03d168f4c6eda322b9cdb494440ab88fbf24f3a93049",
+      "matches": true
+    },
+    "/_next/static/chunks/33wmmxu2kkyqh.js": {
+      "sha256": "a219d0227602b75258231a8d809f59c513f70d96179eb2513acd84ca6e0fb43a",
+      "matches": true
+    },
+    "/_next/static/chunks/1z-xggtq725gx.css": {
+      "sha256": "0d2597cce400a5f641ce221ba7618823b6335a4980515d35283e1c3c0c1506f1",
+      "matches": true
+    },
+    "/_next/static/chunks/32ld4kdw1jln4.js": {
+      "sha256": "b427a94f2cfcd0b067e158c6690d358abaaeb7a293dcf6c1b914c55f4f3b77c9",
+      "matches": true
+    },
+    "/_next/static/chunks/1_1cju-a6rva8.js": {
+      "sha256": "d5d5e5b412470494618abaeec5e1f42d8a7278e64b2245f295523e1ab2c32f30",
+      "matches": true
+    }
+  },
+  "runtimeAfter": {
+    "buildId": "0kzQ47Q7Ci4cZtUSZq538",
+    "sha256": "99671dcb5070b7f62f19f2353be4040bd511bb88dc5dca1f853d30dfecb24480",
+    "scope": "Sorted .next/static, .next/server, BUILD_ID paths + NUL + bytes + NUL"
+  },
+  "finishedAt": "2026-09-30T01:30:13.904Z"
+}
