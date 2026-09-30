@@ -1,37 +1,33 @@
-import type { Palette } from "./entrance";
 import { textRhythm, type TextKind } from "./text-rhythm";
 
-// Native dialog open/close restarts the decorative band and color layers.
-// The band is behind the readable source; link hit targets never move.
+// Native dialog open/close controls this CSS animation, so every opening gets
+// its own entrance without changing the once-only viewport text behavior.
 export function MenuInk({
   children,
   large = false,
   kind = "label",
-  palette = "sky",
-  light = false,
 }: {
   children: string;
   large?: boolean;
   kind?: TextKind;
-  palette?: Palette;
-  light?: boolean;
 }) {
   return (
     <span
       className={`menu-ink${large ? " nav-en" : ""}`}
-      data-palette={palette}
-      data-tone={light ? "light" : "dark"}
+      data-palette="sky"
       data-motion-kind={kind}
-      data-text-motion="band-color"
       style={textRhythm(children, kind)}
     >
-      <span className="menu-ink-band" aria-hidden="true" />
       <span className={`menu-ink-base${large ? " nav-en-base" : ""}`}>
         {children}
       </span>
       <span
         className={`menu-ink-color${large ? " nav-en-color" : ""}`}
         data-text={children}
+        aria-hidden="true"
+      />
+      <i
+        className={`menu-ink-wipe${large ? " nav-en-wipe" : ""}`}
         aria-hidden="true"
       />
     </span>

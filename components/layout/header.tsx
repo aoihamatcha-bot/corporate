@@ -24,6 +24,7 @@ import { Wordmark } from "@/components/wordmark";
 import { motionToken } from "@/components/motion/tokens";
 import { RevealText } from "@/components/motion/reveal-text";
 import { MenuInk } from "@/components/motion/menu-ink";
+import { randomPalette, type Palette } from "@/components/motion/entrance";
 
 const subscribeHydration = () => () => {};
 const clientReady = () => true;
@@ -136,6 +137,16 @@ export function Header({
       overflow: "hidden",
     });
     try {
+      dialog.current
+        .querySelectorAll<HTMLElement>(".menu-ink")
+        .forEach((ink) => {
+          ink.dataset.palette = randomPalette(ink.dataset.palette as Palette);
+          const wipe = ink.querySelector<HTMLElement>(".menu-ink-wipe");
+          if (wipe)
+            wipe.dataset.palette = randomPalette(
+              ink.dataset.palette as Palette,
+            );
+        });
       dialog.current.showModal();
       setOpen(true);
     } catch {

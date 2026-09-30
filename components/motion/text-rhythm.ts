@@ -2,18 +2,8 @@ import type { CSSProperties } from "react";
 
 export type TextKind = "heading" | "subtitle" | "body" | "label" | "utility";
 
-export const textColorRiseMs = 480;
-export const textBandEasing = "linear";
-export const textBandFrames: Keyframe[] = [
-  { transform: "scaleX(0)", opacity: 0, easing: "ease-in-out" },
-  { transform: "scaleX(1)", opacity: 0.85, offset: 0.4 },
-  { transform: "scaleX(1)", opacity: 0.85, offset: 0.65, easing: "ease-in-out" },
-  { transform: "scaleX(1)", opacity: 0 },
-];
-
 // A stable rhythm within each composition, with separate envelopes for each
-// typographic role. Reading text adds a soft band behind its visible source;
-// color outlasts that band before fading to the normal reading color.
+// typographic role. Palette selection happens independently in the browser.
 export function textRhythm(text: string, kind: TextKind): CSSProperties {
   const beat =
     Array.from(text).reduce(
@@ -27,7 +17,5 @@ export function textRhythm(text: string, kind: TextKind): CSSProperties {
     "--ink-hold": `calc(var(--${kind}-hold-ms) + ${beat * 20})`,
     "--ink-fade": `calc(var(--${kind}-fade-ms) + ${beat * 43})`,
     "--ink-ms": "calc(var(--ink-wipe) + var(--ink-hold) + var(--ink-fade))",
-    "--ink-color-rise": textColorRiseMs,
-    "--ink-color-hold": "var(--ink-hold)",
   } as CSSProperties;
 }

@@ -2,9 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import type { Locale } from "@/content/i18n";
-import { observeEntrance } from "./entrance";
-import { textBandEasing, textBandFrames } from "./text-rhythm";
-import { motionToken } from "./tokens";
+import { observeEntrance, randomPalette } from "./entrance";
 import { useMotionPaused } from "./motion-preference";
 
 export function CountUp({
@@ -19,7 +17,6 @@ export function CountUp({
   const root = useRef<HTMLSpanElement>(null);
   const digits = useRef<HTMLSpanElement>(null);
   const color = useRef<HTMLSpanElement>(null);
-  const band = useRef<HTMLSpanElement>(null);
   const paused = useMotionPaused();
   const formatted = new Intl.NumberFormat(locale).format(value);
 
@@ -32,14 +29,13 @@ export function CountUp({
     return observeEntrance(element, () => {
       let frame = 0;
       let glow: Animation | undefined;
-      let wash: Animation | undefined;
       let stopped = false;
       const contrast = matchMedia("(forced-colors: active)");
       const formatter = new Intl.NumberFormat(locale);
       const duration = 1600 + index * 200;
       const delay = index * 140;
-      const hold = motionToken("--heading-hold-ms", 1200);
-      const fade = motionToken("--heading-fade-ms", 1600);
+      const hold = 500;
+      const fade = 1100;
       const total = duration + hold + fade;
       const render = (text: string) => {
         if (number.textContent === text) return;
@@ -51,7 +47,6 @@ export function CountUp({
         stopped = true;
         cancelAnimationFrame(frame);
         glow?.cancel();
-        wash?.cancel();
         render(formatted);
         element.dataset.counterState = "settled";
         contrast.removeEventListener("change", onContrast);
@@ -61,23 +56,19 @@ export function CountUp({
       }
 
       element.dataset.counterState = "running";
+      element.dataset.palette = randomPalette();
       try {
-        wash = band.current!.animate(textBandFrames, {
-          duration: motionToken("--heading-wipe-ms", 1800),
-          delay,
-          easing: textBandEasing,
-          fill: "both",
-        });
         render("0");
         glow = overlay.animate(
           [
-            { opacity: 1 },
+            { opacity: 1, backgroundPosition: "0% 50%" },
             {
               opacity: 1,
+              backgroundPosition: "65% 50%",
               offset: (duration + hold) / total,
               easing: "ease-in-out",
             },
-            { opacity: 0 },
+            { opacity: 0, backgroundPosition: "100% 50%" },
           ],
           { duration: total, delay, easing: "linear", fill: "backwards" },
         );
@@ -110,7 +101,6 @@ export function CountUp({
       {/* Read the final value once; frame updates remain decorative. */}
       <span className="sr-only">{formatted}</span>
       <span className="count-up-visual" aria-hidden="true">
-        <span ref={band} className="count-up-band" />
         <span className="count-up-reserve">{formatted}</span>
         <span ref={digits} className="count-up-digits">
           {formatted}

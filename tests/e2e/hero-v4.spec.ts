@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 
 for (const route of ["/", "/en"]) {
-  test(`${route} lands without movement, finishes its text color and saves business effects for scrolling`, async ({
+  test(`${route} lands once, stays still and saves business effects for scrolling`, async ({
     page,
     isMobile,
   }, testInfo) => {
@@ -83,17 +83,7 @@ for (const route of ["/", "/en"]) {
     expect(new Set(evidence.frames.map((frame) => frame.font)).size).toBe(1);
     expect(new Set(evidence.frames.map((frame) => frame.rect)).size).toBe(1);
     expect(new Set(evidence.frames.map((frame) => frame.color)).size).toBe(1);
-    // September 30 restores one finite text entrance in Hero. Geometry and
-    // the picture stay still; color/bands must finish rather than loop.
-    expect(evidence.frames.some((frame) => frame.animations > 0)).toBe(true);
-    await page.locator('.hero').evaluate(async (el) => {
-      await Promise.all(el.getAnimations({ subtree: true }).map((animation) => animation.finished.catch(() => {})));
-    });
-    await expect.poll(() => page.locator('.hero').evaluate((el) => el.getAnimations({ subtree: true }).length)).toBe(0);
-    for (const source of await page.locator('.hero h1 .reveal-source, .hero-description .reveal-source').all()) {
-      await expect(source).toHaveCSS('color', 'rgb(20, 25, 31)');
-      await expect(source).toHaveCSS('background-image', 'none');
-    }
+    expect(evidence.frames.every((frame) => frame.animations === 0)).toBe(true);
     expect(
       evidence.frames.every((frame) => frame.businessTop >= evidence.height),
     ).toBe(true);

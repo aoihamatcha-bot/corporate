@@ -1,0 +1,50 @@
+import { chromium } from '@playwright/test';
+import fs from 'node:fs/promises';
+import { createHash } from 'node:crypto';
+
+const [base, output] = process.argv.slice(2);
+if (!base || !output) throw new Error('Usage: BASE_URL OUTPUT_DIRECTORY');
+await fs.mkdir(output, { recursive: true });
+if (await fs.stat(`${output}/record.json`).catch(() => null)) throw new Error('Do not overwrite evidence');
+const report = { base, observedAt: new Date().toISOString(), conditions: 'Read-only navigation; natural timing, no animation seek or pause. PC/mobile Chromium; deterministic seed probes separate from natural captures.', errors: [], assets: {}, views: [] };
+const browser = await chromium.launch();
+const requests = [];
+const inspect = async (page, selector) => page.locator(selector).evaluateAll(elements => elements.map(el => {
+  const style = getComputedStyle(el);
+  const source = el.querySelector('.reveal-source, .menu-ink-base');
+  const overlay = el.querySelector('.reveal-color, .menu-ink-color');
+  const layers = [el, ...el.querySelectorAll('.reveal-source, .reveal-color, .reveal-band, .menu-ink-base, .menu-ink-color, .menu-ink-wipe')];
+  return { text: source?.textContent, kind: el.dataset.motionKind, palette: el.dataset.palette, motion: el.dataset.textMotion, sourceClip: source ? getComputedStyle(source).clipPath : null, filter: overlay ? getComputedStyle(overlay, '::before').filter : null, backgroundSize: overlay ? getComputedStyle(overlay).backgroundSize : null, tokens: Object.fromEntries(['heading','subtitle','body','label','utility'].flatMap(kind=>['delay','wipe','hold','fade'].map(part=>{const token=`--${kind}-${part}-ms`;return[token,Number(style.getPropertyValue(token))];}))), bands: [...el.querySelectorAll('.reveal-band, .menu-ink-wipe')].map(band=>({palette:band.dataset.palette,gradient:getComputedStyle(band).backgroundImage})), effects: layers.flatMap(layer=>layer.getAnimations().map(a=>({layer:layer.className,name:a.animationName??null,timing:a.effect.getTiming(),frames:a.effect.getKeyframes()}))) };
+}));
+for (const width of [1440,390]) {
+  const viewport = { width, height: width===390?844:1000 };
+  const context = await browser.newContext({ viewport, reducedMotion:'no-preference', recordVideo:{dir:`${output}/.recordings`,size:viewport} });
+  const page = await context.newPage();
+  page.on('pageerror', e=>report.errors.push(e.message));
+  page.on('response',r=>{const url=new URL(r.url());if(url.pathname.startsWith('/_next/static/')&&/\.(js|css)$/.test(url.pathname)) requests.push((async()=>{const bytes=await r.body();report.assets[url.pathname]={sha256:createHash('sha256').update(bytes).digest('hex'),bytes:bytes.length};})());});
+  await page.goto(`${base}/about`,{waitUntil:'domcontentloaded'});
+  await page.waitForFunction(()=>document.querySelector('.page-description .reveal-text')?.dataset.revealState==='running');
+  const view={width,body:await inspect(page,'.page-description .reveal-text'),heading:await inspect(page,'.page-intro h1 .reveal-text'),utility:await inspect(page,'.site-header .reveal-text')};
+  await page.screenshot({path:`${output}/${width}-body-entry.png`});
+  await page.locator('.page-description .reveal-text').evaluate(async el=>{await Promise.all(el.getAnimations({subtree:true}).map(a=>a.finished.catch(()=>{})));});
+  await page.screenshot({path:`${output}/${width}-body-settled.png`});
+  await page.getByRole('button',{name:'メニューを開く'}).click();
+  view.menu=await inspect(page,'.fullscreen-nav .menu-ink');
+  await page.screenshot({path:`${output}/${width}-menu-entry.png`});
+  await page.locator('.fullscreen-nav').evaluate(async el=>{await Promise.all(el.getAnimations({subtree:true}).filter(a=>Number.isFinite(Number(a.effect?.getComputedTiming().endTime))).map(a=>a.finished.catch(()=>{})));});
+  await page.keyboard.press('Escape');
+  await page.getByRole('dialog').waitFor({state:'hidden'});
+  await page.getByRole('button',{name:'メニューを開く'}).click();
+  view.menuReopened=await inspect(page,'.fullscreen-nav .menu-ink');
+  await page.keyboard.press('Escape');
+  await page.getByRole('dialog').waitFor({state:'hidden'});
+  await page.goto(base);
+  await page.waitForFunction(()=>document.documentElement.dataset.intro==='done');
+  view.hero=await inspect(page,'.hero .reveal-text');
+  await page.screenshot({path:`${output}/${width}-hero.png`});
+  report.views.push(view);
+  const video=page.video(); await context.close();await video.saveAs(`${output}/${width}-natural.webm`);
+}
+await Promise.all(requests);await browser.close();
+await fs.writeFile(`${output}/record.json`,JSON.stringify(report,null,2)+'\n');
+console.log(JSON.stringify({base,views:report.views.length,assets:Object.keys(report.assets).length,errors:report.errors}));

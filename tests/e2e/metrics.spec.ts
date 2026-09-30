@@ -9,18 +9,16 @@ test("the counter progresses once without shifting its width or announcing inter
   const result = await counter.evaluate(async (el) => {
     const values: number[] = [];
     const widths: number[] = [];
-    let bandPeak = 0;
-    return new Promise<{ values: number[]; widths: number[]; bandPeak: number }>((resolve, reject) => {
+    return new Promise<{ values: number[]; widths: number[] }>((resolve, reject) => {
       const timeout = setTimeout(() => { observer.disconnect(); reject(new Error("Counter did not settle")); }, 9000);
       const observer = new MutationObserver(() => {
         const value = Number(el.querySelector(".count-up-digits")!.textContent!.replaceAll(",", ""));
         if (values.at(-1) !== value) values.push(value);
         widths.push(el.getBoundingClientRect().width);
-        bandPeak = Math.max(bandPeak, Number(getComputedStyle(el.querySelector('.count-up-band')!).opacity));
         if ((el as HTMLElement).dataset.counterState === "settled") {
           observer.disconnect();
           clearTimeout(timeout);
-          resolve({ values, widths, bandPeak });
+          resolve({ values, widths });
         }
       });
       observer.observe(el, { subtree: true, childList: true, attributes: true, characterData: true });
@@ -32,8 +30,6 @@ test("the counter progresses once without shifting its width or announcing inter
   expect(result.values.at(-1)).toBe(1000);
   expect(result.values.every((value, i) => i === 0 || value >= result.values[i - 1])).toBe(true);
   expect(Math.max(...result.widths) - Math.min(...result.widths)).toBeLessThan(0.5);
-  expect(result.bandPeak).toBeGreaterThan(0.1);
-  await expect(counter.locator('.count-up-band')).toHaveCSS('opacity', '0');
   await expect(counter.locator(".count-up-color")).toHaveCSS("opacity", "0");
   await expect(counter.locator(".sr-only")).toHaveText("1,000");
   await expect(counter.locator(".count-up-visual")).toHaveAttribute("aria-hidden", "true");

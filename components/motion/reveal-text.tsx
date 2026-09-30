@@ -2,172 +2,11 @@
 
 import { useEffect, useRef } from "react";
 import { useMotionPaused } from "./motion-preference";
-import { observeEntrance, type Palette } from "./entrance";
+import { observeEntrance, randomPalette, type Palette } from "./entrance";
 import { motionToken } from "./tokens";
-import {
-  textColorRiseMs,
-  textBandEasing,
-  textBandFrames,
-  textRhythm,
-  type TextKind,
-} from "./text-rhythm";
+import { textRhythm, type TextKind } from "./text-rhythm";
 
-type RevealTextProps = {
-  children: string;
-  palette?: Palette;
-  direction?: "left" | "right";
-  cut?: boolean;
-  light?: boolean;
-  className?: string;
-  kind?: TextKind;
-  stationary?: boolean;
-};
-
-export function RevealText({ kind = "heading", stationary = false, ...props }: RevealTextProps) {
-  // Reading and navigation keep a stationary, unmasked source. Their color
-  // layer shares the once-only viewport gate without the heading entrance.
-  if (kind !== "heading" || stationary) return <ColorText {...props} kind={kind} />;
-  return <AnimatedHeading {...props} kind={kind} />;
-}
-
-function ColorText({
-  children,
-  palette = "sky",
-  light = false,
-  className = "",
-  kind = "body",
-}: RevealTextProps) {
-  const root = useRef<HTMLSpanElement>(null);
-  const color = useRef<HTMLSpanElement>(null);
-  const source = useRef<HTMLSpanElement>(null);
-  const bands = useRef<HTMLSpanElement>(null);
-  const paused = useMotionPaused();
-
-  useEffect(() => {
-    const element = root.current;
-    if (!element || paused) return;
-    return observeEntrance(
-      element,
-      () => {
-        const animations: Animation[] = [];
-        const layer = bands.current!;
-        let holdTimer = 0;
-        let fadeTimer = 0;
-        const stop = () => {
-          clearTimeout(holdTimer);
-          clearTimeout(fadeTimer);
-          animations.splice(0).forEach((animation) => animation.cancel());
-          layer.replaceChildren();
-          element.dataset.revealState = "settled";
-        };
-        element.dataset.revealState = "running";
-        try {
-          const computed = getComputedStyle(element);
-          const beat = Number(computed.getPropertyValue("--ink-beat"));
-          const token = (part: string) =>
-            Number(computed.getPropertyValue(`--${kind}-${part}-ms`));
-          const delay = token("delay") + beat * 37;
-          const wipeMs = token("wipe") + beat * 19;
-          const range = document.createRange();
-          range.selectNodeContents(source.current!);
-          const bounds = element.getBoundingClientRect();
-          const lines = [...range.getClientRects()].filter((rect) => rect.width > 0 && rect.height > 0);
-          const clearMs = wipeMs + Math.min(Math.max(lines.length - 1, 0), 4) * 65;
-          const holdMs = token("hold") + beat * 20;
-          const fadeMs = token("fade") + beat * 43;
-          const colorMs = clearMs + holdMs + fadeMs;
-          // Pastel bands sit behind each actual line, never covering or masking
-          // the source. Reading positions and link hit targets do not move.
-          lines.forEach((rect, index) => {
-            const band = document.createElement("i");
-            band.className = "reveal-band reveal-band-soft";
-            Object.assign(band.style, {
-              left: `${rect.left - bounds.left}px`,
-              top: `${rect.top - bounds.top}px`,
-              width: `${rect.width}px`,
-              height: `${rect.height}px`,
-            });
-            layer.append(band);
-            animations.push(band.animate(textBandFrames, {
-              duration: wipeMs,
-              delay: delay + Math.min(index, 4) * 65,
-              // Easing belongs to each phase, not the whole envelope: a global
-              // ease-out compressed the visible band into a brief flash.
-              easing: textBandEasing,
-              fill: "both",
-            }));
-          });
-          // Opacity alone preserves the gradient without repainting a moving
-          // background in the sticky header (costly on mobile WebKit).
-          const glow = color.current!.animate(
-            [
-              { opacity: 0, easing: "ease-out" },
-              {
-                opacity: 1,
-                offset: textColorRiseMs / colorMs,
-              },
-              {
-                opacity: 1,
-                offset: (clearMs + holdMs) / colorMs,
-                easing: "ease-in-out",
-              },
-              { opacity: 0 },
-            ],
-            { duration: colorMs, delay, easing: "linear" },
-          );
-          animations.push(glow);
-          glow.onfinish = stop;
-          // WebKit keeps repainting clipped gradient text even on a constant
-          // opacity plateau. Pause that unchanged value, then resume at the
-          // fade boundary on the original schedule; entrance/fade still run.
-          const holdStart = delay + textColorRiseMs;
-          const fadeStart = delay + clearMs + holdMs;
-          holdTimer = window.setTimeout(() => {
-            const now = Number(glow.currentTime);
-            if (glow.playState !== "running" || now >= fadeStart) return;
-            glow.pause();
-            glow.currentTime = holdStart;
-            fadeTimer = window.setTimeout(() => {
-              if (glow.playState !== "paused") return;
-              glow.currentTime = fadeStart;
-              glow.play();
-            }, fadeStart - now);
-          }, holdStart);
-        } catch {
-          // The readable source is never an animation target, including when
-          // the browser cannot create or complete the decorative animation.
-          stop();
-        }
-        return stop;
-      },
-      kind === "utility",
-      true,
-    );
-  }, [paused, children, palette, kind]);
-
-  return (
-    <span
-      ref={root}
-      className={`reveal-text ${className}`}
-      data-palette={palette}
-      data-tone={light ? "light" : "dark"}
-      data-motion-kind={kind}
-      data-text-motion="band-color"
-      style={textRhythm(children, kind)}
-    >
-      <span ref={bands} className="reveal-bands" aria-hidden="true" />
-      <span ref={source} className="reveal-source">{children}</span>
-      <span
-        ref={color}
-        className="reveal-color"
-        data-text={children}
-        aria-hidden="true"
-      />
-    </span>
-  );
-}
-
-function AnimatedHeading({
+export function RevealText({
   children,
   palette = "sky",
   direction = "left",
@@ -175,7 +14,15 @@ function AnimatedHeading({
   light = false,
   className = "",
   kind = "heading",
-}: RevealTextProps) {
+}: {
+  children: string;
+  palette?: Palette;
+  direction?: "left" | "right";
+  cut?: boolean;
+  light?: boolean;
+  className?: string;
+  kind?: TextKind;
+}) {
   const root = useRef<HTMLSpanElement>(null);
   const source = useRef<HTMLSpanElement>(null);
   const color = useRef<HTMLSpanElement>(null);
@@ -210,7 +57,7 @@ function AnimatedHeading({
           const lines = Array.from(range.getClientRects()).filter(
             (rect) => rect.width > 0 && rect.height > 0,
           );
-          const colors = palette;
+          const colors = randomPalette();
           element.dataset.palette = colors;
           const computed = getComputedStyle(element);
           const beat = Number(computed.getPropertyValue("--ink-beat"));
@@ -249,8 +96,8 @@ function AnimatedHeading({
             lines.forEach((rect, index) => {
               const band = document.createElement("i");
               band.className = "reveal-band";
-              // The requested palette stays stable across visits and lines.
-              band.dataset.palette = colors;
+              // Each line has a related but separate hue from the text overlay.
+              band.dataset.palette = randomPalette(colors);
               Object.assign(band.style, {
                 left: `${rect.left - bounds.left}px`,
                 top: `${rect.top - bounds.top}px`,
@@ -263,15 +110,15 @@ function AnimatedHeading({
               animations.push(
                 band.animate(
                   [
-                    { clipPath: direction === "left" ? left : right, easing: "ease-in-out" },
-                    { clipPath: "inset(0 0 0 0)", offset: 0.4 },
-                    { clipPath: "inset(0 0 0 0)", offset: 0.65, easing: "ease-in-out" },
+                    { clipPath: direction === "left" ? left : right },
+                    { clipPath: "inset(0 0 0 0)", offset: 0.38 },
+                    { clipPath: "inset(0 0 0 0)", offset: 0.48 },
                     { clipPath: direction === "left" ? right : left },
                   ],
                   {
                     duration: wipeMs,
                     delay: delay + Math.min(index, 4) * 65,
-                    easing: textBandEasing,
+                    easing: "cubic-bezier(.65,0,.2,1)",
                     fill: "both",
                   },
                 ),

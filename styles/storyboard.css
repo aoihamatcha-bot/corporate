@@ -79,10 +79,10 @@ html:is([data-intro="pending"], [data-intro="running"], [data-intro="docking"])
   .hero-headline {
   opacity: 0;
 }
-/* The Hero picture stays still. Its text now shares the finite band/color
-   entrance after the handwriting handoff, then returns to normal ink. */
+/* Match the specified Production version: the handwriting is Hero's single
+   handoff. Other scenes use the restored text-gradient entrance. */
 .hero[data-motion-static]
-  :is(.image-wash, .image-echo, .image-wipe) {
+  :is(.reveal-color, .reveal-bands, .image-wash, .image-echo, .image-wipe) {
   display: none;
 }
 .hero-capabilities {

@@ -99,11 +99,11 @@ test("body color cancels safely on reduced motion and animation API failure", as
   expect(errors).toEqual([]);
 });
 
-test('reading bands clear on resize and partial animation failure without masking text', async ({ page }) => {
+test('production text wipes clear on resize and partial animation failure and reveal normal text', async ({ page }) => {
   await page.goto('/about');
   const text = page.locator('.page-description .reveal-text');
   await expect(text).toHaveAttribute('data-reveal-state', 'running');
-  expect(await text.locator('.reveal-band-soft').count()).toBeGreaterThan(0);
+  expect(await text.locator('.reveal-band').count()).toBeGreaterThan(0);
   await page.setViewportSize({ width: 360, height: 640 });
   await expect(text).toHaveAttribute('data-reveal-state', 'settled');
   await expect(text.locator('.reveal-band')).toHaveCount(0);

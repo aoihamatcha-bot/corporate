@@ -32,27 +32,19 @@ for (const a of backgrounds)
   for (const b of backgrounds)
     for (let step = 0; step <= 100; step++)
       minBackground = Math.min(minBackground, luminance(mix(a, b, step / 100)));
-const saturation = Number(css.match(/--text-color-saturation:\s*([\d.]+)/)[1]);
-// CSS saturate() uses this sRGB matrix; brightness() is applied afterwards.
-const saturate = (rgb) => {
-  const gray = rgb[0] * 0.213 + rgb[1] * 0.715 + rgb[2] * 0.072;
-  return rgb.map((value) => gray + saturation * (value - gray));
-};
-const renderedForegrounds = foregrounds.map(saturate);
-const maxForeground = Math.max(...renderedForegrounds.map(luminance));
+const maxForeground = Math.max(...foregrounds.map(luminance));
 const bodyBrightness = Number(
   css.match(/--text-body-brightness:\s*([\d.]+)/)[1],
 );
 const maxBodyForeground = Math.max(
-  ...renderedForegrounds.map((rgb) => luminance(rgb.map((v) => v * bodyBrightness))),
+  ...foregrounds.map((rgb) => luminance(rgb.map((v) => v * bodyBrightness))),
 );
 // sRGB interpolation and alpha over the darker base ink cannot produce a
 // foreground brighter than the brightest text endpoint (convex luminance).
 const result = {
   measuredAt: new Date().toISOString(),
   method:
-    "CSS sRGB saturation matrix then role brightness; text endpoint maximum; every backdrop endpoint pair at 1% intervals. Text color fades onto opaque black ink. Heading wipes intentionally occlude part of a line and are not text-color samples. Photo backgrounds, antialiasing and unmeasured display behavior excluded.",
-  saturation,
+    "sRGB text endpoint maximum; every backdrop endpoint pair at 1% intervals. Text color fades onto opaque black ink. Decorative wipes intentionally occlude part of a line briefly and are not text-color samples. Photo backgrounds, antialiasing and unmeasured display behavior excluded.",
   foregroundCount: foregrounds.length,
   backgroundCount: backgrounds.length,
   coloredBodyTextMinimum: (minBackground + 0.05) / (maxBodyForeground + 0.05),

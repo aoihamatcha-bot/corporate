@@ -23,6 +23,12 @@ export function HeroHeadline({ lines }: { lines: string[] }) {
       try {
         // The incoming SVG owns the entrance. The final type is already laid
         // out with loaded fonts; only opacity changes during the handoff.
+        heading
+          .querySelectorAll<HTMLElement>(".hero-dock-line")
+          .forEach((line) => {
+            line.dataset.entered = "true";
+            line.dataset.revealState = "settled";
+          });
         const fade = heading.animate([{ opacity: 0 }, { opacity: 1 }], {
           duration: openingDockMs * 0.55,
           delay: openingDockMs * 0.45,
@@ -58,7 +64,6 @@ export function HeroHeadline({ lines }: { lines: string[] }) {
         <RevealText
           key={line}
           className="hero-dock-line"
-          stationary
           palette={i ? "iris" : "sky"}
           direction={i ? "right" : "left"}
         >

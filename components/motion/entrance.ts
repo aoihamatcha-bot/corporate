@@ -25,12 +25,11 @@ export function observeEntrance(
   element: HTMLElement,
   play: () => () => void,
   utility = false,
-  stationaryText = false,
 ) {
   if (
     !window.IntersectionObserver ||
     element.dataset.entered === "true" ||
-    (element.closest("[data-motion-static]") && !stationaryText)
+    element.closest("[data-motion-static]")
   )
     return () => {};
   let visible = false;
