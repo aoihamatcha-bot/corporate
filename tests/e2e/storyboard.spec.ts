@@ -64,6 +64,10 @@ for (const action of ["Tab", "Escape", "scroll"] as const) {
   }) => {
     await page.goto("/", { waitUntil: "domcontentloaded" });
     await expect(page.locator(".site-opening")).toBeVisible();
+    // The CSS cover is visible while hydration is still pending. Exercise the
+    // active native modal, after its keyboard/scroll handlers are installed.
+    await expect(page.locator("html")).toHaveAttribute("data-intro", "running");
+    await expect(page.locator(".site-opening")).toHaveJSProperty("open", true);
     if (action === "scroll")
       await page.evaluate(() =>
         window.scrollTo({ top: 500, behavior: "instant" }),

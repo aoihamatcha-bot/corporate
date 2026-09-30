@@ -51,7 +51,11 @@ function ColorText({
       () => {
         const animations: Animation[] = [];
         const layer = bands.current!;
+        let holdTimer = 0;
+        let fadeTimer = 0;
         const stop = () => {
+          clearTimeout(holdTimer);
+          clearTimeout(fadeTimer);
           animations.splice(0).forEach((animation) => animation.cancel());
           layer.replaceChildren();
           element.dataset.revealState = "settled";
@@ -111,6 +115,22 @@ function ColorText({
           );
           animations.push(glow);
           glow.onfinish = stop;
+          // WebKit keeps repainting clipped gradient text even on a constant
+          // opacity plateau. Pause that unchanged value, then resume at the
+          // fade boundary on the original schedule; entrance/fade still run.
+          const holdStart = delay + textColorRiseMs;
+          const fadeStart = delay + clearMs + holdMs;
+          holdTimer = window.setTimeout(() => {
+            const now = Number(glow.currentTime);
+            if (glow.playState !== "running" || now >= fadeStart) return;
+            glow.pause();
+            glow.currentTime = holdStart;
+            fadeTimer = window.setTimeout(() => {
+              if (glow.playState !== "paused") return;
+              glow.currentTime = fadeStart;
+              glow.play();
+            }, fadeStart - now);
+          }, holdStart);
         } catch {
           // The readable source is never an animation target, including when
           // the browser cannot create or complete the decorative animation.

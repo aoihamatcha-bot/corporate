@@ -148,6 +148,7 @@ test("body background and color appear together, then return to readable station
     let maxColorOpacity = 0;
     let maxBandOpacity = 0;
     let overlap = false;
+    let heldWithoutRunning = false;
     const bands = [...el.querySelectorAll('.reveal-band-soft')];
     const bandGradients = bands.map((band) => getComputedStyle(band).backgroundImage);
     let raf = 0;
@@ -160,6 +161,7 @@ test("body background and color appear together, then return to readable station
       if (source.getAnimations().length || el.getAnimations().length) failures.push("animated source or root");
       if (Math.abs(bounds.x - initial.x) > 0.5 || Math.abs(bounds.y - initial.y) > 0.5) failures.push("moving source");
       maxColorOpacity = Math.max(maxColorOpacity, Number(getComputedStyle(overlay).opacity));
+      heldWithoutRunning ||= animation.playState === "paused" && Number(getComputedStyle(overlay).opacity) > 0.99;
       const bandOpacity = Math.max(0, ...bands.map((band) => Number(getComputedStyle(band).opacity)));
       maxBandOpacity = Math.max(maxBandOpacity, bandOpacity);
       overlap ||= bandOpacity > 0.1 && Number(getComputedStyle(overlay).opacity) > 0.8;
@@ -177,6 +179,7 @@ test("body background and color appear together, then return to readable station
       maxColorOpacity,
       maxBandOpacity,
       overlap,
+      heldWithoutRunning,
       bandGradients,
       failures,
     };
@@ -187,6 +190,7 @@ test("body background and color appear together, then return to readable station
   expect(result.maxColorOpacity).toBeGreaterThan(0.95);
   expect(result.maxBandOpacity).toBeGreaterThan(0.1);
   expect(result.overlap).toBe(true);
+  expect(result.heldWithoutRunning).toBe(true);
   expect(result.bandGradients.length).toBeGreaterThan(0);
   expect(result.bandGradients.every((gradient) => gradient.includes('linear-gradient'))).toBe(true);
   await expect(body).toHaveAttribute("data-reveal-state", "settled");
