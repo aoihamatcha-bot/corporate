@@ -91,7 +91,7 @@
   pointer-events: none;
   user-select: none;
 }
-:is(.hero, .site-footer) .reveal-color::before,
+.site-footer .reveal-color::before,
 .reveal-text[data-tone="light"] .reveal-color::before,
 .menu-ink[data-tone="light"] .menu-ink-color::before {
   background-image: linear-gradient(
@@ -114,7 +114,8 @@
     .contact-band h2
   )
   .reveal-color::before,
-:is(.hero, .site-footer) .reveal-color::before,
+.hero h1 .reveal-color::before,
+.site-footer .reveal-color::before,
 .reveal-text[data-tone="light"] .reveal-color::before,
 .menu-ink[data-tone="light"] .menu-ink-color::before {
   filter: none;
