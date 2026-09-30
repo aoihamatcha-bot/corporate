@@ -1,0 +1,126 @@
+{
+  "recordedAt": "2026-09-30T02:04:43.504Z",
+  "startingHead": "a2b6ab2fe7dbce7d765e0ca0dab4ee34c01a5436",
+  "source": "227680aff364cad1b2aebbf19458d53c78555d15",
+  "branch": "feat/corporate-readability-20260922",
+  "remoteMain": "7ebe25888dec5f2f1e97da6cf5001e81bcdef55c",
+  "sourceTrees": {
+    "app": "e9fde25354dad3bc73f17e660e270d916adc9791",
+    "components": "fc32f12badcb43239964f3f40851eb920f5f234d",
+    "styles": "2e0099cab3e38172262e49fc058af10f6c7ef0cd",
+    "content": "cd9eb568f91b4dbc619641c3ff4581fc9a1d1050",
+    "public": "4f853e10a81a47eed8635640e6789ba3daca9c8e",
+    "package.json": "23c67834999706384c39377cddc5a494877bb9ea",
+    "package-lock.json": "0612a95456fa381f8b4e61675f379d0929bd843f",
+    "next.config.ts": "42cc84bebbfb3f191c22f0c796982ddd3c2b67c4",
+    "tests": "f54dd54a6a425ebf9d609cfff316b8641e460ccb",
+    "scripts": "6c48d47cd019c77e7d27f56d112a15f99887e2db",
+    "playwright.config.ts": "5474f23596dc1fb4dc150acddf7c80c144be1339"
+  },
+  "runtime": {
+    "buildId": "xPcww0BWUtKZuCxyFInen",
+    "sha256": "41d5b257d2345b50fa87cd28b95e0275387eaa1bd5e7efa798febf5407b53368",
+    "scope": "Sorted .next/static, .next/server, BUILD_ID paths + NUL + bytes + NUL"
+  },
+  "runtimeAfterVerification": "41d5b257d2345b50fa87cd28b95e0275387eaa1bd5e7efa798febf5407b53368",
+  "sourceRuntimeUnchanged": true,
+  "pastelProvenance": {
+    "commit": "f4ce8c8fb8a8c507c062e0c2eef6fd22b9617117",
+    "identicalStops": 32
+  },
+  "timing": {
+    "before": [
+      {
+        "width": 1440,
+        "peakOpacity": 0.5,
+        "bandAbove90PercentPeakMs": 22.30000000447035,
+        "bandAbove45Ms": 22.30000000447035,
+        "colorAbove95Ms": 1854.2000000029802
+      },
+      {
+        "width": 390,
+        "peakOpacity": 0.5,
+        "bandAbove90PercentPeakMs": 83.39999999850988,
+        "bandAbove45Ms": 83.39999999850988,
+        "colorAbove95Ms": 1915.3999999985099
+      }
+    ],
+    "candidate": [
+      {
+        "width": 1440,
+        "peakOpacity": 0.85,
+        "bandAbove90PercentPeakMs": 749.8999999985099,
+        "bandAbove45Ms": 1133.1999999955297,
+        "colorAbove95Ms": 2882.89999999851
+      },
+      {
+        "width": 390,
+        "peakOpacity": 0.85,
+        "bandAbove90PercentPeakMs": 816.4000000059605,
+        "bandAbove45Ms": 1200.6000000014901,
+        "colorAbove95Ms": 2966.60000000149
+      }
+    ]
+  },
+  "verification": {
+    "focused": {
+      "expected": 57,
+      "unexpected": 0,
+      "flaky": 0,
+      "skipped": 0,
+      "retries": 0,
+      "record": "checks/focused-first.log",
+      "limitation": "Original JSON/per-test attachments not retained; derived summary labeled separately."
+    },
+    "readingNavigation": {
+      "startTime": "2026-09-30T01:59:13.210Z",
+      "duration": 71915.36799999999,
+      "expected": 15,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "build": "PASS",
+    "lint": "PASS",
+    "typecheck": "PASS",
+    "contrast": {
+      "measuredAt": "2026-09-30T01:55:59.381Z",
+      "method": "CSS sRGB saturation matrix then role brightness; text endpoint maximum; every backdrop endpoint pair at 1% intervals. Text color fades onto opaque black ink. Heading wipes intentionally occlude part of a line and are not text-color samples. Photo backgrounds, antialiasing and unmeasured display behavior excluded.",
+      "saturation": 0.45,
+      "foregroundCount": 24,
+      "backgroundCount": 39,
+      "coloredBodyTextMinimum": 4.623559715974991,
+      "coloredLargeTextMinimum": 3.557197273242533,
+      "blackTextMinimum": 9.581225256353228,
+      "mutedTextMinimum": 4.676284811115159
+    },
+    "fullSuite": "NOT RUN for this follow-up",
+    "independentReview": "NOT RUN",
+    "realDevice": "NOT RUN"
+  },
+  "preserved": [
+    "app",
+    "content",
+    "public",
+    "components/motion/site-opening.tsx",
+    "components/motion/hero-headline.tsx",
+    "components/motion/gradient-image.tsx",
+    "components/motion/scene.tsx",
+    "components/motion/entrance.ts",
+    "styles/storyboard.css",
+    "package.json",
+    "package-lock.json",
+    "next.config.ts",
+    "playwright.config.ts"
+  ],
+  "preservedDiff": "",
+  "operations": {
+    "hostedRead": "NOT RUN",
+    "hostedMutation": "NOT RUN",
+    "deploy": "NOT RUN",
+    "ready": "NOT RUN",
+    "merge": "NOT RUN",
+    "ci": "NOT OBSERVED",
+    "preview": "NOT OBSERVED"
+  }
+}

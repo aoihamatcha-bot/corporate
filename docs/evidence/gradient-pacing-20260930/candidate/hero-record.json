@@ -1,0 +1,130 @@
+{
+  "builtSource": "227680aff364cad1b2aebbf19458d53c78555d15",
+  "buildId": "xPcww0BWUtKZuCxyFInen",
+  "conditions": "Natural motion; no seeking, timing override or CSS override. Capture band, color-only and settled phases.",
+  "images": [
+    {
+      "filename": "ja-1440-hero-band.png",
+      "state": {
+        "bands": [
+          "0.849609",
+          "0.684128"
+        ],
+        "colors": [
+          "1",
+          "1"
+        ]
+      }
+    },
+    {
+      "filename": "ja-1440-hero-color.png",
+      "state": {
+        "bands": [
+          "0",
+          "0"
+        ],
+        "colors": [
+          "1",
+          "1"
+        ]
+      }
+    },
+    {
+      "filename": "ja-1440-hero-settled.png",
+      "state": {
+        "bands": [],
+        "colors": [
+          "0",
+          "0"
+        ]
+      }
+    },
+    {
+      "filename": "ja-390-hero-band.png",
+      "state": {
+        "bands": [
+          "0.849613",
+          "0.684226"
+        ],
+        "colors": [
+          "1",
+          "1"
+        ]
+      }
+    },
+    {
+      "filename": "ja-390-hero-color.png",
+      "state": {
+        "bands": [
+          "0",
+          "0"
+        ],
+        "colors": [
+          "1",
+          "1"
+        ]
+      }
+    },
+    {
+      "filename": "ja-390-hero-settled.png",
+      "state": {
+        "bands": [],
+        "colors": [
+          "0",
+          "0"
+        ]
+      }
+    }
+  ],
+  "errors": [],
+  "servedFiles": {
+    "/_next/static/chunks/0jvhpaew_uadu.js": {
+      "sha256": "a10568306b34908511b49eb596785512026fba4f2d605bd6406696b9fd767c74",
+      "matches": true
+    },
+    "/_next/static/chunks/19mx3mg6lkumu.js": {
+      "sha256": "170f3982866674a829571beec30cc23c69fcd36196739ff34b9d586b3ad73cd7",
+      "matches": true
+    },
+    "/_next/static/chunks/1p_nbd4_-y3h-.css": {
+      "sha256": "9f0c5b4a6f44b334a9b29e0086f9d54a61e718dbb04df1ee4c67992f14de488a",
+      "matches": true
+    },
+    "/_next/static/chunks/turbopack-2toht04gw2bph.js": {
+      "sha256": "e8464806f4b3b5956c9f6771aa9d488ac2e7d3fe56ebee214d665362273d0fed",
+      "matches": true
+    },
+    "/_next/static/chunks/3fntmmi971322.js": {
+      "sha256": "34ed6abf4c6d0d1bb3dc56d3f133d2a5dbc3a3c89c791deab314e27143ac14ce",
+      "matches": true
+    },
+    "/_next/static/chunks/1d2e760aeo3-e.js": {
+      "sha256": "af427eddd39f0216543afa35e9fdad402a1acea8720ef1cf783f82489f7dc6a2",
+      "matches": true
+    },
+    "/_next/static/chunks/32ld4kdw1jln4.js": {
+      "sha256": "b427a94f2cfcd0b067e158c6690d358abaaeb7a293dcf6c1b914c55f4f3b77c9",
+      "matches": true
+    },
+    "/_next/static/chunks/3ptqe-jhpga2e.js": {
+      "sha256": "88e6fcfe2439c2a046729bdae8b4ceb9d56c67ad78730c9d19d407573d40d13c",
+      "matches": true
+    },
+    "/_next/static/chunks/2-rtuqsgzmno4.js": {
+      "sha256": "4d2bfb13eedd0cf43d07810d7790ce423e01097d1406ef604e7c4f3ab4db8d79",
+      "matches": true
+    },
+    "/_next/static/chunks/33wmmxu2kkyqh.js": {
+      "sha256": "a219d0227602b75258231a8d809f59c513f70d96179eb2513acd84ca6e0fb43a",
+      "matches": true
+    },
+    "/_next/static/chunks/1z-xggtq725gx.css": {
+      "sha256": "0d2597cce400a5f641ce221ba7618823b6335a4980515d35283e1c3c0c1506f1",
+      "matches": true
+    },
+    "/_next/static/chunks/4182_5np6opru.js": {
+      "sha256": "e41a7c33ad88dc13c27e1805f2b1eea84938ef8dc6d8be655804115876052252",
+      "matches": true
+    }
+  }
+}

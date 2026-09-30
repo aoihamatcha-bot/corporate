@@ -1,0 +1,11 @@
+{
+  "measuredAt": "2026-09-30T01:55:59.381Z",
+  "method": "CSS sRGB saturation matrix then role brightness; text endpoint maximum; every backdrop endpoint pair at 1% intervals. Text color fades onto opaque black ink. Heading wipes intentionally occlude part of a line and are not text-color samples. Photo backgrounds, antialiasing and unmeasured display behavior excluded.",
+  "saturation": 0.45,
+  "foregroundCount": 24,
+  "backgroundCount": 39,
+  "coloredBodyTextMinimum": 4.623559715974991,
+  "coloredLargeTextMinimum": 3.557197273242533,
+  "blackTextMinimum": 9.581225256353228,
+  "mutedTextMinimum": 4.676284811115159
+}

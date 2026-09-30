@@ -1,0 +1,296 @@
+{
+  "source": "227680aff364cad1b2aebbf19458d53c78555d15",
+  "provenance": "Derived from focused-first.log, NOT the original Playwright JSON (not retained; see CORP-011).",
+  "expected": 57,
+  "unexpected": 0,
+  "flaky": 0,
+  "skipped": 0,
+  "retries": 0,
+  "cases": [
+    {
+      "number": 2,
+      "project": "chromium-desktop",
+      "line": "tests\\e2e\\afterglow.spec.ts:3:5 › heading, body, menu and counter bands reuse the eight historical pastel families (743ms)"
+    },
+    {
+      "number": 1,
+      "project": "chromium-desktop",
+      "line": "tests\\e2e\\gradient-surfaces.spec.ts:3:5 › section colors keep their authored palette and background washes remain soft (930ms)"
+    },
+    {
+      "number": 4,
+      "project": "chromium-desktop",
+      "line": "tests\\e2e\\gradient-surfaces.spec.ts:44:5 › all Hero copy has readable normal ink with motion suppressed and a single image shade (1.0s)"
+    },
+    {
+      "number": 5,
+      "project": "chromium-desktop",
+      "line": "tests\\e2e\\gradient-surfaces.spec.ts:80:5 › body color cancels safely on reduced motion and animation API failure (677ms)"
+    },
+    {
+      "number": 6,
+      "project": "chromium-desktop",
+      "line": "tests\\e2e\\gradient-surfaces.spec.ts:102:5 › reading bands clear on resize and partial animation failure without masking text (602ms)"
+    },
+    {
+      "number": 3,
+      "project": "chromium-desktop",
+      "line": "tests\\e2e\\afterglow.spec.ts:39:5 › all authored text has a decorative color layer with readable sources in both languages (16.0s)"
+    },
+    {
+      "number": 7,
+      "project": "chromium-desktop",
+      "line": "tests\\e2e\\hero-v4.spec.ts:4:7 › / lands without movement, finishes its text color and saves business effects for scrolling (17.8s)"
+    },
+    {
+      "number": 8,
+      "project": "chromium-desktop",
+      "line": "tests\\e2e\\afterglow.spec.ts:169:5 › body background and color appear together, then return to readable stationary ink (5.4s)"
+    },
+    {
+      "number": 10,
+      "project": "chromium-desktop",
+      "line": "tests\\e2e\\afterglow.spec.ts:249:5 › all menu text receives finite color effects that restart without masking navigation (13.5s)"
+    },
+    {
+      "number": 9,
+      "project": "chromium-desktop",
+      "line": "tests\\e2e\\hero-v4.spec.ts:4:7 › /en lands without movement, finishes its text color and saves business effects for scrolling (18.3s)"
+    },
+    {
+      "number": 11,
+      "project": "chromium-desktop",
+      "line": "tests\\e2e\\afterglow.spec.ts:347:5 › heading color outlasts its decorative band and then fades (5.8s)"
+    },
+    {
+      "number": 12,
+      "project": "chromium-desktop",
+      "line": "tests\\e2e\\metrics.spec.ts:3:5 › the counter progresses once without shifting its width or announcing intermediate numbers (6.0s)"
+    },
+    {
+      "number": 14,
+      "project": "chromium-desktop",
+      "line": "tests\\e2e\\metrics.spec.ts:46:5 › enabling device reduced motion during an active counter shows its final value and stops the number and color animation (930ms)"
+    },
+    {
+      "number": 15,
+      "project": "chromium-desktop",
+      "line": "tests\\e2e\\metrics.spec.ts:60:5 › both languages label the example figures and preserve readable values without motion or JavaScript (1.8s)"
+    },
+    {
+      "number": 16,
+      "project": "chromium-desktop",
+      "line": "tests\\e2e\\motion.spec.ts:3:5 › body text is readable without masks before entering the viewport and after scrolling (4.3s)"
+    },
+    {
+      "number": 17,
+      "project": "chromium-desktop",
+      "line": "tests\\e2e\\motion.spec.ts:92:5 › menu curtains animate behind immediately readable navigation text on each opening (9.7s)"
+    },
+    {
+      "number": 18,
+      "project": "chromium-desktop",
+      "line": "tests\\e2e\\motion.spec.ts:151:5 › pausing during the entrance clears decorative bands and images without hiding copy (1.2s)"
+    },
+    {
+      "number": 19,
+      "project": "chromium-desktop",
+      "line": "tests\\e2e\\motion.spec.ts:190:5 › resize and a partially failing animation API cannot strand a colored cover (1.1s)"
+    },
+    {
+      "number": 20,
+      "project": "chromium-mobile",
+      "line": "tests\\e2e\\afterglow.spec.ts:3:5 › heading, body, menu and counter bands reuse the eight historical pastel families (580ms)"
+    },
+    {
+      "number": 13,
+      "project": "chromium-desktop",
+      "line": "tests\\e2e\\afterglow.spec.ts:416:5 › heading and band palettes stay fixed across random seeds while the hero stays still (36.7s)"
+    },
+    {
+      "number": 22,
+      "project": "chromium-mobile",
+      "line": "tests\\e2e\\gradient-surfaces.spec.ts:3:5 › section colors keep their authored palette and background washes remain soft (644ms)"
+    },
+    {
+      "number": 23,
+      "project": "chromium-mobile",
+      "line": "tests\\e2e\\gradient-surfaces.spec.ts:44:5 › all Hero copy has readable normal ink with motion suppressed and a single image shade (905ms)"
+    },
+    {
+      "number": 24,
+      "project": "chromium-mobile",
+      "line": "tests\\e2e\\gradient-surfaces.spec.ts:80:5 › body color cancels safely on reduced motion and animation API failure (675ms)"
+    },
+    {
+      "number": 25,
+      "project": "chromium-mobile",
+      "line": "tests\\e2e\\gradient-surfaces.spec.ts:102:5 › reading bands clear on resize and partial animation failure without masking text (733ms)"
+    },
+    {
+      "number": 21,
+      "project": "chromium-mobile",
+      "line": "tests\\e2e\\afterglow.spec.ts:39:5 › all authored text has a decorative color layer with readable sources in both languages (16.3s)"
+    },
+    {
+      "number": 27,
+      "project": "chromium-mobile",
+      "line": "tests\\e2e\\afterglow.spec.ts:169:5 › body background and color appear together, then return to readable stationary ink (5.4s)"
+    },
+    {
+      "number": 26,
+      "project": "chromium-mobile",
+      "line": "tests\\e2e\\hero-v4.spec.ts:4:7 › / lands without movement, finishes its text color and saves business effects for scrolling (17.7s)"
+    },
+    {
+      "number": 28,
+      "project": "chromium-mobile",
+      "line": "tests\\e2e\\afterglow.spec.ts:249:5 › all menu text receives finite color effects that restart without masking navigation (13.3s)"
+    },
+    {
+      "number": 30,
+      "project": "chromium-mobile",
+      "line": "tests\\e2e\\afterglow.spec.ts:347:5 › heading color outlasts its decorative band and then fades (5.7s)"
+    },
+    {
+      "number": 29,
+      "project": "chromium-mobile",
+      "line": "tests\\e2e\\hero-v4.spec.ts:4:7 › /en lands without movement, finishes its text color and saves business effects for scrolling (18.0s)"
+    },
+    {
+      "number": 32,
+      "project": "chromium-mobile",
+      "line": "tests\\e2e\\metrics.spec.ts:3:5 › the counter progresses once without shifting its width or announcing intermediate numbers (6.1s)"
+    },
+    {
+      "number": 33,
+      "project": "chromium-mobile",
+      "line": "tests\\e2e\\metrics.spec.ts:46:5 › enabling device reduced motion during an active counter shows its final value and stops the number and color animation (1.4s)"
+    },
+    {
+      "number": 34,
+      "project": "chromium-mobile",
+      "line": "tests\\e2e\\metrics.spec.ts:60:5 › both languages label the example figures and preserve readable values without motion or JavaScript (2.5s)"
+    },
+    {
+      "number": 35,
+      "project": "chromium-mobile",
+      "line": "tests\\e2e\\motion.spec.ts:3:5 › body text is readable without masks before entering the viewport and after scrolling (4.3s)"
+    },
+    {
+      "number": 36,
+      "project": "chromium-mobile",
+      "line": "tests\\e2e\\motion.spec.ts:92:5 › menu curtains animate behind immediately readable navigation text on each opening (9.6s)"
+    },
+    {
+      "number": 37,
+      "project": "chromium-mobile",
+      "line": "tests\\e2e\\motion.spec.ts:151:5 › pausing during the entrance clears decorative bands and images without hiding copy (1.1s)"
+    },
+    {
+      "number": 38,
+      "project": "chromium-mobile",
+      "line": "tests\\e2e\\motion.spec.ts:190:5 › resize and a partially failing animation API cannot strand a colored cover (1.1s)"
+    },
+    {
+      "number": 31,
+      "project": "chromium-mobile",
+      "line": "tests\\e2e\\afterglow.spec.ts:416:5 › heading and band palettes stay fixed across random seeds while the hero stays still (37.7s)"
+    },
+    {
+      "number": 39,
+      "project": "webkit-mobile",
+      "line": "tests\\e2e\\afterglow.spec.ts:3:5 › heading, body, menu and counter bands reuse the eight historical pastel families (778ms)"
+    },
+    {
+      "number": 40,
+      "project": "webkit-mobile",
+      "line": "tests\\e2e\\gradient-surfaces.spec.ts:3:5 › section colors keep their authored palette and background washes remain soft (1.5s)"
+    },
+    {
+      "number": 42,
+      "project": "webkit-mobile",
+      "line": "tests\\e2e\\gradient-surfaces.spec.ts:44:5 › all Hero copy has readable normal ink with motion suppressed and a single image shade (1.5s)"
+    },
+    {
+      "number": 43,
+      "project": "webkit-mobile",
+      "line": "tests\\e2e\\gradient-surfaces.spec.ts:80:5 › body color cancels safely on reduced motion and animation API failure (1.2s)"
+    },
+    {
+      "number": 44,
+      "project": "webkit-mobile",
+      "line": "tests\\e2e\\gradient-surfaces.spec.ts:102:5 › reading bands clear on resize and partial animation failure without masking text (1.1s)"
+    },
+    {
+      "number": 41,
+      "project": "webkit-mobile",
+      "line": "tests\\e2e\\afterglow.spec.ts:39:5 › all authored text has a decorative color layer with readable sources in both languages (17.8s)"
+    },
+    {
+      "number": 46,
+      "project": "webkit-mobile",
+      "line": "tests\\e2e\\afterglow.spec.ts:169:5 › body background and color appear together, then return to readable stationary ink (5.8s)"
+    },
+    {
+      "number": 45,
+      "project": "webkit-mobile",
+      "line": "tests\\e2e\\hero-v4.spec.ts:4:7 › / lands without movement, finishes its text color and saves business effects for scrolling (18.8s)"
+    },
+    {
+      "number": 47,
+      "project": "webkit-mobile",
+      "line": "tests\\e2e\\afterglow.spec.ts:249:5 › all menu text receives finite color effects that restart without masking navigation (13.6s)"
+    },
+    {
+      "number": 49,
+      "project": "webkit-mobile",
+      "line": "tests\\e2e\\afterglow.spec.ts:347:5 › heading color outlasts its decorative band and then fades (6.2s)"
+    },
+    {
+      "number": 48,
+      "project": "webkit-mobile",
+      "line": "tests\\e2e\\hero-v4.spec.ts:4:7 › /en lands without movement, finishes its text color and saves business effects for scrolling (19.3s)"
+    },
+    {
+      "number": 51,
+      "project": "webkit-mobile",
+      "line": "tests\\e2e\\metrics.spec.ts:3:5 › the counter progresses once without shifting its width or announcing intermediate numbers (6.7s)"
+    },
+    {
+      "number": 52,
+      "project": "webkit-mobile",
+      "line": "tests\\e2e\\metrics.spec.ts:46:5 › enabling device reduced motion during an active counter shows its final value and stops the number and color animation (1.5s)"
+    },
+    {
+      "number": 53,
+      "project": "webkit-mobile",
+      "line": "tests\\e2e\\metrics.spec.ts:60:5 › both languages label the example figures and preserve readable values without motion or JavaScript (3.5s)"
+    },
+    {
+      "number": 54,
+      "project": "webkit-mobile",
+      "line": "tests\\e2e\\motion.spec.ts:3:5 › body text is readable without masks before entering the viewport and after scrolling (5.6s)"
+    },
+    {
+      "number": 55,
+      "project": "webkit-mobile",
+      "line": "tests\\e2e\\motion.spec.ts:92:5 › menu curtains animate behind immediately readable navigation text on each opening (11.0s)"
+    },
+    {
+      "number": 56,
+      "project": "webkit-mobile",
+      "line": "tests\\e2e\\motion.spec.ts:151:5 › pausing during the entrance clears decorative bands and images without hiding copy (2.9s)"
+    },
+    {
+      "number": 57,
+      "project": "webkit-mobile",
+      "line": "tests\\e2e\\motion.spec.ts:190:5 › resize and a partially failing animation API cannot strand a colored cover (2.2s)"
+    },
+    {
+      "number": 50,
+      "project": "webkit-mobile",
+      "line": "tests\\e2e\\afterglow.spec.ts:416:5 › heading and band palettes stay fixed across random seeds while the hero stays still (41.2s)"
+    }
+  ]
+}

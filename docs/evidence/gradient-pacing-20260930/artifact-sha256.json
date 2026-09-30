@@ -1,0 +1,195 @@
+{
+  "recordedAt": "2026-09-30T02:04:43.875Z",
+  "files": [
+    {
+      "file": "README.md",
+      "bytes": 5143,
+      "sha256": "87fb9397c9103d4e8566512747869f3719cacaf0ee321a378926d59ee2a1b0e7"
+    },
+    {
+      "file": "before/ja-1440-body-menu-natural.webm",
+      "bytes": 1112278,
+      "sha256": "383a895ca4ea6bf865450e63c6dfb659c9459c404ba8b402c55f42dd9692d836"
+    },
+    {
+      "file": "before/ja-1440-body-natural.png",
+      "bytes": 460458,
+      "sha256": "44e241e0f2fc540c28080bd28dc6d2ef401136feddf629e7c46ddf81d65aa4b5"
+    },
+    {
+      "file": "before/ja-1440-body-settled.png",
+      "bytes": 466315,
+      "sha256": "022c2bf9589bf7643739ff5b8f954a6e71ac31de442a48ba02ab92a89ad594ed"
+    },
+    {
+      "file": "before/ja-1440-menu-natural.png",
+      "bytes": 432958,
+      "sha256": "cd3041957984a6b1e15adf7f64cb5901257b5870485f5ca104df0ad020831d93"
+    },
+    {
+      "file": "before/ja-390-body-menu-natural.webm",
+      "bytes": 800783,
+      "sha256": "d6b2e062dbab458ae652eb932a6b8b5f73189c3a93e230ab3333e8122d9632ac"
+    },
+    {
+      "file": "before/ja-390-body-natural.png",
+      "bytes": 97623,
+      "sha256": "5b1b6ff24b2531fa950b2c376cf6c8134cfc393e13e2db7ec163d694c8af2bc8"
+    },
+    {
+      "file": "before/ja-390-body-settled.png",
+      "bytes": 93172,
+      "sha256": "4cc9a1a1b8ef1745aaa929d2e638d534908ec3144ee49b909902d97b3637d133"
+    },
+    {
+      "file": "before/ja-390-menu-natural.png",
+      "bytes": 145904,
+      "sha256": "bb48d7cce9d043f4a152e5cf6bb092300ceb0a36fab788ecdba71d373b8a5ba8"
+    },
+    {
+      "file": "before/record.json",
+      "bytes": 46578,
+      "sha256": "99f2eea5e38ea5ce12bcf2ffd481a8bf1927af20e98ffc1a114ac8f78ba35842"
+    },
+    {
+      "file": "candidate/hero-record.json",
+      "bytes": 3367,
+      "sha256": "7eecc52dd0073eaee644d59b213b0387cd385f01e93d68b81f9322166372bb83"
+    },
+    {
+      "file": "candidate/ja-1440-body-color-video-frame.png",
+      "bytes": 512296,
+      "sha256": "dddea689d07d9c684677595232316d42c5d690e78350837554e42a668b3c98f9"
+    },
+    {
+      "file": "candidate/ja-1440-body-menu-natural.webm",
+      "bytes": 1466858,
+      "sha256": "c9d771ac16560ba9cb6dc3497210edd124e10e9fa65d567527b1f9e32cd64dd7"
+    },
+    {
+      "file": "candidate/ja-1440-body-natural.png",
+      "bytes": 473359,
+      "sha256": "6ed49ebaf659099d3fcc63a0098a8fca351cfaee8a1771733a09f1306041b2fc"
+    },
+    {
+      "file": "candidate/ja-1440-body-settled.png",
+      "bytes": 466429,
+      "sha256": "fd062775a2257b51fd2f4e1239e9a865eaa7a668543b8c1e8ecf7b2293dcf336"
+    },
+    {
+      "file": "candidate/ja-1440-hero-band.png",
+      "bytes": 1141491,
+      "sha256": "da4330df5d91a1ab4a9d8734eff4f4ffe261192528ea78efed27c1f1729037c7"
+    },
+    {
+      "file": "candidate/ja-1440-hero-color.png",
+      "bytes": 1132372,
+      "sha256": "26e716a65ee7c70c1ddbd2876bc24514bb3017e35abc5bd0444a0dfc4fdb759b"
+    },
+    {
+      "file": "candidate/ja-1440-hero-settled.png",
+      "bytes": 1112361,
+      "sha256": "b534576140aab164d8c0e439f90dfd631201230bbc92264ba6225afa447eb39e"
+    },
+    {
+      "file": "candidate/ja-1440-menu-natural.png",
+      "bytes": 564743,
+      "sha256": "32fb6c3d00f9b59b32c5c1dcdb2be2e6459a700cc8ec2321432ed717590cdcfe"
+    },
+    {
+      "file": "candidate/ja-390-body-color-video-frame.png",
+      "bytes": 207791,
+      "sha256": "5e39b6ffedf924bd786c2169eba2bbf3d9f93a2484cebb1788ec53c78884ccb5"
+    },
+    {
+      "file": "candidate/ja-390-body-menu-natural.webm",
+      "bytes": 1072077,
+      "sha256": "19c2747477e9d3f97cc1a7619389575438a2ccd8508a5a1ba9f44fc4b261b3aa"
+    },
+    {
+      "file": "candidate/ja-390-body-natural.png",
+      "bytes": 100285,
+      "sha256": "4e8048b869600b8cabebcd633d66bd0815ebed957d2c01359cabf00f2f1a409d"
+    },
+    {
+      "file": "candidate/ja-390-body-settled.png",
+      "bytes": 91903,
+      "sha256": "e6694cdf69094a71db088e9639f3204ee50bb596775fe3a977171c7adc44dd22"
+    },
+    {
+      "file": "candidate/ja-390-hero-band.png",
+      "bytes": 200103,
+      "sha256": "654740e49bf5ef4d402a8ee523a96591d8dca11c771be96ce1244182cfaf9421"
+    },
+    {
+      "file": "candidate/ja-390-hero-color.png",
+      "bytes": 198159,
+      "sha256": "375a7ae89f1af4f718d70f0957dbb7bbd2ea3d86646296de9a3203b38a071250"
+    },
+    {
+      "file": "candidate/ja-390-hero-settled.png",
+      "bytes": 184610,
+      "sha256": "df5387b3e77e939dcb74395d6b05dfb5a0c32351268843a492cecb1ee3aa5cb7"
+    },
+    {
+      "file": "candidate/ja-390-menu-natural.png",
+      "bytes": 142769,
+      "sha256": "688058aaaffd35305cc8d886e92f3ea32fa24cca03f530fca677692ea8fcd870"
+    },
+    {
+      "file": "candidate/record.json",
+      "bytes": 68694,
+      "sha256": "18f4998e658370be7c4b163e1b31bdc1b6a1fad5d83732cd4b01bb1ca0ea4882"
+    },
+    {
+      "file": "checks/build.log",
+      "bytes": 1291,
+      "sha256": "aa1b60db0e3b0bee3230803cbdf1942a3f620dc65f694b6e326414e6e7cee51e"
+    },
+    {
+      "file": "checks/capture-hero-natural.mjs",
+      "bytes": 2968,
+      "sha256": "1c328e4f2db8099ad1d9d61588b65849e046be3467675cdcc6a6fc293181070c"
+    },
+    {
+      "file": "checks/contrast.json",
+      "bytes": 625,
+      "sha256": "438ac1e8a42ab5bc77e0b363117464c884cbd504a04e05fd3e66f91823dd3577"
+    },
+    {
+      "file": "checks/focused-first-log-summary.json",
+      "bytes": 12593,
+      "sha256": "199c2717c9b5635fdaec65284ce6dcdef36c9e790e01b77c484ac29424ae94de"
+    },
+    {
+      "file": "checks/focused-first.log",
+      "bytes": 11189,
+      "sha256": "9fb1281bf0533fb198f330372881363b63d03946c7c3d2541025edaeeeaecb6c"
+    },
+    {
+      "file": "checks/lint.log",
+      "bytes": 48,
+      "sha256": "8017974ec6732dbfc0bf8791eef7d9e20ae6aea59a2dbadd1c85626e8fe7900b"
+    },
+    {
+      "file": "checks/reading-navigation.json",
+      "bytes": 19642,
+      "sha256": "77cc8788dec03ce6168e1732b18222255e8ab214e75390f66de9ad24af5f4e9b"
+    },
+    {
+      "file": "checks/reading-navigation.log",
+      "bytes": 3813,
+      "sha256": "11c3a0ef233efebfa6d86b90f644f614bdf7dc8d5c71b60f9c118e0b5827ca08"
+    },
+    {
+      "file": "checks/typecheck.log",
+      "bytes": 134,
+      "sha256": "342b82d1d81a32edb398ff7b292005829912b2fccb4f3bbbe0334a4898cf0317"
+    },
+    {
+      "file": "source-binding.json",
+      "bytes": 4346,
+      "sha256": "14fb6ddd90ca8fc7b5db47fce9158e0ab82b1361d6ca2e23f1318fc4eab3ed69"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+
+Running 15 tests using 2 workers
+
+(node:2536) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3388) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3388) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:2536) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [chromium-desktop] › tests\e2e\readability.spec.ts:7:7 › readable page structure fits 320px in both languages (1.7s)
+  ok  3 [chromium-desktop] › tests\e2e\readability.spec.ts:29:5 › 200 percent text enlargement keeps all pages readable and the menu usable (3.1s)
+(node:47744) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:47744) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  4 [chromium-mobile] › tests\e2e\readability.spec.ts:7:7 › readable page structure fits 320px in both languages (2.2s)
+  ok  2 [chromium-desktop] › tests\e2e\site.spec.ts:38:5 › menu traps Tab and Shift+Tab, closes with Escape and restores scroll and focus (9.5s)
+  ok  5 [chromium-mobile] › tests\e2e\readability.spec.ts:29:5 › 200 percent text enlargement keeps all pages readable and the menu usable (5.3s)
+  ok  6 [chromium-desktop] › tests\e2e\site.spec.ts:100:5 › rapid close, reopen, resizing and short-height navigation remain usable (10.5s)
+  ok  7 [chromium-mobile] › tests\e2e\site.spec.ts:38:5 › menu traps Tab and Shift+Tab, closes with Escape and restores scroll and focus (9.3s)
+  ok  8 [chromium-desktop] › tests\e2e\site.spec.ts:246:5 › key pages and the full-screen menu pass axe WCAG 2.2 AA (5.1s)
+(node:23236) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:23236) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 10 [webkit-mobile] › tests\e2e\readability.spec.ts:7:7 › readable page structure fits 320px in both languages (4.0s)
+  ok  9 [chromium-mobile] › tests\e2e\site.spec.ts:100:5 › rapid close, reopen, resizing and short-height navigation remain usable (10.0s)
+  ok 12 [chromium-mobile] › tests\e2e\site.spec.ts:246:5 › key pages and the full-screen menu pass axe WCAG 2.2 AA (5.1s)
+(node:32236) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:32236) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 13 [webkit-mobile] › tests\e2e\site.spec.ts:38:5 › menu traps Tab and Shift+Tab, closes with Escape and restores scroll and focus (10.3s)
+  ok 11 [webkit-mobile] › tests\e2e\readability.spec.ts:29:5 › 200 percent text enlargement keeps all pages readable and the menu usable (28.0s)
+  ok 14 [webkit-mobile] › tests\e2e\site.spec.ts:100:5 › rapid close, reopen, resizing and short-height navigation remain usable (15.7s)
+  ok 15 [webkit-mobile] › tests\e2e\site.spec.ts:246:5 › key pages and the full-screen menu pass axe WCAG 2.2 AA (7.2s)
+
+  15 passed (1.2m)
