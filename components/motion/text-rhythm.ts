@@ -4,10 +4,16 @@ export type TextKind = "heading" | "subtitle" | "body" | "label" | "utility";
 
 export const textColorRiseMs = 160;
 export const textColorHoldExtensionMs = 700;
+export const textBandFrames: Keyframe[] = [
+  { transform: "scaleX(0)", opacity: 0 },
+  { transform: "scaleX(1)", opacity: 0.5, offset: 0.38 },
+  { transform: "scaleX(1)", opacity: 0.5, offset: 0.6 },
+  { transform: "scaleX(1)", opacity: 0 },
+];
 
 // A stable rhythm within each composition, with separate envelopes for each
-// typographic role. Color-only text uses a gentle rise and a longer hold in
-// place of the heading's mask/band; its base remains continuously readable.
+// typographic role. Reading text adds a soft band behind its visible source;
+// color outlasts that band before fading to the normal reading color.
 export function textRhythm(text: string, kind: TextKind): CSSProperties {
   const beat =
     Array.from(text).reduce(

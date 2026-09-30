@@ -41,7 +41,7 @@ test("section colors keep their authored palette and background washes remain so
   expect(surfaces[0]).toBe(surfaces[1]);
 });
 
-test("all Hero copy has static gradient ink with a single readable image shade", async ({ page }) => {
+test("all Hero copy has readable normal ink with motion suppressed and a single image shade", async ({ page }) => {
   await page.emulateMedia({ reducedMotion: "reduce" });
   for (const route of ["/", "/en"]) {
     await page.goto(route);
@@ -64,8 +64,8 @@ test("all Hero copy has static gradient ink with a single readable image shade",
     expect(result.text.length).toBeGreaterThanOrEqual(12);
     for (const source of result.text) {
       expect(source.text).toBeTruthy();
-      expect(source.gradient).toContain("linear-gradient");
-      expect(source.clip).toBe("text");
+      expect(source.gradient).toBe("none");
+      expect(source.clip).not.toBe("text");
       expect(source.opacity).toBe("1");
     }
     expect(result.animations).toBe(0);
@@ -96,5 +96,34 @@ test("body color cancels safely on reduced motion and animation API failure", as
   await expect(text.locator(".reveal-source")).toBeVisible();
   await expect(text.locator(".reveal-color")).toHaveCSS("opacity", "0");
   await expect(text.locator(".reveal-source")).toHaveCSS("clip-path", "none");
+  expect(errors).toEqual([]);
+});
+
+test('reading bands clear on resize and partial animation failure without masking text', async ({ page }) => {
+  await page.goto('/about');
+  const text = page.locator('.page-description .reveal-text');
+  await expect(text).toHaveAttribute('data-reveal-state', 'running');
+  expect(await text.locator('.reveal-band-soft').count()).toBeGreaterThan(0);
+  await page.setViewportSize({ width: 360, height: 640 });
+  await expect(text).toHaveAttribute('data-reveal-state', 'settled');
+  await expect(text.locator('.reveal-band')).toHaveCount(0);
+  await expect(text.locator('.reveal-color')).toHaveCSS('opacity', '0');
+  await page.addInitScript(() => {
+    const animate = Element.prototype.animate;
+    let calls = 0;
+    Element.prototype.animate = function(...args: Parameters<typeof animate>) {
+      if (++calls % 2 === 0) throw new Error('Synthetic partial text animation failure');
+      return animate.apply(this, args);
+    };
+  });
+  const errors: string[] = [];
+  page.on('pageerror', error => errors.push(error.message));
+  await page.reload();
+  await expect(text).toHaveAttribute('data-reveal-state', 'settled');
+  await expect(text.locator('.reveal-band')).toHaveCount(0);
+  await expect(text.locator('.reveal-color')).toHaveCSS('opacity', '0');
+  await expect(text.locator('.reveal-source')).toBeVisible();
+  await expect(text.locator('.reveal-source')).toHaveCSS('clip-path', 'none');
+  expect(await text.evaluate(el => el.getAnimations({ subtree: true }).length)).toBe(0);
   expect(errors).toEqual([]);
 });

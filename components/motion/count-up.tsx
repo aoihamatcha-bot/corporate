@@ -2,7 +2,8 @@
 
 import { useEffect, useRef } from "react";
 import type { Locale } from "@/content/i18n";
-import { observeEntrance, randomPalette } from "./entrance";
+import { observeEntrance } from "./entrance";
+import { textBandFrames } from "./text-rhythm";
 import { useMotionPaused } from "./motion-preference";
 
 export function CountUp({
@@ -17,6 +18,7 @@ export function CountUp({
   const root = useRef<HTMLSpanElement>(null);
   const digits = useRef<HTMLSpanElement>(null);
   const color = useRef<HTMLSpanElement>(null);
+  const band = useRef<HTMLSpanElement>(null);
   const paused = useMotionPaused();
   const formatted = new Intl.NumberFormat(locale).format(value);
 
@@ -29,6 +31,7 @@ export function CountUp({
     return observeEntrance(element, () => {
       let frame = 0;
       let glow: Animation | undefined;
+      let wash: Animation | undefined;
       let stopped = false;
       const contrast = matchMedia("(forced-colors: active)");
       const formatter = new Intl.NumberFormat(locale);
@@ -47,6 +50,7 @@ export function CountUp({
         stopped = true;
         cancelAnimationFrame(frame);
         glow?.cancel();
+        wash?.cancel();
         render(formatted);
         element.dataset.counterState = "settled";
         contrast.removeEventListener("change", onContrast);
@@ -56,19 +60,18 @@ export function CountUp({
       }
 
       element.dataset.counterState = "running";
-      element.dataset.palette = randomPalette();
       try {
+        wash = band.current!.animate(textBandFrames, { duration: 620, delay, fill: "both" });
         render("0");
         glow = overlay.animate(
           [
-            { opacity: 1, backgroundPosition: "0% 50%" },
+            { opacity: 1 },
             {
               opacity: 1,
-              backgroundPosition: "65% 50%",
               offset: (duration + hold) / total,
               easing: "ease-in-out",
             },
-            { opacity: 0, backgroundPosition: "100% 50%" },
+            { opacity: 0 },
           ],
           { duration: total, delay, easing: "linear", fill: "backwards" },
         );
@@ -101,6 +104,7 @@ export function CountUp({
       {/* Read the final value once; frame updates remain decorative. */}
       <span className="sr-only">{formatted}</span>
       <span className="count-up-visual" aria-hidden="true">
+        <span ref={band} className="count-up-band" />
         <span className="count-up-reserve">{formatted}</span>
         <span ref={digits} className="count-up-digits">
           {formatted}

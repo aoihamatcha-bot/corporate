@@ -13,10 +13,10 @@ test("body text is readable without masks before entering the viewport and after
     await target.evaluate((el) => el.getBoundingClientRect().top > innerHeight),
   ).toBe(true);
   const assertReadableBody = async () => {
-    await expect(target).toHaveAttribute("data-text-motion", "color");
+    await expect(target).toHaveAttribute("data-text-motion", "band-color");
     await expect(
-      target.locator(".reveal-band, .reveal-bands"),
-    ).toHaveCount(0);
+      target.locator('.reveal-bands[aria-hidden="true"]'),
+    ).toHaveCount(1);
     await expect(target.locator(".reveal-color")).toHaveCount(1);
     await expect(target.locator(".reveal-color")).toHaveAttribute("aria-hidden", "true");
     await expect(target.locator(".reveal-source")).toBeVisible();
@@ -78,7 +78,7 @@ test("body text is readable without masks before entering the viewport and after
   expect(color.opacity).toBe("1");
   expect(color.gradient).toContain("linear-gradient");
   expect(color.duration).toBeGreaterThanOrEqual(2000);
-  expect(color.duration).toBeLessThanOrEqual(3500);
+  expect(color.duration).toBeLessThanOrEqual(4000);
   expect(color.iterations).toBe(1);
   expect(color.sourceTransform).toBe("none");
   await expect(target).toHaveAttribute("data-reveal-state", "settled");
@@ -107,9 +107,7 @@ test("menu curtains animate behind immediately readable navigation text on each 
         (a) => a.name === "curtain-pass" && a.state === "running",
       ),
     ).toHaveLength(2);
-    await expect(
-      dialog.locator(".menu-ink-band"),
-    ).toHaveCount(0);
+    expect(await dialog.locator('.menu-ink-band[aria-hidden="true"]').count()).toBe(await dialog.locator('.menu-ink').count());
     const labels = await dialog.locator(".menu-ink").evaluateAll((elements) =>
       elements
         .filter((el) => !el.closest('[aria-hidden="true"]'))
@@ -132,7 +130,7 @@ test("menu curtains animate behind immediately readable navigation text on each 
     for (const label of labels) {
       expect(label.text).toBeTruthy();
       expect(label).toMatchObject({
-        motion: "color",
+        motion: "band-color",
         opacity: "1",
         clipPath: "none",
         mask: "none",

@@ -79,26 +79,11 @@ html:is([data-intro="pending"], [data-intro="running"], [data-intro="docking"])
   .hero-headline {
   opacity: 0;
 }
-/* HERO has a single handoff. Other scenes keep the adopted color rhythms. */
+/* The Hero picture stays still. Its text now shares the finite band/color
+   entrance after the handwriting handoff, then returns to normal ink. */
 .hero[data-motion-static]
-  :is(.reveal-color, .reveal-bands, .image-wash, .image-echo, .image-wipe) {
+  :is(.image-wash, .image-echo, .image-wipe) {
   display: none;
-}
-/* Keep the settled Hero still, while giving its authored text the same ink
-   palette as the rest of the site. Background clipping never hides fallback
-   text in unsupported browsers, forced colors, or print. */
-@supports (background-clip: text) or (-webkit-background-clip: text) {
-  .hero[data-motion-static] .reveal-source {
-    background-image: linear-gradient(105deg, var(--type-1), var(--type-2) 48%, var(--type-3));
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    -webkit-text-fill-color: transparent;
-    filter: brightness(var(--text-body-brightness));
-  }
-  .hero[data-motion-static] h1 .reveal-source {
-    filter: none;
-  }
 }
 .hero-capabilities {
   border-top: 1px solid rgb(55 100 132 / 16%);
@@ -463,13 +448,5 @@ html[data-story-motion]
     transition: none !important;
     transform: none !important;
     translate: none !important;
-  }
-}
-@media (forced-colors: active), print {
-  .hero[data-motion-static] .reveal-source {
-    background: none;
-    color: inherit;
-    -webkit-text-fill-color: currentColor;
-    filter: none;
   }
 }

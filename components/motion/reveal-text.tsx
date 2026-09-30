@@ -7,6 +7,7 @@ import { motionToken } from "./tokens";
 import {
   textColorHoldExtensionMs,
   textColorRiseMs,
+  textBandFrames,
   textRhythm,
   type TextKind,
 } from "./text-rhythm";
@@ -19,12 +20,13 @@ type RevealTextProps = {
   light?: boolean;
   className?: string;
   kind?: TextKind;
+  stationary?: boolean;
 };
 
-export function RevealText({ kind = "heading", ...props }: RevealTextProps) {
+export function RevealText({ kind = "heading", stationary = false, ...props }: RevealTextProps) {
   // Reading and navigation keep a stationary, unmasked source. Their color
   // layer shares the once-only viewport gate without the heading entrance.
-  if (kind !== "heading") return <ColorText {...props} kind={kind} />;
+  if (kind !== "heading" || stationary) return <ColorText {...props} kind={kind} />;
   return <AnimatedHeading {...props} kind={kind} />;
 }
 
@@ -37,6 +39,8 @@ function ColorText({
 }: RevealTextProps) {
   const root = useRef<HTMLSpanElement>(null);
   const color = useRef<HTMLSpanElement>(null);
+  const source = useRef<HTMLSpanElement>(null);
+  const bands = useRef<HTMLSpanElement>(null);
   const paused = useMotionPaused();
 
   useEffect(() => {
@@ -45,9 +49,11 @@ function ColorText({
     return observeEntrance(
       element,
       () => {
-        let glow: Animation | undefined;
+        const animations: Animation[] = [];
+        const layer = bands.current!;
         const stop = () => {
-          glow?.cancel();
+          animations.splice(0).forEach((animation) => animation.cancel());
+          layer.replaceChildren();
           element.dataset.revealState = "settled";
         };
         element.dataset.revealState = "running";
@@ -57,12 +63,37 @@ function ColorText({
           const token = (part: string) =>
             Number(computed.getPropertyValue(`--${kind}-${part}-ms`));
           const delay = token("delay") + beat * 37;
+          const wipeMs = token("wipe") + beat * 19;
+          const range = document.createRange();
+          range.selectNodeContents(source.current!);
+          const bounds = element.getBoundingClientRect();
+          const lines = [...range.getClientRects()].filter((rect) => rect.width > 0 && rect.height > 0);
+          const clearMs = wipeMs + Math.min(Math.max(lines.length - 1, 0), 4) * 65;
           const holdMs = token("hold") + beat * 20 + textColorHoldExtensionMs;
           const fadeMs = token("fade") + beat * 43;
-          const colorMs = textColorRiseMs + holdMs + fadeMs;
+          const colorMs = clearMs + holdMs + fadeMs;
+          // Pastel bands sit behind each actual line, never covering or masking
+          // the source. Reading positions and link hit targets do not move.
+          lines.forEach((rect, index) => {
+            const band = document.createElement("i");
+            band.className = "reveal-band reveal-band-soft";
+            Object.assign(band.style, {
+              left: `${rect.left - bounds.left}px`,
+              top: `${rect.top - bounds.top}px`,
+              width: `${rect.width}px`,
+              height: `${rect.height}px`,
+            });
+            layer.append(band);
+            animations.push(band.animate(textBandFrames, {
+              duration: wipeMs,
+              delay: delay + Math.min(index, 4) * 65,
+              easing: "cubic-bezier(.16,1,.3,1)",
+              fill: "both",
+            }));
+          });
           // Opacity alone preserves the gradient without repainting a moving
           // background in the sticky header (costly on mobile WebKit).
-          glow = color.current!.animate(
+          const glow = color.current!.animate(
             [
               { opacity: 0, easing: "ease-out" },
               {
@@ -71,13 +102,14 @@ function ColorText({
               },
               {
                 opacity: 1,
-                offset: (textColorRiseMs + holdMs) / colorMs,
+                offset: (clearMs + holdMs) / colorMs,
                 easing: "ease-in-out",
               },
               { opacity: 0 },
             ],
             { duration: colorMs, delay, easing: "linear" },
           );
+          animations.push(glow);
           glow.onfinish = stop;
         } catch {
           // The readable source is never an animation target, including when
@@ -87,6 +119,7 @@ function ColorText({
         return stop;
       },
       kind === "utility",
+      true,
     );
   }, [paused, children, palette, kind]);
 
@@ -97,10 +130,11 @@ function ColorText({
       data-palette={palette}
       data-tone={light ? "light" : "dark"}
       data-motion-kind={kind}
-      data-text-motion="color"
+      data-text-motion="band-color"
       style={textRhythm(children, kind)}
     >
-      <span className="reveal-source">{children}</span>
+      <span ref={bands} className="reveal-bands" aria-hidden="true" />
+      <span ref={source} className="reveal-source">{children}</span>
       <span
         ref={color}
         className="reveal-color"

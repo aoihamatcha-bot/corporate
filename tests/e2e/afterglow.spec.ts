@@ -82,7 +82,7 @@ test("all authored text has a decorative color layer with readable sources in bo
               overlayHidden: overlay.getAttribute("aria-hidden"),
               overlayText: overlay.getAttribute("data-text"),
               gradient: getComputedStyle(overlay, "::before").backgroundImage,
-              bands: el.querySelectorAll(".reveal-bands, .reveal-band").length,
+              bandLayers: el.querySelectorAll('.reveal-bands[aria-hidden="true"]').length,
               animations: overlay.getAnimations().map((animation) => {
                 const timing = animation.effect!.getComputedTiming();
                 const frames = (animation.effect as KeyframeEffect).getKeyframes();
@@ -105,7 +105,7 @@ test("all authored text has a decorative color layer with readable sources in bo
     for (const entry of colorText) {
       expect(entry.text, route).toBeTruthy();
       expect(entry, `${route}: ${entry.text}`).toMatchObject({
-        motion: "color",
+        motion: "band-color",
         opacity: "1",
         visibility: "visible",
         clipPath: "none",
@@ -119,7 +119,7 @@ test("all authored text has a decorative color layer with readable sources in bo
         overlays: 1,
         overlayHidden: "true",
         overlayText: entry.text,
-        bands: 0,
+        bandLayers: 1,
       });
       expect(entry.gradient, `${route}: ${entry.text}`).toContain("linear-gradient");
       for (const animation of entry.animations) {
@@ -130,7 +130,7 @@ test("all authored text has a decorative color layer with readable sources in bo
   }
 });
 
-test("body color appears and finishes while its source stays readable and stationary", async ({ page }) => {
+test("body background and color appear together, then return to readable stationary ink", async ({ page }) => {
   await page.goto("/about");
   const body = page.locator('.page-description [data-motion-kind="body"]');
   await body.scrollIntoViewIfNeeded();
@@ -146,6 +146,10 @@ test("body color appears and finishes while its source stays readable and statio
     const failures: string[] = [];
     let samples = 0;
     let maxColorOpacity = 0;
+    let maxBandOpacity = 0;
+    let overlap = false;
+    const bands = [...el.querySelectorAll('.reveal-band-soft')];
+    const bandGradients = bands.map((band) => getComputedStyle(band).backgroundImage);
     let raf = 0;
     const sample = () => {
       samples++;
@@ -156,6 +160,9 @@ test("body color appears and finishes while its source stays readable and statio
       if (source.getAnimations().length || el.getAnimations().length) failures.push("animated source or root");
       if (Math.abs(bounds.x - initial.x) > 0.5 || Math.abs(bounds.y - initial.y) > 0.5) failures.push("moving source");
       maxColorOpacity = Math.max(maxColorOpacity, Number(getComputedStyle(overlay).opacity));
+      const bandOpacity = Math.max(0, ...bands.map((band) => Number(getComputedStyle(band).opacity)));
+      maxBandOpacity = Math.max(maxBandOpacity, bandOpacity);
+      overlap ||= bandOpacity > 0.1 && Number(getComputedStyle(overlay).opacity) > 0.8;
       raf = requestAnimationFrame(sample);
     };
     sample();
@@ -168,6 +175,9 @@ test("body color appears and finishes while its source stays readable and statio
       opacityFrames: frames.map((frame) => Number(frame.opacity)),
       samples,
       maxColorOpacity,
+      maxBandOpacity,
+      overlap,
+      bandGradients,
       failures,
     };
   });
@@ -175,9 +185,15 @@ test("body color appears and finishes while its source stays readable and statio
   expect(result.opacityFrames).toEqual([0, 1, 1, 0]);
   expect(result.samples).toBeGreaterThan(1);
   expect(result.maxColorOpacity).toBeGreaterThan(0.95);
+  expect(result.maxBandOpacity).toBeGreaterThan(0.1);
+  expect(result.overlap).toBe(true);
+  expect(result.bandGradients.length).toBeGreaterThan(0);
+  expect(result.bandGradients.every((gradient) => gradient.includes('linear-gradient'))).toBe(true);
   await expect(body).toHaveAttribute("data-reveal-state", "settled");
   await expect(body.locator(".reveal-color")).toHaveCSS("opacity", "0");
   await expect(body.locator(".reveal-source")).toBeVisible();
+  await expect(body.locator('.reveal-band')).toHaveCount(0);
+  await expect(body.locator('.reveal-source')).toHaveCSS('background-image', 'none');
 });
 
 test("all menu text receives finite color effects that restart without masking navigation", async ({ page }) => {
@@ -186,14 +202,15 @@ test("all menu text receives finite color effects that restart without masking n
     const open = page.getByRole("button", { name: prefix ? "Open menu" : "メニューを開く" });
     await open.click();
     const dialog = page.getByRole("dialog");
-    await expect(dialog.locator('.nav-en[data-text-motion="color"]')).toHaveCount(6);
-    await expect(dialog.locator('.nav-number .menu-ink[data-text-motion="color"]')).toHaveCount(6);
-    await expect(dialog.locator('.nav-ja .menu-ink[data-text-motion="color"]')).toHaveCount(prefix ? 0 : 6);
-    await expect(dialog.locator('.close-trigger .menu-ink[data-text-motion="color"]')).toHaveCount(1);
-    await expect(dialog.locator('.language-options .menu-ink[data-text-motion="color"]')).toHaveCount(2);
-    await expect(dialog.locator('.nav-aux .menu-ink[data-text-motion="color"]')).toHaveCount(1);
-    await expect(dialog.locator('.nav-bottom .menu-ink[data-text-motion="color"]')).toHaveCount(2);
-    await expect(dialog.locator(".menu-ink-wipe, .menu-ink-band, .motion-control")).toHaveCount(0);
+    await expect(dialog.locator('.nav-en[data-text-motion="band-color"]')).toHaveCount(6);
+    await expect(dialog.locator('.nav-number .menu-ink[data-text-motion="band-color"]')).toHaveCount(6);
+    await expect(dialog.locator('.nav-ja .menu-ink[data-text-motion="band-color"]')).toHaveCount(prefix ? 0 : 6);
+    await expect(dialog.locator('.close-trigger .menu-ink[data-text-motion="band-color"]')).toHaveCount(1);
+    await expect(dialog.locator('.language-options .menu-ink[data-text-motion="band-color"]')).toHaveCount(2);
+    await expect(dialog.locator('.nav-aux .menu-ink[data-text-motion="band-color"]')).toHaveCount(1);
+    await expect(dialog.locator('.nav-bottom .menu-ink[data-text-motion="band-color"]')).toHaveCount(2);
+    await expect(dialog.locator(".menu-ink-wipe, .motion-control")).toHaveCount(0);
+    expect(await dialog.locator('.menu-ink-band[aria-hidden="true"]').count()).toBe(await dialog.locator('.menu-ink').count());
     await expect(dialog.locator(`.nav-aux a[href="${prefix}/privacy"]`)).toHaveAccessibleName(prefix ? "Privacy policy" : "プライバシーポリシー");
     const menu = await dialog.locator(".menu-ink").evaluateAll((elements) =>
       elements.map((el) => {
@@ -208,6 +225,11 @@ test("all menu text receives finite color effects that restart without masking n
           overlays: el.querySelectorAll(".menu-ink-color").length,
           overlayHidden: overlay.getAttribute("aria-hidden"),
           gradient: getComputedStyle(overlay, "::before").backgroundImage,
+          bandGradient: getComputedStyle(el.querySelector('.menu-ink-band')!).backgroundImage,
+          bandEffects: el.querySelector('.menu-ink-band')!.getAnimations().map((animation) => ({
+            iterations: animation.effect!.getTiming().iterations,
+            duration: Number(animation.effect!.getTiming().duration),
+          })),
           opacity: style.opacity,
           visibility: style.visibility,
           clipPath: style.clipPath,
@@ -228,8 +250,15 @@ test("all menu text receives finite color effects that restart without masking n
       }),
     );
     for (const entry of menu) {
-      expect(entry).toMatchObject({ motion: "color", overlays: 1, overlayHidden: "true", overlayText: entry.text, opacity: "1", visibility: "visible", clipPath: "none", mask: "none", transform: "none", rootAnimations: 0, sourceAnimations: 0 });
+      expect(entry).toMatchObject({ motion: "band-color", overlays: 1, overlayHidden: "true", overlayText: entry.text, opacity: "1", visibility: "visible", clipPath: "none", mask: "none", transform: "none", rootAnimations: 0, sourceAnimations: 0 });
       expect(entry.gradient).toContain("linear-gradient");
+      expect(entry.bandGradient).toContain('linear-gradient');
+      if (entry.visible) expect(entry.bandEffects).toHaveLength(1);
+      for (const effect of entry.bandEffects) {
+        expect(effect.iterations).toBe(1);
+        expect(effect.duration).toBeGreaterThan(0);
+        expect(effect.duration).toBeLessThan(1000);
+      }
       if (entry.visible) expect(entry.animations).toHaveLength(2);
       for (const animation of entry.animations) {
         expect(animation).toMatchObject({ finite: true, iterations: 1, backgroundMotion: false });
@@ -257,6 +286,7 @@ test("all menu text receives finite color effects that restart without masking n
       await Promise.all(el.getAnimations().map((animation) => animation.finished));
     });
     await expect(closeColor).toHaveCSS("opacity", "0");
+    await expect(dialog.locator('.close-trigger .menu-ink-band')).toHaveCSS('opacity', '0');
     await expect(dialog.locator(".close-trigger .menu-ink-base")).toBeVisible();
     await page.keyboard.press("Escape");
     await expect(dialog).not.toBeVisible();
@@ -354,6 +384,8 @@ test("heading and band palettes stay fixed across random seeds while the hero st
     await expect(heroLines.nth(0)).toHaveAttribute("data-entered", "true");
     await expect(heroLines.nth(1)).toHaveAttribute("data-entered", "true");
     await expect(page.locator(".site-opening")).not.toBeVisible();
+    await expect(heroLines.nth(0)).toHaveAttribute('data-reveal-state', 'settled');
+    await expect(heroLines.nth(1)).toHaveAttribute('data-reveal-state', 'settled');
     expect(
       await heroLines.evaluateAll((elements) => elements.map((el) => el.getAnimations({ subtree: true }).length)),
     ).toEqual([0, 0]);
@@ -369,7 +401,7 @@ test("heading and band palettes stay fixed across random seeds while the hero st
     );
     expect(heroSources.length).toBeGreaterThan(2);
     for (const source of heroSources) {
-      expect(source.gradient).toContain("linear-gradient");
+      expect(source.gradient).toBe("none");
       expect(source.clipPath).toBe("none");
       expect(source.animations).toBe(0);
     }

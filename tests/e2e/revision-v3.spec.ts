@@ -62,6 +62,9 @@ test("completed handwriting holds for a second then lands on the hero line boxes
   await expect(page.locator("#hero-title")).toHaveText(
     "好奇心が、世界を変える。",
   );
+  for (const line of await page.locator('#hero-title .reveal-text').all()) {
+    await expect(line).toHaveAttribute('data-reveal-state', 'settled');
+  }
   expect(await page.locator("#hero-title .reveal-band").count()).toBe(0);
   await page.evaluate(() =>
     window.scrollTo({ top: 1300, behavior: "instant" }),

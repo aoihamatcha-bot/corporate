@@ -1,8 +1,8 @@
 import type { Palette } from "./entrance";
 import { textRhythm, type TextKind } from "./text-rhythm";
 
-// Native dialog open/close restarts only the decorative CSS color layer.
-// The source remains readable throughout, without a wipe or moving hit target.
+// Native dialog open/close restarts the decorative band and color layers.
+// The band is behind the readable source; link hit targets never move.
 export function MenuInk({
   children,
   large = false,
@@ -22,9 +22,10 @@ export function MenuInk({
       data-palette={palette}
       data-tone={light ? "light" : "dark"}
       data-motion-kind={kind}
-      data-text-motion="color"
+      data-text-motion="band-color"
       style={textRhythm(children, kind)}
     >
+      <span className="menu-ink-band" aria-hidden="true" />
       <span className={`menu-ink-base${large ? " nav-en-base" : ""}`}>
         {children}
       </span>
