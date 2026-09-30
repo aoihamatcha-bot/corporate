@@ -21,8 +21,9 @@ export const en: Dictionary = {
     unsavedPrompt:
       "Switching languages will discard your unsent changes. Continue?",
     tagline: "Entertainment × Technology",
-    brandNote: "Be curious. Find your next.",
-    navMessage: "Spark curiosity.\nOpen new possibilities.",
+    brandNote: "Explore MYSTENA’s business.",
+    navMessage: "MYSTENA’s business and company information",
+    businessDetails: "View details",
     copyright: "© MYSTENA",
     home: "Home",
     required: "Required",
@@ -43,36 +44,36 @@ export const en: Dictionary = {
     home: {
       title: "Curiosity changes the world.",
       menu: "Home",
-      short: "Top",
+      short: "Home",
       description:
-        "Explore MYSTENA’s business, approach, current initiatives and company information.",
+        "Explore MYSTENA’s four business areas—online services, system development, video production and promotion—and our approach to building services.",
     },
     about: {
       title: "About us",
       menu: "About us",
       short: "About",
       description:
-        "Turning engaging ideas into intuitive services. Discover the principles that guide MYSTENA.",
+        "Discover the principles that guide how MYSTENA plans and builds services.",
     },
     business: {
       title: "Our business",
       menu: "Our business",
       short: "Business",
       description:
-        "Explore MYSTENA’s four business areas: entertainment commerce, service and system development, video and content production, and marketing and collaboration.",
+        "Planning, developing and operating online sales services, system development, video production and promotion. Explore our four business areas and joint project themes.",
     },
     company: {
       title: "Company information",
       menu: "Company information",
       short: "Company",
       description:
-        "Information about the organization behind MYSTENA. Legal company details await confirmation.",
+        "Learn about the organization behind MYSTENA. Its official name and other details await confirmation.",
     },
     news: {
       title: "News",
       menu: "News",
       short: "News",
-      description: "Confirmed announcements from MYSTENA.",
+      description: "News about MYSTENA’s activities and business.",
     },
     contact: {
       title: "Contact",
@@ -92,21 +93,25 @@ export const en: Dictionary = {
   home: {
     heroLines: ["Curiosity changes", "the world."],
     description:
-      "MYSTENA brings entertainment and technology together through service development, video production, and marketing. From engaging online shopping experiences to business systems and projects with brands and creators, we connect planning, development, creative work, and promotion to create new experiences.",
+      "MYSTENA works on online services, system development, video production and promotion. Explore our four areas, from systems that support sales and operations to product videos and joint projects with brands and creators.",
     businessButton: "Explore our business",
     companyButton: "View company information",
     scroll: "Scroll to explore",
-    capabilities: ["Planning", "Development", "Creative", "Promotion"],
-    businessTitle: "Making product discovery\nmore engaging.",
+    capabilities: ["Planning", "Development", "Video production", "Promotion"],
+    businessTitle: "MYSTENA’s four business areas",
     businessDescription:
-      "From creating products and services to communicating their appeal and encouraging people to use them, we bring four areas together to explore new experiences.",
+      "Start with an overview of each area. Our business page explains the work involved and possible joint project themes.",
     businessStructure:
-      "Four areas connecting planning, development, creative work, and promotion.",
+      "Planning, development, video production and promotion",
+    workingLabel: "Our work",
     workingTitle: "What we are working on",
-    philosophyLabel: "What matters to us",
-    philosophyLines: ["A little wonder", "changes everything."],
+    workingDescription:
+      "Explore the roles of businesses introducing products and people looking for them in an online sales service.",
+    workingButton: "Explore the service approach",
+    philosophyLabel: "Our approach",
+    philosophyLines: ["What matters to us"],
     philosophyDescription:
-      "Unexpected discoveries can make everyday life a little richer. We use technology and ideas to create opportunities for those moments.",
+      "Staying curious, making things clear and building trust over time. These three principles guide how we plan and develop services.",
     aboutButton: "Explore our approach",
     companyDescription: "Learn about the organization behind MYSTENA.",
   },
@@ -120,16 +125,16 @@ export const en: Dictionary = {
     },
   },
   about: {
-    heading: "Turning engaging ideas\ninto intuitive services.",
+    heading: "Building services that are\nengaging and easy to use",
     paragraphs: [
-      "MYSTENA aims to create new connections between people, products, and content. We develop ideas that spark interest into services people can use. To do this, we approach planning, development, and creative expression as parts of one experience.",
+      "MYSTENA aims to build services that help people enjoy products and content. From planning and development to video and written introductions, we consider whether each part is clear and easy to use.",
     ],
     valuesTitle: "What matters to us",
     values: [
       {
         title: "Stay curious.",
         description:
-          "We look for overlooked qualities and new opportunities for discovery.",
+          "We take an interest in new products, creative approaches and technology, and use what we learn to plan and build services.",
       },
       {
         title: "Make things clear.",
@@ -160,9 +165,10 @@ export const en: Dictionary = {
       platform: {
         role: "Business area 01",
         title: "Entertainment\ncommerce",
+        summary: "Planning, developing and operating online sales services that make choosing products enjoyable.",
         description:
-          "We plan, develop, and operate online sales services that make shopping more engaging. We explore experiences that make both discovering products and shopping enjoyable.",
-        consultation: "Plan a more engaging online sales service",
+          "We plan, develop and operate online sales services that make choosing products enjoyable. We consider how products are presented and how people can find and choose them easily.",
+        consultation: "Plan an online service that makes shopping enjoyable",
         visualAlt:
           "A 2D illustration of a woman choosing products in an online shop",
         detailVisualAlt:
@@ -171,8 +177,9 @@ export const en: Dictionary = {
       systems: {
         role: "Business area 02",
         title: "Service and system\ndevelopment",
+        summary: "Developing web services for businesses and systems that manage sales and operations.",
         description:
-          "We develop services for businesses, sales and operations management systems, and web services. We turn business needs into systems that are easy to use.",
+          "We develop web services for businesses and systems that manage sales and operations. We design screens and interactions around the work people need to do.",
         consultation: "Develop a sales service or an operations system",
         visualAlt:
           "A 2D illustration of two developers writing code and building a web interface",
@@ -182,8 +189,9 @@ export const en: Dictionary = {
       creative: {
         role: "Business area 03",
         title: "Video and content\nproduction",
+        summary: "Producing product videos, in-service visual sequences, advertising materials and digital content.",
         description:
-          "We produce in-service visual sequences, product introduction videos, advertising materials, and digital content. We develop creative approaches that communicate what makes a product or service appealing.",
+          "We produce in-service visual sequences, product introduction videos, advertising materials and digital content. We plan the structure and presentation around the message and its intended use.",
         consultation: "Create a video introducing a product or service",
         visualAlt:
           "An AI-generated concept image of a product camera setup and video editing screen",
@@ -193,6 +201,7 @@ export const en: Dictionary = {
       marketing: {
         role: "Business area 04",
         title: "Marketing and\ncollaboration",
+        summary: "Planning sales promotions, social media initiatives and joint projects with brands and creators.",
         description:
           "We plan sales promotions, social media initiatives, influencer partnerships, and joint projects with brands and creators. These can include product curation, limited-edition product development, video production, and sales campaigns.",
         consultation: "Co-create a product with a brand or creator",
@@ -205,31 +214,33 @@ export const en: Dictionary = {
     consultationLabel: "Example inquiry",
   },
   diagram: {
-    title: "Connecting entertainment commerce",
+    title: "Businesses and users",
     caption:
-      "Connecting businesses offering products with people looking for something new.",
+      "The people involved in an online sales service and the role we envisage for MYSTENA.",
+    relationshipLabel: "What this diagram shows",
+    relationshipDescription: "The roles involved in presenting products and making them easy to find and choose.",
     nodes: [
       {
         title: "Businesses offering products",
-        description: "The appeal of products and content",
+        description: "Introducing products and content",
       },
       {
         title: "MYSTENA’s service",
-        description: "Designing discovery and the user experience",
+        description: "Designing how products are presented and how the service is used",
       },
       {
-        title: "People looking for something new",
-        description: "The enjoyment of discovery",
+        title: "People looking for products",
+        description: "Enjoying learning about and choosing products and content",
       },
     ],
   },
   collaboration: {
     label: "PARTNERSHIPS",
-    title: "Exploring new ways to bring\nproducts and content to people.",
+    title: "Joint projects, development and production",
     intro:
-      "We bring together strengths in products, content, and technology to explore new experiences.",
+      "Our collaboration themes include joint product planning, sales service development and product video production.",
     description:
-      "Co-create a product, develop a sales service, or produce an introduction video. Our collaboration topics connect planning, development, creative work, and promotion.",
+      "Depending on the product, service or material involved, we consider projects such as the following.",
     themes: [
       "Co-developing or curating products and limited editions",
       "Developing sales services and business systems",
@@ -237,12 +248,13 @@ export const en: Dictionary = {
       "Social media initiatives and influencer partnerships",
     ],
     note: "The collaboration topics we can accept are being confirmed. Our contact channel is being prepared.",
-    button: "Collaboration inquiries",
+    contactStatus: "Our contact channel for collaboration inquiries is being prepared.",
+    button: "About contacting us",
   },
   company: {
     intro: "Key information about the organization behind MYSTENA.",
     notice:
-      "Legal company information is being confirmed. We will publish confirmed details when they are ready. MYSTENA is a brand name, not a substitute for a legal company name.",
+      "MYSTENA is a brand name. The official name and other details of the organization behind it will be published once confirmed.",
     fields: {
       brand: "Brand",
       legalName: "Legal company name",
@@ -256,9 +268,9 @@ export const en: Dictionary = {
       email: "Contact",
       telephone: "Telephone",
     },
-    photoTitle: "A picture of creating together.",
+    photoTitle: "An illustration of planning, development and production",
     photoNote:
-      "An illustration of work connecting planning, development and creative expression. The people and office are imaginary.",
+      "The people and office depict an imagined working environment.",
   },
   contact: {
     noticeTitle: "Our contact channel is being prepared.",
@@ -286,13 +298,13 @@ export const en: Dictionary = {
       "Our contact channel is being prepared. Your inquiry has not been sent.",
   },
   contactBand: {
-    title: ["New possibilities begin", "with a conversation."],
+    title: ["About contacting us"],
     description:
-      "Explore inquiries about planning, development, video production and collaboration.",
+      "We are preparing a contact channel for planning, development, video production and collaboration inquiries.",
   },
   news: {
     emptyTitle: "There are no announcements at this time.",
-    emptyDescription: "Find the latest announcements from MYSTENA here.",
+    emptyDescription: "Announcements will be published here when available.",
     all: "View all news",
     back: "Back to news",
     home: "Back to home",
@@ -314,22 +326,22 @@ export const en: Dictionary = {
   assets: {
     expand: "Enlarge image (opens in a new tab)",
     aboutCaption:
-      "A desk where ideas take shape. An illustration connecting planning, development and production.",
+      "An illustration of tools used in planning, development and production.",
     posterLabel: "Service introduction",
-    posterTitle: "Discover a collection. Open a box.",
+    posterTitle: "Service introduction",
     afterglowAlt: "An abstract brand visual with a loop of blue light",
     daylightAlt: "An abstract transparent form in soft overlapping light",
     slots: [
       {
-        title: "A new way to discover collectibles.",
+        title: "Service overview",
         description:
           "Trading cards, brand fashion and precision devices. Enjoy discovering products through mystery boxes.",
         label: "Service overview 01",
       },
       {
-        title: "Understand. Choose. Unbox.",
+        title: "From choosing a product to opening a box",
         description:
-          "Review product information and conditions, choose a box, open it, and learn about the product you will receive. An enjoyable experience built on clarity.",
+          "An overview of reviewing product information and conditions, choosing a box and opening it.",
         label: "Experience flow 02",
       },
     ],

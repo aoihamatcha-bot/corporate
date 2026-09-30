@@ -1,0 +1,863 @@
+{
+  "source": "31be953093a1c769b84825c866e89d35d57a4352",
+  "build": "Gov2FtiCaMIShrbgyWBXK",
+  "recordedAt": "2026-09-30T01:14:53.455Z",
+  "conditions": "Diagnostic overrides only; no product acceptance. Sequential WebKit iPhone 13 390x844 DPR3, 800ms real font-response delay, default Playwright video capture, natural opening and 2300ms rAF sample window. Same conditions across cases.",
+  "cases": [
+    {
+      "name": "baseline",
+      "css": "",
+      "frameCount": 17,
+      "duration": 2407,
+      "positions": 1,
+      "frames": [
+        {
+          "time": 1,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 24
+        },
+        {
+          "time": 109,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 24
+        },
+        {
+          "time": 232,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 24
+        },
+        {
+          "time": 384,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 24
+        },
+        {
+          "time": 555,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 24
+        },
+        {
+          "time": 746,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 20
+        },
+        {
+          "time": 886,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 14
+        },
+        {
+          "time": 1041,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 12
+        },
+        {
+          "time": 1193,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        },
+        {
+          "time": 1351,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        },
+        {
+          "time": 1535,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        },
+        {
+          "time": 1682,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        },
+        {
+          "time": 1829,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        },
+        {
+          "time": 1970,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        },
+        {
+          "time": 2112,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        },
+        {
+          "time": 2256,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        },
+        {
+          "time": 2407,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        }
+      ]
+    },
+    {
+      "name": "hide-soft-bands",
+      "css": ".reveal-band-soft { display:none !important; }",
+      "frameCount": 16,
+      "duration": 2424,
+      "positions": 1,
+      "frames": [
+        {
+          "time": 0,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 24
+        },
+        {
+          "time": 134,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 24
+        },
+        {
+          "time": 318,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 24
+        },
+        {
+          "time": 516,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 24
+        },
+        {
+          "time": 700,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 23
+        },
+        {
+          "time": 884,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 14
+        },
+        {
+          "time": 1072,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 12
+        },
+        {
+          "time": 1215,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        },
+        {
+          "time": 1355,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        },
+        {
+          "time": 1538,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        },
+        {
+          "time": 1676,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        },
+        {
+          "time": 1815,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        },
+        {
+          "time": 1973,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        },
+        {
+          "time": 2113,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        },
+        {
+          "time": 2255,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        },
+        {
+          "time": 2424,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        }
+      ]
+    },
+    {
+      "name": "promote-color",
+      "css": ".reveal-color { will-change:opacity; transform:translateZ(0); }",
+      "frameCount": 16,
+      "duration": 2328,
+      "positions": 1,
+      "frames": [
+        {
+          "time": 1,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 24
+        },
+        {
+          "time": 112,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 24
+        },
+        {
+          "time": 231,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 24
+        },
+        {
+          "time": 395,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 24
+        },
+        {
+          "time": 581,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 24
+        },
+        {
+          "time": 770,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 20
+        },
+        {
+          "time": 957,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 13
+        },
+        {
+          "time": 1141,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        },
+        {
+          "time": 1287,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        },
+        {
+          "time": 1434,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        },
+        {
+          "time": 1606,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        },
+        {
+          "time": 1746,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        },
+        {
+          "time": 1889,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        },
+        {
+          "time": 2030,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        },
+        {
+          "time": 2185,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        },
+        {
+          "time": 2328,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        }
+      ]
+    },
+    {
+      "name": "promote-band-and-color",
+      "css": ".reveal-color { will-change:opacity; transform:translateZ(0); } .reveal-band-soft { will-change:transform,opacity; }",
+      "frameCount": 15,
+      "duration": 2448,
+      "positions": 1,
+      "frames": [
+        {
+          "time": 0,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 24
+        },
+        {
+          "time": 117,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 24
+        },
+        {
+          "time": 251,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 24
+        },
+        {
+          "time": 410,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 24
+        },
+        {
+          "time": 596,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 24
+        },
+        {
+          "time": 778,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 19
+        },
+        {
+          "time": 968,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 13
+        },
+        {
+          "time": 1154,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        },
+        {
+          "time": 1344,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        },
+        {
+          "time": 1524,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        },
+        {
+          "time": 1700,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        },
+        {
+          "time": 1883,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        },
+        {
+          "time": 2072,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        },
+        {
+          "time": 2261,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        },
+        {
+          "time": 2448,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        }
+      ]
+    },
+    {
+      "name": "without-pseudo-filter",
+      "css": ".reveal-color::before { filter:none !important; }",
+      "frameCount": 17,
+      "duration": 2321,
+      "positions": 1,
+      "frames": [
+        {
+          "time": 1,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 24
+        },
+        {
+          "time": 139,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 24
+        },
+        {
+          "time": 329,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 24
+        },
+        {
+          "time": 470,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 24
+        },
+        {
+          "time": 626,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 24
+        },
+        {
+          "time": 763,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 20
+        },
+        {
+          "time": 924,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 13
+        },
+        {
+          "time": 1057,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 12
+        },
+        {
+          "time": 1203,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        },
+        {
+          "time": 1335,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        },
+        {
+          "time": 1481,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        },
+        {
+          "time": 1613,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        },
+        {
+          "time": 1761,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        },
+        {
+          "time": 1888,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        },
+        {
+          "time": 2044,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        },
+        {
+          "time": 2171,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        },
+        {
+          "time": 2321,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            105.59375
+          ],
+          "animations": 10
+        }
+      ]
+    }
+  ]
+}

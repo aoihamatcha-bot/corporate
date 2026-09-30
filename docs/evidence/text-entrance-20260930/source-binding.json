@@ -1,0 +1,161 @@
+{
+  "recordedAt": "2026-09-30T01:36:26.290Z",
+  "baseline": "12fbd2811749d1d4d26290efcc10252fa10a379e",
+  "productionSource": "6ced095e453ef9a6633979591211e1d347de2081",
+  "testSource": "6ced095e453ef9a6633979591211e1d347de2081",
+  "branch": "feat/corporate-readability-20260922",
+  "productionSourceFiles": 133,
+  "productionSourceSha256": "26c6793bfaf321c917616ad9a120f98ad0f67d3eae6bb312a9aab437b5536967",
+  "productionSourceDigestScope": "Sorted tracked app/components/styles/content/public/package.json/package-lock.json/next.config.ts paths + NUL + bytes + NUL",
+  "buildId": "0kzQ47Q7Ci4cZtUSZq538",
+  "runtimeSha256": "99671dcb5070b7f62f19f2353be4040bd511bb88dc5dca1f853d30dfecb24480",
+  "runtimeScope": "Sorted .next/static, .next/server, BUILD_ID paths + NUL + bytes + NUL",
+  "unchangedRuntimeAfterVerification": true,
+  "sourceTestScriptTrees": {
+    "app": "e9fde25354dad3bc73f17e660e270d916adc9791",
+    "components": "a6377ded8169113224e9c5c26cacb631eb077362",
+    "styles": "c0bd657d210ccb2bac58cf91eace65b321ffb9db",
+    "content": "cd9eb568f91b4dbc619641c3ff4581fc9a1d1050",
+    "public": "4f853e10a81a47eed8635640e6789ba3daca9c8e",
+    "package.json": "23c67834999706384c39377cddc5a494877bb9ea",
+    "package-lock.json": "0612a95456fa381f8b4e61675f379d0929bd843f",
+    "next.config.ts": "42cc84bebbfb3f191c22f0c796982ddd3c2b67c4",
+    "tests": "33d358d52e2b0b9fe51b74933c313919fd9a491e",
+    "scripts": "90a0acaff850a3f06de088c45fd8270f43dd0d0b",
+    "playwright.config.ts": "5474f23596dc1fb4dc150acddf7c80c144be1339"
+  },
+  "preservedPaths": [
+    "app/api",
+    "content",
+    "public",
+    "components/contact-form.tsx",
+    "components/motion/site-opening.tsx",
+    "components/motion/handwriting.ts",
+    "components/motion/handwriting-ink.ts",
+    "components/motion/opening-bootstrap.ts",
+    "components/motion/hero-art.tsx",
+    "components/motion/gradient-image.tsx",
+    "package.json",
+    "package-lock.json",
+    "next.config.ts",
+    "playwright.config.ts",
+    "tests/content.test.ts"
+  ],
+  "preservedPathsDiffAgainstBaseline": "",
+  "reports": {
+    "focused-first": {
+      "source": "Initial working tree before ed590c8; not final acceptance",
+      "stats": {
+        "startTime": "2026-09-30T00:47:48.612Z",
+        "duration": 118343.745,
+        "expected": 11,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    },
+    "e2e-full-first": {
+      "source": "31be953093a1c769b84825c866e89d35d57a4352",
+      "stats": {
+        "startTime": "2026-09-30T00:59:36.214Z",
+        "duration": 784219.65,
+        "expected": 196,
+        "skipped": 0,
+        "unexpected": 2,
+        "flaky": 0
+      }
+    },
+    "source-unchanged-reproduction": {
+      "source": "31be953093a1c769b84825c866e89d35d57a4352",
+      "stats": {
+        "startTime": "2026-09-30T01:13:00.763Z",
+        "duration": 5804.415,
+        "expected": 2,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    },
+    "hero-source-unchanged": {
+      "source": "31be953093a1c769b84825c866e89d35d57a4352",
+      "stats": {
+        "startTime": "2026-09-30T01:13:25.807Z",
+        "duration": 27398.657,
+        "expected": 0,
+        "skipped": 0,
+        "unexpected": 2,
+        "flaky": 0
+      }
+    },
+    "hold-remediation-first": {
+      "source": "6ced095e453ef9a6633979591211e1d347de2081",
+      "stats": {
+        "startTime": "2026-09-30T01:22:57.055Z",
+        "duration": 33715.960999999996,
+        "expected": 5,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    },
+    "focused-final": {
+      "source": "6ced095e453ef9a6633979591211e1d347de2081",
+      "stats": {
+        "startTime": "2026-09-30T01:24:04.297Z",
+        "duration": 224131.09900000002,
+        "expected": 69,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    },
+    "hero-opening-final": {
+      "source": "6ced095e453ef9a6633979591211e1d347de2081",
+      "stats": {
+        "startTime": "2026-09-30T01:28:14.839Z",
+        "duration": 37542.924,
+        "expected": 10,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    }
+  },
+  "localChecks": {
+    "build": "PASS; checks/build-hold-final.log",
+    "lint": "PASS; checks/lint-final.log",
+    "typecheck": "PASS; checks/typecheck-final.log",
+    "content": "12 PASS; checks/content.log reused after verifying unchanged content/tests/dependencies",
+    "finalFocused": {
+      "pass": 84,
+      "fail": 0,
+      "flaky": 0,
+      "skip": 0,
+      "automaticRetries": 0
+    },
+    "history": "Initial 196 PASS / 2 FAIL retained; source-unchanged Tab recovery is historical FLAKY, Hero reproduction 2 FAIL. Final focused results do not claim a final-source 198-case rerun."
+  },
+  "finalCapture": {
+    "images": 10,
+    "videos": 2,
+    "errors": [],
+    "servedFiles": 13,
+    "servedMatches": true
+  },
+  "supplementalCapture": {
+    "images": 8,
+    "errors": [],
+    "servedFiles": 13,
+    "servedMatches": true
+  },
+  "corporateHostedRead": "NOT RUN",
+  "referenceHostedRead": "https://whatever.co/ja/ on 2026-09-30",
+  "hostedMutation": "NOT RUN",
+  "directDeploy": "NOT RUN",
+  "ready": "NOT RUN",
+  "merge": "NOT RUN",
+  "ci": "NOT OBSERVED",
+  "gitTriggeredPreview": "NOT OBSERVED",
+  "independentReviewThisFollowup": "NOT RUN",
+  "deliveryBoundary": "Only docs/Evidence follow testSource; verify production/test/script trees at delivery HEAD. Runtime was built from productionSource and stayed unchanged for final captures and tests."
+}

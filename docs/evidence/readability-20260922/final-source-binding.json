@@ -1,0 +1,113 @@
+{
+  "recordedAt": "2026-09-22T09:07:16.245Z",
+  "baseline": "7ebe25888dec5f2f1e97da6cf5001e81bcdef55c",
+  "sourceHead": "95187af52e92934b8df85059f4f820989be226c4",
+  "branch": "feat/corporate-readability-20260922",
+  "sourceDigestSha256": "12873e507fafad706a07ca5369f8c601672a4a93cf9ae212015647a50bc0165a",
+  "sourceFiles": 133,
+  "sourceDigestScope": "Sorted tracked and untracked, non-ignored app/components/content/styles/public/package.json/package-lock.json/next.config.ts paths + NUL + current bytes (or <DELETED>) + NUL",
+  "nextBuildId": "b19YiBrdl0VSoKHyvQe0Q",
+  "preservedPaths": [
+    "public",
+    "content/assets.ts",
+    "content/corporate-assets.ts",
+    "content/business.ts",
+    "content/company.ts",
+    "content/metrics.ts",
+    "content/site.ts",
+    "components/contact-form.tsx",
+    "app/api",
+    "components/motion/site-opening.tsx",
+    "components/motion/handwriting.ts",
+    "components/motion/handwriting-ink.ts",
+    "components/motion/opening-bootstrap.ts",
+    "package.json",
+    "package-lock.json"
+  ],
+  "preservedPathsDiffAgainstBaseline": "",
+  "corporateAssetManifest": "asset-and-boundary-manifest.json",
+  "assetManifestRemainsApplicable": true,
+  "tests": {
+    "focused-initial": {
+      "startTime": "2026-09-22T08:42:05.362Z",
+      "duration": 12812.505000000001,
+      "expected": 7,
+      "skipped": 0,
+      "unexpected": 1,
+      "flaky": 0,
+      "retries": [
+        {
+          "name": "chromium-desktop",
+          "retries": 0
+        },
+        {
+          "name": "chromium-mobile",
+          "retries": 0
+        },
+        {
+          "name": "webkit-mobile",
+          "retries": 0
+        }
+      ]
+    },
+    "e2e-full-first": {
+      "startTime": "2026-09-22T08:46:15.085Z",
+      "duration": 479783.61799999996,
+      "expected": 175,
+      "skipped": 0,
+      "unexpected": 2,
+      "flaky": 0,
+      "retries": [
+        {
+          "name": "chromium-desktop",
+          "retries": 0
+        },
+        {
+          "name": "chromium-mobile",
+          "retries": 0
+        },
+        {
+          "name": "webkit-mobile",
+          "retries": 0
+        }
+      ]
+    },
+    "e2e-focused-final": {
+      "startTime": "2026-09-22T08:56:22.935Z",
+      "duration": 160059.71999999997,
+      "expected": 48,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0,
+      "retries": [
+        {
+          "name": "chromium-desktop",
+          "retries": 0
+        },
+        {
+          "name": "chromium-mobile",
+          "retries": 0
+        },
+        {
+          "name": "webkit-mobile",
+          "retries": 0
+        }
+      ]
+    }
+  },
+  "sourceIndependentReview": {
+    "baselineToInitial": "No actionable findings",
+    "initialToFinal": "No actionable findings",
+    "initialSource": "76d149ccdb0e09d732130285f5a7c23457e4f8ab",
+    "finalSource": "95187af52e92934b8df85059f4f820989be226c4"
+  },
+  "boundary": {
+    "hostedRead": "NOT RUN",
+    "hostedMutation": "NOT RUN",
+    "directDeploy": "NOT RUN",
+    "ready": "NOT RUN",
+    "merge": "NOT RUN",
+    "ciResults": "NOT OBSERVED"
+  },
+  "delivery": "This record binds the verified source; the subsequent documentation-only commit must have identical runtime and test trees."
+}

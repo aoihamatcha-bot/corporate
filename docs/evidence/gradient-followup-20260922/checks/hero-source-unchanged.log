@@ -1,0 +1,48 @@
+
+Running 2 tests using 1 worker
+
+(node:23020) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:23020) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [webkit-mobile] › tests\e2e\hero-v4.spec.ts:4:7 › / lands once, stays still and saves business effects for scrolling (14.7s)
+  x  2 [webkit-mobile] › tests\e2e\hero-v4.spec.ts:4:7 › /en lands once, stays still and saves business effects for scrolling (10.6s)
+
+
+  1) [webkit-mobile] › tests\e2e\hero-v4.spec.ts:4:7 › /en lands once, stays still and saves business effects for scrolling 
+
+    Error: expect(received).toBeGreaterThan(expected)
+
+    Expected: > 20
+    Received:   19
+
+      80 |     expect(evidence.fonts).toBe("loaded");
+      81 |     expect(evidence.scroll).toBe(0);
+    > 82 |     expect(evidence.frames.length).toBeGreaterThan(20);
+         |                                    ^
+      83 |     expect(new Set(evidence.frames.map((frame) => frame.font)).size).toBe(1);
+      84 |     expect(new Set(evidence.frames.map((frame) => frame.rect)).size).toBe(1);
+      85 |     expect(new Set(evidence.frames.map((frame) => frame.color)).size).toBe(1);
+        at C:\Users\taisa\Desktop\corporate-readability-20260922\tests\e2e\hero-v4.spec.ts:82:36
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\hero-v4--en-lands-once-sta-9697a-iness-effects-for-scrolling-webkit-mobile\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\hero-v4--en-lands-once-sta-9697a-iness-effects-for-scrolling-webkit-mobile\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\hero-v4--en-lands-once-sta-9697a-iness-effects-for-scrolling-webkit-mobile\error-context.md
+
+    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\hero-v4--en-lands-once-sta-9697a-iness-effects-for-scrolling-webkit-mobile\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\hero-v4--en-lands-once-sta-9697a-iness-effects-for-scrolling-webkit-mobile\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [webkit-mobile] › tests\e2e\hero-v4.spec.ts:4:7 › /en lands once, stays still and saves business effects for scrolling 
+  1 passed (26.3s)

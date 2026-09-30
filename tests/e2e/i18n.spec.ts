@@ -220,7 +220,7 @@ test("Device reduced motion survives language navigation without site controls a
   await page.route("**/_next/image**", (route) => route.abort());
   await page.goto("/en");
   await expect(page.locator("main")).toContainText(
-    "service development, video production, and marketing",
+    getDictionary("en").home.description,
   );
   await expect(page.locator(".business-preview > a")).toHaveCount(4);
   await expect(page.locator(".concept-nodes > li")).toHaveCount(3);

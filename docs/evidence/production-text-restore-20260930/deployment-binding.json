@@ -1,0 +1,28 @@
+{
+  "observedAt": "2026-09-30T02:51:07.077Z",
+  "requestedDeployment": "dpl_HY3wMMRaTmLkKkfwcySZmw9XUYVA",
+  "target": "production",
+  "state": "READY",
+  "project": {
+    "id": "prj_gvvHjgASUpQX7YzqhsjduAY9bcRU",
+    "name": "corporate",
+    "framework": "nextjs"
+  },
+  "git": {
+    "githubCommitRef": "main",
+    "githubCommitSha": "7ebe25888dec5f2f1e97da6cf5001e81bcdef55c",
+    "githubCommitMessage": "Merge pull request #5 from aoihamatcha-bot/feat/corporate-motion-storyboard-v1\n\n手書きオープニングとスクロール演出を反映",
+    "githubRepo": "corporate",
+    "githubOrg": "aoihamatcha-bot"
+  },
+  "immutableHostname": "corporate-f2ismq8n0-mystena.vercel.app",
+  "inspectedPublicAlias": "https://corporate-sandy-delta.vercel.app",
+  "aliasResolvedDeployment": "dpl_HY3wMMRaTmLkKkfwcySZmw9XUYVA",
+  "aliases": [
+    "corporate-sandy-delta.vercel.app",
+    "corporate-mystena.vercel.app",
+    "corporate-git-main-mystena.vercel.app"
+  ],
+  "access": "Immutable deployment URL redirects to Vercel Authentication. Used its public Production alias, independently resolved to the same deployment ID. No bypass token created.",
+  "mutations": "NONE"
+}

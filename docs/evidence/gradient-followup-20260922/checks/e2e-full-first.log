@@ -1,0 +1,512 @@
+
+Running 195 tests using 2 workers
+
+(node:11580) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:38664) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:11580) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:38664) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok   1 [chromium-desktop] › tests\e2e\corporate-assets.spec.ts:4:5 › adopted concepts and illustrations load in both languages without implying real screens or a playable video (4.1s)
+  ok   3 [chromium-desktop] › tests\e2e\corporate-assets.spec.ts:96:5 › social cards use the correct language, full image URLs and a news-specific cover (1.5s)
+  ok   4 [chromium-desktop] › tests\e2e\gradient-surfaces.spec.ts:3:5 › section colors keep their authored palette and background washes remain soft (3.6s)
+  ok   5 [chromium-desktop] › tests\e2e\gradient-surfaces.spec.ts:36:5 › all Hero copy has static gradient ink with a single readable image shade (1.3s)
+  ok   6 [chromium-desktop] › tests\e2e\gradient-surfaces.spec.ts:71:5 › body color cancels safely on reduced motion and animation API failure (903ms)
+  x    2 [chromium-desktop] › tests\e2e\afterglow.spec.ts:3:5 › all authored text has a decorative color layer with readable sources in both languages (19.3s)
+(node:24484) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:24484) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok   8 [chromium-desktop] › tests\e2e\afterglow.spec.ts:133:5 › body color appears and finishes while its source stays readable and stationary (3.6s)
+  ok   7 [chromium-desktop] › tests\e2e\hero-v4.spec.ts:4:7 › / lands once, stays still and saves business effects for scrolling (13.3s)
+  ok   9 [chromium-desktop] › tests\e2e\afterglow.spec.ts:183:5 › all menu text receives finite color effects that restart without masking navigation (10.8s)
+  ok  10 [chromium-desktop] › tests\e2e\hero-v4.spec.ts:4:7 › /en lands once, stays still and saves business effects for scrolling (14.1s)
+  ok  11 [chromium-desktop] › tests\e2e\afterglow.spec.ts:265:5 › heading color outlasts its decorative band and then fades (4.2s)
+  ok  12 [chromium-desktop] › tests\e2e\hero-v4.spec.ts:122:5 › viewport-sized hero and static business band fit short, tall and narrow screens (2.8s)
+  ok  14 [chromium-desktop] › tests\e2e\i18n.spec.ts:6:5 › English pages have localized headings, metadata, controls and server HTML (1.9s)
+  ok  15 [chromium-desktop] › tests\e2e\i18n.spec.ts:56:5 › language switching preserves each page and business anchors, including menu navigation and Back (7.6s)
+  ok  16 [chromium-desktop] › tests\e2e\i18n.spec.ts:99:5 › unpublished English articles and missing routes return localized 404 with honest translation choices (1.2s)
+  ok  17 [chromium-desktop] › tests\e2e\i18n.spec.ts:130:5 › English contact remains disabled, reports no send, and protects unsent drafts before language navigation (658ms)
+  ok  18 [chromium-desktop] › tests\e2e\i18n.spec.ts:176:5 › 320px layouts keep both languages and menu controls within the screen (3.2s)
+  ok  19 [chromium-desktop] › tests\e2e\i18n.spec.ts:217:5 › Device reduced motion survives language navigation without site controls and images are optional to understanding the company (1.6s)
+  ok  13 [chromium-desktop] › tests\e2e\afterglow.spec.ts:334:5 › heading and band palettes stay fixed across random seeds while the hero stays still (23.1s)
+  ok  20 [chromium-desktop] › tests\e2e\i18n.spec.ts:265:5 › English pages and menu pass WCAG 2.2 AA and work without JavaScript (7.6s)
+  ok  21 [chromium-desktop] › tests\e2e\metrics.spec.ts:3:5 › the counter progresses once without shifting its width or announcing intermediate numbers (5.4s)
+  ok  22 [chromium-desktop] › tests\e2e\motion.spec.ts:3:5 › body text is readable without masks before entering the viewport and after scrolling (3.1s)
+  ok  23 [chromium-desktop] › tests\e2e\metrics.spec.ts:42:5 › enabling device reduced motion during an active counter shows its final value and stops the number and color animation (1.4s)
+  ok  25 [chromium-desktop] › tests\e2e\metrics.spec.ts:56:5 › both languages label the example figures and preserve readable values without motion or JavaScript (3.0s)
+  ok  24 [chromium-desktop] › tests\e2e\motion.spec.ts:92:5 › menu curtains animate behind immediately readable navigation text on each opening (9.9s)
+  ok  26 [chromium-desktop] › tests\e2e\opening-lifecycle.spec.ts:3:5 › late font readiness cannot restart a dismissed opening after a device preference change (6.6s)
+  ok  27 [chromium-desktop] › tests\e2e\motion.spec.ts:153:5 › pausing during the entrance clears decorative bands and images without hiding copy (1.3s)
+  ok  29 [chromium-desktop] › tests\e2e\motion.spec.ts:192:5 › resize and a partially failing animation API cannot strand a colored cover (1.3s)
+  ok  28 [chromium-desktop] › tests\e2e\readability.spec.ts:7:7 › readable page structure fits 320px in both languages (2.8s)
+  ok  31 [chromium-desktop] › tests\e2e\readability.spec.ts:7:7 › readable page structure fits 390px in both languages (2.7s)
+  ok  32 [chromium-desktop] › tests\e2e\readability.spec.ts:7:7 › readable page structure fits 768px in both languages (3.2s)
+  ok  30 [chromium-desktop] › tests\e2e\revision-v3.spec.ts:4:5 › completed handwriting holds for a second then lands on the hero line boxes (7.6s)
+  ok  33 [chromium-desktop] › tests\e2e\readability.spec.ts:7:7 › readable page structure fits 1440px in both languages (3.2s)
+  ok  34 [chromium-desktop] › tests\e2e\revision-v3.spec.ts:75:7 › company thumbnails in both languages wait offscreen and fade with travel (4.2s)
+  ok  35 [chromium-desktop] › tests\e2e\readability.spec.ts:29:5 › 200 percent text enlargement keeps all pages readable and the menu usable (5.7s)
+  ok  36 [chromium-desktop] › tests\e2e\revision-v3.spec.ts:75:7 › business thumbnails in both languages wait offscreen and fade with travel (4.3s)
+  ok  37 [chromium-desktop] › tests\e2e\readability.spec.ts:60:5 › home summaries lead to additional detail and contact availability is clear before navigation (1.9s)
+  ok  39 [chromium-desktop] › tests\e2e\site.spec.ts:13:5 › all real pages render, stay out of search and have no horizontal overflow (1.8s)
+  ok  38 [chromium-desktop] › tests\e2e\revision-v3.spec.ts:75:7 › about thumbnails in both languages wait offscreen and fade with travel (4.2s)
+  ok  41 [chromium-desktop] › tests\e2e\revision-v3.spec.ts:139:5 › an About image inside the initial viewport enters and settles without scrolling (2.1s)
+  ok  42 [chromium-desktop] › tests\e2e\revision-v3.spec.ts:171:5 › production copy has a prominent localized collaboration CTA and no draft notices (1.5s)
+  ok  43 [chromium-desktop] › tests\e2e\revision-v3.spec.ts:194:5 › cursor trails remain removed on mouse, touch and reduced motion (1.5s)
+  ok  40 [chromium-desktop] › tests\e2e\site.spec.ts:38:5 › menu traps Tab and Shift+Tab, closes with Escape and restores scroll and focus (8.8s)
+  ok  44 [chromium-desktop] › tests\e2e\storyboard.spec.ts:3:5 › opening writes the exact phrase with no ink dots before each pen stroke (7.7s)
+  ok  46 [chromium-desktop] › tests\e2e\storyboard.spec.ts:62:7 › opening has no skip UI and releases focus on Tab (1.1s)
+  ok  47 [chromium-desktop] › tests\e2e\storyboard.spec.ts:62:7 › opening has no skip UI and releases focus on Escape (1.1s)
+  ok  45 [chromium-desktop] › tests\e2e\site.spec.ts:81:5 › menu navigation focuses destination and Back leaves no lock (8.2s)
+  ok  48 [chromium-desktop] › tests\e2e\storyboard.spec.ts:62:7 › opening has no skip UI and releases focus on scroll (1.3s)
+  ok  50 [chromium-desktop] › tests\e2e\storyboard.spec.ts:86:5 › opening replays on reload and full home navigation in both languages (2.1s)
+  ok  51 [chromium-desktop] › tests\e2e\storyboard.spec.ts:112:5 › device preferences and direct anchors work; the removed saved toggle has no effect (1.4s)
+  ok  52 [chromium-desktop] › tests\e2e\storyboard.spec.ts:139:5 › changing reduced motion during the opening releases the native modal (1.1s)
+  ok  49 [chromium-desktop] › tests\e2e\site.spec.ts:100:5 › rapid close, reopen, resizing and short-height navigation remain usable (10.3s)
+  ok  54 [chromium-desktop] › tests\e2e\site.spec.ts:121:5 › contact cannot collect or falsely report sending; unpublished articles return 404 (1.2s)
+  ok  55 [chromium-desktop] › tests\e2e\site.spec.ts:154:5 › device reduced-motion persists on reload and keeps content visible without site controls (1.5s)
+  ok  53 [chromium-desktop] › tests\e2e\storyboard.spec.ts:155:5 › thumbnails wait transparent offscreen, fade and travel on entry, then stay settled (9.3s)
+  ok  56 [chromium-desktop] › tests\e2e\site.spec.ts:186:5 › cut-in ends in place across scrolling, touch has no pointer effect (4.2s)
+  ok  57 [chromium-desktop] › tests\e2e\storyboard.spec.ts:218:5 › an active image fade settles on OS change and a focused waiting card is immediately readable (7.9s)
+  ok  59 [chromium-desktop] › tests\e2e\storyboard.spec.ts:246:5 › no JavaScript, forced colors and failed image animation all expose readable thumbnails (3.7s)
+  ok  60 [chromium-desktop] › tests\e2e\thumbnails.spec.ts:22:5 › four selected assets load in all eight business placements in both languages and stay static on scroll (13.4s)
+  ok  58 [chromium-desktop] › tests\e2e\site.spec.ts:223:5 › 360, 768, and effective 200% desktop zoom have no clipped controls (23.5s)
+  ok  62 [chromium-desktop] › tests\e2e\site.spec.ts:246:5 › key pages and the full-screen menu pass axe WCAG 2.2 AA (5.5s)
+  ok  63 [chromium-desktop] › tests\e2e\site.spec.ts:271:5 › without JavaScript all copy and footer routes remain available (881ms)
+  ok  64 [chromium-desktop] › tests\e2e\site.spec.ts:290:5 › animation API failure leaves readable content and working navigation (1.2s)
+(node:34680) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:34680) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  61 [chromium-desktop] › tests\e2e\thumbnails.spec.ts:70:5 › only the thumbnail cursor hover cycles eight palettes; focus and touch remain static (16.3s)
+  ok  66 [chromium-desktop] › tests\e2e\thumbnails.spec.ts:124:5 › detail image hover honors device reduced motion and resumes on preference change while the hero stays static (10.6s)
+(node:4232) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:4232) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x   65 [chromium-mobile] › tests\e2e\afterglow.spec.ts:3:5 › all authored text has a decorative color layer with readable sources in both languages (19.1s)
+(node:2400) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:2400) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  67 [chromium-mobile] › tests\e2e\corporate-assets.spec.ts:4:5 › adopted concepts and illustrations load in both languages without implying real screens or a playable video (4.4s)
+  ok  69 [chromium-mobile] › tests\e2e\corporate-assets.spec.ts:96:5 › social cards use the correct language, full image URLs and a news-specific cover (1.8s)
+  ok  68 [chromium-mobile] › tests\e2e\afterglow.spec.ts:133:5 › body color appears and finishes while its source stays readable and stationary (3.7s)
+  ok  70 [chromium-mobile] › tests\e2e\gradient-surfaces.spec.ts:3:5 › section colors keep their authored palette and background washes remain soft (3.7s)
+  ok  72 [chromium-mobile] › tests\e2e\gradient-surfaces.spec.ts:36:5 › all Hero copy has static gradient ink with a single readable image shade (1.5s)
+  ok  73 [chromium-mobile] › tests\e2e\gradient-surfaces.spec.ts:71:5 › body color cancels safely on reduced motion and animation API failure (972ms)
+  ok  71 [chromium-mobile] › tests\e2e\afterglow.spec.ts:183:5 › all menu text receives finite color effects that restart without masking navigation (10.9s)
+  ok  75 [chromium-mobile] › tests\e2e\afterglow.spec.ts:265:5 › heading color outlasts its decorative band and then fades (4.2s)
+  ok  74 [chromium-mobile] › tests\e2e\hero-v4.spec.ts:4:7 › / lands once, stays still and saves business effects for scrolling (13.2s)
+  ok  77 [chromium-mobile] › tests\e2e\hero-v4.spec.ts:4:7 › /en lands once, stays still and saves business effects for scrolling (13.7s)
+  ok  78 [chromium-mobile] › tests\e2e\hero-v4.spec.ts:122:5 › viewport-sized hero and static business band fit short, tall and narrow screens (2.4s)
+  ok  79 [chromium-mobile] › tests\e2e\i18n.spec.ts:6:5 › English pages have localized headings, metadata, controls and server HTML (2.2s)
+  ok  76 [chromium-mobile] › tests\e2e\afterglow.spec.ts:334:5 › heading and band palettes stay fixed across random seeds while the hero stays still (25.4s)
+  ok  80 [chromium-mobile] › tests\e2e\i18n.spec.ts:56:5 › language switching preserves each page and business anchors, including menu navigation and Back (7.8s)
+  ok  81 [chromium-mobile] › tests\e2e\metrics.spec.ts:3:5 › the counter progresses once without shifting its width or announcing intermediate numbers (5.8s)
+  ok  82 [chromium-mobile] › tests\e2e\i18n.spec.ts:99:5 › unpublished English articles and missing routes return localized 404 with honest translation choices (1.2s)
+  ok  84 [chromium-mobile] › tests\e2e\i18n.spec.ts:130:5 › English contact remains disabled, reports no send, and protects unsent drafts before language navigation (825ms)
+  ok  83 [chromium-mobile] › tests\e2e\metrics.spec.ts:42:5 › enabling device reduced motion during an active counter shows its final value and stops the number and color animation (2.1s)
+  ok  85 [chromium-mobile] › tests\e2e\i18n.spec.ts:176:5 › 320px layouts keep both languages and menu controls within the screen (3.8s)
+  ok  86 [chromium-mobile] › tests\e2e\metrics.spec.ts:56:5 › both languages label the example figures and preserve readable values without motion or JavaScript (3.7s)
+  ok  87 [chromium-mobile] › tests\e2e\i18n.spec.ts:217:5 › Device reduced motion survives language navigation without site controls and images are optional to understanding the company (1.8s)
+  ok  88 [chromium-mobile] › tests\e2e\motion.spec.ts:3:5 › body text is readable without masks before entering the viewport and after scrolling (3.4s)
+  ok  89 [chromium-mobile] › tests\e2e\i18n.spec.ts:265:5 › English pages and menu pass WCAG 2.2 AA and work without JavaScript (7.6s)
+  ok  90 [chromium-mobile] › tests\e2e\motion.spec.ts:92:5 › menu curtains animate behind immediately readable navigation text on each opening (9.8s)
+  ok  92 [chromium-mobile] › tests\e2e\motion.spec.ts:153:5 › pausing during the entrance clears decorative bands and images without hiding copy (1.3s)
+  ok  91 [chromium-mobile] › tests\e2e\opening-lifecycle.spec.ts:3:5 › late font readiness cannot restart a dismissed opening after a device preference change (6.5s)
+  ok  93 [chromium-mobile] › tests\e2e\motion.spec.ts:192:5 › resize and a partially failing animation API cannot strand a colored cover (1.4s)
+  ok  94 [chromium-mobile] › tests\e2e\readability.spec.ts:7:7 › readable page structure fits 320px in both languages (2.9s)
+  ok  96 [chromium-mobile] › tests\e2e\readability.spec.ts:7:7 › readable page structure fits 390px in both languages (2.9s)
+  ok  95 [chromium-mobile] › tests\e2e\revision-v3.spec.ts:4:5 › completed handwriting holds for a second then lands on the hero line boxes (7.7s)
+  ok  97 [chromium-mobile] › tests\e2e\readability.spec.ts:7:7 › readable page structure fits 768px in both languages (3.3s)
+  ok  99 [chromium-mobile] › tests\e2e\readability.spec.ts:7:7 › readable page structure fits 1440px in both languages (3.4s)
+  ok  98 [chromium-mobile] › tests\e2e\revision-v3.spec.ts:75:7 › company thumbnails in both languages wait offscreen and fade with travel (4.3s)
+  ok 101 [chromium-mobile] › tests\e2e\revision-v3.spec.ts:75:7 › business thumbnails in both languages wait offscreen and fade with travel (4.3s)
+  ok 100 [chromium-mobile] › tests\e2e\readability.spec.ts:29:5 › 200 percent text enlargement keeps all pages readable and the menu usable (5.8s)
+  ok 103 [chromium-mobile] › tests\e2e\readability.spec.ts:60:5 › home summaries lead to additional detail and contact availability is clear before navigation (1.6s)
+  ok 102 [chromium-mobile] › tests\e2e\revision-v3.spec.ts:75:7 › about thumbnails in both languages wait offscreen and fade with travel (4.1s)
+  ok 104 [chromium-mobile] › tests\e2e\site.spec.ts:13:5 › all real pages render, stay out of search and have no horizontal overflow (1.8s)
+  ok 105 [chromium-mobile] › tests\e2e\revision-v3.spec.ts:139:5 › an About image inside the initial viewport enters and settles without scrolling (2.9s)
+  ok 107 [chromium-mobile] › tests\e2e\revision-v3.spec.ts:171:5 › production copy has a prominent localized collaboration CTA and no draft notices (1.4s)
+  ok 108 [chromium-mobile] › tests\e2e\revision-v3.spec.ts:194:5 › cursor trails remain removed on mouse, touch and reduced motion (1.4s)
+  ok 106 [chromium-mobile] › tests\e2e\site.spec.ts:38:5 › menu traps Tab and Shift+Tab, closes with Escape and restores scroll and focus (9.3s)
+  ok 109 [chromium-mobile] › tests\e2e\storyboard.spec.ts:3:5 › opening writes the exact phrase with no ink dots before each pen stroke (7.9s)
+  ok 111 [chromium-mobile] › tests\e2e\storyboard.spec.ts:62:7 › opening has no skip UI and releases focus on Tab (1.3s)
+  ok 112 [chromium-mobile] › tests\e2e\storyboard.spec.ts:62:7 › opening has no skip UI and releases focus on Escape (1.2s)
+  ok 113 [chromium-mobile] › tests\e2e\storyboard.spec.ts:62:7 › opening has no skip UI and releases focus on scroll (1.3s)
+  ok 110 [chromium-mobile] › tests\e2e\site.spec.ts:81:5 › menu navigation focuses destination and Back leaves no lock (8.0s)
+  ok 114 [chromium-mobile] › tests\e2e\storyboard.spec.ts:86:5 › opening replays on reload and full home navigation in both languages (2.1s)
+  ok 116 [chromium-mobile] › tests\e2e\storyboard.spec.ts:112:5 › device preferences and direct anchors work; the removed saved toggle has no effect (1.6s)
+  ok 117 [chromium-mobile] › tests\e2e\storyboard.spec.ts:139:5 › changing reduced motion during the opening releases the native modal (1.4s)
+  ok 115 [chromium-mobile] › tests\e2e\site.spec.ts:100:5 › rapid close, reopen, resizing and short-height navigation remain usable (9.7s)
+  ok 119 [chromium-mobile] › tests\e2e\site.spec.ts:121:5 › contact cannot collect or falsely report sending; unpublished articles return 404 (1.0s)
+  ok 120 [chromium-mobile] › tests\e2e\site.spec.ts:154:5 › device reduced-motion persists on reload and keeps content visible without site controls (1.8s)
+  ok 118 [chromium-mobile] › tests\e2e\storyboard.spec.ts:155:5 › thumbnails wait transparent offscreen, fade and travel on entry, then stay settled (9.4s)
+  ok 121 [chromium-mobile] › tests\e2e\site.spec.ts:186:5 › cut-in ends in place across scrolling, touch has no pointer effect (4.8s)
+  ok 122 [chromium-mobile] › tests\e2e\storyboard.spec.ts:218:5 › an active image fade settles on OS change and a focused waiting card is immediately readable (7.8s)
+  ok 124 [chromium-mobile] › tests\e2e\storyboard.spec.ts:246:5 › no JavaScript, forced colors and failed image animation all expose readable thumbnails (3.9s)
+  ok 125 [chromium-mobile] › tests\e2e\thumbnails.spec.ts:22:5 › four selected assets load in all eight business placements in both languages and stay static on scroll (9.1s)
+  ok 123 [chromium-mobile] › tests\e2e\site.spec.ts:223:5 › 360, 768, and effective 200% desktop zoom have no clipped controls (24.2s)
+  ok 126 [chromium-mobile] › tests\e2e\thumbnails.spec.ts:70:5 › only the thumbnail cursor hover cycles eight palettes; focus and touch remain static (10.6s)
+  ok 127 [chromium-mobile] › tests\e2e\site.spec.ts:246:5 › key pages and the full-screen menu pass axe WCAG 2.2 AA (5.5s)
+  ok 129 [chromium-mobile] › tests\e2e\site.spec.ts:271:5 › without JavaScript all copy and footer routes remain available (902ms)
+  ok 130 [chromium-mobile] › tests\e2e\site.spec.ts:290:5 › animation API failure leaves readable content and working navigation (1.3s)
+(node:35952) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:35952) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 128 [chromium-mobile] › tests\e2e\thumbnails.spec.ts:124:5 › detail image hover honors device reduced motion and resumes on preference change while the hero stays static (9.9s)
+(node:35696) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:35696) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 132 [webkit-mobile] › tests\e2e\corporate-assets.spec.ts:4:5 › adopted concepts and illustrations load in both languages without implying real screens or a playable video (11.7s)
+  ok 133 [webkit-mobile] › tests\e2e\corporate-assets.spec.ts:96:5 › social cards use the correct language, full image URLs and a news-specific cover (3.0s)
+  x  134 [webkit-mobile] › tests\e2e\gradient-surfaces.spec.ts:3:5 › section colors keep their authored palette and background washes remain soft (1.5s)
+  x  131 [webkit-mobile] › tests\e2e\afterglow.spec.ts:3:5 › all authored text has a decorative color layer with readable sources in both languages (22.3s)
+(node:31512) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:31512) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:30244) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:30244) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 135 [webkit-mobile] › tests\e2e\gradient-surfaces.spec.ts:36:5 › all Hero copy has static gradient ink with a single readable image shade (2.2s)
+  ok 137 [webkit-mobile] › tests\e2e\gradient-surfaces.spec.ts:71:5 › body color cancels safely on reduced motion and animation API failure (1.8s)
+  ok 136 [webkit-mobile] › tests\e2e\afterglow.spec.ts:133:5 › body color appears and finishes while its source stays readable and stationary (4.3s)
+  x  138 [webkit-mobile] › tests\e2e\hero-v4.spec.ts:4:7 › / lands once, stays still and saves business effects for scrolling (10.9s)
+(node:40780) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:40780) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 139 [webkit-mobile] › tests\e2e\afterglow.spec.ts:183:5 › all menu text receives finite color effects that restart without masking navigation (12.8s)
+  ok 141 [webkit-mobile] › tests\e2e\afterglow.spec.ts:265:5 › heading color outlasts its decorative band and then fades (5.2s)
+  x  140 [webkit-mobile] › tests\e2e\hero-v4.spec.ts:4:7 › /en lands once, stays still and saves business effects for scrolling (10.8s)
+(node:38196) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:38196) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 143 [webkit-mobile] › tests\e2e\hero-v4.spec.ts:122:5 › viewport-sized hero and static business band fit short, tall and narrow screens (2.8s)
+  ok 144 [webkit-mobile] › tests\e2e\i18n.spec.ts:6:5 › English pages have localized headings, metadata, controls and server HTML (4.6s)
+  ok 145 [webkit-mobile] › tests\e2e\i18n.spec.ts:56:5 › language switching preserves each page and business anchors, including menu navigation and Back (19.8s)
+  ok 142 [webkit-mobile] › tests\e2e\afterglow.spec.ts:334:5 › heading and band palettes stay fixed across random seeds while the hero stays still (32.9s)
+  ok 146 [webkit-mobile] › tests\e2e\i18n.spec.ts:99:5 › unpublished English articles and missing routes return localized 404 with honest translation choices (2.7s)
+  ok 148 [webkit-mobile] › tests\e2e\i18n.spec.ts:130:5 › English contact remains disabled, reports no send, and protects unsent drafts before language navigation (1.4s)
+  ok 147 [webkit-mobile] › tests\e2e\metrics.spec.ts:3:5 › the counter progresses once without shifting its width or announcing intermediate numbers (6.3s)
+  ok 150 [webkit-mobile] › tests\e2e\metrics.spec.ts:42:5 › enabling device reduced motion during an active counter shows its final value and stops the number and color animation (2.5s)
+  ok 149 [webkit-mobile] › tests\e2e\i18n.spec.ts:176:5 › 320px layouts keep both languages and menu controls within the screen (8.8s)
+  ok 151 [webkit-mobile] › tests\e2e\metrics.spec.ts:56:5 › both languages label the example figures and preserve readable values without motion or JavaScript (6.7s)
+  ok 152 [webkit-mobile] › tests\e2e\i18n.spec.ts:217:5 › Device reduced motion survives language navigation without site controls and images are optional to understanding the company (3.8s)
+  ok 153 [webkit-mobile] › tests\e2e\motion.spec.ts:3:5 › body text is readable without masks before entering the viewport and after scrolling (4.9s)
+  ok 154 [webkit-mobile] › tests\e2e\i18n.spec.ts:265:5 › English pages and menu pass WCAG 2.2 AA and work without JavaScript (14.7s)
+  ok 155 [webkit-mobile] › tests\e2e\motion.spec.ts:92:5 › menu curtains animate behind immediately readable navigation text on each opening (11.6s)
+  ok 157 [webkit-mobile] › tests\e2e\motion.spec.ts:153:5 › pausing during the entrance clears decorative bands and images without hiding copy (3.6s)
+  ok 156 [webkit-mobile] › tests\e2e\opening-lifecycle.spec.ts:3:5 › late font readiness cannot restart a dismissed opening after a device preference change (7.4s)
+  ok 158 [webkit-mobile] › tests\e2e\motion.spec.ts:192:5 › resize and a partially failing animation API cannot strand a colored cover (3.3s)
+  ok 159 [webkit-mobile] › tests\e2e\readability.spec.ts:7:7 › readable page structure fits 320px in both languages (6.6s)
+  ok 160 [webkit-mobile] › tests\e2e\revision-v3.spec.ts:4:5 › completed handwriting holds for a second then lands on the hero line boxes (8.7s)
+  ok 161 [webkit-mobile] › tests\e2e\readability.spec.ts:7:7 › readable page structure fits 390px in both languages (7.1s)
+  ok 162 [webkit-mobile] › tests\e2e\revision-v3.spec.ts:75:7 › company thumbnails in both languages wait offscreen and fade with travel (5.0s)
+  ok 164 [webkit-mobile] › tests\e2e\revision-v3.spec.ts:75:7 › business thumbnails in both languages wait offscreen and fade with travel (5.1s)
+  ok 165 [webkit-mobile] › tests\e2e\revision-v3.spec.ts:75:7 › about thumbnails in both languages wait offscreen and fade with travel (5.1s)
+  ok 163 [webkit-mobile] › tests\e2e\readability.spec.ts:7:7 › readable page structure fits 768px in both languages (11.5s)
+  ok 166 [webkit-mobile] › tests\e2e\revision-v3.spec.ts:139:5 › an About image inside the initial viewport enters and settles without scrolling (4.1s)
+  ok 168 [webkit-mobile] › tests\e2e\revision-v3.spec.ts:171:5 › production copy has a prominent localized collaboration CTA and no draft notices (4.2s)
+  ok 169 [webkit-mobile] › tests\e2e\revision-v3.spec.ts:194:5 › cursor trails remain removed on mouse, touch and reduced motion (5.6s)
+  ok 170 [webkit-mobile] › tests\e2e\site.spec.ts:13:5 › all real pages render, stay out of search and have no horizontal overflow (3.6s)
+  ok 167 [webkit-mobile] › tests\e2e\readability.spec.ts:7:7 › readable page structure fits 1440px in both languages (18.4s)
+  ok 171 [webkit-mobile] › tests\e2e\site.spec.ts:38:5 › menu traps Tab and Shift+Tab, closes with Escape and restores scroll and focus (10.4s)
+  ok 173 [webkit-mobile] › tests\e2e\site.spec.ts:81:5 › menu navigation focuses destination and Back leaves no lock (11.8s)
+  ok 172 [webkit-mobile] › tests\e2e\readability.spec.ts:29:5 › 200 percent text enlargement keeps all pages readable and the menu usable (32.9s)
+  ok 175 [webkit-mobile] › tests\e2e\readability.spec.ts:60:5 › home summaries lead to additional detail and contact availability is clear before navigation (4.3s)
+  ok 174 [webkit-mobile] › tests\e2e\site.spec.ts:100:5 › rapid close, reopen, resizing and short-height navigation remain usable (18.7s)
+  ok 177 [webkit-mobile] › tests\e2e\site.spec.ts:121:5 › contact cannot collect or falsely report sending; unpublished articles return 404 (1.9s)
+  ok 178 [webkit-mobile] › tests\e2e\site.spec.ts:154:5 › device reduced-motion persists on reload and keeps content visible without site controls (2.4s)
+  ok 176 [webkit-mobile] › tests\e2e\storyboard.spec.ts:3:5 › opening writes the exact phrase with no ink dots before each pen stroke (8.4s)
+  ok 180 [webkit-mobile] › tests\e2e\storyboard.spec.ts:62:7 › opening has no skip UI and releases focus on Tab (2.4s)
+  ok 179 [webkit-mobile] › tests\e2e\site.spec.ts:186:5 › cut-in ends in place across scrolling, touch has no pointer effect (6.5s)
+  ok 181 [webkit-mobile] › tests\e2e\storyboard.spec.ts:62:7 › opening has no skip UI and releases focus on Escape (2.5s)
+  ok 183 [webkit-mobile] › tests\e2e\storyboard.spec.ts:62:7 › opening has no skip UI and releases focus on scroll (2.4s)
+  ok 184 [webkit-mobile] › tests\e2e\storyboard.spec.ts:86:5 › opening replays on reload and full home navigation in both languages (3.0s)
+  ok 185 [webkit-mobile] › tests\e2e\storyboard.spec.ts:112:5 › device preferences and direct anchors work; the removed saved toggle has no effect (2.0s)
+  ok 186 [webkit-mobile] › tests\e2e\storyboard.spec.ts:139:5 › changing reduced motion during the opening releases the native modal (1.9s)
+  ok 187 [webkit-mobile] › tests\e2e\storyboard.spec.ts:155:5 › thumbnails wait transparent offscreen, fade and travel on entry, then stay settled (11.0s)
+  ok 188 [webkit-mobile] › tests\e2e\storyboard.spec.ts:218:5 › an active image fade settles on OS change and a focused waiting card is immediately readable (10.1s)
+  ok 182 [webkit-mobile] › tests\e2e\site.spec.ts:223:5 › 360, 768, and effective 200% desktop zoom have no clipped controls (33.0s)
+  ok 189 [webkit-mobile] › tests\e2e\storyboard.spec.ts:246:5 › no JavaScript, forced colors and failed image animation all expose readable thumbnails (5.3s)
+  ok 190 [webkit-mobile] › tests\e2e\site.spec.ts:246:5 › key pages and the full-screen menu pass axe WCAG 2.2 AA (11.0s)
+  ok 192 [webkit-mobile] › tests\e2e\site.spec.ts:271:5 › without JavaScript all copy and footer routes remain available (1.5s)
+  ok 193 [webkit-mobile] › tests\e2e\site.spec.ts:290:5 › animation API failure leaves readable content and working navigation (3.4s)
+  ok 191 [webkit-mobile] › tests\e2e\thumbnails.spec.ts:22:5 › four selected assets load in all eight business placements in both languages and stay static on scroll (26.2s)
+  ok 194 [webkit-mobile] › tests\e2e\thumbnails.spec.ts:70:5 › only the thumbnail cursor hover cycles eight palettes; focus and touch remain static (13.2s)
+  ok 195 [webkit-mobile] › tests\e2e\thumbnails.spec.ts:124:5 › detail image hover honors device reduced motion and resumes on preference change while the hero stays static (12.9s)
+
+
+  1) [chromium-desktop] › tests\e2e\afterglow.spec.ts:3:5 › all authored text has a decorative color layer with readable sources in both languages 
+
+    Error: /en/contact: Information about how we handle personal information will be published in our
+
+    expect(received).toMatchObject(expected)
+
+    - Expected  - 1
+    + Received  + 1
+
+    @@ -3,11 +3,11 @@
+        "clipPath": "none",
+        "mask": "none",
+        "motion": "color",
+        "opacity": "1",
+        "overlayHidden": "true",
+    -   "overlayText": "Information about how we handle personal information will be published in our",
+    +   "overlayText": "Information about how we handle personal information will be published in our ",
+        "overlays": 1,
+        "rootAnimations": 0,
+        "rootClipPath": "none",
+        "rootMask": "none",
+        "rootTransform": "none",
+
+      105 |     for (const entry of colorText) {
+      106 |       expect(entry.text, route).toBeTruthy();
+    > 107 |       expect(entry, `${route}: ${entry.text}`).toMatchObject({
+          |                                                ^
+      108 |         motion: "color",
+      109 |         opacity: "1",
+      110 |         visibility: "visible",
+        at C:\Users\taisa\Desktop\corporate-readability-20260922\tests\e2e\afterglow.spec.ts:107:48
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\afterglow-all-authored-tex-71429-e-sources-in-both-languages-chromium-desktop\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\afterglow-all-authored-tex-71429-e-sources-in-both-languages-chromium-desktop\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\afterglow-all-authored-tex-71429-e-sources-in-both-languages-chromium-desktop\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\afterglow-all-authored-tex-71429-e-sources-in-both-languages-chromium-desktop\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\afterglow-all-authored-tex-71429-e-sources-in-both-languages-chromium-desktop\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [chromium-mobile] › tests\e2e\afterglow.spec.ts:3:5 › all authored text has a decorative color layer with readable sources in both languages 
+
+    Error: /en/contact: Information about how we handle personal information will be published in our
+
+    expect(received).toMatchObject(expected)
+
+    - Expected  - 1
+    + Received  + 1
+
+    @@ -3,11 +3,11 @@
+        "clipPath": "none",
+        "mask": "none",
+        "motion": "color",
+        "opacity": "1",
+        "overlayHidden": "true",
+    -   "overlayText": "Information about how we handle personal information will be published in our",
+    +   "overlayText": "Information about how we handle personal information will be published in our ",
+        "overlays": 1,
+        "rootAnimations": 0,
+        "rootClipPath": "none",
+        "rootMask": "none",
+        "rootTransform": "none",
+
+      105 |     for (const entry of colorText) {
+      106 |       expect(entry.text, route).toBeTruthy();
+    > 107 |       expect(entry, `${route}: ${entry.text}`).toMatchObject({
+          |                                                ^
+      108 |         motion: "color",
+      109 |         opacity: "1",
+      110 |         visibility: "visible",
+        at C:\Users\taisa\Desktop\corporate-readability-20260922\tests\e2e\afterglow.spec.ts:107:48
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\afterglow-all-authored-tex-71429-e-sources-in-both-languages-chromium-mobile\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\afterglow-all-authored-tex-71429-e-sources-in-both-languages-chromium-mobile\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\afterglow-all-authored-tex-71429-e-sources-in-both-languages-chromium-mobile\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\afterglow-all-authored-tex-71429-e-sources-in-both-languages-chromium-mobile\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\afterglow-all-authored-tex-71429-e-sources-in-both-languages-chromium-mobile\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [webkit-mobile] › tests\e2e\afterglow.spec.ts:3:5 › all authored text has a decorative color layer with readable sources in both languages 
+
+    Error: /en/contact: Information about how we handle personal information will be published in our
+
+    expect(received).toMatchObject(expected)
+
+    - Expected  - 1
+    + Received  + 1
+
+    @@ -3,11 +3,11 @@
+        "clipPath": "none",
+        "mask": "none",
+        "motion": "color",
+        "opacity": "1",
+        "overlayHidden": "true",
+    -   "overlayText": "Information about how we handle personal information will be published in our",
+    +   "overlayText": "Information about how we handle personal information will be published in our ",
+        "overlays": 1,
+        "rootAnimations": 0,
+        "rootClipPath": "none",
+        "rootMask": "none",
+        "rootTransform": "none",
+
+      105 |     for (const entry of colorText) {
+      106 |       expect(entry.text, route).toBeTruthy();
+    > 107 |       expect(entry, `${route}: ${entry.text}`).toMatchObject({
+          |                                                ^
+      108 |         motion: "color",
+      109 |         opacity: "1",
+      110 |         visibility: "visible",
+        at C:\Users\taisa\Desktop\corporate-readability-20260922\tests\e2e\afterglow.spec.ts:107:48
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\afterglow-all-authored-tex-71429-e-sources-in-both-languages-webkit-mobile\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\afterglow-all-authored-tex-71429-e-sources-in-both-languages-webkit-mobile\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\afterglow-all-authored-tex-71429-e-sources-in-both-languages-webkit-mobile\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\afterglow-all-authored-tex-71429-e-sources-in-both-languages-webkit-mobile\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\afterglow-all-authored-tex-71429-e-sources-in-both-languages-webkit-mobile\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4) [webkit-mobile] › tests\e2e\gradient-surfaces.spec.ts:3:5 › section colors keep their authored palette and background washes remain soft 
+
+    Error: expect(received).toBeCloseTo(expected, precision)
+
+    Expected: 0.28
+    Received: 0
+
+    Expected precision:    2
+    Expected difference: < 0.005
+    Received difference:   0.28
+
+      25 |     expect(result.background).toContain("radial-gradient");
+      26 |     expect(result.mask).toContain("linear-gradient");
+    > 27 |     expect(result.peak).toBeCloseTo(0.28, 2);
+         |                         ^
+      28 |     expect(Number(result.final)).toBe(0);
+      29 |     expect(result.iterations).toBe(1);
+      30 |     await expect(intro.locator(".color-lead")).toHaveCSS("opacity", "0");
+        at C:\Users\taisa\Desktop\corporate-readability-20260922\tests\e2e\gradient-surfaces.spec.ts:27:25
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\gradient-surfaces-section--ead07-ckground-washes-remain-soft-webkit-mobile\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\gradient-surfaces-section--ead07-ckground-washes-remain-soft-webkit-mobile\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\gradient-surfaces-section--ead07-ckground-washes-remain-soft-webkit-mobile\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\gradient-surfaces-section--ead07-ckground-washes-remain-soft-webkit-mobile\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\gradient-surfaces-section--ead07-ckground-washes-remain-soft-webkit-mobile\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  5) [webkit-mobile] › tests\e2e\hero-v4.spec.ts:4:7 › / lands once, stays still and saves business effects for scrolling 
+
+    Error: expect(received).toBeGreaterThan(expected)
+
+    Expected: > 20
+    Received:   19
+
+      80 |     expect(evidence.fonts).toBe("loaded");
+      81 |     expect(evidence.scroll).toBe(0);
+    > 82 |     expect(evidence.frames.length).toBeGreaterThan(20);
+         |                                    ^
+      83 |     expect(new Set(evidence.frames.map((frame) => frame.font)).size).toBe(1);
+      84 |     expect(new Set(evidence.frames.map((frame) => frame.rect)).size).toBe(1);
+      85 |     expect(new Set(evidence.frames.map((frame) => frame.color)).size).toBe(1);
+        at C:\Users\taisa\Desktop\corporate-readability-20260922\tests\e2e\hero-v4.spec.ts:82:36
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\hero-v4--lands-once-stays--c32f5-iness-effects-for-scrolling-webkit-mobile\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\hero-v4--lands-once-stays--c32f5-iness-effects-for-scrolling-webkit-mobile\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\hero-v4--lands-once-stays--c32f5-iness-effects-for-scrolling-webkit-mobile\error-context.md
+
+    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\hero-v4--lands-once-stays--c32f5-iness-effects-for-scrolling-webkit-mobile\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\hero-v4--lands-once-stays--c32f5-iness-effects-for-scrolling-webkit-mobile\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  6) [webkit-mobile] › tests\e2e\hero-v4.spec.ts:4:7 › /en lands once, stays still and saves business effects for scrolling 
+
+    Error: expect(received).toBeGreaterThan(expected)
+
+    Expected: > 20
+    Received:   17
+
+      80 |     expect(evidence.fonts).toBe("loaded");
+      81 |     expect(evidence.scroll).toBe(0);
+    > 82 |     expect(evidence.frames.length).toBeGreaterThan(20);
+         |                                    ^
+      83 |     expect(new Set(evidence.frames.map((frame) => frame.font)).size).toBe(1);
+      84 |     expect(new Set(evidence.frames.map((frame) => frame.rect)).size).toBe(1);
+      85 |     expect(new Set(evidence.frames.map((frame) => frame.color)).size).toBe(1);
+        at C:\Users\taisa\Desktop\corporate-readability-20260922\tests\e2e\hero-v4.spec.ts:82:36
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\hero-v4--en-lands-once-sta-9697a-iness-effects-for-scrolling-webkit-mobile\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results\hero-v4--en-lands-once-sta-9697a-iness-effects-for-scrolling-webkit-mobile\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\hero-v4--en-lands-once-sta-9697a-iness-effects-for-scrolling-webkit-mobile\error-context.md
+
+    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\hero-v4--en-lands-once-sta-9697a-iness-effects-for-scrolling-webkit-mobile\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\hero-v4--en-lands-once-sta-9697a-iness-effects-for-scrolling-webkit-mobile\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  6 failed
+    [chromium-desktop] › tests\e2e\afterglow.spec.ts:3:5 › all authored text has a decorative color layer with readable sources in both languages 
+    [chromium-mobile] › tests\e2e\afterglow.spec.ts:3:5 › all authored text has a decorative color layer with readable sources in both languages 
+    [webkit-mobile] › tests\e2e\afterglow.spec.ts:3:5 › all authored text has a decorative color layer with readable sources in both languages 
+    [webkit-mobile] › tests\e2e\gradient-surfaces.spec.ts:3:5 › section colors keep their authored palette and background washes remain soft 
+    [webkit-mobile] › tests\e2e\hero-v4.spec.ts:4:7 › / lands once, stays still and saves business effects for scrolling 
+    [webkit-mobile] › tests\e2e\hero-v4.spec.ts:4:7 › /en lands once, stays still and saves business effects for scrolling 
+  189 passed (10.8m)

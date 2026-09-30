@@ -69,7 +69,8 @@ test("independent text rhythms keep color after the background passes, then fade
   page,
 }) => {
   await page.goto("/");
-  const title = page.locator(".wonder-type > .reveal-text").first();
+  const title = page.locator("#about .wonder-type > .reveal-text");
+  await expect(title).toHaveCount(1);
   await title.scrollIntoViewIfNeeded();
   await expect(title).toHaveAttribute("data-reveal-state", "running");
   const envelope = await title.evaluate((el) => {
@@ -103,9 +104,8 @@ test("independent text rhythms keep color after the background passes, then fade
   expect(envelope.holdAfterBand).toBeGreaterThanOrEqual(400);
   expect(envelope.holdAfterBand).toBeLessThanOrEqual(600);
   expect(envelope.fade).toBeGreaterThanOrEqual(1000);
-  // Sample at least 400ms after the last band, once the scene echo finishes.
-  // Near-zero opacity in the echo's final frame is still an active animation.
-  // These animations run in real time; no seeking or freezing is used.
+  // The measured envelope proves the hold independently of observation speed.
+  // Sample after both bands and scene finish without a fixed sleep.
   const sample = await title.evaluate(async (el) => {
     const background = el.closest(".scene")!.querySelector(".color-echo")!;
     const backgroundFinished = Promise.all(
@@ -114,9 +114,8 @@ test("independent text rhythms keep color after the background passes, then fade
     const bands = [...el.querySelectorAll(".reveal-band")].flatMap((band) =>
       band.getAnimations(),
     );
-    await Promise.all(bands.map((animation) => animation.finished));
     await Promise.all([
-      new Promise((resolve) => setTimeout(resolve, 400)),
+      ...bands.map((animation) => animation.finished),
       backgroundFinished,
     ]);
     return {
@@ -161,7 +160,7 @@ test("scrolled headings vary palettes without hydration mismatch while the hero 
     const errors: string[] = [];
     page.on("pageerror", (error) => errors.push(error.message));
     await page.goto("http://127.0.0.1:3017/");
-    const title = page.locator(".hero h1 .reveal-text").first();
+    const title = page.locator(".hero h1 .reveal-text").nth(0);
     await expect(title).toHaveAttribute("data-entered", "true");
     await expect(page.locator(".site-opening")).not.toBeVisible();
     expect(
@@ -169,15 +168,14 @@ test("scrolled headings vary palettes without hydration mismatch while the hero 
     ).toBe(0);
     await expect(title.locator(".reveal-band")).toHaveCount(0);
     await expect(title).toHaveAttribute("data-palette", "sky");
-    const philosophy = page.locator(".wonder-type > .reveal-text").first();
+    const philosophy = page.locator("#about .wonder-type > .reveal-text");
+    await expect(philosophy).toHaveCount(1);
     await philosophy.scrollIntoViewIfNeeded();
     await expect(philosophy).toHaveAttribute("data-entered", "true");
     colors.push((await philosophy.getAttribute("data-palette"))!);
-    const bandPalette = await philosophy
-      .locator(".reveal-band")
-      .first()
-      .getAttribute("data-palette");
-    expect(bandPalette).not.toBe(await philosophy.getAttribute("data-palette"));
+    const bandPalettes = await philosophy.locator(".reveal-band").evaluateAll(elements => elements.map(el=>el.getAttribute("data-palette")));
+    expect(bandPalettes.length).toBeGreaterThan(0);
+    expect(bandPalettes.every(palette=>palette!==colors.at(-1))).toBe(true);
     expect(errors).toEqual([]);
     await context.close();
   }

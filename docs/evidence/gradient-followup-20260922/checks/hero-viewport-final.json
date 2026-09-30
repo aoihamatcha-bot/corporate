@@ -1,0 +1,167 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\taisa\\Desktop\\corporate-readability-20260922\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/e2e/hero-v4.spec.ts",
+      "--project=webkit-mobile",
+      "--grep",
+      "viewport-sized",
+      "--workers=1"
+    ],
+    "configFile": "C:\\Users\\taisa\\Desktop\\corporate-readability-20260922\\playwright.config.ts",
+    "rootDir": "C:/Users/taisa/Desktop/corporate-readability-20260922/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/taisa/Desktop/corporate-readability-20260922/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium-desktop",
+        "name": "chromium-desktop",
+        "testDir": "C:/Users/taisa/Desktop/corporate-readability-20260922/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 45000
+      },
+      {
+        "outputDir": "C:/Users/taisa/Desktop/corporate-readability-20260922/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium-mobile",
+        "name": "chromium-mobile",
+        "testDir": "C:/Users/taisa/Desktop/corporate-readability-20260922/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 45000
+      },
+      {
+        "outputDir": "C:/Users/taisa/Desktop/corporate-readability-20260922/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit-mobile",
+        "name": "webkit-mobile",
+        "testDir": "C:/Users/taisa/Desktop/corporate-readability-20260922/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 45000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": {
+      "command": "npm run start",
+      "url": "http://127.0.0.1:3017",
+      "reuseExistingServer": true,
+      "timeout": 60000
+    }
+  },
+  "suites": [
+    {
+      "title": "hero-v4.spec.ts",
+      "file": "hero-v4.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "viewport-sized hero and static business band fit short, tall and narrow screens",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-mobile",
+              "projectName": "webkit-mobile",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2144,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-22T09:53:22.253Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "viewport-layout",
+                      "contentType": "application/json",
+                      "body": "W3sic2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjU2OH0sInJvdXRlIjoiLyIsImxheW91dCI6eyJ0b3AiOjg1NS4wNDY4NzUsImhlaWdodCI6NTY4LCJ3aWR0aCI6MzIwLCJzY3JvbGxXaWR0aCI6MzIwLCJpdGVtcyI6W3sibGVmdCI6MjQsInJpZ2h0Ijo1MS4wNDY4NzUsImJveExlZnQiOjI0LCJib3hSaWdodCI6MTQ2fSx7ImxlZnQiOjE3NCwicmlnaHQiOjIwMS4wNDY4NzUsImJveExlZnQiOjE3NCwiYm94UmlnaHQiOjI5Nn0seyJsZWZ0IjoyNCwicmlnaHQiOjc4LjA5Mzc1LCJib3hMZWZ0IjoyNCwiYm94UmlnaHQiOjE0Nn0seyJsZWZ0IjoxNzQsInJpZ2h0IjoyMjguMDkzNzUsImJveExlZnQiOjE3NCwiYm94UmlnaHQiOjI5Nn1dfX0seyJzaXplIjp7IndpZHRoIjozMjAsImhlaWdodCI6NTY4fSwicm91dGUiOiIvZW4iLCJsYXlvdXQiOnsidG9wIjo5NTguNjg3NSwiaGVpZ2h0Ijo1NjgsIndpZHRoIjozMjAsInNjcm9sbFdpZHRoIjozMjAsIml0ZW1zIjpbeyJsZWZ0IjoyNCwicmlnaHQiOjg4Ljc4MTI1LCJib3hMZWZ0IjoyNCwiYm94UmlnaHQiOjE0Nn0seyJsZWZ0IjoxNzQsInJpZ2h0IjoyNzEuNjcxODc1LCJib3hMZWZ0IjoxNzQsImJveFJpZ2h0IjoyOTZ9LHsibGVmdCI6MjQsInJpZ2h0IjoxMTIsImJveExlZnQiOjI0LCJib3hSaWdodCI6MTQ2fSx7ImxlZnQiOjE3NCwicmlnaHQiOjI1MS42MDkzNzUsImJveExlZnQiOjE3NCwiYm94UmlnaHQiOjI5Nn1dfX0seyJzaXplIjp7IndpZHRoIjozOTAsImhlaWdodCI6ODQ0fSwicm91dGUiOiIvIiwibGF5b3V0Ijp7InRvcCI6ODQ0LCJoZWlnaHQiOjg0NCwid2lkdGgiOjM5MCwic2Nyb2xsV2lkdGgiOjM5MCwiaXRlbXMiOlt7ImxlZnQiOjI0LCJyaWdodCI6NTEuMDQ2ODc1LCJib3hMZWZ0IjoyNCwiYm94UmlnaHQiOjE4MX0seyJsZWZ0IjoyMDksInJpZ2h0IjoyMzYuMDQ2ODc1LCJib3hMZWZ0IjoyMDksImJveFJpZ2h0IjozNjZ9LHsibGVmdCI6MjQsInJpZ2h0Ijo3OC4wOTM3NSwiYm94TGVmdCI6MjQsImJveFJpZ2h0IjoxODF9LHsibGVmdCI6MjA5LCJyaWdodCI6MjYzLjA5Mzc1LCJib3hMZWZ0IjoyMDksImJveFJpZ2h0IjozNjZ9XX19LHsic2l6ZSI6eyJ3aWR0aCI6MzkwLCJoZWlnaHQiOjg0NH0sInJvdXRlIjoiL2VuIiwibGF5b3V0Ijp7InRvcCI6ODY2Ljk2ODc1LCJoZWlnaHQiOjg0NCwid2lkdGgiOjM5MCwic2Nyb2xsV2lkdGgiOjM5MCwiaXRlbXMiOlt7ImxlZnQiOjI0LCJyaWdodCI6ODguNzgxMjUsImJveExlZnQiOjI0LCJib3hSaWdodCI6MTgxfSx7ImxlZnQiOjIwOSwicmlnaHQiOjMwNi42NzE4NzUsImJveExlZnQiOjIwOSwiYm94UmlnaHQiOjM2Nn0seyJsZWZ0IjoyNCwicmlnaHQiOjE0NywiYm94TGVmdCI6MjQsImJveFJpZ2h0IjoxODF9LHsibGVmdCI6MjA5LCJyaWdodCI6Mjg2LjYwOTM3NSwiYm94TGVmdCI6MjA5LCJib3hSaWdodCI6MzY2fV19fSx7InNpemUiOnsid2lkdGgiOjg0NCwiaGVpZ2h0IjozOTB9LCJyb3V0ZSI6Ii8iLCJsYXlvdXQiOnsidG9wIjo3NDAuMDkzNzUsImhlaWdodCI6MzkwLCJ3aWR0aCI6ODQ0LCJzY3JvbGxXaWR0aCI6ODQ0LCJpdGVtcyI6W3sibGVmdCI6NDYuODQzNzUsInJpZ2h0Ijo3NS40NTMxMjUsImJveExlZnQiOjQ2Ljg0Mzc1LCJib3hSaWdodCI6MjEzLjQyMTg3NX0seyJsZWZ0IjoyNDEuNDIxODc1LCJyaWdodCI6MjcwLjAzMTI1LCJib3hMZWZ0IjoyNDEuNDIxODc1LCJib3hSaWdodCI6NDA4fSx7ImxlZnQiOjQzNiwicmlnaHQiOjQ5My4yMDMxMjUsImJveExlZnQiOjQzNiwiYm94UmlnaHQiOjYwMi41NzgxMjV9LHsibGVmdCI6NjMwLjU3ODEyNSwicmlnaHQiOjY4Ny43ODEyNSwiYm94TGVmdCI6NjMwLjU3ODEyNSwiYm94UmlnaHQiOjc5Ny4xNTYyNX1dfX0seyJzaXplIjp7IndpZHRoIjo4NDQsImhlaWdodCI6MzkwfSwicm91dGUiOiIvZW4iLCJsYXlvdXQiOnsidG9wIjo3NTUuNDM3NSwiaGVpZ2h0IjozOTAsIndpZHRoIjo4NDQsInNjcm9sbFdpZHRoIjo4NDQsIml0ZW1zIjpbeyJsZWZ0Ijo0Ni44NDM3NSwicmlnaHQiOjExNy44NzUsImJveExlZnQiOjQ2Ljg0Mzc1LCJib3hSaWdodCI6MjEzLjQyMTg3NX0seyJsZWZ0IjoyNDEuNDIxODc1LCJyaWdodCI6MzQ3LjY3MTg3NSwiYm94TGVmdCI6MjQxLjQyMTg3NSwiYm94UmlnaHQiOjQwOH0seyJsZWZ0Ijo0MzYsInJpZ2h0Ijo1NjguNTc4MTI1LCJib3hMZWZ0Ijo0MzYsImJveFJpZ2h0Ijo2MDIuNTc4MTI1fSx7ImxlZnQiOjYzMC41NzgxMjUsInJpZ2h0Ijo3MTUuMjAzMTI1LCJib3hMZWZ0Ijo2MzAuNTc4MTI1LCJib3hSaWdodCI6Nzk3LjE1NjI1fV19fV0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b2f955157c35a95682e3-45f4754dc2e038d65d90",
+          "file": "hero-v4.spec.ts",
+          "line": 122,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-22T09:53:21.809Z",
+    "duration": 2692.0989999999997,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

@@ -1,0 +1,19 @@
+
+Running 6 tests using 1 worker
+
+(node:14592) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:14592) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [chromium-desktop] › tests\e2e\hero-v4.spec.ts:4:7 › / lands once, stays still and saves business effects for scrolling (12.7s)
+  ok 2 [chromium-desktop] › tests\e2e\hero-v4.spec.ts:4:7 › /en lands once, stays still and saves business effects for scrolling (13.2s)
+  ok 3 [chromium-desktop] › tests\e2e\hero-v4.spec.ts:122:5 › viewport-sized hero and static business band fit short, tall and narrow screens (2.5s)
+(node:8172) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:8172) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 4 [chromium-mobile] › tests\e2e\hero-v4.spec.ts:4:7 › / lands once, stays still and saves business effects for scrolling (12.7s)
+  ok 5 [chromium-mobile] › tests\e2e\hero-v4.spec.ts:4:7 › /en lands once, stays still and saves business effects for scrolling (12.9s)
+  ok 6 [chromium-mobile] › tests\e2e\hero-v4.spec.ts:122:5 › viewport-sized hero and static business band fit short, tall and narrow screens (1.6s)
+
+  6 passed (57.1s)

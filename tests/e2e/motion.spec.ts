@@ -5,7 +5,8 @@ test("text below the viewport keeps its entrance until visible, then settles to 
 }) => {
   await page.setViewportSize({ width: 390, height: 420 });
   await page.goto("/");
-  const target = page.locator("#about .prose p").last().locator(".reveal-text");
+  const target = page.locator('#about .prose p .reveal-text[data-motion-kind="body"]');
+  await expect(target).toHaveCount(1);
   await page.locator("#about").evaluate((el) =>
     window.scrollTo({
       top: scrollY + el.getBoundingClientRect().top - (innerHeight - 100),

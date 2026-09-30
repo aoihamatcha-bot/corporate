@@ -5,7 +5,6 @@ import { useMotionPaused } from "./motion-preference";
 import {
   entranceReady,
   motionAvailable,
-  randomPalette,
   type Palette,
 } from "./entrance";
 import { StoryAccent, type StoryBeat } from "./story-accent";
@@ -46,7 +45,8 @@ export function Scene({
       )
         return;
       seen.current = true;
-      el.dataset.palette = randomPalette();
+      // The authored palette owns both the resting surface and its entrance.
+      // Do not recolor the entire section when it first intersects the viewport.
       el.classList.add("scene-entered");
     };
     const observer = new IntersectionObserver(

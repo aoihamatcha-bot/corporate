@@ -22,3 +22,16 @@ export const editorialReview = {
   },
   privacy: { status: "unpublished", approvedBody: { ja: null, en: null } },
 } as const;
+
+// The 2026-09-10 approval above is historical. It does not approve this revision.
+// This request authorizes implementation and review, not production publication.
+export const copyRevisionReview = {
+  source: "docs/readability-copy-20260922.md",
+  date: "2026-09-22",
+  status: "review",
+  implementationStatus: "requested",
+  productionAcceptance: "not-requested",
+  retainedHero: "好奇心が、世界を変える。",
+  businessScope: "unchanged",
+  operationalFacts: "unconfirmed",
+} as const;

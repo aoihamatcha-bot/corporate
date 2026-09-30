@@ -1,0 +1,39 @@
+{
+  "source": "31be953093a1c769b84825c866e89d35d57a4352",
+  "observation": "Visible CSS cover was pending before Tab; the next snapshot was running and ended naturally in phase complete. This is a pre-hydration operation, not proof of active-modal dismissal.",
+  "events": [
+    {
+      "type": "snapshot",
+      "call": "call@1411",
+      "time": 156569.856,
+      "intro": "pending",
+      "completePhase": false
+    },
+    {
+      "type": "keyboardPress",
+      "time": 156571.931,
+      "key": "Tab"
+    },
+    {
+      "type": "snapshot",
+      "call": "call@1413",
+      "time": 156683.786,
+      "intro": "running",
+      "completePhase": false
+    },
+    {
+      "type": "snapshot",
+      "call": "call@1415",
+      "time": 156704.121,
+      "intro": "running",
+      "completePhase": false
+    },
+    {
+      "type": "snapshot",
+      "call": "call@1415",
+      "time": 163452.981,
+      "intro": "done",
+      "completePhase": true
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+
+Running 10 tests using 2 workers
+
+(node:3100) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:31404) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:31404) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3100) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  2 [chromium-desktop] › tests\e2e\storyboard.spec.ts:62:7 › opening has no skip UI and releases focus on Tab (1.4s)
+  ok  3 [chromium-desktop] › tests\e2e\storyboard.spec.ts:62:7 › opening has no skip UI and releases focus on Escape (1.3s)
+  ok  4 [chromium-desktop] › tests\e2e\storyboard.spec.ts:62:7 › opening has no skip UI and releases focus on scroll (1.7s)
+(node:45200) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:45200) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [chromium-desktop] › tests\e2e\hero-v4.spec.ts:4:7 › / lands without movement, finishes its text color and saves business effects for scrolling (15.2s)
+  ok  5 [chromium-mobile] › tests\e2e\hero-v4.spec.ts:4:7 › / lands without movement, finishes its text color and saves business effects for scrolling (14.6s)
+  ok  6 [chromium-desktop] › tests\e2e\hero-v4.spec.ts:4:7 › /en lands without movement, finishes its text color and saves business effects for scrolling (15.4s)
+(node:39384) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:39384) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  8 [chromium-mobile] › tests\e2e\storyboard.spec.ts:62:7 › opening has no skip UI and releases focus on Tab (1.7s)
+  ok  9 [chromium-mobile] › tests\e2e\storyboard.spec.ts:62:7 › opening has no skip UI and releases focus on Escape (1.4s)
+  ok  7 [chromium-mobile] › tests\e2e\hero-v4.spec.ts:4:7 › /en lands without movement, finishes its text color and saves business effects for scrolling (15.2s)
+  ok 10 [chromium-mobile] › tests\e2e\storyboard.spec.ts:62:7 › opening has no skip UI and releases focus on scroll (1.5s)
+
+  10 passed (37.5s)

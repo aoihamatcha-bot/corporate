@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { motionAvailable } from "./entrance";
+import { RevealText } from "./reveal-text";
 
 export function HeroScrollCue({ label }: { label: string }) {
   const ref = useRef<SVGPathElement>(null);
@@ -35,7 +36,7 @@ export function HeroScrollCue({ label }: { label: string }) {
   }, []);
   return (
     <a href="#business" className="scroll-link hero-scroll-cue">
-      <span>{label}</span>
+      <RevealText kind="label">{label}</RevealText>
       <svg viewBox="0 0 80 28" aria-hidden="true" fill="none">
         <path
           ref={ref}

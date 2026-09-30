@@ -1,0 +1,20 @@
+
+Running 11 tests using 1 worker
+
+(node:31880) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:31880) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [chromium-desktop] › tests\e2e\afterglow.spec.ts:3:5 › all authored text has a decorative color layer with readable sources in both languages (21.9s)
+  ok  2 [chromium-desktop] › tests\e2e\afterglow.spec.ts:133:5 › body background and color appear together, then return to readable stationary ink (4.3s)
+  ok  3 [chromium-desktop] › tests\e2e\afterglow.spec.ts:199:5 › all menu text receives finite color effects that restart without masking navigation (11.6s)
+  ok  4 [chromium-desktop] › tests\e2e\afterglow.spec.ts:296:5 › heading color outlasts its decorative band and then fades (4.7s)
+  ok  5 [chromium-desktop] › tests\e2e\afterglow.spec.ts:365:5 › heading and band palettes stay fixed across random seeds while the hero stays still (32.4s)
+  ok  6 [chromium-desktop] › tests\e2e\gradient-surfaces.spec.ts:3:5 › section colors keep their authored palette and background washes remain soft (1.5s)
+  ok  7 [chromium-desktop] › tests\e2e\gradient-surfaces.spec.ts:44:5 › all Hero copy has readable normal ink with motion suppressed and a single image shade (2.1s)
+  ok  8 [chromium-desktop] › tests\e2e\gradient-surfaces.spec.ts:80:5 › body color cancels safely on reduced motion and animation API failure (1.3s)
+  ok  9 [chromium-desktop] › tests\e2e\hero-v4.spec.ts:4:7 › / lands without movement, finishes its text color and saves business effects for scrolling (15.7s)
+  ok 10 [chromium-desktop] › tests\e2e\hero-v4.spec.ts:4:7 › /en lands without movement, finishes its text color and saves business effects for scrolling (16.3s)
+  ok 11 [chromium-desktop] › tests\e2e\hero-v4.spec.ts:132:5 › viewport-sized hero and static business band fit short, tall and narrow screens (3.8s)
+
+  11 passed (2.0m)

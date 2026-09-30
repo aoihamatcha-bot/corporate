@@ -1,0 +1,86 @@
+
+Running 57 tests using 2 workers
+
+(node:15548) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:45876) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:45876) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:15548) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  2 [chromium-desktop] › tests\e2e\afterglow.spec.ts:3:5 › heading, body, menu and counter bands reuse the eight historical pastel families (743ms)
+  ok  1 [chromium-desktop] › tests\e2e\gradient-surfaces.spec.ts:3:5 › section colors keep their authored palette and background washes remain soft (930ms)
+  ok  4 [chromium-desktop] › tests\e2e\gradient-surfaces.spec.ts:44:5 › all Hero copy has readable normal ink with motion suppressed and a single image shade (1.0s)
+  ok  5 [chromium-desktop] › tests\e2e\gradient-surfaces.spec.ts:80:5 › body color cancels safely on reduced motion and animation API failure (677ms)
+  ok  6 [chromium-desktop] › tests\e2e\gradient-surfaces.spec.ts:102:5 › reading bands clear on resize and partial animation failure without masking text (602ms)
+  ok  3 [chromium-desktop] › tests\e2e\afterglow.spec.ts:39:5 › all authored text has a decorative color layer with readable sources in both languages (16.0s)
+  ok  7 [chromium-desktop] › tests\e2e\hero-v4.spec.ts:4:7 › / lands without movement, finishes its text color and saves business effects for scrolling (17.8s)
+  ok  8 [chromium-desktop] › tests\e2e\afterglow.spec.ts:169:5 › body background and color appear together, then return to readable stationary ink (5.4s)
+  ok 10 [chromium-desktop] › tests\e2e\afterglow.spec.ts:249:5 › all menu text receives finite color effects that restart without masking navigation (13.5s)
+  ok  9 [chromium-desktop] › tests\e2e\hero-v4.spec.ts:4:7 › /en lands without movement, finishes its text color and saves business effects for scrolling (18.3s)
+  ok 11 [chromium-desktop] › tests\e2e\afterglow.spec.ts:347:5 › heading color outlasts its decorative band and then fades (5.8s)
+  ok 12 [chromium-desktop] › tests\e2e\metrics.spec.ts:3:5 › the counter progresses once without shifting its width or announcing intermediate numbers (6.0s)
+  ok 14 [chromium-desktop] › tests\e2e\metrics.spec.ts:46:5 › enabling device reduced motion during an active counter shows its final value and stops the number and color animation (930ms)
+  ok 15 [chromium-desktop] › tests\e2e\metrics.spec.ts:60:5 › both languages label the example figures and preserve readable values without motion or JavaScript (1.8s)
+  ok 16 [chromium-desktop] › tests\e2e\motion.spec.ts:3:5 › body text is readable without masks before entering the viewport and after scrolling (4.3s)
+  ok 17 [chromium-desktop] › tests\e2e\motion.spec.ts:92:5 › menu curtains animate behind immediately readable navigation text on each opening (9.7s)
+  ok 18 [chromium-desktop] › tests\e2e\motion.spec.ts:151:5 › pausing during the entrance clears decorative bands and images without hiding copy (1.2s)
+  ok 19 [chromium-desktop] › tests\e2e\motion.spec.ts:190:5 › resize and a partially failing animation API cannot strand a colored cover (1.1s)
+(node:48076) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:48076) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 20 [chromium-mobile] › tests\e2e\afterglow.spec.ts:3:5 › heading, body, menu and counter bands reuse the eight historical pastel families (580ms)
+  ok 13 [chromium-desktop] › tests\e2e\afterglow.spec.ts:416:5 › heading and band palettes stay fixed across random seeds while the hero stays still (36.7s)
+(node:43724) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:43724) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 22 [chromium-mobile] › tests\e2e\gradient-surfaces.spec.ts:3:5 › section colors keep their authored palette and background washes remain soft (644ms)
+  ok 23 [chromium-mobile] › tests\e2e\gradient-surfaces.spec.ts:44:5 › all Hero copy has readable normal ink with motion suppressed and a single image shade (905ms)
+  ok 24 [chromium-mobile] › tests\e2e\gradient-surfaces.spec.ts:80:5 › body color cancels safely on reduced motion and animation API failure (675ms)
+  ok 25 [chromium-mobile] › tests\e2e\gradient-surfaces.spec.ts:102:5 › reading bands clear on resize and partial animation failure without masking text (733ms)
+  ok 21 [chromium-mobile] › tests\e2e\afterglow.spec.ts:39:5 › all authored text has a decorative color layer with readable sources in both languages (16.3s)
+  ok 27 [chromium-mobile] › tests\e2e\afterglow.spec.ts:169:5 › body background and color appear together, then return to readable stationary ink (5.4s)
+  ok 26 [chromium-mobile] › tests\e2e\hero-v4.spec.ts:4:7 › / lands without movement, finishes its text color and saves business effects for scrolling (17.7s)
+  ok 28 [chromium-mobile] › tests\e2e\afterglow.spec.ts:249:5 › all menu text receives finite color effects that restart without masking navigation (13.3s)
+  ok 30 [chromium-mobile] › tests\e2e\afterglow.spec.ts:347:5 › heading color outlasts its decorative band and then fades (5.7s)
+  ok 29 [chromium-mobile] › tests\e2e\hero-v4.spec.ts:4:7 › /en lands without movement, finishes its text color and saves business effects for scrolling (18.0s)
+  ok 32 [chromium-mobile] › tests\e2e\metrics.spec.ts:3:5 › the counter progresses once without shifting its width or announcing intermediate numbers (6.1s)
+  ok 33 [chromium-mobile] › tests\e2e\metrics.spec.ts:46:5 › enabling device reduced motion during an active counter shows its final value and stops the number and color animation (1.4s)
+  ok 34 [chromium-mobile] › tests\e2e\metrics.spec.ts:60:5 › both languages label the example figures and preserve readable values without motion or JavaScript (2.5s)
+  ok 35 [chromium-mobile] › tests\e2e\motion.spec.ts:3:5 › body text is readable without masks before entering the viewport and after scrolling (4.3s)
+  ok 36 [chromium-mobile] › tests\e2e\motion.spec.ts:92:5 › menu curtains animate behind immediately readable navigation text on each opening (9.6s)
+  ok 37 [chromium-mobile] › tests\e2e\motion.spec.ts:151:5 › pausing during the entrance clears decorative bands and images without hiding copy (1.1s)
+  ok 38 [chromium-mobile] › tests\e2e\motion.spec.ts:190:5 › resize and a partially failing animation API cannot strand a colored cover (1.1s)
+(node:38628) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:38628) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 31 [chromium-mobile] › tests\e2e\afterglow.spec.ts:416:5 › heading and band palettes stay fixed across random seeds while the hero stays still (37.7s)
+(node:46524) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:46524) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 39 [webkit-mobile] › tests\e2e\afterglow.spec.ts:3:5 › heading, body, menu and counter bands reuse the eight historical pastel families (778ms)
+  ok 40 [webkit-mobile] › tests\e2e\gradient-surfaces.spec.ts:3:5 › section colors keep their authored palette and background washes remain soft (1.5s)
+  ok 42 [webkit-mobile] › tests\e2e\gradient-surfaces.spec.ts:44:5 › all Hero copy has readable normal ink with motion suppressed and a single image shade (1.5s)
+  ok 43 [webkit-mobile] › tests\e2e\gradient-surfaces.spec.ts:80:5 › body color cancels safely on reduced motion and animation API failure (1.2s)
+  ok 44 [webkit-mobile] › tests\e2e\gradient-surfaces.spec.ts:102:5 › reading bands clear on resize and partial animation failure without masking text (1.1s)
+  ok 41 [webkit-mobile] › tests\e2e\afterglow.spec.ts:39:5 › all authored text has a decorative color layer with readable sources in both languages (17.8s)
+  ok 46 [webkit-mobile] › tests\e2e\afterglow.spec.ts:169:5 › body background and color appear together, then return to readable stationary ink (5.8s)
+  ok 45 [webkit-mobile] › tests\e2e\hero-v4.spec.ts:4:7 › / lands without movement, finishes its text color and saves business effects for scrolling (18.8s)
+  ok 47 [webkit-mobile] › tests\e2e\afterglow.spec.ts:249:5 › all menu text receives finite color effects that restart without masking navigation (13.6s)
+  ok 49 [webkit-mobile] › tests\e2e\afterglow.spec.ts:347:5 › heading color outlasts its decorative band and then fades (6.2s)
+  ok 48 [webkit-mobile] › tests\e2e\hero-v4.spec.ts:4:7 › /en lands without movement, finishes its text color and saves business effects for scrolling (19.3s)
+  ok 51 [webkit-mobile] › tests\e2e\metrics.spec.ts:3:5 › the counter progresses once without shifting its width or announcing intermediate numbers (6.7s)
+  ok 52 [webkit-mobile] › tests\e2e\metrics.spec.ts:46:5 › enabling device reduced motion during an active counter shows its final value and stops the number and color animation (1.5s)
+  ok 53 [webkit-mobile] › tests\e2e\metrics.spec.ts:60:5 › both languages label the example figures and preserve readable values without motion or JavaScript (3.5s)
+  ok 54 [webkit-mobile] › tests\e2e\motion.spec.ts:3:5 › body text is readable without masks before entering the viewport and after scrolling (5.6s)
+  ok 55 [webkit-mobile] › tests\e2e\motion.spec.ts:92:5 › menu curtains animate behind immediately readable navigation text on each opening (11.0s)
+  ok 56 [webkit-mobile] › tests\e2e\motion.spec.ts:151:5 › pausing during the entrance clears decorative bands and images without hiding copy (2.9s)
+  ok 57 [webkit-mobile] › tests\e2e\motion.spec.ts:190:5 › resize and a partially failing animation API cannot strand a colored cover (2.2s)
+  ok 50 [webkit-mobile] › tests\e2e\afterglow.spec.ts:416:5 › heading and band palettes stay fixed across random seeds while the hero stays still (41.2s)
+
+  57 passed (3.8m)

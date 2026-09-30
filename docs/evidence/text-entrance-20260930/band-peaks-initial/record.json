@@ -1,0 +1,664 @@
+{
+  "source": "6ced095e453ef9a6633979591211e1d347de2081",
+  "buildId": "0kzQ47Q7Ci4cZtUSZq538",
+  "startedAt": "2026-09-30T01:30:55.489Z",
+  "method": "LOCAL Chromium, scale1, normal motion. Wait for real entrance, seek each decorative band at 1% intervals to its effective opacity maximum, pause the color plateau and finish unrelated animations for legible surroundings. Diagnostic stills only; natural videos remain under final/.",
+  "screenshots": [
+    {
+      "filename": "ja-body-1440-peak.png",
+      "state": {
+        "peaks": [
+          {
+            "peak": 0.5,
+            "peakTime": 327.15999999999997,
+            "layerOpacity": "1",
+            "gradient": "linear-gradient(105deg, rgb(185, 241, 223), rgb(192, 236, 254) 48%, rgb(222, 218, 255))"
+          }
+        ],
+        "sources": [
+          {
+            "text": "MYSTENAがサービスづくりで大切にする考え方をご紹介します。",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          }
+        ]
+      }
+    },
+    {
+      "filename": "en-body-1440-peak.png",
+      "state": {
+        "peaks": [
+          {
+            "peak": 0.5,
+            "peakTime": 481.24,
+            "layerOpacity": "1",
+            "gradient": "linear-gradient(105deg, rgb(185, 241, 223), rgb(192, 236, 254) 48%, rgb(222, 218, 255))"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Discover the principles that guide how MYSTENA plans and builds services.",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          }
+        ]
+      }
+    },
+    {
+      "filename": "ja-footer-1440-peak.png",
+      "state": {
+        "peaks": [
+          {
+            "peak": 0.5,
+            "peakTime": 412.24,
+            "layerOpacity": "0.2",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "peak": 0.5,
+            "peakTime": 527.8,
+            "layerOpacity": "0.2",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "peak": 0.5,
+            "peakTime": 604.84,
+            "layerOpacity": "0.2",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "peak": 0.5,
+            "peakTime": 412.24,
+            "layerOpacity": "0.2",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "peak": 0.5,
+            "peakTime": 489.28,
+            "layerOpacity": "0.2",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "peak": 0.5,
+            "peakTime": 412.24,
+            "layerOpacity": "0.2",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          }
+        ],
+        "sources": [
+          {
+            "text": "エンターテインメント × テクノロジー",
+            "opacity": "1",
+            "color": "rgb(237, 245, 255)",
+            "clip": "none"
+          },
+          {
+            "text": "私たちについて",
+            "opacity": "1",
+            "color": "rgb(237, 245, 255)",
+            "clip": "none"
+          },
+          {
+            "text": "事業紹介",
+            "opacity": "1",
+            "color": "rgb(237, 245, 255)",
+            "clip": "none"
+          },
+          {
+            "text": "お知らせ",
+            "opacity": "1",
+            "color": "rgb(237, 245, 255)",
+            "clip": "none"
+          },
+          {
+            "text": "会社概要",
+            "opacity": "1",
+            "color": "rgb(237, 245, 255)",
+            "clip": "none"
+          },
+          {
+            "text": "お問い合わせ",
+            "opacity": "1",
+            "color": "rgb(237, 245, 255)",
+            "clip": "none"
+          },
+          {
+            "text": "© MYSTENA",
+            "opacity": "1",
+            "color": "rgb(200, 213, 229)",
+            "clip": "none"
+          },
+          {
+            "text": "プライバシーポリシー",
+            "opacity": "1",
+            "color": "rgb(200, 213, 229)",
+            "clip": "none"
+          }
+        ]
+      }
+    },
+    {
+      "filename": "ja-hero-1440-peak.png",
+      "state": {
+        "peaks": [
+          {
+            "peak": 0.5,
+            "peakTime": 412.24,
+            "layerOpacity": "1",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "peak": 0.5,
+            "peakTime": 176.12,
+            "layerOpacity": "1",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "peak": 0.5,
+            "peakTime": 368.72,
+            "layerOpacity": "1",
+            "gradient": "linear-gradient(105deg, rgb(211, 206, 255), rgb(193, 224, 255) 48%, rgb(216, 247, 252))"
+          },
+          {
+            "peak": 0.5,
+            "peakTime": 211.6,
+            "layerOpacity": "1",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "peak": 0.5,
+            "peakTime": 276.6,
+            "layerOpacity": "1",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "peak": 0.5,
+            "peakTime": 341.6,
+            "layerOpacity": "1",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "peak": 0.5,
+            "peakTime": 335.2,
+            "layerOpacity": "1",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "peak": 0.5,
+            "peakTime": 412.24,
+            "layerOpacity": "1",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "peak": 0.5,
+            "peakTime": 527.8,
+            "layerOpacity": "1",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "peak": 0.5,
+            "peakTime": 604.84,
+            "layerOpacity": "1",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          }
+        ],
+        "sources": [
+          {
+            "text": "エンターテインメント × テクノロジー",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "好奇心が、",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "世界を変える。",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "MYSTENAは、オンラインサービス、システム開発、映像制作、販売促進に取り組んでいます。販売・運営を支えるシステムや商品紹介動画、ブランド・クリエイターとの共同企画など、4つの領域をご紹介します。",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "事業紹介を見る",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "会社概要を見る",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "MYSTENAの事業をご紹介します。",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "下へスクロール",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "企画",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "開発",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "映像制作",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "販売促進",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          }
+        ]
+      }
+    },
+    {
+      "filename": "ja-body-390-peak.png",
+      "state": {
+        "peaks": [
+          {
+            "peak": 0.5,
+            "peakTime": 327.15999999999997,
+            "layerOpacity": "1",
+            "gradient": "linear-gradient(105deg, rgb(185, 241, 223), rgb(192, 236, 254) 48%, rgb(222, 218, 255))"
+          },
+          {
+            "peak": 0.5,
+            "peakTime": 392.15999999999997,
+            "layerOpacity": "1",
+            "gradient": "linear-gradient(105deg, rgb(185, 241, 223), rgb(192, 236, 254) 48%, rgb(222, 218, 255))"
+          }
+        ],
+        "sources": [
+          {
+            "text": "MYSTENAがサービスづくりで大切にする考え方をご紹介します。",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          }
+        ]
+      }
+    },
+    {
+      "filename": "en-body-390-peak.png",
+      "state": {
+        "peaks": [
+          {
+            "peak": 0.5,
+            "peakTime": 481.24,
+            "layerOpacity": "1",
+            "gradient": "linear-gradient(105deg, rgb(185, 241, 223), rgb(192, 236, 254) 48%, rgb(222, 218, 255))"
+          },
+          {
+            "peak": 0.5,
+            "peakTime": 546.24,
+            "layerOpacity": "1",
+            "gradient": "linear-gradient(105deg, rgb(185, 241, 223), rgb(192, 236, 254) 48%, rgb(222, 218, 255))"
+          }
+        ],
+        "sources": [
+          {
+            "text": "Discover the principles that guide how MYSTENA plans and builds services.",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          }
+        ]
+      }
+    },
+    {
+      "filename": "ja-footer-390-peak.png",
+      "state": {
+        "peaks": [
+          {
+            "peak": 0.5,
+            "peakTime": 412.24,
+            "layerOpacity": "0.2",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "peak": 0.5,
+            "peakTime": 527.8,
+            "layerOpacity": "0.2",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "peak": 0.5,
+            "peakTime": 604.84,
+            "layerOpacity": "0.2",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "peak": 0.5,
+            "peakTime": 412.24,
+            "layerOpacity": "0.2",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "peak": 0.5,
+            "peakTime": 489.28,
+            "layerOpacity": "0.2",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "peak": 0.5,
+            "peakTime": 412.24,
+            "layerOpacity": "0.2",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "peak": 0.5,
+            "peakTime": 450.76,
+            "layerOpacity": "0.2",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "peak": 0.5,
+            "peakTime": 450.76,
+            "layerOpacity": "0.2",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          }
+        ],
+        "sources": [
+          {
+            "text": "エンターテインメント × テクノロジー",
+            "opacity": "1",
+            "color": "rgb(237, 245, 255)",
+            "clip": "none"
+          },
+          {
+            "text": "私たちについて",
+            "opacity": "1",
+            "color": "rgb(237, 245, 255)",
+            "clip": "none"
+          },
+          {
+            "text": "事業紹介",
+            "opacity": "1",
+            "color": "rgb(237, 245, 255)",
+            "clip": "none"
+          },
+          {
+            "text": "お知らせ",
+            "opacity": "1",
+            "color": "rgb(237, 245, 255)",
+            "clip": "none"
+          },
+          {
+            "text": "会社概要",
+            "opacity": "1",
+            "color": "rgb(237, 245, 255)",
+            "clip": "none"
+          },
+          {
+            "text": "お問い合わせ",
+            "opacity": "1",
+            "color": "rgb(237, 245, 255)",
+            "clip": "none"
+          },
+          {
+            "text": "© MYSTENA",
+            "opacity": "1",
+            "color": "rgb(200, 213, 229)",
+            "clip": "none"
+          },
+          {
+            "text": "プライバシーポリシー",
+            "opacity": "1",
+            "color": "rgb(200, 213, 229)",
+            "clip": "none"
+          }
+        ]
+      }
+    },
+    {
+      "filename": "ja-hero-390-peak.png",
+      "state": {
+        "peaks": [
+          {
+            "peak": 0.5,
+            "peakTime": 412.24,
+            "layerOpacity": "1",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "peak": 0.5,
+            "peakTime": 176.12,
+            "layerOpacity": "1",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "peak": 0.5,
+            "peakTime": 368.72,
+            "layerOpacity": "1",
+            "gradient": "linear-gradient(105deg, rgb(211, 206, 255), rgb(193, 224, 255) 48%, rgb(216, 247, 252))"
+          },
+          {
+            "peak": 0.5,
+            "peakTime": 211.6,
+            "layerOpacity": "1",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "peak": 0.5,
+            "peakTime": 276.6,
+            "layerOpacity": "1",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "peak": 0.5,
+            "peakTime": 341.6,
+            "layerOpacity": "1",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "peak": 0.5,
+            "peakTime": 406.6,
+            "layerOpacity": "1",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "peak": 0.5,
+            "peakTime": 471.6,
+            "layerOpacity": "1",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "peak": 0.5,
+            "peakTime": 335.2,
+            "layerOpacity": "1",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "peak": 0.5,
+            "peakTime": 412.24,
+            "layerOpacity": "1",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "peak": 0.5,
+            "peakTime": 527.8,
+            "layerOpacity": "1",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "peak": 0.5,
+            "peakTime": 604.84,
+            "layerOpacity": "1",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "peak": 0.5,
+            "peakTime": 335.2,
+            "layerOpacity": "1",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          },
+          {
+            "peak": 0.5,
+            "peakTime": 450.76,
+            "layerOpacity": "1",
+            "gradient": "linear-gradient(105deg, rgb(171, 223, 255), rgb(159, 196, 255) 48%, rgb(219, 212, 255))"
+          }
+        ],
+        "sources": [
+          {
+            "text": "エンターテインメント × テクノロジー",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "好奇心が、",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "世界を変える。",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "MYSTENAは、オンラインサービス、システム開発、映像制作、販売促進に取り組んでいます。販売・運営を支えるシステムや商品紹介動画、ブランド・クリエイターとの共同企画など、4つの領域をご紹介します。",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "事業紹介を見る",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "会社概要を見る",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "MYSTENAの事業をご紹介します。",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "下へスクロール",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "企画",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "開発",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "映像制作",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          },
+          {
+            "text": "販売促進",
+            "opacity": "1",
+            "color": "rgb(20, 25, 31)",
+            "clip": "none"
+          }
+        ]
+      }
+    }
+  ],
+  "errors": [],
+  "servedFiles": {
+    "/_next/static/chunks/03h5lg362da40.css": {
+      "sha256": "d400f6e9917450a6a584198e575190a64d2a0559b272b4a81964c40c9e336e18",
+      "matches": true
+    },
+    "/_next/static/chunks/0jvhpaew_uadu.js": {
+      "sha256": "a10568306b34908511b49eb596785512026fba4f2d605bd6406696b9fd767c74",
+      "matches": true
+    },
+    "/_next/static/chunks/19mx3mg6lkumu.js": {
+      "sha256": "170f3982866674a829571beec30cc23c69fcd36196739ff34b9d586b3ad73cd7",
+      "matches": true
+    },
+    "/_next/static/chunks/turbopack-2toht04gw2bph.js": {
+      "sha256": "e8464806f4b3b5956c9f6771aa9d488ac2e7d3fe56ebee214d665362273d0fed",
+      "matches": true
+    },
+    "/_next/static/chunks/3fntmmi971322.js": {
+      "sha256": "34ed6abf4c6d0d1bb3dc56d3f133d2a5dbc3a3c89c791deab314e27143ac14ce",
+      "matches": true
+    },
+    "/_next/static/chunks/1d2e760aeo3-e.js": {
+      "sha256": "af427eddd39f0216543afa35e9fdad402a1acea8720ef1cf783f82489f7dc6a2",
+      "matches": true
+    },
+    "/_next/static/chunks/2h4jg48zseajw.js": {
+      "sha256": "e235492b54ecda67a6b3e900ce6031006c733c38baab57550126d6348584fae5",
+      "matches": true
+    },
+    "/_next/static/chunks/2-rtuqsgzmno4.js": {
+      "sha256": "4d2bfb13eedd0cf43d07810d7790ce423e01097d1406ef604e7c4f3ab4db8d79",
+      "matches": true
+    },
+    "/_next/static/chunks/08_3ad8r2_nqy.js": {
+      "sha256": "cf8c5efb620e3daa184c03d168f4c6eda322b9cdb494440ab88fbf24f3a93049",
+      "matches": true
+    },
+    "/_next/static/chunks/1z-xggtq725gx.css": {
+      "sha256": "0d2597cce400a5f641ce221ba7618823b6335a4980515d35283e1c3c0c1506f1",
+      "matches": true
+    },
+    "/_next/static/chunks/33wmmxu2kkyqh.js": {
+      "sha256": "a219d0227602b75258231a8d809f59c513f70d96179eb2513acd84ca6e0fb43a",
+      "matches": true
+    },
+    "/_next/static/chunks/32ld4kdw1jln4.js": {
+      "sha256": "b427a94f2cfcd0b067e158c6690d358abaaeb7a293dcf6c1b914c55f4f3b77c9",
+      "matches": true
+    },
+    "/_next/static/chunks/1_1cju-a6rva8.js": {
+      "sha256": "d5d5e5b412470494618abaeec5e1f42d8a7278e64b2245f295523e1ab2c32f30",
+      "matches": true
+    }
+  },
+  "finishedAt": "2026-09-30T01:31:13.006Z"
+}

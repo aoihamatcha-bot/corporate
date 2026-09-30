@@ -1,0 +1,11 @@
+
+Running 2 tests using 1 worker
+
+(node:37236) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:37236) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [webkit-mobile] › tests\e2e\hero-v4.spec.ts:4:7 › / lands once, stays still and saves business effects for scrolling (14.4s)
+  ok 2 [webkit-mobile] › tests\e2e\hero-v4.spec.ts:4:7 › /en lands once, stays still and saves business effects for scrolling (14.1s)
+
+  2 passed (29.3s)

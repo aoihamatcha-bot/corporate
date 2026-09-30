@@ -1,0 +1,20 @@
+
+Running 7 tests using 2 workers
+
+(node:32564) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:38212) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:38212) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:32564) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 2 [chromium-desktop] › tests\e2e\motion.spec.ts:3:5 › body text is readable without masks before entering the viewport and after scrolling (3.2s)
+  ok 1 [chromium-desktop] › tests\e2e\gradient-surfaces.spec.ts:3:5 › section colors keep their authored palette and background washes remain soft (3.6s)
+  ok 4 [chromium-desktop] › tests\e2e\gradient-surfaces.spec.ts:36:5 › all Hero copy has static gradient ink with a single readable image shade (1.2s)
+  ok 5 [chromium-desktop] › tests\e2e\gradient-surfaces.spec.ts:71:5 › body color cancels safely on reduced motion and animation API failure (736ms)
+  ok 3 [chromium-desktop] › tests\e2e\motion.spec.ts:92:5 › menu curtains animate behind immediately readable navigation text on each opening (9.6s)
+  ok 6 [chromium-desktop] › tests\e2e\motion.spec.ts:153:5 › pausing during the entrance clears decorative bands and images without hiding copy (999ms)
+  ok 7 [chromium-desktop] › tests\e2e\motion.spec.ts:192:5 › resize and a partially failing animation API cannot strand a colored cover (986ms)
+
+  7 passed (15.8s)

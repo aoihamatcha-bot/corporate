@@ -212,17 +212,20 @@ export function Header({
           <Wordmark />
         </Link>
         <nav className="header-shortcuts" aria-label={labels.primaryNav}>
-          {navigation
-            .filter((item) =>
-              ["company", "contact"].some(
-                (key) => item.href === localizedPath("/" + key, locale),
-              ),
-            )
-            .map((item) => (
-              <Link key={item.href} href={item.href}>
+          {["business", "about", "company"].map((key) => {
+            const item = navigation.find(
+              (entry) => entry.href === localizedPath("/" + key, locale),
+            )!;
+            return (
+              <Link
+                key={item.href}
+                href={item.href}
+                aria-current={path === item.href ? "page" : undefined}
+              >
                 <RevealText kind="utility">{item.label}</RevealText>
               </Link>
-            ))}
+            );
+          })}
         </nav>
         <LanguageSwitcher
           locale={locale}

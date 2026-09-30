@@ -1,0 +1,483 @@
+{
+  "source": "4af58a7d7ff7320f3bd6f7568c1b3b1d7042cdbd",
+  "recordedAt": "2026-09-22T09:43:45.236Z",
+  "runtime": "http://127.0.0.1:3017",
+  "browser": "WebKit iPhone 13 390x844 DPR3",
+  "fontDelayMs": 800,
+  "results": [
+    {
+      "name": "header-overlay-will-change-opacity",
+      "css": ".site-header .reveal-color { will-change: opacity !important; }",
+      "diagnosticOnly": true,
+      "recordVideo": true,
+      "frameCount": 20,
+      "elapsedMs": 2327,
+      "meanFrameIntervalMs": 122.42105263157895,
+      "maxFrameIntervalMs": 142,
+      "positionCount": 1,
+      "heroActiveMax": 0,
+      "frames": [
+        {
+          "elapsed": 1,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            94.125
+          ],
+          "heroActive": 0,
+          "headerActive": 3
+        },
+        {
+          "elapsed": 116,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            94.125
+          ],
+          "heroActive": 0,
+          "headerActive": 3
+        },
+        {
+          "elapsed": 228,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            94.125
+          ],
+          "heroActive": 0,
+          "headerActive": 3
+        },
+        {
+          "elapsed": 352,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            94.125
+          ],
+          "heroActive": 0,
+          "headerActive": 3
+        },
+        {
+          "elapsed": 464,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            94.125
+          ],
+          "heroActive": 0,
+          "headerActive": 3
+        },
+        {
+          "elapsed": 581,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            94.125
+          ],
+          "heroActive": 0,
+          "headerActive": 3
+        },
+        {
+          "elapsed": 690,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            94.125
+          ],
+          "heroActive": 0,
+          "headerActive": 3
+        },
+        {
+          "elapsed": 832,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            94.125
+          ],
+          "heroActive": 0,
+          "headerActive": 3
+        },
+        {
+          "elapsed": 948,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            94.125
+          ],
+          "heroActive": 0,
+          "headerActive": 3
+        },
+        {
+          "elapsed": 1090,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            94.125
+          ],
+          "heroActive": 0,
+          "headerActive": 3
+        },
+        {
+          "elapsed": 1217,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            94.125
+          ],
+          "heroActive": 0,
+          "headerActive": 3
+        },
+        {
+          "elapsed": 1344,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            94.125
+          ],
+          "heroActive": 0,
+          "headerActive": 3
+        },
+        {
+          "elapsed": 1453,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            94.125
+          ],
+          "heroActive": 0,
+          "headerActive": 3
+        },
+        {
+          "elapsed": 1580,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            94.125
+          ],
+          "heroActive": 0,
+          "headerActive": 3
+        },
+        {
+          "elapsed": 1708,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            94.125
+          ],
+          "heroActive": 0,
+          "headerActive": 3
+        },
+        {
+          "elapsed": 1828,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            94.125
+          ],
+          "heroActive": 0,
+          "headerActive": 3
+        },
+        {
+          "elapsed": 1949,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            94.125
+          ],
+          "heroActive": 0,
+          "headerActive": 3
+        },
+        {
+          "elapsed": 2072,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            94.125
+          ],
+          "heroActive": 0,
+          "headerActive": 3
+        },
+        {
+          "elapsed": 2186,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            94.125
+          ],
+          "heroActive": 0,
+          "headerActive": 3
+        },
+        {
+          "elapsed": 2327,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            94.125
+          ],
+          "heroActive": 0,
+          "headerActive": 3
+        }
+      ],
+      "fonts": "loaded",
+      "scrollY": 0,
+      "video": "C:\\Users\\taisa\\Desktop\\corporate-readability-20260922\\.local\\gradient-paint-diagnostics\\page@25d922432ed7fd06fdd08c334d14db04.webm"
+    },
+    {
+      "name": "header-background-opaque",
+      "css": ".site-header { background: #fff !important; }",
+      "diagnosticOnly": true,
+      "recordVideo": true,
+      "frameCount": 20,
+      "elapsedMs": 2330,
+      "meanFrameIntervalMs": 122.63157894736842,
+      "maxFrameIntervalMs": 150,
+      "positionCount": 1,
+      "heroActiveMax": 0,
+      "frames": [
+        {
+          "elapsed": 0,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            94.125
+          ],
+          "heroActive": 0,
+          "headerActive": 3
+        },
+        {
+          "elapsed": 139,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            94.125
+          ],
+          "heroActive": 0,
+          "headerActive": 3
+        },
+        {
+          "elapsed": 253,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            94.125
+          ],
+          "heroActive": 0,
+          "headerActive": 3
+        },
+        {
+          "elapsed": 392,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            94.125
+          ],
+          "heroActive": 0,
+          "headerActive": 3
+        },
+        {
+          "elapsed": 491,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            94.125
+          ],
+          "heroActive": 0,
+          "headerActive": 3
+        },
+        {
+          "elapsed": 606,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            94.125
+          ],
+          "heroActive": 0,
+          "headerActive": 3
+        },
+        {
+          "elapsed": 749,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            94.125
+          ],
+          "heroActive": 0,
+          "headerActive": 3
+        },
+        {
+          "elapsed": 857,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            94.125
+          ],
+          "heroActive": 0,
+          "headerActive": 3
+        },
+        {
+          "elapsed": 1003,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            94.125
+          ],
+          "heroActive": 0,
+          "headerActive": 3
+        },
+        {
+          "elapsed": 1116,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            94.125
+          ],
+          "heroActive": 0,
+          "headerActive": 3
+        },
+        {
+          "elapsed": 1266,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            94.125
+          ],
+          "heroActive": 0,
+          "headerActive": 3
+        },
+        {
+          "elapsed": 1382,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            94.125
+          ],
+          "heroActive": 0,
+          "headerActive": 3
+        },
+        {
+          "elapsed": 1487,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            94.125
+          ],
+          "heroActive": 0,
+          "headerActive": 3
+        },
+        {
+          "elapsed": 1622,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            94.125
+          ],
+          "heroActive": 0,
+          "headerActive": 3
+        },
+        {
+          "elapsed": 1734,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            94.125
+          ],
+          "heroActive": 0,
+          "headerActive": 3
+        },
+        {
+          "elapsed": 1867,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            94.125
+          ],
+          "heroActive": 0,
+          "headerActive": 3
+        },
+        {
+          "elapsed": 1972,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            94.125
+          ],
+          "heroActive": 0,
+          "headerActive": 3
+        },
+        {
+          "elapsed": 2075,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            94.125
+          ],
+          "heroActive": 0,
+          "headerActive": 3
+        },
+        {
+          "elapsed": 2212,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            94.125
+          ],
+          "heroActive": 0,
+          "headerActive": 3
+        },
+        {
+          "elapsed": 2330,
+          "rect": [
+            24,
+            154.09375,
+            342,
+            94.125
+          ],
+          "heroActive": 0,
+          "headerActive": 3
+        }
+      ],
+      "fonts": "loaded",
+      "scrollY": 0,
+      "video": "C:\\Users\\taisa\\Desktop\\corporate-readability-20260922\\.local\\gradient-paint-diagnostics\\page@2ffcca23559ffbd3ea874b94411ff0c9.webm"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+[
+  {
+    "source": "6ced095e453ef9a6633979591211e1d347de2081",
+    "file": "ja-1440-body-menu-natural.webm",
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "vp8",
+          "width": 1440,
+          "height": 1000
+        }
+      ],
+      "format": {
+        "duration": "9.880000",
+        "size": "1020729"
+      }
+    }
+  },
+  {
+    "source": "6ced095e453ef9a6633979591211e1d347de2081",
+    "file": "ja-390-body-menu-natural.webm",
+    "metadata": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "vp8",
+          "width": 390,
+          "height": 844
+        }
+      ],
+      "format": {
+        "duration": "9.840000",
+        "size": "837901"
+      }
+    }
+  }
+]

@@ -1,0 +1,945 @@
+{
+  "phase": "visual-complete",
+  "captureMode": "visual",
+  "startedAt": "2026-09-22T08:43:57.463Z",
+  "baseURL": "http://127.0.0.1:3018",
+  "identity": {
+    "head": "7ebe25888dec5f2f1e97da6cf5001e81bcdef55c",
+    "headTree": "334844413a320852385c8d58239b36dd19d7c54c",
+    "branch": "DETACHED",
+    "sourceDigestSha256": "c3157e15464c762fa7e86ad324872c0c0608e4ffcd3d1d723ca384497f5f1295",
+    "sourceDigestScope": "Sorted tracked app/components/content/styles/public/package.json/package-lock.json/next.config.ts paths + NUL + current bytes + NUL",
+    "trackedSourceFiles": 133,
+    "dirtyTrackedFiles": [],
+    "node": "v22.14.0",
+    "sourceDir": "C:\\Users\\taisa\\Desktop\\corporate-readability-baseline-20260922",
+    "nextBuildId": "z7gcQ_x8xHZM218x54Fu5"
+  },
+  "browser": "153.0.8010.12",
+  "visualConditions": {
+    "browser": "Headless Chromium; desktop browser viewport emulation, not real devices",
+    "deviceScaleFactor": 1,
+    "reducedMotion": "reduce",
+    "fonts": "document.fonts.ready + fonts.status loaded",
+    "images": "All images within each captured target are decoded; lazy loading is exercised by scrolling through target",
+    "animation": "Reduced Motion; finite active animations settled; screenshot animations disabled",
+    "elementCapture": "Full document clip of target bounds; fixed header visibility hidden for isolated element screenshots only (no layout change). Viewport screenshots show the header normally.",
+    "palette": "Reduced Motion suppresses random entrance palettes; DOM data-palette values recorded per capture",
+    "network": "Unthrottled localhost, separate browser context for each locale/viewport"
+  },
+  "screenshots": [
+    {
+      "filename": "ja-1440-hero.png",
+      "locale": "ja",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "target": ".hero",
+      "screenshotType": "viewport",
+      "fontStatus": "loaded",
+      "bodyFont": "\"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "targetRect": {
+        "x": 0,
+        "y": 96,
+        "width": 1425,
+        "height": 904,
+        "top": 96,
+        "right": 1425,
+        "bottom": 1000,
+        "left": 0
+      },
+      "scrollY": 0,
+      "pageHeight": 9312,
+      "horizontalOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:3018/_next/image?url=%2Fimages%2Fcorporate%2Fa08-brand-keyvisual.webp&w=1920&q=75",
+          "complete": true,
+          "naturalWidth": 1200,
+          "naturalHeight": 675
+        }
+      ],
+      "palettes": [
+        "iris",
+        "sky"
+      ]
+    },
+    {
+      "filename": "ja-1440-business-start.png",
+      "locale": "ja",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "target": "#business",
+      "screenshotType": "viewport",
+      "fontStatus": "loaded",
+      "bodyFont": "\"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "targetRect": {
+        "x": 0,
+        "y": 110,
+        "width": 1425,
+        "height": 2075.609375,
+        "top": 110,
+        "right": 1425,
+        "bottom": 2185.609375,
+        "left": 0
+      },
+      "scrollY": 890,
+      "pageHeight": 9312,
+      "horizontalOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:3018/_next/image?url=%2Fimages%2Fbusiness%2Fplatform-a1-v2.webp&w=640&q=75",
+          "complete": true,
+          "naturalWidth": 633,
+          "naturalHeight": 395
+        },
+        {
+          "src": "http://127.0.0.1:3018/_next/image?url=%2Fimages%2Fbusiness%2Fsystems-programming-v2.webp&w=640&q=75",
+          "complete": true,
+          "naturalWidth": 633,
+          "naturalHeight": 395
+        },
+        {
+          "src": "http://127.0.0.1:3018/_next/image?url=%2Fimages%2Fbusiness%2Fcreative-r2-v2.webp&w=640&q=75",
+          "complete": true,
+          "naturalWidth": 633,
+          "naturalHeight": 395
+        },
+        {
+          "src": "http://127.0.0.1:3018/_next/image?url=%2Fimages%2Fbusiness%2Fmarketing-a1-v2.webp&w=640&q=75",
+          "complete": true,
+          "naturalWidth": 633,
+          "naturalHeight": 395
+        }
+      ],
+      "palettes": [
+        "iris",
+        "sky"
+      ]
+    },
+    {
+      "filename": "ja-1440-business-cards.png",
+      "locale": "ja",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "target": ".business-preview",
+      "screenshotType": "full element",
+      "fontStatus": "loaded",
+      "bodyFont": "\"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "targetRect": {
+        "x": 79.921875,
+        "y": 103.5,
+        "width": 1265.15625,
+        "height": 1487.109375,
+        "top": 103.5,
+        "right": 1345.078125,
+        "bottom": 1590.609375,
+        "left": 79.921875
+      },
+      "scrollY": 1353,
+      "pageHeight": 9312,
+      "horizontalOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:3018/_next/image?url=%2Fimages%2Fbusiness%2Fplatform-a1-v2.webp&w=640&q=75",
+          "complete": true,
+          "naturalWidth": 633,
+          "naturalHeight": 395
+        },
+        {
+          "src": "http://127.0.0.1:3018/_next/image?url=%2Fimages%2Fbusiness%2Fsystems-programming-v2.webp&w=640&q=75",
+          "complete": true,
+          "naturalWidth": 633,
+          "naturalHeight": 395
+        },
+        {
+          "src": "http://127.0.0.1:3018/_next/image?url=%2Fimages%2Fbusiness%2Fcreative-r2-v2.webp&w=640&q=75",
+          "complete": true,
+          "naturalWidth": 633,
+          "naturalHeight": 395
+        },
+        {
+          "src": "http://127.0.0.1:3018/_next/image?url=%2Fimages%2Fbusiness%2Fmarketing-a1-v2.webp&w=640&q=75",
+          "complete": true,
+          "naturalWidth": 633,
+          "naturalHeight": 395
+        }
+      ],
+      "palettes": [
+        "iris",
+        "sky"
+      ]
+    },
+    {
+      "filename": "ja-1440-concept.png",
+      "locale": "ja",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "target": ".concept-diagram",
+      "screenshotType": "full element",
+      "fontStatus": "loaded",
+      "bodyFont": "\"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "targetRect": {
+        "x": 79.921875,
+        "y": 104.265625,
+        "width": 1265.15625,
+        "height": 1097.796875,
+        "top": 104.265625,
+        "right": 1345.078125,
+        "bottom": 1202.0625,
+        "left": 79.921875
+      },
+      "scrollY": 3237,
+      "pageHeight": 9312,
+      "horizontalOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:3018/_next/image?url=%2Fimages%2Fcorporate%2Fa06-business-concept-v4-ja.webp&w=1920&q=75",
+          "complete": true,
+          "naturalWidth": 1070,
+          "naturalHeight": 669
+        }
+      ],
+      "palettes": [
+        "sky"
+      ]
+    },
+    {
+      "filename": "ja-1440-contact-cta.png",
+      "locale": "ja",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "target": ".contact-band",
+      "screenshotType": "full element",
+      "fontStatus": "loaded",
+      "bodyFont": "\"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "targetRect": {
+        "x": 0,
+        "y": 113.1875,
+        "width": 1425,
+        "height": 412.78125,
+        "top": 113.1875,
+        "right": 1425,
+        "bottom": 525.96875,
+        "left": 0
+      },
+      "scrollY": 8312,
+      "pageHeight": 9312,
+      "horizontalOverflow": false,
+      "images": [],
+      "palettes": [
+        "apricot",
+        "iris",
+        "sky"
+      ]
+    },
+    {
+      "label": "ja-1440",
+      "errors": {
+        "pageErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [],
+        "httpErrors": []
+      }
+    },
+    {
+      "filename": "ja-390-hero.png",
+      "locale": "ja",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "target": ".hero",
+      "screenshotType": "viewport",
+      "fontStatus": "loaded",
+      "bodyFont": "\"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "targetRect": {
+        "x": 0,
+        "y": 110,
+        "width": 375,
+        "height": 734,
+        "top": 110,
+        "right": 375,
+        "bottom": 844,
+        "left": 0
+      },
+      "scrollY": 0,
+      "pageHeight": 9742,
+      "horizontalOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:3018/_next/image?url=%2Fimages%2Fcorporate%2Fa08-brand-keyvisual.webp&w=640&q=75",
+          "complete": true,
+          "naturalWidth": 390,
+          "naturalHeight": 219
+        }
+      ],
+      "palettes": [
+        "iris",
+        "sky"
+      ]
+    },
+    {
+      "filename": "ja-390-business-start.png",
+      "locale": "ja",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "target": "#business",
+      "screenshotType": "viewport",
+      "fontStatus": "loaded",
+      "bodyFont": "\"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "targetRect": {
+        "x": 0,
+        "y": 110,
+        "width": 375,
+        "height": 2752.4375,
+        "top": 110,
+        "right": 375,
+        "bottom": 2862.4375,
+        "left": 0
+      },
+      "scrollY": 734,
+      "pageHeight": 9741,
+      "horizontalOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:3018/_next/image?url=%2Fimages%2Fbusiness%2Fplatform-a1-v2.webp&w=384&q=75",
+          "complete": true,
+          "naturalWidth": 350,
+          "naturalHeight": 219
+        },
+        {
+          "src": "http://127.0.0.1:3018/_next/image?url=%2Fimages%2Fbusiness%2Fsystems-programming-v2.webp&w=384&q=75",
+          "complete": true,
+          "naturalWidth": 350,
+          "naturalHeight": 219
+        },
+        {
+          "src": "http://127.0.0.1:3018/_next/image?url=%2Fimages%2Fbusiness%2Fcreative-r2-v2.webp&w=384&q=75",
+          "complete": true,
+          "naturalWidth": 350,
+          "naturalHeight": 219
+        },
+        {
+          "src": "http://127.0.0.1:3018/_next/image?url=%2Fimages%2Fbusiness%2Fmarketing-a1-v2.webp&w=384&q=75",
+          "complete": true,
+          "naturalWidth": 350,
+          "naturalHeight": 219
+        }
+      ],
+      "palettes": [
+        "iris",
+        "sky"
+      ]
+    },
+    {
+      "filename": "ja-390-business-cards.png",
+      "locale": "ja",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "target": ".business-preview",
+      "screenshotType": "full element",
+      "fontStatus": "loaded",
+      "bodyFont": "\"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "targetRect": {
+        "x": 24,
+        "y": 121.5625,
+        "width": 327,
+        "height": 2205.875,
+        "top": 121.5625,
+        "right": 351,
+        "bottom": 2327.4375,
+        "left": 24
+      },
+      "scrollY": 1189,
+      "pageHeight": 9741,
+      "horizontalOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:3018/_next/image?url=%2Fimages%2Fbusiness%2Fplatform-a1-v2.webp&w=384&q=75",
+          "complete": true,
+          "naturalWidth": 350,
+          "naturalHeight": 219
+        },
+        {
+          "src": "http://127.0.0.1:3018/_next/image?url=%2Fimages%2Fbusiness%2Fsystems-programming-v2.webp&w=384&q=75",
+          "complete": true,
+          "naturalWidth": 350,
+          "naturalHeight": 219
+        },
+        {
+          "src": "http://127.0.0.1:3018/_next/image?url=%2Fimages%2Fbusiness%2Fcreative-r2-v2.webp&w=384&q=75",
+          "complete": true,
+          "naturalWidth": 350,
+          "naturalHeight": 219
+        },
+        {
+          "src": "http://127.0.0.1:3018/_next/image?url=%2Fimages%2Fbusiness%2Fmarketing-a1-v2.webp&w=384&q=75",
+          "complete": true,
+          "naturalWidth": 350,
+          "naturalHeight": 219
+        }
+      ],
+      "palettes": [
+        "iris",
+        "sky"
+      ]
+    },
+    {
+      "filename": "ja-390-concept.png",
+      "locale": "ja",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "target": ".concept-diagram",
+      "screenshotType": "full element",
+      "fontStatus": "loaded",
+      "bodyFont": "\"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "targetRect": {
+        "x": 24,
+        "y": 122.234375,
+        "width": 327,
+        "height": 798.609375,
+        "top": 122.234375,
+        "right": 351,
+        "bottom": 920.84375,
+        "left": 24
+      },
+      "scrollY": 3700,
+      "pageHeight": 9741,
+      "horizontalOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:3018/_next/image?url=%2Fimages%2Fcorporate%2Fa06-business-concept-v4-ja.webp&w=640&q=75",
+          "complete": true,
+          "naturalWidth": 351,
+          "naturalHeight": 219
+        }
+      ],
+      "palettes": [
+        "sky"
+      ]
+    },
+    {
+      "filename": "ja-390-contact-cta.png",
+      "locale": "ja",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "target": ".contact-band",
+      "screenshotType": "full element",
+      "fontStatus": "loaded",
+      "bodyFont": "\"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "targetRect": {
+        "x": 0,
+        "y": 121.5625,
+        "width": 375,
+        "height": 392.875,
+        "top": 121.5625,
+        "right": 375,
+        "bottom": 514.4375,
+        "left": 0
+      },
+      "scrollY": 8856,
+      "pageHeight": 9741,
+      "horizontalOverflow": false,
+      "images": [],
+      "palettes": [
+        "apricot",
+        "iris",
+        "sky"
+      ]
+    },
+    {
+      "label": "ja-390",
+      "errors": {
+        "pageErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [],
+        "httpErrors": []
+      }
+    },
+    {
+      "filename": "en-1440-hero.png",
+      "locale": "en",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "target": ".hero",
+      "screenshotType": "viewport",
+      "fontStatus": "loaded",
+      "bodyFont": "\"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "targetRect": {
+        "x": 0,
+        "y": 96,
+        "width": 1425,
+        "height": 904,
+        "top": 96,
+        "right": 1425,
+        "bottom": 1000,
+        "left": 0
+      },
+      "scrollY": 0,
+      "pageHeight": 9341,
+      "horizontalOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:3018/_next/image?url=%2Fimages%2Fcorporate%2Fa08-brand-keyvisual.webp&w=1920&q=75",
+          "complete": true,
+          "naturalWidth": 1200,
+          "naturalHeight": 675
+        }
+      ],
+      "palettes": [
+        "iris",
+        "sky"
+      ]
+    },
+    {
+      "filename": "en-1440-business-start.png",
+      "locale": "en",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "target": "#business",
+      "screenshotType": "viewport",
+      "fontStatus": "loaded",
+      "bodyFont": "\"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "targetRect": {
+        "x": 0,
+        "y": 110,
+        "width": 1425,
+        "height": 2113.5625,
+        "top": 110,
+        "right": 1425,
+        "bottom": 2223.5625,
+        "left": 0
+      },
+      "scrollY": 890,
+      "pageHeight": 9341,
+      "horizontalOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:3018/_next/image?url=%2Fimages%2Fbusiness%2Fplatform-a1-v2.webp&w=640&q=75",
+          "complete": true,
+          "naturalWidth": 633,
+          "naturalHeight": 395
+        },
+        {
+          "src": "http://127.0.0.1:3018/_next/image?url=%2Fimages%2Fbusiness%2Fsystems-programming-v2.webp&w=640&q=75",
+          "complete": true,
+          "naturalWidth": 633,
+          "naturalHeight": 395
+        },
+        {
+          "src": "http://127.0.0.1:3018/_next/image?url=%2Fimages%2Fbusiness%2Fcreative-r2-v2.webp&w=640&q=75",
+          "complete": true,
+          "naturalWidth": 633,
+          "naturalHeight": 395
+        },
+        {
+          "src": "http://127.0.0.1:3018/_next/image?url=%2Fimages%2Fbusiness%2Fmarketing-a1-v2.webp&w=640&q=75",
+          "complete": true,
+          "naturalWidth": 633,
+          "naturalHeight": 395
+        }
+      ],
+      "palettes": [
+        "iris",
+        "sky"
+      ]
+    },
+    {
+      "filename": "en-1440-business-cards.png",
+      "locale": "en",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "target": ".business-preview",
+      "screenshotType": "full element",
+      "fontStatus": "loaded",
+      "bodyFont": "\"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "targetRect": {
+        "x": 79.921875,
+        "y": 103.84375,
+        "width": 1265.15625,
+        "height": 1529.71875,
+        "top": 103.84375,
+        "right": 1345.078125,
+        "bottom": 1633.5625,
+        "left": 79.921875
+      },
+      "scrollY": 1348,
+      "pageHeight": 9341,
+      "horizontalOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:3018/_next/image?url=%2Fimages%2Fbusiness%2Fplatform-a1-v2.webp&w=640&q=75",
+          "complete": true,
+          "naturalWidth": 633,
+          "naturalHeight": 395
+        },
+        {
+          "src": "http://127.0.0.1:3018/_next/image?url=%2Fimages%2Fbusiness%2Fsystems-programming-v2.webp&w=640&q=75",
+          "complete": true,
+          "naturalWidth": 633,
+          "naturalHeight": 395
+        },
+        {
+          "src": "http://127.0.0.1:3018/_next/image?url=%2Fimages%2Fbusiness%2Fcreative-r2-v2.webp&w=640&q=75",
+          "complete": true,
+          "naturalWidth": 633,
+          "naturalHeight": 395
+        },
+        {
+          "src": "http://127.0.0.1:3018/_next/image?url=%2Fimages%2Fbusiness%2Fmarketing-a1-v2.webp&w=640&q=75",
+          "complete": true,
+          "naturalWidth": 633,
+          "naturalHeight": 395
+        }
+      ],
+      "palettes": [
+        "iris",
+        "sky"
+      ]
+    },
+    {
+      "filename": "en-1440-concept.png",
+      "locale": "en",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "target": ".concept-diagram",
+      "screenshotType": "full element",
+      "fontStatus": "loaded",
+      "bodyFont": "\"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "targetRect": {
+        "x": 79.921875,
+        "y": 103.59375,
+        "width": 1265.15625,
+        "height": 1097.796875,
+        "top": 103.59375,
+        "right": 1345.078125,
+        "bottom": 1201.390625,
+        "left": 79.921875
+      },
+      "scrollY": 3260,
+      "pageHeight": 9341,
+      "horizontalOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:3018/_next/image?url=%2Fimages%2Fcorporate%2Fa06-business-concept-v4-en.webp&w=1920&q=75",
+          "complete": true,
+          "naturalWidth": 1070,
+          "naturalHeight": 669
+        }
+      ],
+      "palettes": [
+        "sky"
+      ]
+    },
+    {
+      "filename": "en-1440-contact-cta.png",
+      "locale": "en",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "target": ".contact-band",
+      "screenshotType": "full element",
+      "fontStatus": "loaded",
+      "bodyFont": "\"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "targetRect": {
+        "x": 0,
+        "y": 161.609375,
+        "width": 1425,
+        "height": 364.3125,
+        "top": 161.609375,
+        "right": 1425,
+        "bottom": 525.921875,
+        "left": 0
+      },
+      "scrollY": 8341,
+      "pageHeight": 9341,
+      "horizontalOverflow": false,
+      "images": [],
+      "palettes": [
+        "apricot",
+        "iris",
+        "sky"
+      ]
+    },
+    {
+      "label": "en-1440",
+      "errors": {
+        "pageErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [],
+        "httpErrors": []
+      }
+    },
+    {
+      "filename": "en-390-hero.png",
+      "locale": "en",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "target": ".hero",
+      "screenshotType": "viewport",
+      "fontStatus": "loaded",
+      "bodyFont": "\"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "targetRect": {
+        "x": 0,
+        "y": 110,
+        "width": 375,
+        "height": 755.828125,
+        "top": 110,
+        "right": 375,
+        "bottom": 865.828125,
+        "left": 0
+      },
+      "scrollY": 0,
+      "pageHeight": 10326,
+      "horizontalOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:3018/_next/image?url=%2Fimages%2Fcorporate%2Fa08-brand-keyvisual.webp&w=640&q=75",
+          "complete": true,
+          "naturalWidth": 390,
+          "naturalHeight": 219
+        }
+      ],
+      "palettes": [
+        "iris",
+        "sky"
+      ]
+    },
+    {
+      "filename": "en-390-business-start.png",
+      "locale": "en",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "target": "#business",
+      "screenshotType": "viewport",
+      "fontStatus": "loaded",
+      "bodyFont": "\"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "targetRect": {
+        "x": 0,
+        "y": 109.828125,
+        "width": 375,
+        "height": 3018.703125,
+        "top": 109.828125,
+        "right": 375,
+        "bottom": 3128.53125,
+        "left": 0
+      },
+      "scrollY": 756,
+      "pageHeight": 10326,
+      "horizontalOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:3018/_next/image?url=%2Fimages%2Fbusiness%2Fplatform-a1-v2.webp&w=384&q=75",
+          "complete": true,
+          "naturalWidth": 350,
+          "naturalHeight": 219
+        },
+        {
+          "src": "http://127.0.0.1:3018/_next/image?url=%2Fimages%2Fbusiness%2Fsystems-programming-v2.webp&w=384&q=75",
+          "complete": true,
+          "naturalWidth": 350,
+          "naturalHeight": 219
+        },
+        {
+          "src": "http://127.0.0.1:3018/_next/image?url=%2Fimages%2Fbusiness%2Fcreative-r2-v2.webp&w=384&q=75",
+          "complete": true,
+          "naturalWidth": 350,
+          "naturalHeight": 219
+        },
+        {
+          "src": "http://127.0.0.1:3018/_next/image?url=%2Fimages%2Fbusiness%2Fmarketing-a1-v2.webp&w=384&q=75",
+          "complete": true,
+          "naturalWidth": 350,
+          "naturalHeight": 219
+        }
+      ],
+      "palettes": [
+        "iris",
+        "sky"
+      ]
+    },
+    {
+      "filename": "en-390-business-cards.png",
+      "locale": "en",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "target": ".business-preview",
+      "screenshotType": "full element",
+      "fontStatus": "loaded",
+      "bodyFont": "\"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "targetRect": {
+        "x": 24,
+        "y": 121.78125,
+        "width": 327,
+        "height": 2437.75,
+        "top": 121.78125,
+        "right": 351,
+        "bottom": 2559.53125,
+        "left": 24
+      },
+      "scrollY": 1245,
+      "pageHeight": 10326,
+      "horizontalOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:3018/_next/image?url=%2Fimages%2Fbusiness%2Fplatform-a1-v2.webp&w=384&q=75",
+          "complete": true,
+          "naturalWidth": 350,
+          "naturalHeight": 219
+        },
+        {
+          "src": "http://127.0.0.1:3018/_next/image?url=%2Fimages%2Fbusiness%2Fsystems-programming-v2.webp&w=384&q=75",
+          "complete": true,
+          "naturalWidth": 350,
+          "naturalHeight": 219
+        },
+        {
+          "src": "http://127.0.0.1:3018/_next/image?url=%2Fimages%2Fbusiness%2Fcreative-r2-v2.webp&w=384&q=75",
+          "complete": true,
+          "naturalWidth": 350,
+          "naturalHeight": 219
+        },
+        {
+          "src": "http://127.0.0.1:3018/_next/image?url=%2Fimages%2Fbusiness%2Fmarketing-a1-v2.webp&w=384&q=75",
+          "complete": true,
+          "naturalWidth": 350,
+          "naturalHeight": 219
+        }
+      ],
+      "palettes": [
+        "iris",
+        "sky"
+      ]
+    },
+    {
+      "filename": "en-390-concept.png",
+      "locale": "en",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "target": ".concept-diagram",
+      "screenshotType": "full element",
+      "fontStatus": "loaded",
+      "bodyFont": "\"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "targetRect": {
+        "x": 24,
+        "y": 122.328125,
+        "width": 327,
+        "height": 827.5,
+        "top": 122.328125,
+        "right": 351,
+        "bottom": 949.828125,
+        "left": 24
+      },
+      "scrollY": 3975,
+      "pageHeight": 10326,
+      "horizontalOverflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:3018/_next/image?url=%2Fimages%2Fcorporate%2Fa06-business-concept-v4-en.webp&w=640&q=75",
+          "complete": true,
+          "naturalWidth": 351,
+          "naturalHeight": 219
+        }
+      ],
+      "palettes": [
+        "sky"
+      ]
+    },
+    {
+      "filename": "en-390-contact-cta.png",
+      "locale": "en",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "target": ".contact-band",
+      "screenshotType": "full element",
+      "fontStatus": "loaded",
+      "bodyFont": "\"LINE Seed JP\", \"Noto Sans JP\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", Meiryo, sans-serif",
+      "targetRect": {
+        "x": 0,
+        "y": 121.5625,
+        "width": 375,
+        "height": 424.5,
+        "top": 121.5625,
+        "right": 375,
+        "bottom": 546.0625,
+        "left": 0
+      },
+      "scrollY": 9409,
+      "pageHeight": 10326,
+      "horizontalOverflow": false,
+      "images": [],
+      "palettes": [
+        "apricot",
+        "iris",
+        "sky"
+      ]
+    },
+    {
+      "label": "en-390",
+      "errors": {
+        "pageErrors": [],
+        "consoleErrors": [],
+        "failedRequests": [],
+        "httpErrors": []
+      }
+    }
+  ],
+  "performance": [],
+  "limits": [
+    "One cold/warm local diagnostic pair, not a statistical performance comparison or field Core Web Vitals acceptance.",
+    "No field INP data: UNKNOWN. No synthetic interaction value is presented as INP.",
+    "Cold means new browser HTTP cache; local production server and image optimizer were primed by visual captures.",
+    "Field LCP/CLS and real-user p75: UNKNOWN. Local LCP and CLS cover only the stated observation window."
+  ],
+  "identityAfter": {
+    "head": "7ebe25888dec5f2f1e97da6cf5001e81bcdef55c",
+    "headTree": "334844413a320852385c8d58239b36dd19d7c54c",
+    "branch": "DETACHED",
+    "sourceDigestSha256": "c3157e15464c762fa7e86ad324872c0c0608e4ffcd3d1d723ca384497f5f1295",
+    "sourceDigestScope": "Sorted tracked app/components/content/styles/public/package.json/package-lock.json/next.config.ts paths + NUL + current bytes + NUL",
+    "trackedSourceFiles": 133,
+    "dirtyTrackedFiles": [],
+    "node": "v22.14.0",
+    "sourceDir": "C:\\Users\\taisa\\Desktop\\corporate-readability-baseline-20260922",
+    "nextBuildId": "z7gcQ_x8xHZM218x54Fu5"
+  },
+  "sourceUnchangedDuringCapture": true,
+  "finishedAt": "2026-09-22T08:44:03.993Z"
+}
