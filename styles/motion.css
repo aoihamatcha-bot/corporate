@@ -43,6 +43,7 @@
   -webkit-background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent;
+  filter: saturate(var(--text-color-saturation));
 }
 .reveal-text[data-text-motion="band-color"] > .reveal-color,
 .menu-ink-color,
@@ -68,8 +69,7 @@
   user-select: none;
   opacity: 0;
   transform-origin: left center;
-  border-radius: 3px;
-  background: linear-gradient(105deg, var(--color-2), var(--color-3) 48%, var(--color-4));
+  background: var(--text-band-gradient);
 }
 .menu-ink-band,
 .count-up-band {
@@ -103,7 +103,7 @@
 }
 .reveal-color::before,
 .menu-ink:not(.nav-en) .menu-ink-color::before {
-  filter: brightness(var(--text-body-brightness));
+  filter: saturate(var(--text-color-saturation)) brightness(var(--text-body-brightness));
 }
 :is(
     .section-heading,
@@ -114,7 +114,9 @@
     .contact-band h2
   )
   .reveal-color::before,
-.hero h1 .reveal-color::before,
+.hero h1 .reveal-color::before {
+  filter: saturate(var(--text-color-saturation));
+}
 .site-footer .reveal-color::before,
 .reveal-text[data-tone="light"] .reveal-color::before,
 .menu-ink[data-tone="light"] .menu-ink-color::before {
@@ -124,18 +126,11 @@
   position: absolute;
   display: block;
   clip-path: inset(0 100% 0 0);
-  background:
-    linear-gradient(
-      112deg,
-      transparent 25%,
-      var(--glass-highlight) 52%,
-      transparent 74%
-    ),
-    linear-gradient(105deg, var(--accent-1), var(--accent-2), var(--accent-3));
+  background: var(--text-band-gradient);
 }
 .reveal-band.reveal-band-soft {
   clip-path: none;
-  background: linear-gradient(105deg, var(--color-2), var(--color-3) 48%, var(--color-4));
+  background: var(--text-band-gradient);
 }
 .gradient-image {
   display: block;
@@ -265,12 +260,13 @@
     calc((var(--ink-delay) + var(--ink-wipe) + var(--ink-color-hold)) * 1ms);
 }
 .fullscreen-nav[open] .menu-ink-band {
-  animation: ink-band calc(var(--ink-wipe) * 1ms) cubic-bezier(.16,1,.3,1)
+  animation: ink-band calc(var(--ink-wipe) * 1ms) linear
     calc(var(--ink-delay) * 1ms) both;
 }
 @keyframes ink-band {
-  0% { transform: scaleX(0); opacity: 0; }
-  38%, 60% { transform: scaleX(1); opacity: 0.5; }
+  0% { transform: scaleX(0); opacity: 0; animation-timing-function: ease-in-out; }
+  40% { transform: scaleX(1); opacity: 0.85; }
+  65% { transform: scaleX(1); opacity: 0.85; animation-timing-function: ease-in-out; }
   100% { transform: scaleX(1); opacity: 0; }
 }
 .fullscreen-nav[data-closing="true"] .nav-curtains {

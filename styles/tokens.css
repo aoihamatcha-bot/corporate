@@ -38,26 +38,27 @@
   --menu-echo-ms: 1040;
   --text-wipe-ms: 620;
   --heading-delay-ms: 80;
-  --heading-wipe-ms: 720;
-  --heading-hold-ms: 460;
-  --heading-fade-ms: 1250;
+  --heading-wipe-ms: 1800;
+  --heading-hold-ms: 1200;
+  --heading-fade-ms: 1600;
   --subtitle-delay-ms: 230;
-  --subtitle-wipe-ms: 580;
-  --subtitle-hold-ms: 440;
-  --subtitle-fade-ms: 1150;
+  --subtitle-wipe-ms: 1800;
+  --subtitle-hold-ms: 1100;
+  --subtitle-fade-ms: 1500;
   --body-delay-ms: 170;
-  --body-wipe-ms: 520;
-  --body-hold-ms: 420;
-  --body-fade-ms: 1050;
+  --body-wipe-ms: 1800;
+  --body-hold-ms: 1100;
+  --body-fade-ms: 1400;
   --label-delay-ms: 300;
-  --label-wipe-ms: 440;
-  --label-hold-ms: 400;
-  --label-fade-ms: 950;
+  --label-wipe-ms: 1600;
+  --label-hold-ms: 1000;
+  --label-fade-ms: 1300;
   --utility-delay-ms: 100;
-  --utility-wipe-ms: 420;
-  --utility-hold-ms: 410;
-  --utility-fade-ms: 1000;
+  --utility-wipe-ms: 1500;
+  --utility-hold-ms: 1000;
+  --utility-fade-ms: 1300;
   --text-body-brightness: 0.82;
+  --text-color-saturation: 0.45;
   --glass-highlight: rgb(255 255 255 / 14%);
   --scene-wash-opacity: 0.28;
   --surface-tint: 32%;
@@ -101,6 +102,16 @@
   --leading-body: 1.8;
   --section-space: 96px;
   --header-height: 88px;
+}
+[data-palette] {
+  /* Reuse the original eight pastel families for every text band. Keep image
+     accents separate; their saturated colors must not become text backdrops. */
+  --text-band-gradient: linear-gradient(
+    105deg,
+    var(--color-2),
+    var(--color-3) 48%,
+    var(--color-4)
+  );
 }
 [data-palette="sky"] {
   --color-1: var(--sky-1);

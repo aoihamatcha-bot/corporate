@@ -2,12 +2,12 @@ import type { CSSProperties } from "react";
 
 export type TextKind = "heading" | "subtitle" | "body" | "label" | "utility";
 
-export const textColorRiseMs = 160;
-export const textColorHoldExtensionMs = 700;
+export const textColorRiseMs = 480;
+export const textBandEasing = "linear";
 export const textBandFrames: Keyframe[] = [
-  { transform: "scaleX(0)", opacity: 0 },
-  { transform: "scaleX(1)", opacity: 0.5, offset: 0.38 },
-  { transform: "scaleX(1)", opacity: 0.5, offset: 0.6 },
+  { transform: "scaleX(0)", opacity: 0, easing: "ease-in-out" },
+  { transform: "scaleX(1)", opacity: 0.85, offset: 0.4 },
+  { transform: "scaleX(1)", opacity: 0.85, offset: 0.65, easing: "ease-in-out" },
   { transform: "scaleX(1)", opacity: 0 },
 ];
 
@@ -28,6 +28,6 @@ export function textRhythm(text: string, kind: TextKind): CSSProperties {
     "--ink-fade": `calc(var(--${kind}-fade-ms) + ${beat * 43})`,
     "--ink-ms": "calc(var(--ink-wipe) + var(--ink-hold) + var(--ink-fade))",
     "--ink-color-rise": textColorRiseMs,
-    "--ink-color-hold": `calc(var(--ink-hold) + ${textColorHoldExtensionMs})`,
+    "--ink-color-hold": "var(--ink-hold)",
   } as CSSProperties;
 }

@@ -5,8 +5,8 @@ import { useMotionPaused } from "./motion-preference";
 import { observeEntrance, type Palette } from "./entrance";
 import { motionToken } from "./tokens";
 import {
-  textColorHoldExtensionMs,
   textColorRiseMs,
+  textBandEasing,
   textBandFrames,
   textRhythm,
   type TextKind,
@@ -73,7 +73,7 @@ function ColorText({
           const bounds = element.getBoundingClientRect();
           const lines = [...range.getClientRects()].filter((rect) => rect.width > 0 && rect.height > 0);
           const clearMs = wipeMs + Math.min(Math.max(lines.length - 1, 0), 4) * 65;
-          const holdMs = token("hold") + beat * 20 + textColorHoldExtensionMs;
+          const holdMs = token("hold") + beat * 20;
           const fadeMs = token("fade") + beat * 43;
           const colorMs = clearMs + holdMs + fadeMs;
           // Pastel bands sit behind each actual line, never covering or masking
@@ -91,7 +91,9 @@ function ColorText({
             animations.push(band.animate(textBandFrames, {
               duration: wipeMs,
               delay: delay + Math.min(index, 4) * 65,
-              easing: "cubic-bezier(.16,1,.3,1)",
+              // Easing belongs to each phase, not the whole envelope: a global
+              // ease-out compressed the visible band into a brief flash.
+              easing: textBandEasing,
               fill: "both",
             }));
           });
@@ -261,15 +263,15 @@ function AnimatedHeading({
               animations.push(
                 band.animate(
                   [
-                    { clipPath: direction === "left" ? left : right },
-                    { clipPath: "inset(0 0 0 0)", offset: 0.38 },
-                    { clipPath: "inset(0 0 0 0)", offset: 0.48 },
+                    { clipPath: direction === "left" ? left : right, easing: "ease-in-out" },
+                    { clipPath: "inset(0 0 0 0)", offset: 0.4 },
+                    { clipPath: "inset(0 0 0 0)", offset: 0.65, easing: "ease-in-out" },
                     { clipPath: direction === "left" ? right : left },
                   ],
                   {
                     duration: wipeMs,
                     delay: delay + Math.min(index, 4) * 65,
-                    easing: "cubic-bezier(.65,0,.2,1)",
+                    easing: textBandEasing,
                     fill: "both",
                   },
                 ),

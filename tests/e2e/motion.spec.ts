@@ -77,8 +77,8 @@ test("body text is readable without masks before entering the viewport and after
   });
   expect(color.opacity).toBe("1");
   expect(color.gradient).toContain("linear-gradient");
-  expect(color.duration).toBeGreaterThanOrEqual(2000);
-  expect(color.duration).toBeLessThanOrEqual(4000);
+  expect(color.duration).toBeGreaterThanOrEqual(4300);
+  expect(color.duration).toBeLessThanOrEqual(5200);
   expect(color.iterations).toBe(1);
   expect(color.sourceTransform).toBe("none");
   await expect(target).toHaveAttribute("data-reveal-state", "settled");

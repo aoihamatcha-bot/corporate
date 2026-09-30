@@ -3,7 +3,8 @@
 import { useEffect, useRef } from "react";
 import type { Locale } from "@/content/i18n";
 import { observeEntrance } from "./entrance";
-import { textBandFrames } from "./text-rhythm";
+import { textBandEasing, textBandFrames } from "./text-rhythm";
+import { motionToken } from "./tokens";
 import { useMotionPaused } from "./motion-preference";
 
 export function CountUp({
@@ -37,8 +38,8 @@ export function CountUp({
       const formatter = new Intl.NumberFormat(locale);
       const duration = 1600 + index * 200;
       const delay = index * 140;
-      const hold = 500;
-      const fade = 1100;
+      const hold = motionToken("--heading-hold-ms", 1200);
+      const fade = motionToken("--heading-fade-ms", 1600);
       const total = duration + hold + fade;
       const render = (text: string) => {
         if (number.textContent === text) return;
@@ -61,7 +62,12 @@ export function CountUp({
 
       element.dataset.counterState = "running";
       try {
-        wash = band.current!.animate(textBandFrames, { duration: 620, delay, fill: "both" });
+        wash = band.current!.animate(textBandFrames, {
+          duration: motionToken("--heading-wipe-ms", 1800),
+          delay,
+          easing: textBandEasing,
+          fill: "both",
+        });
         render("0");
         glow = overlay.animate(
           [

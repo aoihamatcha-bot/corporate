@@ -1,5 +1,41 @@
 import { test, expect } from "@playwright/test";
 
+test("heading, body, menu and counter bands reuse the eight historical pastel families", async ({ page }) => {
+  await page.goto('/about');
+  // These are the existing f4ce8c8 pastel stops, not the vivid image accents.
+  const expected: Record<string, string[]> = {
+    sky: ['171, 223, 255', '159, 196, 255', '219, 212, 255'],
+    mint: ['185, 241, 223', '192, 236, 254', '222, 218, 255'],
+    apricot: ['255, 211, 191', '248, 215, 238', '219, 235, 255'],
+    iris: ['211, 206, 255', '193, 224, 255', '216, 247, 252'],
+    lagoon: ['189, 230, 240', '203, 213, 251', '230, 228, 251'],
+    rose: ['245, 212, 225', '225, 213, 245', '216, 235, 249'],
+    honey: ['242, 228, 188', '217, 235, 214', '207, 234, 239'],
+    twilight: ['213, 217, 241', '235, 216, 232', '251, 225, 210'],
+  };
+  const gradients = await page.evaluate((palettes) => {
+    const probe = document.createElement('span');
+    probe.setAttribute('aria-hidden', 'true');
+    document.body.append(probe);
+    try {
+      return palettes.flatMap(palette => {
+        probe.dataset.palette = palette;
+        return ['reveal-band', 'reveal-band reveal-band-soft', 'menu-ink-band', 'count-up-band'].map(className => {
+          const band = document.createElement('i');
+          band.className = className;
+          probe.append(band);
+          const gradient = getComputedStyle(band).backgroundImage;
+          band.remove();
+          return { palette, className, gradient };
+        });
+      });
+    } finally { probe.remove(); }
+  }, Object.keys(expected));
+  for (const { palette, className, gradient } of gradients) {
+    for (const color of expected[palette]) expect(gradient, `${palette}: ${className}`).toContain(`rgb(${color})`);
+  }
+});
+
 test("all authored text has a decorative color layer with readable sources in both languages", async ({
   page,
 }) => {
@@ -149,6 +185,8 @@ test("body background and color appear together, then return to readable station
     let maxBandOpacity = 0;
     let overlap = false;
     let heldWithoutRunning = false;
+    const visibleBandTimes: number[] = [];
+    const fullBandTimes: number[] = [];
     const bands = [...el.querySelectorAll('.reveal-band-soft')];
     const bandGradients = bands.map((band) => getComputedStyle(band).backgroundImage);
     let raf = 0;
@@ -164,6 +202,8 @@ test("body background and color appear together, then return to readable station
       heldWithoutRunning ||= animation.playState === "paused" && Number(getComputedStyle(overlay).opacity) > 0.99;
       const bandOpacity = Math.max(0, ...bands.map((band) => Number(getComputedStyle(band).opacity)));
       maxBandOpacity = Math.max(maxBandOpacity, bandOpacity);
+      if (bandOpacity > 0.5) visibleBandTimes.push(performance.now());
+      if (bandOpacity > 0.84) fullBandTimes.push(performance.now());
       overlap ||= bandOpacity > 0.1 && Number(getComputedStyle(overlay).opacity) > 0.8;
       raf = requestAnimationFrame(sample);
     };
@@ -180,6 +220,8 @@ test("body background and color appear together, then return to readable station
       maxBandOpacity,
       overlap,
       heldWithoutRunning,
+      visibleBandMs: (visibleBandTimes.at(-1) ?? 0) - (visibleBandTimes[0] ?? 0),
+      fullBandMs: (fullBandTimes.at(-1) ?? 0) - (fullBandTimes[0] ?? 0),
       bandGradients,
       failures,
     };
@@ -191,6 +233,10 @@ test("body background and color appear together, then return to readable station
   expect(result.maxBandOpacity).toBeGreaterThan(0.1);
   expect(result.overlap).toBe(true);
   expect(result.heldWithoutRunning).toBe(true);
+  // Natural elapsed paint, not a sought peak or just a longer duration token.
+  // This catches a globally eased envelope that still flashes its band early.
+  expect(result.visibleBandMs).toBeGreaterThan(900);
+  expect(result.fullBandMs).toBeGreaterThan(350);
   expect(result.bandGradients.length).toBeGreaterThan(0);
   expect(result.bandGradients.every((gradient) => gradient.includes('linear-gradient'))).toBe(true);
   await expect(body).toHaveAttribute("data-reveal-state", "settled");
@@ -261,7 +307,8 @@ test("all menu text receives finite color effects that restart without masking n
       for (const effect of entry.bandEffects) {
         expect(effect.iterations).toBe(1);
         expect(effect.duration).toBeGreaterThan(0);
-        expect(effect.duration).toBeLessThan(1000);
+        expect(effect.duration).toBeGreaterThanOrEqual(1500);
+        expect(effect.duration).toBeLessThanOrEqual(2000);
       }
       if (entry.visible) expect(entry.animations).toHaveLength(2);
       for (const animation of entry.animations) {
@@ -333,10 +380,10 @@ test("heading color outlasts its decorative band and then fades", async ({
       fade: Number(timing.duration) - plateau,
     };
   });
-  expect(envelope.holdAfterBand).toBeGreaterThanOrEqual(400);
-  expect(envelope.holdAfterBand).toBeLessThanOrEqual(600);
-  expect(envelope.fade).toBeGreaterThanOrEqual(1000);
-  // The timing envelope above proves the hold is 400–600ms. Sample after both
+  expect(envelope.holdAfterBand).toBeGreaterThanOrEqual(1200);
+  expect(envelope.holdAfterBand).toBeLessThanOrEqual(1400);
+  expect(envelope.fade).toBeGreaterThanOrEqual(1600);
+  // The requested slower envelope holds for 1200–1400ms. Sample after both
   // decorative layers finish, using their actual completion instead of a sleep.
   const sample = await title.evaluate(async (el) => {
     const background = el.closest(".scene")!.querySelector(".color-echo")!;
